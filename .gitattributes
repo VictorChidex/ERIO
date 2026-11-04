@@ -1,0 +1,4 @@
+# Store text with LF endings so scripts and Dockerfiles work in Linux
+# containers and CI, whatever the editor's platform.
+* text=auto eol=lf
+*.png binary

@@ -68,6 +68,23 @@ The site reads the API address from `ERIO_API_URL` (default `http://localhost:80
 
 Settings come from `ERIO_*` environment variables (see `packages/core/erio_core/settings.py`). They hold service addresses only, never credentials.
 
+## Checks (CI)
+
+GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)) runs on every push and pull request:
+
+| Job | What it runs |
+| --- | --- |
+| Credential scan | `scripts/check-credential-words.sh` (decision D-08) and gitleaks over the full history |
+| Python | ruff, ruff format, mypy (strict), pytest |
+| Website | ESLint, TypeScript, `next build` |
+| Local stack | `docker compose up --build`, then checks the API, worker, fake S3 and website answer |
+
+Run the credential check yourself before every commit:
+
+```bash
+bash scripts/check-credential-words.sh
+```
+
 ## How this repo is built
 
 - Work happens one step at a time, in the order of `docs/build-plan.md`.
