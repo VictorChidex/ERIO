@@ -11,6 +11,7 @@ __pycache__/
 node_modules/
 .next/
 out/
+next-env.d.ts
 
 # Local environment files (only .env.example is committed)
 .env
@@ -26,3 +27,6 @@ out/
 .DS_Store
 .idea/
 .vscode/
+
+# TypeScript build cache
+*.tsbuildinfo

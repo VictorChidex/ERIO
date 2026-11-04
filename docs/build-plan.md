@@ -34,6 +34,7 @@ References: the full build spec ("ERIO — Build Spec", Claude Docs) and the cli
 Built in parts: (a) Python workspace, API and worker; (b) website skeleton; (c) `docker compose` stack; (d) CI; (e) Terraform staging skeleton.
 
 - [x] Part a: Python workspace with `packages/core`, `services/api` (health endpoints) and `services/ingest` (Celery worker).
+- [x] Part b: Next.js 15 website skeleton in `web/` with the prototype's design tokens, fonts, dark/light theme and a live API status.
 - [ ] A fresh clone runs end to end locally with one command (`docker compose up`).
 - [ ] A test pull request that adds a fake credential is blocked by CI.
 - [ ] A merge to `main` deploys to staging automatically.

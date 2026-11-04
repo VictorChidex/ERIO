@@ -21,6 +21,7 @@ The full technical spec and the clickable prototype live outside this repo and a
 | `packages/core` | Shared Python code (`erio_core`): settings now, models and connectors later |
 | `services/api` | Public REST API (`erio_api`, FastAPI) |
 | `services/ingest` | Crawl scheduler and workers (`erio_ingest`, Celery) |
+| `web/` | Website (Next.js 15, TypeScript strict), ported from the prototype |
 | `docs/` | Decisions, sources and the build plan |
 
 ## Python services
@@ -33,6 +34,17 @@ uv run pytest                       # tests
 uv run ruff check . && uv run mypy  # lint and type-check
 uv run uvicorn erio_api.main:app --reload   # API on http://localhost:8000/v1/health
 ```
+
+## Website
+
+```bash
+cd web
+npm ci                # install exact versions from package-lock.json
+npm run dev           # http://localhost:3000 (expects the API on localhost:8000)
+npm run lint && npm run typecheck && npm run build
+```
+
+The site reads the API address from `ERIO_API_URL` (default `http://localhost:8000`).
 
 Settings come from `ERIO_*` environment variables (see `packages/core/erio_core/settings.py`). They hold service addresses only, never credentials.
 
