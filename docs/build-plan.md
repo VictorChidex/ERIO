@@ -7,7 +7,7 @@ References: the full build spec ("ERIO — Build Spec", Claude Docs) and the cli
 | Step | Name | Weeks | Status |
 | --- | --- | --- | --- |
 | 1 | Lock decisions and verify sources | 1 | In progress |
-| 2 | Repo, local stack and CI | 1–2 | Not started |
+| 2 | Repo, local stack and CI | 1–2 | In progress |
 | 3 | Database schema and core models | 2 | Not started |
 | 4 | First connector and crawl pipeline | 2–3 | Not started |
 | 5 | Failure-aware status rules | 3 | Not started |
@@ -31,6 +31,9 @@ References: the full build spec ("ERIO — Build Spec", Claude Docs) and the cli
 
 ## Step 2 — Repo, local stack and CI
 
+Built in parts: (a) Python workspace, API and worker; (b) website skeleton; (c) `docker compose` stack; (d) CI; (e) Terraform staging skeleton.
+
+- [x] Part a: Python workspace with `packages/core`, `services/api` (health endpoints) and `services/ingest` (Celery worker).
 - [ ] A fresh clone runs end to end locally with one command (`docker compose up`).
 - [ ] A test pull request that adds a fake credential is blocked by CI.
 - [ ] A merge to `main` deploys to staging automatically.

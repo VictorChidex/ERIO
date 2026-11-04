@@ -1,0 +1,58 @@
+[project]
+name = "erio"
+version = "0.1.0"
+description = "ERIO monorepo: shared tooling for the Python services"
+requires-python = ">=3.12,<3.13"
+dependencies = ["erio-core", "erio-api", "erio-ingest"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.13",
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.8",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["packages/core", "services/api", "services/ingest"]
+
+[tool.uv.sources]
+erio-core = { workspace = true }
+erio-api = { workspace = true }
+erio-ingest = { workspace = true }
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "ASYNC", "RUF"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["erio_core", "erio_api", "erio_ingest"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["erio_core", "erio_api", "erio_ingest"]
+
+[[tool.mypy.overrides]]
+module = ["celery", "celery.*"]
+ignore_missing_imports = true
+
+# Celery ships no type hints, so its task decorator is untyped.
+[[tool.mypy.overrides]]
+module = ["erio_ingest.worker"]
+disallow_untyped_decorators = false
+
+[tool.pytest.ini_options]
+testpaths = ["packages/core/tests", "services/api/tests", "services/ingest/tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "--import-mode=importlib"

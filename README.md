@@ -14,6 +14,28 @@ ERIO is a real-time job index. It collects job postings from applicant tracking 
 
 The full technical spec and the clickable prototype live outside this repo and are linked from `docs/build-plan.md`.
 
+## Repo layout
+
+| Path | What lives there |
+| --- | --- |
+| `packages/core` | Shared Python code (`erio_core`): settings now, models and connectors later |
+| `services/api` | Public REST API (`erio_api`, FastAPI) |
+| `services/ingest` | Crawl scheduler and workers (`erio_ingest`, Celery) |
+| `docs/` | Decisions, sources and the build plan |
+
+## Python services
+
+The Python code is one [uv](https://docs.astral.sh/uv/) workspace on Python 3.12.
+
+```bash
+uv sync --all-packages              # install everything into .venv
+uv run pytest                       # tests
+uv run ruff check . && uv run mypy  # lint and type-check
+uv run uvicorn erio_api.main:app --reload   # API on http://localhost:8000/v1/health
+```
+
+Settings come from `ERIO_*` environment variables (see `packages/core/erio_core/settings.py`). They hold service addresses only, never credentials.
+
 ## How this repo is built
 
 - Work happens one step at a time, in the order of `docs/build-plan.md`.
