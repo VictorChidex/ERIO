@@ -1,0 +1,114 @@
+# Local stack: `docker compose up --build`, then open http://localhost:3000.
+#
+# Nothing here needs a real credential (decision D-08). Postgres trusts
+# connections on the compose network, and Redis, OpenSearch and the fake S3
+# run without auth. Every port is bound to
+# 127.0.0.1 so the stack is never reachable from other machines.
+
+x-erio-addresses: &erio-addresses
+  ERIO_ENVIRONMENT: local
+  ERIO_DATABASE_URL: postgresql://erio@postgres:5432/erio
+  ERIO_REDIS_URL: redis://redis:6379/0
+  ERIO_OPENSEARCH_URL: http://opensearch:9200
+  ERIO_S3_ENDPOINT_URL: http://s3:9090
+
+services:
+  postgres:
+    image: postgres:16.6-alpine
+    environment:
+      POSTGRES_USER: erio
+      POSTGRES_DB: erio
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: [postgres-data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "erio", "-d", "erio"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7.4-alpine
+    ports: ["127.0.0.1:6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  opensearch:
+    image: opensearchproject/opensearch:2.18.0
+    environment:
+      discovery.type: single-node
+      DISABLE_SECURITY_PLUGIN: "true"
+      DISABLE_INSTALL_DEMO_CONFIG: "true"
+      OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    ports: ["127.0.0.1:9200:9200"]
+    volumes: [opensearch-data:/usr/share/opensearch/data]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:9200/_cluster/health | grep -qE '\"status\":\"(green|yellow)\"'"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+  # Fake S3 for raw payloads; accepts requests without any credential.
+  # Replaces MinIO, which no longer publishes free images (decision D-13).
+  # Clients start using it in step 4.
+  s3:
+    image: adobe/s3mock:5.2.3
+    environment:
+      COM_ADOBE_TESTING_S3MOCK_STORE_INITIAL_BUCKETS: erio-raw
+      COM_ADOBE_TESTING_S3MOCK_STORE_ROOT: /s3mockroot
+      COM_ADOBE_TESTING_S3MOCK_STORE_RETAIN_FILES_ON_EXIT: "true"
+    ports: ["127.0.0.1:9090:9090"]
+    volumes: [s3-data:/s3mockroot]
+
+  api:
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: erio-python:local
+    environment: *erio-addresses
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      opensearch: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/v1/health/ready', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  worker:
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: erio-python:local
+    command: ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "crawl"]
+    environment: *erio-addresses
+    depends_on:
+      api: { condition: service_started }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD-SHELL", "celery -A erio_ingest.worker inspect ping --timeout 5 | grep -q pong"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+  web:
+    build: { context: web }
+    environment:
+      ERIO_API_URL: http://api:8000
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      api: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000/"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres-data:
+  opensearch-data:
+  s3-data:

@@ -24,6 +24,26 @@ The full technical spec and the clickable prototype live outside this repo and a
 | `web/` | Website (Next.js 15, TypeScript strict), ported from the prototype |
 | `docs/` | Decisions, sources and the build plan |
 
+## Run everything locally
+
+Needs [Docker Desktop](https://www.docker.com/products/docker-desktop/) (on Windows, with the WSL 2 backend) and about 4 GB of free memory.
+
+```bash
+docker compose up --build
+```
+
+| Service | Address | Notes |
+| --- | --- | --- |
+| Website | http://localhost:3000 | Shows "API online" once the API is ready |
+| API | http://localhost:8000/v1/health | Readiness at `/v1/health/ready`, docs at `/v1/docs` |
+| Worker | — | Celery, listening on the `crawl` queue |
+| Postgres 16 | localhost:5432 | Database and user `erio`; trusts local connections |
+| Redis 7 | localhost:6379 | Queue and rate limits |
+| OpenSearch 2 | http://localhost:9200 | Search; security plugin off locally |
+| Fake S3 | http://localhost:9090 | Adobe S3Mock with bucket `erio-raw` (decision D-13) |
+
+Nothing in the stack needs a credential, and every port listens on 127.0.0.1 only. Stop with `docker compose down`; add `-v` to also delete the local data.
+
 ## Python services
 
 The Python code is one [uv](https://docs.astral.sh/uv/) workspace on Python 3.12.

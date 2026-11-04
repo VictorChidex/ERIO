@@ -35,6 +35,7 @@ Built in parts: (a) Python workspace, API and worker; (b) website skeleton; (c) 
 
 - [x] Part a: Python workspace with `packages/core`, `services/api` (health endpoints) and `services/ingest` (Celery worker).
 - [x] Part b: Next.js 15 website skeleton in `web/` with the prototype's design tokens, fonts, dark/light theme and a live API status.
+- [x] Part c: `docker compose up --build` starts Postgres, Redis, OpenSearch, fake S3, the API, a worker and the website, with no credential anywhere.
 - [ ] A fresh clone runs end to end locally with one command (`docker compose up`).
 - [ ] A test pull request that adds a fake credential is blocked by CI.
 - [ ] A merge to `main` deploys to staging automatically.

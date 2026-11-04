@@ -18,6 +18,7 @@ Owner: Chidex (project owner) unless stated otherwise.
 | D-10 | AI providers: one internal gateway with adapters for OpenAI, Anthropic and Google Gemini, plus one OpenAI-compatible adapter | Agreed | Spec section 13 |
 | D-11 | Data retention: closed jobs kept 12 months, raw payloads 30 days | Proposed | |
 | D-12 | Default branch `main`; every step lands as reviewed commits on `main` | Agreed | Set at build start |
+| D-13 | Local fake S3 is Adobe S3Mock (`adobe/s3mock`), not MinIO | Proposed | MinIO no longer publishes free container images (its Docker Hub repository is gone and quay.io needs a login). S3Mock is Apache-2.0 and accepts requests without any credential, so the local stack stays credential-free. Staging and production use real S3 |
 
 ## Open items for the project owner
 
@@ -26,4 +27,5 @@ Owner: Chidex (project owner) unless stated otherwise.
 - [ ] D-07: who builds the company seed list, and which countries matter most at launch.
 - [ ] D-09: agree the scope of the credential-word check.
 - [ ] D-11: confirm retention periods.
+- [ ] D-13: agree S3Mock as the local fake S3.
 - [ ] Legal review of the 6 MVP sources (see `docs/sources.md`).

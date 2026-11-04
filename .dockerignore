@@ -1,0 +1,13 @@
+# Build context for docker/python.Dockerfile is the repo root: send only what
+# the Python image needs.
+*
+!pyproject.toml
+!uv.lock
+!.python-version
+!packages/
+!services/
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
