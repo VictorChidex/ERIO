@@ -137,6 +137,7 @@ class Gateway:
         now: Callable[[], datetime] = lambda: datetime.now(UTC),
         breaker: CircuitBreaker | None = None,
         providers: dict[str, Provider] | None = None,
+        approved: dict[str, set[str]] | None = None,
     ):
         self.routing = routing
         self.store = store
@@ -145,6 +146,9 @@ class Gateway:
         self.enabled = enabled
         # Providers switched off by an operator, e.g. during an outage.
         self.disabled_providers = disabled_providers
+        # Per task, the models whose labeled-set score reached the task's
+        # gate; None means every model may serve (tests and evaluation runs).
+        self.approved = approved
         self.now = now
         self.breaker = breaker or CircuitBreaker()
         # Built from the routing on first use; tests may pass their own.
@@ -157,6 +161,23 @@ class Gateway:
                 name, config.adapter, config.base_url, self.client, config.credential is not None
             )
         return self._providers[name]
+
+    def rerouted(self, routing: Routing, store: GatewayStore) -> "Gateway":
+        """The same gateway (providers, credentials, switches) with other routing."""
+        return Gateway(
+            routing,
+            store,
+            credentials=self.credentials,
+            client=self.client,
+            enabled=self.enabled,
+            disabled_providers=self.disabled_providers,
+            now=self.now,
+            providers=self._providers,
+        )
+
+    def can_use(self, model: str) -> bool:
+        """Whether ``model`` (a routing name) would be called right now."""
+        return self._usable(self.routing.models[model]) is not None
 
     def _usable(self, model: ModelConfig) -> tuple[Provider, str | None] | None:
         """The provider and token for ``model``, or None when it must be skipped."""
@@ -190,6 +211,8 @@ class Gateway:
             except ValidationError:
                 pass  # the output model changed since; ask again
         for name in self.routing.tasks[task].models:
+            if self.approved is not None and name not in self.approved.get(task, set()):
+                continue
             model = self.routing.models[name]
             usable = self._usable(model)
             if usable is None:

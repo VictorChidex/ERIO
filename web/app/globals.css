@@ -388,6 +388,9 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .cov-note{font-size:13px;color:var(--fg3);max-width:720px;margin-bottom:64px}
 /* API page */
 .api-actions{margin-top:28px} .api-code{margin-bottom:36px}
+.tool-defs{border:1px solid var(--brd);border-radius:var(--radius-sm);margin-bottom:12px;background:var(--sf)}
+.tool-defs summary{cursor:pointer;padding:12px 16px;font-size:14px;color:var(--fg)}
+.tool-defs pre{max-height:420px;overflow:auto;border-top:1px solid var(--brd)}
 .api-prose{color:var(--fg2);line-height:1.7;margin-bottom:18px;font-size:14px}
 .epm.get{background:rgba(16,185,129,.14);color:var(--grn)} .epm.post{background:rgba(79,127,255,.14);color:var(--acc)}
 .api-right .code{white-space:pre-wrap;overflow-wrap:anywhere}

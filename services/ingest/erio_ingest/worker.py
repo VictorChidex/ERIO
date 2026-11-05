@@ -13,9 +13,13 @@ from redis import Redis
 from sqlalchemy import Engine, create_engine
 from sqlalchemy.orm import Session
 
+from erio_core.ai import Gateway, default_routing
+from erio_core.ai.store import PostgresStore
 from erio_core.connectors import CONNECTORS
 from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
+from erio_ingest.ai_fallback import BATCH as AI_BATCH
+from erio_ingest.ai_fallback import fill_with_ai
 from erio_ingest.dedup import dedup_all
 from erio_ingest.discovery import discover_boards
 from erio_ingest.fetcher import PoliteFetcher
@@ -50,6 +54,8 @@ app.conf.update(
         "discover-boards": {"task": "erio.discover_boards", "schedule": 24 * 3600.0},
         "smoke-test-sources": {"task": "erio.smoke_test_sources", "schedule": 24 * 3600.0},
         "dedup-all": {"task": "erio.dedup_all", "schedule": 24 * 3600.0},
+        "ai-fallback": {"task": "erio.ai_fallback", "schedule": 300.0},
+        "ai-eval": {"task": "erio.ai_eval", "schedule": 24 * 3600.0},
     },
 )
 
@@ -128,6 +134,39 @@ def normalize_pending_task() -> dict[str, Any]:
     }
 
 
+@lru_cache
+def gateway() -> Gateway:
+    """The AI gateway; locally it reaches only the self-hosted model (D-17).
+
+    No model serves a task until it passes that task's evaluation gate.
+    """
+    return Gateway(
+        default_routing(), PostgresStore(engine()), enabled=settings.ai_enabled, approved={}
+    )
+
+
+@app.task(name="erio.ai_fallback", ignore_result=True)
+def ai_fallback_task() -> dict[str, Any]:
+    from erio_ingest.ai_eval import approved_models
+
+    gate = gateway()
+    gate.approved = approved_models(engine(), gate.routing)
+    result = fill_with_ai(engine(), gate, utcnow)
+    if result.looked_at == AI_BATCH and result.checked:
+        ai_fallback_task.delay()  # more waiting, and models are answering
+    if result.filled:
+        index_changed_task.delay()
+    return {"looked_at": result.looked_at, "checked": result.checked, "filled": dict(result.filled)}
+
+
+@app.task(name="erio.ai_eval", ignore_result=True)
+def ai_eval_task() -> list[dict[str, Any]]:
+    """Nightly: every usable model against 100 rows of each labeled set."""
+    from erio_ingest.ai_eval import run
+
+    return [vars(score) for score in run(engine(), gateway(), limit=100)]
+
+
 @app.task(name="erio.dedup_all", ignore_result=True)
 def dedup_all_task() -> dict[str, Any]:
     """The nightly full pass; each normalizer batch already dedups its own jobs."""
@@ -147,8 +186,7 @@ def index_changed_task() -> dict[str, int]:
     raw = redis.get(WATERMARK_KEY)
     since = datetime.fromisoformat(raw.decode()) if isinstance(raw, bytes) else None
     result = sync_changed(engine(), search_client(), settings.search_alias, since)
-    if result.watermark is not None:
-        redis.set(WATERMARK_KEY, result.watermark.isoformat())
+    redis.set(WATERMARK_KEY, result.watermark.isoformat())
     return {"indexed": result.indexed, "removed": result.removed}
 
 

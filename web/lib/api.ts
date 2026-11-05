@@ -132,3 +132,21 @@ export const getCountries = () => get<Countries>("/v1/countries", {}, 60);
 export const getPlatforms = () => get<{ data: Platform[] }>("/v1/platforms", {}, 60);
 export const getStats = () => get<Stats>("/v1/stats", {}, 30);
 export const getOpenApi = () => get<Record<string, unknown>>("/v1/openapi.json", {}, 300);
+
+// The read-only MCP server (services/mcp) publishes its tools for OpenAI and
+// Gemini function calling. Its address for people (and assistants) to use
+// differs from the one this server reaches it at inside the stack.
+const MCP_URL = process.env.ERIO_MCP_URL ?? "http://localhost:8100";
+export const MCP_PUBLIC_URL = process.env.ERIO_MCP_PUBLIC_URL ?? "http://127.0.0.1:8100/mcp";
+
+export async function getToolDefinitions(format: "openai" | "gemini"): Promise<unknown | null> {
+  try {
+    const response = await fetch(`${MCP_URL}/tools/${format}.json`, {
+      next: { revalidate: 300 },
+      signal: AbortSignal.timeout(5000),
+    });
+    return response.ok ? await response.json() : null;
+  } catch {
+    return null;
+  }
+}

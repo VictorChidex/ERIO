@@ -3,7 +3,7 @@ name = "erio"
 version = "0.1.0"
 description = "ERIO monorepo: shared tooling for the Python services"
 requires-python = ">=3.12,<3.13"
-dependencies = ["erio-core", "erio-api", "erio-ingest"]
+dependencies = ["erio-core", "erio-api", "erio-ingest", "erio-mcp"]
 
 [dependency-groups]
 dev = [
@@ -17,12 +17,13 @@ dev = [
 package = false
 
 [tool.uv.workspace]
-members = ["packages/core", "services/api", "services/ingest"]
+members = ["packages/core", "services/api", "services/ingest", "services/mcp"]
 
 [tool.uv.sources]
 erio-core = { workspace = true }
 erio-api = { workspace = true }
 erio-ingest = { workspace = true }
+erio-mcp = { workspace = true }
 
 [tool.ruff]
 line-length = 100
@@ -35,7 +36,7 @@ select = ["E", "F", "W", "I", "B", "UP", "S", "ASYNC", "RUF"]
 allowed-confusables = ["–", "—", "ı"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["erio_core", "erio_api", "erio_ingest"]
+known-first-party = ["erio_core", "erio_api", "erio_ingest", "erio_mcp"]
 
 [tool.ruff.lint.per-file-ignores]
 # Tests use asserts and board names such as board_token="stripe", which the
@@ -47,7 +48,7 @@ known-first-party = ["erio_core", "erio_api", "erio_ingest"]
 [tool.mypy]
 python_version = "3.12"
 strict = true
-packages = ["erio_core", "erio_api", "erio_ingest"]
+packages = ["erio_core", "erio_api", "erio_ingest", "erio_mcp"]
 
 [[tool.mypy.overrides]]
 module = ["celery", "celery.*", "boto3", "boto3.*", "botocore", "botocore.*"]
@@ -59,7 +60,12 @@ module = ["erio_ingest.worker"]
 disallow_untyped_decorators = false
 
 [tool.pytest.ini_options]
-testpaths = ["packages/core/tests", "services/api/tests", "services/ingest/tests"]
+testpaths = ["packages/core/tests", "services/api/tests", "services/ingest/tests", "services/mcp/tests"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
 addopts = "--import-mode=importlib"
+
+# The MCP SDK's custom_route decorator is untyped.
+[[tool.mypy.overrides]]
+module = ["erio_mcp.server"]
+disallow_untyped_decorators = false

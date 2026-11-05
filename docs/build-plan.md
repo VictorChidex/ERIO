@@ -21,7 +21,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 9 | 11 | Globe and country filter | Done (60 fps to check on the reference laptop) |
 | 10 | 7 | Remaining 5 connectors and company list | In progress (company list: D-07) |
 | 11 | 8 | Deduplication | Done (admin merge page with the admin view) |
-| 12 | 12 | AI providers and MCP server | Not started |
+| 12 | 12 | AI providers and MCP server | In progress (Claude check by the owner; cloud providers wait for the vault) |
 | 13 | 2e | Terraform staging and deploy on merge | On hold until local is complete |
 | 14 | 13 | Observability, load and security | Not started |
 | 15 | 14 | Beta and launch gate | Not started |
@@ -144,9 +144,26 @@ Globe in `web/components/Globe.tsx` (d3-geo on a canvas, loaded after the page i
 
 ## Step 12 — AI providers and MCP server
 
-- [ ] Switching a task's provider needs only a config change.
-- [ ] Disabling any one provider mid-run causes no failed jobs.
-- [ ] Claude and at least one other MCP client can search ERIO jobs by country.
+Built in parts: (a) the AI gateway with 4 adapters; (b) a local model and the normalizer fallback; (c) the MCP server and tool definitions.
+
+- Part a: `erio_core/ai`. Adapters for OpenAI, Anthropic, Gemini and any OpenAI-compatible server call each provider's HTTPS API with httpx (D-17). Routing per task lives in `routing.json`. The gateway falls back on any failure, retries invalid JSON once, opens a circuit per provider, enforces daily dollar and token caps, never calls an unpriced model, caches answers by task and input, and logs every call to `ai_calls`. Contract tests cover each adapter's request, token header, response and failure kinds.
+- Part b: Ollama runs two small open models locally (`docker compose --profile ai up`), with no token. Every 5 minutes the fallback asks about jobs the rules left open: role "other", the location review queue, and pay mentioned but no salary found. A model serves a task only while its latest labeled-set score reaches the task's gate (role 90%, location 97%, salary 95%). A salary must come with the sentence it was read from, found in the job text, containing both amounts and a pay word. `python -m erio_ingest.ai_eval` scores every usable model and the rules on the same rows, nightly too.
+- Part c: `services/mcp`, a read-only MCP server at http://127.0.0.1:8100/mcp with `search_jobs`, `get_job`, `list_countries` and `list_platforms`, calling `/v1` like any client and passing on the caller's token. OpenAI and Gemini tool definitions are generated from the same tools and shown on the API page.
+
+- [x] Switching a task's provider needs only a config change, and the labeled-set scores are reported for both: tests switch routing between providers; `ai_eval` scored both local models (results below).
+- [x] Disabling any one provider mid-run causes no failed jobs: tests switch a provider off mid-run and fail every provider; jobs keep their rule results and are tried again later.
+- [ ] Claude and at least one other MCP client can search ERIO jobs by country: the official MCP Python client and a plain JSON-RPC client both searched Nigeria and Kenya on the local stack, and CI does the same search. Claude is for the owner to check (`claude mcp add --transport http erio http://127.0.0.1:8100/mcp`).
+- [ ] The OpenAI, Anthropic and Gemini adapters pass live contract tests: they pass recorded-shape tests now; live calls wait for the credential vault (D-17) and prices and a budget (D-18).
+
+Labeled-set scores on the local stack (60 rows per task, spread evenly; 2026-11-05):
+
+| Task | Rules | qwen2.5 1.5B | llama3.2 1B | Gate |
+| --- | --- | --- | --- | --- |
+| Role | 98.3% | 66.7% | 41.7% | 90% |
+| Location | 100% | 86.7% | 5.0% | 97% |
+| Salary | 100% | 83.3% | 15.0% | 95% |
+
+Neither local model reaches any gate, so locally the fallback calls no model and every job keeps its rules result. The salary scores are from before the quote check was added. Before the gate existed, the fallback wrote invented salaries (copied from the prompt, or company funding read as pay) into 43 local jobs. Those jobs were normalized again from their stored postings, and the gate and the quote check now stop this. Larger cloud models are expected to pass, which can be checked once D-17 and D-18 are settled.
 
 ## Step 13 — Observability, load and security
 

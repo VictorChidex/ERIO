@@ -38,17 +38,20 @@
     "role": {
       "models": ["local-qwen", "local-llama", "claude-haiku", "openai-small", "gemini-flash"],
       "daily_usd_cap": 5,
-      "daily_token_cap": 2000000
+      "daily_token_cap": 2000000,
+      "min_accuracy": 0.9
     },
     "location": {
       "models": ["local-qwen", "local-llama", "claude-haiku", "openai-small", "gemini-flash"],
       "daily_usd_cap": 5,
-      "daily_token_cap": 2000000
+      "daily_token_cap": 2000000,
+      "min_accuracy": 0.97
     },
     "salary": {
       "models": ["local-qwen", "local-llama", "claude-haiku", "openai-small", "gemini-flash"],
       "daily_usd_cap": 5,
-      "daily_token_cap": 2000000
+      "daily_token_cap": 2000000,
+      "min_accuracy": 0.95
     }
   }
 }

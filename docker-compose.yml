@@ -11,6 +11,9 @@ x-erio-addresses: &erio-addresses
   ERIO_REDIS_URL: redis://redis:6379/0
   ERIO_OPENSEARCH_URL: http://opensearch:9200
   ERIO_S3_ENDPOINT_URL: http://s3:9090
+  # The AI gateway's self-hosted model (decision D-17); used only when the
+  # stack runs with the "ai" profile, otherwise AI fallbacks just skip.
+  ERIO_AI_PROVIDER_URLS: '{"local": "http://ollama:11434/v1"}'
 
 services:
   postgres:
@@ -125,10 +128,59 @@ services:
       migrate: { condition: service_completed_successfully }
       redis: { condition: service_healthy }
 
+  # Read-only MCP server (spec section 13): assistants such as Claude connect
+  # to http://127.0.0.1:8100/mcp. It calls the API like any client; on the
+  # compose network that counts as internal (D-15), so no token is needed.
+  mcp:
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: erio-python:local
+    command: ["python", "-m", "erio_mcp"]
+    environment:
+      <<: *erio-addresses
+      ERIO_API_URL: http://api:8000
+      ERIO_SITE_URL: http://localhost:3000
+      # The website fetches the published tool definitions as mcp:8100.
+      ERIO_MCP_ALLOWED_HOSTS: '["127.0.0.1:*", "localhost:*", "mcp:*"]'
+    ports: ["127.0.0.1:8100:8100"]
+    depends_on:
+      api: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8100/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # Optional local AI model, no token needed (decision D-17). Start with
+  # `docker compose --profile ai up`; the first run downloads the image
+  # (about 8 GB) and the models (about 2.3 GB). No host port: only the worker
+  # talks to it, over the compose network.
+  ollama:
+    image: ollama/ollama:0.40.8
+    profiles: [ai]
+    volumes: [ollama-models:/root/.ollama]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  # One-off: fetches the models erio_core/ai/routing.json names, then exits.
+  ollama-models:
+    image: ollama/ollama:0.40.8
+    profiles: [ai]
+    entrypoint: ["sh", "-c", "ollama pull qwen2.5:1.5b && ollama pull llama3.2:1b"]
+    environment:
+      OLLAMA_HOST: ollama:11434
+    restart: "no"
+    depends_on:
+      ollama: { condition: service_healthy }
+
   web:
     build: { context: web }
     environment:
       ERIO_API_URL: http://api:8000
+      ERIO_MCP_URL: http://mcp:8100
+      ERIO_MCP_PUBLIC_URL: http://127.0.0.1:8100/mcp
     ports: ["127.0.0.1:3000:3000"]
     depends_on:
       api: { condition: service_healthy }
@@ -142,3 +194,4 @@ volumes:
   postgres-data:
   opensearch-data:
   s3-data:
+  ollama-models:

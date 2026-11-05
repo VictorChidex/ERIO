@@ -276,6 +276,13 @@ class Job(Base):
     # Why the normalizer could not resolve this job; such jobs are kept out
     # of country filters until fixed in the admin review queue.
     review_reason: Mapped[str | None] = mapped_column(Text)
+    # The AI fallback (erio_ingest.ai_fallback): when it last looked at what
+    # the rules left open, and which fields it filled (role, location,
+    # salary). Normalizing the job again clears both.
+    ai_checked_at: Mapped[datetime | None]
+    ai_filled: Mapped[list[str]] = mapped_column(
+        ARRAY(String(16)), server_default="{}", nullable=False
+    )
     # Last change to any field; the search indexer follows this.
     updated_at: Mapped[datetime] = mapped_column(
         server_default=func.now(), onupdate=func.now(), index=True
@@ -356,3 +363,20 @@ class AiCacheEntry(Base):
     model: Mapped[str] = mapped_column(String(80))
     answer: Mapped[str] = mapped_column(Text)
     created_at: Mapped[datetime] = created_at()
+
+
+class AiEval(Base):
+    """One model's score on one task's labeled set (the nightly AI evaluation)."""
+
+    __tablename__ = "ai_evals"
+    __table_args__ = (Index(None, "task", "at"),)
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    at: Mapped[datetime]
+    task: Mapped[str] = mapped_column(String(40))
+    # A routing model name, or "rules" for the rules engine on the same rows.
+    model: Mapped[str] = mapped_column(String(80))
+    rows: Mapped[int] = mapped_column(Integer)
+    answered: Mapped[int] = mapped_column(Integer)
+    accuracy: Mapped[float] = mapped_column(Double)
+    cost_usd: Mapped[float] = mapped_column(Double)

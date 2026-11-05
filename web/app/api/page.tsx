@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { ApiUnavailable, getOpenApi } from "@/lib/api";
+import { ApiUnavailable, getOpenApi, getToolDefinitions, MCP_PUBLIC_URL } from "@/lib/api";
 
 export const dynamic = "force-dynamic";
 
@@ -38,8 +38,21 @@ async function load(): Promise<Spec | null> {
 
 const PUBLIC = (path: string) => path.startsWith("/v1/") && !path.startsWith("/v1/health") && !path.includes("openapi") && !path.includes("docs");
 
+function ToolBlock({ title, tools }: { title: string; tools: unknown }) {
+  return (
+    <details className="tool-defs">
+      <summary>{title}</summary>
+      <pre className="code">{JSON.stringify(tools, null, 2)}</pre>
+    </details>
+  );
+}
+
 export default async function ApiPage() {
-  const spec = await load();
+  const [spec, openai, gemini] = await Promise.all([
+    load(),
+    getToolDefinitions("openai"),
+    getToolDefinitions("gemini"),
+  ]);
   const endpoints = spec
     ? Object.entries(spec.paths)
         .filter(([path]) => PUBLIC(path))
@@ -129,6 +142,35 @@ export default async function ApiPage() {
                 </div>
               ))}
             </div>
+
+            <h2 className="api-section-title" id="ai">
+              Use ERIO from AI assistants
+            </h2>
+            <p className="api-prose">
+              ERIO runs a read-only MCP server with four tools: <code>search_jobs</code>,{" "}
+              <code>get_job</code>, <code>list_countries</code> and <code>list_platforms</code>.
+              It calls this API, so the same tokens and rate limits apply. Add it to Claude Code
+              with:
+            </p>
+            <div className="code-wrap api-code">
+              <div className="ctop">
+                <span className="ctitle">Claude Code</span>
+              </div>
+              <pre className="code">{`claude mcp add --transport http erio ${MCP_PUBLIC_URL}`}</pre>
+            </div>
+            <p className="api-prose">
+              Other assistants that support MCP over HTTP take the same address. For OpenAI
+              function calling or Gemini function declarations, paste these definitions and send
+              each call to the matching <code>/v1</code> endpoint.
+            </p>
+            {openai && gemini ? (
+              <>
+                <ToolBlock title="OpenAI function calling (tools)" tools={openai} />
+                <ToolBlock title="Gemini function declarations" tools={gemini} />
+              </>
+            ) : (
+              <p className="api-prose">The tool definitions are unavailable right now.</p>
+            )}
 
             <h2 className="api-section-title">JobRecord</h2>
             <div className="schema-block">

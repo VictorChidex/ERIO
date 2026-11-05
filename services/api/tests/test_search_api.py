@@ -8,7 +8,7 @@ import pytest
 from fastapi.testclient import TestClient
 from opensearchpy import OpenSearch
 from redis import Redis
-from sqlalchemy import Engine, func, or_, select
+from sqlalchemy import Engine, func, or_, select, update
 from sqlalchemy.orm import Session
 
 from erio_api import access
@@ -263,6 +263,24 @@ def test_indexer_removes_closed_jobs_and_rebuild_swaps_the_alias(
     # Searchable: the four open jobs plus j_unknown (findable with status=unknown).
     assert after == {name} and not before & after and count == 5
     assert ids(api.get("/v1/jobs")) == {"j_ng_lagos", "j_ng_remote", "j_world", "j_eu_remote"}
+
+
+def test_sync_reads_each_change_once(
+    api: TestClient, migrated_engine: Engine, search_alias: str
+) -> None:
+    with Session(migrated_engine) as session, session.begin():
+        # Written a minute ago: well before the clock margin.
+        session.execute(update(Job).values(updated_at=func.now() - timedelta(minutes=1)))
+    first = sync_changed(migrated_engine, client(), search_alias, None)
+    assert first.indexed + first.removed == 8
+    # Nothing changed since: the next sync reads nothing, however often it runs.
+    again = sync_changed(migrated_engine, client(), search_alias, first.watermark)
+    assert (again.indexed, again.removed) == (0, 0)
+    with Session(migrated_engine) as session, session.begin():
+        session.get_one(Job, "j_gb_london").status = "closed"
+    changed = sync_changed(migrated_engine, client(), search_alias, again.watermark)
+    assert (changed.indexed, changed.removed) == (0, 1)
+    assert "j_gb_london" not in ids(api.get("/v1/jobs"))
 
 
 def test_merged_job_leaves_search_and_its_id_redirects(

@@ -1,4 +1,4 @@
-# One image for every Python service (API, worker). Compose picks the command.
+# One image for every Python service (API, worker, MCP). Compose picks the command.
 # Holds code and dependencies only; configuration arrives as ERIO_* addresses
 # at runtime and no credential is ever baked in (decision D-08).
 
@@ -19,11 +19,15 @@ COPY pyproject.toml uv.lock .python-version ./
 COPY packages/core/pyproject.toml packages/core/
 COPY services/api/pyproject.toml services/api/
 COPY services/ingest/pyproject.toml services/ingest/
+COPY services/mcp/pyproject.toml services/mcp/
 RUN uv sync --frozen --no-dev --no-install-workspace
 
 COPY packages/core packages/core
 COPY services/api services/api
 COPY services/ingest services/ingest
+COPY services/mcp services/mcp
+# Labeled sets for the nightly AI evaluation (erio_ingest.ai_eval).
+COPY fixtures/labeled fixtures/labeled
 RUN uv sync --frozen --no-dev --no-editable
 
 RUN useradd --create-home --uid 10001 erio

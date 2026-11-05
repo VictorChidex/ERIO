@@ -14,6 +14,7 @@ from erio_core.testing import alembic_config
 
 EXPECTED_TABLES = {
     "ai_cache",
+    "ai_evals",
     "ai_calls",
     "api_tokens",
     "board_discovery",

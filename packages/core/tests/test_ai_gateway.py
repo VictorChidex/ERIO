@@ -154,6 +154,14 @@ def test_disabled_provider_is_skipped_mid_run() -> None:
     assert (first.model, off.model) == ("a1", "b1")  # type: ignore[union-attr]
 
 
+def test_only_approved_models_serve_when_approvals_are_set() -> None:
+    a, b = Fake("a", GOOD), Fake("b", GOOD)
+    route = routing(["a1", "b1"])
+    assert gateway(route, a, b, approved={"role": {"b1"}}).complete("role", ASK, Role).model == "b1"  # type: ignore[union-attr]
+    assert gateway(route, a, b, approved={}).complete("role", ASK, Role) is None
+    assert a.calls == []
+
+
 def test_skips_unpriced_models_and_providers_without_a_token() -> None:
     a = Fake("a", GOOD)
     b = Fake("b", GOOD, needs_token=True)

@@ -19,9 +19,10 @@ The full technical spec and the clickable prototype live outside this repo and a
 
 | Path | What lives there |
 | --- | --- |
-| `packages/core` | Shared Python code (`erio_core`): settings now, models and connectors later |
+| `packages/core` | Shared Python code (`erio_core`): settings, database models, connectors, normalizer, dedup rules and the AI gateway (`erio_core.ai`) |
 | `services/api` | Public REST API (`erio_api`, FastAPI) |
 | `services/ingest` | Crawl scheduler and workers (`erio_ingest`, Celery) |
+| `services/mcp` | Read-only MCP server (`erio_mcp`): AI assistants search ERIO jobs as a tool |
 | `web/` | Website (Next.js 15, TypeScript strict), ported from the prototype |
 | `docs/` | Decisions, sources and the build plan |
 
@@ -43,8 +44,27 @@ docker compose up --build
 | Redis 7 | localhost:6379 | Queue and rate limits |
 | OpenSearch 2 | http://localhost:9200 | Search; security plugin off locally |
 | Fake S3 | http://localhost:9090 | Adobe S3Mock with bucket `erio-raw` (decision D-13) |
+| MCP server | http://127.0.0.1:8100/mcp | Tools `search_jobs`, `get_job`, `list_countries`, `list_platforms`; OpenAI and Gemini definitions at `/tools/openai.json` and `/tools/gemini.json` |
 
 Nothing in the stack needs a credential, and every port listens on 127.0.0.1 only. Stop with `docker compose down`; add `-v` to also delete the local data.
+
+**Local AI (optional).** The AI gateway fills in roles, locations and salaries the rules could not read, using a small open model through Ollama, which needs no token (decision D-17). Add the `ai` profile to run it; the first start downloads the Ollama image (about 8 GB) and two models (about 2.3 GB). Without it, AI fallbacks are skipped and jobs keep their rule results.
+
+```bash
+docker compose --profile ai up --build
+```
+
+Score the models against the labeled sets (`--limit` samples rows evenly):
+
+```bash
+docker compose exec worker python -m erio_ingest.ai_eval --limit 60
+```
+
+**Claude.** Add the MCP server to Claude Code, then ask, for example, for remote engineering jobs open to Nigeria:
+
+```bash
+claude mcp add --transport http erio http://127.0.0.1:8100/mcp
+```
 
 ## Python services
 

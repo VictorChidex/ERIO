@@ -130,6 +130,10 @@ def _normalize_one(
         "company_id": board.company_id,
         "dedup_key": fingerprint.key(),
         "simhash": fingerprint.simhash,
+        # A new version of the posting: the AI fallback looks at it afresh
+        # (its earlier answers come back from the cache when nothing changed).
+        "ai_checked_at": None,
+        "ai_filled": [],
         "posted_at": partial.posted_at,
         "indexed_at": now,
         "updated_at": now,

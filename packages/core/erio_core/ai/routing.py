@@ -56,6 +56,9 @@ class TaskConfig(BaseModel):
     models: list[str] = Field(min_length=1)
     daily_usd_cap: float = Field(ge=0)
     daily_token_cap: int = Field(ge=0)
+    # A model serves this task only once its latest labeled-set score reaches
+    # this (the spec's gate for the task); see erio_ingest.ai_eval.
+    min_accuracy: float = Field(default=1.0, ge=0, le=1)
 
 
 class Routing(BaseModel):

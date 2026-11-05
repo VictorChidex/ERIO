@@ -48,6 +48,14 @@ class Settings(BaseSettings):
     ai_routing_path: str | None = None
     ai_provider_urls: dict[str, str] = {}
     ai_timeout_s: float = 60.0
+    # The labeled sets the nightly AI evaluation scores models on.
+    labeled_dir: str = "fixtures/labeled"
+
+    # MCP server (services/mcp): the public API it calls, the website its job
+    # links point to, and the Host headers it answers to.
+    api_url: str = "http://127.0.0.1:8000"
+    site_url: str = "http://localhost:3000"
+    mcp_allowed_hosts: list[str] = ["127.0.0.1:*", "localhost:*", "[::1]:*"]
 
     @property
     def sqlalchemy_url(self) -> str:

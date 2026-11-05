@@ -6,6 +6,7 @@
 !.python-version
 !packages/
 !services/
+!fixtures/labeled/*.tsv
 **/__pycache__
 **/*.py[cod]
 **/.pytest_cache
