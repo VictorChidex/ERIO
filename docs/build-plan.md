@@ -82,6 +82,7 @@ Status engine in `services/ingest/erio_ingest/status.py`; failure-simulation sui
 Built in parts: (a) location and country resolution; (b) salary, role and title; (c) the normalizer that writes canonical jobs, FX rates and the review queue.
 
 - [x] Part a: `erio_core.normalize.location` resolves country, city, state, remote status and scope from the location text, then the source's office hints, against an offline GeoNames gazetteer (`erio_core/data/gazetteer.json.gz`, CC BY 4.0). Labeled set: 305 strings (`fixtures/labeled/locations.tsv`), 220 of them real; country 99.7%, work type 100%.
+- [x] Part b: salary (`normalize.salary`: ranges in any currency, separator style and period, only after a pay word), role (`normalize.roles`: ordered rules on title then departments), titles and descriptions (`normalize.text`: noise removed, HTML sanitized to an allow-list with nh3). Labeled sets: 136 salaries (salary 100%, gate 95%), 300 roles (99.0%, gate 90%).
 - [ ] Country accuracy ≥ 97%, salary ≥ 95%, role ≥ 90% on the labeled sets.
 - [ ] Every job has a country code or is marked worldwide-remote.
 - [ ] Salaries display in the posted currency; filtering uses the USD value.

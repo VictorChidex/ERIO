@@ -1,0 +1,309 @@
+# Labeled job titles for the role classifier (spec section 6: >= 90%).
+# Columns: title, departments (as the source lists them), expected role_category.
+# Rows 1-220 are real titles from crawled Greenhouse boards (2026-11-05), labeled by hand;
+# the rest are written to cover roles the first boards miss. Boundaries used:
+# sales includes sales engineers, solutions architects/consultants and value engineers;
+# operations includes finance, legal, people, risk, compliance and customer support/success;
+# data includes data scientists, data engineers, analysts and ML; product includes
+# technical program managers; other is for roles outside ERIO's categories.
+title	departments	role
+Account Executive, Product Sales (Billing) - Hunter	1644 Product Sales - Prime Billing	sales
+Merchant Onboarding Manager	Merchant Operations	operations
+Sales Manager, Platforms - UK	1180 GEO Sales HQ (EMEA)	sales
+Team Lead, System Administrator	DevOps & Infrastructure	engineering
+Staff Product Designer	Product Design	design
+Account Executive - Travel, Ticketing & Hospitality (Hunter)	1185 Account Executives (EMEA)	sales
+Credit Risk Operations Analyst (CDMX)	4168 SDC - Credit Operations	operations
+Technical Program Manager - AI Tooling	Business Operations	product
+Staff Applied Data Scientist, Pricing	Data Science	data
+Software Quality Assurance Engineer	8512 Terminal - Eng	engineering
+Staff Platform Product Manager, Payments Regional Growth	Product Management	product
+Senior Staff Software Engineer, Marketing Technology	Software Engineering	engineering
+Senior Product Manager, Issuing	Product Management	product
+Senior Customer Reliability Engineer	Customer Support	engineering
+Software Engineer, Core Technology	8127 Core Infrastructure	engineering
+Solutions Consultant, SMB (London, United Kingdom)	Sales	sales
+AI Research Scientist - Datadog AI Research (DAIR)	Dev Eng	data
+Senior Deal Desk Analyst	Deal Desk	operations
+Manager, Sales Development - LATAM (Spanish Speaking)	Sales Development	sales
+Senior Software Engineer (Institutional, Client Lifecycle)	Engineering - Backend	engineering
+Director, People Partners - Product, Design & Engineering	People	operations
+Backend/API Engineer, Money as a Service (Product)	8531 Crypto Product	engineering
+Specialist Solutions Architecture, Link	1154 Specialized Solutions Architecture	sales
+Head of Specialist Solutions Architecture, Revenue Suite (AMER)	1154 Specialized Solutions Architecture	sales
+Engineering Manager, Machine Learning - Credit Risk	8535 Risk Credit & Fraud	engineering
+Data Science Intern	Internships & Emerging Talent Positions	data
+Senior Corporate Communications Manager	Communications	marketing
+Senior Manager, Community Policy	Public Policy	operations
+Senior Developer Advocate - Modern App Development	Community	marketing
+Field Marketing Manager, SMB and Mid-Market - EMEA	2312 Marketing - EMEA	marketing
+Partner Development Manager	1630 Alliances & Channels	sales
+Senior Manager, Community Marketing	Marketing	marketing
+Senior Named Account Executive	Field Sales	sales
+Product Partner Manager, Scaled	Business Development	sales
+VP, Investor Relations	Finance	operations
+Associate Deployment Engineer - Galaxy Graduate Program	Services	engineering
+Verifications Operations Associate	4374 SDC - Partner Risk Operations	operations
+Senior Services Architect	Technical Post Sales	engineering
+Principal Enterprise Architect	Value Engineering	sales
+Money Laundering Reporting Officer, ADGM	International Expansion	operations
+Intern Applied AI Solution Consulting (Italy)	Value Engineering	sales
+Staff Software Engineer	Engineering - Security	engineering
+Talent Acquisition Partner	People	operations
+Senior Customer Engineer, Public Sector Federal	Solution Engineering	sales
+Customer Support Specialist ll	Customer Experience	operations
+Sales Development Representative (Polish Fluency)	1133 EMEA Sales Development Reps	sales
+Network Security Engineer	Customer Support	engineering
+Account Executive, Commercial (Hunter)	1651 Velocity - Account Executives (NA)	sales
+Senior Commercial Counsel	Legal Operations	operations
+Strategic Account Executive (FED)	Enterprise Sales	sales
+Staff Software Engineer, Customer Administration	Enterprise Applications	engineering
+Professional Services Consultant, Zero Trust	Professional Services	engineering
+Major Account Manager	Enterprise Sales	sales
+Senior Majors Account Executive (Meta) - San Francisco/Bay Area	Sales	sales
+Head, Innovation Hubs	Communications & PR	marketing
+Principal Partner Engineer, Japan (Based in Tokyo)	Solution Engineering	sales
+AI & Value Transformation Consultant (Supply Chain & Manufacturing)	Value Engineering	sales
+Senior Named Account Executive,  (MN )	Field Sales	sales
+Senior Complaints Analyst	Customer Experience	operations
+Senior Product Manager, Agentic Source Code	Core DevOps	product
+Staff Software Engineer - Fraud Intelligence	Development	engineering
+Model Validation Senior Manager	Risk & Compliance	operations
+GTM Data Specialist, Consumption & Revenue Operations	Sales Ops	operations
+Staff Solutions Architect, AI Subject Matter Expert	SA	sales
+Senior Associate, Business Development	Business Development & Partnerships	sales
+Senior Territory Account Executive - Birmingham, AL	Mid Market	sales
+Manager I, Engineering - Agent Data Plane	Leadership	engineering
+Customer Reliability Engineer	Customer Support	engineering
+Product Designer, Growth	Global Operations	design
+Business Relationship Manager (Lagos)	Enterprise Sales	sales
+Product Cost Analyst	Accounting and Finance	operations
+Senior Backend Engineer	Engineering	engineering
+Customer Support Specialist ll	Customer Experience	operations
+Principal Project Manager	Services	operations
+Strategic Account Executive - MENA	EMEA - Enterprise	sales
+Product Marketing Manager, Radar	2317 Marketing - PMM	marketing
+Senior Product Designer, Coinbase One	Design	design
+Trust & Safety Quality Analyst	Global Platforms	operations
+Commercial Account Executive - Israel	Commercial Sales	sales
+Lead SEC Analyst	FP&A	operations
+Account Executive, Hunter (Central Eastern Europe)	1185 Account Executives (EMEA)	sales
+Account Executive, Mid-Market, Mandarin Speaking (Singapore)	Sales	sales
+Communications Manager, Policy & Public Affairs	Marketing & Communications	marketing
+Senior Software Engineer - Addressing Team	Engineering	engineering
+Head of Finance (PCF 11) & Head of Safeguarding (PCF 56)	Finance	operations
+Technical Accounting Policy Manager	Finance & Accounting	operations
+Front Desk Associate - Amsterdam	Business Operations	operations
+Internal Communications Manager	Marketing & Communications	marketing
+Workforce Business Partner (North Central)	People Operations	operations
+Account Executive, Existing Business, French	1185 Account Executives (EMEA)	sales
+Senior Territory Account Executive (Digital Native), ANZ (Based in Brisbane/Sydney/Melbourne)	Mid Market	sales
+Regional Manager, Sales Engineering - Key Accounts (East)	Enterprise Sales Engineering	sales
+Regional Security Officer (South East)	Moniepoint MFB	operations
+Product Manager II, Growth - Notifications	Product	product
+Strategic Account Executive	Enterprise Sales	sales
+Engineering Manager, Checkout Optimization	8582 Optimized Checkout - Eng	engineering
+Enterprise Security Sales Specialist	Enterprise Sales	sales
+Sales Development Representative (Spanish fluency)	1132 AMER Sales Development Reps	sales
+Senior Partner Account Manager, Southeast & MidAtlantic Region	Sales	sales
+Lead Data Scientist	Data	data
+Office Operations Associate	Business Operations	operations
+Data Scientist	Engineering	data
+Senior Manager Business Audit | French Market	Group Internal Audit	operations
+Account Executive, Cross Border China	1195 Account Executives (APAC)	sales
+Business Operations, Senior Associate	Business Operations & Strategy	operations
+Account Executive, Platforms Hunter (Spanish fluency)	1185 Account Executives (EMEA)	sales
+Commercial & Mid-Market Sales Engineer	Commercial & Mid-Market Sales Engineering	sales
+Customer Success Associate	Commercial Customer Success	operations
+Controls Product Senior Manager	Operations	product
+Senior Territory Account Executive - Beijing	Mid Market	sales
+Commercial Account Executive	Commercial Sales	sales
+Associate Applied (AI) Value Engineer (Benelux) - Orbit Program	Value Engineering	sales
+Offensive Security Engineer, AI	Security & Privacy	engineering
+Senior Staff Data Engineer, Foundational Data	Software Engineering	data
+Software Engineer, Metronome Infrastructure	8421 RevSuite Foundations	engineering
+Account Executive, SMB Hunter (Central Eastern Europe)	1185 Account Executives (EMEA)	sales
+Specialist, Market Operations	Finance & Accounting	operations
+Senior Professional Services Engineer	Professional Services	engineering
+Staff Engineer - Cloud Networks	Dev Eng	engineering
+Staff Software Engineer - Consumer Revenue	Product Engineering	engineering
+Senior Manager, Data Science	Data	data
+Solutions Architect, New Business, EMEA	SA	sales
+Technical Program Manager - Infrastructure	Engineering	product
+Statutory Manager	Accounting and Finance	operations
+Professional Services Account Executive	1140 Professional Services	sales
+Content Optimization Specialist	Community	marketing
+Sales Development Representative - Summer 2027 Graduates (Boston)	Sales Development	sales
+Senior US & International Tax Manager, Tax Planning	Finance	operations
+Account Manager	Account Management	sales
+Senior Value Engineer	Value Engineering	sales
+Senior Backend Engineer, AI Engineering: Chat	AI Engineering	engineering
+Senior Customer Success Architect - Singapore	Customer Success	operations
+Commercial Account Executive - Mid-Market, Canada	AMER - Commercial	sales
+Finance Assistant - Part-Time (Categorie Protette L. 68/99)	Finance	operations
+Software Engineer, Supportability Decisions	8217 Risk Engineering	engineering
+Customer Success Enablement Business Partner	1512 Global Sales Enablement	operations
+Head of Engineering, Field Verification	Pool: Engineering	engineering
+Client Director - Financial Services	Sales	sales
+Assistant Management Accountant	Finance	operations
+Staff Data Scientist, Causal Inference & Experimentation	Data Science & Engineering	data
+Senior Manager, Business Technology Enablement	Engineering & Technology	engineering
+Senior Customer Engineer, (Santiago, Chile).	Solution Engineering	sales
+Engineering Manager, Terminal	8512 Terminal - Eng	engineering
+Strategic Account Executive	Enterprise Sales	sales
+Senior Process Intelligence & Supply Chain Transformation Consultant - Manufacturing/Production	Value Engineering	sales
+Lead Applied Value Engineer- (Hi-tech)	Value Engineering	sales
+Senior Software Engineer, Mobile QA	Engineering	engineering
+GTM Strategy & Operations Senior Associate	Sales Strategy	operations
+Engineering Manager - Bank Payments	Development	engineering
+Manager I, Engineering - Cloud FinOps	Leadership	engineering
+Accounting Manager, GL Operations & Intercompany	Finance & Accounting	operations
+Proposal Lead	1530 GTM Industries	sales
+Technical Account Manager 2 - Boston	Technical Post Sales	sales
+Senior Analyst, Advanced Analytics - Gurugram	Analytics	data
+Training Program Manager	1512 Global Sales Enablement	operations
+Lead Technical Product Manager — Machine Learning Platform	Tech - Ops Platforms & AI Enablement	product
+Senior Account Executive	EMEA - Commercial	sales
+Senior AI Applied Value Architect	Value Engineering	sales
+Senior AI Transformation & Innovation Consultant	Value Engineering	sales
+Senior Engineering Manager, AI Foundations	Engineering - Managers	engineering
+FP&A Analyst GTM	Finance	operations
+Senior CDD Risk Analyst	Merchant Operations	operations
+Senior Software Engineer (Java) - Banking Accounts	Development	engineering
+Tax Manager (12-month FTC)	Corporate Services	operations
+Associate Deployment Engineer - Galaxy Graduate Program	Services	engineering
+Senior Enterprise Account Manager, Adyen for Platforms	Account Management	sales
+Regional Sales Director	EMEA - Enterprise	sales
+Offline Customer Support Officer (Ore, Ondo State)	Customer Success	operations
+Video Script Writer	Community	marketing
+Staff Product Designer	Product Design	design
+Compensation Program Manager	People	operations
+Enterprise Sales Manager	Sales	sales
+Workplace Operations Manager - Dublin	6620 Workplace Services	operations
+Project Operation Specialist	Professional Services	operations
+Onboarding Manager, Customer Experience (Tokyo, Japan)	Sales	operations
+Senior Product Designer, Consumer Revenue	Product Design	design
+Engineering Manager, Agentic Commerce	8510 Agentic Commerce	engineering
+Product Manager, Collaboration Tools	Product	product
+Customer Experience Manager - Hebrew Speaking	Customer Renewals	operations
+Business Relationship Manager Kwara	Enterprise Sales	sales
+Staff Software Engineer, IAM Control Plane	8551 OAP - Eng	engineering
+Senior Machine Learning Engineer - AML Tech	Development	data
+Early Careers Talent Acquisition Specialist	Talent Acquisition	operations
+Software Engineer, Network Performance & Reliability (Argo)	Engineering	engineering
+Researcher, Figma Agentic Experiences	Design	design
+Partner Development Manager, AI Partnerships	1630 Alliances & Channels	sales
+Senior Product Manager, Identity & Risk Intelligence	Product Management	product
+Software Engineering Intern (Summer)	Engineering Interns	engineering
+Associate Renewals Manager - France	Renewals	sales
+Senior Software Engineer, Cloudflare for SaaS	Engineering	engineering
+Account Executive, Large Users Platforms (China Cross Border)	1195 Account Executives (APAC)	sales
+Senior Support Specialist, Premium Support	Community Support	operations
+Strategic Account Executive (SLED)	Enterprise Sales	sales
+Business Systems Architect	Business Operations	engineering
+MLRO Thailand	Global Compliance	operations
+Lead Deployment Engineer	Services	engineering
+Commercial Account Executive (Benelux)	Commercial Sales	sales
+Senior Product Designer, Developer Foundations	Design	design
+IT Service Engineer	Corporate	engineering
+Solutions Architect - SLED (West)	Solutions Architecture - PubSec	sales
+Market Associate	Sales	sales
+Data Entry Officer (Edo)	Moniebook Business Management Tools	operations
+Partner Development Manager, Alliances and Channels	1630 Alliances & Channels	sales
+Senior Talent Acquisition Business Partner - APAC	People & Places	operations
+Regional Director - Enterprise Sales	Enterprise Sales	sales
+Sales Network Manager - Regional - Jumia (Full Time)	Marketing	sales
+Strategy & Operations, Infrastructure	8129 Global Networking	operations
+Customer Success Manager, Enterprise	Global Operations	operations
+Account Executive, SMB, Velocity Hunter, Spanish speaking	1185 Account Executives (EMEA)	sales
+Major Account Executive, Financial Services - US East	AMER - Enterprise	sales
+Staff Backend Engineer, Developer Experience	Platforms Engineering	engineering
+Software Engineer - Data Infrastructure	Engineering	engineering
+Manager, Payments Performance (Southeast Asia and China Market)	1342 Payment Performance	operations
+Principal Enterprise Architect - AI & SAP Integrations	Value Engineering	sales
+Business Development Expert	Commercial Americas	sales
+Presales Customer Engineer	Solution Engineering	sales
+Senior Commercial Account Executive, MENA	Field Sales	sales
+Staff Engineer - Payments (Mobile & Terminal Experiences)	Development	engineering
+Senior Data Engineer	Business Intelligence	data
+Deal Pricing	6444 Deal Pricing	operations
+Frontend Developer		engineering
+Senior Android Developer	Mobile	engineering
+DevOps Engineer	Platform	engineering
+Site Reliability Engineer		engineering
+iOS Engineer		engineering
+Embedded Firmware Engineer	Hardware	engineering
+Cloud Infrastructure Engineer		engineering
+Security Analyst, SOC	Security	engineering
+QA Automation Tester		engineering
+Full Stack Developer (React/Node)		engineering
+CTO		engineering
+VP of Engineering		engineering
+Data Analyst		data
+Business Intelligence Analyst		data
+Analytics Engineer		data
+Machine Learning Engineer		data
+Senior Data Scientist - NLP		data
+Head of Data		data
+AI Researcher		data
+Product Owner		product
+Head of Product		product
+Group Product Manager		product
+Associate Product Manager		product
+Product Lead, Payments		product
+UX Researcher		design
+UI Designer		design
+Brand Designer		design
+Motion Designer		design
+Content Designer		design
+Design Director		design
+Graphic Designer	Marketing	design
+Growth Marketing Manager		marketing
+SEO Specialist		marketing
+Content Marketing Manager		marketing
+Performance Marketing Lead		marketing
+Demand Generation Manager		marketing
+Social Media Manager		marketing
+PR Manager		marketing
+Events Manager	Marketing	marketing
+Copywriter		marketing
+Brand Manager		marketing
+Inside Sales Representative		sales
+Business Development Representative		sales
+Account Manager		sales
+Key Account Manager - FMCG		sales
+Sales Engineer		sales
+Solutions Consultant		sales
+Head of Sales, West Africa		sales
+Regional Sales Manager		sales
+Recruiter		operations
+HR Generalist		operations
+Legal Counsel		operations
+Paralegal		operations
+Office Manager		operations
+Executive Assistant to the CEO		operations
+Chief of Staff		operations
+Customer Success Manager		operations
+Customer Support Agent		operations
+Supply Chain Analyst		operations
+Logistics Coordinator		operations
+Compliance Officer		operations
+Risk Analyst		operations
+Financial Analyst		operations
+Payroll Specialist		operations
+Procurement Manager		operations
+Operations Manager		operations
+Program Manager, Social Impact		operations
+Head of People		operations
+Accountant		operations
+Internal Auditor		operations
+Registered Nurse		other
+Chef de Partie		other
+Delivery Driver		other
+Mechanic		other
+Pharmacist		other
+Teacher, Mathematics		other
+Electrician		other
+Barista		other
+Physiotherapist		other
+Architect (Buildings)		other

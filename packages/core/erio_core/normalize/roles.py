@@ -1,0 +1,233 @@
+"""Classify a job into one of ERIO's role categories (spec section 6).
+
+Rules first, on the title and then the source's departments; a learned
+classifier can replace them later. The order matters: "Sales Engineer" is
+sales, "Product Designer" is design, "Engineering Manager, Machine Learning"
+is engineering. Boundaries: sales includes sales engineers, solutions
+architects and value engineers; operations includes finance, legal, people,
+risk, compliance and customer support and success; data includes analysts
+and machine learning; product includes technical program managers.
+"""
+
+import re
+
+from erio_core.schemas import RoleCategory
+
+
+def _words(*patterns: str) -> re.Pattern[str]:
+    return re.compile("|".join(rf"\b{p}" for p in patterns), re.IGNORECASE)
+
+
+RULES: list[tuple[RoleCategory, re.Pattern[str]]] = [
+    (
+        "other",
+        _words(
+            r"nurse",
+            r"chef\b",
+            r"cook\b",
+            r"driver\b",
+            r"mechanic",
+            r"pharmacist",
+            r"teacher",
+            r"electrician",
+            r"plumber",
+            r"barista",
+            r"physiotherapist",
+            r"waiter",
+            r"cashier",
+        ),
+    ),
+    (
+        "sales",
+        _words(
+            r"sales engineer",
+            r"solutions? architect",
+            r"solutions? consult",
+            r"solution engineer",
+            r"customer engineer",
+            r"value (?:engineer|architect)",
+            r"partner engineer",
+            r"pre-?sales",
+            r"enterprise architect",
+            r"transformation consultant",
+        ),
+    ),
+    ("marketing", _words(r"developer advocate", r"developer relations", r"devrel\b")),
+    (
+        "design",
+        _words(
+            r"designer",
+            r"ux\b",
+            r"ui\b",
+            r"user research",
+            r"design (?:director|lead|manager)",
+            r"head of design",
+        ),
+    ),
+    (
+        "product",
+        _words(
+            r"product (?:senior |lead |group )?(?:manager|owner|lead|director)",
+            r"head of product",
+            r"technical program manager",
+            r"tpm\b",
+            r"vp,? product",
+        ),
+    ),
+    (
+        "engineering",
+        _words(
+            r"engineering manager",
+            r"head of engineering",
+            r"manager\b[^,]*,? engineering",
+            r"vp,? (?:of )?engineering",
+            r"director,? (?:of )?engineering",
+            r"cto\b",
+            r"software (?:engineer|developer)",
+            r"(?:back|front)-?end",
+            r"full[- ]?stack",
+            r"site reliability",
+            r"sre\b",
+            r"devops",
+            r"system administrator",
+            r"sysadmin",
+            r"qa\b",
+            r"quality assurance",
+            r"tester\b",
+            r"firmware",
+            r"embedded",
+            r"security (?:engineer|analyst)",
+            r"soc\b",
+            r"network (?:security )?engineer",
+            r"cloud\b",
+            r"infrastructure engineer",
+            r"deployment engineer",
+            r"(?:professional )?services (?:engineer|architect|consultant)",
+            r"it service",
+            r"staff engineer",
+            r"customer reliability engineer",
+            r"business systems",
+            r"business technology",
+            r"(?:ios|android|mobile) (?:engineer|developer)",
+        ),
+    ),
+    (
+        "data",
+        _words(
+            r"data scien",
+            r"data engineer",
+            r"data analyst",
+            r"analytics",
+            r"machine learning",
+            r"ml\b",
+            r"ai research",
+            r"research scientist",
+            r"applied scientist",
+            r"business intelligence",
+            r"bi analyst",
+            r"head of data",
+            r"statistic",
+        ),
+    ),
+    (
+        "marketing",
+        _words(
+            r"marketing",
+            r"communications",
+            r"pr\b",
+            r"public relations",
+            r"content",
+            r"seo\b",
+            r"social media",
+            r"brand",
+            r"copywriter",
+            r"evangelist",
+            r"events? manager",
+            r"demand gen",
+            r"writer",
+        ),
+    ),
+    (
+        "sales",
+        _words(
+            r"account executive",
+            r"ae\b",
+            r"sales",
+            r"business development",
+            r"bdr\b",
+            r"sdr\b",
+            r"account manager",
+            r"partner (?:development|account|manager)",
+            r"renewals",
+            r"client director",
+            r"relationship manager",
+            r"proposal",
+            r"market associate",
+            r"key account",
+        ),
+    ),
+    (
+        "operations",
+        _words(
+            r"operations?\b",
+            r"\bops\b",
+            r"financ",
+            r"accountant",
+            r"accounting",
+            r"tax\b",
+            r"audit",
+            r"legal",
+            r"counsel",
+            r"paralegal",
+            r"compliance",
+            r"risk",
+            r"\baml\b",
+            r"mlro",
+            r"money laundering",
+            r"people",
+            r"hr\b",
+            r"human resources",
+            r"talent",
+            r"recruit",
+            r"payroll",
+            r"compensation",
+            r"workplace",
+            r"office",
+            r"front desk",
+            r"assistant",
+            r"chief of staff",
+            r"support",
+            r"customer success",
+            r"customer experience",
+            r"complaints",
+            r"trust (?:&|and) safety",
+            r"policy",
+            r"investor relations",
+            r"procurement",
+            r"supply chain",
+            r"logistics",
+            r"program manager",
+            r"project manager",
+            r"deal desk",
+            r"pricing",
+            r"strategy",
+            r"data entry",
+            r"security officer",
+            r"onboarding",
+            r"controller",
+            r"fp&a",
+            r"statutory",
+            r"treasury",
+            r"business partner",
+        ),
+    ),
+    ("engineering", _words(r"engineer", r"developer", r"architect", r"programmer")),
+]
+
+
+def classify_role(title: str, departments: list[str] | None = None) -> RoleCategory:
+    for text in (title, " ".join(departments or [])):
+        for category, pattern in RULES:
+            if pattern.search(text):
+                return category
+    return "other"

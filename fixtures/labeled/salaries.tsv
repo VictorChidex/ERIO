@@ -1,0 +1,141 @@
+# Labeled salary statements for the normalizer's salary gate (spec section 6: >= 95%).
+# Columns: text, min, max, currency, period. NONE in min means no salary should be found.
+# Rows 1-70 are real phrasings from crawled Greenhouse postings (2026-11-05); the rest
+# are written to cover currencies, formats and periods the first boards miss.
+text	min	max	currency	period
+Salary: $190,400 - $285,600/yr This salary range represents the base salary range for the role	190400	285600	USD	year
+This role may also be eligible for bonus, equity, benefits, and Employee Travel Credits. Pay Range $212,000 — $265,000 USD	212000	265000	USD	year
+United States Salary Range $85,200 — $144,000 USD How GitLab Supports Full-Time Employees	85200	144000	USD	year
+Annual Base Salary Range: $140,000 — $348,000 USD At Figma we celebrate and support our differences.	140000	348000	USD	year
+Revenue suite Product Sales is tasked with attacking a $100B market opportunity for back office finance automation	NONE
+The reasonably estimated yearly salary for this role at Datadog is: $131,000 — $164,000 USD About Datadog	131000	164000	USD	year
+Annual base salary range (excluding equity and bonus): $243,865 — $286,900 USD Application Limit	243865	286900	USD	year
+Through our subsidiaries, Moniepoint Inc. processes over $250 billion in digital payment transaction value annually.	NONE
+With US$130bn+ processed annually across 30+ countries, we handle recurring and one-off payments	NONE
+This role's annual base salary range is $154,000 - $200,000 plus RSUs.	154000	200000	USD	year
+Applications for this role are accepted on an ongoing basis. Base Salary $132,000 — $148,500 USD Why Discord?	132000	148500	USD	year
+The base salary range below is for the role in New York, based on a Full Time Schedule. $212,000 — $270,000 USD	212000	270000	USD	year
+Annual base salary range (excluding equity and bonus): $212,200 — $212,200 SGD Application Limit	212200	212200	SGD	year
+Canada Annual Pay Range $102,000 — $128,000 CAD Reasonable Accommodations	102000	128000	CAD	year
+London/Cardiff/UK Remote | 💰 £115,000 - £150,000 + Incentive Awards tied to your performance + Benefits	115000	150000	GBP	year
+For Denver based hires: Estimated annual salary of $132,000 - $182,000. Application Deadline: November 23, 2026	132000	182000	USD	year
+This role's annual base salary range is $235–$317k, plus RSUs.	235000	317000	USD	year
+Directed sales goals of 1M+ and operated with an average deal size of $100k+ Able to demonstrate methodology	NONE
+Spain Annual Pay Range €50.000 — €60.000 EUR Reasonable Accommodations	50000	60000	EUR	year
+For Bay Area based hires: Estimated annual salary of $191,000 - $ 263,000 For Washington D.C. Area hires	191000	263000	USD	year
+Track record of beating annual targets of $1M+ and successfully managing complex six figure deals	NONE
+Salaries are subject to change and may be modified in the future. Internship $74 — $74 USD At Figma	74	74	USD	hour
+The annual base salary range for this role is $100,000 - $125,000 plus RSUs; to learn more about our compensation	100000	125000	USD	year
+Our Commercial segment includes businesses typically processing $20M–$50M in annual payment volume.	NONE
+For France based hires: Estimated annual salary is between €112,000 - €176,000. This role is labelled CSP 3-2	112000	176000	EUR	year
+connecting builders to 108M+ users and $100B+ in assets.	NONE
+For Portugal based hires: Estimated annual salary is between €54,000 - €75,000. The final offer will be inclusive	54000	75000	EUR	year
+Annual base salary range (excluding equity and bonus): $180,370 — $212,200 USD	180370	212200	USD	year
+Annual Base Salary Range: $290,000 — $376,000 USD	290000	376000	USD	year
+Pay Range $192,000 — $240,000 USD Reasonable Accommodations	192000	240000	USD	year
+The base salary range below is for the role in New York, based on a Full Time Schedule. $90,000 — $95,000 USD	90000	95000	USD	year
+Base Salary $200,000 — $225,000 USD Why Discord?	200000	225000	USD	year
+For Bay Area based hires: Estimated annual salary of $200,000 - $288,000 For NYC based hires: Estimated annual salary of $180,000 - $240,000	200000	288000	USD	year
+The annual base salary range for this role is $250,000 - $293,000 . Compensation is based on factors including	250000	293000	USD	year
+The annual base salary range for this role is $190,000 - $290,000; to learn more about our compensation philosophy	190000	290000	USD	year
+For Dublin based hires: Estimated annual salary of 65,000 - 80,000 EURO For New York City based hires	65000	80000	EUR	year
+Bay Area-based hires: Estimated annual salary of $161,000 – $221,000. NYC-based hires: Estimated annual salary of $153,000 – $210,000.	161000	221000	USD	year
+United States Salary Range $244,200 — $409,500 USD How GitLab Supports	244200	409500	USD	year
+Salary: $156,800 - $235,200/yr. This salary range represents the base salary range	156800	235200	USD	year
+Salary: $206,086.00 - $285,600.00/yr. This salary range represents the base salary range	206086	285600	USD	year
+The base salary range for this role is $160,000.00 - $212,500.00. This role has an additional equity component.	160000	212500	USD	year
+Salary: $161,637 - $204,000/yr. This salary range represents the base salary range	161637	204000	USD	year
+Orchestrate $100M+ Business Cases: Direct the formulation of board-ready value cases	NONE
+London or UK Remote | 💰 £150,000 - £200, 000 + Equity + Benefits	150000	200000	GBP	year
+To date, we’ve raised over $300 million from world-renowned investors including Stripe	NONE
+Deep industry expertise, with at least 5 years managing accounts with $5M+ ARR.	NONE
+London or Remote (UK) | 💰£79,000 - £93,000 + Incentive Awards tied to your performance	79000	93000	GBP	year
+Learning budget of £1,000 a year for books, training courses and conferences	NONE
+Learning budget of €1,200 a year for books, training courses and conferences	NONE
+The base salary range for this position is $165,000 - $204,000/annum and is determined based on a variety of factors	165000	204000	USD	year
+Pay Range $160,000 — $180,000 USD Reasonable Accommodations	160000	180000	USD	year
+The reasonably estimated yearly salary for this role at Datadog is: $158,000 — $210,000 USD	158000	210000	USD	year
+United States Salary Range $124,000 — $186,600 USD	124000	186600	USD	year
+Base Salary $116,000 — $130,500 USD Why Discord?	116000	130500	USD	year
+The base salary range below is for the role in Illinois, based on a Full Time Schedule. $130,000 — $153,000 USD	130000	153000	USD	year
+The base salary range below is for the role in Washington, D.C. based on a Full Time Schedule. $163,000 — $193,000 USD	163000	193000	USD	year
+The reasonably estimated yearly salary for this role at Datadog is: $75,000 — $80,000 USD	75000	80000	USD	year
+Annual base salary range (excluding equity and bonus): $148,835 — $175,100 USD	148835	175100	USD	year
+Annual Base Salary Range: $115,000 — $269,000 USD	115000	269000	USD	year
+💰 £95,000 - £115,000 + Benefits | Hear from the team	95000	115000	GBP	year
+We are a fast-growing team that has served 10M+ customers in 30 countries.	NONE
+Requirements: 5 - 10 years of experience building distributed systems.	NONE
+Founded in 2014, we are backed by $500M in funding.	NONE
+Pay Range $196,000 — $227,000 USD Reasonable Accommodations	196000	227000	USD	year
+Base Salary $248,000 — $310,000 USD Why Discord?	248000	310000	USD	year
+The annual base salary range for this role is $154,000 - $200,000. Compensation is based on factors including qualifications	154000	200000	USD	year
+Salary: $190,400 - $285,600/yr	190400	285600	USD	year
+Annual Base Salary Range: $258,000 — $376,000 USD	258000	376000	USD	year
+The reasonably estimated yearly salary for this role at Datadog is: $204,000 — $255,000 USD	204000	255000	USD	year
+Moniepoint processes over $182 billion and is Nigeria’s largest merchant acquirer.	NONE
+Salary: ₦3.5M–₦5M/mo	3500000	5000000	NGN	month
+Salary: ₦3.5M - ₦5M per month plus HMO	3500000	5000000	NGN	month
+Monthly gross salary: NGN 800,000 - NGN 1,200,000	800000	1200000	NGN	month
+Compensation: ₦18,000,000 – ₦24,000,000 per annum	18000000	24000000	NGN	year
+Salary: £85k–£110k	85000	110000	GBP	year
+Salary range £45,000 to £55,000 per annum	45000	55000	GBP	year
+Compensation: ₹45L–₹65L per annum	4500000	6500000	INR	year
+CTC: INR 18 - 25 lakhs per annum	1800000	2500000	INR	year
+Salary range: ₹12,00,000 – ₹18,00,000 per year	1200000	1800000	INR	year
+Gehalt: €60.000 - €75.000 pro Jahr. Salary range €60.000 - €75.000 per year	60000	75000	EUR	year
+Salary: €55,000 - €70,000 annually	55000	70000	EUR	year
+Pay: 4.500 € - 5.500 € per month	4500	5500	EUR	month
+Salário: R$ 8.000 - R$ 12.000 por mês	8000	12000	BRL	month
+Salary: R$ 15.000,00 – R$ 20.000,00 per month	15000	20000	BRL	month
+Pay range: CA$120K–CA$150K	120000	150000	CAD	year
+Salary: C$95,000 - C$115,000 per year	95000	115000	CAD	year
+Salary range A$140,000 - A$170,000 + super	140000	170000	AUD	year
+Base salary: AUD 130,000 - 150,000	130000	150000	AUD	year
+Salary: S$7,000 - S$9,500 per month	7000	9500	SGD	month
+Salary: KES 150,000 - 250,000 per month	150000	250000	KES	month
+Salary: KSh 200,000 – KSh 300,000 monthly	200000	300000	KES	month
+Pay: $40 - $55 per hour	40	55	USD	hour
+Hourly pay: $28.50 - $35.00	28.5	35	USD	hour
+Pay range: $22/hr - $26/hr	22	26	USD	hour
+Compensation: $6,000 - $8,000 per month	6000	8000	USD	month
+Salary: 300,000 - 400,000 ZAR per year	300000	400000	ZAR	year
+Salary: ZAR 45,000 - 60,000 per month	45000	60000	ZAR	month
+Salary: EGP 40,000 – 60,000 monthly	40000	60000	EGP	month
+Salary: GHS 15,000 - GHS 20,000 per month	15000	20000	GHS	month
+Salary: AED 25,000 - 32,000 per month	25000	32000	AED	month
+Salary: SAR 30,000 - 40,000 monthly	30000	40000	SAR	month
+Salary: MXN 60,000 - 80,000 per month	60000	80000	MXN	month
+Salario: MX$45,000 - MX$60,000 al mes. Salary: MX$45,000 - MX$60,000 per month	45000	60000	MXN	month
+Salary: COP 8,000,000 - 12,000,000 per month	8000000	12000000	COP	month
+Salary: PHP 120,000 - 160,000 per month	120000	160000	PHP	month
+Salary: ₱80,000 - ₱110,000 monthly	80000	110000	PHP	month
+Salary: IDR 25,000,000 - 35,000,000 per month	25000000	35000000	IDR	month
+Salary: PKR 400,000 - 600,000 per month	400000	600000	PKR	month
+Salary: ¥8,000,000 - ¥12,000,000 per year	8000000	12000000	JPY	year
+Salary: ₩70,000,000 - ₩90,000,000 annually	70000000	90000000	KRW	year
+Salary: CHF 120,000 - 150,000	120000	150000	CHF	year
+Salary: SEK 55,000 - 70,000 per month	55000	70000	SEK	month
+Salary: 15 000 - 20 000 PLN per month	15000	20000	PLN	month
+Salary range: $120k - $150k	120000	150000	USD	year
+Salary: USD 90,000 to USD 110,000	90000	110000	USD	year
+Compensation: between $140,000 and $160,000 per year	140000	160000	USD	year
+OTE $180,000 - $220,000 (50/50 split)	180000	220000	USD	year
+The pay band for this role is $95K-$120K.	95000	120000	USD	year
+Remuneration: €48,000 - €58,000 gross per year	48000	58000	EUR	year
+Wage: £12.50 - £14.00 per hour	12.5	14	GBP	hour
+Stipend: $3,000 - $4,000 per month	3000	4000	USD	month
+We grew revenue from $10M to $50M in two years.	NONE
+Our customers save $2M - $5M per year using our product.	NONE
+We offer a $1,000 learning stipend and a $500 home office budget.	NONE
+Compensation: competitive, plus equity.	NONE
+Join a team of 50 - 100 engineers across 3 continents.	NONE
+Salary: £35,000	NONE
+The range is 2 - 4 weeks of onboarding.	NONE
+Base salary range: $175,000 – $210,000 for New York; $160,000 – $190,000 for other locations.	175000	210000	USD	year
+Pay range (Canada): CAD 110,000 - CAD 135,000	110000	135000	CAD	year
+Salary: NZ$100,000 - NZ$120,000	100000	120000	NZD	year
+Salary: HK$40,000 - HK$55,000 per month	40000	55000	HKD	month
+Salary: TWD 1,200,000 - 1,600,000 per year	1200000	1600000	TWD	year
+Salary: ₺80.000 - ₺110.000 aylık. Salary: ₺80.000 - ₺110.000 per month	80000	110000	TRY	month
+Salary: ₪30,000 - ₪38,000 per month	30000	38000	ILS	month
+Salary: UGX 3,000,000 - 4,500,000 per month	3000000	4500000	UGX	month

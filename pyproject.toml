@@ -31,6 +31,9 @@ target-version = "py312"
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "S", "ASYNC", "RUF"]
 
+# The normalizer reads international job ads, where these characters are real.
+allowed-confusables = ["–", "—", "ı"]
+
 [tool.ruff.lint.isort]
 known-first-party = ["erio_core", "erio_api", "erio_ingest"]
 
