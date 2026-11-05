@@ -17,7 +17,7 @@ from sqlalchemy.orm import Session
 
 from erio_core.connectors import FetchResponse
 from erio_core.connectors.greenhouse import GreenhouseConnector
-from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
+from erio_core.db.models import Company, CompanyBoard, CrawlRun, Job, JobSource, RawPosting
 from erio_core.db.seed import sync_sources
 from erio_ingest.pipeline import crawl_board
 from erio_ingest.status import apply_successful_fetch, mark_unverified
@@ -184,6 +184,11 @@ def test_a_posting_that_comes_back_is_reopened(board: Board) -> None:
     board.crawl(ok())
 
     assert board.jobs()[removed_job_id()] == ("open", None)
+    # Each crawl run records what it changed, for the per-source metrics.
+    with Session(board.engine) as session:
+        runs = session.scalars(select(CrawlRun).order_by(CrawlRun.id)).all()
+    assert [r.postings_closed for r in runs[-4:]] == [0, 0, 1, 0]
+    assert [r.postings_reopened for r in runs[-4:]] == [0, 0, 0, 1]
 
 
 def test_not_modified_counts_as_a_successful_fetch(board: Board) -> None:

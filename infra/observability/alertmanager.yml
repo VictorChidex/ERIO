@@ -1,0 +1,17 @@
+# Alertmanager for the local "obs" profile. Alerts group by name and source
+# and show at http://127.0.0.1:9093. The on-call channel (Slack, PagerDuty
+# or email) is still to be chosen (decision D-19); its webhook address is a
+# credential, so it will come from the vault, never from this file.
+route:
+  receiver: on-call
+  group_by: [alertname, source]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  routes:
+    - matchers: [severity="ticket"]
+      receiver: on-call
+      repeat_interval: 24h
+
+receivers:
+  - name: on-call

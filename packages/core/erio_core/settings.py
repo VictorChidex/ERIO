@@ -51,6 +51,12 @@ class Settings(BaseSettings):
     # The labeled sets the nightly AI evaluation scores models on.
     labeled_dir: str = "fixtures/labeled"
 
+    # Observability (erio_core.observability): JSON or text logs, and the
+    # OpenTelemetry collector traces go to (none: tracing off).
+    log_format: str = "json"
+    log_level: str = "INFO"
+    otel_endpoint: str | None = None
+
     # MCP server (services/mcp): the public API it calls, the website its job
     # links point to, and the Host headers it answers to.
     api_url: str = "http://127.0.0.1:8000"

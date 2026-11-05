@@ -4,8 +4,10 @@ Every number comes from the live index or database; nothing is hard-coded.
 """
 
 import json
+import time
+from collections.abc import Callable
 from datetime import UTC, datetime, timedelta
-from functools import lru_cache
+from functools import lru_cache, wraps
 from importlib.resources import files
 from typing import Annotated, Any
 
@@ -20,10 +22,38 @@ from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_core.connectors import CONNECTORS
 from erio_core.db.models import CompanyBoard, Country, CrawlRun, Source
 from erio_core.db.seed import load_countries
+from erio_core.freshness import freshness_seconds
 
 router = APIRouter(prefix="/v1", tags=["reference"], dependencies=[Depends(rate_limit)])
 
 LIVE_WITHIN = timedelta(hours=1)
+
+
+# Countries, platforms and stats change slowly and are among the costliest
+# requests; each API process reuses an answer for this long (spec section 10
+# load target). Keyed by database and index, so separate stacks never mix.
+CACHE_SECONDS = 30.0
+_cache: dict[tuple[str, str, str], tuple[float, dict[str, Any]]] = {}
+
+
+def cached[**P](
+    fn: Callable[P, dict[str, Any]],
+) -> Callable[P, dict[str, Any]]:
+    @wraps(fn)
+    def wrapper(*args: P.args, **kwargs: P.kwargs) -> dict[str, Any]:
+        db, alias = (
+            kwargs.get("db", args[0] if args else None),
+            kwargs.get("alias", args[2] if len(args) > 2 else None),
+        )
+        key = (fn.__name__, str(getattr(db, "url", db)), str(alias))
+        hit = _cache.get(key)
+        if hit is not None and time.monotonic() - hit[0] < CACHE_SECONDS:
+            return hit[1]
+        value = fn(*args, **kwargs)
+        _cache[key] = (time.monotonic(), value)
+        return value
+
+    return wrapper
 
 
 @lru_cache
@@ -114,6 +144,7 @@ def _search(
 @router.get(
     "/countries", response_model=CountriesOut, summary="All 233 countries with live job counts"
 )
+@cached
 def countries(
     db: Annotated[Engine, Depends(engine)],
     search: Annotated[OpenSearch, Depends(search_client)],
@@ -214,6 +245,7 @@ def coverage() -> dict[str, Any]:
 @router.get(
     "/platforms", response_model=PlatformsOut, summary="Sources with live status and job counts"
 )
+@cached
 def platforms(
     db: Annotated[Engine, Depends(engine)],
     search: Annotated[OpenSearch, Depends(search_client)],
@@ -282,6 +314,7 @@ def platforms(
 
 
 @router.get("/stats", response_model=StatsOut, summary="Totals and refresh lag for the Home page")
+@cached
 def stats(
     db: Annotated[Engine, Depends(engine)],
     search: Annotated[OpenSearch, Depends(search_client)],
@@ -306,7 +339,11 @@ def stats(
             )
             if ok is not None
         ]
+        fresh = freshness_seconds(session, now)
     ages = sorted((now - ok).total_seconds() / 60 for ok in last_ok)
+    # Refresh lag: median minutes from a job's first sighting to searchable
+    # (spec section 10); before any job has gone through, the median board age.
+    lag = fresh[0.5] / 60 if fresh else (ages[len(ages) // 2] if ages else None)
     live_sources = {
         p["slug"] for p in platforms(db, search, alias)["data"] if p["status"] == "live"
     }
@@ -318,5 +355,5 @@ def stats(
         "sources_live": len(live_sources),
         "boards_tracked": boards_tracked,
         "last_refresh_at": max(last_ok) if last_ok else None,
-        "refresh_lag_minutes": round(ages[len(ages) // 2], 1) if ages else None,
+        "refresh_lag_minutes": round(lag, 1) if lag is not None else None,
     }

@@ -182,6 +182,10 @@ class CrawlRun(Base):
     http_status: Mapped[int | None] = mapped_column(SmallInteger)
     outcome: Mapped[str | None] = mapped_column(text_enum("crawl_outcome", CRAWL_OUTCOMES))
     postings_seen: Mapped[int | None] = mapped_column(Integer)
+    # What this fetch changed, for the per-source metrics (spec section 10).
+    postings_new: Mapped[int | None] = mapped_column(Integer)
+    postings_closed: Mapped[int | None] = mapped_column(Integer)
+    postings_reopened: Mapped[int | None] = mapped_column(Integer)
     raw_s3_key: Mapped[str | None] = mapped_column(Text)
     error: Mapped[str | None] = mapped_column(Text)
 
@@ -294,6 +298,11 @@ class Job(Base):
     ai_filled: Mapped[list[str]] = mapped_column(
         ARRAY(String(16)), server_default="{}", nullable=False
     )
+    # When the indexer first made this job searchable: the end of the
+    # freshness metric, which starts at the posting's first sighting.
+    searchable_at: Mapped[datetime | None] = mapped_column(index=True)
+    # Seconds from first sighting to searchable, measured once at that moment.
+    freshness_seconds: Mapped[int | None] = mapped_column(Integer)
     # Last change to any field; the search indexer follows this.
     updated_at: Mapped[datetime] = mapped_column(
         server_default=func.now(), onupdate=func.now(), index=True

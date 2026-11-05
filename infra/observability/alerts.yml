@@ -1,0 +1,64 @@
+# ERIO alerts (spec section 10). Each links to its runbook in docs/runbooks/.
+# `promtool test rules alerts.test.yml` proves each one fires (run in CI).
+groups:
+  - name: sources
+    rules:
+      - alert: SourceFetchSuccessLow
+        expr: erio_source_fetch_success_ratio < 0.9
+        for: 5m
+        labels: { severity: page }
+        annotations:
+          summary: "{{ $labels.source }}: {{ $value | humanizePercentage }} of fetches succeeded in the last hour"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/source-fetch-success-low.md
+      - alert: SourceStoppedDelivering
+        expr: erio_source_seconds_since_success > 3600
+        for: 5m
+        labels: { severity: page }
+        annotations:
+          summary: "{{ $labels.source }}: no successful fetch for {{ $value | humanizeDuration }}"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/source-stopped-delivering.md
+      - alert: SourceSmokeTestFailed
+        expr: erio_source_smoke_ok == 0
+        labels: { severity: ticket }
+        annotations:
+          summary: "{{ $labels.source }}: the nightly live smoke test failed"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/source-smoke-test-failed.md
+
+  - name: pipeline
+    rules:
+      - alert: IndexLagHigh
+        expr: erio_index_lag_seconds > 900
+        for: 2m
+        labels: { severity: page }
+        annotations:
+          summary: "Search index is {{ $value | humanizeDuration }} behind the database"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/index-lag-high.md
+      - alert: QueueBacklogHigh
+        expr: erio_queue_backlog > 10000
+        for: 5m
+        labels: { severity: page }
+        annotations:
+          summary: "{{ $value }} tasks waiting in the {{ $labels.queue }} queue"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/queue-backlog-high.md
+
+  - name: api
+    rules:
+      - alert: ApiErrorRateHigh
+        expr: |
+          sum(rate(erio_api_requests_total{status=~"5.."}[5m]))
+            / sum(rate(erio_api_requests_total[5m])) > 0.01
+        for: 1m
+        labels: { severity: page }
+        annotations:
+          summary: "{{ $value | humanizePercentage }} of API requests failed with 5xx over 5 minutes"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/api-error-rate-high.md
+
+  - name: monitoring
+    rules:
+      - alert: MetricsDown
+        expr: up == 0
+        for: 5m
+        labels: { severity: page }
+        annotations:
+          summary: "Prometheus cannot scrape {{ $labels.job }}: alerts for it are blind"
+          runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/metrics-down.md

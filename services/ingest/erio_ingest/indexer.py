@@ -18,7 +18,7 @@ from typing import Any
 
 from opensearchpy import OpenSearch
 from opensearchpy.helpers import bulk
-from sqlalchemy import Engine, Select, func, select, text
+from sqlalchemy import Engine, Integer, Select, func, select, text, update
 from sqlalchemy.dialects.postgresql import aggregate_order_by
 from sqlalchemy.orm import Session
 
@@ -113,7 +113,38 @@ def sync_changed(
     indexed = sum(1 for row in rows if searchable(row))
     if rows:
         bulk(search, _actions(rows, index), raise_on_error=False, refresh="wait_for")
+        _mark_searchable(engine, rows)
     return SyncResult(indexed, len(rows) - indexed, safe_point)
+
+
+def _mark_searchable(engine: Engine, rows: Sequence[dict[str, Any]]) -> None:
+    """Stamp when each job first became searchable, and how long that took
+    from its first sighting (the freshness metric), measured once here.
+
+    ``updated_at`` is kept, or the stamp itself would make the job look changed.
+    """
+    first = [row["canonical_id"] for row in rows if searchable(row) and not row["searchable_at"]]
+    if not first:
+        return
+    first_seen = (
+        select(func.min(RawPosting.first_seen_at))
+        .join(JobSource, JobSource.raw_posting_id == RawPosting.id)
+        .where(JobSource.job_id == Job.canonical_id)
+        .scalar_subquery()
+    )
+    with Session(engine) as session, session.begin():
+        session.execute(
+            update(Job)
+            .where(Job.canonical_id.in_(first), Job.searchable_at.is_(None))
+            .values(
+                searchable_at=func.now(),
+                freshness_seconds=func.greatest(
+                    func.extract("epoch", func.now() - first_seen), 0
+                ).cast(Integer),
+                updated_at=Job.updated_at,
+            )
+            .execution_options(synchronize_session=False)
+        )
 
 
 def rebuild(engine: Engine, search: OpenSearch, alias: str) -> tuple[str, int]:
@@ -126,6 +157,7 @@ def rebuild(engine: Engine, search: OpenSearch, alias: str) -> tuple[str, int]:
     search.indices.refresh(index=name)
     for old in swap_alias(search, alias, name):
         search.indices.delete(index=old)
+    _mark_searchable(engine, rows)
     return name, len(rows)
 
 

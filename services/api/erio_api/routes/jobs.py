@@ -16,6 +16,7 @@ from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_api.errors import ApiError
 from erio_api.search import BadCursor, JobQuery, Sort, build_search, read_results
 from erio_core.db.models import Company, Job, JobSource, RawPosting
+from erio_core.normalize.text import sanitize_html
 from erio_core.schemas import EmploymentType, JobRecord, JobStatus, RemoteStatus, RoleCategory
 
 router = APIRouter(prefix="/v1", tags=["jobs"], dependencies=[Depends(rate_limit)])
@@ -153,6 +154,10 @@ def get_job(
         columns = {
             name: getattr(job, name) for name in JobRecord.model_fields if hasattr(job, name)
         }
+        # Cleaned when stored, and again on the way out (spec section 9), so a
+        # row written by any other path can never carry script to a client.
+        if job.description_html:
+            columns["description_html"] = sanitize_html(job.description_html)
         record = JobRecord.model_validate(
             columns
             | {

@@ -82,7 +82,7 @@ def _internal_networks() -> tuple[ipaddress.IPv4Network | ipaddress.IPv6Network,
     return tuple(ipaddress.ip_network(cidr) for cidr in get_settings().api_internal_cidrs)
 
 
-def _is_internal(address: str) -> bool:
+def is_internal(address: str) -> bool:
     try:
         ip = ipaddress.ip_address(address)
     except ValueError:
@@ -123,7 +123,7 @@ def identify(request: Request, db: Engine) -> Caller:
                 row.last_used_at = now
                 session.commit()
             return Caller(row.tier, f"token:{row.id}", row.id)
-    if _is_internal(address):
+    if is_internal(address):
         return Caller("internal", f"internal:{address}")
     return Caller("anonymous", f"ip:{address}")
 

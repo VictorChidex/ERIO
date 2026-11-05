@@ -294,6 +294,9 @@ def test_sync_reads_each_change_once(
         session.execute(update(Job).values(updated_at=func.now() - timedelta(minutes=1)))
     first = sync_changed(migrated_engine, client(), search_alias, None)
     assert first.indexed + first.removed == 8
+    with Session(migrated_engine) as session:
+        stamped = session.scalars(select(Job.canonical_id).where(Job.searchable_at.is_not(None)))
+        assert len(stamped.all()) == first.indexed
     # Nothing changed since: the next sync reads nothing, however often it runs.
     again = sync_changed(migrated_engine, client(), search_alias, first.watermark)
     assert (again.indexed, again.removed) == (0, 0)

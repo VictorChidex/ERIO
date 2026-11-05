@@ -9,7 +9,7 @@ from functools import lru_cache
 from typing import Any
 from urllib.parse import urlsplit
 
-from celery import Celery, Task
+from celery import Celery, Task, signals
 from redis import Redis
 from sqlalchemy import Engine, create_engine, select
 from sqlalchemy.orm import Session
@@ -18,6 +18,7 @@ from erio_core.ai import Gateway, default_routing
 from erio_core.ai.store import PostgresStore
 from erio_core.connectors import CONNECTORS
 from erio_core.db.models import CompanyBoard
+from erio_core.observability import bind, configure_logging, setup_tracing
 from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
 from erio_ingest.ai_fallback import BATCH as AI_BATCH
@@ -38,6 +39,31 @@ from erio_ingest.storage import S3RawStore
 settings = get_settings()
 
 app = Celery("erio_ingest", broker=settings.redis_url, backend=settings.redis_url)
+
+
+@signals.setup_logging.connect
+def _logging(**_: Any) -> None:
+    """JSON logs (erio_core.observability) instead of Celery's own format."""
+    configure_logging("worker")
+
+
+@signals.worker_process_init.connect
+def _tracing(**_: Any) -> None:
+    if setup_tracing("worker"):
+        from opentelemetry.instrumentation.celery import CeleryInstrumentor
+        from opentelemetry.instrumentation.httpx import HTTPXClientInstrumentor
+        from opentelemetry.instrumentation.sqlalchemy import SQLAlchemyInstrumentor
+
+        CeleryInstrumentor().instrument()  # type: ignore[no-untyped-call]
+        SQLAlchemyInstrumentor().instrument()
+        HTTPXClientInstrumentor().instrument()
+
+
+@signals.task_prerun.connect
+def _task_context(task_id: str | None = None, task: Task | None = None, **_: Any) -> None:
+    bind(task=getattr(task, "name", None), task_id=task_id)
+
+
 app.conf.update(
     task_acks_late=True,
     task_reject_on_worker_lost=True,

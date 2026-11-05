@@ -1,0 +1,124 @@
+# Drill for every alert in alerts.yml: each fires on a bad series and stays
+# quiet on a healthy one. Run: promtool test rules alerts.test.yml
+rule_files: [alerts.yml]
+evaluation_interval: 1m
+
+tests:
+  - interval: 1m
+    input_series:
+      - series: erio_source_fetch_success_ratio{source="lever"}
+        values: "0.85x10"
+      - series: erio_source_fetch_success_ratio{source="greenhouse"}
+        values: "0.99x10"
+    alert_rule_test:
+      - eval_time: 6m
+        alertname: SourceFetchSuccessLow
+        exp_alerts:
+          - exp_labels: { severity: page, source: lever }
+            exp_annotations:
+              summary: "lever: 85% of fetches succeeded in the last hour"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/source-fetch-success-low.md
+
+  - interval: 1m
+    input_series:
+      - series: erio_source_seconds_since_success{source="ashby"}
+        values: "3000+60x25"
+    alert_rule_test:
+      - eval_time: 3m
+        alertname: SourceStoppedDelivering
+        exp_alerts: []
+      # Over an hour from minute 11, firing 5 minutes later.
+      - eval_time: 17m
+        alertname: SourceStoppedDelivering
+        exp_alerts:
+          - exp_labels: { severity: page, source: ashby }
+            exp_annotations:
+              summary: "ashby: no successful fetch for 1h 7m 0s"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/source-stopped-delivering.md
+
+  - interval: 1m
+    input_series:
+      - series: erio_source_smoke_ok{source="workable"}
+        values: "0x3"
+      - series: erio_source_smoke_ok{source="lever"}
+        values: "1x3"
+    alert_rule_test:
+      - eval_time: 1m
+        alertname: SourceSmokeTestFailed
+        exp_alerts:
+          - exp_labels: { severity: ticket, source: workable }
+            exp_annotations:
+              summary: "workable: the nightly live smoke test failed"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/source-smoke-test-failed.md
+
+  - interval: 1m
+    input_series:
+      - series: erio_index_lag_seconds
+        values: "30 30 1000 1060 1120 1180"
+    alert_rule_test:
+      - eval_time: 1m
+        alertname: IndexLagHigh
+        exp_alerts: []
+      - eval_time: 5m
+        alertname: IndexLagHigh
+        exp_alerts:
+          - exp_labels: { severity: page }
+            exp_annotations:
+              summary: "Search index is 19m 40s behind the database"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/index-lag-high.md
+
+  - interval: 1m
+    input_series:
+      - series: erio_queue_backlog{queue="crawl"}
+        values: "12000x8"
+    alert_rule_test:
+      - eval_time: 6m
+        alertname: QueueBacklogHigh
+        exp_alerts:
+          - exp_labels: { severity: page, queue: crawl }
+            exp_annotations:
+              summary: "12000 tasks waiting in the crawl queue"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/queue-backlog-high.md
+
+  # 2 of every 100 requests fail: 2% > 1%.
+  - interval: 1m
+    input_series:
+      - series: erio_api_requests_total{method="GET",route="/v1/jobs",status="200"}
+        values: "0+98x10"
+      - series: erio_api_requests_total{method="GET",route="/v1/jobs",status="500"}
+        values: "0+2x10"
+    alert_rule_test:
+      - eval_time: 8m
+        alertname: ApiErrorRateHigh
+        exp_alerts:
+          - exp_labels: { severity: page }
+            exp_annotations:
+              summary: "2% of API requests failed with 5xx over 5 minutes"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/api-error-rate-high.md
+
+  # 1 in 1,000 fails: under the 1% threshold, no alert.
+  - interval: 1m
+    input_series:
+      - series: erio_api_requests_total{method="GET",route="/v1/jobs",status="200"}
+        values: "0+999x10"
+      - series: erio_api_requests_total{method="GET",route="/v1/jobs",status="500"}
+        values: "0+1x10"
+    alert_rule_test:
+      - eval_time: 8m
+        alertname: ApiErrorRateHigh
+        exp_alerts: []
+
+  - interval: 1m
+    input_series:
+      - series: up{job="pipeline"}
+        values: "0x8"
+      - series: up{job="api"}
+        values: "1x8"
+    alert_rule_test:
+      - eval_time: 6m
+        alertname: MetricsDown
+        exp_alerts:
+          - exp_labels: { severity: page, job: pipeline }
+            exp_annotations:
+              summary: "Prometheus cannot scrape pipeline: alerts for it are blind"
+              runbook_url: https://github.com/VictorChidex/ERIO/blob/main/docs/runbooks/metrics-down.md

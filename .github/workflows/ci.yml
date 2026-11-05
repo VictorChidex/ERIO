@@ -86,6 +86,21 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run mypy
       - run: uv run pytest
+      # Known vulnerabilities in the locked Python dependencies.
+      - name: Dependency audit (pip-audit)
+        run: |
+          uv export --frozen --all-packages --no-dev --no-emit-workspace --no-hashes -o requirements-audit.txt
+          uvx pip-audit==2.10.1 -r requirements-audit.txt --progress-spinner off
+      # Every alert fires on its drill series, and the monitoring configs load.
+      - name: Alert rules and monitoring config
+        run: |
+          docker run --rm -v "$PWD/infra/observability:/c:ro" --entrypoint promtool \
+            prom/prometheus:v3.15.1 test rules /c/alerts.test.yml
+          docker run --rm -v "$PWD/infra/observability:/c:ro" --entrypoint promtool \
+            prom/prometheus:v3.15.1 check config /c/prometheus.yml
+          docker run --rm -v "$PWD/infra/observability:/c:ro" --entrypoint amtool \
+            prom/alertmanager:v0.34.1 check-config /c/alertmanager.yml
+          python3 -c "import json, glob; [json.load(open(f)) for f in glob.glob('infra/observability/grafana/dashboards/*.json')]"
 
   web:
     name: Website (lint, types, build)
@@ -102,6 +117,8 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
+      # Known vulnerabilities in what the site ships (dev tools are triaged weekly).
+      - run: npm audit --omit=dev --audit-level=high
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run build
@@ -117,7 +134,16 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       # Every service except beat: CI never crawls the live job boards.
       - name: Build and start the stack
-        run: docker compose up --build --detach --wait --wait-timeout 420 api worker web s3 mcp
+        run: docker compose up --build --detach --wait --wait-timeout 420 api worker web s3 mcp metrics
+      # Images: no fixable high or critical vulnerability, no credential baked in
+      # (Trivy scans for both by default).
+      - name: Image scan (Trivy)
+        run: |
+          for image in erio-python:local erio-web; do
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:0.76.1 \
+              image --quiet --severity HIGH,CRITICAL --ignore-unfixed \
+              --exit-code 1 "$image"
+          done
       - name: Check the services answer
         run: |
           curl -sSf http://127.0.0.1:8000/v1/health/ready
@@ -126,6 +152,8 @@ jobs:
             "from erio_ingest.worker import ping; assert ping.delay().get(timeout=30) == 'pong'"
           curl -sSf http://127.0.0.1:9090/ | grep -q '<Name>erio-raw</Name>'
           curl -sSf http://127.0.0.1:3000/ | grep -q 'jobs indexed'
+          docker compose exec -T metrics python -c \
+            "import urllib.request; assert b'erio_queue_backlog' in urllib.request.urlopen('http://localhost:9108/metrics').read()"
       # Known jobs from the recorded fixtures, run through the real pipeline
       # (crawl, normalize, index) with no network.
       - name: Load demo jobs

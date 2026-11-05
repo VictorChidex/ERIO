@@ -25,7 +25,7 @@ def setup(
 ) -> Iterator[Engine]:
     sync_countries(migrated_engine)
     sync_sources(migrated_engine)
-    monkeypatch.setattr(access, "_is_internal", lambda address: address.startswith("172.18."))
+    monkeypatch.setattr(access, "is_internal", lambda address: address.startswith("172.18."))
     app.dependency_overrides.update(
         {
             engine_dependency: lambda: migrated_engine,

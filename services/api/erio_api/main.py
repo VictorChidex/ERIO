@@ -9,13 +9,15 @@ from fastapi import Depends, FastAPI
 from fastapi.responses import JSONResponse
 from opensearchpy.exceptions import OpenSearchException
 
-from erio_api import errors
+from erio_api import errors, telemetry
 from erio_api.health import Check, default_checks, run_checks
 from erio_api.routes import jobs, meta
 from erio_core import __version__
+from erio_core.observability import configure_logging
 from erio_core.search.index import client, ensure_alias
 from erio_core.settings import get_settings
 
+configure_logging("api")
 log = logging.getLogger(__name__)
 
 
@@ -38,6 +40,8 @@ app = FastAPI(
     openapi_url="/v1/openapi.json",
     docs_url="/v1/docs",
 )
+# Telemetry first: middleware added later wraps it, so the request ID exists by then.
+telemetry.install(app)
 errors.install(app)
 app.include_router(jobs.router)
 app.include_router(meta.router)

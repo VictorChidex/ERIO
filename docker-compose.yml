@@ -14,6 +14,9 @@ x-erio-addresses: &erio-addresses
   # The AI gateway's self-hosted model (decision D-17); used only when the
   # stack runs with the "ai" profile, otherwise AI fallbacks just skip.
   ERIO_AI_PROVIDER_URLS: '{"local": "http://ollama:11434/v1"}'
+  # Traces go to Jaeger only when asked: start with the "obs" profile and
+  # ERIO_OTEL_ENDPOINT=http://jaeger:4318 in your shell.
+  ERIO_OTEL_ENDPOINT: ${ERIO_OTEL_ENDPOINT:-}
 
 services:
   postgres:
@@ -92,6 +95,9 @@ services:
       # needs no token locally. Ports are bound to 127.0.0.1, so nothing
       # outside this machine reaches the API.
       ERIO_API_INTERNAL_CIDRS: '["172.16.0.0/12", "192.168.0.0/16", "10.0.0.0/8"]'
+      # API worker processes (uvicorn reads WEB_CONCURRENCY). One process
+      # tops out near 60 requests a second; see docs/load-test.md.
+      WEB_CONCURRENCY: "4"
     ports: ["127.0.0.1:8000:8000"]
     depends_on:
       migrate: { condition: service_completed_successfully }
@@ -127,6 +133,22 @@ services:
     depends_on:
       migrate: { condition: service_completed_successfully }
       redis: { condition: service_healthy }
+
+  # Crawl, index and queue metrics for Prometheus, read from Postgres and
+  # Redis at each scrape (erio_ingest.metrics). Not published to the host.
+  metrics:
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: erio-python:local
+    command: ["python", "-m", "erio_ingest.metrics"]
+    environment: *erio-addresses
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:9108/metrics', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
 
   # Read-only MCP server (spec section 13): assistants such as Claude connect
   # to http://127.0.0.1:8100/mcp. It calls the API like any client; on the
@@ -189,6 +211,42 @@ services:
       interval: 10s
       timeout: 5s
       retries: 10
+
+  # Observability (spec section 10), optional: `docker compose --profile obs up`.
+  # Dashboards at http://127.0.0.1:3001 (no sign-in locally), alerts at
+  # http://127.0.0.1:9093, traces at http://127.0.0.1:16686.
+  prometheus:
+    image: prom/prometheus:v3.15.1
+    profiles: [obs]
+    volumes:
+      - ./infra/observability/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./infra/observability/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports: ["127.0.0.1:9095:9090"]
+
+  alertmanager:
+    image: prom/alertmanager:v0.34.1
+    profiles: [obs]
+    volumes: [./infra/observability/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro]
+    ports: ["127.0.0.1:9093:9093"]
+
+  grafana:
+    image: grafana/grafana:13.0.11
+    profiles: [obs]
+    environment:
+      # Local only, bound to 127.0.0.1: anonymous viewers, no sign-in, no credential.
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+      GF_AUTH_DISABLE_LOGIN_FORM: "true"
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /var/lib/grafana/dashboards/sources.json
+    volumes:
+      - ./infra/observability/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./infra/observability/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports: ["127.0.0.1:3001:3000"]
+
+  jaeger:
+    image: jaegertracing/jaeger:2.22.0
+    profiles: [obs]
+    ports: ["127.0.0.1:16686:16686"]
 
 volumes:
   postgres-data:

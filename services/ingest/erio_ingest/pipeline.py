@@ -5,6 +5,7 @@ counter; it never changes a posting or a job (status rule 2). Job status
 changes from what successful fetches saw are applied by erio_ingest.status.
 """
 
+import logging
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
@@ -15,8 +16,9 @@ from sqlalchemy import CursorResult, Engine, select, update
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 
-from erio_core.connectors import BoardFetch, Fetcher, FetchError, get_connector
+from erio_core.connectors import BoardFetch, Connector, Fetcher, FetchError, get_connector
 from erio_core.db.models import CompanyBoard, CrawlRun, RawPosting
+from erio_core.observability import log_context
 from erio_core.schemas import RawPosting as RawPostingData
 from erio_ingest.status import apply_successful_fetch
 from erio_ingest.storage import RawStore
@@ -34,6 +36,9 @@ QUIET_AFTER = timedelta(days=7)
 Clock = Callable[[], datetime]
 
 
+log = logging.getLogger(__name__)
+
+
 def utcnow() -> datetime:
     return datetime.now(UTC)
 
@@ -47,6 +52,7 @@ class CrawlResult:
     new_postings: int = 0
     changed_postings: int = 0
     closed_postings: int = 0
+    reopened_postings: int = 0
 
     @property
     def retryable(self) -> bool:
@@ -64,13 +70,42 @@ def crawl_board(
     with Session(engine) as session:
         board = session.get_one(CompanyBoard, board_id)
         connector = get_connector(board.source_slug)
-        source_slug, board_token, etag = board.source_slug, board.board_token, board.etag
+        source_slug = board.source_slug
 
         # Record the attempt before fetching, so even a crash leaves a trace.
         run = CrawlRun(board_id=board_id, started_at=clock())
         session.add(run)
         session.commit()
         run_id = run.id
+
+    with log_context(crawl_run_id=run_id, board_id=board_id, source=source_slug):
+        result = _crawl(engine, board_id, run_id, connector, fetcher, store, clock)
+        log.info(
+            "crawl finished",
+            extra={
+                "outcome": result.outcome,
+                "http_status": result.http_status,
+                "postings_seen": result.postings_seen,
+                "postings_new": result.new_postings,
+                "postings_closed": result.closed_postings,
+                "postings_reopened": result.reopened_postings,
+            },
+        )
+        return result
+
+
+def _crawl(
+    engine: Engine,
+    board_id: int,
+    run_id: int,
+    connector: Connector,
+    fetcher: Fetcher,
+    store: RawStore,
+    clock: Clock,
+) -> CrawlResult:
+    with Session(engine) as session:
+        board = session.get_one(CompanyBoard, board_id)
+        board_token, etag, source_slug = board.board_token, board.etag, board.source_slug
 
     try:
         fetched = connector.list_postings(fetcher, board_token, etag=etag)
@@ -119,7 +154,7 @@ def _record_success(
     clock: Clock,
 ) -> CrawlResult:
     now = clock()
-    new = changed = 0
+    new = changed = reopened = 0
     with Session(engine) as session, session.begin():
         if fetched.unchanged:
             # 304: everything listed last time is still listed.
@@ -135,18 +170,20 @@ def _record_success(
             seen = touched.rowcount
         else:
             rows = session.execute(
-                select(RawPosting.external_id, RawPosting.content_hash).where(
+                select(RawPosting.external_id, RawPosting.content_hash, RawPosting.closed_at).where(
                     RawPosting.source_slug == source_slug,
                     RawPosting.external_id.in_([p.external_id for p in fetched.postings]),
                 )
-            )
-            known = {external_id: content for external_id, content in rows}
+            ).all()
+            known = {external_id: content for external_id, content, _ in rows}
+            closed = {external_id for external_id, _, closed_at in rows if closed_at}
             for posting in fetched.postings:
                 previous = known.get(posting.external_id)
                 if previous is None:
                     new += 1
                 elif previous != posting.content_hash:
                     changed += 1
+                reopened += posting.external_id in closed
                 _upsert_posting(
                     session,
                     board_id,
@@ -173,9 +210,12 @@ def _record_success(
         run.outcome = "ok"
         run.http_status = fetched.http_status
         run.postings_seen = seen
+        run.postings_new = new
+        run.postings_closed = changes.closed_postings
+        run.postings_reopened = reopened
 
     return CrawlResult(
-        run_id, "ok", fetched.http_status, seen, new, changed, changes.closed_postings
+        run_id, "ok", fetched.http_status, seen, new, changed, changes.closed_postings, reopened
     )
 
 
