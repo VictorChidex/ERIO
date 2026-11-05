@@ -18,7 +18,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 6 | 6 | Normalization and country resolution | Done (admin review page later) |
 | 7 | 9 | Search index and API v1 | In progress |
 | 8 | 10 | Website | In progress (Lighthouse, Storybook) |
-| 9 | 11 | Globe and country filter | Not started |
+| 9 | 11 | Globe and country filter | Done (60 fps to check on the reference laptop) |
 | 10 | 7 | Remaining 5 connectors and company list | Not started |
 | 11 | 8 | Deduplication | Not started |
 | 12 | 12 | AI providers and MCP server | Not started |
@@ -124,9 +124,12 @@ Built in parts: (a) OpenSearch index and indexer; (b) `/v1/jobs` and `/v1/jobs/{
 
 ## Step 11 — Globe and country filter
 
-- [ ] Clicking a country on the Home globe opens Search filtered to it; on the Search globe it toggles the country.
-- [ ] Rotation sweep finds no full-sphere flash; 60 fps on the reference laptop.
-- [ ] Everything the globe does also works by keyboard; reduced motion turns off spin and arcs.
+Globe in `web/components/Globe.tsx` (d3-geo on a canvas, loaded after the page is idle); the draw rules in `web/lib/globe-geometry.ts` are shared with the rotation-sweep test.
+
+- [x] Clicking a country on the Home globe opens Search filtered to it; on the Search globe it toggles the country (browser tests).
+- [x] Rotation sweep finds no full-sphere flash: every country at every rotation in 10-degree steps (`web/e2e/globe-sweep.unit.ts`). Each part of a country is drawn on its own, and a part the horizon clipper inverts is skipped for that frame.
+- [ ] 60 fps on the reference laptop: to check by hand with `GLOBE_PERF=1 npx playwright test globe --workers=1`. Headless CI browsers draw in software (10 to 35 fps here), so frame rate is not a CI gate.
+- [x] Everything the globe does also works by keyboard: the globe picks a country, and the searchable country list and header country menu do the same by keyboard. Reduced motion turns off spin and arcs (browser test).
 
 ## Step 12 — AI providers and MCP server
 
