@@ -19,10 +19,11 @@ Owner: Chidex (project owner) unless stated otherwise.
 | D-11 | Data retention: closed jobs kept 12 months, raw payloads 30 days | Proposed | |
 | D-12 | Default branch `main`; every step lands as reviewed commits on `main` | Agreed | Set at build start |
 | D-13 | Local fake S3 is Adobe S3Mock (`adobe/s3mock`), not MinIO | Proposed | MinIO no longer publishes free container images (its Docker Hub repository is gone and quay.io needs a login). S3Mock is Apache-2.0 and accepts requests without any credential, so the local stack stays credential-free. Staging and production use real S3 |
+| D-14 | Build and prove everything on the local `docker compose` stack first; Terraform, staging and cloud deploys come after the local build is complete | Agreed | Owner's call. Search and API v1 (step 9) move before the website (steps 10–11); D-03 can wait until then. See `docs/build-plan.md` |
 
 ## Open items for the project owner
 
-- [ ] D-03: confirm AWS, or choose GCP.
+- [ ] D-03: confirm AWS, or choose GCP (not needed until local work is complete, D-14).
 - [ ] D-06: product domain name and the crawler contact mailbox.
 - [ ] D-07: who builds the company seed list, and which countries matter most at launch.
 - [ ] D-09: agree the scope of the credential-word check.

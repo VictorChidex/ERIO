@@ -2,13 +2,14 @@
 
 ERIO is a real-time job index. It collects job postings from applicant tracking systems (ATS), cleans them into one standard record, removes duplicates, and serves them through a search website and a REST API. Anyone can filter jobs by any country in the world.
 
-**Status:** Step 1 of 14 (decisions and source checks). Nothing is deployed yet.
+**Status:** Step 2 (local stack and CI) done; Step 3 (database) next. Everything runs locally; nothing is deployed yet.
 
 ## Documents
 
 | Document | What it holds |
 | --- | --- |
-| [docs/build-plan.md](docs/build-plan.md) | The 14 build steps, in order, with "done when" checks |
+| [docs/build-plan.md](docs/build-plan.md) | The 14 build steps, the local-first order of work, and "done when" checks |
+| [docs/backend-design.md](docs/backend-design.md) | What each page needs from the API, and how data flows from ATS feeds to search |
 | [docs/decisions.md](docs/decisions.md) | Every project decision, who owns it, and its status |
 | [docs/sources.md](docs/sources.md) | The job sources ERIO reads, their endpoints, terms and review status |
 

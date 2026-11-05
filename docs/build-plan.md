@@ -2,24 +2,29 @@
 
 ERIO is built in 14 steps. Each step ends with commits pushed to `main` and the project owner's approval before the next step begins. Tick a box only when it is true.
 
-References: the full build spec ("ERIO — Build Spec", Claude Docs) and the clickable prototype (Claude artifact "ERIO Job Index"). Both are private to the project owner until shared.
+References: the full build spec ("ERIO — Build Spec", Claude Docs), the clickable prototype (Claude artifact "ERIO Job Index") and [backend-design.md](backend-design.md). The spec and prototype are private to the project owner until shared.
 
-| Step | Name | Weeks | Status |
+## Build order: local first
+
+Everything is built and proven on the local `docker compose` stack before any cloud work (decision D-14). Step numbers stay as in the spec; the order below is the order of work. Until staging exists, a "done when" check that says "on staging" is met on the local stack and re-checked on staging later.
+
+| Order | Step | Name | Status |
 | --- | --- | --- | --- |
-| 1 | Lock decisions and verify sources | 1 | In progress |
-| 2 | Repo, local stack and CI | 1–2 | In progress |
-| 3 | Database schema and core models | 2 | Not started |
-| 4 | First connector and crawl pipeline | 2–3 | Not started |
-| 5 | Failure-aware status rules | 3 | Not started |
-| 6 | Normalization and country resolution | 3–5 | Not started |
-| 7 | Remaining 5 connectors and company list | 4–6 | Not started |
-| 8 | Deduplication | 5–6 | Not started |
-| 9 | Search index and API v1 | 5–7 | Not started |
-| 10 | Website | 5–8 | Not started |
-| 11 | Globe and country filter | 6–8 | Not started |
-| 12 | AI providers and MCP server | 6–8 | Not started |
-| 13 | Observability, load and security | 8–9 | Not started |
-| 14 | Beta and launch gate | 8–10 | Not started |
+| 1 | 1 | Lock decisions and verify sources | In progress |
+| 2 | 2 | Repo, local stack and CI (local parts) | Done except part e |
+| 3 | 3 | Database schema and core models | Not started |
+| 4 | 4 | First connector and crawl pipeline | Not started |
+| 5 | 5 | Failure-aware status rules | Not started |
+| 6 | 6 | Normalization and country resolution | Not started |
+| 7 | 9 | Search index and API v1 | Not started |
+| 8 | 10 | Website | Not started |
+| 9 | 11 | Globe and country filter | Not started |
+| 10 | 7 | Remaining 5 connectors and company list | Not started |
+| 11 | 8 | Deduplication | Not started |
+| 12 | 12 | AI providers and MCP server | Not started |
+| 13 | 2e | Terraform staging and deploy on merge | On hold until local is complete |
+| 14 | 13 | Observability, load and security | Not started |
+| 15 | 14 | Beta and launch gate | Not started |
 
 ## Step 1 — Lock decisions and verify sources
 
@@ -31,14 +36,15 @@ References: the full build spec ("ERIO — Build Spec", Claude Docs) and the cli
 
 ## Step 2 — Repo, local stack and CI
 
-Built in parts: (a) Python workspace, API and worker; (b) website skeleton; (c) `docker compose` stack; (d) CI; (e) Terraform staging skeleton.
+Built in parts: (a) Python workspace, API and worker; (b) website skeleton; (c) `docker compose` stack; (d) CI; (e) Terraform staging skeleton, on hold until local work is complete (D-14).
 
 - [x] Part a: Python workspace with `packages/core`, `services/api` (health endpoints) and `services/ingest` (Celery worker).
 - [x] Part b: Next.js 15 website skeleton in `web/` with the prototype's design tokens, fonts, dark/light theme and a live API status.
 - [x] Part c: `docker compose up --build` starts Postgres, Redis, OpenSearch, fake S3, the API, a worker and the website, with no credential anywhere.
-- [x] Part d: CI on every push and pull request: credential-word check, gitleaks, Python and website checks, and a full `docker compose` run.
+- [x] Part d: CI on every push and pull request: credential-word check, gitleaks, Python and website checks, and a full `docker compose` run. `main` is protected: all four checks must pass.
+- [ ] Part e: Terraform staging skeleton and deploy workflow (on hold, D-14).
 - [ ] A fresh clone runs end to end locally with one command (`docker compose up`).
-- [ ] A test pull request that adds a fake credential is blocked by CI.
+- [x] A test pull request that adds a fake credential is blocked by CI (pull request #1: gitleaks and ruff S105 failed, merge blocked).
 - [ ] A merge to `main` deploys to staging automatically.
 
 ## Step 3 — Database schema and core models
