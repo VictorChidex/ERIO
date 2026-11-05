@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { Logo } from "@/components/Logo";
+
 const REPO = "https://github.com/VictorChidex/ERIO";
 
 export function Footer() {
@@ -8,7 +10,9 @@ export function Footer() {
       <div className="wrap">
         <div className="foot-in">
           <div className="foot-brand">
-            <span className="fl">ERIO</span>
+            <span className="fl">
+              <Logo size={24} />
+            </span>
             <p>
               Every open job, in every country.
               <br />

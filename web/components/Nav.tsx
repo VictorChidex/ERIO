@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { Logo } from "@/components/Logo";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const LINKS = [
@@ -20,7 +21,7 @@ export function Nav() {
     <nav id="nav" aria-label="Main">
       <div className="nav-in">
         <Link href="/" className="nav-logo" aria-label="ERIO home">
-          ERIO
+          <Logo />
         </Link>
         <div className="nav-links">
           {LINKS.map((link) => (
