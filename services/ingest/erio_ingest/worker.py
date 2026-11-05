@@ -4,6 +4,7 @@ Start a worker with ``celery -A erio_ingest.worker worker``.
 """
 
 import random
+from datetime import datetime
 from functools import lru_cache
 from typing import Any
 
@@ -13,9 +14,11 @@ from sqlalchemy import Engine, create_engine
 from sqlalchemy.orm import Session
 
 from erio_core.connectors import CONNECTORS
+from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
 from erio_ingest.fetcher import PoliteFetcher
 from erio_ingest.fx import FX_HOSTS, refresh_rates
+from erio_ingest.indexer import rebuild, sync_changed
 from erio_ingest.normalizer import BATCH, latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
@@ -39,6 +42,8 @@ app.conf.update(
         "mark-unverified-jobs": {"task": "erio.mark_unverified_jobs", "schedule": 600.0},
         "normalize-pending": {"task": "erio.normalize_pending", "schedule": 300.0},
         "refresh-fx-rates": {"task": "erio.refresh_fx_rates", "schedule": 6 * 3600.0},
+        "index-changed": {"task": "erio.index_changed", "schedule": 20.0},
+        "rebuild-index": {"task": "erio.rebuild_index", "schedule": 24 * 3600.0},
     },
 )
 
@@ -107,7 +112,30 @@ def normalize_pending_task() -> dict[str, Any]:
     result = normalize_pending(engine(), store(), utcnow)
     if result.jobs == BATCH:
         normalize_pending_task.delay()  # more waiting: keep going
+    if result.jobs:
+        index_changed_task.delay()
     return {"jobs": result.jobs, "needs_review": result.needs_review, "failed": result.failed[:20]}
+
+
+# How far the indexer has read jobs.updated_at; losing it only means one full sync.
+WATERMARK_KEY = "erio:indexer:watermark"
+
+
+@app.task(name="erio.index_changed", ignore_result=True)
+def index_changed_task() -> dict[str, int]:
+    redis = Redis.from_url(settings.redis_url)
+    raw = redis.get(WATERMARK_KEY)
+    since = datetime.fromisoformat(raw.decode()) if isinstance(raw, bytes) else None
+    result = sync_changed(engine(), search_client(), settings.search_alias, since)
+    if result.watermark is not None:
+        redis.set(WATERMARK_KEY, result.watermark.isoformat())
+    return {"indexed": result.indexed, "removed": result.removed}
+
+
+@app.task(name="erio.rebuild_index", ignore_result=True)
+def rebuild_index_task() -> dict[str, Any]:
+    name, count = rebuild(engine(), search_client(), settings.search_alias)
+    return {"index": name, "jobs": count}
 
 
 @app.task(name="erio.crawl_board", bind=True, max_retries=MAX_RETRIES)

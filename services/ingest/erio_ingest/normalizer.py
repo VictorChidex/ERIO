@@ -113,6 +113,7 @@ def _normalize_one(
         "company_id": board.company_id,
         "posted_at": partial.posted_at,
         "indexed_at": now,
+        "updated_at": now,
         "last_verified_at": posting.last_seen_at,
     }
     statement = insert(Job).values(values)

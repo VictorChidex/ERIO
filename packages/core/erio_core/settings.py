@@ -18,6 +18,8 @@ class Settings(BaseSettings):
     database_url: str = "postgresql://erio@127.0.0.1:5432/erio"
     redis_url: str = "redis://127.0.0.1:6379/0"
     opensearch_url: str = "http://127.0.0.1:9200"
+    # Name searches use; it always points at the live jobs index.
+    search_alias: str = "jobs"
     s3_endpoint_url: str = "http://127.0.0.1:9090"
     raw_bucket: str = "erio-raw"
     # Local S3Mock accepts unsigned requests; real S3 uses the IAM role.

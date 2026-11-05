@@ -82,3 +82,26 @@ def redis_url() -> Iterator[str]:
     finally:
         client.flushdb()
         client.close()
+
+
+@pytest.fixture
+def search_alias() -> Iterator[str]:
+    """A unique index alias on the OpenSearch named by ERIO_TEST_OPENSEARCH_URL;
+    every index behind it is deleted afterwards."""
+    from opensearchpy import OpenSearch
+    from opensearchpy.exceptions import ConnectionError as SearchConnectionError
+
+    url = os.environ.get("ERIO_TEST_OPENSEARCH_URL", Settings().opensearch_url)
+    search = OpenSearch(hosts=[url], timeout=10)
+    try:
+        search.info()
+    except SearchConnectionError as error:
+        if os.environ.get("ERIO_REQUIRE_DB_TESTS"):
+            raise
+        pytest.skip(f"no OpenSearch for tests: {error}")
+    alias = f"test_jobs_{uuid.uuid4().hex[:10]}"
+    try:
+        yield alias
+    finally:
+        search.indices.delete(index=f"{alias}*", ignore_unavailable=True)
+        search.close()

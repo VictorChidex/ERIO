@@ -41,6 +41,8 @@ known-first-party = ["erio_core", "erio_api", "erio_ingest"]
 # Tests use asserts and board names such as board_token="stripe", which the
 # hard-coded-credential rules (S105, S106) misread. They stay on everywhere else.
 "**/tests/**" = ["S101", "S105", "S106"]
+# One row per test job reads best as a wide table.
+"services/api/tests/test_search_api.py" = ["S101", "S105", "S106", "E501"]
 
 [tool.mypy]
 python_version = "3.12"

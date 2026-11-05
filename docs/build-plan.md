@@ -16,7 +16,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 4 | 4 | First connector and crawl pipeline | In progress |
 | 5 | 5 | Failure-aware status rules | Done (live removal check pending) |
 | 6 | 6 | Normalization and country resolution | Done (admin review page later) |
-| 7 | 9 | Search index and API v1 | Not started |
+| 7 | 9 | Search index and API v1 | In progress |
 | 8 | 10 | Website | Not started |
 | 9 | 11 | Globe and country filter | Not started |
 | 10 | 7 | Remaining 5 connectors and company list | Not started |
@@ -102,8 +102,13 @@ Built in parts: (a) location and country resolution; (b) salary, role and title;
 
 ## Step 9 — Search index and API v1
 
-- [ ] `country=NG` returns Nigerian jobs plus remote roles open to Nigeria; `include_worldwide=false` removes worldwide ones.
-- [ ] Facet counts per country match a direct database count.
+Built in parts: (a) OpenSearch index and indexer; (b) `/v1/jobs` and `/v1/jobs/{id}`; (c) `/v1/countries`, `/v1/platforms`, `/v1/stats`; (d) tokens and rate limits.
+
+- [x] Part a: one document per open or unknown job with a resolved place, behind the `jobs` alias; `filter_countries` (own country plus countries a remote role accepts) drives both the country filter and its facet. The indexer follows `jobs.updated_at` every 20 seconds (60-second overlap) and rebuilds into a new index nightly, swapping the alias with no downtime.
+- [x] Part b: `GET /v1/jobs` with `q`, `country`, `include_worldwide`, `remote_status`, `role`, `salary_min_usd`, `platform`, `posted_after`, `status`, `sort`, `cursor`, `per_page`; facets count every filter except their own; cursor pagination with `search_after`; one error shape with a request ID. `GET /v1/jobs/{id}` returns the full description.
+- [x] Part c: `GET /v1/countries` (233 countries, filterable and local counts, top city pins), `GET /v1/platforms` (status, boards, jobs, 24-hour fetch success), `GET /v1/stats` (totals, refresh lag).
+- [x] `country=NG` returns Nigerian jobs plus remote roles open to Nigeria; `include_worldwide=false` removes worldwide ones (API tests on Postgres and OpenSearch).
+- [x] Facet counts per country match a direct database count (API tests).
 - [ ] p95 < 300 ms at 200 requests per second; over-limit returns 429 with rate-limit headers.
 
 ## Step 10 — Website

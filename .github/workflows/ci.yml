@@ -59,9 +59,21 @@ jobs:
         options: >-
           --health-cmd "redis-cli ping"
           --health-interval 5s --health-timeout 3s --health-retries 20
+      opensearch:
+        image: opensearchproject/opensearch:2.18.0
+        env:
+          discovery.type: single-node
+          DISABLE_SECURITY_PLUGIN: "true"
+          DISABLE_INSTALL_DEMO_CONFIG: "true"
+          OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
+        ports: ["9200:9200"]
+        options: >-
+          --health-cmd "curl -fs http://localhost:9200/_cluster/health"
+          --health-interval 10s --health-timeout 5s --health-retries 30
     env:
       ERIO_TEST_DATABASE_URL: postgresql://erio@127.0.0.1:5432/erio
       ERIO_TEST_REDIS_URL: redis://127.0.0.1:6379/15
+      ERIO_TEST_OPENSEARCH_URL: http://127.0.0.1:9200
       ERIO_REQUIRE_DB_TESTS: "1"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -103,8 +115,9 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Build and start every service
-        run: docker compose up --build --detach --wait --wait-timeout 420
+      # Every service except beat: CI never crawls the live job boards.
+      - name: Build and start the stack
+        run: docker compose up --build --detach --wait --wait-timeout 420 api worker web s3
       - name: Check the services answer
         run: |
           curl -sSf http://127.0.0.1:8000/v1/health/ready

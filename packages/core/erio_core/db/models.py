@@ -231,6 +231,10 @@ class Job(Base):
     # Why the normalizer could not resolve this job; such jobs are kept out
     # of country filters until fixed in the admin review queue.
     review_reason: Mapped[str | None] = mapped_column(Text)
+    # Last change to any field; the search indexer follows this.
+    updated_at: Mapped[datetime] = mapped_column(
+        server_default=func.now(), onupdate=func.now(), index=True
+    )
 
 
 class JobSource(Base):
