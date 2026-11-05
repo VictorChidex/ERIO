@@ -172,7 +172,10 @@ class RawPosting(Base):
     content_hash: Mapped[str] = mapped_column(CHAR(64))
     first_seen_at: Mapped[datetime]
     last_seen_at: Mapped[datetime]
+    # First successful fetch that no longer listed this posting.
     missing_since: Mapped[datetime | None]
+    # Set when a second successful fetch, 30+ minutes later, still misses it.
+    closed_at: Mapped[datetime | None]
     payload_s3_key: Mapped[str | None] = mapped_column(Text)
 
 

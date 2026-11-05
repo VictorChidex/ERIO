@@ -10,6 +10,7 @@ from typing import Any
 from celery import Celery, Task
 from redis import Redis
 from sqlalchemy import Engine, create_engine
+from sqlalchemy.orm import Session
 
 from erio_core.connectors import CONNECTORS
 from erio_core.settings import get_settings
@@ -17,6 +18,7 @@ from erio_ingest.fetcher import PoliteFetcher
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
 from erio_ingest.scheduler import schedule_due_boards
+from erio_ingest.status import mark_unverified
 from erio_ingest.storage import S3RawStore
 
 settings = get_settings()
@@ -32,6 +34,7 @@ app.conf.update(
     # Celery beat (`celery -A erio_ingest.worker beat`) queues due boards every minute.
     beat_schedule={
         "schedule-due-boards": {"task": "erio.schedule_due_boards", "schedule": 60.0},
+        "mark-unverified-jobs": {"task": "erio.mark_unverified_jobs", "schedule": 600.0},
     },
 )
 
@@ -74,6 +77,12 @@ def schedule_due_boards_task() -> int:
     return len(queued)
 
 
+@app.task(name="erio.mark_unverified_jobs", ignore_result=True)
+def mark_unverified_jobs_task() -> int:
+    with Session(engine()) as session, session.begin():
+        return mark_unverified(session, utcnow())
+
+
 @app.task(name="erio.crawl_board", bind=True, max_retries=MAX_RETRIES)
 def crawl_board_task(self: Task, board_id: int) -> dict[str, Any]:
     result = crawl_board(engine(), board_id, fetcher(), store())
@@ -87,4 +96,5 @@ def crawl_board_task(self: Task, board_id: int) -> dict[str, Any]:
         "postings_seen": result.postings_seen,
         "new_postings": result.new_postings,
         "changed_postings": result.changed_postings,
+        "closed_postings": result.closed_postings,
     }

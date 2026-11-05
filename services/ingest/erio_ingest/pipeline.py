@@ -2,7 +2,7 @@
 
 A failed fetch only ever touches ``crawl_runs`` and the board's failure
 counter; it never changes a posting or a job (status rule 2). Job status
-changes from what successful fetches saw are applied in step 5.
+changes from what successful fetches saw are applied by erio_ingest.status.
 """
 
 from collections.abc import Callable
@@ -18,6 +18,7 @@ from sqlalchemy.orm import Session
 from erio_core.connectors import BoardFetch, Fetcher, FetchError, get_connector
 from erio_core.db.models import CompanyBoard, CrawlRun, RawPosting
 from erio_core.schemas import RawPosting as RawPostingData
+from erio_ingest.status import apply_successful_fetch
 from erio_ingest.storage import RawStore
 
 PAUSE_AFTER_FAILURES = 5
@@ -45,6 +46,7 @@ class CrawlResult:
     postings_seen: int
     new_postings: int = 0
     changed_postings: int = 0
+    closed_postings: int = 0
 
     @property
     def retryable(self) -> bool:
@@ -123,7 +125,11 @@ def _record_success(
             # 304: everything listed last time is still listed.
             touched: CursorResult[Any] = session.execute(  # type: ignore[assignment]
                 update(RawPosting)
-                .where(RawPosting.board_id == board_id, RawPosting.missing_since.is_(None))
+                .where(
+                    RawPosting.board_id == board_id,
+                    RawPosting.missing_since.is_(None),
+                    RawPosting.closed_at.is_(None),
+                )
                 .values(last_seen_at=now)
             )
             seen = touched.rowcount
@@ -151,6 +157,9 @@ def _record_success(
                 )
             seen = len(fetched.postings)
 
+        listed = None if fetched.unchanged else {p.external_id for p in fetched.postings}
+        changes = apply_successful_fetch(session, board_id, listed, now)
+
         board = session.get_one(CompanyBoard, board_id, with_for_update=True)
         board.last_ok_at = now
         board.consecutive_failures = 0
@@ -165,7 +174,9 @@ def _record_success(
         run.http_status = fetched.http_status
         run.postings_seen = seen
 
-    return CrawlResult(run_id, "ok", fetched.http_status, seen, new, changed)
+    return CrawlResult(
+        run_id, "ok", fetched.http_status, seen, new, changed, changes.closed_postings
+    )
 
 
 def _upsert_posting(
@@ -184,7 +195,14 @@ def _upsert_posting(
         "first_seen_at": now,
         "last_seen_at": now,
     }
-    updates = {"board_id": board_id, "content_hash": posting.content_hash, "last_seen_at": now}
+    # Seen again: a posting that was missing or closed is reopened (rule 5).
+    updates = {
+        "board_id": board_id,
+        "content_hash": posting.content_hash,
+        "last_seen_at": now,
+        "missing_since": None,
+        "closed_at": None,
+    }
     if store_payload:
         key = store.put_posting(posting)
         values["payload_s3_key"] = key

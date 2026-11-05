@@ -14,7 +14,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 2 | 2 | Repo, local stack and CI (local parts) | Done except part e |
 | 3 | 3 | Database schema and core models | Done |
 | 4 | 4 | First connector and crawl pipeline | In progress |
-| 5 | 5 | Failure-aware status rules | Not started |
+| 5 | 5 | Failure-aware status rules | Done (live removal check pending) |
 | 6 | 6 | Normalization and country resolution | Not started |
 | 7 | 9 | Search index and API v1 | Not started |
 | 8 | 10 | Website | Not started |
@@ -71,9 +71,11 @@ Built in parts: (a) connector interface and Greenhouse adapter; (b) crawl pipeli
 
 ## Step 5 — Failure-aware status rules
 
-- [ ] The failure-simulation suite shows zero jobs closed by a failed fetch.
-- [ ] A posting removed from a live test board is closed within 45 minutes.
-- [ ] A board failing for 2 hours keeps its jobs open, then `unknown` after 72 hours.
+Status engine in `services/ingest/erio_ingest/status.py`; failure-simulation suite in `services/ingest/tests/test_status.py`, run in CI.
+
+- [x] The failure-simulation suite shows zero jobs closed by a failed fetch (10 failure kinds, each for two hours: 5xx, 429, 403, empty body, HTML, malformed JSON, wrong shape, empty list without a total, timeout).
+- [ ] A posting removed from a live test board is closed within 45 minutes. Proven in simulation (closed 40 minutes after removal); the live check needs a board we control.
+- [x] A board failing for 2 hours keeps its jobs open, then `unknown` after 72 hours, and `open` again when it recovers (simulation).
 
 ## Step 6 — Normalization and country resolution
 
