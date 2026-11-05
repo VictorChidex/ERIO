@@ -17,7 +17,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 5 | 5 | Failure-aware status rules | Done (live removal check pending) |
 | 6 | 6 | Normalization and country resolution | Done (admin review page later) |
 | 7 | 9 | Search index and API v1 | In progress |
-| 8 | 10 | Website | Not started |
+| 8 | 10 | Website | In progress (Lighthouse, Storybook) |
 | 9 | 11 | Globe and country filter | Not started |
 | 10 | 7 | Remaining 5 connectors and company list | Not started |
 | 11 | 8 | Deduplication | Not started |
@@ -114,9 +114,13 @@ Built in parts: (a) OpenSearch index and indexer; (b) `/v1/jobs` and `/v1/jobs/{
 
 ## Step 10 — Website
 
-- [ ] Every page matches the prototype in both themes.
-- [ ] A copied search URL reproduces the same results.
-- [ ] Lighthouse ≥ 90 (performance, accessibility) on mobile; no horizontal scroll at 360 px.
+- [x] The prototype's design system (tokens, classes, both themes) ported as `web/app/globals.css`; pages: Home, Search, job detail with `JobPosting` data, Coverage, API reference (generated from the OpenAPI spec) and country landing pages (`/countries/[code]`), all server-rendered from the live API with no hard-coded numbers and no "78 sources" claim.
+- [x] Search filters live in the URL (`country`, `ww`, `type`, `role`, `salary`, `sort`), work without JavaScript, and apply instantly with it; searchable 233-country list ordered as the spec asks; chips, Popular countries, worldwide toggle with "Open to you", empty states, Load more.
+- [x] Playwright tests (desktop and 360 px) check pages and numbers against the API; CI loads demo jobs from the recorded fixtures (`python -m erio_ingest.demo`) and runs them on the production build.
+- [ ] Storybook component library (spec deliverable) — not built yet.
+- [x] Every page uses the prototype's layout and styling in both themes (the globe arrives in step 11; the AI search bar with step 12).
+- [x] A copied search URL reproduces the same results (browser test).
+- [ ] Lighthouse ≥ 90 (performance, accessibility) on mobile: not measured yet. No horizontal scroll at 360 px: done (browser tests).
 
 ## Step 11 — Globe and country filter
 

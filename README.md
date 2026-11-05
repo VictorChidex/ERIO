@@ -35,7 +35,7 @@ docker compose up --build
 
 | Service | Address | Notes |
 | --- | --- | --- |
-| Website | http://localhost:3000 | Shows "API online" once the API is ready |
+| Website | http://localhost:3000 | Home, Search (`/search?country=NG`), job pages, Coverage, API reference, country pages (`/countries/ng`) |
 | API | http://localhost:8000/v1/jobs | `/v1/jobs`, `/v1/jobs/{id}`, `/v1/countries`, `/v1/platforms`, `/v1/stats`; interactive docs at `/v1/docs` |
 | Worker | — | Celery, crawls boards from the `crawl` queue |
 | Beat | — | Queues every due board once a minute |
@@ -103,7 +103,13 @@ GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)) runs on ev
 | Website | ESLint, TypeScript, `next build` |
 | Local stack | `docker compose up --build`, checks the API, worker, fake S3 and website answer, then runs the frontend tests |
 
-Frontend tests use [Playwright](https://playwright.dev) against the running stack, on desktop and at 360 px:
+A fresh stack has no jobs until beat crawls the boards. To load a small known set offline (the recorded fixtures, through the real pipeline; only on an empty database):
+
+```bash
+docker compose run --rm -v "$PWD/fixtures:/app/fixtures:ro" worker python -m erio_ingest.demo /app/fixtures
+```
+
+Frontend tests use [Playwright](https://playwright.dev) against the running stack, on desktop and at 360 px. They check every number against the API, so they pass on demo data and on real crawls:
 
 ```bash
 docker compose up --build -d --wait

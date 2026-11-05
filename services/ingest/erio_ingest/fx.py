@@ -19,7 +19,7 @@ def _get(fetcher: Fetcher, url: str) -> bytes:
     return response.body
 
 
-def _store(engine: Engine, day: date, rates: dict[str, float], source: str) -> int:
+def store_rates(engine: Engine, day: date, rates: dict[str, float], source: str) -> int:
     if not rates:
         return 0
     rows = [
@@ -42,12 +42,12 @@ def _store(engine: Engine, day: date, rates: dict[str, float], source: str) -> i
 def refresh_rates(engine: Engine, fetcher: Fetcher) -> dict[str, int]:
     """Store today's rates; ECB wins wherever it publishes a currency."""
     ecb_day, ecb = parse_ecb(_get(fetcher, ECB_URL))
-    counts = {"ecb": _store(engine, ecb_day, ecb, "ecb")}
+    counts = {"ecb": store_rates(engine, ecb_day, ecb, "ecb")}
     try:
         fallback_day, fallback = parse_fallback(_get(fetcher, FALLBACK_URL))
     except (FetchError, ValueError, KeyError):
         counts["fallback"] = 0  # ECB rates alone still cover the major currencies
         return counts
     extra = {code: rate for code, rate in fallback.items() if code not in ecb}
-    counts["fallback"] = _store(engine, fallback_day, extra, "exchangerate-api")
+    counts["fallback"] = store_rates(engine, fallback_day, extra, "exchangerate-api")
     return counts

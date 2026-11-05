@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Link from "next/link";
 import type { ReactNode } from "react";
 
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { Footer } from "@/components/Footer";
+import { Nav } from "@/components/Nav";
 import { THEME_STORAGE_KEY } from "@/lib/theme";
 
 import "./globals.css";
@@ -35,8 +35,9 @@ const mono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ERIO — real-time job index",
-  description: "Search open jobs from applicant tracking systems in every country.",
+  title: { default: "ERIO — real-time job index", template: "%s · ERIO" },
+  description:
+    "Search open jobs from employers' applicant tracking systems in every country, refreshed every 15 minutes.",
 };
 
 // Applies the saved theme before first paint so light-mode users never see a dark flash.
@@ -53,17 +54,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
-        <nav className="nav" aria-label="Main">
-          <div className="nav-in">
-            <Link href="/" className="logo">
-              ERIO<span>.</span>
-            </Link>
-            <div className="nav-r">
-              <ThemeToggle />
-            </div>
-          </div>
-        </nav>
-        <main>{children}</main>
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        <Nav />
+        <main id="main">{children}</main>
+        <Footer />
       </body>
     </html>
   );
