@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 
 import { getCountries, getJob, type JobRecord, NotFound } from "@/lib/api";
 import { ageLabel, locationLabel, ROLE_LABELS, salaryLabel, sourceLabel, TYPE_LABELS } from "@/lib/format";
@@ -10,12 +10,16 @@ export const dynamic = "force-dynamic";
 type Props = { params: Promise<{ id: string }> };
 
 async function load(id: string): Promise<JobRecord> {
+  let job: JobRecord;
   try {
-    return (await getJob(id)).data;
+    job = (await getJob(id)).data;
   } catch (error) {
     if (error instanceof NotFound) notFound();
     throw error;
   }
+  // A job merged into another (dedup) lives on under the survivor's ID.
+  if (job.canonical_id !== id) permanentRedirect(`/jobs/${job.canonical_id}`);
+  return job;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

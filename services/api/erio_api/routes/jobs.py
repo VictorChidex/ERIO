@@ -5,9 +5,10 @@ from datetime import datetime
 from typing import Annotated, Any, get_args
 
 from fastapi import APIRouter, Depends, Path, Query
+from fastapi.responses import RedirectResponse
 from opensearchpy import OpenSearch
 from pydantic import BaseModel
-from sqlalchemy import Engine, func, select
+from sqlalchemy import Engine, select
 from sqlalchemy.orm import Session
 
 from erio_api.access import rate_limit
@@ -103,13 +104,21 @@ def search_jobs(
 
 
 @router.get(
-    "/jobs/{canonical_id}", response_model=JobDetail, summary="One job, with its full description"
+    "/jobs/{canonical_id}",
+    response_model=JobDetail,
+    summary="One job, with its full description",
+    responses={301: {"description": "The job was merged into another; follow Location"}},
 )
 def get_job(
     canonical_id: Annotated[str, Path(pattern=r"^[A-Za-z0-9_-]{1,40}$")],
     db: Annotated[Engine, Depends(engine)],
-) -> dict[str, Any]:
+) -> Any:
     with Session(db) as session:
+        merged_into = session.scalar(
+            select(Job.merged_into).where(Job.canonical_id == canonical_id)
+        )
+        if merged_into is not None:
+            return RedirectResponse(f"/v1/jobs/{merged_into}", status_code=301)
         row = session.execute(
             select(Job, Company)
             .join(Company, Company.id == Job.company_id)
@@ -118,10 +127,12 @@ def get_job(
         if row is None:
             raise ApiError(404, "not_found", f"no job {canonical_id}")
         job, company = row
+        # The primary posting's source first: it is where apply_url leads.
         sources = session.scalars(
-            select(func.distinct(RawPosting.source_slug))
+            select(RawPosting.source_slug)
             .join(JobSource, JobSource.raw_posting_id == RawPosting.id)
             .where(JobSource.job_id == canonical_id)
+            .order_by(JobSource.is_primary.desc(), RawPosting.source_slug)
         ).all()
         # The jobs row holds every JobRecord field except company and sources.
         columns = {
@@ -135,7 +146,7 @@ def get_job(
                     "domain": company.domain,
                     "logo_url": company.logo_url,
                 },
-                "sources": sorted(sources),
+                "sources": list(dict.fromkeys(sources)),
             }
         )
     return {"data": record}

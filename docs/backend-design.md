@@ -51,7 +51,7 @@ Each page of the prototype maps to one API call. The website uses the same publi
 | Scheduler and workers | `services/ingest` | Queue boards, fetch politely, record every fetch in `crawl_runs`, store raw payloads |
 | Status engine | `services/ingest` | Applies the five failure-aware status rules (below) |
 | Normalizer | `services/ingest` | Location and country, remote scope, salary and USD value, role category; unresolved jobs go to a review queue |
-| Dedup | `services/ingest` | Exact ID, exact key, then SimHash near-duplicates within the same company and country |
+| Dedup | `packages/core` (rules), `services/ingest` (merging) | Exact ID, exact key, then SimHash near-duplicates within the same company, country and place, tuned on 600 labeled pairs (D-16) |
 | Indexer | `services/ingest` | Updates OpenSearch within 60 seconds of a change; nightly rebuild with no downtime |
 | API | `services/api` | The `/v1` endpoints above, cursor pagination, rate limits, one error shape |
 

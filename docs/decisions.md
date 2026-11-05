@@ -21,6 +21,7 @@ Owner: Chidex (project owner) unless stated otherwise.
 | D-13 | Local fake S3 is Adobe S3Mock (`adobe/s3mock`), not MinIO | Proposed | MinIO no longer publishes free container images (its Docker Hub repository is gone and quay.io needs a login). S3Mock is Apache-2.0 and accepts requests without any credential, so the local stack stays credential-free. Staging and production use real S3 |
 | D-14 | Build and prove everything on the local `docker compose` stack first; Terraform, staging and cloud deploys come after the local build is complete | Agreed | Owner's call. Search and API v1 (step 9) move before the website (steps 10–11); D-03 can wait until then. See `docs/build-plan.md` |
 | D-15 | API access tiers: requests from networks in `ERIO_API_INTERNAL_CIDRS` (locally, the compose networks) need no token; others use a Bearer token (free 100/min, pro 2,000/min) or are anonymous (30/min per address). Limits use the connecting address, never a forwarded header | Proposed | Keeps the local stack credential-free (D-08): the website calls the API without a token. In production the website fetches a token from the cloud credential vault (Phase 4), and the internal list is left empty |
+| D-16 | Dedup rules tuned on the 600 labeled pairs: near-duplicates need Hamming distance ≤ 6 (spec: ≤ 3), places that do not differ (city, state or region, and the countries a remote role accepts), and the same title once place words are removed; the exact key keeps the apply URL query values that name a job and drops only tracking ones (spec: host and path) | Proposed | With the spec's rules as written: precision 57.5%, recall 68.7%. Template descriptions merged different roles, offices and sales territories (Datadog lists one remote role per US state), and careers pages such as `stripe.com/jobs/search?gh_jid=…` share one path. With these rules: precision 100%, recall 93.0%; the first false merge appears at distance 12. Merges are kept when a posting changes later; `python -m erio_ingest.dedup merges` lists them |
 
 ## Open items for the project owner
 
@@ -31,4 +32,5 @@ Owner: Chidex (project owner) unless stated otherwise.
 - [ ] D-11: confirm retention periods.
 - [ ] D-13: agree S3Mock as the local fake S3.
 - [ ] D-15: agree the API access tiers and the internal-network rule.
+- [ ] D-16: agree the tuned dedup rules.
 - [ ] Legal review of the 6 MVP sources (see `docs/sources.md`).

@@ -18,6 +18,7 @@ from erio_api.main import app
 from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
 from erio_core.db.seed import sync_countries, sync_sources
 from erio_core.search.index import client
+from erio_ingest.dedup import merge
 from erio_ingest.indexer import rebuild, sync_changed
 
 NOW = datetime(2026, 11, 5, 12, 0, tzinfo=UTC)
@@ -262,3 +263,29 @@ def test_indexer_removes_closed_jobs_and_rebuild_swaps_the_alias(
     # Searchable: the four open jobs plus j_unknown (findable with status=unknown).
     assert after == {name} and not before & after and count == 5
     assert ids(api.get("/v1/jobs")) == {"j_ng_lagos", "j_ng_remote", "j_world", "j_eu_remote"}
+
+
+def test_merged_job_leaves_search_and_its_id_redirects(
+    api: TestClient, migrated_engine: Engine, search_alias: str
+) -> None:
+    with Session(migrated_engine) as session, session.begin():
+        # The London posting came from Ashby; Lagos (Greenhouse) stays primary.
+        posting = session.scalars(
+            select(RawPosting)
+            .join(JobSource, JobSource.raw_posting_id == RawPosting.id)
+            .where(JobSource.job_id == "j_gb_london")
+        ).one()
+        posting.source_slug = "ashby"
+        session.flush()
+        merge(session, "j_gb_london", "j_ng_lagos", "exact_key", NOW)
+    sync_changed(migrated_engine, client(), search_alias, NOW - timedelta(days=1))
+
+    listed = {job["canonical_id"]: job for job in api.get("/v1/jobs").json()["data"]}
+    assert "j_gb_london" not in listed
+    # The primary posting's source comes first: it is where apply_url leads.
+    assert listed["j_ng_lagos"]["sources"] == ["greenhouse", "ashby"]
+    response = api.get("/v1/jobs/j_gb_london", follow_redirects=False)
+    assert (response.status_code, response.headers["location"]) == (301, "/v1/jobs/j_ng_lagos")
+    job = api.get("/v1/jobs/j_gb_london").json()["data"]
+    assert (job["canonical_id"], job["dedup_method"]) == ("j_ng_lagos", "exact_key")
+    assert job["sources"] == ["greenhouse", "ashby"]

@@ -2,8 +2,9 @@
 
 Picks up every raw posting whose current content has not been normalized
 yet, reads its stored payload, lets its connector parse it, normalizes it,
-and upserts one canonical job linked to it. Job status then follows the
-posting through the status rules.
+and upserts the job built from it. A new posting's job is then checked for
+duplicates and may merge into another (erio_ingest.dedup). Job status then
+follows the postings through the status rules.
 """
 
 from collections.abc import Callable
@@ -16,8 +17,10 @@ from sqlalchemy.orm import Session
 
 from erio_core.connectors import get_connector
 from erio_core.db.models import CompanyBoard, FxRate, Job, JobSource, RawPosting
+from erio_core.dedup import Fingerprint, simhash
 from erio_core.normalize.job import normalize
 from erio_core.schemas import RawPosting as RawPostingData
+from erio_ingest.dedup import dedup_jobs, survivor
 from erio_ingest.status import refresh_jobs
 from erio_ingest.storage import RawStore
 
@@ -28,6 +31,7 @@ BATCH = 200
 class NormalizeResult:
     jobs: int = 0
     needs_review: int = 0
+    merged: int = 0
     failed: list[str] = field(default_factory=list)
 
 
@@ -79,8 +83,10 @@ def normalize_pending(
             posting.normalized_hash = posting.content_hash
 
         session.flush()
-        refresh_jobs(session, job_ids, now())
         result.jobs = len(job_ids)
+        result.merged = len(dedup_jobs(session, job_ids, now()).merges)
+        job_ids = sorted({survivor(session, job_id) for job_id in job_ids})
+        refresh_jobs(session, job_ids, now())
         result.needs_review = (
             session.scalar(
                 select(func.count())
@@ -109,8 +115,21 @@ def _normalize_one(
     )
     partial = connector.parse(raw)
     job = normalize(partial, rates)
+    fingerprint = Fingerprint(
+        company_id=board.company_id,
+        title=job.title,
+        city=job.location.city,
+        country_code=job.location.country_code,
+        remote_scope=job.location.remote_scope,
+        apply_url=job.apply_url,
+        simhash=simhash(job.description_text),
+        region=job.location.region,
+        eligible=frozenset(job.location.eligible_country_codes),
+    )
     values = job.columns() | {
         "company_id": board.company_id,
+        "dedup_key": fingerprint.key(),
+        "simhash": fingerprint.simhash,
         "posted_at": partial.posted_at,
         "indexed_at": now,
         "updated_at": now,
@@ -126,4 +145,5 @@ def _normalize_one(
         .values(job_id=job.canonical_id, raw_posting_id=posting.id, is_primary=True)
         .on_conflict_do_nothing()
     )
-    return job.canonical_id
+    # After a merge the posting belongs to the surviving job.
+    return survivor(session, job.canonical_id)

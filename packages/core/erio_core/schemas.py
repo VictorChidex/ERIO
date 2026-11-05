@@ -119,6 +119,7 @@ class JobRecord(BaseModel):
     indexed_at: AwareDatetime
     last_verified_at: AwareDatetime | None
     closed_at: AwareDatetime | None
+    # Every source that lists the job; the primary posting's (apply_url's) first.
     sources: list[str]
     dedup_method: DedupMethod | None
     apply_url: str

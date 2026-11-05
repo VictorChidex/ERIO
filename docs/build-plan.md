@@ -20,7 +20,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 8 | 10 | Website | In progress (Lighthouse, Storybook) |
 | 9 | 11 | Globe and country filter | Done (60 fps to check on the reference laptop) |
 | 10 | 7 | Remaining 5 connectors and company list | In progress (company list: D-07) |
-| 11 | 8 | Deduplication | Not started |
+| 11 | 8 | Deduplication | Done (admin merge page with the admin view) |
 | 12 | 12 | AI providers and MCP server | Not started |
 | 13 | 2e | Terraform staging and deploy on merge | On hold until local is complete |
 | 14 | 13 | Observability, load and security | Not started |
@@ -103,9 +103,13 @@ Built in parts: (a) location and country resolution; (b) salary, role and title;
 
 ## Step 8 — Deduplication
 
-- [ ] Precision ≥ 99% and recall ≥ 90% on the labeled pairs.
-- [ ] A job posted on 2 sources shows once in search, listing both.
-- [ ] Dedup of a full crawl cycle finishes in under 5 minutes.
+Every posting first becomes its own job; dedup (`erio_core/dedup.py` for the rules, `erio_ingest/dedup.py` for merging) then merges a duplicate into the job that ranks first (ATS over board, earliest `posted_at`). Each normalizer batch dedups its own jobs, and a full pass runs nightly (`python -m erio_ingest.dedup`). A merged job leaves search and its ID redirects (API 301, website 308) to the survivor, which lists every source with the primary one first. `python -m erio_ingest.dedup merges` lists the latest merges; the admin merge page comes with the admin view.
+
+- [x] Precision ≥ 99% and recall ≥ 90% on the labeled pairs: 100% and 93.0% on 600 pairs from real crawled postings (`fixtures/labeled/dedup_pairs.json.gz`, built by `scripts/build_dedup_pairs.py`), with the rules tuned as in D-16. The spec's rules as written scored 57.5% and 68.7%.
+- [x] A job posted on 2 sources shows once in search, listing both: TrueLayer's 4 jobs on Greenhouse and Ashby, on the local stack and in tests.
+- [x] Dedup of a full crawl cycle finishes in under 5 minutes: 5 seconds for all 5,260 local jobs (143 seconds the first time, when every job is fingerprinted once). To re-check at 3,000 boards.
+
+On the local data the full pass merged 72 jobs, mostly one employer posting the same job several times (Coinbase lists one Manila support role 22 times). One known false merge: Gympass's Berlin and Munich sales roles, because the normalizer finds no city in "Germany (Berlin- Hybrid)".
 
 ## Step 9 — Search index and API v1
 

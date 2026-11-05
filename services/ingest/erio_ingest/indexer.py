@@ -15,6 +15,7 @@ from typing import Any
 from opensearchpy import OpenSearch
 from opensearchpy.helpers import bulk
 from sqlalchemy import Engine, Select, func, select
+from sqlalchemy.dialects.postgresql import aggregate_order_by
 from sqlalchemy.orm import Session
 
 from erio_core.db.models import Company, Job, JobSource, RawPosting
@@ -45,8 +46,15 @@ def _rows(statement: Select[Any], engine: Engine) -> Iterator[dict[str, Any]]:
 
 
 def _job_rows() -> Select[Any]:
+    # The primary posting's source first: the website names it on the apply button.
     sources = (
-        select(func.array_agg(func.distinct(RawPosting.source_slug)))
+        select(
+            func.array_agg(
+                aggregate_order_by(
+                    RawPosting.source_slug, JobSource.is_primary.desc(), RawPosting.source_slug
+                )
+            )
+        )
         .join(JobSource, JobSource.raw_posting_id == RawPosting.id)
         .where(JobSource.job_id == Job.canonical_id)
         .scalar_subquery()

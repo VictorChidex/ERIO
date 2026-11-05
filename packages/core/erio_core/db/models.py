@@ -224,6 +224,7 @@ class Job(Base):
     __table_args__ = (
         Index(None, "eligible_country_codes", postgresql_using="gin"),
         Index(None, "status", "posted_at"),
+        Index(None, "company_id", "dedup_key"),
     )
 
     canonical_id: Mapped[str] = mapped_column(String(40), primary_key=True)
@@ -260,6 +261,15 @@ class Job(Base):
     last_verified_at: Mapped[datetime | None]
     closed_at: Mapped[datetime | None]
     dedup_method: Mapped[str | None] = mapped_column(text_enum("dedup_method", DEDUP_METHODS))
+    # Every raw posting first becomes its own job. When dedup finds that job
+    # is another, its postings move there and it points at the survivor; it
+    # leaves search, and its ID redirects (spec section 6).
+    merged_into: Mapped[str | None] = mapped_column(
+        ForeignKey("jobs.canonical_id", ondelete="SET NULL"), index=True
+    )
+    # Fingerprints of the posting this row was built from (erio_core.dedup).
+    dedup_key: Mapped[str | None] = mapped_column(CHAR(64))
+    simhash: Mapped[int | None] = mapped_column(BigInteger)
     apply_url: Mapped[str] = mapped_column(Text)
     description_html: Mapped[str | None] = mapped_column(Text)
     description_text: Mapped[str | None] = mapped_column(Text)
@@ -284,7 +294,9 @@ class JobSource(Base):
         ForeignKey("raw_postings.id", ondelete="CASCADE"), primary_key=True, unique=True
     )
     is_primary: Mapped[bool] = mapped_column(Boolean, server_default="false")
+    # Set when dedup moved this posting here from the job built from it.
     dedup_method: Mapped[str | None] = mapped_column(text_enum("dedup_method", DEDUP_METHODS))
+    merged_at: Mapped[datetime | None] = mapped_column(index=True)
 
 
 class FxRate(Base):

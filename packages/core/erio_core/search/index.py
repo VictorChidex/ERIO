@@ -148,12 +148,17 @@ def document(job: dict[str, Any]) -> dict[str, Any]:
         "indexed_at": job.get("indexed_at"),
         "last_verified_at": job.get("last_verified_at"),
         "closed_at": job.get("closed_at"),
-        "sources": list(job.get("sources") or []),
+        # Primary source first, each once.
+        "sources": list(dict.fromkeys(job.get("sources") or [])),
         "dedup_method": job.get("dedup_method"),
         "apply_url": job["apply_url"],
     }
 
 
 def searchable(job: dict[str, Any]) -> bool:
-    """Open or unknown jobs with a resolved place belong in the index."""
-    return job["status"] in SEARCHABLE_STATUSES and not job.get("review_reason")
+    """Open or unknown jobs with a resolved place belong in the index; merged ones do not."""
+    return (
+        job["status"] in SEARCHABLE_STATUSES
+        and not job.get("review_reason")
+        and not job.get("merged_into")
+    )

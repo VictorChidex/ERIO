@@ -16,6 +16,7 @@ from sqlalchemy.orm import Session
 from erio_core.connectors import CONNECTORS
 from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
+from erio_ingest.dedup import dedup_all
 from erio_ingest.discovery import discover_boards
 from erio_ingest.fetcher import PoliteFetcher
 from erio_ingest.fx import FX_HOSTS, refresh_rates
@@ -48,6 +49,7 @@ app.conf.update(
         "rebuild-index": {"task": "erio.rebuild_index", "schedule": 24 * 3600.0},
         "discover-boards": {"task": "erio.discover_boards", "schedule": 24 * 3600.0},
         "smoke-test-sources": {"task": "erio.smoke_test_sources", "schedule": 24 * 3600.0},
+        "dedup-all": {"task": "erio.dedup_all", "schedule": 24 * 3600.0},
     },
 )
 
@@ -118,7 +120,21 @@ def normalize_pending_task() -> dict[str, Any]:
         normalize_pending_task.delay()  # more waiting: keep going
     if result.jobs:
         index_changed_task.delay()
-    return {"jobs": result.jobs, "needs_review": result.needs_review, "failed": result.failed[:20]}
+    return {
+        "jobs": result.jobs,
+        "needs_review": result.needs_review,
+        "merged": result.merged,
+        "failed": result.failed[:20],
+    }
+
+
+@app.task(name="erio.dedup_all", ignore_result=True)
+def dedup_all_task() -> dict[str, Any]:
+    """The nightly full pass; each normalizer batch already dedups its own jobs."""
+    result = dedup_all(engine(), utcnow)
+    if result.merges:
+        index_changed_task.delay()
+    return {"checked": result.checked, "merged": len(result.merges), "seconds": result.seconds}
 
 
 # How far the indexer has read jobs.updated_at; losing it only means one full sync.
