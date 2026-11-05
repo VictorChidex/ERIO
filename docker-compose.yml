@@ -66,12 +66,23 @@ services:
     ports: ["127.0.0.1:9090:9090"]
     volumes: [s3-data:/s3mockroot]
 
+  # One-off: brings the database schema up to date, then exits.
+  migrate:
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: erio-python:local
+    command: ["alembic", "-c", "packages/core/alembic.ini", "upgrade", "head"]
+    environment: *erio-addresses
+    restart: "no"
+    depends_on:
+      postgres: { condition: service_healthy }
+
   api:
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
     environment: *erio-addresses
     ports: ["127.0.0.1:8000:8000"]
     depends_on:
+      migrate: { condition: service_completed_successfully }
       postgres: { condition: service_healthy }
       redis: { condition: service_healthy }
       opensearch: { condition: service_healthy }
@@ -87,7 +98,7 @@ services:
     command: ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "crawl"]
     environment: *erio-addresses
     depends_on:
-      api: { condition: service_started }
+      migrate: { condition: service_completed_successfully }
       redis: { condition: service_healthy }
     healthcheck:
       test: ["CMD-SHELL", "celery -A erio_ingest.worker inspect ping --timeout 5 | grep -q pong"]

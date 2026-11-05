@@ -41,6 +41,21 @@ jobs:
     name: Python (lint, types, tests)
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    # Real Postgres for the migration tests, which must run here (not skip).
+    services:
+      postgres:
+        image: postgres:16.6-alpine
+        env:
+          POSTGRES_USER: erio
+          POSTGRES_DB: erio
+          POSTGRES_HOST_AUTH_METHOD: trust
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U erio -d erio"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      ERIO_TEST_DATABASE_URL: postgresql://erio@127.0.0.1:5432/erio
+      ERIO_REQUIRE_DB_TESTS: "1"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
@@ -86,6 +101,7 @@ jobs:
       - name: Check the services answer
         run: |
           curl -sSf http://127.0.0.1:8000/v1/health/ready
+          test "$(docker compose exec -T postgres psql -U erio -d erio -tAc 'select version_num from alembic_version')" = "$(docker compose run --rm --no-deps migrate alembic -c packages/core/alembic.ini heads | cut -d' ' -f1)"
           docker compose exec -T api python -c \
             "from erio_ingest.worker import ping; assert ping.delay().get(timeout=30) == 'pong'"
           curl -sSf http://127.0.0.1:9090/ | grep -q '<Name>erio-raw</Name>'

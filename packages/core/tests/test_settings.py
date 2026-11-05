@@ -7,7 +7,7 @@ def test_defaults_point_at_local_stack() -> None:
     settings = Settings()
     assert settings.environment == "local"
     assert settings.database_url.startswith("postgresql://")
-    assert "@localhost" in settings.database_url
+    assert "@127.0.0.1" in settings.database_url
 
 
 def test_environment_variables_override_defaults(monkeypatch: pytest.MonkeyPatch) -> None:

@@ -12,7 +12,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | --- | --- | --- | --- |
 | 1 | 1 | Lock decisions and verify sources | In progress |
 | 2 | 2 | Repo, local stack and CI (local parts) | Done except part e |
-| 3 | 3 | Database schema and core models | Not started |
+| 3 | 3 | Database schema and core models | In progress |
 | 4 | 4 | First connector and crawl pipeline | Not started |
 | 5 | 5 | Failure-aware status rules | Not started |
 | 6 | 6 | Normalization and country resolution | Not started |
@@ -49,7 +49,10 @@ Built in parts: (a) Python workspace, API and worker; (b) website skeleton; (c) 
 
 ## Step 3 — Database schema and core models
 
-- [ ] Migrations upgrade and downgrade cleanly on an empty database.
+Built in parts: (a) tables and migrations; (b) the 233 countries and their regions; (c) shared models `RawPosting`, `PartialJob`, `JobRecord`.
+
+- [x] Part a: all 9 spec tables as SQLAlchemy models with an Alembic migration; a `migrate` service applies it before the API and worker start.
+- [x] Migrations upgrade and downgrade cleanly on an empty database (automated test, also in CI on a real Postgres).
 - [ ] The 233 country names match the globe's map data exactly (automated test).
 - [ ] `JobRecord` serializes to the field list in the spec.
 

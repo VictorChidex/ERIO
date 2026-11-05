@@ -38,7 +38,7 @@ docker compose up --build
 | Website | http://localhost:3000 | Shows "API online" once the API is ready |
 | API | http://localhost:8000/v1/health | Readiness at `/v1/health/ready`, docs at `/v1/docs` |
 | Worker | — | Celery, listening on the `crawl` queue |
-| Postgres 16 | localhost:5432 | Database and user `erio`; trusts local connections |
+| Postgres 16 | localhost:5432 | Database and user `erio`; trusts local connections. Tables are created by the one-off `migrate` service |
 | Redis 7 | localhost:6379 | Queue and rate limits |
 | OpenSearch 2 | http://localhost:9200 | Search; security plugin off locally |
 | Fake S3 | http://localhost:9090 | Adobe S3Mock with bucket `erio-raw` (decision D-13) |
@@ -66,6 +66,17 @@ npm run lint && npm run typecheck && npm run build
 ```
 
 The site reads the API address from `ERIO_API_URL` (default `http://localhost:8000`).
+
+### Database migrations
+
+The schema lives in `packages/core/erio_core/db/models.py`; Alembic migrations are in `packages/core/erio_core/db/migrations/`. `docker compose up` applies them automatically. To work with them by hand:
+
+```bash
+uv run alembic -c packages/core/alembic.ini upgrade head      # apply
+uv run alembic -c packages/core/alembic.ini revision --autogenerate -m "describe change"
+```
+
+A test fails if the models and migrations ever differ, so every schema change needs a migration.
 
 Settings come from `ERIO_*` environment variables (see `packages/core/erio_core/settings.py`). They hold service addresses only, never credentials.
 
