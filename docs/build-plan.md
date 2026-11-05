@@ -53,7 +53,8 @@ Built in parts: (a) tables and migrations; (b) the 233 countries and their regio
 
 - [x] Part a: all 9 spec tables as SQLAlchemy models with an Alembic migration; a `migrate` service applies it before the API and worker start.
 - [x] Migrations upgrade and downgrade cleanly on an empty database (automated test, also in CI on a real Postgres).
-- [ ] The 233 country names match the globe's map data exactly (automated test).
+- [x] Part b: the 233 countries the globe draws (`web/public/geo/world.json`), with ISO codes, regions and region groups (EU, EUROPE, EMEA, AFRICA, LATAM, NORTH_AMERICA, APAC), plus the 6 first-release sources, seeded by `python -m erio_core.db.seed`. Kosovo, Somaliland and Northern Cyprus have no ISO code and use XK, XS and XN.
+- [x] The 233 country names match the globe's map data exactly (automated test).
 - [ ] `JobRecord` serializes to the field list in the spec.
 
 ## Step 4 — First connector and crawl pipeline

@@ -66,11 +66,15 @@ services:
     ports: ["127.0.0.1:9090:9090"]
     volumes: [s3-data:/s3mockroot]
 
-  # One-off: brings the database schema up to date, then exits.
+  # One-off: brings the database schema up to date, loads reference data
+  # (233 countries, 6 sources), then exits.
   migrate:
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
-    command: ["alembic", "-c", "packages/core/alembic.ini", "upgrade", "head"]
+    command:
+      - sh
+      - -c
+      - alembic -c packages/core/alembic.ini upgrade head && python -m erio_core.db.seed
     environment: *erio-addresses
     restart: "no"
     depends_on:
