@@ -78,7 +78,7 @@ jobs:
     name: Local stack (docker compose)
     needs: [python, web]
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Build and start every service
@@ -90,6 +90,17 @@ jobs:
             "from erio_ingest.worker import ping; assert ping.delay().get(timeout=30) == 'pong'"
           curl -sSf http://127.0.0.1:9090/ | grep -q '<Name>erio-raw</Name>'
           curl -sSf http://127.0.0.1:3000/ | grep -q 'API online'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Frontend tests (Playwright, desktop and 360 px)
+        working-directory: web
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          npm run test:e2e
       - name: Service logs
         if: failure()
         run: docker compose logs --no-color --tail 200

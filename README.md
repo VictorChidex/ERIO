@@ -78,7 +78,16 @@ GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)) runs on ev
 | Credential scan | `scripts/check-credential-words.sh` (decision D-08) and gitleaks over the full history |
 | Python | ruff, ruff format, mypy (strict), pytest |
 | Website | ESLint, TypeScript, `next build` |
-| Local stack | `docker compose up --build`, then checks the API, worker, fake S3 and website answer |
+| Local stack | `docker compose up --build`, checks the API, worker, fake S3 and website answer, then runs the frontend tests |
+
+Frontend tests use [Playwright](https://playwright.dev) against the running stack, on desktop and at 360 px:
+
+```bash
+docker compose up --build -d --wait
+cd web
+npx playwright install chromium   # first time only
+npm run test:e2e
+```
 
 Run the credential check yourself before every commit:
 

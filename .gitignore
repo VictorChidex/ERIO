@@ -30,3 +30,7 @@ next-env.d.ts
 
 # TypeScript build cache
 *.tsbuildinfo
+
+# Playwright output
+web/test-results/
+web/playwright-report/
