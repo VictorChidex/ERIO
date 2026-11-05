@@ -54,22 +54,46 @@ class PoliteFetcher:
 
     def get(self, url: str, etag: str | None = None) -> FetchResponse:
         host = self._check_host(url)
-        if not self._robots_allow(host, url):
+        robots = self._robots_for(host)
+        if not robots.can_fetch(self.settings.crawler_user_agent, url):
             raise FetchError("http_error", f"robots.txt disallows {url}")
+        delay = robots.crawl_delay(self.settings.crawler_user_agent)
         headers = {"If-None-Match": etag} if etag else {}
-        return self._request(host, url, headers)
+        return self._request(host, url, headers, float(delay) if delay else None)
+
+    def _request(
+        self, host: str, url: str, headers: dict[str, str], crawl_delay_s: float | None = None
+    ) -> FetchResponse:
+        """One request; network failures come back as FetchError, like any other."""
+        try:
+            return self._send(host, url, headers, crawl_delay_s)
+        except httpx.TimeoutException as error:
+            raise FetchError("timeout", f"{host} timed out: {error!r}") from error
+        except httpx.HTTPError as error:
+            raise FetchError("http_error", f"{host} failed: {error!r}") from error
+
+    def _allowed(self, host: str) -> str | None:
+        """The allow-list entry that admits ``host``: itself or a "*.domain" wildcard.
+
+        A wildcard admits exactly one label below the domain, and every host it
+        admits shares one rate limit (they are one service).
+        """
+        if host in self.allowed_hosts:
+            return host
+        wildcard = "*." + host.split(".", 1)[-1]
+        return wildcard if "." in host and wildcard in self.allowed_hosts else None
 
     def _check_host(self, url: str) -> str:
         parts = urlsplit(url)
         host = parts.hostname or ""
-        if parts.scheme != "https" or host not in self.allowed_hosts:
+        if parts.scheme != "https" or self._allowed(host) is None:
             raise FetchError("http_error", f"host not allowed: {host or url}")
         addresses = list(self.resolver(host))
         if not addresses or not all(is_public(address) for address in addresses):
             raise FetchError("http_error", f"{host} does not resolve to a public address")
         return host
 
-    def _robots_allow(self, host: str, url: str) -> bool:
+    def _robots_for(self, host: str) -> urllib.robotparser.RobotFileParser:
         cached = self._robots.get(host)
         if cached is None or time.monotonic() - cached[0] > ROBOTS_TTL_S:
             parser = urllib.robotparser.RobotFileParser()
@@ -82,10 +106,14 @@ class PoliteFetcher:
             parser.parse(response.body.decode("utf-8", "replace").splitlines() if ok else [])
             cached = (time.monotonic(), parser)
             self._robots[host] = cached
-        return cached[1].can_fetch(self.settings.crawler_user_agent, url)
+        return cached[1]
 
-    def _request(self, host: str, url: str, headers: dict[str, str]) -> FetchResponse:
-        self.limiter.acquire(host)
+    def _send(
+        self, host: str, url: str, headers: dict[str, str], crawl_delay_s: float | None
+    ) -> FetchResponse:
+        # A robots.txt Crawl-delay slows the host below ERIO's own limit, never above it.
+        rate = min(self.limiter.rate, 1 / crawl_delay_s) if crawl_delay_s else None
+        self.limiter.acquire(self._allowed(host) or host, rate=rate)
         request_headers = {"User-Agent": self.settings.crawler_user_agent, **headers}
         limit = self.settings.crawl_max_response_bytes
         with self.client.stream("GET", url, headers=request_headers) as response:

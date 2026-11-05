@@ -16,6 +16,7 @@ from sqlalchemy.orm import Session
 from erio_core.connectors import CONNECTORS
 from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
+from erio_ingest.discovery import discover_boards
 from erio_ingest.fetcher import PoliteFetcher
 from erio_ingest.fx import FX_HOSTS, refresh_rates
 from erio_ingest.indexer import rebuild, sync_changed
@@ -23,6 +24,7 @@ from erio_ingest.normalizer import BATCH, latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
 from erio_ingest.scheduler import schedule_due_boards
+from erio_ingest.smoke import smoke_test_sources
 from erio_ingest.status import mark_unverified
 from erio_ingest.storage import S3RawStore
 
@@ -44,6 +46,8 @@ app.conf.update(
         "refresh-fx-rates": {"task": "erio.refresh_fx_rates", "schedule": 6 * 3600.0},
         "index-changed": {"task": "erio.index_changed", "schedule": 20.0},
         "rebuild-index": {"task": "erio.rebuild_index", "schedule": 24 * 3600.0},
+        "discover-boards": {"task": "erio.discover_boards", "schedule": 24 * 3600.0},
+        "smoke-test-sources": {"task": "erio.smoke_test_sources", "schedule": 24 * 3600.0},
     },
 )
 
@@ -136,6 +140,17 @@ def index_changed_task() -> dict[str, int]:
 def rebuild_index_task() -> dict[str, Any]:
     name, count = rebuild(engine(), search_client(), settings.search_alias)
     return {"index": name, "jobs": count}
+
+
+@app.task(name="erio.discover_boards", ignore_result=True)
+def discover_boards_task() -> dict[str, Any]:
+    result = discover_boards(engine(), fetcher(), utcnow)
+    return {"tried": result.tried, "found": result.found}
+
+
+@app.task(name="erio.smoke_test_sources", ignore_result=True)
+def smoke_test_sources_task() -> dict[str, bool]:
+    return {check.source: check.ok for check in smoke_test_sources(engine(), fetcher(), utcnow)}
 
 
 @app.task(name="erio.crawl_board", bind=True, max_retries=MAX_RETRIES)

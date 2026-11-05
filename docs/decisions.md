@@ -26,7 +26,7 @@ Owner: Chidex (project owner) unless stated otherwise.
 
 - [ ] D-03: confirm AWS, or choose GCP (not needed until local work is complete, D-14).
 - [ ] D-06: product domain name and the crawler contact mailbox.
-- [ ] D-07: who builds the company seed list, and which countries matter most at launch.
+- [ ] D-07: who builds the company seed list, and which countries matter most at launch. The format and loader are ready (`erio_core/data/companies.csv`: name, domain, home country), with 57 starter employers; board discovery finds their boards on its own.
 - [ ] D-09: agree the scope of the credential-word check.
 - [ ] D-11: confirm retention periods.
 - [ ] D-13: agree S3Mock as the local fake S3.

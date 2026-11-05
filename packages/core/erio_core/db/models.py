@@ -114,7 +114,27 @@ class Company(Base):
     name: Mapped[str] = mapped_column(String(200))
     domain: Mapped[str | None] = mapped_column(String(253), unique=True)
     logo_url: Mapped[str | None] = mapped_column(Text)
+    # Where the company is based, from the seed list (decision D-07); its
+    # jobs may be anywhere.
+    country_code: Mapped[str | None] = mapped_column(CHAR(2), ForeignKey("countries.code"))
     created_at: Mapped[datetime] = created_at()
+
+
+class BoardDiscovery(Base):
+    """Each search for a company's board on one source, found or not.
+
+    Discovery skips a pair it tried recently, so the nightly run moves
+    through the whole seed list instead of probing the same names again.
+    """
+
+    __tablename__ = "board_discovery"
+
+    company_id: Mapped[int] = mapped_column(
+        ForeignKey("companies.id", ondelete="CASCADE"), primary_key=True
+    )
+    source_slug: Mapped[str] = mapped_column(ForeignKey("sources.slug"), primary_key=True)
+    tried_at: Mapped[datetime]
+    board_token: Mapped[str | None] = mapped_column(String(200))
 
 
 class CompanyBoard(Base):
@@ -155,6 +175,21 @@ class CrawlRun(Base):
     outcome: Mapped[str | None] = mapped_column(text_enum("crawl_outcome", CRAWL_OUTCOMES))
     postings_seen: Mapped[int | None] = mapped_column(Integer)
     raw_s3_key: Mapped[str | None] = mapped_column(Text)
+    error: Mapped[str | None] = mapped_column(Text)
+
+
+class SourceCheck(Base):
+    """The nightly live smoke test of each source against one known board."""
+
+    __tablename__ = "source_checks"
+    __table_args__ = (Index(None, "source_slug", "checked_at"),)
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    source_slug: Mapped[str] = mapped_column(ForeignKey("sources.slug"))
+    board_token: Mapped[str | None] = mapped_column(String(200))
+    checked_at: Mapped[datetime]
+    ok: Mapped[bool] = mapped_column(Boolean)
+    postings: Mapped[int | None] = mapped_column(Integer)
     error: Mapped[str | None] = mapped_column(Text)
 
 

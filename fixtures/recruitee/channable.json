@@ -1,0 +1,478 @@
+{
+ "offers": [
+  {
+   "locations_question_type": "multiple_choice",
+   "experience_code": "mid_level",
+   "highlight": null,
+   "position": 629,
+   "state_code": "UT",
+   "created_at": "2026-11-03 19:57:48 UTC",
+   "options_phone": "required",
+   "postal_code": "3512 HL",
+   "guid": "9coek",
+   "employment_type_code": "fulltime_fixed_term",
+   "translations": {
+    "en": {
+     "description": "<p><u><span style=\"color:#000000\">Why is this position open</span></u></p><p><span style=\"color:#000000\">Channable’s product offering is broad, complex, and always improving. Across our five modules, new features and improvements are made every day. Over the last two years, the Customer Education team has focused on supporting the Product and Engineering teams by creating comprehensive product documentation and Academy courses for each major release, ensuring our customers understand our products, onboard themselves, and get to value faster.&nbsp;</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">Now we’re looking for a Technical Writer to help us further develop and improve our educational materials, representing and reflecting the voice of the customer.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">Channable sits between eCommerce tools like Shopify and channels like Google Shopping. When Shopify changes its API or Google updates its product feed rules, our integrations change, and our docs need to follow. As a Technical Writer, you'll learn to track those changes and turn them into accurate help content our customers rely on.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">We also get a lot of feedback, tips and ideas from our customers and our knowledgeable customer-facing colleagues in the Support, CS, and Sales departments. You will investigate, centralize, write and publish this internal knowledge to our Help Center and Academy.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">The Customer Education team is composed of a Team Lead, Academy Program Manager, Technical Content Designer, Technical Writer, and Motion Graphic Designer.</span></p><p style=\"min-height: 1.7em;\"></p><p><u><span style=\"color:#000000\">Your role</span></u></p><ul><li><p><span style=\"color:#000000\">Write, edit, and fact-check product documentation in the Help Center.</span></p></li><li><p><span style=\"color:#000000\">Write, edit, and fact-check courses in the Academy.</span></p></li><li><p><span style=\"color:#000000\">Review product updates and feedback from customer-facing colleagues, and update documentation to reflect changes.</span></p></li><li><p><span style=\"color:#000000\">Work with Technical Writers and Technical Content Designers to adapt and improve your writing style, in line with our Style Guide.</span></p></li><li><p><span style=\"color:#000000\">Collaborate with subject matter experts from Product, Engineering, Customer Support, Customer Success, and more to learn about specific concepts.</span></p></li></ul>",
+     "title": "Technical Writer, Customer Education",
+     "highlight": null,
+     "sharing_image": null,
+     "requirements": "<p><u><span style=\"color:#000000\">Who are you?</span></u></p><ul><li><p><span style=\"color:#000000\">You have at least 1 year’s experience in Technical Writing, UX Copywriting, Content Marketing, Communications, Engineering, or another related field.</span></p></li><li><p><span style=\"color:#000000\">You care about clarity, consistency, and correctness.</span></p></li><li><p><span style=\"color:#000000\">You can convey complex matters in simple terms.</span></p></li><li><p><span style=\"color:#000000\">You can work to tight deadlines, and adapt to shifting priorities.</span></p></li><li><p><span style=\"color:#000000\">You can build clarity out of technical challenges and incomplete inputs.</span></p></li><li><p><span style=\"color:#000000\">You have an excellent written and verbal command of the English language.</span></p></li><li><p><span style=\"color:#000000\">You have strong interpersonal skills and an ability to communicate with, and harvest information from, a wide range of people with a wide variety of priorities.</span></p></li><li><p><span style=\"color:#000000\">You have a growth mindset, and enjoy working with a team to deliver collaborative projects.<br></span></p></li></ul><p><span style=\"color:#000000\">Other requirements</span></p><ul><li><p><span style=\"color:#000000\">You are living in the Netherlands, within travelling distance of our Utrecht office.</span></p></li><li><p><span style=\"color:#000000\">You are willing to come to our Utrecht office for two days/week.</span></p></li><li><p><span style=\"color:#000000\">You're available for at least 4 days/week (32 hours).</span></p></li></ul><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#121317\">Who are we?</span></strong></h4><p><span style=\"color:#121317\">Being part of our team means working with diverse and fun people who trust and help you along the way. Channable was founded in 2014 in the heart of Utrecht. We are now a strong team of 320+ diverse individuals, more than +40 nationalities, and a brand new and vibrant HQ in Utrecht, serving customers all over the globe. We're also operating from other offices including New York City, Berlin, and Aarhus.<br><br>Joining Channable means you’re looking for a bit more than just a job. We like spending time with each other. Be that in the office, our Channabar, or in one of our internal chats. We’re open-minded and down-to-earth people. We’re super proud that everyone adds their own special spice to Channable’s culture. Diverse as we are, we all share our love for growth, to help, to take ownership, and create an awesome journey together. Feel free to take a further look at our </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.instagram.com/wearechannable/\"><span style=\"color:#1B1A3A\">Instagram</span></a></u><span style=\"color:#121317\">, </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.facebook.com/channable/\"><span style=\"color:#1B1A3A\">Facebook</span></a></u><span style=\"color:#121317\"> or </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/company/channable/mycompany/?viewAsMember=true\"><span style=\"color:#1B1A3A\">LinkedIn</span></a></u><span style=\"color:#121317\">! Give our </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://heyzine.com/flip-book/b03da65c24.html\"><span style=\"color:#1B1A3A\">Culture Playbook</span></a><a rel=\"noopener\" target=\"_blank\" href=\"https://online.fliphtml5.com/qtfug/wxhm/#p=1\"><span style=\"color:#1B1A3A\"> </span></a></u><span style=\"color:#121317\">a read.</span></p><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#121317\">What do we do?</span></strong></h4><p><span style=\"color:#121317\">Channable is a fast-growing B2B SaaS platform that offers a fully integrated way to market your products online. We empower marketers and online businesses to manage, scale, and optimize their marketing.<br></span></p><h4><strong><span style=\"color:#121317\">What do we offer?</span></strong></h4><p><span style=\"color:#121317\">The salary range based on a 40-hour work week is between gross €2.976 and €4.252.&nbsp;</span></p><ul><li><p><span style=\"color:#121317\">8% holiday allowance - 8% of your yearly salary, which is paid together with the May salary.</span></p></li></ul><ul><li><p><span style=\"color:#121317\">Annual L&amp;D budget of € 1000 to spend on anything you want to learn. You can take full advantage of this to grow professionally.</span></p></li><li><p><span style=\"color:#121317\">Saving for old age - we have a saving scheme for old age which can accrue up to 5% of your monthly salary</span><span style=\"color:#323338\">, or you can get an additional +2.5% to your monthly base salary.</span></p></li><li><p><span style=\"color:#121317\">Traveling to our office? No problem, we got you covered. (NS Business Card, or €0,25 per km if you decide to use a different means of transport) 🚆</span></p></li><li><p><span style=\"color:#121317\">Our beautiful, fully renovated historic office in central Utrecht offers a hybrid working policy, requiring just two days in the office per week.</span></p></li><li><p><span style=\"color:#121317\">Since you can work from home, we will provide home office supplies. 🖥️⌨️</span></p></li><li><p><span style=\"color:#121317\">26 vacation days + 2 reload days based on 40 hours.</span></p></li><li><p><span style=\"color:#121317\">We offer a 3-week-long workcation; and an additional 3 weeks, if you live as an expat in the Netherlands! 🍹</span></p></li><li><p><span style=\"color:#121317\">Having flexible working hours means starting your day between 8.00 - 10.00 am. 🕰️</span></p></li><li><p><span style=\"color:#121317\">We want you to feel good - please feel free to use our discounted Urban Sports Club subscription.</span></p></li><li><p><span style=\"color:#121317\">You have free &amp; anonymous access to the OpenUp platform and psychologists. This free service is also available to your family members.</span></p></li><li><p><span style=\"color:#121317\">Are you going to become a parent? We think it is important that you spend time with your newborn. Enjoy 5 weeks of 100% paid partner leave!</span></p></li><li><p><span style=\"color:#121317\">At Channable, our Chef and Commis Chef prepare fresh meals Monday to Thursday, catering to all dietary needs - including vegan, vegetarian, and gluten-free - to keep our team fueled and inspired! T</span><span style=\"color:#323338\">o round out the week, Fridays feature delicious ordered-in sandwiches and salads. </span><span style=\"color:#121317\">Or, you can go to the city center to get the lunch of your choice.</span></p></li></ul><ul><li><p><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/feed/update/urn:li:activity:7472609865060978688/\"><span style=\"color:#7148BD\">Channaweekend</span></a></u><span style=\"color:#121317\"> - Every year we go for a long weekend with all our colleagues from all over the world. 💜🔥</span></p></li></ul><ul><li><p><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/posts/channable_channable-channaweek-workculture-activity-7426540961326895105-EXff?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASoXJgBHdq4CVsQCH0PpnYcTQNs3ymnPIk\"><span style=\"color:#7148BD\">Channaweek</span></a></u><span style=\"color:#1B1A3A\"> </span><span style=\"color:#121317\">- We believe in bringing people together. That’s why we organize global events like Channaweek where our entire international team gathers in Utrecht to connect and learn from one another.</span></p></li><li><p><span style=\"color:#121317\">Additional working conditions like massages, in-office bar (Channabar), parties, even personal training sessions at our Channagym, video games, and many more!</span></p></li></ul><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#121317\">How can you introduce yourself to us?</span></strong></h4><p><span style=\"color:#121317\">Are you interested? Apply by clicking on the \"apply now\" button below. Please send your application in English.</span></p><p><span style=\"color:#121317\">Include your CV, a cover letter, and a brief video (no more than 2-minutes long) to show us a little bit about yourself, and why you’re interested in this role.&nbsp;</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#121317\">Interview steps:</span></p><ol><li><p>Round 1: 45-minute online interview with Caitlin (Technical Content Designer).</p></li><li><p>Round 2: In-office assignment and interview with Caitlin and Sofie (your future team lead), followed by an interview with Michel (Head of Growth), and a coffee and office tour from your future team (90 minutes total).</p></li><li><p><span style=\"color:#000000\">Please note that after the interviews, and before the offer stage, we’ll conduct reference checks.<br></span></p></li></ol><p><span style=\"color:#121317\">We consider applications as they come in. We look forward to hearing from you!<br></span></p><p><em><span style=\"color:#1B1A3A\">Contact by job agencies and recruiters will not be appreciated. Each recruiter or headhunter who approaches us agrees with a donation of €250 for Make-A-Wish.<br></span></em></p><p><em><span style=\"color:#1B1A3A\">At Channable, we strive to create and foster an environment of belonging and collaboration. We believe in diverse and inclusive teams</span></em></p>",
+     "locations_question": "What is your preferred work location?",
+     "sharing_description": "Why is this position open Channable’s product offering is broad, complex, and always improving. Across our five modules, new features and improvements are made every day. Over the last two years, the ",
+     "sharing_title": "Technical Writer, Customer Education"
+    }
+   },
+   "city": "Utrecht",
+   "close_at": null,
+   "published_at": "2026-11-03 20:08:14 UTC",
+   "careers_url": "https://jobs.channable.com/o/technical-writer-customer-education",
+   "sharing_image": null,
+   "cover_image": null,
+   "locations_question": "What is your preferred work location?",
+   "country": "Netherlands",
+   "max_hours_per_week": "40",
+   "min_hours_per_week": "32",
+   "open_questions": [
+    {
+     "id": 4482301,
+     "position": 1,
+     "options": {},
+     "required": true,
+     "body": "How did you find out about Channable?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "How did you find out about Channable?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4482302,
+     "position": 2,
+     "options": {},
+     "required": true,
+     "body": "Do you have EU citizenship or a valid work permit for the Netherlands? Or do you need sponsorship from us?",
+     "kind": "single_choice",
+     "translations": {
+      "en": {
+       "body": "Do you have EU citizenship or a valid work permit for the Netherlands? Or do you need sponsorship from us?"
+      }
+     },
+     "open_question_options": [
+      {
+       "id": 6907575,
+       "position": 0,
+       "body": "EU citizenship ",
+       "translations": {
+        "en": {
+         "body": "EU citizenship "
+        }
+       }
+      },
+      {
+       "id": 6907576,
+       "position": 1,
+       "body": "Valid work permit",
+       "translations": {
+        "en": {
+         "body": "Valid work permit"
+        }
+       }
+      },
+      {
+       "id": 6907577,
+       "position": 2,
+       "body": "I need sponsorship",
+       "translations": {
+        "en": {
+         "body": "I need sponsorship"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": 4482303,
+     "position": 3,
+     "options": {},
+     "required": true,
+     "body": "Where do you live? (City)",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "Where do you live? (City)"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4482304,
+     "position": 4,
+     "options": {
+      "length": 120
+     },
+     "required": true,
+     "body": "Are you willing and able to work from our Utrecht office at least 2 days per week?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Are you willing and able to work from our Utrecht office at least 2 days per week?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4482305,
+     "position": 5,
+     "options": {},
+     "required": true,
+     "body": "How many hours per week are you available to work?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "How many hours per week are you available to work?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4482306,
+     "position": 6,
+     "options": {},
+     "required": true,
+     "body": "Which one of our company values resonates the most with you and why?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "Which one of our company values resonates the most with you and why?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4482307,
+     "position": 7,
+     "options": {
+      "length": 120
+     },
+     "required": false,
+     "body": "Want to impress us even more? Take your chance to introduce yourself to us (max. 2 mins)!\n\n",
+     "kind": "video",
+     "translations": {
+      "en": {
+       "body": "Want to impress us even more? Take your chance to introduce yourself to us (max. 2 mins)!\n\n"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "title": "Technical Writer, Customer Education",
+   "tags": [],
+   "category_code": "other",
+   "dynamic_fields": [],
+   "options_cv": "required",
+   "state_name": "Utrecht",
+   "country_code": "NL",
+   "location_question_visible": false,
+   "options_photo": "off",
+   "options_salutation": "off",
+   "mailbox_email": "job.9coek@channable.recruitee.com",
+   "education_code": "professional",
+   "requirements": "<p><u><span style=\"color:#000000\">Who are you?</span></u></p><ul><li><p><span style=\"color:#000000\">You have at least 1 year’s experience in Technical Writing, UX Copywriting, Content Marketing, Communications, Engineering, or another related field.</span></p></li><li><p><span style=\"color:#000000\">You care about clarity, consistency, and correctness.</span></p></li><li><p><span style=\"color:#000000\">You can convey complex matters in simple terms.</span></p></li><li><p><span style=\"color:#000000\">You can work to tight deadlines, and adapt to shifting priorities.</span></p></li><li><p><span style=\"color:#000000\">You can build clarity out of technical challenges and incomplete inputs.</span></p></li><li><p><span style=\"color:#000000\">You have an excellent written and verbal command of the English language.</span></p></li><li><p><span style=\"color:#000000\">You have strong interpersonal skills and an ability to communicate with, and harvest information from, a wide range of people with a wide variety of priorities.</span></p></li><li><p><span style=\"color:#000000\">You have a growth mindset, and enjoy working with a team to deliver collaborative projects.<br></span></p></li></ul><p><span style=\"color:#000000\">Other requirements</span></p><ul><li><p><span style=\"color:#000000\">You are living in the Netherlands, within travelling distance of our Utrecht office.</span></p></li><li><p><span style=\"color:#000000\">You are willing to come to our Utrecht office for two days/week.</span></p></li><li><p><span style=\"color:#000000\">You're available for at least 4 days/week (32 hours).</span></p></li></ul><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#121317\">Who are we?</span></strong></h4><p><span style=\"color:#121317\">Being part of our team means working with diverse and fun people who trust and help you along the way. Channable was founded in 2014 in the heart of Utrecht. We are now a strong team of 320+ diverse individuals, more than +40 nationalities, and a brand new and vibrant HQ in Utrecht, serving customers all over the globe. We're also operating from other offices including New York City, Berlin, and Aarhus.<br><br>Joining Channable means you’re looking for a bit more than just a job. We like spending time with each other. Be that in the office, our Channabar, or in one of our internal chats. We’re open-minded and down-to-earth people. We’re super proud that everyone adds their own special spice to Channable’s culture. Diverse as we are, we all share our love for growth, to help, to take ownership, and create an awesome journey together. Feel free to take a further look at our </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.instagram.com/wearechannable/\"><span style=\"color:#1B1A3A\">Instagram</span></a></u><span style=\"color:#121317\">, </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.facebook.com/channable/\"><span style=\"color:#1B1A3A\">Facebook</span></a></u><span style=\"color:#121317\"> or </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/company/channable/mycompany/?viewAsMember=true\"><span style=\"color:#1B1A3A\">LinkedIn</span></a></u><span style=\"color:#121317\">! Give our </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://heyzine.com/flip-book/b03da65c24.html\"><span style=\"color:#1B1A3A\">Culture Playbook</span></a><a rel=\"noopener\" target=\"_blank\" href=\"https://online.fliphtml5.com/qtfug/wxhm/#p=1\"><span style=\"color:#1B1A3A\"> </span></a></u><span style=\"color:#121317\">a read.</span></p><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#121317\">What do we do?</span></strong></h4><p><span style=\"color:#121317\">Channable is a fast-growing B2B SaaS platform that offers a fully integrated way to market your products online. We empower marketers and online businesses to manage, scale, and optimize their marketing.<br></span></p><h4><strong><span style=\"color:#121317\">What do we offer?</span></strong></h4><p><span style=\"color:#121317\">The salary range based on a 40-hour work week is between gross €2.976 and €4.252.&nbsp;</span></p><ul><li><p><span style=\"color:#121317\">8% holiday allowance - 8% of your yearly salary, which is paid together with the May salary.</span></p></li></ul><ul><li><p><span style=\"color:#121317\">Annual L&amp;D budget of € 1000 to spend on anything you want to learn. You can take full advantage of this to grow professionally.</span></p></li><li><p><span style=\"color:#121317\">Saving for old age - we have a saving scheme for old age which can accrue up to 5% of your monthly salary</span><span style=\"color:#323338\">, or you can get an additional +2.5% to your monthly base salary.</span></p></li><li><p><span style=\"color:#121317\">Traveling to our office? No problem, we got you covered. (NS Business Card, or €0,25 per km if you decide to use a different means of transport) 🚆</span></p></li><li><p><span style=\"color:#121317\">Our beautiful, fully renovated historic office in central Utrecht offers a hybrid working policy, requiring just two days in the office per week.</span></p></li><li><p><span style=\"color:#121317\">Since you can work from home, we will provide home office supplies. 🖥️⌨️</span></p></li><li><p><span style=\"color:#121317\">26 vacation days + 2 reload days based on 40 hours.</span></p></li><li><p><span style=\"color:#121317\">We offer a 3-week-long workcation; and an additional 3 weeks, if you live as an expat in the Netherlands! 🍹</span></p></li><li><p><span style=\"color:#121317\">Having flexible working hours means starting your day between 8.00 - 10.00 am. 🕰️</span></p></li><li><p><span style=\"color:#121317\">We want you to feel good - please feel free to use our discounted Urban Sports Club subscription.</span></p></li><li><p><span style=\"color:#121317\">You have free &amp; anonymous access to the OpenUp platform and psychologists. This free service is also available to your family members.</span></p></li><li><p><span style=\"color:#121317\">Are you going to become a parent? We think it is important that you spend time with your newborn. Enjoy 5 weeks of 100% paid partner leave!</span></p></li><li><p><span style=\"color:#121317\">At Channable, our Chef and Commis Chef prepare fresh meals Monday to Thursday, catering to all dietary needs - including vegan, vegetarian, and gluten-free - to keep our team fueled and inspired! T</span><span style=\"color:#323338\">o round out the week, Fridays feature delicious ordered-in sandwiches and salads. </span><span style=\"color:#121317\">Or, you can go to the city center to get the lunch of your choice.</span></p></li></ul><ul><li><p><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/feed/update/urn:li:activity:7472609865060978688/\"><span style=\"color:#7148BD\">Channaweekend</span></a></u><span style=\"color:#121317\"> - Every year we go for a long weekend with all our colleagues from all over the world. 💜🔥</span></p></li></ul><ul><li><p><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/posts/channable_channable-channaweek-workculture-activity-7426540961326895105-EXff?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASoXJgBHdq4CVsQCH0PpnYcTQNs3ymnPIk\"><span style=\"color:#7148BD\">Channaweek</span></a></u><span style=\"color:#1B1A3A\"> </span><span style=\"color:#121317\">- We believe in bringing people together. That’s why we organize global events like Channaweek where our entire international team gathers in Utrecht to connect and learn from one another.</span></p></li><li><p><span style=\"color:#121317\">Additional working conditions like massages, in-office bar (Channabar), parties, even personal training sessions at our Channagym, video games, and many more!</span></p></li></ul><p style=\"min-height: 1.7em;\"></p><h4><strong><span style=\"color:#121317\">How can you introduce yourself to us?</span></strong></h4><p><span style=\"color:#121317\">Are you interested? Apply by clicking on the \"apply now\" button below. Please send your application in English.</span></p><p><span style=\"color:#121317\">Include your CV, a cover letter, and a brief video (no more than 2-minutes long) to show us a little bit about yourself, and why you’re interested in this role.&nbsp;</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#121317\">Interview steps:</span></p><ol><li><p>Round 1: 45-minute online interview with Caitlin (Technical Content Designer).</p></li><li><p>Round 2: In-office assignment and interview with Caitlin and Sofie (your future team lead), followed by an interview with Michel (Head of Growth), and a coffee and office tour from your future team (90 minutes total).</p></li><li><p><span style=\"color:#000000\">Please note that after the interviews, and before the offer stage, we’ll conduct reference checks.<br></span></p></li></ol><p><span style=\"color:#121317\">We consider applications as they come in. We look forward to hearing from you!<br></span></p><p><em><span style=\"color:#1B1A3A\">Contact by job agencies and recruiters will not be appreciated. Each recruiter or headhunter who approaches us agrees with a donation of €250 for Make-A-Wish.<br></span></em></p><p><em><span style=\"color:#1B1A3A\">At Channable, we strive to create and foster an environment of belonging and collaboration. We believe in diverse and inclusive teams</span></em></p>",
+   "description": "<p><u><span style=\"color:#000000\">Why is this position open</span></u></p><p><span style=\"color:#000000\">Channable’s product offering is broad, complex, and always improving. Across our five modules, new features and improvements are made every day. Over the last two years, the Customer Education team has focused on supporting the Product and Engineering teams by creating comprehensive product documentation and Academy courses for each major release, ensuring our customers understand our products, onboard themselves, and get to value faster.&nbsp;</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">Now we’re looking for a Technical Writer to help us further develop and improve our educational materials, representing and reflecting the voice of the customer.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">Channable sits between eCommerce tools like Shopify and channels like Google Shopping. When Shopify changes its API or Google updates its product feed rules, our integrations change, and our docs need to follow. As a Technical Writer, you'll learn to track those changes and turn them into accurate help content our customers rely on.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">We also get a lot of feedback, tips and ideas from our customers and our knowledgeable customer-facing colleagues in the Support, CS, and Sales departments. You will investigate, centralize, write and publish this internal knowledge to our Help Center and Academy.</span></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">The Customer Education team is composed of a Team Lead, Academy Program Manager, Technical Content Designer, Technical Writer, and Motion Graphic Designer.</span></p><p style=\"min-height: 1.7em;\"></p><p><u><span style=\"color:#000000\">Your role</span></u></p><ul><li><p><span style=\"color:#000000\">Write, edit, and fact-check product documentation in the Help Center.</span></p></li><li><p><span style=\"color:#000000\">Write, edit, and fact-check courses in the Academy.</span></p></li><li><p><span style=\"color:#000000\">Review product updates and feedback from customer-facing colleagues, and update documentation to reflect changes.</span></p></li><li><p><span style=\"color:#000000\">Work with Technical Writers and Technical Content Designers to adapt and improve your writing style, in line with our Style Guide.</span></p></li><li><p><span style=\"color:#000000\">Collaborate with subject matter experts from Product, Engineering, Customer Support, Customer Success, and more to learn about specific concepts.</span></p></li></ul>",
+   "max_hours": 40,
+   "company_name": "Channable",
+   "locations": [
+    {
+     "id": 64463,
+     "name": "Utrecht",
+     "state": "Utrecht",
+     "country": "Netherlands",
+     "city": "Utrecht",
+     "translations": {
+      "en": {
+       "name": "Utrecht",
+       "city": "Utrecht",
+       "postal_code": "3512 HL",
+       "street": "Kromme Nieuwegracht 66",
+       "note": null
+      }
+     },
+     "country_code": "NL",
+     "postal_code": "3512 HL",
+     "state_code": "UT",
+     "street": "Kromme Nieuwegracht 66",
+     "note": null
+    }
+   ],
+   "remote": false,
+   "locations_question_required": true,
+   "sharing_title": "Technical Writer, Customer Education",
+   "sharing_description": "Why is this position open Channable’s product offering is broad, complex, and always improving. Across our five modules, new features and improvements are made every day. Over the last two years, the ",
+   "options_title": "off",
+   "id": 2814054,
+   "updated_at": "2026-11-03 20:09:09 UTC",
+   "min_hours": 32,
+   "options_cover_letter": "optional",
+   "careers_apply_url": "https://jobs.channable.com/o/technical-writer-customer-education/c/new",
+   "on_site": false,
+   "salary": {
+    "max": "4252",
+    "min": "2976",
+    "period": "month",
+    "currency": "EUR"
+   },
+   "department": "Operations",
+   "hybrid": true,
+   "status": "published",
+   "location": "Utrecht, Utrecht, Netherlands",
+   "slug": "technical-writer-customer-education"
+  },
+  {
+   "locations_question_type": "multiple_choice",
+   "experience_code": "senior_manager",
+   "highlight": null,
+   "position": 620,
+   "state_code": "UT",
+   "created_at": "2026-10-22 06:17:49 UTC",
+   "options_phone": "required",
+   "postal_code": "3512 HL",
+   "guid": "ca4wn",
+   "employment_type_code": "fulltime_permanent",
+   "translations": {
+    "en": {
+     "description": "<p><span style=\"color:#000000\">At </span><strong><span style=\"color:#000000\">Channable</span></strong><span style=\"color:#000000\">, we're building the future of eCommerce automation - and at the core of that vision is a world-class engineering organization. We're looking for a </span><strong><span style=\"color:#000000\">Senior</span></strong><span style=\"color:#000000\"> </span><strong><span style=\"color:#000000\">Engineering Manager</span></strong><span style=\"color:#000000\"> to join our </span><strong><span style=\"color:#000000\">Core Group</span></strong><span style=\"color:#000000\">, where you'll play a key role in integrating eCommerce channels.<br></span></p><h4><strong><span style=\"color:#000000\">🚀 About the role:</span></strong></h4><p><span style=\"color:#000000\">As a Senior Engineering Manager in the Core domain, you will lead an engineering department consisting of 3 team leads (your direct reports) who manage ~11 individual contributors.</span></p><p><span style=\"color:#000000\">You’ll be responsible for delivering maximum impact in the Core domain. You will partner up with an experienced Product Lead, with whom you will define and carry out a department vision, strategy, and roadmap. Engaged team leads and individual contributors are top of mind for you. You can learn more about the Core domain and its scope </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.channable.com/pricing\"><span style=\"color:#1155CC\">here</span></a></u><span style=\"color:#000000\">.</span></p><h4><strong><span style=\"color:#000000\">🛠 What you’ll do:</span></strong></h4><ul><li><p><strong><span style=\"color:#000000\">Drive the Core roadmap</span></strong><span style=\"color:#000000\"> by balancing the overall Channable strategy and the Core's specific opportunities</span></p></li><li><p><strong><span style=\"color:#000000\">Quantify success </span></strong><span style=\"color:#000000\">by defining and measuring success metrics for the domain as well as team performance</span></p></li><li><p><strong><span style=\"color:#000000\">Mentor and coach</span></strong><span style=\"color:#000000\"> team leads to let them grow and excel at their jobs</span></p></li><li><p><span style=\"color:#000000\">Drive for </span><strong><span style=\"color:#000000\">high engineering standards</span></strong><span style=\"color:#000000\"> by implementing good software development practices and challenging the team to come up with good designs</span></p></li><li><p><strong><span style=\"color:#000000\">Improve and optimize processes</span></strong><span style=\"color:#000000\"> that hamper productivity and can be more lean</span></p></li><li><p><strong><span style=\"color:#000000\">Build a high-performance culture</span></strong><span style=\"color:#000000\"> through fostering accountability, being on top of performance management and focusing on employee engagement</span></p></li><li><p><strong><span style=\"color:#000000\">You work based on data when you can, and you ensure future decisions take data into account</span></strong></p></li></ul><h4><strong><span style=\"color:#000000\"><br>💡 What we’re looking for:</span></strong></h4><ul><li><p><span style=\"color:#000000\">Proven experience as an </span><strong><span style=\"color:#000000\">Engineering Manager </span></strong><span style=\"color:#000000\">leading team leads (preferred) or senior engineers</span></p></li><li><p><span style=\"color:#000000\">You have demonstrable experience in improving individual and team performance, as well as engagement</span></p></li><li><p><span style=\"color:#000000\">You have a history of </span><strong><span style=\"color:#000000\">being a software engineer</span></strong><span style=\"color:#000000\"> and know how to build high-quality software and the trade-offs that are to be made</span></p></li><li><p><span style=\"color:#000000\">Outstanding communication skills - you're just as comfortable talking to engineers as you are with stakeholders</span></p></li><li><p><span style=\"color:#000000\">A mindset focused on </span><strong><span style=\"color:#000000\">pragmatism and growth</span></strong><span style=\"color:#000000\"> - you care about setting a high standard for yourself and your team and you continue to reflect to become more productive with minimal technical debt</span></p></li></ul><p style=\"text-align:start;\"><span style=\"color:#000000\">Some </span><strong><span style=\"color:#000000\">practical things</span></strong><span style=\"color:#000000\"> we expect from you:</span></p><ul><li><p><span style=\"color:#000000\">You’re available for at least 32 hours per week</span></p></li><li><p><span style=\"color:#000000\">You're willing to come to our Utrecht office for two days/week</span></p></li><li><p><span style=\"color:#000000\">You have a valid work permit, and you're located in the Netherlands<br></span></p><p style=\"min-height: 1.7em;\"></p></li></ul><p><em><span style=\"color:#000000\">Note: the official job title for this role within Channable is Engineering Manager.</span></em></p><p style=\"min-height: 1.7em;\"></p><p><strong><span style=\"color:#000000\">Important note</span></strong><span style=\"color:#000000\">: we understand that studies show women may only apply for roles when they feel they meet 100% of the requirements; therefore, we strongly encourage you to apply even if you don't check every box, as we are looking for passionate individuals with potential and a willingness to grow.<br></span></p><h4><strong><span style=\"color:#000000\">Who are we?</span></strong></h4><p style=\"text-align:justify;\"><span style=\"color:#000000\">Channable was founded in 2014 in the heart of Utrecht. We are now a strong team of 320+ diverse individuals, and more than +40 nationalities.<br>Joining Channable means you’re looking for a bit more than just a job. Diverse as we are, we all share our love for growth, to help, to take ownership, and create an awesome journey together. Feel free to take a further look at who we are</span><a rel=\"noopener\" target=\"_blank\" href=\"https://www.channable.com/culture\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.channable.com/culture\"><span style=\"color:#000000\">here</span></a></u><span style=\"color:#000000\"> and on our</span><a rel=\"noopener\" target=\"_blank\" href=\"https://www.instagram.com/wearechannable/\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.instagram.com/wearechannable/\"><span style=\"color:#000000\">Instagram</span></a></u><span style=\"color:#000000\"> or</span><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/company/channable/mycompany/\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/company/channable/mycompany/\"><span style=\"color:#000000\">LinkedIn</span></a></u><span style=\"color:#000000\">! Wanna get to know us even more? Give our</span><a rel=\"noopener\" target=\"_blank\" href=\"https://online.fliphtml5.com/qtfug/wxhm/#p=1\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://online.fliphtml5.com/qtfug/wxhm/#p=1\"><span style=\"color:#000000\">Culture Playbook</span></a></u><span style=\"color:#000000\"> a read.</span></p><h4><strong><span style=\"color:#000000\">What do we do?</span></strong></h4><p style=\"text-align:justify;\"><span style=\"color:#000000\">Channable is a fast-growing B2B SaaS platform that offers a fully integrated way to market your products online. We empower marketers and online businesses to manage, scale, and optimize their marketing.</span></p><p style=\"text-align:justify;\"><span style=\"color:#000000\">Want to read more about our development adventures? Then visit our inspiring tech blog:</span><a rel=\"noopener\" target=\"_blank\" href=\"https://tech.channable.com/\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://tech.channable.com/\"><span style=\"color:#1155CC\">https://tech.channable.com/</span></a></u></p><p style=\"text-align:justify;\"><span style=\"color:#000000\">And if this makes you enthusiastic, you can also take a look at some of our open-source work at</span><a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/channable\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/channable\"><span style=\"color:#1155CC\">https://github.com/channable</span></a></u><span style=\"color:#000000\"> to get a feeling of how we work together and what our code looks like.<br><br></span></p><h4><strong><span style=\"color:#000000\">🌟 Why Channable?</span></strong></h4><p><span style=\"color:#000000\">At Channable, you’ll find a culture that values openness, craftsmanship, and collaboration. We invest in our people and give them the autonomy to drive meaningful change. You'll work on technical challenges that matter, with colleagues who care deeply about the product and each other.</span></p>",
+     "title": "Senior Engineering Manager - Core",
+     "highlight": null,
+     "sharing_image": null,
+     "requirements": "<h4><strong><span style=\"color:#000000\">What do we offer?</span></strong></h4><ul><li><p><span style=\"color:#000000\">Gross annual salary ranging from € 100k-120k, including the  8% holiday allowance and based on a 40-hour work week.&nbsp;</span></p></li><li><p><span style=\"color:#000000\">Stock Appreciation Rights: You can financially profit from Channable’s success.</span></p></li><li><p><span style=\"color:#000000\">Company-wide performance bonus, up to 10% of your annual salary, determined yearly by our founders based on financial planning and targets</span></p></li><li><p><span style=\"color:#000000\">Saving for old age - we have a savings scheme for old age, which can accrue up to 5% of your monthly salary, </span><span style=\"color:#121317\">or you can get an additional +2.5% to your monthly base salary.</span></p></li><li><p><span style=\"color:#000000\">Annual L&amp;D budget of €1000 to spend on your professional growth.</span></p></li><li><p><span style=\"color:#000000\">26 vacation days + 2 reload days based on 40 hours, with the possibility of buying up to 5 extra vacation days per year</span></p></li><li><p><span style=\"color:#000000\">Are you going to become a parent? Enjoy 5 weeks of 100% paid partner leave!</span></p></li><li><p><span style=\"color:#000000\">Commuting to our office? Choose between an NS Business Card or a €0.25/km travel allowance for alternative transport.&nbsp;</span></p></li><li><p><span style=\"color:#000000\">Work from our office in central Utrecht at least 2 days a week, and from home for the rest (we'll provide the gear and a budget for extra supplies). Plus, enjoy flexible working hours with a morning start window between 8:00 AM and 10:00 AM.&nbsp;</span></p></li><li><p><span style=\"color:#000000\">We offer a 3-week-long workcation; and an additional 3 weeks if you live as an expat in the Netherlands!</span></p></li><li><p><span style=\"color:#000000\">Your well-being matters: we offer a discounted Urban Sports Club subscription and anonymous access to OpenUp psychologists and resources.</span></p></li><li><p><span style=\"color:#000000\">Fresh daily lunch: enjoy fresh meals prepared Monday to Thursday by our in-house Chef (fully catering to vegan, vegetarian, and gluten-free diets). On Fridays, we switch it up by ordering in tasty sandwiches and salads.</span></p></li><li><p><span style=\"color:#000000\">Additional working conditions include massages, even personal training sessions at our Channagym, video games, an in-office bar, and many more!</span></p></li><li><p><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/posts/channable_channable-channaweek-workculture-activity-7426540961326895105-EXff?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASoXJgBHdq4CVsQCH0PpnYcTQNs3ymnPIk\"><span style=\"color:#1155CC\">Channaweek</span></a></u><span style=\"color:#000000\"> &amp;</span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/posts/channable_channaweekend-teambuilding-employee-activity-7472609865060978688-4yrx?utm_source=share&utm_medium=member_desktop&rcm=ACoAABZ4BZEBIP93wvMbEFJl-McVwLtU2nhZoao\"><span style=\"color:#1155CC\"> Channaweekend:</span></a><span style=\"color:#1155CC\"> </span></u><span style=\"color:#000000\">connect with your global colleagues at our annual team gathering in Utrecht, and pack your bags for Channaweekend, our annual company-wide getaway.&nbsp;</span></p></li></ul><h4><strong><span style=\"color:#1B1A3A\"><br>How can you introduce yourself to us?</span></strong></h4><p><span style=\"color:#121317\">Are you interested? To ensure your application reaches the right team quickly, please submit it in English directly through our careers page by clicking the “Apply” button. Applications submitted via email won’t be considered.</span>  <span style=\"color:#121317\">We</span><span style=\"color:#000000\"> look forward to hearing from you as soon as possible!</span></p><p><span style=\"color:#121317\">Interview steps:</span></p><ol><li><p style=\"text-align:start;\"><span style=\"color:#121317\">If it's a match, we will get in touch with you for an introduction call (around 25 min)</span></p></li><li><p style=\"text-align:start;\"><span style=\"color:#121317\">Then you are going to have a System Design Interview with our team members (1h)</span></p></li><li><p style=\"text-align:start;\"><span style=\"color:#121317\">After that, we will schedule a leadership interview (1,5h)</span></p></li><li><p><span style=\"color:#121317\">Followed by an on-site meeting to get to know your team (1h)</span></p></li><li><p style=\"text-align:start;\"><span style=\"color:#121317\">Please note that after the interviews and before the offer stage, we’ll conduct reference checks.</span></p></li></ol><p style=\"min-height: 1.7em;\"></p><p><em><span style=\"color:#121317\">Important note: In the current AI era, it's tempting to use technology to polish your interview performance. While we value your ambition, please do not use AI assistance during the screening process, so we can get to know the real person behind the resume.</span></em></p><p style=\"min-height: 1.7em;\"></p><p><em><span style=\"color:#000000\">Note: Contact by job agencies and recruiters will not be appreciated. Each recruiter or headhunter who approaches us agrees with a donation of €250 for Make-A-Wish.</span></em></p><p><em><span style=\"color:#000000\">At Channable, we strive to create and foster an environment of belonging and collaboration, and we believe in a diverse and inclusive team</span></em></p>",
+     "locations_question": "What is your preferred work location?",
+     "sharing_description": "At Channable, we're building the future of eCommerce automation - and at the core of that vision is a world-class engineering organization. We're looking for a Senior Engineering Manager to join our C",
+     "sharing_title": "Senior Engineering Manager - Core"
+    }
+   },
+   "city": "Utrecht",
+   "close_at": null,
+   "published_at": "2026-10-22 12:11:23 UTC",
+   "careers_url": "https://jobs.channable.com/o/senior-engineering-manager-core",
+   "sharing_image": null,
+   "cover_image": null,
+   "locations_question": "What is your preferred work location?",
+   "country": "Netherlands",
+   "max_hours_per_week": "40",
+   "min_hours_per_week": "32",
+   "open_questions": [
+    {
+     "id": 4454092,
+     "position": 1,
+     "options": {},
+     "required": true,
+     "body": "How did you find out about Channable?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "How did you find out about Channable?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4454093,
+     "position": 2,
+     "options": {},
+     "required": true,
+     "body": "Do you have EU citizenship or a valid work permit for the Netherlands? Or do you need sponsorship from us?",
+     "kind": "single_choice",
+     "translations": {
+      "en": {
+       "body": "Do you have EU citizenship or a valid work permit for the Netherlands? Or do you need sponsorship from us?"
+      }
+     },
+     "open_question_options": [
+      {
+       "id": 6861617,
+       "position": 0,
+       "body": "EU citizenship ",
+       "translations": {
+        "en": {
+         "body": "EU citizenship "
+        }
+       }
+      },
+      {
+       "id": 6861618,
+       "position": 1,
+       "body": "Valid work permit",
+       "translations": {
+        "en": {
+         "body": "Valid work permit"
+        }
+       }
+      },
+      {
+       "id": 6861619,
+       "position": 2,
+       "body": "I need sponsorship",
+       "translations": {
+        "en": {
+         "body": "I need sponsorship"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": 4454094,
+     "position": 3,
+     "options": {},
+     "required": false,
+     "body": "If you selected valid work permit, please specify which type ",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "If you selected valid work permit, please specify which type "
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4454095,
+     "position": 4,
+     "options": {},
+     "required": true,
+     "body": "Where do you live? (City)",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "Where do you live? (City)"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4454096,
+     "position": 5,
+     "options": {},
+     "required": true,
+     "body": "I confirm my availability for at least 32 hours per week, with a minimum of 2 days spent in the Utrecht office",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "I confirm my availability for at least 32 hours per week, with a minimum of 2 days spent in the Utrecht office"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4454097,
+     "position": 6,
+     "options": {
+      "currency": "EUR"
+     },
+     "required": true,
+     "body": "Please share your annual gross salary expectations including 8% holiday allowance ",
+     "kind": "salary",
+     "translations": {
+      "en": {
+       "body": "Please share your annual gross salary expectations including 8% holiday allowance "
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4454098,
+     "position": 7,
+     "options": {},
+     "required": false,
+     "body": "Which one of our company values resonates the most with you and why?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "Which one of our company values resonates the most with you and why?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4454099,
+     "position": 8,
+     "options": {
+      "length": 120
+     },
+     "required": false,
+     "body": "Want to impress us even more? Take your chance to introduce yourself to us (max. 2 mins)!\n\n",
+     "kind": "video",
+     "translations": {
+      "en": {
+       "body": "Want to impress us even more? Take your chance to introduce yourself to us (max. 2 mins)!\n\n"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "title": "Senior Engineering Manager - Core",
+   "tags": [],
+   "category_code": "internet",
+   "dynamic_fields": [],
+   "options_cv": "required",
+   "state_name": "Utrecht",
+   "country_code": "NL",
+   "location_question_visible": false,
+   "options_photo": "off",
+   "options_salutation": "off",
+   "mailbox_email": "job.ca4wn@channable.recruitee.com",
+   "education_code": "bachelor_degree",
+   "requirements": "<h4><strong><span style=\"color:#000000\">What do we offer?</span></strong></h4><ul><li><p><span style=\"color:#000000\">Gross annual salary ranging from € 100k-120k, including the  8% holiday allowance and based on a 40-hour work week.&nbsp;</span></p></li><li><p><span style=\"color:#000000\">Stock Appreciation Rights: You can financially profit from Channable’s success.</span></p></li><li><p><span style=\"color:#000000\">Company-wide performance bonus, up to 10% of your annual salary, determined yearly by our founders based on financial planning and targets</span></p></li><li><p><span style=\"color:#000000\">Saving for old age - we have a savings scheme for old age, which can accrue up to 5% of your monthly salary, </span><span style=\"color:#121317\">or you can get an additional +2.5% to your monthly base salary.</span></p></li><li><p><span style=\"color:#000000\">Annual L&amp;D budget of €1000 to spend on your professional growth.</span></p></li><li><p><span style=\"color:#000000\">26 vacation days + 2 reload days based on 40 hours, with the possibility of buying up to 5 extra vacation days per year</span></p></li><li><p><span style=\"color:#000000\">Are you going to become a parent? Enjoy 5 weeks of 100% paid partner leave!</span></p></li><li><p><span style=\"color:#000000\">Commuting to our office? Choose between an NS Business Card or a €0.25/km travel allowance for alternative transport.&nbsp;</span></p></li><li><p><span style=\"color:#000000\">Work from our office in central Utrecht at least 2 days a week, and from home for the rest (we'll provide the gear and a budget for extra supplies). Plus, enjoy flexible working hours with a morning start window between 8:00 AM and 10:00 AM.&nbsp;</span></p></li><li><p><span style=\"color:#000000\">We offer a 3-week-long workcation; and an additional 3 weeks if you live as an expat in the Netherlands!</span></p></li><li><p><span style=\"color:#000000\">Your well-being matters: we offer a discounted Urban Sports Club subscription and anonymous access to OpenUp psychologists and resources.</span></p></li><li><p><span style=\"color:#000000\">Fresh daily lunch: enjoy fresh meals prepared Monday to Thursday by our in-house Chef (fully catering to vegan, vegetarian, and gluten-free diets). On Fridays, we switch it up by ordering in tasty sandwiches and salads.</span></p></li><li><p><span style=\"color:#000000\">Additional working conditions include massages, even personal training sessions at our Channagym, video games, an in-office bar, and many more!</span></p></li><li><p><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/posts/channable_channable-channaweek-workculture-activity-7426540961326895105-EXff?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASoXJgBHdq4CVsQCH0PpnYcTQNs3ymnPIk\"><span style=\"color:#1155CC\">Channaweek</span></a></u><span style=\"color:#000000\"> &amp;</span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/posts/channable_channaweekend-teambuilding-employee-activity-7472609865060978688-4yrx?utm_source=share&utm_medium=member_desktop&rcm=ACoAABZ4BZEBIP93wvMbEFJl-McVwLtU2nhZoao\"><span style=\"color:#1155CC\"> Channaweekend:</span></a><span style=\"color:#1155CC\"> </span></u><span style=\"color:#000000\">connect with your global colleagues at our annual team gathering in Utrecht, and pack your bags for Channaweekend, our annual company-wide getaway.&nbsp;</span></p></li></ul><h4><strong><span style=\"color:#1B1A3A\"><br>How can you introduce yourself to us?</span></strong></h4><p><span style=\"color:#121317\">Are you interested? To ensure your application reaches the right team quickly, please submit it in English directly through our careers page by clicking the “Apply” button. Applications submitted via email won’t be considered.</span>  <span style=\"color:#121317\">We</span><span style=\"color:#000000\"> look forward to hearing from you as soon as possible!</span></p><p><span style=\"color:#121317\">Interview steps:</span></p><ol><li><p style=\"text-align:start;\"><span style=\"color:#121317\">If it's a match, we will get in touch with you for an introduction call (around 25 min)</span></p></li><li><p style=\"text-align:start;\"><span style=\"color:#121317\">Then you are going to have a System Design Interview with our team members (1h)</span></p></li><li><p style=\"text-align:start;\"><span style=\"color:#121317\">After that, we will schedule a leadership interview (1,5h)</span></p></li><li><p><span style=\"color:#121317\">Followed by an on-site meeting to get to know your team (1h)</span></p></li><li><p style=\"text-align:start;\"><span style=\"color:#121317\">Please note that after the interviews and before the offer stage, we’ll conduct reference checks.</span></p></li></ol><p style=\"min-height: 1.7em;\"></p><p><em><span style=\"color:#121317\">Important note: In the current AI era, it's tempting to use technology to polish your interview performance. While we value your ambition, please do not use AI assistance during the screening process, so we can get to know the real person behind the resume.</span></em></p><p style=\"min-height: 1.7em;\"></p><p><em><span style=\"color:#000000\">Note: Contact by job agencies and recruiters will not be appreciated. Each recruiter or headhunter who approaches us agrees with a donation of €250 for Make-A-Wish.</span></em></p><p><em><span style=\"color:#000000\">At Channable, we strive to create and foster an environment of belonging and collaboration, and we believe in a diverse and inclusive team</span></em></p>",
+   "description": "<p><span style=\"color:#000000\">At </span><strong><span style=\"color:#000000\">Channable</span></strong><span style=\"color:#000000\">, we're building the future of eCommerce automation - and at the core of that vision is a world-class engineering organization. We're looking for a </span><strong><span style=\"color:#000000\">Senior</span></strong><span style=\"color:#000000\"> </span><strong><span style=\"color:#000000\">Engineering Manager</span></strong><span style=\"color:#000000\"> to join our </span><strong><span style=\"color:#000000\">Core Group</span></strong><span style=\"color:#000000\">, where you'll play a key role in integrating eCommerce channels.<br></span></p><h4><strong><span style=\"color:#000000\">🚀 About the role:</span></strong></h4><p><span style=\"color:#000000\">As a Senior Engineering Manager in the Core domain, you will lead an engineering department consisting of 3 team leads (your direct reports) who manage ~11 individual contributors.</span></p><p><span style=\"color:#000000\">You’ll be responsible for delivering maximum impact in the Core domain. You will partner up with an experienced Product Lead, with whom you will define and carry out a department vision, strategy, and roadmap. Engaged team leads and individual contributors are top of mind for you. You can learn more about the Core domain and its scope </span><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.channable.com/pricing\"><span style=\"color:#1155CC\">here</span></a></u><span style=\"color:#000000\">.</span></p><h4><strong><span style=\"color:#000000\">🛠 What you’ll do:</span></strong></h4><ul><li><p><strong><span style=\"color:#000000\">Drive the Core roadmap</span></strong><span style=\"color:#000000\"> by balancing the overall Channable strategy and the Core's specific opportunities</span></p></li><li><p><strong><span style=\"color:#000000\">Quantify success </span></strong><span style=\"color:#000000\">by defining and measuring success metrics for the domain as well as team performance</span></p></li><li><p><strong><span style=\"color:#000000\">Mentor and coach</span></strong><span style=\"color:#000000\"> team leads to let them grow and excel at their jobs</span></p></li><li><p><span style=\"color:#000000\">Drive for </span><strong><span style=\"color:#000000\">high engineering standards</span></strong><span style=\"color:#000000\"> by implementing good software development practices and challenging the team to come up with good designs</span></p></li><li><p><strong><span style=\"color:#000000\">Improve and optimize processes</span></strong><span style=\"color:#000000\"> that hamper productivity and can be more lean</span></p></li><li><p><strong><span style=\"color:#000000\">Build a high-performance culture</span></strong><span style=\"color:#000000\"> through fostering accountability, being on top of performance management and focusing on employee engagement</span></p></li><li><p><strong><span style=\"color:#000000\">You work based on data when you can, and you ensure future decisions take data into account</span></strong></p></li></ul><h4><strong><span style=\"color:#000000\"><br>💡 What we’re looking for:</span></strong></h4><ul><li><p><span style=\"color:#000000\">Proven experience as an </span><strong><span style=\"color:#000000\">Engineering Manager </span></strong><span style=\"color:#000000\">leading team leads (preferred) or senior engineers</span></p></li><li><p><span style=\"color:#000000\">You have demonstrable experience in improving individual and team performance, as well as engagement</span></p></li><li><p><span style=\"color:#000000\">You have a history of </span><strong><span style=\"color:#000000\">being a software engineer</span></strong><span style=\"color:#000000\"> and know how to build high-quality software and the trade-offs that are to be made</span></p></li><li><p><span style=\"color:#000000\">Outstanding communication skills - you're just as comfortable talking to engineers as you are with stakeholders</span></p></li><li><p><span style=\"color:#000000\">A mindset focused on </span><strong><span style=\"color:#000000\">pragmatism and growth</span></strong><span style=\"color:#000000\"> - you care about setting a high standard for yourself and your team and you continue to reflect to become more productive with minimal technical debt</span></p></li></ul><p style=\"text-align:start;\"><span style=\"color:#000000\">Some </span><strong><span style=\"color:#000000\">practical things</span></strong><span style=\"color:#000000\"> we expect from you:</span></p><ul><li><p><span style=\"color:#000000\">You’re available for at least 32 hours per week</span></p></li><li><p><span style=\"color:#000000\">You're willing to come to our Utrecht office for two days/week</span></p></li><li><p><span style=\"color:#000000\">You have a valid work permit, and you're located in the Netherlands<br></span></p><p style=\"min-height: 1.7em;\"></p></li></ul><p><em><span style=\"color:#000000\">Note: the official job title for this role within Channable is Engineering Manager.</span></em></p><p style=\"min-height: 1.7em;\"></p><p><strong><span style=\"color:#000000\">Important note</span></strong><span style=\"color:#000000\">: we understand that studies show women may only apply for roles when they feel they meet 100% of the requirements; therefore, we strongly encourage you to apply even if you don't check every box, as we are looking for passionate individuals with potential and a willingness to grow.<br></span></p><h4><strong><span style=\"color:#000000\">Who are we?</span></strong></h4><p style=\"text-align:justify;\"><span style=\"color:#000000\">Channable was founded in 2014 in the heart of Utrecht. We are now a strong team of 320+ diverse individuals, and more than +40 nationalities.<br>Joining Channable means you’re looking for a bit more than just a job. Diverse as we are, we all share our love for growth, to help, to take ownership, and create an awesome journey together. Feel free to take a further look at who we are</span><a rel=\"noopener\" target=\"_blank\" href=\"https://www.channable.com/culture\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.channable.com/culture\"><span style=\"color:#000000\">here</span></a></u><span style=\"color:#000000\"> and on our</span><a rel=\"noopener\" target=\"_blank\" href=\"https://www.instagram.com/wearechannable/\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.instagram.com/wearechannable/\"><span style=\"color:#000000\">Instagram</span></a></u><span style=\"color:#000000\"> or</span><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/company/channable/mycompany/\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://www.linkedin.com/company/channable/mycompany/\"><span style=\"color:#000000\">LinkedIn</span></a></u><span style=\"color:#000000\">! Wanna get to know us even more? Give our</span><a rel=\"noopener\" target=\"_blank\" href=\"https://online.fliphtml5.com/qtfug/wxhm/#p=1\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://online.fliphtml5.com/qtfug/wxhm/#p=1\"><span style=\"color:#000000\">Culture Playbook</span></a></u><span style=\"color:#000000\"> a read.</span></p><h4><strong><span style=\"color:#000000\">What do we do?</span></strong></h4><p style=\"text-align:justify;\"><span style=\"color:#000000\">Channable is a fast-growing B2B SaaS platform that offers a fully integrated way to market your products online. We empower marketers and online businesses to manage, scale, and optimize their marketing.</span></p><p style=\"text-align:justify;\"><span style=\"color:#000000\">Want to read more about our development adventures? Then visit our inspiring tech blog:</span><a rel=\"noopener\" target=\"_blank\" href=\"https://tech.channable.com/\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://tech.channable.com/\"><span style=\"color:#1155CC\">https://tech.channable.com/</span></a></u></p><p style=\"text-align:justify;\"><span style=\"color:#000000\">And if this makes you enthusiastic, you can also take a look at some of our open-source work at</span><a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/channable\"><span style=\"color:#000000\"> </span></a><u><a rel=\"noopener\" target=\"_blank\" href=\"https://github.com/channable\"><span style=\"color:#1155CC\">https://github.com/channable</span></a></u><span style=\"color:#000000\"> to get a feeling of how we work together and what our code looks like.<br><br></span></p><h4><strong><span style=\"color:#000000\">🌟 Why Channable?</span></strong></h4><p><span style=\"color:#000000\">At Channable, you’ll find a culture that values openness, craftsmanship, and collaboration. We invest in our people and give them the autonomy to drive meaningful change. You'll work on technical challenges that matter, with colleagues who care deeply about the product and each other.</span></p>",
+   "max_hours": 40,
+   "company_name": "Channable",
+   "locations": [
+    {
+     "id": 64463,
+     "name": "Utrecht",
+     "state": "Utrecht",
+     "country": "Netherlands",
+     "city": "Utrecht",
+     "translations": {
+      "en": {
+       "name": "Utrecht",
+       "city": "Utrecht",
+       "postal_code": "3512 HL",
+       "street": "Kromme Nieuwegracht 66",
+       "note": null
+      }
+     },
+     "country_code": "NL",
+     "postal_code": "3512 HL",
+     "state_code": "UT",
+     "street": "Kromme Nieuwegracht 66",
+     "note": null
+    }
+   ],
+   "remote": false,
+   "locations_question_required": true,
+   "sharing_title": "Senior Engineering Manager - Core",
+   "sharing_description": "At Channable, we're building the future of eCommerce automation - and at the core of that vision is a world-class engineering organization. We're looking for a Senior Engineering Manager to join our C",
+   "options_title": "off",
+   "id": 2793226,
+   "updated_at": "2026-10-29 12:57:54 UTC",
+   "min_hours": 32,
+   "options_cover_letter": "optional",
+   "careers_apply_url": "https://jobs.channable.com/o/senior-engineering-manager-core/c/new",
+   "on_site": false,
+   "salary": {
+    "max": "120000",
+    "min": "100000",
+    "period": "year",
+    "currency": "EUR"
+   },
+   "department": "Engineering",
+   "hybrid": true,
+   "status": "published",
+   "location": "Utrecht, Utrecht, Netherlands",
+   "slug": "senior-engineering-manager-core"
+  }
+ ]
+}

@@ -240,7 +240,8 @@ def test_countries_feed_the_globe(api: TestClient) -> None:
 def test_platforms_and_stats(api: TestClient) -> None:
     platforms = {p["slug"]: p for p in api.get("/v1/platforms").json()["data"]}
     assert platforms["greenhouse"]["job_count"] == 5 and platforms["greenhouse"]["boards"] == 1
-    assert platforms["lever"]["status"] == "scheduled"
+    assert platforms["lever"]["status"] == "indexing"  # connector ready, not yet fetched
+    assert platforms["smartrecruiters"]["status"] == "paused"
     stats = api.get("/v1/stats").json()
     assert (stats["total_jobs"], stats["remote_jobs"], stats["worldwide_remote_jobs"]) == (5, 3, 1)
     assert stats["countries_with_jobs"] == 2

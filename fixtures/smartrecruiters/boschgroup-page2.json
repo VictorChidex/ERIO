@@ -1,0 +1,284 @@
+{
+ "offset": 3,
+ "limit": 3,
+ "totalFound": 5,
+ "content": [
+  {
+   "id": "744000159795599",
+   "name": "Key User Manager – Oil & Gas, EPC & Metal Fabrication (South Vietnam), Power Tools Division",
+   "uuid": "282a16f8-a98b-4d89-b553-c1da7c1cb18e",
+   "jobAdId": "3558ce61-9e78-4af7-8744-980bb4630488",
+   "defaultJobAd": true,
+   "refNumber": "REF300237I",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-11-05T07:28:23.625Z",
+   "location": {
+    "city": "District 2, Thu Duc City, Ho Chi Minh",
+    "country": "vn",
+    "address": "Floor 8, The Mett, 15 Tran Bach Dang Street, Thu Thiem New Urban Area, An Phu",
+    "remote": false,
+    "hybrid": false,
+    "fullLocation": "District 2, Thu Duc City, Ho Chi Minh, , Vietnam"
+   },
+   "industry": {
+    "id": "mechanical_engineering",
+    "label": "Mechanical Or Industrial Engineering"
+   },
+   "department": {},
+   "function": {
+    "id": "sales",
+    "label": "Sales"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "associate",
+    "label": "Associate"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "98487475-2a49-44f5-a615-408b525b3821",
+     "valueLabel": "Limited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "59cb1718-309b-426d-9923-78cb153bc85c",
+     "valueLabel": "Vietnam Local Grades"
+    },
+    {
+     "fieldId": "586a997ee4b05fd937b86098",
+     "fieldLabel": "Legal Entity(acronym)",
+     "valueId": "14624155-c83a-4cfe-b312-608900ec7eef",
+     "valueLabel": "RBVN"
+    },
+    {
+     "fieldId": "586a99b5e4b0daa006ae1079",
+     "fieldLabel": "Working Location",
+     "valueId": "f1760a39-f0a1-4842-ba38-d6479a6f3858",
+     "valueLabel": "Ho Chi Minh City"
+    },
+    {
+     "fieldId": "5abe295a6d8bc56863dd9747",
+     "fieldLabel": "Global Salary Level",
+     "valueId": "4eb55129-0528-4879-b132-1d17e25df928",
+     "valueLabel": "Senior/ Upper Tariff"
+    },
+    {
+     "fieldId": "69ca83a2489188782a1e9f87",
+     "fieldLabel": "Direct Or Indirect",
+     "valueId": "1aefbf4c-c10a-422e-a975-a504a7117792",
+     "valueLabel": "Indirect"
+    },
+    {
+     "fieldId": "5abe29f9b60a5e486a2d9b1c",
+     "fieldLabel": "Working hours",
+     "valueId": "60756b3e-dbab-4353-ac3a-0064d2bb27d8",
+     "valueLabel": "Full-time"
+    },
+    {
+     "fieldId": "586a9995e4b0daa006ae1078",
+     "fieldLabel": "Legal Entity",
+     "valueId": "85675cf9-1901-4d99-9f0f-d3363b6bbb7a",
+     "valueLabel": "Bosch Vietnam Co., Ltd."
+    },
+    {
+     "fieldId": "691cf1c93001c782b9560ab7",
+     "fieldLabel": "Division full name",
+     "valueId": "d46bc602-375e-4c5b-8773-170f49339203",
+     "valueLabel": "Power Tools"
+    },
+    {
+     "fieldId": "5abe27936d8bc56863dd9745",
+     "fieldLabel": "Position type",
+     "valueId": "c7b4da31-6f38-405a-b2e8-08a76e3c3f2c",
+     "valueLabel": "Professional"
+    },
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "vn",
+     "valueLabel": "Vietnam"
+    },
+    {
+     "fieldId": "586a971ee4b0daa006ae1077",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Bosch Group"
+    },
+    {
+     "fieldId": "586a996ce4b05fd937b86097",
+     "fieldLabel": "Working Country",
+     "valueId": "3f6189e1-7124-4d9a-9d02-9f23f9a6e4d2",
+     "valueLabel": "Vietnam"
+    },
+    {
+     "fieldId": "586a9b22e4b05fd937b8609a",
+     "fieldLabel": "Local Grade",
+     "valueId": "8be31566-61a6-45ae-b5c1-82a20129e547",
+     "valueLabel": "VN_PC8"
+    },
+    {
+     "fieldId": "586a99a5e4b05fd937b86099",
+     "fieldLabel": "Division",
+     "valueId": "PT",
+     "valueLabel": "PT"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000159795599",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  },
+  {
+   "id": "744000159794539",
+   "name": "Module Design (CAD) Engineer for Hydraulics in Heat Pump application",
+   "uuid": "11b1883c-1cf0-41a4-a4a7-045b9689ed33",
+   "jobAdId": "be2093fe-8ced-4338-8a13-01b33d3d89e7",
+   "defaultJobAd": true,
+   "refNumber": "REF299236J",
+   "company": {
+    "identifier": "BoschGroup",
+    "name": "Bosch Group"
+   },
+   "releasedDate": "2026-11-05T07:19:32.317Z",
+   "location": {
+    "city": "Tranås",
+    "region": "Jönköpings län",
+    "country": "se",
+    "address": "Hjälmarydsvägen",
+    "remote": false,
+    "hybrid": false,
+    "latitude": "58.0149225",
+    "longitude": "14.9575279",
+    "fullLocation": "Tranås, Jönköpings län, Sweden"
+   },
+   "industry": {
+    "id": "mechanical_engineering",
+    "label": "Mechanical Or Industrial Engineering"
+   },
+   "department": {},
+   "function": {
+    "id": "engineering",
+    "label": "Engineering"
+   },
+   "typeOfEmployment": {
+    "id": "permanent",
+    "label": "Full-time"
+   },
+   "experienceLevel": {
+    "id": "associate",
+    "label": "Associate"
+   },
+   "customField": [
+    {
+     "fieldId": "5abe2a4ab60a5e486a2d9b1d",
+     "fieldLabel": "Contract type",
+     "valueId": "1e46492b-d24f-460c-b095-38cf08a778d8",
+     "valueLabel": "Unlimited"
+    },
+    {
+     "fieldId": "5abe28e96d8bc56863dd9746",
+     "fieldLabel": "Tariff Area",
+     "valueId": "f520c5c4-145d-49b1-8a28-702d0861488c",
+     "valueLabel": "Sweden Local Grades"
+    },
+    {
+     "fieldId": "586a997ee4b05fd937b86098",
+     "fieldLabel": "Legal Entity(acronym)",
+     "valueId": "8e44ead5-307c-4eec-9da4-d51242dc8a57",
+     "valueLabel": "TTSE"
+    },
+    {
+     "fieldId": "586a99b5e4b0daa006ae1079",
+     "fieldLabel": "Working Location",
+     "valueId": "77bd35ba-f3fa-474d-9aa5-9b2bbf0028a6",
+     "valueLabel": "Tranas"
+    },
+    {
+     "fieldId": "5abe295a6d8bc56863dd9747",
+     "fieldLabel": "Global Salary Level",
+     "valueId": "80ae06a1-4738-48e8-8aea-4613f58ecd57",
+     "valueLabel": "Others"
+    },
+    {
+     "fieldId": "69ca83a2489188782a1e9f87",
+     "fieldLabel": "Direct Or Indirect",
+     "valueId": "1aefbf4c-c10a-422e-a975-a504a7117792",
+     "valueLabel": "Indirect"
+    },
+    {
+     "fieldId": "5abe29f9b60a5e486a2d9b1c",
+     "fieldLabel": "Working hours",
+     "valueId": "60756b3e-dbab-4353-ac3a-0064d2bb27d8",
+     "valueLabel": "Full-time"
+    },
+    {
+     "fieldId": "586a9995e4b0daa006ae1078",
+     "fieldLabel": "Legal Entity",
+     "valueId": "d9c39575-0e93-4bfa-9b6f-e8b440dc026f",
+     "valueLabel": "Bosch Thermoteknik AB"
+    },
+    {
+     "fieldId": "691cf1c93001c782b9560ab7",
+     "fieldLabel": "Division full name",
+     "valueId": "65a82db8-6dd3-40f0-a812-01522dc95503",
+     "valueLabel": "Home Comfort"
+    },
+    {
+     "fieldId": "5abe27936d8bc56863dd9745",
+     "fieldLabel": "Position type",
+     "valueId": "c7b4da31-6f38-405a-b2e8-08a76e3c3f2c",
+     "valueLabel": "Professional"
+    },
+    {
+     "fieldId": "COUNTRY",
+     "fieldLabel": "Country/Region",
+     "valueId": "se",
+     "valueLabel": "Sweden"
+    },
+    {
+     "fieldId": "586a971ee4b0daa006ae1077",
+     "fieldLabel": "Brands",
+     "valueId": "default",
+     "valueLabel": "Bosch Group"
+    },
+    {
+     "fieldId": "586a996ce4b05fd937b86097",
+     "fieldLabel": "Working Country",
+     "valueId": "169a2e8c-3661-4329-95d9-4f8ac68012d0",
+     "valueLabel": "Sweden"
+    },
+    {
+     "fieldId": "586a9b22e4b05fd937b8609a",
+     "fieldLabel": "Local Grade",
+     "valueId": "9aad3192-f8cf-4fb9-a846-570c81958a57",
+     "valueLabel": "SE_Associate"
+    },
+    {
+     "fieldId": "586a99a5e4b05fd937b86099",
+     "fieldLabel": "Division",
+     "valueId": "TT",
+     "valueLabel": "HC"
+    }
+   ],
+   "visibility": "PUBLIC",
+   "ref": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings/744000159794539",
+   "language": {
+    "code": "en",
+    "label": "English",
+    "labelNative": "English (US)"
+   }
+  }
+ ]
+}

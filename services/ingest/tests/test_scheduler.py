@@ -53,12 +53,12 @@ def test_skips_paused_boards_until_their_pause_ends(
 
 def test_skips_paused_sources(migrated_engine: Engine, boards: list[int]) -> None:
     with Session(migrated_engine) as session, session.begin():
-        session.execute(update(Source).where(Source.slug == "greenhouse").values(status="paused"))
+        session.execute(update(Source).values(status="paused"))
     assert run(migrated_engine) == []
 
 
 def test_seeded_boards_span_several_regions(migrated_engine: Engine, boards: list[int]) -> None:
-    assert len(boards) == 20
+    assert len(boards) == 30
     with Session(migrated_engine) as session:
         tokens = set(session.scalars(select(CompanyBoard.board_token)))
     assert {"moniepoint", "jumia", "gympass", "xendit", "tamara", "monzo"} <= tokens

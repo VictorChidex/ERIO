@@ -7,6 +7,8 @@ That keeps every adapter a pure function of its input, testable against
 recorded fixtures.
 """
 
+import re
+import unicodedata
 from abc import ABC, abstractmethod
 from collections.abc import Mapping
 from dataclasses import dataclass, field
@@ -52,6 +54,11 @@ class BoardFetch:
     unchanged: bool = False
 
 
+def _fold(name: str) -> str:
+    """Fold a name for loose comparison: "Hugging Face, Inc." -> "huggingfaceinc"."""
+    return re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", name).lower())
+
+
 class Connector(ABC):
     slug: str
     #: Hosts this connector may contact; the fetcher refuses anything else.
@@ -69,15 +76,36 @@ class Connector(ABC):
     def parse(self, raw: RawPosting) -> PartialJob:
         """Read what this source says about one posting."""
 
-    def discover(self, fetcher: Fetcher, candidates: list[str]) -> str | None:
-        """First candidate board token that answers with a valid board, if any."""
+    def discover(
+        self, fetcher: Fetcher, candidates: list[str], company: str | None = None
+    ) -> str | None:
+        """First candidate token whose board lists postings, if any.
+
+        An empty board is not enough: some sources answer for placeholder
+        accounts under well-known names. When the source names the employer
+        on its postings, that name must also match ``company``.
+        """
         for token in candidates:
             try:
-                self.list_postings(fetcher, token)
-            except FetchError:
+                postings = self.list_postings(fetcher, token).postings
+            except (FetchError, ValueError):  # ValueError: not a valid token here
                 continue
-            return token
+            if postings and (company is None or self._names_company(postings, company)):
+                return token
         return None
+
+    def _names_company(self, postings: list[RawPosting], company: str) -> bool:
+        named = set()
+        for raw in postings[:5]:
+            try:
+                named.add(self.parse(raw).company_name)
+            except Exception:  # noqa: S112 (an unparseable posting names no one)
+                continue
+        named.discard(None)
+        if not named:
+            return True  # the source does not say: the token is all we have
+        want = _fold(company)
+        return any(want in _fold(n) or _fold(n) in want for n in named if n and _fold(n))
 
     def list_postings(
         self, fetcher: Fetcher, board_token: str, etag: str | None = None

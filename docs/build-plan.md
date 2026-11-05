@@ -19,7 +19,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 7 | 9 | Search index and API v1 | In progress |
 | 8 | 10 | Website | In progress (Lighthouse, Storybook) |
 | 9 | 11 | Globe and country filter | Done (60 fps to check on the reference laptop) |
-| 10 | 7 | Remaining 5 connectors and company list | Not started |
+| 10 | 7 | Remaining 5 connectors and company list | In progress (company list: D-07) |
 | 11 | 8 | Deduplication | Not started |
 | 12 | 12 | AI providers and MCP server | Not started |
 | 13 | 2e | Terraform staging and deploy on merge | On hold until local is complete |
@@ -90,9 +90,16 @@ Built in parts: (a) location and country resolution; (b) salary, role and title;
 
 ## Step 7 — Remaining 5 connectors and company list
 
-- [ ] All 6 sources run on staging at ≥ 98% fetch success for 3 days.
-- [ ] At least 3,000 boards tracked and at least 40 countries with local listings.
-- [ ] Breaking one adapter's fixture fails CI for that adapter only.
+- [x] Lever, Ashby, SmartRecruiters, Recruitee and Workable adapters in `erio_core/connectors/`, each with fixtures recorded from two real boards (`fixtures/<source>/`) and the shared contract tests in `packages/core/tests/test_connectors.py`.
+- [x] The fetcher admits one-level wildcard hosts (`*.recruitee.com`, one shared rate limit), obeys robots.txt `Crawl-delay`, and reports network failures as fetch failures.
+- [x] SmartRecruiters is paused: its robots.txt turns away every crawler but LinkedIn's (see `docs/sources.md`). The adapter is ready if access is granted.
+- [x] Company seed list format and loader: `erio_core/data/companies.csv` (name, domain, home country), loaded by the seed. It starts with 57 employers in 17 countries across Africa, Latin America, South and Southeast Asia; the full 3,000 to 5,000 list waits on decision D-07.
+- [x] Board discovery (`erio_ingest.discovery`, nightly): tries the tokens each company's name and domain suggest on every live source, records every try, and retries a miss after 30 days. A board counts only if it lists postings and, where the source names the employer, the name matches: Workable answers for empty placeholder accounts under many well-known names. First live run 2026-11-05 over the 85 companies: 393 company-and-source pairs tried, 14 boards found (among them Nubank and M-KOPA on Ashby, CRED, Meesho and Ninja Van on Lever, Groww and VTEX on Greenhouse).
+- [x] Nightly live smoke test per source (`erio_ingest.smoke`): one known board per source, end to end; results in `source_checks`, failures logged as `source smoke test failed` for alerting. First live run 2026-11-05: all 5 live sources passed.
+- [x] Coverage report for the targets below: `python -m erio_ingest.report`.
+- [ ] All 6 sources run on staging at ≥ 98% fetch success for 3 days (5 of 6 can; SmartRecruiters is blocked by its robots.txt).
+- [ ] At least 3,000 boards tracked and at least 40 countries with local listings (needs the D-07 list).
+- [x] Breaking one adapter's fixture fails CI for that adapter only (checked by breaking the Ashby fixture: only Ashby tests failed).
 
 ## Step 8 — Deduplication
 

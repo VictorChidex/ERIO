@@ -14,6 +14,7 @@ from erio_core.testing import alembic_config
 
 EXPECTED_TABLES = {
     "api_tokens",
+    "board_discovery",
     "companies",
     "company_boards",
     "countries",
@@ -22,6 +23,7 @@ EXPECTED_TABLES = {
     "job_sources",
     "jobs",
     "raw_postings",
+    "source_checks",
     "sources",
 }
 

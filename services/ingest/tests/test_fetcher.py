@@ -12,11 +12,15 @@ URL = f"https://{HOST}/v1/boards/acme/jobs"
 
 
 class NoLimit:
+    rate = 2.0
+
     def __init__(self) -> None:
         self.hosts: list[str] = []
+        self.rates: list[float | None] = []
 
-    def acquire(self, host: str, timeout_s: float = 60.0) -> None:
+    def acquire(self, host: str, timeout_s: float = 60.0, rate: float | None = None) -> None:
         self.hosts.append(host)
+        self.rates.append(rate)
 
 
 def make_fetcher(
@@ -24,6 +28,7 @@ def make_fetcher(
     *,
     addresses: list[str] | None = None,
     settings: Settings | None = None,
+    hosts: frozenset[str] = frozenset({HOST}),
 ) -> tuple[PoliteFetcher, NoLimit, list[httpx.Request]]:
     seen: list[httpx.Request] = []
 
@@ -33,7 +38,7 @@ def make_fetcher(
 
     limiter = NoLimit()
     fetcher = PoliteFetcher(
-        allowed_hosts={HOST},
+        allowed_hosts=hosts,
         limiter=limiter,  # type: ignore[arg-type]
         settings=settings or Settings(),
         client=httpx.Client(transport=httpx.MockTransport(record)),
@@ -91,6 +96,57 @@ def test_refuses_hosts_that_resolve_to_private_addresses(address: str) -> None:
     with pytest.raises(FetchError, match="public address"):
         fetcher.get(URL)
     assert seen == []
+
+
+def test_a_wildcard_admits_one_subdomain_level_under_one_rate_limit() -> None:
+    fetcher, limiter, _ = make_fetcher(site(), hosts=frozenset({"*.recruitee.com"}))
+
+    fetcher.get("https://acme.recruitee.com/api/offers/")
+    fetcher.get("https://globex.recruitee.com/api/offers/")
+
+    assert set(limiter.hosts) == {"*.recruitee.com"}
+    for url in (
+        "https://recruitee.com/api/offers/",
+        "https://a.b.recruitee.com/api/offers/",
+        "https://acme.recruitee.com.evil.example/",
+    ):
+        with pytest.raises(FetchError, match="not allowed"):
+            fetcher.get(url)
+
+
+def test_a_robots_crawl_delay_slows_the_host() -> None:
+    robots = (200, "User-agent: *\nAllow: /\nCrawl-delay: 4\n")
+    fetcher, limiter, _ = make_fetcher(site(robots=robots))
+
+    fetcher.get(URL)
+
+    assert limiter.rates == [None, 0.25]  # robots.txt itself, then the page at 1 per 4 s
+
+
+def test_a_crawl_delay_never_speeds_a_host_up() -> None:
+    robots = (200, "User-agent: *\nCrawl-delay: 1\n")
+    fetcher, limiter, _ = make_fetcher(site(robots=robots))
+    limiter.rate = 0.5  # ERIO's own limit is already slower than 1 per second
+
+    fetcher.get(URL)
+
+    assert limiter.rates[-1] == 0.5
+
+
+@pytest.mark.parametrize(
+    ("failure", "outcome"),
+    [(httpx.ReadTimeout("slow"), "timeout"), (httpx.ConnectError("refused"), "http_error")],
+)
+def test_network_failures_are_fetch_errors(failure: httpx.HTTPError, outcome: str) -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path == "/robots.txt":
+            return httpx.Response(404)
+        raise failure
+
+    fetcher, _, _ = make_fetcher(handler)
+    with pytest.raises(FetchError) as error:
+        fetcher.get(URL)
+    assert error.value.outcome == outcome
 
 
 def test_obeys_robots_txt() -> None:

@@ -1,9 +1,12 @@
-"""Reference data every environment needs: countries and job sources.
+"""Reference data every environment needs: countries, job sources and the
+companies ERIO tracks.
 
 Run after migrations with ``python -m erio_core.db.seed``. Safe to repeat:
 rows are inserted or updated in place, never duplicated.
 """
 
+import csv
+import io
 import json
 from importlib.resources import files
 from typing import Any
@@ -15,14 +18,16 @@ from erio_core.db.models import Company, CompanyBoard, Country, Source
 from erio_core.settings import Settings
 
 # The six first-release ATS sources (decision D-04). They stay "scheduled"
-# until their connector exists and legal review is recorded.
+# until legal review is recorded. The status is set only when a source is
+# first added; after that it is changed by hand, never by the seed.
 SOURCES = [
-    {"slug": "greenhouse", "name": "Greenhouse", "kind": "ats"},
-    {"slug": "lever", "name": "Lever", "kind": "ats"},
-    {"slug": "ashby", "name": "Ashby", "kind": "ats"},
-    {"slug": "smartrecruiters", "name": "SmartRecruiters", "kind": "ats"},
-    {"slug": "recruitee", "name": "Recruitee", "kind": "ats"},
-    {"slug": "workable", "name": "Workable", "kind": "ats"},
+    {"slug": "greenhouse", "name": "Greenhouse", "kind": "ats", "status": "scheduled"},
+    {"slug": "lever", "name": "Lever", "kind": "ats", "status": "scheduled"},
+    {"slug": "ashby", "name": "Ashby", "kind": "ats", "status": "scheduled"},
+    # Its robots.txt turns away every crawler but LinkedIn's (docs/sources.md).
+    {"slug": "smartrecruiters", "name": "SmartRecruiters", "kind": "ats", "status": "paused"},
+    {"slug": "recruitee", "name": "Recruitee", "kind": "ats", "status": "scheduled"},
+    {"slug": "workable", "name": "Workable", "kind": "ats", "status": "scheduled"},
 ]
 
 
@@ -95,14 +100,39 @@ def sync_boards(engine: Engine) -> int:
     return len(load_boards())
 
 
+def load_companies() -> list[dict[str, str]]:
+    """The company seed list (erio_core/data/companies.csv, decision D-07):
+    name, domain and home country. Discovery finds their boards."""
+    raw = files("erio_core").joinpath("data/companies.csv").read_text(encoding="utf-8")
+    return list(csv.DictReader(io.StringIO(raw)))
+
+
+def sync_companies(engine: Engine) -> int:
+    """Add any listed company that is missing and fill in its home country."""
+    rows = [
+        {"name": row["name"], "domain": row["domain"], "country_code": row["country_code"] or None}
+        for row in load_companies()
+    ]
+    statement = insert(Company).values(rows)
+    statement = statement.on_conflict_do_update(
+        index_elements=[Company.domain],
+        set_={"country_code": func.coalesce(Company.country_code, statement.excluded.country_code)},
+    )
+    with engine.begin() as connection:
+        connection.execute(statement)
+    return len(rows)
+
+
 def seed(engine: Engine) -> dict[str, int]:
     sync_countries(engine)
     sync_sources(engine)
     sync_boards(engine)
+    sync_companies(engine)
     with engine.connect() as connection:
         return {
             "countries": connection.scalar(select(func.count()).select_from(Country)) or 0,
             "sources": connection.scalar(select(func.count()).select_from(Source)) or 0,
+            "companies": connection.scalar(select(func.count()).select_from(Company)) or 0,
             "boards": connection.scalar(select(func.count()).select_from(CompanyBoard)) or 0,
         }
 
@@ -114,8 +144,8 @@ def main() -> None:
     finally:
         engine.dispose()
     print(
-        f"seeded {counts['countries']} countries, {counts['sources']} sources"
-        f" and {counts['boards']} boards"
+        f"seeded {counts['countries']} countries, {counts['sources']} sources,"
+        f" {counts['companies']} companies and {counts['boards']} boards"
     )
 
 

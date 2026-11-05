@@ -38,15 +38,18 @@ class HostRateLimiter:
         self.burst = burst
         self._take = redis.register_script(_REFILL_AND_TAKE)
 
-    def try_acquire(self, host: str) -> float:
-        """Take a token for ``host``; return 0 on success or seconds to wait."""
-        wait = self._take(keys=[f"erio:ratelimit:{host}"], args=[self.rate, self.burst])
+    def try_acquire(self, host: str, rate: float | None = None) -> float:
+        """Take a token for ``host``; return 0 on success or seconds to wait.
+
+        ``rate`` overrides the default for this host (a robots.txt Crawl-delay).
+        """
+        wait = self._take(keys=[f"erio:ratelimit:{host}"], args=[rate or self.rate, self.burst])
         return float(wait.decode() if isinstance(wait, bytes) else wait)
 
-    def acquire(self, host: str, timeout_s: float = 60.0) -> None:
+    def acquire(self, host: str, timeout_s: float = 60.0, rate: float | None = None) -> None:
         """Block until a request to ``host`` is allowed."""
         deadline = time.monotonic() + timeout_s
-        while (wait := self.try_acquire(host)) > 0:
+        while (wait := self.try_acquire(host, rate)) > 0:
             if time.monotonic() + wait > deadline:
                 raise RateLimitTimeout(f"no request slot for {host} within {timeout_s}s")
             time.sleep(wait)

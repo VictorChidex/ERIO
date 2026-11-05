@@ -118,5 +118,65 @@
   "domain": "tamara.co",
   "source": "greenhouse",
   "board_token": "tamara"
+ },
+ {
+  "company": "Kavak",
+  "domain": "kavak.com",
+  "source": "lever",
+  "board_token": "kavak"
+ },
+ {
+  "company": "Spotify",
+  "domain": "spotify.com",
+  "source": "lever",
+  "board_token": "spotify"
+ },
+ {
+  "company": "Palantir",
+  "domain": "palantir.com",
+  "source": "lever",
+  "board_token": "palantir"
+ },
+ {
+  "company": "Andela",
+  "domain": "andela.com",
+  "source": "ashby",
+  "board_token": "andela"
+ },
+ {
+  "company": "Linear",
+  "domain": "linear.app",
+  "source": "ashby",
+  "board_token": "linear"
+ },
+ {
+  "company": "Ramp",
+  "domain": "ramp.com",
+  "source": "ashby",
+  "board_token": "ramp"
+ },
+ {
+  "company": "Notion",
+  "domain": "notion.so",
+  "source": "ashby",
+  "board_token": "notion"
+ },
+ {
+  "company": "Hugging Face",
+  "domain": "huggingface.co",
+  "source": "workable",
+  "board_token": "huggingface"
+ },
+ {
+  "company": "Channable",
+  "domain": "channable.com",
+  "source": "recruitee",
+  "board_token": "channable"
+ },
+ {
+  "company": "bunq",
+  "domain": "bunq.com",
+  "source": "recruitee",
+  "board_token": "bunq"
  }
 ]
