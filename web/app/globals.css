@@ -385,3 +385,5 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .api-prose{color:var(--fg2);line-height:1.7;margin-bottom:18px;font-size:14px}
 .epm.get{background:rgba(16,185,129,.14);color:var(--grn)} .epm.post{background:rgba(79,127,255,.14);color:var(--acc)}
 .api-right .code{white-space:pre-wrap;overflow-wrap:anywhere}
+/* Globe: square placeholder until the globe code loads after the page is interactive */
+.globe-placeholder{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 34%,rgba(121,185,230,.25),rgba(47,104,166,.12) 60%,transparent 70%)}

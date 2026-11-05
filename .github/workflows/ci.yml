@@ -125,7 +125,7 @@ jobs:
           docker compose exec -T api python -c \
             "from erio_ingest.worker import ping; assert ping.delay().get(timeout=30) == 'pong'"
           curl -sSf http://127.0.0.1:9090/ | grep -q '<Name>erio-raw</Name>'
-          curl -sSf http://127.0.0.1:3000/ | grep -q 'API online'
+          curl -sSf http://127.0.0.1:3000/ | grep -q 'jobs indexed'
       # Known jobs from the recorded fixtures, run through the real pipeline
       # (crawl, normalize, index) with no network.
       - name: Load demo jobs

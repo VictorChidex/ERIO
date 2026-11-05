@@ -2,12 +2,14 @@ import Link from "next/link";
 
 import { CountryPicker } from "@/components/CountryPicker";
 import { FilterForm } from "@/components/FilterForm";
+import { SearchGlobe } from "@/components/GlobeLazy";
 import { HeaderCountrySelect } from "@/components/HeaderCountrySelect";
 import { JobCard } from "@/components/JobCard";
 import { LoadMore } from "@/components/LoadMore";
 import { ApiUnavailable, type Countries, getCountries, type JobsPage, searchJobs } from "@/lib/api";
 import { type Filters, toApiParams, toQuery } from "@/lib/filters";
 import { formatCount, ROLE_LABELS, TYPE_LABELS } from "@/lib/format";
+import { globeData } from "@/lib/globe";
 
 const SALARY_OPTIONS = [0, 40_000, 80_000, 150_000];
 const POPULAR = 8;
@@ -93,6 +95,9 @@ export async function SearchView({
                   </button>
                 </div>
               </div>
+            </div>
+            <div className="ph-globe">
+              <SearchGlobe data={globeData(countries)} filters={filters} />
             </div>
           </div>
         </div>

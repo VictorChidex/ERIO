@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { CountrySelect } from "@/components/CountrySelect";
+import { HomeGlobe } from "@/components/GlobeLazy";
 import {
   ApiUnavailable,
   type Countries,
@@ -13,6 +14,7 @@ import {
   type Stats,
 } from "@/lib/api";
 import { formatCount, salaryLabel } from "@/lib/format";
+import { globeData } from "@/lib/globe";
 
 // Rendered per request so every number is live.
 export const dynamic = "force-dynamic";
@@ -59,10 +61,6 @@ function lag(minutes: number | null): { value: string; unit: string } {
 export default async function HomePage() {
   const data = await load();
   const stats = data?.stats;
-  const topCountries = (data?.countries.data ?? [])
-    .filter((c) => c.local_job_count > 0)
-    .sort((a, b) => b.local_job_count - a.local_job_count)
-    .slice(0, 8);
   const sample = data?.recent.data[0];
   const refresh = lag(stats?.refresh_lag_minutes ?? null);
 
@@ -101,27 +99,9 @@ export default async function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="globe-wrap globe-fallback">
-              <div className="gf-card">
-                <div className="gf-title">Jobs by country</div>
-                {topCountries.length ? (
-                  <ul className="gf-list">
-                    {topCountries.map((c) => (
-                      <li key={c.code}>
-                        <Link href={`/search?country=${c.code}`}>
-                          <span>{c.name}</span>
-                          <span className="qf-n">{formatCount(c.local_job_count)}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="gf-empty">Countries appear here as jobs are indexed.</p>
-                )}
-                <Link href="/search" className="gf-all">
-                  All 233 countries →
-                </Link>
-              </div>
+            <div className="globe-wrap">
+              {data && <HomeGlobe data={globeData(data.countries)} />}
+              <div className="globe-label">Drag to spin · click any country</div>
             </div>
           </div>
 
