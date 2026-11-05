@@ -1,7 +1,8 @@
 # Labeled job titles for the role classifier (spec section 6: >= 90%).
 # Columns: title, departments (as the source lists them), expected role_category.
 # Rows 1-220 are real titles from crawled Greenhouse boards (2026-11-05), labeled by hand;
-# the rest are written to cover roles the first boards miss. Boundaries used:
+# rows 221-300 are written to cover roles the first boards miss; rows 301-343 are real
+# titles the first rules wrongly put in "other", added when found. Boundaries used:
 # sales includes sales engineers, solutions architects/consultants and value engineers;
 # operations includes finance, legal, people, risk, compliance and customer support/success;
 # data includes data scientists, data engineers, analysts and ML; product includes
@@ -307,3 +308,46 @@ Electrician		other
 Barista		other
 Physiotherapist		other
 Architect (Buildings)		other
+Data Director, Payments		data
+Regional Lead, Client Implementation		operations
+POS Repair Technician (Lagos)		operations
+Regional Security Manager, APAC		operations
+Manager, Product Management - Roundtripping (London, United Kingdom)		product
+GTM Systems Manager		operations
+Vice President of Product Management, In Store Experience		product
+Manager, Enterprise Account Management DACH		sales
+Global Strategic Alliances Lead, PwC		sales
+Data Director, EU		data
+Customer Care Manager - UAE		operations
+Team Lead, Platforms Account Management		sales
+Senior Business Analyst		data
+Senior Host Development Lead, Incentives		sales
+Technical Quality Specialist - Figma Weave (Singapore)		engineering
+Director, Product Design - AI & Context		design
+Manager, Field Enablement EMEA		operations
+Collections Agent		operations
+Senior Manager - GTM Specialists, AMER		sales
+Strategic Partnerships Director		sales
+Merchant Success Lead		operations
+Researcher - Rapid Research		design
+Corporate Development Director		operations
+Payments Performance Strategist, LATAM		operations
+F&S COE Manager		other
+Graduate Management Trainee (Commercial) - Jumia (Full Time)		sales
+Senior Capture Manager		sales
+Deal Strategist, APAC		sales
+Managing Editor, Stripe Press		marketing
+Principal Security Researcher		engineering
+Head, POS Recovery		operations
+UAE Partner Care Advisor (Voice)		operations
+Metadata & Data Lineage Specialist		data
+Junior Commercial Associate, Works in Progress		sales
+Research Manager - Post-Training for Agents		data
+Key Acount Manager - Jumia ( Full - Time )		sales
+Longtail Associate - Jumia (Full Time)		other
+Intern Technology Consultant - Data & AI		data
+AI Transformation Owner, CRO		other
+SOX Business Controls Specialist		operations
+Manager, Account Management		sales
+Head of Hardware Partnerships		sales
+Implementation Specialist, GTM Accelerate		operations

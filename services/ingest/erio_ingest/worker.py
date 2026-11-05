@@ -15,6 +15,8 @@ from sqlalchemy.orm import Session
 from erio_core.connectors import CONNECTORS
 from erio_core.settings import get_settings
 from erio_ingest.fetcher import PoliteFetcher
+from erio_ingest.fx import FX_HOSTS, refresh_rates
+from erio_ingest.normalizer import BATCH, latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
 from erio_ingest.scheduler import schedule_due_boards
@@ -35,6 +37,8 @@ app.conf.update(
     beat_schedule={
         "schedule-due-boards": {"task": "erio.schedule_due_boards", "schedule": 60.0},
         "mark-unverified-jobs": {"task": "erio.mark_unverified_jobs", "schedule": 600.0},
+        "normalize-pending": {"task": "erio.normalize_pending", "schedule": 300.0},
+        "refresh-fx-rates": {"task": "erio.refresh_fx_rates", "schedule": 6 * 3600.0},
     },
 )
 
@@ -52,6 +56,12 @@ def fetcher() -> PoliteFetcher:
     hosts = {host for connector in CONNECTORS.values() for host in connector.hosts}
     limiter = HostRateLimiter(Redis.from_url(settings.redis_url), settings.crawl_rate_per_host)
     return PoliteFetcher(hosts, limiter, settings)
+
+
+@lru_cache
+def fx_fetcher() -> PoliteFetcher:
+    limiter = HostRateLimiter(Redis.from_url(settings.redis_url), settings.crawl_rate_per_host)
+    return PoliteFetcher(FX_HOSTS, limiter, settings)
 
 
 @lru_cache
@@ -83,11 +93,30 @@ def mark_unverified_jobs_task() -> int:
         return mark_unverified(session, utcnow())
 
 
+@app.task(name="erio.refresh_fx_rates", ignore_result=True)
+def refresh_fx_rates_task() -> dict[str, int]:
+    return refresh_rates(engine(), fx_fetcher())
+
+
+@app.task(name="erio.normalize_pending", ignore_result=True)
+def normalize_pending_task() -> dict[str, Any]:
+    with Session(engine()) as session:
+        have_rates = bool(latest_rates(session))
+    if not have_rates:
+        refresh_fx_rates_task()
+    result = normalize_pending(engine(), store(), utcnow)
+    if result.jobs == BATCH:
+        normalize_pending_task.delay()  # more waiting: keep going
+    return {"jobs": result.jobs, "needs_review": result.needs_review, "failed": result.failed[:20]}
+
+
 @app.task(name="erio.crawl_board", bind=True, max_retries=MAX_RETRIES)
 def crawl_board_task(self: Task, board_id: int) -> dict[str, Any]:
     result = crawl_board(engine(), board_id, fetcher(), store())
     if result.retryable and self.request.retries < MAX_RETRIES:
         raise self.retry(countdown=backoff_seconds(self.request.retries))
+    if result.new_postings or result.changed_postings:
+        normalize_pending_task.delay()
     return {
         "board_id": board_id,
         "run_id": result.run_id,

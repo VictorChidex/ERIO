@@ -25,3 +25,15 @@ The endpoints below are the publicly documented, employer-published job-board fe
 ## Not allowed
 
 Job boards whose terms forbid automated collection (LinkedIn, Indeed, Glassdoor, ZipRecruiter and similar) are never crawled. They can enter only through licensed feeds or partner programs in a later phase (decision D-05).
+
+## Reference data
+
+Data ERIO reads to normalize jobs, not job postings. Each is fetched from a fixed address, never scraped.
+
+| Data | Source | Licence and terms | Used for |
+| --- | --- | --- | --- |
+| Places | [GeoNames](https://www.geonames.org) `cities15000` and `admin1CodesASCII`, built into `erio_core/data/gazetteer.json.gz` by `scripts/build_gazetteer.py` | CC BY 4.0: credit GeoNames | City, state and country resolution |
+| Country codes and regions | [mledoze/countries](https://github.com/mledoze/countries), pinned commit, built into `erio_core/data/countries.json` by `scripts/build_countries.py` | ODbL 1.0 | ISO codes, regions, region groups |
+| Map | [world-atlas](https://github.com/topojson/world-atlas) (Natural Earth 50m), simplified, in `web/public/geo/world.json` | Natural Earth is public domain; world-atlas is ISC | The globe and the 233-country list |
+| FX rates | [ECB euro reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html), daily | Free reuse with the ECB as source | USD value of salaries in ~30 currencies |
+| FX rates (fallback) | [ExchangeRate-API open access](https://www.exchangerate-api.com/docs/free) (`open.er-api.com`), daily | Free; attribution required ("Rates By Exchange Rate API" with a link) where converted values are shown | USD value for currencies the ECB does not publish (NGN, KES, GHS, ...) |

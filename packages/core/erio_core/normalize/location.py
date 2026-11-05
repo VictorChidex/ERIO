@@ -171,7 +171,8 @@ class _SegmentReader:
             countries = [*self.named, None]  # "Victoria, Australia", then anywhere
         for country in countries:
             # Aliases first ("San Francisco Bay Area"), then the cleaned name.
-            for key in dict.fromkeys((fold(self.tokens[i]), name)):
+            # "Taipei City" is "Taipei" in the gazetteer; "Mexico City" matches whole.
+            for key in dict.fromkeys((fold(self.tokens[i]), name, re.sub(r" city$", "", name))):
                 city, admin = self.g.city(key, country), self.g.admin1(key, country)
                 if city or admin:
                     return city, admin

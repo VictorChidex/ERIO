@@ -44,3 +44,11 @@ def test_sanitize_keeps_structure_and_drops_scripts() -> None:
 
 def test_html_to_text() -> None:
     assert html_to_text("<p>Build &amp; ship</p><ul><li>Go</li></ul>") == "Build & ship Go"
+
+
+def test_trade_words_match_whole_words_only() -> None:
+    from erio_core.normalize.roles import classify_role
+
+    assert classify_role("Mechanic") == "other"
+    assert classify_role("Senior Mechanical and Industrial Design Engineer") == "engineering"
+    assert classify_role("Registered Nurse") == "other"

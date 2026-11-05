@@ -20,6 +20,8 @@ from erio_core.settings import Settings
 class RawStore(Protocol):
     def put_posting(self, posting: RawPosting) -> str: ...
 
+    def get_posting(self, key: str) -> dict[str, Any]: ...
+
 
 def posting_key(posting: RawPosting) -> str:
     return f"postings/{posting.source_slug}/{posting.external_id}/{posting.content_hash}.json.gz"
@@ -27,6 +29,11 @@ def posting_key(posting: RawPosting) -> str:
 
 def _encode(payload: dict[str, Any]) -> bytes:
     return gzip.compress(json.dumps(payload, ensure_ascii=False).encode("utf-8"))
+
+
+def _decode(blob: bytes) -> dict[str, Any]:
+    payload: dict[str, Any] = json.loads(gzip.decompress(blob))
+    return payload
 
 
 class S3RawStore:
@@ -48,6 +55,10 @@ class S3RawStore:
         )
         return key
 
+    def get_posting(self, key: str) -> dict[str, Any]:
+        response = self.client.get_object(Bucket=self.bucket, Key=key)
+        return _decode(response["Body"].read())
+
 
 class MemoryRawStore:
     """In-memory store for tests."""
@@ -59,3 +70,6 @@ class MemoryRawStore:
         key = posting_key(posting)
         self.objects[key] = _encode(posting.payload)
         return key
+
+    def get_posting(self, key: str) -> dict[str, Any]:
+        return _decode(self.objects[key])

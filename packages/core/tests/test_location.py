@@ -76,3 +76,9 @@ def test_unresolvable_text_goes_to_review() -> None:
     result = resolve_location("N/A")
     assert not result.resolved
     assert result.country_code is None and result.eligible_country_codes == []
+
+
+def test_trailing_city_word_is_optional() -> None:
+    assert resolve_location("Taipei City").country_code == "TW"
+    assert resolve_location("Mexico City").city == "Mexico City"
+    assert resolve_location("Quezon City").country_code == "PH"

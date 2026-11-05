@@ -5,7 +5,7 @@ believes. Enum-like columns are stored as text with CHECK constraints, so
 adding a value is a one-line migration rather than an ALTER TYPE.
 """
 
-from datetime import datetime
+from datetime import date, datetime
 from typing import Any, ClassVar
 
 from sqlalchemy import (
@@ -13,6 +13,7 @@ from sqlalchemy import (
     CHAR,
     BigInteger,
     Boolean,
+    Date,
     DateTime,
     Double,
     Enum,
@@ -177,6 +178,8 @@ class RawPosting(Base):
     # Set when a second successful fetch, 30+ minutes later, still misses it.
     closed_at: Mapped[datetime | None]
     payload_s3_key: Mapped[str | None] = mapped_column(Text)
+    # content_hash of the version the normalizer last turned into a job.
+    normalized_hash: Mapped[str | None] = mapped_column(CHAR(64))
 
 
 class Job(Base):
@@ -225,6 +228,9 @@ class Job(Base):
     apply_url: Mapped[str] = mapped_column(Text)
     description_html: Mapped[str | None] = mapped_column(Text)
     description_text: Mapped[str | None] = mapped_column(Text)
+    # Why the normalizer could not resolve this job; such jobs are kept out
+    # of country filters until fixed in the admin review queue.
+    review_reason: Mapped[str | None] = mapped_column(Text)
 
 
 class JobSource(Base):
@@ -240,6 +246,17 @@ class JobSource(Base):
     )
     is_primary: Mapped[bool] = mapped_column(Boolean, server_default="false")
     dedup_method: Mapped[str | None] = mapped_column(text_enum("dedup_method", DEDUP_METHODS))
+
+
+class FxRate(Base):
+    """Daily exchange rates for USD salary values (spec section 6)."""
+
+    __tablename__ = "fx_rates"
+
+    day: Mapped[date] = mapped_column(Date, primary_key=True)
+    currency: Mapped[str] = mapped_column(CHAR(3), primary_key=True)
+    usd_per_unit: Mapped[float] = mapped_column(Double)
+    source: Mapped[str] = mapped_column(String(40))
 
 
 class ApiToken(Base):
