@@ -34,6 +34,9 @@ test.describe("globe", () => {
   });
 
   test("clicking a country on the home globe opens search filtered to it", async ({ page }) => {
+    // A spinning globe can turn another country under the pointer between
+    // finding a country and clicking it; reduced motion holds it still.
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/");
     const spot = await findCountry(page, ".globe-wrap");
     await page.mouse.click(spot.x, spot.y);
@@ -42,6 +45,7 @@ test.describe("globe", () => {
   });
 
   test("clicking a country on the search globe adds it to the filter", async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/search");
     const spot = await findCountry(page, ".ph-globe");
     await page.mouse.click(spot.x, spot.y);
