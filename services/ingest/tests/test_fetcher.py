@@ -174,3 +174,39 @@ def test_public_address_check() -> None:
     assert is_public("104.18.0.1")
     assert not is_public("192.168.1.10")
     assert not is_public("fd00::1")
+
+
+def test_post_json_follows_the_same_rules() -> None:
+    fetcher, limiter, seen = make_fetcher(site(page=(200, b'{"jobPostings": []}')))
+
+    response = fetcher.post_json(URL, {"limit": 20, "offset": 0})
+
+    request = seen[-1]
+    assert (response.status, request.method) == (200, "POST")
+    assert request.headers["Content-Type"] == "application/json"
+    assert request.content == b'{"limit": 20, "offset": 0}'
+    assert limiter.hosts == [HOST, HOST]
+    blocked, _, _ = make_fetcher(site(robots=(200, "User-agent: *\nDisallow: /v1/")))
+    with pytest.raises(FetchError, match=r"robots.txt disallows"):
+        blocked.post_json(URL, {})
+
+
+def test_hosts_of_registered_boards_are_allowed() -> None:
+    reads: list[int] = []
+
+    def registered() -> list[str]:
+        reads.append(1)
+        return ["Jobs.Example.org"]
+
+    fetcher, _, _ = make_fetcher(site())
+    fetcher.extra_hosts = registered
+    assert fetcher.get("https://jobs.example.org/jobs.rss").status == 200
+    fetcher.get("https://jobs.example.org/jobs.rss")
+    assert len(reads) == 1  # read again only every few minutes
+    with pytest.raises(FetchError, match="host not allowed"):
+        fetcher.get("https://elsewhere.example.org/jobs.rss")
+    # A registered host still has to resolve to a public address.
+    private, _, _ = make_fetcher(site(), addresses=["10.0.0.5"])
+    private.extra_hosts = registered
+    with pytest.raises(FetchError, match="public address"):
+        private.get("https://jobs.example.org/jobs.rss")

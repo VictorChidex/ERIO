@@ -101,6 +101,7 @@ class SmartRecruitersConnector(Connector):
             region=place.get("region") or None,
             country_hint=str(place["country"]).upper() if place.get("country") else None,
             workplace_type=workplace,
+            employment_type=(job.get("typeOfEmployment") or {}).get("label"),
             departments=[
                 label
                 for label in (

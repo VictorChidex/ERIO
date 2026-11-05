@@ -4,12 +4,13 @@ import hashlib
 from collections.abc import Mapping
 from dataclasses import dataclass
 
+from erio_core.normalize.employment import employment_type
 from erio_core.normalize.fx import usd_annual
 from erio_core.normalize.location import LocationResult, resolve_location
 from erio_core.normalize.roles import classify_role
 from erio_core.normalize.salary import parse_salary
 from erio_core.normalize.text import clean_title, html_to_text, sanitize_html
-from erio_core.schemas import PartialJob, RoleCategory, SalaryHint
+from erio_core.schemas import EmploymentType, PartialJob, RoleCategory, SalaryHint
 
 
 def canonical_id(source_slug: str, external_id: str) -> str:
@@ -27,6 +28,7 @@ class NormalizedJob:
     location: LocationResult
     salary: SalaryHint | None
     salary_usd_annual_min: int | None
+    employment_type: EmploymentType | None
     description_html: str | None
     description_text: str | None
     apply_url: str
@@ -45,6 +47,7 @@ class NormalizedJob:
             "lat": loc.lat,
             "lon": loc.lon,
             "remote_status": loc.remote_status,
+            "employment_type": self.employment_type,
             "remote_scope": loc.remote_scope,
             "eligible_country_codes": loc.eligible_country_codes,
             "salary_min": pay.min if pay else None,
@@ -82,6 +85,7 @@ def normalize(partial: PartialJob, usd_per_unit: Mapping[str, float]) -> Normali
             salary.period if salary else None,
             usd_per_unit,
         ),
+        employment_type=employment_type(partial.employment_type),
         description_html=sanitize_html(partial.description_html)
         if partial.description_html
         else None,

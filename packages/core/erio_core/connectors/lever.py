@@ -54,6 +54,7 @@ class LeverConnector(Connector):
             location_text="; ".join(p for p in places if p) or None,
             country_hint=job.get("country") or None,
             workplace_type=WORKPLACE.get(str(job.get("workplaceType") or "")),
+            employment_type=(job.get("categories") or {}).get("commitment"),
             departments=[
                 name for name in (categories.get("department"), categories.get("team")) if name
             ],

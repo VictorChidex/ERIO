@@ -16,7 +16,7 @@ from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_api.errors import ApiError
 from erio_api.search import BadCursor, JobQuery, Sort, build_search, read_results
 from erio_core.db.models import Company, Job, JobSource, RawPosting
-from erio_core.schemas import JobRecord, JobStatus, RemoteStatus, RoleCategory
+from erio_core.schemas import EmploymentType, JobRecord, JobStatus, RemoteStatus, RoleCategory
 
 router = APIRouter(prefix="/v1", tags=["jobs"], dependencies=[Depends(rate_limit)])
 
@@ -76,6 +76,16 @@ def search_jobs(
     role: Annotated[str | None, Query(description="Role categories, comma-separated")] = None,
     salary_min_usd: Annotated[int | None, Query(ge=0, description="Minimum yearly USD")] = None,
     platform: Annotated[str | None, Query(description="Source slugs, comma-separated")] = None,
+    company: Annotated[
+        str | None, Query(max_length=200, description="Employer name or domain, e.g. Paystack")
+    ] = None,
+    location: Annotated[
+        str | None, Query(max_length=200, description="Place in the job's location, e.g. Lagos")
+    ] = None,
+    employment_type: Annotated[
+        str | None,
+        Query(description="full_time, part_time, contract, temporary, internship, volunteer"),
+    ] = None,
     posted_after: Annotated[datetime | None, Query(description="ISO 8601")] = None,
     status: Annotated[str, Query(description="open, unknown")] = "open",
     sort: Annotated[Sort, Query()] = "recent",
@@ -90,6 +100,11 @@ def search_jobs(
         roles=_check(_list(role), get_args(RoleCategory), "role"),
         salary_min_usd=salary_min_usd,
         platforms=_list(platform),
+        company=company.strip() if company and company.strip() else None,
+        location=location.strip() if location and location.strip() else None,
+        employment_types=_check(
+            _list(employment_type), get_args(EmploymentType), "employment_type"
+        ),
         posted_after=posted_after,
         status=_check(_list(status) or ["open"], get_args(JobStatus), "status"),
         sort=sort,

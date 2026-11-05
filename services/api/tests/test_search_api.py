@@ -176,6 +176,17 @@ def test_text_salary_and_platform_filters(api: TestClient) -> None:
     assert ids(api.get("/v1/jobs?platform=lever")) == set()
 
 
+def test_company_location_and_employment_type_filters(api: TestClient) -> None:
+    every = ids(api.get("/v1/jobs"))
+    assert ids(api.get("/v1/jobs?company=paystack")) == every
+    assert ids(api.get("/v1/jobs?company=paystack.com")) == every
+    assert ids(api.get("/v1/jobs?company=stripe")) == set()
+    lagos = ids(api.get("/v1/jobs?location=lagos"))
+    assert lagos and lagos <= ids(api.get("/v1/jobs?country=NG&include_worldwide=false"))
+    assert ids(api.get("/v1/jobs?employment_type=contract")) == set()
+    assert api.get("/v1/jobs?employment_type=gig").status_code == 400
+
+
 def test_sorting(api: TestClient) -> None:
     recent = [j["canonical_id"] for j in api.get("/v1/jobs").json()["data"]]
     assert recent == ["j_ng_lagos", "j_ng_remote", "j_world", "j_gb_london", "j_eu_remote"]

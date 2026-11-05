@@ -7,15 +7,17 @@ import random
 from datetime import datetime
 from functools import lru_cache
 from typing import Any
+from urllib.parse import urlsplit
 
 from celery import Celery, Task
 from redis import Redis
-from sqlalchemy import Engine, create_engine
+from sqlalchemy import Engine, create_engine, select
 from sqlalchemy.orm import Session
 
 from erio_core.ai import Gateway, default_routing
 from erio_core.ai.store import PostgresStore
 from erio_core.connectors import CONNECTORS
+from erio_core.db.models import CompanyBoard
 from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
 from erio_ingest.ai_fallback import BATCH as AI_BATCH
@@ -68,11 +70,22 @@ def engine() -> Engine:
     return create_engine(settings.sqlalchemy_url, pool_pre_ping=True)
 
 
+def board_hosts() -> set[str]:
+    """Hosts of boards registered by full URL: feeds, career sites on an
+    employer's own domain, job boards on their own domain (spec section 9:
+    only hosts registered in company_boards)."""
+    with Session(engine()) as session:
+        tokens = session.scalars(
+            select(CompanyBoard.board_token).where(CompanyBoard.board_token.like("https://%"))
+        )
+        return {host for token in tokens if (host := urlsplit(token).hostname)}
+
+
 @lru_cache
 def fetcher() -> PoliteFetcher:
     hosts = {host for connector in CONNECTORS.values() for host in connector.hosts}
     limiter = HostRateLimiter(Redis.from_url(settings.redis_url), settings.crawl_rate_per_host)
-    return PoliteFetcher(hosts, limiter, settings)
+    return PoliteFetcher(hosts, limiter, settings, extra_hosts=board_hosts)
 
 
 @lru_cache

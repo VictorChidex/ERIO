@@ -21,6 +21,9 @@ RoleCategory = Literal[
 RemoteStatus = Literal["remote", "hybrid", "onsite"]
 RemoteScope = Literal["country", "region", "worldwide"]
 SalaryPeriod = Literal["year", "month", "hour"]
+EmploymentType = Literal[
+    "full_time", "part_time", "contract", "temporary", "internship", "volunteer"
+]  # fmt: skip
 JobStatus = Literal["open", "closed", "unknown"]
 DedupMethod = Literal["exact_id", "exact_key", "simhash"]
 
@@ -76,6 +79,9 @@ class PartialJob(BaseModel):
     region: str | None = None
     country_hint: str | None = None
     workplace_type: RemoteStatus | None = None
+    # As the source words it ("Full-time", "FULL_TIME", "Contract"); the
+    # normalizer maps it to an EmploymentType.
+    employment_type: str | None = None
     departments: list[str] = Field(default_factory=list)
     salary: SalaryHint | None = None
     description_html: str | None = None
@@ -104,6 +110,9 @@ class JobRecord(BaseModel):
     lon: float | None
     remote_status: RemoteStatus
     remote_scope: RemoteScope | None = Field(description="Remote roles only")
+    employment_type: EmploymentType | None = Field(
+        default=None, description="Null when the source does not say"
+    )
     eligible_country_codes: list[str] = Field(
         description="Countries a remote role accepts; empty means worldwide"
     )

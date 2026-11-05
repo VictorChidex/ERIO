@@ -1,0 +1,58 @@
+[
+ {
+  "source_slug": "personio",
+  "board_token": "join",
+  "external_id": "30961",
+  "payload": {
+   "id": "30961",
+   "subcompany": "Join GmbH",
+   "office": "Mobil",
+   "department": "Shared Services",
+   "recruitingCategory": "Initiativ",
+   "name": "Initiativbewerbung",
+   "jobDescriptions": "",
+   "employmentType": "permanent",
+   "seniority": "entry-level",
+   "schedule": "full-time",
+   "yearsOfExperience": "lt-1",
+   "keywords": "IT ,Join",
+   "occupation": "it_project_management",
+   "occupationCategory": "it_software",
+   "createdAt": "2017-07-28T09:37:26+00:00",
+   "offices": [
+    "Mobil"
+   ],
+   "sections": []
+  },
+  "fetched_at": "2026-11-05T18:32:12.137647Z",
+  "content_hash": "b0cc9b863ec51bfb5dc19de2ce0a9de15baca039077590f00841a59c71253b6c"
+ },
+ {
+  "source_slug": "personio",
+  "board_token": "join",
+  "external_id": "2048817",
+  "payload": {
+   "id": "2048817",
+   "subcompany": "Join GmbH",
+   "office": "Mobil",
+   "department": "Shared Services",
+   "recruitingCategory": "Praktika / Werkstudententätigkeit",
+   "name": "Werkstudent (m/w/d) im Bereich Sales",
+   "jobDescriptions": "",
+   "employmentType": "working_student",
+   "seniority": "student",
+   "schedule": "part-time",
+   "yearsOfExperience": "lt-1",
+   "keywords": "Werkstudent/in,Join,Sales,IT,Eigeninitiative ,IT-Dienstleistungen,Lead-Generierung,CRM-Tools ,Sales / Vertrieb ,KI-Lösungen,Telefonvertrieb",
+   "occupation": "general_and_other_sales_and_business_development",
+   "occupationCategory": "sales_and_business_development",
+   "createdAt": "2025-04-07T20:11:28+00:00",
+   "offices": [
+    "Mobil"
+   ],
+   "sections": []
+  },
+  "fetched_at": "2026-11-05T18:32:12.137647Z",
+  "content_hash": "9fb761b22e57f578e623c2ce85a23176196585fe1cbd40d6d6478a28cf3e4ce8"
+ }
+]

@@ -60,6 +60,7 @@ class WorkableConnector(Connector):
             country_hint=job.get("country") or None,
             # Workable only says whether a role can be done remotely.
             workplace_type="remote" if job.get("telecommuting") else None,
+            employment_type=job.get("employment_type"),
             departments=[name for name in (job.get("department"), job.get("function")) if name],
             description_html=job.get("description") or None,
         )

@@ -22,6 +22,8 @@ SPEC_FIELDS = [
     "lon",
     "remote_status",
     "remote_scope",
+    # Not in the spec table; the acquisition brief asks to keep it when a source gives it.
+    "employment_type",
     "eligible_country_codes",
     "salary_min",
     "salary_max",

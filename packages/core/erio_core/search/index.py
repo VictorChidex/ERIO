@@ -58,6 +58,7 @@ MAPPINGS: dict[str, Any] = {
         "worldwide": {"type": "boolean"},
         "location": {"type": "geo_point"},
         "remote_status": {"type": "keyword"},
+        "employment_type": {"type": "keyword"},
         "remote_scope": {"type": "keyword"},
         "salary_min": {"type": "long"},
         "salary_max": {"type": "long"},
@@ -92,10 +93,26 @@ def create_index(search: OpenSearch, name: str) -> None:
     search.indices.create(index=name, body={"settings": SETTINGS, "mappings": MAPPINGS})
 
 
+_mapped: set[str] = set()
+
+
+def _add_new_fields(search: OpenSearch, index: str) -> None:
+    """Give a live index any field added to the mapping since it was built.
+
+    The mapping is strict, so a new field would otherwise reject documents
+    until the nightly rebuild. Adding fields is safe; done once per process.
+    """
+    if index not in _mapped:
+        search.indices.put_mapping(index=index, body={"properties": MAPPINGS["properties"]})
+        _mapped.add(index)
+
+
 def ensure_alias(search: OpenSearch, alias: str) -> str:
     """The index behind ``alias``, creating one if there is none."""
     if search.indices.exists_alias(name=alias):
-        return str(next(iter(search.indices.get_alias(name=alias))))
+        name = str(next(iter(search.indices.get_alias(name=alias))))
+        _add_new_fields(search, name)
+        return name
     name = new_index_name(alias)
     create_index(search, name)
     search.indices.put_alias(index=name, name=alias)
@@ -137,6 +154,7 @@ def document(job: dict[str, Any]) -> dict[str, Any]:
         "worldwide": job.get("remote_scope") == "worldwide",
         "location": {"lat": lat, "lon": lon} if lat is not None and lon is not None else None,
         "remote_status": job["remote_status"],
+        "employment_type": job.get("employment_type"),
         "remote_scope": job.get("remote_scope"),
         "salary_min": job.get("salary_min"),
         "salary_max": job.get("salary_max"),

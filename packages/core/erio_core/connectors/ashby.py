@@ -66,6 +66,7 @@ class AshbyConnector(Connector):
             region=address.get("addressRegion") or None,
             country_hint=address.get("addressCountry") or None,
             workplace_type=WORKPLACE.get(str(job.get("workplaceType") or "")),
+            employment_type=job.get("employmentType"),
             departments=[name for name in (job.get("department"), job.get("team")) if name],
             salary=_salary(job.get("compensation")),
             description_html=job.get("descriptionHtml") or None,

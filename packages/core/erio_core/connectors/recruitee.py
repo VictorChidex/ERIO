@@ -62,6 +62,7 @@ class RecruiteeConnector(Connector):
             region=offer.get("state_name") or None,
             country_hint=offer.get("country_code") or offer.get("country") or None,
             workplace_type=workplace,
+            employment_type=offer.get("employment_type_code"),
             departments=[offer["department"]] if offer.get("department") else [],
             salary=salary(pay.get("min"), pay.get("max"), pay.get("currency"), pay.get("period")),
             description_html=join_html(offer.get("description"), offer.get("requirements")),

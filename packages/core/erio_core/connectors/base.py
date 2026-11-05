@@ -12,7 +12,7 @@ import unicodedata
 from abc import ABC, abstractmethod
 from collections.abc import Mapping
 from dataclasses import dataclass, field
-from typing import Literal, Protocol
+from typing import Any, Literal, Protocol, runtime_checkable
 
 from erio_core.schemas import PartialJob, RawPosting
 
@@ -28,6 +28,20 @@ class FetchResponse:
 
 class Fetcher(Protocol):
     def get(self, url: str, etag: str | None = None) -> FetchResponse: ...
+
+
+@runtime_checkable
+class JsonPoster(Protocol):
+    """A fetcher that can also POST a JSON body, for sources whose public
+    career sites search jobs that way (Workday, for example)."""
+
+    def post_json(self, url: str, payload: Any) -> FetchResponse: ...
+
+
+def poster(fetcher: Fetcher) -> JsonPoster:
+    if not isinstance(fetcher, JsonPoster):
+        raise FetchError("http_error", "this fetcher cannot POST")
+    return fetcher
 
 
 class FetchError(Exception):

@@ -1,0 +1,348 @@
+{
+ "ashby": {
+  "boards": [
+   {
+    "board": "linear",
+    "error": "",
+    "jobs": 31,
+    "ok": true,
+    "parsed": 31,
+    "sample_titles": [
+     "Senior / Staff Fullstack Engineer",
+     "Senior / Staff Fullstack Engineer",
+     "Senior / Staff Product Engineer"
+    ]
+   },
+   {
+    "board": "andela",
+    "error": "",
+    "jobs": 12,
+    "ok": true,
+    "parsed": 12,
+    "sample_titles": [
+     "Staff Fullstack Engineer",
+     "Revenue Operations Specialist",
+     "Senior Manager, Partner Marketing"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:42+00:00"
+ },
+ "greenhouse": {
+  "boards": [
+   {
+    "board": "truelayer",
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Customer Success Manager - iGaming",
+     "Finance Assistant - Part-Time (Categorie Protette L. 68/99)",
+     "Head of Finance (PCF 11) & Head of Safeguarding (PCF 56)"
+    ]
+   },
+   {
+    "board": "stripe",
+    "error": "",
+    "jobs": 762,
+    "ok": true,
+    "parsed": 762,
+    "sample_titles": [
+     "Abuse Investigator",
+     "Abuse Investigator",
+     "Abuse Investigator"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:28+00:00"
+ },
+ "lever": {
+  "boards": [
+   {
+    "board": "kavak",
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Abogada Senior Specialist de Compliance Global",
+     "Growth Marketing Senior Analyst",
+     "Senior Full Stack Engineer"
+    ]
+   },
+   {
+    "board": "spotify",
+    "error": "",
+    "jobs": 86,
+    "ok": true,
+    "parsed": 86,
+    "sample_titles": [
+     "Account Executive - Commercial, Spotify Technology",
+     "Account Executive - Commercial, Spotify Technology",
+     "Account Executive - Commercial, Spotify Technology"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:41+00:00"
+ },
+ "manatal": {
+  "boards": [
+   {
+    "board": "talentrecruit",
+    "error": "",
+    "jobs": 747,
+    "ok": true,
+    "parsed": 747,
+    "sample_titles": [
+     "Accountant",
+     "Accountant",
+     "Accountant"
+    ]
+   },
+   {
+    "board": "job-expert-thailand-co-ltd",
+    "error": "",
+    "jobs": 527,
+    "ok": true,
+    "parsed": 527,
+    "sample_titles": [
+     "Accountant (Bookkeeping)",
+     "Account Executive",
+     "Accounting and Admin Manager"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:08+00:00"
+ },
+ "personio": {
+  "boards": [
+   {
+    "board": "1komma5grad",
+    "error": "",
+    "jobs": 324,
+    "ok": true,
+    "parsed": 324,
+    "sample_titles": [
+     "(Junior) SEO & AI Marketing Manager (m/w/d)",
+     "(Junior) Technisches Auftragsmanagement / Projektkoordination / Disposition (m/w/d) - Photovoltaik, WÃ¤rmepumpen & Energiesysteme - 1KOMMA5Â° Riederich",
+     "(Senior) Bid & Commercial Project Manager (m/w/d) â€“ Commercial Solutions"
+    ]
+   },
+   {
+    "board": "join",
+    "error": "",
+    "jobs": 2,
+    "ok": true,
+    "parsed": 2,
+    "sample_titles": [
+     "Initiativbewerbung",
+     "Werkstudent (m/w/d) im Bereich Sales"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:12+00:00"
+ },
+ "pinpoint": {
+  "boards": [
+   {
+    "board": "workwithus",
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "Founding Legal Counsel",
+     "Enterprise Implementation Manager",
+     "Staff Product Designer"
+    ]
+   },
+   {
+    "board": "made-tech",
+    "error": "",
+    "jobs": 28,
+    "ok": true,
+    "parsed": 28,
+    "sample_titles": [
+     "Data Engineer",
+     "Lead Software Engineer",
+     "Cloud Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:31:23+00:00"
+ },
+ "polymer": {
+  "boards": [
+   {
+    "board": "invicta-software",
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Data Entry Assistant",
+     "Project Manager",
+     "Supply Chain Manager (Procurement & Logistics)"
+    ]
+   },
+   {
+    "board": "bladework-games",
+    "error": "",
+    "jobs": 1,
+    "ok": true,
+    "parsed": 1,
+    "sample_titles": [
+     "Mid-Level Sound Designer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:31:28+00:00"
+ },
+ "recruitee": {
+  "boards": [
+   {
+    "board": "bunq",
+    "error": "",
+    "jobs": 24,
+    "ok": true,
+    "parsed": 24,
+    "sample_titles": [
+     "AML Manager, Austria",
+     "Data Scientist Marketing",
+     "Chief Executive Officer, UK"
+    ]
+   },
+   {
+    "board": "channable",
+    "error": "",
+    "jobs": 12,
+    "ok": true,
+    "parsed": 12,
+    "sample_titles": [
+     "Technical Writer, Customer Education",
+     "Senior Engineering Manager - Core",
+     "Haskell Software Engineer - Creatives Team"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:44+00:00"
+ },
+ "rippling": {
+  "boards": [
+   {
+    "board": "skillable-careers",
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Lead, Data Engineering",
+     "Principal Software Engineer",
+     "Senior Software Engineer"
+    ]
+   },
+   {
+    "board": "rts",
+    "error": "",
+    "jobs": 47,
+    "ok": true,
+    "parsed": 47,
+    "sample_titles": [
+     "Director of Product",
+     "Director of Product",
+     "Director of Product"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:31:55+00:00"
+ },
+ "smartrecruiters": {
+  "boards": [
+   {
+    "board": "Visa",
+    "error": "robots.txt disallows https://api.smartrecruiters.com/v1/companies/Visa/postings?limit=100&offset=0",
+    "jobs": 0,
+    "ok": false,
+    "parsed": 0,
+    "sample_titles": []
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:44+00:00"
+ },
+ "teamtailor": {
+  "boards": [
+   {
+    "board": "career",
+    "error": "",
+    "jobs": 16,
+    "ok": true,
+    "parsed": 16,
+    "sample_titles": [
+     "Customer Success Manager - Finnish speaking",
+     "Solution Architect (Bilingual French/English)",
+     "Head of Marketing - North America"
+    ]
+   },
+   {
+    "board": "polestar",
+    "error": "",
+    "jobs": 12,
+    "ok": true,
+    "parsed": 12,
+    "sample_titles": [
+     "Senior Customs Operations Specialist",
+     "Team Lead, Group Consolidation",
+     "Product Cybersecurity Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:31:57+00:00"
+ },
+ "trakstar": {
+  "boards": [
+   {
+    "board": "rideco",
+    "error": "",
+    "jobs": 9,
+    "ok": true,
+    "parsed": 9,
+    "sample_titles": [
+     "Software Engineer in Algorithms & Optimization",
+     "Technical Operations Analyst (Night Shift)",
+     "Salesforce Administrator"
+    ]
+   },
+   {
+    "board": "registrarcorp",
+    "error": "",
+    "jobs": 3,
+    "ok": true,
+    "parsed": 3,
+    "sample_titles": [
+     "Senior Account Executive - SMB SaaS",
+     "Enterprise SaaS Account Executive â€“ US Food & Multi-Solution Sales",
+     "Inside Sales Representative"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:31:24+00:00"
+ },
+ "workable": {
+  "boards": [
+   {
+    "board": "huggingface",
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "Open-Source Machine Learning Engineer - EMEA Remote",
+     "Open-Source Machine Learning Engineer - US Remote",
+     "Senior Machine Learning Engineer, Voice Agents - EMEA Remote"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-05T18:32:42+00:00"
+ }
+}

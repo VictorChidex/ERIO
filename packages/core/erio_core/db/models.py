@@ -54,6 +54,7 @@ ROLE_CATEGORIES = (
 REMOTE_STATUSES = ("remote", "hybrid", "onsite")
 REMOTE_SCOPES = ("country", "region", "worldwide")
 SALARY_PERIODS = ("year", "month", "hour")
+EMPLOYMENT_TYPES = ("full_time", "part_time", "contract", "temporary", "internship", "volunteer")
 JOB_STATUSES = ("open", "closed", "unknown")
 DEDUP_METHODS = ("exact_id", "exact_key", "simhash")
 TOKEN_TIERS = ("free", "pro")
@@ -242,6 +243,9 @@ class Job(Base):
     lon: Mapped[float | None] = mapped_column(Double)
     remote_status: Mapped[str] = mapped_column(text_enum("remote_status", REMOTE_STATUSES))
     remote_scope: Mapped[str | None] = mapped_column(text_enum("remote_scope", REMOTE_SCOPES))
+    employment_type: Mapped[str | None] = mapped_column(
+        text_enum("employment_type", EMPLOYMENT_TYPES)
+    )
     # Countries a remote role accepts; empty means worldwide.
     eligible_country_codes: Mapped[list[str]] = mapped_column(
         ARRAY(CHAR(2)), server_default="{}", nullable=False

@@ -1,17 +1,22 @@
 """The only way crawl code reaches the internet (spec sections 5 and 9).
 
 Every request:
-- goes only to a host the connector declared, never to a private address;
+- goes only to a host a connector declared or a board registered in the
+  database (a board whose token is a full URL: a feed, a career site on the
+  employer's own domain, a job board on its own domain), and never to a
+  private address;
 - obeys robots.txt and sends ERIO's user agent;
 - waits for the host's shared rate limit;
 - is cut off at a size cap and a timeout.
 """
 
 import ipaddress
+import json
 import socket
 import time
 import urllib.robotparser
 from collections.abc import Callable, Iterable
+from typing import Any
 from urllib.parse import urlsplit
 
 import httpx
@@ -23,6 +28,8 @@ from erio_ingest.ratelimit import HostRateLimiter
 Resolver = Callable[[str], Iterable[str]]
 
 ROBOTS_TTL_S = 3600.0
+# How often the hosts of registered boards are read again.
+EXTRA_HOSTS_TTL_S = 300.0
 
 
 def resolve(host: str) -> list[str]:
@@ -42,8 +49,11 @@ class PoliteFetcher:
         settings: Settings,
         client: httpx.Client | None = None,
         resolver: Resolver = resolve,
+        extra_hosts: Callable[[], Iterable[str]] | None = None,
     ):
         self.allowed_hosts = frozenset(allowed_hosts)
+        self.extra_hosts = extra_hosts
+        self._extra: tuple[float, frozenset[str]] = (float("-inf"), frozenset())
         self.limiter = limiter
         self.settings = settings
         self.resolver = resolver
@@ -61,12 +71,29 @@ class PoliteFetcher:
         headers = {"If-None-Match": etag} if etag else {}
         return self._request(host, url, headers, float(delay) if delay else None)
 
+    def post_json(self, url: str, payload: Any) -> FetchResponse:
+        """POST a JSON body, under exactly the same rules as ``get``."""
+        host = self._check_host(url)
+        robots = self._robots_for(host)
+        if not robots.can_fetch(self.settings.crawler_user_agent, url):
+            raise FetchError("http_error", f"robots.txt disallows {url}")
+        delay = robots.crawl_delay(self.settings.crawler_user_agent)
+        headers = {"Content-Type": "application/json", "Accept": "application/json"}
+        content = json.dumps(payload).encode()
+        return self._request(host, url, headers, float(delay) if delay else None, "POST", content)
+
     def _request(
-        self, host: str, url: str, headers: dict[str, str], crawl_delay_s: float | None = None
+        self,
+        host: str,
+        url: str,
+        headers: dict[str, str],
+        crawl_delay_s: float | None = None,
+        method: str = "GET",
+        content: bytes | None = None,
     ) -> FetchResponse:
         """One request; network failures come back as FetchError, like any other."""
         try:
-            return self._send(host, url, headers, crawl_delay_s)
+            return self._send(host, url, headers, crawl_delay_s, method, content)
         except httpx.TimeoutException as error:
             raise FetchError("timeout", f"{host} timed out: {error!r}") from error
         except httpx.HTTPError as error:
@@ -81,7 +108,18 @@ class PoliteFetcher:
         if host in self.allowed_hosts:
             return host
         wildcard = "*." + host.split(".", 1)[-1]
-        return wildcard if "." in host and wildcard in self.allowed_hosts else None
+        if "." in host and wildcard in self.allowed_hosts:
+            return wildcard
+        return host if host in self._registered_hosts() else None
+
+    def _registered_hosts(self) -> frozenset[str]:
+        if self.extra_hosts is None:
+            return frozenset()
+        read_at, hosts = self._extra
+        if time.monotonic() - read_at > EXTRA_HOSTS_TTL_S:
+            hosts = frozenset(h.lower() for h in self.extra_hosts())
+            self._extra = (time.monotonic(), hosts)
+        return hosts
 
     def _check_host(self, url: str) -> str:
         parts = urlsplit(url)
@@ -109,14 +147,20 @@ class PoliteFetcher:
         return cached[1]
 
     def _send(
-        self, host: str, url: str, headers: dict[str, str], crawl_delay_s: float | None
+        self,
+        host: str,
+        url: str,
+        headers: dict[str, str],
+        crawl_delay_s: float | None,
+        method: str = "GET",
+        content: bytes | None = None,
     ) -> FetchResponse:
         # A robots.txt Crawl-delay slows the host below ERIO's own limit, never above it.
         rate = min(self.limiter.rate, 1 / crawl_delay_s) if crawl_delay_s else None
         self.limiter.acquire(self._allowed(host) or host, rate=rate)
         request_headers = {"User-Agent": self.settings.crawler_user_agent, **headers}
         limit = self.settings.crawl_max_response_bytes
-        with self.client.stream("GET", url, headers=request_headers) as response:
+        with self.client.stream(method, url, headers=request_headers, content=content) as response:
             body = bytearray()
             for chunk in response.iter_bytes():
                 body.extend(chunk)

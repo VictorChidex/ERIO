@@ -7,11 +7,20 @@ from erio_core.connectors.base import (
     Fetcher,
     FetchError,
     FetchResponse,
+    JsonPoster,
+    poster,
 )
 from erio_core.connectors.greenhouse import GreenhouseConnector
 from erio_core.connectors.lever import LeverConnector
+from erio_core.connectors.manatal import ManatalConnector
+from erio_core.connectors.personio import PersonioConnector
+from erio_core.connectors.pinpoint import PinpointConnector
+from erio_core.connectors.polymer import PolymerConnector
 from erio_core.connectors.recruitee import RecruiteeConnector
+from erio_core.connectors.rippling import RipplingConnector
 from erio_core.connectors.smartrecruiters import SmartRecruitersConnector
+from erio_core.connectors.teamtailor import TeamtailorConnector
+from erio_core.connectors.trakstar import TrakstarConnector
 from erio_core.connectors.workable import WorkableConnector
 
 CONNECTORS: dict[str, Connector] = {
@@ -23,6 +32,13 @@ CONNECTORS: dict[str, Connector] = {
         SmartRecruitersConnector(),
         RecruiteeConnector(),
         WorkableConnector(),
+        PinpointConnector(),
+        TrakstarConnector(),
+        PolymerConnector(),
+        RipplingConnector(),
+        TeamtailorConnector(),
+        ManatalConnector(),
+        PersonioConnector(),
     )
 }
 
@@ -38,5 +54,7 @@ __all__ = [
     "FetchError",
     "FetchResponse",
     "Fetcher",
+    "JsonPoster",
     "get_connector",
+    "poster",
 ]

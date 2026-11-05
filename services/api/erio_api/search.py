@@ -34,6 +34,9 @@ class JobQuery:
     roles: list[str] = field(default_factory=list)
     salary_min_usd: int | None = None
     platforms: list[str] = field(default_factory=list)
+    company: str | None = None
+    location: str | None = None
+    employment_types: list[str] = field(default_factory=list)
     posted_after: datetime | None = None
     status: list[str] = field(default_factory=lambda: ["open"])
     sort: Sort = "recent"
@@ -96,6 +99,23 @@ def _base_query(query: JobQuery) -> dict[str, Any]:
         filters.append({"range": {"posted_at": {"gte": query.posted_after.isoformat()}}})
     if query.platforms:
         filters.append({"terms": {"sources": query.platforms}})
+    if query.company:
+        # The employer's name (every word), or exactly its domain.
+        filters.append(
+            {
+                "bool": {
+                    "should": [
+                        {"match": {"company_name": {"query": query.company, "operator": "and"}}},
+                        {"term": {"company_domain": query.company.lower()}},
+                    ],
+                    "minimum_should_match": 1,
+                }
+            }
+        )
+    if query.location:
+        filters.append({"match": {"location_text": {"query": query.location, "operator": "and"}}})
+    if query.employment_types:
+        filters.append({"terms": {"employment_type": query.employment_types}})
     return {"bool": {"must": must or [{"match_all": {}}], "filter": filters}}
 
 

@@ -1,0 +1,173 @@
+[
+ {
+  "source_slug": "pinpoint",
+  "board_token": "made-tech",
+  "external_id": "223214",
+  "payload": {
+   "id": "223214",
+   "benefits": "<div><!--block-->We’re committed to building a happy, inclusive and diverse workforce. You can get a sense of what it’s like working here from <a href=\"https://www.madetech.com/blog/category/life-at-made-tech/\"><strong>our blog, where we talk about mental health, communities of practice and neurodiversity</strong></a> (as well as our client work and best practice).</div><div><!--block--><br></div><div><!--block-->Like many organisations, we use Slack to foster a sense of community and connection. As well as special interest groups such as music, food and pets, we also have 10+ Slack channels dedicated to specific communities, allies, and identities as well as dedicated learning spaces called communities of practice (COPs). If you’d like to speak to someone from one of these groups about their experience as an employee, please do let a member of the Made Tech talent team know.</div><div><!--block--><br><strong>Benefits</strong></div><div><!--block-->We are always listening to our growing teams and evolving the benefits available to our people. As we scale, as do our benefits and we are scaling quickly. We've recently introduced a flexible benefit platform which includes a Smart Tech scheme, Cycle to work scheme, and an individual benefits allowance which you can invest in a Health care cash plan or Pension plan. We’re also big on connection and have an optional social and wellbeing calendar of events for all employees to join should they choose to.<br><br></div><div><!--block-->Here are some of our most popular benefits listed below:<br><br></div><div><!--block-->✈️ <a href=\"https://github.com/madetech/handbook/blob/main/benefits/taking_holiday.md\"><strong>30 days Holiday</strong></a> - we offer 30 days of paid annual leave</div><div><!--block-->👶 <a href=\"https://github.com/madetech/handbook/blob/master/guides/welfare/parental_leave.md\"><strong>Flexible Parental Leave</strong></a> - we offer flexible parental leave options</div><div><!--block-->👩‍💻 <a href=\"https://github.com/madetech/handbook/blob/main/benefits/hybrid_working.md\"><strong>Remote Working</strong></a> - we offer part time remote working for all our staff</div><div><!--block-->🤗 <a href=\"https://github.com/madetech/handbook/blob/main/guides/welfare/paid_counselling.md\"><strong>Paid counselling</strong></a> - we offer paid counselling as well as financial and legal advice.</div>",
+   "benefits_header": "Job Benefits",
+   "compensation": "£41,500 - £55,000 / year",
+   "compensation_minimum": 41500.0,
+   "compensation_maximum": 55000.0,
+   "compensation_currency": "GBP",
+   "compensation_frequency": "year",
+   "compensation_visible": true,
+   "deadline_at": null,
+   "description": "<div><!--block-->Our Data Engineers enable public sector organisations to embrace a data-driven approach by providing data platforms and services that are high-quality, cost-efficient, and tailored to the clients’ needs. They develop, operate, and maintain these services. They make sure they provide maximum value to data consumers, including analysts, scientists, and business stakeholders.</div>",
+   "employment_type": "permanent_full_time",
+   "employment_type_text": "Permanent - Full Time",
+   "key_responsibilities": "<div><!--block-->At Made Tech we want to positively impact the future of the country by using technology to improve society, for everyone. We want to empower the public sector to deliver and continuously improve digital services that are user-centric, data-driven and freed from legacy technology. A key component of this is developing modern data systems and platforms that drive informed decision-making for our clients.</div><div><!--block--><br></div><div><!--block-->As a Data Engineer, you'll play a hands-on role as a contributor to client projects, focusing on both delivering engineering work as well as upskilling members of the client team.</div><div><!--block--><br></div><div><!--block-->As a member of the Data and AI Practice within Made Tech, you will also participate in the continued development of the team. You’ll need to have a drive to deliver outcomes for users and have a desire to share your knowledge and participate in skill transfer sessions.</div><div><!--block--><br></div>",
+   "key_responsibilities_header": "Key Responsibilities",
+   "reporting_to": null,
+   "skills_knowledge_expertise": "<div><!--block-->We look for the following skills and experience. But if you don’t have some of the skills and experience listed below, don’t let that stop you from applying!<br><br><strong>Engineering and Data Engineering</strong></div><ul><li><!--block-->Hands-on Python experience</li><li><!--block-->Knowledge of cloud infrastructure like AWS, GCP or Azure</li><li><!--block-->Have used version control systems, specifically Git or similar tools</li><li><!--block-->Understanding of TDD and diverse testing methodologies, such as data quality, integration, and unit testing</li><li><!--block-->Understanding of CI/CD pipelines to maintain code quality and facilitate deployments</li><li><!--block-->Knowledge of Data Engineering fundamentals, including Batch processing and ETL/ELT</li><li><!--block-->Basic understanding of various data architectures, such as Lakes and Warehouses</li><li><!--block-->Knowledge of data cleansing and transformation within unified, standardised schemas</li><li><!--block-->Basic SQL&nbsp;</li></ul><div><!--block--><strong>DevOps and DataOps</strong></div><ul><li><!--block-->Awareness of IaC tools, particularly Terraform&nbsp;</li><li><!--block-->Knowledge of basic logging and monitoring practice</li><li><!--block-->Knowledge of basic access controls, policies and approaches particularly on Cloud services&nbsp;</li></ul><div><!--block--><strong>Consultancy Skills</strong></div><ul><li><!--block-->Enthusiasm for learning and self-development and sharing that within a team and organisation&nbsp;</li><li><!--block-->Good communication skills</li><li><!--block-->Showcasing and presentation skills</li><li><!--block-->Desire to work in a cross functional team environment&nbsp;</li><li><!--block-->A desire to understand client needs and requirements&nbsp;</li></ul><div><!--block--><strong>Desirable experience</strong></div><div><!--block-->Experience in the following things isn’t essential, but it’s highly desirable!</div><ul><li><!--block-->Working at a technology consultancy</li><li><!--block-->Working with data scientists to productionise advanced data deliverables, such as machine learning models</li><li><!--block-->Working within the public sector</li><li><!--block-->Experience of working in Agile practices such as Scrum, XP, and/or Kanban</li></ul><div><!--block-->At this point, we hope you're feeling excited about Made Tech and the job opportunity. Even if you don't feel that you meet every single requirement, we still encourage you to apply. Get in touch with our <a href=\"mailto:talent@madetech.com\">talent team</a> if you’d like an informal chat about the role and your suitability before applying. We are hiring for this role directly, so will not respond to any CVs sent via external recruitment agencies.&nbsp;</div><div><!--block--><br></div><div><!--block--><em>An increasing number of our customers are specifying a minimum of SC (security check) clearance in order to work on their projects. As a result, we're looking for all successful candidates for this role to have eligibility.</em></div><div><!--block--><br></div><div><!--block--><em>Eligibility for SC requires 5 years' continuous UK residency and 5 year' employment history (or back to full-time education). Please note that if at any point during the interview process it is apparent that you may not be eligible for SC, we won't be able to progress your application and we will contact you to let you know why.</em></div><div><!--block--><br></div><div><!--block--><strong>Support in applying</strong></div><div><!--block-->If you need this job description in another format, or other support in applying, please email talent@madetech.com.<br><br></div><div><!--block-->We believe we can use tech to make public services better. We also believe this can happen best when our own team represents the society that actually uses the services we work on. We’re collectively continuing to grow a culture that is happy, healthy, safe and inspiring for people of all backgrounds and experiences, so we encourage people from underrepresented groups to apply for roles with us.</div><div><!--block--><br>When you apply, we’ll put you in touch with a talent partner who can help with any needs or adjustments we may need to make to help with your application. This includes alternative formats for documents, the time allotted for interviews and any other needs. We also welcome any feedback on how we can improve the experience for future candidates.</div><div><!--block--><br></div>",
+   "skills_knowledge_expertise_header": "Skills, Knowledge & Expertise",
+   "title": "Data Engineer",
+   "url": "https://made-tech.pinpointhq.com/en/postings/873e31d7-03c3-402a-bee5-0a7e791c23fd",
+   "path": "/en/postings/873e31d7-03c3-402a-bee5-0a7e791c23fd",
+   "workplace_type": "hybrid",
+   "workplace_type_text": "Hybrid",
+   "job": {
+    "id": "240788",
+    "requisition_id": "MT-0167/MT-0439",
+    "department": {
+     "id": "57573",
+     "name": "Technology"
+    },
+    "division": {
+     "id": "10389",
+     "name": "Service Lines"
+    },
+    "structure_custom_group_one": {
+     "id": "8679",
+     "name": "Data & AI",
+     "title": "Sub Team"
+    }
+   },
+   "location": {
+    "id": "37722",
+    "city": "l",
+    "name": "Any UK Office Hub (Bristol / London / Manchester / Swansea)",
+    "postal_code": "",
+    "province": "l",
+    "street_address": "l"
+   }
+  },
+  "fetched_at": "2026-11-05T18:31:23.299283Z",
+  "content_hash": "678f80ba3a2dc069b4cf8fd8987637d95a8fbeec47cb28349323663a92618b57"
+ },
+ {
+  "source_slug": "pinpoint",
+  "board_token": "made-tech",
+  "external_id": "302243",
+  "payload": {
+   "id": "302243",
+   "benefits": "<div><!--block-->At this point, we hope you're feeling excited about Made Tech and the job opportunity. Even if you don't feel that you meet every single requirement, we still encourage you to apply. Get in touch with our <a href=\"mailto:talent@madetech.com\">talent team</a> if you’d like an informal chat about the role and your suitability before applying. We are hiring for this role directly, so will not respond to any CVs sent via external recruitment agencies.&nbsp;</div><div><!--block--><br><strong>Support in applying</strong></div><div><!--block-->If you need this job description in another format, or other support in applying, please email talent@madetech.com.<br><br></div><div><!--block-->We believe we can use tech to make public services better. We also believe this can happen best when our own team represents the society that actually uses the services we work on. We’re collectively continuing to grow a culture that is happy, healthy, safe and inspiring for people of all backgrounds and experiences, so we encourage people from underrepresented groups to apply for roles with us.</div><div><!--block--><br>When you apply, we’ll put you in touch with a member of our talent team who can help with any needs or adjustments we may need to make to help with your application. We’ve put together <a href=\"https://www.madetech.com/blog/reasonable-adjustments/\">this blog</a> as a resource to share more about reasonable adjustments and some examples of what this could include. We also welcome any feedback on how we can improve the experience for future candidates.<br><br></div><div><!--block--><strong>Life at Made Tech</strong></div><div><!--block-->We’re committed to building a happy, inclusive and diverse workforce. You can get a sense of what it’s like working here from <a href=\"https://www.madetech.com/blog/category/life-at-made-tech/\"><strong>our blog, where we talk about mental health, communities of practice and neurodiversity</strong></a> (as well as our client work and best practice).</div><div><!--block--><br></div><div><!--block-->Like many organisations, we use Slack to foster a sense of community and connection. As well as special interest groups such as music, food and pets, we also have 10+ Slack channels dedicated to specific communities, allies, and identities as well as dedicated learning spaces called communities of practice (COPs). If you’d like to speak to someone from one of these groups about their experience as an employee, please do let a member of the Made Tech talent team know.</div><div><!--block--><br></div><div><!--block--><strong>Benefits</strong></div><div><!--block-->We are always listening to our growing teams and evolving the benefits available to our people. As we scale, as do our benefits and we are scaling quickly. We've recently introduced a flexible benefit platform which includes a Smart Tech scheme, Cycle to work scheme, and an individual benefits allowance which you can invest in a Health care cash plan or Pension plan. We’re also big on connection and have an optional social and wellbeing calendar of events for all employees to join should they choose to.<br><br></div><div><!--block-->Here are some of our most popular benefits listed below:</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/benefits/taking_holiday.md\">30 days Holiday</a> - we offer 30 days of paid annual leave plus bank holidays</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/master/benefits/working_hours.md\">Flexible Working Hours</a> - we are flexible with what hours you work</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/master/guides/welfare/parental_leave.md\">Flexible Parental Leave</a> - we offer flexible parental leave options</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/benefits/hybrid_working.md\">Remote Working</a> - we offer part time remote working for all our staff</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/guides/welfare/paid_counselling.md\">Paid counselling</a> - we offer paid counselling as well as financial and legal advice</div><div><!--block--><br></div><div><!--block--><br></div><div><!--block--><br><br></div>",
+   "benefits_header": "Job Benefits",
+   "compensation": "£70,000 - £90,000 / year",
+   "compensation_minimum": 70000.0,
+   "compensation_maximum": 90000.0,
+   "compensation_currency": "GBP",
+   "compensation_frequency": "year",
+   "compensation_visible": true,
+   "deadline_at": null,
+   "description": "<div><!--block--><strong>About Made Tech&nbsp;</strong></div><div><!--block-->Our aim at Made Tech is to use human-centred technology to improve our society. We believe putting people at the heart of designing, building and delivering public services leads to better outcomes for everyone.</div><div><!--block--><br>Are you a Software Engineer that wants to actually see the real-world impact from what you help to create? Our mission is simple! We believe we can use tech to make public services better. We also believe this can happen best when our own team represents the society that actually used the services we work on. At Made Tech, we’re collectively continuing to grow a culture that is happy, healthy, safe and inspiring for people of all backgrounds and experiences, so we encourage all people from underrepresented groups to apply for roles with us. Have we caught your interest? Please read on…</div><div><!--block--><br></div><div><!--block-->We are looking for Lead Engineers with a particular penchant and love for cloud, automation, slick tooling, and empowering software delivery by coaching teams in true DevOps fashion. While we are looking for those with significant experience working with AWS this role remains a full stack and polyglot role as with all of our Software Engineering roles</div><div><!--block--><br></div><div><!--block-->Our Lead Software Engineers are Tech Leads, Architects, Thought Leaders, Full Stack Engineers, and Consultants. They are our most senior technologist within a customer account representing Made Tech and act as a hands-on CTO across one or more software delivery teams driving organisational change and outcomes for users. They combine technical excellence, drive to deliver, and coaching, to achieve outcomes for our customers and their users, and to establish strong engineering cultures within our customers' organisations. They find themselves working on a variety of different problems from monoliths to microservices, upskilling colleagues and customers, always finding themselves learning from others, while constantly striving to be nice humans :)&nbsp;</div><div><!--block--><br></div><div><!--block--><br></div>",
+   "employment_type": "permanent",
+   "employment_type_text": "Permanent",
+   "key_responsibilities": "<div><!--block-->We primarily write and deliver custom software for the public sector. We work across central and local government, as well as in health, and our past lies in the technology startup world. Technical excellence for us isn’t about delivering to feature lists. We place a strong emphasis on outcome-based delivery; ensuring our customers goals are understood and achieved with the technology we deploy.&nbsp;</div><div><!--block--><br>High performing&nbsp; software delivery teams need to be empowered to iteratively and rapidly deliver changes all the way through to production. To do this we combine our extensive cloud automation knowledge with DevOps culture. &nbsp;<br><br></div><div><!--block-->We ensure we document our architecture and infrastructure as code, using technologies such as Terraform and OpenAPI. Containerisation is a big part of empowering our teams to develop, deploy and scale their applications, but so too is using AWS Lambda and avoiding the complexity of stateful services altogether. Right tool for the job.&nbsp;</div><div><!--block--><br>For us, DevOps is about culture rather than roles and titles. Even though this role is for someone with strong DevOps experience, the biggest impact you will have is coaching and helping teams use the platforms you build. You won’t be building infrastructure in isolation or charged with deploying other people’s work into production. You’ll empower teams with the mantra: you build it, you run it!</div><div><!--block--><br>Our teams have used Java, Ruby, Python, ES6 with React, C# with .NET Core. We don’t limit ourselves as a company and we expect all our Engineers to be keen on learning new technologies. Automation is important to our teams, so we make sure there is a CD pipeline set up to build, test, and release many times per day.&nbsp;<br><br></div><div><!--block-->We grow a team of language agnostic engineers, which you might already consider yourself to be, who are versed in a mix of paradigms such as object oriented, functional, declarative, event-based and aspect-oriented. To create this environment our Senior Engineers need to embrace sharing their knowledge and skills with others, and they need to keep an open mind -we’d love to hear some examples of mentoring, coaching and growing team members. Maybe you will have written some blog posts about your discipline, or perhaps even delivered a talk or two.&nbsp;</div>",
+   "key_responsibilities_header": "About the role",
+   "reporting_to": null,
+   "skills_knowledge_expertise": "<div><!--block--><strong>Essential Skills</strong></div><div><!--block-->We want our teams and individuals to grow. If you don’t have the following skills, you will have access to a learning budget, experienced team members and a wider learning and mentoring culture that can help you develop the following:<br><br></div><ul><li><!--block-->Written code with tests</li><li><!--block-->Delivery in an agile environment</li><li><!--block-->Worked across a variety of programming languages</li><li><!--block-->Worked with databases</li><li><!--block-->Worked with APIs</li><li><!--block-->Worked with at least one Cloud platform</li><li><!--block-->Debugging experience in a range of systems</li><li><!--block-->Evidence of self-development - we value keen learners</li><li><!--block-->Drive to deliver outcomes for users</li><li><!--block-->Desire to mentor &amp; people manage</li></ul><div><!--block--><br></div><div><!--block--><strong>Nice to Haves<br></strong><br></div><ul><li><!--block-->Consultancy experience</li><li><!--block-->Working directly with customers and users</li><li><!--block-->Working within multidisciplinary teams with product, design, and technology working within the same cycles</li><li><!--block-->Showcasing and presentation skills</li><li><!--block-->Agile practices such as Scrum, XP, and/or Kanban</li><li><!--block-->Pair programming - we pair around 50% of the time</li><li><!--block-->Writing code with test-driven development</li><li><!--block-->Experience building and maintaining CI/CD pipelines</li><li><!--block-->Component-based design techniques such as using pattern libraries, styled-components, CSS-in-JS, BEM, and/or SUIT CSS</li><li><!--block-->Debugging infrastructure</li><li><!--block-->The REACT ecosystem including a test-driven approach</li><li><!--block-->Infrastructure as code technology like Terraform and Cloud Formation</li><li><!--block-->Familiarity with architectural and design patterns</li><li><!--block-->Use of architectural design records<br><br></li></ul><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/roles/lead_software_engineer.md\">You can find the full job description on our handbook here<br></a><br>Please note, an increasing number of our customers are specifying a minimum of SC (security check) clearance in order to work on their projects. As a result, we're looking for all successful candidates for this role to have eligibility.&nbsp;</div><div><!--block--><br></div><div><!--block-->Eligibility for SC requires 5 years' continuous UK residency and 5 year's employment history (or back to full-time education). Please note that if at any point during the interview process it is apparent that you may not be eligible for SC, we won't be able to progress your application and we will contact you to let you know why.</div><div><!--block--><br></div>",
+   "skills_knowledge_expertise_header": "Skills, Knowledge & Expertise",
+   "title": "Lead Software Engineer",
+   "url": "https://made-tech.pinpointhq.com/en/postings/64530251-9d49-4174-8b63-cb3558e28252",
+   "path": "/en/postings/64530251-9d49-4174-8b63-cb3558e28252",
+   "workplace_type": "hybrid",
+   "workplace_type_text": "Hybrid",
+   "job": {
+    "id": "317212",
+    "requisition_id": "MT-0120/MT-0199/MT-0286/MT-0314",
+    "department": {
+     "id": "57573",
+     "name": "Technology"
+    },
+    "division": {
+     "id": "10389",
+     "name": "Service Lines"
+    },
+    "structure_custom_group_one": {
+     "id": "8680",
+     "name": "Software Engineering",
+     "title": "Sub Team"
+    }
+   },
+   "location": {
+    "id": "37722",
+    "city": "l",
+    "name": "Any UK Office Hub (Bristol / London / Manchester / Swansea)",
+    "postal_code": "",
+    "province": "l",
+    "street_address": "l"
+   }
+  },
+  "fetched_at": "2026-11-05T18:31:23.299283Z",
+  "content_hash": "6084f29a17a5747328b91c9c3726ee2003930c97a82f407d41b9deffe4b732a0"
+ },
+ {
+  "source_slug": "pinpoint",
+  "board_token": "made-tech",
+  "external_id": "305696",
+  "payload": {
+   "id": "305696",
+   "benefits": "<div><!--block--><em>An increasing number of our customers are specifying a minimum of SC (security check) clearance in order to work on their projects. As a result, we're looking for all successful candidates for this role to have eligibility.</em></div><div><!--block--><br></div><div><!--block--><em>Eligibility for SC requires 5 years' continuous UK residency and 5 year' employment history (or back to full-time education). Please note that if at any point during the interview process it is apparent that you may not be eligible for SC, we won't be able to progress your application and we will contact you to let you know why.</em></div><div><!--block--><br><br></div><div><!--block--><strong>Support in applying</strong></div><div><!--block-->If you need this job description in another format, or other support in applying, please email talent@madetech.com.</div><div><!--block-->We believe we can use tech to make public services better. We also believe this can happen best when our own team represents the society that actually uses the services we work on. We’re collectively continuing to grow a culture that is happy, healthy, safe and inspiring for people of all backgrounds and experiences, so we encourage people from underrepresented groups to apply for roles with us.</div><div><!--block-->When you apply, we’ll put you in touch with a member of our talent team who can help with any needs or adjustments we may need to make to help with your application. We’ve put together <a href=\"https://www.madetech.com/blog/reasonable-adjustments/\">this blog</a> as a resource to share more about reasonable adjustments and some examples of what this could include. We also welcome any feedback on how we can improve the experience for future candidates.</div><div><!--block--><br><strong>Life at Made Tech</strong></div><div><!--block-->We’re committed to building a happy, inclusive and diverse workforce. You can get a sense of what it’s like working here from <a href=\"https://www.madetech.com/blog/category/life-at-made-tech/\"><strong>our blog, where we talk about mental health, communities of practice and neurodiversity</strong></a> (as well as our client work and best practice).</div><div><!--block--><br></div><div><!--block-->Like many organisations, we use Slack to foster a sense of community and connection. As well as special interest groups such as music, food and pets, we also have 10+ Slack channels dedicated to specific communities, allies, and identities as well as dedicated learning spaces called communities of practice (COPs). If you’d like to speak to someone from one of these groups about their experience as an employee, please do let a member of the Made Tech talent team know.</div><div><!--block--><br></div><div><!--block--><strong>Benefits</strong></div><div><!--block-->We are always listening to our growing teams and evolving the benefits available to our people. As we scale, as do our benefits and we are scaling quickly. We've recently introduced a flexible benefit platform which includes a Smart Tech scheme, Cycle to work scheme, and an individual benefits allowance which you can invest in a Health care cash plan or Pension plan. We’re also big on connection and have an optional social and wellbeing calendar of events for all employees to join should they choose to.</div><div><!--block--><br>Here are some of our most popular benefits listed below:</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/benefits/taking_holiday.md\">30 days Holiday</a> - we offer 30 days of paid annual leave plus bank holidays</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/master/benefits/working_hours.md\">Flexible Working Hours</a> - we are flexible with what hours you work</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/master/guides/welfare/parental_leave.md\">Flexible Parental Leave</a> - we offer flexible parental leave options</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/benefits/hybrid_working.md\">Remote Working</a> - we offer part time remote working for all our staff</div><div><!--block--><a href=\"https://github.com/madetech/handbook/blob/main/guides/welfare/paid_counselling.md\">Paid counselling</a> - we offer paid counselling as well as financial and legal advice<br><br></div>",
+   "benefits_header": "Job Benefits",
+   "compensation": "£35,000 - £45,000 / year",
+   "compensation_minimum": 35000.0,
+   "compensation_maximum": 45000.0,
+   "compensation_currency": "GBP",
+   "compensation_frequency": "year",
+   "compensation_visible": true,
+   "deadline_at": null,
+   "description": "<div><!--block--><strong>About Made Tech</strong></div><div><!--block-->Our aim at Made Tech is to use human-centred technology to improve our society. We believe putting people at the heart of designing, building and delivering public services leads to better outcomes for everyone.</div><div><!--block-->Based within the Cloud &amp; Engineering Practice, our Cloud Engineers help public sector organisations to deliver digital services that are highly available, reliable, resilient and secure. They are software engineers who tend to focus more on the successful deployment and operations of services than on functional development. They are adaptable and comfortable covering a range of disciplines such as DevOps, SRE and infrastructure architecture.</div><div><!--block--><br></div><div><!--block--><strong>About the role</strong></div><div><!--block-->You will play a key role in designing, implementing, and maintaining our clients’ cloud infrastructure, ensuring it is secure, scalable, and highly available. You will provide dedicated cloud and infrastructure support within your team.</div><div><!--block--><br></div><div><!--block-->We expect our cloud engineers to have a background in and an understanding of software engineering. You will keep abreast of emerging technologies and be able to work collaboratively in a multi-disciplinary software delivery environment.</div>",
+   "employment_type": "permanent",
+   "employment_type_text": "Permanent",
+   "key_responsibilities": "<div><!--block-->Delivery of high quality cloud-based technical solutions for our clients:</div><ul><li><!--block-->Collaborate within cross-functional teams to implement cloud architectures that meet the client’s requirements around scalability, performance, and security</li><li><!--block-->Deploy and manage cloud resources, containers, and related services using Infrastructure as Code (IaC) tools like Terraform or CloudFormation</li><li><!--block-->Configure and maintain networking, security, and access control in the cloud environment</li><li><!--block-->Implement and maintain robust security practices to protect data and resources in the cloud environment</li><li><!--block-->Develop and maintain automated processes for provisioning, monitoring, and scaling cloud resources, including the use of CI/CD pipelines to streamline application deployments</li><li><!--block-->Monitor cloud infrastructure for performance bottlenecks and proactively optimise resource usage</li><li><!--block-->Implement load balancing, caching, and content delivery solutions to ensure high availability and performance</li><li><!--block-->Design and maintain backup and disaster recovery solutions to ensure business continuity in the event of system failures or data loss</li><li><!--block-->Create and maintain runbooks including configuration management and standard operating procedures</li><li><!--block-->Provide high tier support for client applications and infrastructure, including occasional on call cover</li><li><!--block-->Ensure any necessary compliance standards are met and certifications are maintained<br><br></li></ul><div><!--block-->Evangelising the adoption of cloud technology and adherence to prescribed best practices:</div><ul><li><!--block-->Evaluate and recommend cloud services, tools, and solutions to meet common client scenarios</li><li><!--block-->Stay up-to-date with industry trends and emerging technologies, and share knowledge with the team</li><li><!--block-->Collaborate with other teams within Made Tech to ensure alignment with cloud best practices</li></ul>",
+   "key_responsibilities_header": "Key Responsibilities",
+   "reporting_to": null,
+   "skills_knowledge_expertise": "<h2><!--block--><strong>Essential</strong></h2><ul><li><!--block-->Prior experience in a cloud engineering role, with a strong foundation in successfully building and deploying services in the cloud</li><li><!--block-->Knowledge of cloud platforms such as AWS, Azure and GCP</li><li><!--block-->Hands on experience delivering software and knowledge of modern software engineering best practices</li><li><!--block-->Experience with containerisation and orchestration tools (e.g. Docker, Kubernetes)<br><br></li></ul><h2><!--block--><strong>Desirable</strong></h2><ul><li><!--block-->Experience working in a technology consultancy environment</li><li><!--block-->Experience working within multidisciplinary teams with product, design, and technical disciplines all successfully collaborating</li><li><!--block-->Relevant cloud certifications such as AWS Cloud Practitioner, Developer, DevOps Engineer, Security, Advanced Networking or Azure Developer, Security, DevOps, Network Engineer</li><li><!--block-->Knowledge of cloud vendor partner programs, such as AWS APN and Azure Partners</li><li><!--block-->Experience with well-architected frameworks</li><li><!--block-->Knowledge of UK public sector technology guidance and frameworks, such as NCSC’s Cyber Assessment Framework (CAF) and the Technology Code of Practice (TCoP)</li><li><!--block-->Familiarity with Python, Bash and Javascript</li><li><!--block-->Agile practices such as Scrum, XP, and/or Kanban</li><li><!--block-->Experience using Test Driven Development (TDD)</li></ul>",
+   "skills_knowledge_expertise_header": "Skills, Knowledge & Expertise",
+   "title": "Cloud Engineer",
+   "url": "https://made-tech.pinpointhq.com/en/postings/78ebb26e-3c2c-44d2-b8bb-db2af73b4c8e",
+   "path": "/en/postings/78ebb26e-3c2c-44d2-b8bb-db2af73b4c8e",
+   "workplace_type": "hybrid",
+   "workplace_type_text": "Hybrid",
+   "job": {
+    "id": "320583",
+    "requisition_id": "MT-0125",
+    "department": {
+     "id": "57573",
+     "name": "Technology"
+    },
+    "division": {
+     "id": "10389",
+     "name": "Service Lines"
+    },
+    "structure_custom_group_one": {
+     "id": "8683",
+     "name": "Cloud Engineering",
+     "title": "Sub Team"
+    }
+   },
+   "location": {
+    "id": "37722",
+    "city": "l",
+    "name": "Any UK Office Hub (Bristol / London / Manchester / Swansea)",
+    "postal_code": "",
+    "province": "l",
+    "street_address": "l"
+   }
+  },
+  "fetched_at": "2026-11-05T18:31:23.299283Z",
+  "content_hash": "abf7cddf2530b45e0798b2da4402b41242e4ecdb194cd533db9c8aadc103f46a"
+ }
+]
