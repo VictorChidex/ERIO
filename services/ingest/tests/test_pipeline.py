@@ -194,3 +194,21 @@ def test_which_failures_are_retried(outcome: str, status: int | None, retryable:
     from erio_ingest.pipeline import CrawlResult
 
     assert CrawlResult(1, outcome, status, 0).retryable is retryable
+
+
+def test_quiet_boards_slow_down_and_speed_up_on_change(
+    migrated_engine: Engine, board_id: int
+) -> None:
+    store, clock, source = MemoryRawStore(), Clock(), Source(200, truelayer())
+    crawl_board(migrated_engine, board_id, source, store, clock)
+    assert board(migrated_engine, board_id).cadence_min == 15
+
+    clock.advance(minutes=7 * 24 * 60)
+    crawl_board(migrated_engine, board_id, source, store, clock)
+    assert board(migrated_engine, board_id).cadence_min == 60
+
+    data = json.loads(truelayer())
+    data["jobs"][0]["title"] = "Changed title"
+    clock.advance()
+    crawl_board(migrated_engine, board_id, Source(200, json.dumps(data).encode()), store, clock)
+    assert board(migrated_engine, board_id).cadence_min == 15

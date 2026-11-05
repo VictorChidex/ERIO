@@ -132,6 +132,9 @@ class CompanyBoard(Base):
     paused_until: Mapped[datetime | None]
     # The scheduler queues a board once next_crawl_at has passed.
     next_crawl_at: Mapped[datetime] = mapped_column(server_default=func.now(), index=True)
+    # Last successful fetch that found a new or changed posting; boards quiet
+    # for 7 days drop to a 60-minute cadence.
+    last_change_at: Mapped[datetime | None]
     # ETag of the last successful response, sent as If-None-Match.
     etag: Mapped[str | None] = mapped_column(String(200))
     created_at: Mapped[datetime] = created_at()

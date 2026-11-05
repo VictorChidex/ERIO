@@ -24,6 +24,12 @@ PAUSE_AFTER_FAILURES = 5
 PAUSE_FOR = timedelta(hours=1)
 RETRYABLE = {"timeout", "rate_limited"}
 
+# Boards are crawled every 15 minutes; one with no new or changed posting
+# for 7 days backs off to 60 minutes until it changes again (spec section 5).
+FAST_CADENCE_MIN = 15
+SLOW_CADENCE_MIN = 60
+QUIET_AFTER = timedelta(days=7)
+
 Clock = Callable[[], datetime]
 
 
@@ -151,6 +157,7 @@ def _record_success(
         board.paused_until = None
         if fetched.etag:
             board.etag = fetched.etag
+        _adapt_cadence(board, changed_now=new + changed > 0, now=now)
 
         run = session.get_one(CrawlRun, run_id)
         run.finished_at = now
@@ -188,3 +195,11 @@ def _upsert_posting(
             index_elements=[RawPosting.source_slug, RawPosting.external_id], set_=updates
         )
     )
+
+
+def _adapt_cadence(board: CompanyBoard, changed_now: bool, now: datetime) -> None:
+    if changed_now or board.last_change_at is None:
+        board.last_change_at = now
+        board.cadence_min = FAST_CADENCE_MIN
+    elif now - board.last_change_at >= QUIET_AFTER:
+        board.cadence_min = SLOW_CADENCE_MIN

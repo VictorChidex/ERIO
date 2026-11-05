@@ -44,7 +44,7 @@ def test_region_groups() -> None:
 
 
 def test_seed_loads_countries_and_sources(migrated_engine: Engine) -> None:
-    assert seed(migrated_engine) == {"countries": 233, "sources": 6}
+    assert seed(migrated_engine) == {"countries": 233, "sources": 6, "boards": 20}
 
     with migrated_engine.connect() as connection:
         names = set(connection.scalars(select(Country.name)))
@@ -58,4 +58,4 @@ def test_seed_loads_countries_and_sources(migrated_engine: Engine) -> None:
 
 def test_seed_can_run_again(migrated_engine: Engine) -> None:
     seed(migrated_engine)
-    assert seed(migrated_engine) == {"countries": 233, "sources": 6}
+    assert seed(migrated_engine) == {"countries": 233, "sources": 6, "boards": 20}

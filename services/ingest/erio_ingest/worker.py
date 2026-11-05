@@ -14,8 +14,9 @@ from sqlalchemy import Engine, create_engine
 from erio_core.connectors import CONNECTORS
 from erio_core.settings import get_settings
 from erio_ingest.fetcher import PoliteFetcher
-from erio_ingest.pipeline import crawl_board
+from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
+from erio_ingest.scheduler import schedule_due_boards
 from erio_ingest.storage import S3RawStore
 
 settings = get_settings()
@@ -28,6 +29,10 @@ app.conf.update(
     task_default_queue="crawl",
     result_expires=3600,
     timezone="UTC",
+    # Celery beat (`celery -A erio_ingest.worker beat`) queues due boards every minute.
+    beat_schedule={
+        "schedule-due-boards": {"task": "erio.schedule_due_boards", "schedule": 60.0},
+    },
 )
 
 # Three attempts in all for timeouts, 429s and 5xx (spec section 5).
@@ -59,6 +64,14 @@ def backoff_seconds(retries: int) -> float:
 @app.task(name="erio.ping")
 def ping() -> str:
     return "pong"
+
+
+@app.task(name="erio.schedule_due_boards", ignore_result=True)
+def schedule_due_boards_task() -> int:
+    queued = schedule_due_boards(
+        engine(), lambda board_id: crawl_board_task.delay(board_id), utcnow()
+    )
+    return len(queued)
 
 
 @app.task(name="erio.crawl_board", bind=True, max_retries=MAX_RETRIES)

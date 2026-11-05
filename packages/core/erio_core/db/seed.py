@@ -11,7 +11,7 @@ from typing import Any
 from sqlalchemy import Engine, create_engine, func, select
 from sqlalchemy.dialects.postgresql import insert
 
-from erio_core.db.models import Country, Source
+from erio_core.db.models import Company, CompanyBoard, Country, Source
 from erio_core.settings import Settings
 
 # The six first-release ATS sources (decision D-04). They stay "scheduled"
@@ -64,13 +64,46 @@ def sync_sources(engine: Engine) -> int:
     return len(SOURCES)
 
 
+def load_boards() -> list[dict[str, str]]:
+    """Starter company boards (erio_core/data/boards.json) until the seed list
+    from decision D-07 arrives."""
+    raw = files("erio_core").joinpath("data/boards.json").read_text(encoding="utf-8")
+    rows: list[dict[str, str]] = json.loads(raw)
+    return rows
+
+
+def sync_boards(engine: Engine) -> int:
+    """Add any listed company and board that is missing; never removes one."""
+    with engine.begin() as connection:
+        for row in load_boards():
+            company_id = connection.scalar(
+                select(Company.id).where(Company.domain == row["domain"])
+            ) or connection.scalar(
+                insert(Company)
+                .values(name=row["company"], domain=row["domain"])
+                .returning(Company.id)
+            )
+            connection.execute(
+                insert(CompanyBoard)
+                .values(
+                    company_id=company_id,
+                    source_slug=row["source"],
+                    board_token=row["board_token"],
+                )
+                .on_conflict_do_nothing(index_elements=["source_slug", "board_token"])
+            )
+    return len(load_boards())
+
+
 def seed(engine: Engine) -> dict[str, int]:
     sync_countries(engine)
     sync_sources(engine)
+    sync_boards(engine)
     with engine.connect() as connection:
         return {
             "countries": connection.scalar(select(func.count()).select_from(Country)) or 0,
             "sources": connection.scalar(select(func.count()).select_from(Source)) or 0,
+            "boards": connection.scalar(select(func.count()).select_from(CompanyBoard)) or 0,
         }
 
 
@@ -80,7 +113,10 @@ def main() -> None:
         counts = seed(engine)
     finally:
         engine.dispose()
-    print(f"seeded {counts['countries']} countries and {counts['sources']} sources")
+    print(
+        f"seeded {counts['countries']} countries, {counts['sources']} sources"
+        f" and {counts['boards']} boards"
+    )
 
 
 if __name__ == "__main__":

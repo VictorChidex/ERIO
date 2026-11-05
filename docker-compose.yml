@@ -110,6 +110,16 @@ services:
       timeout: 10s
       retries: 10
 
+  # Queues every due board once a minute; workers do the crawling.
+  beat:
+    build: { context: ., dockerfile: docker/python.Dockerfile }
+    image: erio-python:local
+    command: ["celery", "-A", "erio_ingest.worker", "beat", "--loglevel=INFO", "--schedule", "/tmp/celerybeat-schedule"]
+    environment: *erio-addresses
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+
   web:
     build: { context: web }
     environment:

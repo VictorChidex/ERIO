@@ -37,7 +37,8 @@ docker compose up --build
 | --- | --- | --- |
 | Website | http://localhost:3000 | Shows "API online" once the API is ready |
 | API | http://localhost:8000/v1/health | Readiness at `/v1/health/ready`, docs at `/v1/docs` |
-| Worker | — | Celery, listening on the `crawl` queue |
+| Worker | — | Celery, crawls boards from the `crawl` queue |
+| Beat | — | Queues every due board once a minute |
 | Postgres 16 | localhost:5432 | Database and user `erio`; trusts local connections. Tables are created by the one-off `migrate` service |
 | Redis 7 | localhost:6379 | Queue and rate limits |
 | OpenSearch 2 | http://localhost:9200 | Search; security plugin off locally |
