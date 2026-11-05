@@ -322,3 +322,37 @@ class ApiToken(Base):
     created_at: Mapped[datetime] = created_at()
     last_used_at: Mapped[datetime | None]
     revoked_at: Mapped[datetime | None]
+
+
+class AiCall(Base):
+    """Every AI gateway call: what it cost and how it went (spec section 13).
+
+    Prompts and answers are not stored here, so no user search text is kept.
+    """
+
+    __tablename__ = "ai_calls"
+    __table_args__ = (Index(None, "task", "at"),)
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    at: Mapped[datetime]
+    task: Mapped[str] = mapped_column(String(40))
+    provider: Mapped[str] = mapped_column(String(40))
+    model: Mapped[str] = mapped_column(String(80))
+    input_tokens: Mapped[int] = mapped_column(Integer)
+    output_tokens: Mapped[int] = mapped_column(Integer)
+    latency_ms: Mapped[int] = mapped_column(Integer)
+    cost_usd: Mapped[float] = mapped_column(Double)
+    # ok, invalid_output, timeout, rate_limited, server, rejected, unavailable, bad_response
+    outcome: Mapped[str] = mapped_column(String(20))
+
+
+class AiCacheEntry(Base):
+    """A validated AI answer, keyed by task and input, so no input is sent twice."""
+
+    __tablename__ = "ai_cache"
+
+    key: Mapped[str] = mapped_column(CHAR(64), primary_key=True)
+    task: Mapped[str] = mapped_column(String(40))
+    model: Mapped[str] = mapped_column(String(80))
+    answer: Mapped[str] = mapped_column(Text)
+    created_at: Mapped[datetime] = created_at()

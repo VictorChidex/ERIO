@@ -41,6 +41,14 @@ class Settings(BaseSettings):
     crawl_timeout_s: float = 20.0
     crawl_max_response_bytes: int = 10 * 1024 * 1024
 
+    # AI gateway (spec section 13). Routing lives in erio_core/ai/routing.json
+    # unless a path is given; provider addresses can be overridden per
+    # environment. Tokens never come from here: only from the credential vault.
+    ai_enabled: bool = True
+    ai_routing_path: str | None = None
+    ai_provider_urls: dict[str, str] = {}
+    ai_timeout_s: float = 60.0
+
     @property
     def sqlalchemy_url(self) -> str:
         """``database_url`` with the psycopg 3 driver named, as SQLAlchemy expects."""

@@ -1,0 +1,54 @@
+{
+  "providers": {
+    "local": {"adapter": "openai_compatible", "base_url": "http://127.0.0.1:11434/v1"},
+    "anthropic": {
+      "adapter": "anthropic",
+      "base_url": "https://api.anthropic.com",
+      "credential": "erio/ai/anthropic"
+    },
+    "openai": {
+      "adapter": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "credential": "erio/ai/openai"
+    },
+    "gemini": {
+      "adapter": "gemini",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "credential": "erio/ai/gemini"
+    }
+  },
+  "models": {
+    "local-qwen": {
+      "provider": "local",
+      "model": "qwen2.5:1.5b",
+      "usd_per_mtok_in": 0,
+      "usd_per_mtok_out": 0
+    },
+    "local-llama": {
+      "provider": "local",
+      "model": "llama3.2:1b",
+      "usd_per_mtok_in": 0,
+      "usd_per_mtok_out": 0
+    },
+    "claude-haiku": {"provider": "anthropic", "model": "claude-haiku-5-5"},
+    "openai-small": {"provider": "openai", "model": "gpt-5-mini"},
+    "gemini-flash": {"provider": "gemini", "model": "gemini-2.5-flash"}
+  },
+  "tasks": {
+    "role": {
+      "models": ["local-qwen", "local-llama", "claude-haiku", "openai-small", "gemini-flash"],
+      "daily_usd_cap": 5,
+      "daily_token_cap": 2000000
+    },
+    "location": {
+      "models": ["local-qwen", "local-llama", "claude-haiku", "openai-small", "gemini-flash"],
+      "daily_usd_cap": 5,
+      "daily_token_cap": 2000000
+    },
+    "salary": {
+      "models": ["local-qwen", "local-llama", "claude-haiku", "openai-small", "gemini-flash"],
+      "daily_usd_cap": 5,
+      "daily_token_cap": 2000000
+    }
+  }
+}

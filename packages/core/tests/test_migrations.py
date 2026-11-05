@@ -13,6 +13,8 @@ from erio_core.db.models import Base
 from erio_core.testing import alembic_config
 
 EXPECTED_TABLES = {
+    "ai_cache",
+    "ai_calls",
     "api_tokens",
     "board_discovery",
     "companies",

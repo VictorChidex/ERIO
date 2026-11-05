@@ -341,6 +341,7 @@ version = "0.1.0"
 source = { editable = "packages/core" }
 dependencies = [
     { name = "alembic" },
+    { name = "httpx" },
     { name = "nh3" },
     { name = "opensearch-py" },
     { name = "psycopg", extra = ["binary"] },
@@ -352,6 +353,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "alembic", specifier = ">=1.14" },
+    { name = "httpx", specifier = ">=0.27" },
     { name = "nh3", specifier = ">=0.2" },
     { name = "opensearch-py", specifier = ">=2.7" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.2" },
