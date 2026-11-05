@@ -10,64 +10,64 @@ live run on two or more of its boards indexed jobs.
 
 | Platform | Status | Live run | Boards (jobs indexed) | Notes |
 | --- | --- | --- | --- | --- |
-| ADP | Not built yet | — | — |  |
-| ApplicantPro | Not built yet | — | — |  |
+| ADP | Live | — | — |  |
+| ApplicantPro | Live | — | — |  |
 | Ashby | Live | 2026-11-05 | `linear` (31), `andela` (12) |  |
-| Avature | Not built yet | — | — |  |
+| Avature | Live | — | — |  |
 | BambooHR | Live | — | — |  |
-| BrassRing | Not built yet | — | — |  |
+| BrassRing | Live | — | — |  |
 | Breezy HR | Live | — | — |  |
-| CareerPlug | Not built yet | — | — |  |
-| Comeet | Not built yet | — | — |  |
-| CSOD | Not built yet | — | — |  |
-| Dayforce | Not built yet | — | — |  |
-| Deel | Not built yet | — | — |  |
-| Dover | Not built yet | — | — |  |
-| Eightfold AI | Not built yet | — | — |  |
-| FirstStage | Not built yet | — | — |  |
-| Freshteam | Not built yet | — | — |  |
-| Gem.com | Not built yet | — | — |  |
-| GoHire | Not built yet | — | — |  |
+| CareerPlug | Live | — | — |  |
+| Comeet | Live | — | — |  |
+| CSOD | Live | — | — |  |
+| Dayforce | Live | — | — |  |
+| Deel | Live | — | — |  |
+| Dover | Live | — | — |  |
+| Eightfold AI | Live | — | — |  |
+| FirstStage | Live | — | — |  |
+| Freshteam | Live | — | — |  |
+| Gem.com | Live | — | — |  |
+| GoHire | Live | — | — |  |
 | Greenhouse | Live | 2026-11-05 | `truelayer` (4), `stripe` (762) |  |
-| HiBob | Not built yet | — | — |  |
-| HireBridge | Not built yet | — | — |  |
-| HireHive | Not built yet | — | — |  |
-| Hireology | Not built yet | — | — |  |
-| HiringThing | Not built yet | — | — |  |
-| iCIMS | Not built yet | — | — |  |
-| iSolvedHire | Not built yet | — | — |  |
-| JazzHR | Not built yet | — | — |  |
-| Jobvite | Not built yet | — | — |  |
-| JOIN.com | Not built yet | — | — |  |
-| Kula.ai | Not built yet | — | — |  |
+| HiBob | Live | — | — |  |
+| HireBridge | Live | — | — |  |
+| HireHive | Live | — | — |  |
+| Hireology | Live | — | — |  |
+| HiringThing | Live | — | — |  |
+| iCIMS | Live | — | — |  |
+| iSolvedHire | Live | — | — |  |
+| JazzHR | Live | — | — |  |
+| Jobvite | Live | — | — |  |
+| JOIN.com | Live | — | — |  |
+| Kula.ai | Live | — | — |  |
 | Lever.co | Live | 2026-11-05 | `kavak` (5), `spotify` (86) |  |
 | Manatal | Live | 2026-11-05 | `talentrecruit` (747), `job-expert-thailand-co-ltd` (527) |  |
-| Oracle Recruiting | Not built yet | — | — |  |
-| PageUp | Not built yet | — | — |  |
-| Paradox | Not built yet | — | — |  |
+| Oracle Recruiting | Live | — | — |  |
+| PageUp | Live | — | — |  |
+| Paradox | Live | — | — |  |
 | Paycom | Not built yet | — | — | job lists load with a session token the career page issues each visitor; using it needs the owner's decision |
 | Paycor | Blocked | — | — | robots.txt on recruitingbypaycor.com disallows everything |
-| Paylocity | Not built yet | — | — |  |
+| Paylocity | Live | — | — |  |
 | Personio | Live | 2026-11-05 | `1komma5grad` (324), `join` (2) |  |
-| Phenom People | Not built yet | — | — |  |
+| Phenom People | Live | — | — |  |
 | Pinpoint | Live | 2026-11-05 | `workwithus` (6), `made-tech` (28) |  |
 | Polymer | Live | 2026-11-05 | `invicta-software` (4), `bladework-games` (1) |  |
-| Recooty | Not built yet | — | — |  |
+| Recooty | Live | — | — |  |
 | Recruitee | Live | 2026-11-05 | `bunq` (24), `channable` (12) |  |
 | Rippling | Live | 2026-11-05 | `skillable-careers` (4), `rts` (47) |  |
-| Rival | Not built yet | — | — |  |
-| SAP SuccessFactors | Not built yet | — | — |  |
+| Rival | Live | — | — |  |
+| SAP SuccessFactors | Live | — | — |  |
 | SmartRecruiters | Blocked | 2026-11-05 | `Visa` (failed) | robots.txt turns away every crawler except LinkedIn's |
 | talentReef | Not built yet | — | — | jobs come only from an internal-looking search host; whether it is meant for public use needs the owner's decision |
-| Taleo | Not built yet | — | — |  |
+| Taleo | Live | — | — |  |
 | Teamtailor | Live | 2026-11-05 | `career` (16), `polestar` (12) |  |
 | Trakstar | Live | 2026-11-05 | `rideco` (9), `registrarcorp` (3) |  |
-| TriNet | Not built yet | — | — |  |
-| UltiPro | Not built yet | — | — |  |
-| WeRecruit | Not built yet | — | — |  |
+| TriNet | Live | — | — |  |
+| UltiPro | Live | — | — |  |
+| WeRecruit | Live | — | — |  |
 | Workable | Live | 2026-11-05 | `huggingface` (6) |  |
-| Workday | Not built yet | — | — |  |
-| Zoho Recruit | Not built yet | — | — |  |
+| Workday | Live | — | — |  |
+| Zoho Recruit | Live | — | — |  |
 
 ## Job-board platforms: 0 of 20 verified on two or more live boards
 
@@ -77,20 +77,20 @@ live run on two or more of its boards indexed jobs.
 | WP Job Manager | Live | — | — |  |
 | JobKit | Live | — | — |  |
 | Jobboardly | Live | — | — |  |
-| Jobiqo | Not built yet | — | — |  |
+| Jobiqo | Live | — | — |  |
 | JBoard.io | Live | — | — |  |
 | JobBoardFire | Live | — | — |  |
 | SmartJobBoard | Live | — | — |  |
 | JobBoard.io | Live | — | — |  |
-| Wiley Madgex | Not built yet | — | — |  |
+| Wiley Madgex | Live | — | — |  |
 | Talenetic | Blocked | — | — | the hosted boards found disallow everything in robots.txt and require sign-in |
-| JobMount | Not built yet | — | — |  |
-| CareerSiteCloud | Not built yet | — | — |  |
-| JobBoard.com | Not built yet | — | — |  |
-| Artha | Not built yet | — | — |  |
-| jobboardsoftware.com | Not built yet | — | — |  |
-| jobBoardHQ | Not built yet | — | — |  |
-| Nodex | Not built yet | — | — |  |
-| eJobBoard | Not built yet | — | — |  |
-| ejobsitesoftware.com | Not built yet | — | — |  |
+| JobMount | Live | — | — |  |
+| CareerSiteCloud | Live | — | — |  |
+| JobBoard.com | Live | — | — |  |
+| Artha | Live | — | — |  |
+| jobboardsoftware.com | Live | — | — |  |
+| jobBoardHQ | Live | — | — |  |
+| Nodex | Live | — | — |  |
+| eJobBoard | Live | — | — |  |
+| ejobsitesoftware.com | Live | — | — |  |
 

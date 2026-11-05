@@ -3,7 +3,7 @@
   "slug": "adp",
   "name": "ADP",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -11,7 +11,7 @@
   "slug": "applicantpro",
   "name": "ApplicantPro",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -30,7 +30,7 @@
   "slug": "avature",
   "name": "Avature",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -46,7 +46,7 @@
   "slug": "brassring",
   "name": "BrassRing",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -62,7 +62,7 @@
   "slug": "careerplug",
   "name": "CareerPlug",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -70,7 +70,7 @@
   "slug": "comeet",
   "name": "Comeet",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -78,7 +78,7 @@
   "slug": "csod",
   "name": "CSOD",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -86,7 +86,7 @@
   "slug": "dayforce",
   "name": "Dayforce",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -94,7 +94,7 @@
   "slug": "deel",
   "name": "Deel",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -102,7 +102,7 @@
   "slug": "dover",
   "name": "Dover",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -110,7 +110,7 @@
   "slug": "eightfold",
   "name": "Eightfold AI",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -118,7 +118,7 @@
   "slug": "firststage",
   "name": "FirstStage",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -126,7 +126,7 @@
   "slug": "freshteam",
   "name": "Freshteam",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -134,7 +134,7 @@
   "slug": "gem",
   "name": "Gem.com",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -142,7 +142,7 @@
   "slug": "gohire",
   "name": "GoHire",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -161,7 +161,7 @@
   "slug": "hibob",
   "name": "HiBob",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -169,7 +169,7 @@
   "slug": "hirebridge",
   "name": "HireBridge",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -177,7 +177,7 @@
   "slug": "hirehive",
   "name": "HireHive",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -185,7 +185,7 @@
   "slug": "hireology",
   "name": "Hireology",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -193,7 +193,7 @@
   "slug": "hiringthing",
   "name": "HiringThing",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -201,7 +201,7 @@
   "slug": "icims",
   "name": "iCIMS",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -209,7 +209,7 @@
   "slug": "isolvedhire",
   "name": "iSolvedHire",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -217,7 +217,7 @@
   "slug": "jazzhr",
   "name": "JazzHR",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -225,7 +225,7 @@
   "slug": "jobvite",
   "name": "Jobvite",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -233,7 +233,7 @@
   "slug": "join",
   "name": "JOIN.com",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -241,7 +241,7 @@
   "slug": "kula",
   "name": "Kula.ai",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -271,7 +271,7 @@
   "slug": "oracle_recruiting",
   "name": "Oracle Recruiting",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -279,7 +279,7 @@
   "slug": "pageup",
   "name": "PageUp",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -287,7 +287,7 @@
   "slug": "paradox",
   "name": "Paradox",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -311,7 +311,7 @@
   "slug": "paylocity",
   "name": "Paylocity",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -330,7 +330,7 @@
   "slug": "phenom",
   "name": "Phenom People",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -360,7 +360,7 @@
   "slug": "recooty",
   "name": "Recooty",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -390,7 +390,7 @@
   "slug": "rival",
   "name": "Rival",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -398,7 +398,7 @@
   "slug": "successfactors",
   "name": "SAP SuccessFactors",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -424,7 +424,7 @@
   "slug": "taleo",
   "name": "Taleo",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -454,7 +454,7 @@
   "slug": "trinet",
   "name": "TriNet",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -462,7 +462,7 @@
   "slug": "ultipro",
   "name": "UltiPro",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -470,7 +470,7 @@
   "slug": "werecruit",
   "name": "WeRecruit",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -488,7 +488,7 @@
   "slug": "workday",
   "name": "Workday",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -496,7 +496,7 @@
   "slug": "zoho_recruit",
   "name": "Zoho Recruit",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -536,7 +536,7 @@
   "slug": "jobiqo",
   "name": "Jobiqo",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -576,7 +576,7 @@
   "slug": "madgex",
   "name": "Wiley Madgex",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -592,7 +592,7 @@
   "slug": "jobmount",
   "name": "JobMount",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -600,7 +600,7 @@
   "slug": "careersitecloud",
   "name": "CareerSiteCloud",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -608,7 +608,7 @@
   "slug": "jobboard_com",
   "name": "JobBoard.com",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -616,7 +616,7 @@
   "slug": "artha",
   "name": "Artha",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -624,7 +624,7 @@
   "slug": "jobboardsoftware",
   "name": "jobboardsoftware.com",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -632,7 +632,7 @@
   "slug": "jobboardhq",
   "name": "jobBoardHQ",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -640,7 +640,7 @@
   "slug": "nodex",
   "name": "Nodex",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -648,7 +648,7 @@
   "slug": "ejobboard",
   "name": "eJobBoard",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -656,7 +656,7 @@
   "slug": "ejobsitesoftware",
   "name": "ejobsitesoftware.com",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  }
