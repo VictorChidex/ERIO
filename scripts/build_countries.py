@@ -106,7 +106,8 @@ def main() -> None:
 
     rows.sort(key=lambda row: row["code"])
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(rows, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    text = json.dumps(rows, ensure_ascii=False, indent=1) + "\n"
+    OUTPUT.write_text(text, encoding="utf-8", newline="\n")
     print(f"wrote {len(rows)} countries to {OUTPUT.relative_to(ROOT)}")
 
 

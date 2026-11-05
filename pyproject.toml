@@ -35,7 +35,9 @@ select = ["E", "F", "W", "I", "B", "UP", "S", "ASYNC", "RUF"]
 known-first-party = ["erio_core", "erio_api", "erio_ingest"]
 
 [tool.ruff.lint.per-file-ignores]
-"**/tests/**" = ["S101"]
+# Tests use asserts and board names such as board_token="stripe", which the
+# hard-coded-credential rules (S105, S106) misread. They stay on everywhere else.
+"**/tests/**" = ["S101", "S105", "S106"]
 
 [tool.mypy]
 python_version = "3.12"

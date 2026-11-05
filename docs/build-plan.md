@@ -12,7 +12,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | --- | --- | --- | --- |
 | 1 | 1 | Lock decisions and verify sources | In progress |
 | 2 | 2 | Repo, local stack and CI (local parts) | Done except part e |
-| 3 | 3 | Database schema and core models | In progress |
+| 3 | 3 | Database schema and core models | Done |
 | 4 | 4 | First connector and crawl pipeline | Not started |
 | 5 | 5 | Failure-aware status rules | Not started |
 | 6 | 6 | Normalization and country resolution | Not started |
@@ -55,7 +55,8 @@ Built in parts: (a) tables and migrations; (b) the 233 countries and their regio
 - [x] Migrations upgrade and downgrade cleanly on an empty database (automated test, also in CI on a real Postgres).
 - [x] Part b: the 233 countries the globe draws (`web/public/geo/world.json`), with ISO codes, regions and region groups (EU, EUROPE, EMEA, AFRICA, LATAM, NORTH_AMERICA, APAC), plus the 6 first-release sources, seeded by `python -m erio_core.db.seed`. Kosovo, Somaliland and Northern Cyprus have no ISO code and use XK, XS and XN.
 - [x] The 233 country names match the globe's map data exactly (automated test).
-- [ ] `JobRecord` serializes to the field list in the spec.
+- [x] Part c: shared types in `packages/core/erio_core/schemas.py`: `RawPosting` (payload plus content hash), `PartialJob` (what a connector can parse), `JobRecord` (what the API returns).
+- [x] `JobRecord` serializes to the field list in the spec (automated test, field for field and in order).
 
 ## Step 4 — First connector and crawl pipeline
 
