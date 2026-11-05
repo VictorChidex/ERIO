@@ -130,6 +130,10 @@ class CompanyBoard(Base):
     last_ok_at: Mapped[datetime | None]
     consecutive_failures: Mapped[int] = mapped_column(SmallInteger, server_default="0")
     paused_until: Mapped[datetime | None]
+    # The scheduler queues a board once next_crawl_at has passed.
+    next_crawl_at: Mapped[datetime] = mapped_column(server_default=func.now(), index=True)
+    # ETag of the last successful response, sent as If-None-Match.
+    etag: Mapped[str | None] = mapped_column(String(200))
     created_at: Mapped[datetime] = created_at()
 
 

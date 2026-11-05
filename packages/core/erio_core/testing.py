@@ -1,9 +1,11 @@
-"""Shared fixtures for tests that need a real Postgres.
+"""Pytest fixtures for tests that need a real Postgres or Redis.
 
-Each test gets a fresh, empty database on the server named by
+Loaded for every test suite by the repo's root conftest.py. Each database
+test gets a fresh, empty database on the server named by
 ERIO_TEST_DATABASE_URL (default: the local compose Postgres) and drops it
-afterwards. Without a reachable server these tests skip, unless
-ERIO_REQUIRE_DB_TESTS is set (as in CI), where they fail instead.
+afterwards; Redis tests use ERIO_TEST_REDIS_URL. Without a reachable server
+these tests skip, unless ERIO_REQUIRE_DB_TESTS is set (as in CI), where
+they fail instead.
 """
 
 import os
@@ -59,3 +61,24 @@ def migrated_engine(database_url: str) -> Iterator[Engine]:
         yield engine
     finally:
         engine.dispose()
+
+
+@pytest.fixture
+def redis_url() -> Iterator[str]:
+    """URL of a Redis database, flushed before and after the test."""
+    import redis
+
+    url = os.environ.get("ERIO_TEST_REDIS_URL", "redis://127.0.0.1:6379/15")
+    client = redis.Redis.from_url(url, socket_connect_timeout=3)
+    try:
+        client.ping()
+    except redis.RedisError as error:
+        if os.environ.get("ERIO_REQUIRE_DB_TESTS"):
+            raise
+        pytest.skip(f"no Redis for tests: {error}")
+    client.flushdb()
+    try:
+        yield url
+    finally:
+        client.flushdb()
+        client.close()

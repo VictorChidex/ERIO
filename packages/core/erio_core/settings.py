@@ -20,7 +20,16 @@ class Settings(BaseSettings):
     opensearch_url: str = "http://127.0.0.1:9200"
     s3_endpoint_url: str = "http://127.0.0.1:9090"
     raw_bucket: str = "erio-raw"
+    # Local S3Mock accepts unsigned requests; real S3 uses the IAM role.
+    s3_unsigned: bool = True
     dependency_timeout_s: float = 2.0
+
+    # Crawler identity and politeness (spec section 5). The bot page moves to
+    # the product domain once decision D-06 is made.
+    crawler_user_agent: str = "ERIO-Indexer/0.1 (+https://github.com/VictorChidex/ERIO)"
+    crawl_rate_per_host: float = 2.0
+    crawl_timeout_s: float = 20.0
+    crawl_max_response_bytes: int = 10 * 1024 * 1024
 
     @property
     def sqlalchemy_url(self) -> str:

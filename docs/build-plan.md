@@ -63,8 +63,9 @@ Built in parts: (a) tables and migrations; (b) the 233 countries and their regio
 Built in parts: (a) connector interface and Greenhouse adapter; (b) crawl pipeline; (c) scheduler and 20 live boards.
 
 - [x] Part a: `Connector` interface (`board_url`, `extract`, `parse`, `discover`, `list_postings`) and the Greenhouse adapter, with contract tests on recorded fixtures in `fixtures/greenhouse/`.
+- [x] Part b: crawl pipeline in `services/ingest`: polite fetcher (user agent, robots.txt, host allow-list, private-address blocking, 10 MB cap), per-host token bucket in Redis (2 requests per second), conditional requests with `ETag` (Greenhouse answers 304), payloads stored in S3 once per distinct content, a `crawl_runs` row for every attempt, boards paused for 1 hour after 5 failures, Celery task with 3 attempts and jittered backoff.
 - [ ] Raw postings from 20 boards refresh every 15 minutes on staging for 48 hours.
-- [ ] Every fetch is recorded in `crawl_runs` with its outcome and raw payload.
+- [x] Every fetch is recorded in `crawl_runs` with its outcome and raw payload (tests, and a live crawl of a real board).
 - [ ] No host ever exceeds its configured request rate.
 
 ## Step 5 — Failure-aware status rules

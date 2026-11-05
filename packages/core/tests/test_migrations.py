@@ -10,8 +10,7 @@ from sqlalchemy import Engine, create_engine, inspect, text
 from sqlalchemy.exc import IntegrityError
 
 from erio_core.db.models import Base
-
-from .conftest import alembic_config
+from erio_core.testing import alembic_config
 
 EXPECTED_TABLES = {
     "api_tokens",

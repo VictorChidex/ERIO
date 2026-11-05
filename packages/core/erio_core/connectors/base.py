@@ -25,7 +25,7 @@ class FetchResponse:
 
 
 class Fetcher(Protocol):
-    def get(self, url: str) -> FetchResponse: ...
+    def get(self, url: str, etag: str | None = None) -> FetchResponse: ...
 
 
 class FetchError(Exception):
@@ -39,11 +39,17 @@ class FetchError(Exception):
 
 @dataclass(frozen=True)
 class BoardFetch:
-    """A successful fetch: HTTP 200 and a payload that parsed."""
+    """A successful fetch: HTTP 200 with a payload that parsed, or 304.
+
+    ``unchanged`` means the source answered 304 Not Modified to our ETag:
+    every posting seen last time is still listed, and ``postings`` is empty.
+    """
 
     postings: list[RawPosting]
     http_status: int
     body: bytes
+    etag: str | None = None
+    unchanged: bool = False
 
 
 class Connector(ABC):
@@ -73,8 +79,12 @@ class Connector(ABC):
             return token
         return None
 
-    def list_postings(self, fetcher: Fetcher, board_token: str) -> BoardFetch:
-        response = fetcher.get(self.board_url(board_token))
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        response = fetcher.get(self.board_url(board_token), etag)
+        if response.status == 304 and etag:
+            return BoardFetch([], 304, b"", etag=etag, unchanged=True)
         if response.status == 429:
             raise FetchError("rate_limited", "source rate limit", response.status)
         if response.status != 200:
@@ -83,4 +93,5 @@ class Connector(ABC):
             postings = self.extract(response.body, board_token)
         except (ValueError, KeyError, TypeError) as error:
             raise FetchError("parse_error", f"malformed payload: {error}", 200) from error
-        return BoardFetch(postings=postings, http_status=200, body=response.body)
+        etag_header = {k.lower(): v for k, v in response.headers.items()}.get("etag")
+        return BoardFetch(postings=postings, http_status=200, body=response.body, etag=etag_header)

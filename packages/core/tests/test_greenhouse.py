@@ -17,8 +17,10 @@ class FakeFetcher:
         self.responses = responses
         self.requested: list[str] = []
 
-    def get(self, url: str) -> FetchResponse:
+    def get(self, url: str, etag: str | None = None) -> FetchResponse:
         self.requested.append(url)
+        if etag and etag == self.responses.get(url, FetchResponse(404, b"")).headers.get("ETag"):
+            return FetchResponse(304, b"")
         return self.responses.get(url, FetchResponse(404, b"{}"))
 
 
@@ -88,6 +90,20 @@ def test_parses_remote_and_african_postings(greenhouse: GreenhouseConnector) -> 
     assert "Remote, Nigeria" in locations
     assert "Bauchi, Nigeria" in locations
     assert all(job.company_name for job in jobs)
+
+
+def test_unchanged_board_answers_304_to_its_etag(greenhouse: GreenhouseConnector) -> None:
+    response = FetchResponse(200, fixture("truelayer"), {"ETag": 'W/"abc"'})
+    fetcher = _fetch(greenhouse, "truelayer", response)
+
+    first = greenhouse.list_postings(fetcher, "truelayer")
+    again = greenhouse.list_postings(fetcher, "truelayer", etag=first.etag)
+
+    assert first.etag == 'W/"abc"'
+    assert not first.unchanged
+    assert again.unchanged
+    assert again.http_status == 304
+    assert again.postings == []
 
 
 def test_an_explicitly_empty_board_is_a_success(greenhouse: GreenhouseConnector) -> None:
