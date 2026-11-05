@@ -20,6 +20,7 @@ Owner: Chidex (project owner) unless stated otherwise.
 | D-12 | Default branch `main`; every step lands as reviewed commits on `main` | Agreed | Set at build start |
 | D-13 | Local fake S3 is Adobe S3Mock (`adobe/s3mock`), not MinIO | Proposed | MinIO no longer publishes free container images (its Docker Hub repository is gone and quay.io needs a login). S3Mock is Apache-2.0 and accepts requests without any credential, so the local stack stays credential-free. Staging and production use real S3 |
 | D-14 | Build and prove everything on the local `docker compose` stack first; Terraform, staging and cloud deploys come after the local build is complete | Agreed | Owner's call. Search and API v1 (step 9) move before the website (steps 10–11); D-03 can wait until then. See `docs/build-plan.md` |
+| D-15 | API access tiers: requests from networks in `ERIO_API_INTERNAL_CIDRS` (locally, the compose networks) need no token; others use a Bearer token (free 100/min, pro 2,000/min) or are anonymous (30/min per address). Limits use the connecting address, never a forwarded header | Proposed | Keeps the local stack credential-free (D-08): the website calls the API without a token. In production the website fetches a token from the cloud credential vault (Phase 4), and the internal list is left empty |
 
 ## Open items for the project owner
 
@@ -29,4 +30,5 @@ Owner: Chidex (project owner) unless stated otherwise.
 - [ ] D-09: agree the scope of the credential-word check.
 - [ ] D-11: confirm retention periods.
 - [ ] D-13: agree S3Mock as the local fake S3.
+- [ ] D-15: agree the API access tiers and the internal-network rule.
 - [ ] Legal review of the 6 MVP sources (see `docs/sources.md`).

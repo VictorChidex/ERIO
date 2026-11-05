@@ -68,6 +68,17 @@ npm run lint && npm run typecheck && npm run build
 
 The site reads the API address from `ERIO_API_URL` (default `http://localhost:8000`).
 
+### API tokens
+
+Locally the website and your own machine reach the API without a token (decision D-15). To try the token tiers:
+
+```bash
+docker compose exec api python -m erio_api.tokens create --email you@example.com
+curl -H "Authorization: Bearer <token>" http://localhost:8000/v1/stats
+```
+
+The token is printed once and only its hash is stored. `list` and `revoke --id N` manage them.
+
 ### Database migrations
 
 The schema lives in `packages/core/erio_core/db/models.py`; Alembic migrations are in `packages/core/erio_core/db/migrations/`. `docker compose up` applies them automatically. To work with them by hand:

@@ -26,6 +26,14 @@ class Settings(BaseSettings):
     s3_unsigned: bool = True
     dependency_timeout_s: float = 2.0
 
+    # API access (decision D-15). Requests from these networks count as
+    # internal and need no token: in local compose, the website's network.
+    api_internal_cidrs: list[str] = []
+    api_rate_anonymous: int = 30
+    api_rate_free: int = 100
+    api_rate_pro: int = 2000
+    api_rate_internal: int = 6000
+
     # Crawler identity and politeness (spec section 5). The bot page moves to
     # the product domain once decision D-06 is made.
     crawler_user_agent: str = "ERIO-Indexer/0.1 (+https://github.com/VictorChidex/ERIO)"

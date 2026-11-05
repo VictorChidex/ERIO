@@ -83,7 +83,12 @@ services:
   api:
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
-    environment: *erio-addresses
+    environment:
+      <<: *erio-addresses
+      # The compose networks count as internal (decision D-15): the website
+      # needs no token locally. Ports are bound to 127.0.0.1, so nothing
+      # outside this machine reaches the API.
+      ERIO_API_INTERNAL_CIDRS: '["172.16.0.0/12", "192.168.0.0/16", "10.0.0.0/8"]'
     ports: ["127.0.0.1:8000:8000"]
     depends_on:
       migrate: { condition: service_completed_successfully }

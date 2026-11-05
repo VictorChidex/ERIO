@@ -13,12 +13,13 @@ from pydantic import BaseModel
 from sqlalchemy import Engine, case, func, select
 from sqlalchemy.orm import Session
 
-from erio_api.deps import engine, search_alias, search_client
+from erio_api.access import rate_limit
+from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_core.connectors import CONNECTORS
 from erio_core.db.models import CompanyBoard, Country, CrawlRun, Source
 from erio_core.db.seed import load_countries
 
-router = APIRouter(prefix="/v1", tags=["reference"])
+router = APIRouter(prefix="/v1", tags=["reference"], dependencies=[Depends(rate_limit)])
 
 LIVE_WITHIN = timedelta(hours=1)
 
@@ -89,7 +90,7 @@ def _search(
         "query": query or {"term": {"status": "open"}},
         "aggs": aggs,
     }
-    return search.search(index=alias, body=body)
+    return run_search(search, alias, body)
 
 
 @router.get(

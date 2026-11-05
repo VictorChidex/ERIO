@@ -7,9 +7,11 @@ from typing import Any
 import pytest
 from fastapi.testclient import TestClient
 from opensearchpy import OpenSearch
+from redis import Redis
 from sqlalchemy import Engine, func, or_, select
 from sqlalchemy.orm import Session
 
+from erio_api import access
 from erio_api.deps import engine as engine_dependency
 from erio_api.deps import search_alias as alias_dependency
 from erio_api.main import app
@@ -34,7 +36,7 @@ JOBS: list[tuple[Any, ...]] = [
 
 
 @pytest.fixture
-def api(migrated_engine: Engine, search_alias: str) -> Iterator[TestClient]:
+def api(migrated_engine: Engine, search_alias: str, redis_url: str) -> Iterator[TestClient]:
     sync_countries(migrated_engine)
     sync_sources(migrated_engine)
     with Session(migrated_engine) as session, session.begin():
@@ -99,6 +101,11 @@ def api(migrated_engine: Engine, search_alias: str) -> Iterator[TestClient]:
     sync_changed(migrated_engine, search, search_alias, None)
     app.dependency_overrides[engine_dependency] = lambda: migrated_engine
     app.dependency_overrides[alias_dependency] = lambda: search_alias
+    # Rate limits are tested in test_access.py; here they must not get in the way.
+    app.dependency_overrides[access.redis_client] = lambda: Redis.from_url(redis_url)
+    app.dependency_overrides[access.limits] = lambda: dict.fromkeys(
+        ("internal", "pro", "free", "anonymous"), 10_000
+    )
     try:
         yield TestClient(app)
     finally:

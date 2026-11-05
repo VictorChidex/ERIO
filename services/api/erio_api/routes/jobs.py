@@ -10,13 +10,14 @@ from pydantic import BaseModel
 from sqlalchemy import Engine, func, select
 from sqlalchemy.orm import Session
 
-from erio_api.deps import engine, search_alias, search_client
+from erio_api.access import rate_limit
+from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_api.errors import ApiError
 from erio_api.search import BadCursor, JobQuery, Sort, build_search, read_results
 from erio_core.db.models import Company, Job, JobSource, RawPosting
 from erio_core.schemas import JobRecord, JobStatus, RemoteStatus, RoleCategory
 
-router = APIRouter(prefix="/v1", tags=["jobs"])
+router = APIRouter(prefix="/v1", tags=["jobs"], dependencies=[Depends(rate_limit)])
 
 COUNTRY_CODE = re.compile(r"^[A-Z]{2}$")
 
@@ -98,7 +99,7 @@ def search_jobs(
         body = build_search(query)
     except BadCursor as error:
         raise ApiError(400, "invalid_cursor", str(error)) from error
-    return read_results(search.search(index=alias, body=body), per_page)
+    return read_results(run_search(search, alias, body), per_page)
 
 
 @router.get(

@@ -107,9 +107,10 @@ Built in parts: (a) OpenSearch index and indexer; (b) `/v1/jobs` and `/v1/jobs/{
 - [x] Part a: one document per open or unknown job with a resolved place, behind the `jobs` alias; `filter_countries` (own country plus countries a remote role accepts) drives both the country filter and its facet. The indexer follows `jobs.updated_at` every 20 seconds (60-second overlap) and rebuilds into a new index nightly, swapping the alias with no downtime.
 - [x] Part b: `GET /v1/jobs` with `q`, `country`, `include_worldwide`, `remote_status`, `role`, `salary_min_usd`, `platform`, `posted_after`, `status`, `sort`, `cursor`, `per_page`; facets count every filter except their own; cursor pagination with `search_after`; one error shape with a request ID. `GET /v1/jobs/{id}` returns the full description.
 - [x] Part c: `GET /v1/countries` (233 countries, filterable and local counts, top city pins), `GET /v1/platforms` (status, boards, jobs, 24-hour fetch success), `GET /v1/stats` (totals, refresh lag).
+- [x] Part d: Bearer tokens (32 random bytes, only the SHA-256 stored, revocable, `python -m erio_api.tokens`), tiers and sliding-window rate limits in Redis with `X-RateLimit-*` headers and 429 + `Retry-After` (D-15). The API recreates a missing search index instead of failing.
 - [x] `country=NG` returns Nigerian jobs plus remote roles open to Nigeria; `include_worldwide=false` removes worldwide ones (API tests on Postgres and OpenSearch).
 - [x] Facet counts per country match a direct database count (API tests).
-- [ ] p95 < 300 ms at 200 requests per second; over-limit returns 429 with rate-limit headers.
+- [ ] p95 < 300 ms at 200 requests per second (load test in step 13). Over-limit returns 429 with rate-limit headers: done (tests).
 
 ## Step 10 — Website
 
