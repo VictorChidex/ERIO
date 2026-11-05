@@ -13,7 +13,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 1 | 1 | Lock decisions and verify sources | In progress |
 | 2 | 2 | Repo, local stack and CI (local parts) | Done except part e |
 | 3 | 3 | Database schema and core models | Done |
-| 4 | 4 | First connector and crawl pipeline | Not started |
+| 4 | 4 | First connector and crawl pipeline | In progress |
 | 5 | 5 | Failure-aware status rules | Not started |
 | 6 | 6 | Normalization and country resolution | Not started |
 | 7 | 9 | Search index and API v1 | Not started |
@@ -60,6 +60,9 @@ Built in parts: (a) tables and migrations; (b) the 233 countries and their regio
 
 ## Step 4 — First connector and crawl pipeline
 
+Built in parts: (a) connector interface and Greenhouse adapter; (b) crawl pipeline; (c) scheduler and 20 live boards.
+
+- [x] Part a: `Connector` interface (`board_url`, `extract`, `parse`, `discover`, `list_postings`) and the Greenhouse adapter, with contract tests on recorded fixtures in `fixtures/greenhouse/`.
 - [ ] Raw postings from 20 boards refresh every 15 minutes on staging for 48 hours.
 - [ ] Every fetch is recorded in `crawl_runs` with its outcome and raw payload.
 - [ ] No host ever exceeds its configured request rate.
