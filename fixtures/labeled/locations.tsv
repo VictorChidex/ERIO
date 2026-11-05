@@ -1,0 +1,310 @@
+# Labeled location strings for the normalizer's country gate (spec section 6: >= 97%).
+# Columns: location text, expected countries, expected work type.
+# Countries: the ISO codes a country filter should find the job under, comma-separated;
+# WORLDWIDE for remote roles open anywhere; REVIEW when the text alone names no place;
+# @GROUP for a region group (all countries in it), e.g. @EMEA.
+# Rows 1-220 are real strings from crawled Greenhouse boards (2026-11-05), labeled by
+# hand from the text alone; the rest are written to cover regions the first boards miss.
+text	countries	work_type
+Hybrid	REVIEW	hybrid
+Remote - USA	US	remote
+New York, New York, USA	US	onsite
+Singapore	SG	onsite
+Amsterdam	NL	onsite
+United States	US	onsite
+San Francisco, CA • New York, NY • United States	US	onsite
+Dublin	IE	onsite
+Bangalore, India	IN	onsite
+San Francisco	US	onsite
+Distributed	WORLDWIDE	remote
+Munich, Germany	DE	onsite
+Remote, United States	US	remote
+Remote, Canada; Remote, United States	CA,US	remote
+Chicago	US	onsite
+London, United Kingdom	GB	onsite
+London	GB	onsite
+Paris, France	FR	onsite
+In-Office	REVIEW	onsite
+Manila, Philippines	PH	onsite
+Tokyo, Japan	JP	onsite
+Cardiff, London or Remote (UK)	GB	remote
+Bengaluru	IN	onsite
+Madrid, Spain	ES	onsite
+New York, US, New York	US	onsite
+New York	US	onsite
+Singapore, Singapore	SG	onsite
+Berlin	DE	onsite
+Dublin, Ireland	IE	onsite
+Mexico City	MX	onsite
+Toronto	CA	onsite
+Hybrid - New York, NY	US	hybrid
+London, England	GB	onsite
+N/A	REVIEW	onsite
+San Francisco, CA	US	onsite
+Remote, Poland	PL	remote
+Canada	CA	onsite
+Lagos, Nigeria	NG	onsite
+Remote	WORLDWIDE	remote
+Remote, United Kingdom	GB	remote
+Boston, Massachusetts, USA	US	onsite
+San Francisco Bay Area	US	onsite
+Barcelona	ES	onsite
+Boston, Massachusetts, USA; New York, New York, USA	US	onsite
+Remote, Spain	ES	remote
+San Francisco, CA • New York, NY	US	onsite
+Seoul, South Korea	KR	onsite
+Riyadh, Saudi Arabia	SA	onsite
+Denver, Colorado, USA	US	onsite
+Sydney, Australia	AU	onsite
+Sao Paulo, Brazil	BR	onsite
+Lisbon, Portugal	PT	onsite
+US-Remote	US	remote
+Remote, Nigeria	NG	remote
+Mexico City, Mexico	MX	onsite
+Madrid	ES	onsite
+Berlin, Germany	DE	onsite
+Tokyo	JP	onsite
+Sydney	AU	onsite
+Remote - India	IN	remote
+São Paulo	BR	onsite
+San Francisco, California, USA	US	onsite
+Remote, Portugal	PT	remote
+US	US	onsite
+Remote, Germany	DE	remote
+Amsterdam, Netherlands	NL	onsite
+Remote - Canada	CA	remote
+London, UK	GB	onsite
+Redwood City, US, California	US	onsite
+Curitiba | On-site	BR	onsite
+Riga, Latvia	LV	onsite
+Ghana	GH	onsite
+Paris	FR	onsite
+Bengaluru, India	IN	onsite
+Brazil	BR	onsite
+Cairo, Egypt	EG	onsite
+Seattle, WA	US	onsite
+New York, NY	US	onsite
+Bangalore	IN	onsite
+Raleigh, US, North Carolina	US	onsite
+Amsterdam, The Netherlands	NL	onsite
+Amsterdam, The Netherlands; Dublin, Ireland	NL,IE	onsite
+Dubai, United Arab Emirates	AE	onsite
+US Remote	US	remote
+South San Francisco, CA	US	onsite
+Toronto, Canada	CA	onsite
+Remote, Canada	CA	remote
+Milan, Italy	IT	onsite
+Remote - UK	GB	remote
+Ireland	IE	onsite
+Hybrid; In-Office	REVIEW	hybrid
+Remote, Lagos, Nigeria	NG	remote
+US / Canada	US,CA	onsite
+Copenhagen, Denmark	DK	onsite
+Hybrid - San Francisco, CA	US	hybrid
+Remote - Singapore	SG	remote
+New York, New York, USA; San Francisco, California, USA	US	onsite
+Nigeria	NG	onsite
+Gurugram, India	IN	onsite
+São Paulo, Brazil	BR	onsite
+USA	US	onsite
+Remote, US	US	remote
+Remote, Kenya	KE	remote
+Remote, South Africa	ZA	remote
+Chicago, IL	US	onsite
+LOCATION	REVIEW	onsite
+Stockholm, Sweden	SE	onsite
+Tel Aviv, Israel	IL	onsite
+Shanghai	CN	onsite
+California, USA, Remote	US	remote
+Bangkok, Thailand	TH	onsite
+India	IN	onsite
+Remote, India	IN	remote
+Remote, Australia; Remote, Singapore	AU,SG	remote
+Remote, Singapore	SG	remote
+Distributed; Hybrid	WORLDWIDE	remote
+New York, NY • United States	US	onsite
+Remote, London, United Kingdom	GB	remote
+Sydney Or Melbourne	AU	onsite
+NYC-Privy	US	onsite
+San Francisco, Seattle, New York	US	onsite
+New York, New York, USA; Pittsburgh, Pennsylvania, USA	US	onsite
+Curitiba or São Paulo | On-site	BR	onsite
+Leeds, UK	GB	onsite
+San Francisco Bay Area or Remote (U.S.)	US	remote
+Osaka, Japan	JP	onsite
+Kenya	KE	onsite
+Japan	JP	onsite
+Barcelona, Spain	ES	onsite
+San Francisco, United States	US	onsite
+Sao Jose dos Campos	BR	onsite
+Mexico	MX	onsite
+New York; San Francisco	US	onsite
+Remote, South Korea	KR	remote
+Remote, Japan	JP	remote
+Remote, Canada; Remote, United Kingdom; Remote, United States	CA,GB,US	remote
+Remote, Brazil	BR	remote
+Nairobi, Kenya	KE	onsite
+Remote, Pakistan	PK	remote
+Germany	DE	onsite
+NYC, SF	US	onsite
+London, Dublin	GB,IE	onsite
+Dublin, London	IE,GB	onsite
+San Francisco, Seattle	US	onsite
+Remote US	US	remote
+NYC	US	onsite
+Remote, US, Texas	US	remote
+Hybrid - Luxembourg	LU	hybrid
+Remote - Brazil	BR	remote
+Remote - UAE	AE	remote
+Minnesota, USA, Remote	US	remote
+Egypt	EG	onsite
+Remote, UAE	AE	remote
+New York, Chicago, Seattle, San Francisco	US	onsite
+France, Remote; Spain, Remote; The Netherlands, Remote	FR,ES,NL	remote
+Remote (US)	US	remote
+SF, NY, Remote	US	remote
+US - Hybrid	US	hybrid
+Texas, USA, Remote	US	remote
+Remote, Netherlands	NL	remote
+Seattle	US	onsite
+Buenos Aires | Remote	AR	remote
+London OR Dublin	GB,IE	onsite
+West Palm Beach, FL	US	onsite
+Chicago, US, Illinois	US	onsite
+North Carolina, USA, Remote; Tennessee, USA, Remote	US	remote
+Rivers, Nigeria	NG	onsite
+Remote, Bangalore	IN	remote
+Mumbai	IN	onsite
+Vietnam	VN	onsite
+Georgia, USA, Remote	US	remote
+Remote in the US	US	remote
+Anambra, Nigeria	NG	onsite
+Curitiba	BR	onsite
+MX- Mexico City	MX	onsite
+San Francisco, NY, Seattle	US	onsite
+Remote - Cyprus	CY	remote
+Cairo. Egypt	EG	onsite
+US-SEA, US-SF, US-NYC, US-Remote	US	remote
+US-Remote, Chicago	US	remote
+Buenos Aires	AR	onsite
+Sao Paulo	BR	onsite
+Chicago, Atlanta, US-Remote	US	remote
+Remote; Remote, Canada; Remote, United States	CA,US	remote
+Illinois, USA, Remote; Michigan, USA, Remote; Texas, USA, Remote	US	remote
+Dubai, Dubai, United Arab Emirates	AE	onsite
+California, USA, Remote; New York, USA, Remote	US	remote
+Seattle, WA; San Francisco, CA; New York City, NY	US	onsite
+New York, San Francisco	US	onsite
+Illinois, USA, Remote; Michigan, USA, Remote; Minnesota, USA, Remote; Ohio, USA, Remote; Texas, USA, Remote	US	remote
+Germany, Remote; The Netherlands, Remote	DE,NL	remote
+Remote-USA	US	remote
+Taipei,Taiwan	TW	onsite
+Ekiti, Nigeria	NG	onsite
+Toronto Canada, San Francisco, Remote in US, Remote in Canada	CA,US	remote
+Florida, USA, Remote; Georgia, USA, Remote; Massachusetts, USA, Remote; New York, USA, Remote	US	remote
+Toronto, CA	CA	onsite
+US-SF, US-NYC, US-Remote	US	remote
+Dublin, London, Paris, Berlin, Stockholm	IE,GB,FR,DE,SE	onsite
+Remote - United States	US	remote
+Chicago, Illinois, USA	US	onsite
+SF	US	onsite
+South San Francisco HQ, New York, Remote US	US	remote
+Detroit, Michigan	US	onsite
+Remote Ireland	IE	remote
+Maryland, USA, Remote; Virginia, USA, Remote	US	remote
+London or Dublin	GB,IE	onsite
+Seattle, South San Francisco	US	onsite
+Singapore | Hybrid	SG	hybrid
+Taiwan	TW	onsite
+Toronto, Vancouver, Canada-Remote	CA	remote
+Philadelphia, PA	US	onsite
+Chicago, Illinois	US	onsite
+US Remote; Chicago, Atlanta, Canada	US,CA	remote
+US-SF, US-NY, US-Remote	US	remote
+Bayelsa, Nigeria	NG	onsite
+San Francisco, Seattle, New York, US-Remote	US	remote
+Remote - Bangalore, India	IN	remote
+SF, NYC, SEA, CHI	US	onsite
+North Central, Nigeria	NG	onsite
+Accra, Ghana	GH	onsite
+Kumasi	GH	onsite
+Nairobi	KE	onsite
+Kigali, Rwanda	RW	onsite
+Addis Ababa, Ethiopia	ET	onsite
+Kampala	UG	onsite
+Dar es Salaam, Tanzania	TZ	onsite
+Johannesburg, South Africa	ZA	onsite
+Cape Town	ZA	onsite
+Casablanca, Morocco	MA	onsite
+Tunis, Tunisia	TN	onsite
+Abuja, FCT	NG	onsite
+Port Harcourt, Nigeria	NG	onsite
+Dakar, Senegal	SN	onsite
+Abidjan, Côte d'Ivoire	CI	onsite
+Lusaka, Zambia	ZM	onsite
+Harare	ZW	onsite
+Remote - Africa	@AFRICA	remote
+Remote (EMEA)	@EMEA	remote
+Remote - LATAM	@LATAM	remote
+Remote, APAC	@APAC	remote
+Remote - Europe	@EUROPE	remote
+Remote, EU	@EU	remote
+Bogotá, Colombia	CO	onsite
+Medellín	CO	onsite
+Lima, Peru	PE	onsite
+Santiago, Chile	CL	onsite
+Montevideo, Uruguay	UY	onsite
+Guadalajara, Jalisco	MX	onsite
+Monterrey, MX	MX	onsite
+Quito, Ecuador	EC	onsite
+San José, Costa Rica	CR	onsite
+Remote - Argentina	AR	remote
+Jakarta, Indonesia	ID	onsite
+Kuala Lumpur	MY	onsite
+Ho Chi Minh City, Vietnam	VN	onsite
+Hanoi	VN	onsite
+Karachi, Pakistan	PK	onsite
+Lahore	PK	onsite
+Dhaka, Bangladesh	BD	onsite
+Colombo, Sri Lanka	LK	onsite
+Kathmandu, Nepal	NP	onsite
+Hyderabad, Telangana	IN	onsite
+Pune, Maharashtra, India	IN	onsite
+Chennai	IN	onsite
+Shenzhen, China	CN	onsite
+Hong Kong	HK	onsite
+Seoul	KR	onsite
+Auckland, New Zealand	NZ	onsite
+Wellington	NZ	onsite
+Melbourne, VIC	AU	onsite
+Brisbane, Australia	AU	onsite
+Perth	AU	onsite
+Istanbul, Türkiye	TR	onsite
+Tel Aviv	IL	onsite
+Doha, Qatar	QA	onsite
+Abu Dhabi	AE	onsite
+Amman, Jordan	JO	onsite
+Warsaw, Poland	PL	onsite
+Kraków	PL	onsite
+Prague, Czech Republic	CZ	onsite
+Bucharest	RO	onsite
+Kyiv, Ukraine	UA	onsite
+Zurich, Switzerland	CH	onsite
+Vienna, Austria	AT	onsite
+Brussels, Belgium	BE	onsite
+Oslo	NO	onsite
+Helsinki, Finland	FI	onsite
+Athens, Greece	GR	onsite
+Remote, Worldwide	WORLDWIDE	remote
+Work from anywhere	WORLDWIDE	remote
+Anywhere in the world	WORLDWIDE	remote
+Global	WORLDWIDE	remote
+Remote - US or Canada	US,CA	remote
+Hybrid - Lagos	NG	hybrid
+On-site, Nairobi, Kenya	KE	onsite
+Remote within Nigeria	NG	remote
+Vancouver, British Columbia	CA	onsite
+Montreal, QC	CA	onsite
+Calgary, AB	CA	onsite
+Remote (Germany or Austria)	DE,AT	remote
+Paris or London	FR,GB	onsite

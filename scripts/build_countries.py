@@ -85,6 +85,7 @@ def main() -> None:
     rows = []
     for geometry in geometries:
         name = geometry["properties"]["n"]
+        lon, lat = geometry["properties"]["ll"]
         if name in UNASSIGNED:
             code, region, subregion = UNASSIGNED[name]
             numeric = None
@@ -101,6 +102,10 @@ def main() -> None:
                 "region": region,
                 "subregion": subregion or None,
                 "region_groups": region_groups(code, region, subregion),
+                # The globe's label point for the country, used when a job
+                # names a country but no city.
+                "lat": lat,
+                "lon": lon,
             }
         )
 

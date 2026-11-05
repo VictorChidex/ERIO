@@ -15,7 +15,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 3 | 3 | Database schema and core models | Done |
 | 4 | 4 | First connector and crawl pipeline | In progress |
 | 5 | 5 | Failure-aware status rules | Done (live removal check pending) |
-| 6 | 6 | Normalization and country resolution | Not started |
+| 6 | 6 | Normalization and country resolution | In progress |
 | 7 | 9 | Search index and API v1 | Not started |
 | 8 | 10 | Website | Not started |
 | 9 | 11 | Globe and country filter | Not started |
@@ -79,6 +79,9 @@ Status engine in `services/ingest/erio_ingest/status.py`; failure-simulation sui
 
 ## Step 6 — Normalization and country resolution
 
+Built in parts: (a) location and country resolution; (b) salary, role and title; (c) the normalizer that writes canonical jobs, FX rates and the review queue.
+
+- [x] Part a: `erio_core.normalize.location` resolves country, city, state, remote status and scope from the location text, then the source's office hints, against an offline GeoNames gazetteer (`erio_core/data/gazetteer.json.gz`, CC BY 4.0). Labeled set: 305 strings (`fixtures/labeled/locations.tsv`), 220 of them real; country 99.7%, work type 100%.
 - [ ] Country accuracy ≥ 97%, salary ≥ 95%, role ≥ 90% on the labeled sets.
 - [ ] Every job has a country code or is marked worldwide-remote.
 - [ ] Salaries display in the posted currency; filtering uses the USD value.
