@@ -38,7 +38,7 @@
   "slug": "bamboohr",
   "name": "BambooHR",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -54,7 +54,7 @@
   "slug": "breezy",
   "name": "Breezy HR",
   "kind": "ats",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -504,7 +504,7 @@
   "slug": "niceboard",
   "name": "Niceboard",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -512,7 +512,7 @@
   "slug": "wp_job_manager",
   "name": "WP Job Manager",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -520,7 +520,7 @@
   "slug": "jobkit",
   "name": "JobKit",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -528,7 +528,7 @@
   "slug": "jobboardly",
   "name": "Jobboardly",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -544,7 +544,7 @@
   "slug": "jboard",
   "name": "JBoard.io",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -552,7 +552,7 @@
   "slug": "jobboardfire",
   "name": "JobBoardFire",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -560,7 +560,7 @@
   "slug": "smartjobboard",
   "name": "SmartJobBoard",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },
@@ -568,7 +568,7 @@
   "slug": "jobboard_io",
   "name": "JobBoard.io",
   "kind": "board",
-  "status": "planned",
+  "status": "live",
   "examples": [],
   "notes": ""
  },

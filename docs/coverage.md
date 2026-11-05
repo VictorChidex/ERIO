@@ -14,9 +14,9 @@ live run on two or more of its boards indexed jobs.
 | ApplicantPro | Not built yet | — | — |  |
 | Ashby | Live | 2026-11-05 | `linear` (31), `andela` (12) |  |
 | Avature | Not built yet | — | — |  |
-| BambooHR | Not built yet | — | — |  |
+| BambooHR | Live | — | — |  |
 | BrassRing | Not built yet | — | — |  |
-| Breezy HR | Not built yet | — | — |  |
+| Breezy HR | Live | — | — |  |
 | CareerPlug | Not built yet | — | — |  |
 | Comeet | Not built yet | — | — |  |
 | CSOD | Not built yet | — | — |  |
@@ -73,15 +73,15 @@ live run on two or more of its boards indexed jobs.
 
 | Platform | Status | Live run | Boards (jobs indexed) | Notes |
 | --- | --- | --- | --- | --- |
-| Niceboard | Not built yet | — | — |  |
-| WP Job Manager | Not built yet | — | — |  |
-| JobKit | Not built yet | — | — |  |
-| Jobboardly | Not built yet | — | — |  |
+| Niceboard | Live | — | — |  |
+| WP Job Manager | Live | — | — |  |
+| JobKit | Live | — | — |  |
+| Jobboardly | Live | — | — |  |
 | Jobiqo | Not built yet | — | — |  |
-| JBoard.io | Not built yet | — | — |  |
-| JobBoardFire | Not built yet | — | — |  |
-| SmartJobBoard | Not built yet | — | — |  |
-| JobBoard.io | Not built yet | — | — |  |
+| JBoard.io | Live | — | — |  |
+| JobBoardFire | Live | — | — |  |
+| SmartJobBoard | Live | — | — |  |
+| JobBoard.io | Live | — | — |  |
 | Wiley Madgex | Not built yet | — | — |  |
 | Talenetic | Blocked | — | — | the hosted boards found disallow everything in robots.txt and require sign-in |
 | JobMount | Not built yet | — | — |  |

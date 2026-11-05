@@ -1,6 +1,7 @@
 """Source connectors: one small adapter per ATS behind one interface (spec section 5)."""
 
 from erio_core.connectors.ashby import AshbyConnector
+from erio_core.connectors.bamboohr import BambooHRConnector
 from erio_core.connectors.base import (
     BoardFetch,
     Connector,
@@ -10,6 +11,8 @@ from erio_core.connectors.base import (
     JsonPoster,
     poster,
 )
+from erio_core.connectors.breezy import BreezyConnector
+from erio_core.connectors.feed import FeedConnector
 from erio_core.connectors.greenhouse import GreenhouseConnector
 from erio_core.connectors.lever import LeverConnector
 from erio_core.connectors.manatal import ManatalConnector
@@ -39,6 +42,16 @@ CONNECTORS: dict[str, Connector] = {
         TeamtailorConnector(),
         ManatalConnector(),
         PersonioConnector(),
+        BreezyConnector(),
+        BambooHRConnector(),
+        FeedConnector("niceboard", frozenset({"*.niceboard.co"}), "https://{token}.niceboard.co/rss"),
+        FeedConnector("jobboard_io", frozenset({"*.jobboard.io"}), "https://{token}.jobboard.io/jobs.rss"),
+        FeedConnector("jobboardly", frozenset({"*.jobboardly.com"}), "https://{token}.jobboardly.com/feed.xml"),
+        FeedConnector("wp_job_manager", frozenset(), "https://{token}/feed/?post_type=job_listing"),
+        FeedConnector("smartjobboard", frozenset(), "https://{token}/rss/jobs"),
+        FeedConnector("jboard", frozenset({"*.jboard.io"}), "https://{token}.jboard.io/rss"),
+        FeedConnector("jobkit", frozenset({"*.jobkit.io"}), "https://{token}.jobkit.io/rss"),
+        FeedConnector("jobboardfire", frozenset({"*.jobboardfire.com"}), "https://{token}.jobboardfire.com/rss"),
     )
 }
 
