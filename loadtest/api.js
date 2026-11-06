@@ -1,9 +1,13 @@
 // k6 load test for the public API (spec section 10): 200 requests per second,
-// p95 under 300 ms, under 0.1% errors. See loadtest/README.md to run it.
+// p95 under 300 ms, under 0.1% errors. How to run it and the results: docs/load-test.md.
 import http from "k6/http";
 import { check } from "k6";
 
 const BASE = __ENV.BASE_URL || "http://api:8000";
+// The target is 200 requests a second for 2 minutes; RATE and DURATION let a
+// smaller machine find the rate it can sustain.
+const RATE = Number(__ENV.RATE || 200);
+const DURATION = __ENV.DURATION || "2m";
 const COUNTRIES = ["US", "GB", "NG", "KE", "IN", "BR", "DE", "MX", "ZA", "SG", "CA", "IE", "PH", "EG", "GH"];
 const ROLES = ["engineering", "sales", "operations", "data", "product", "design", "marketing"];
 const WORDS = ["engineer", "manager", "sales", "data", "support", "designer", "analyst", "product"];
@@ -11,11 +15,11 @@ const WORDS = ["engineer", "manager", "sales", "data", "support", "designer", "a
 export const options = {
   scenarios: {
     warmup: {
-      executor: "constant-arrival-rate", rate: 50, timeUnit: "1s", duration: "30s",
+      executor: "constant-arrival-rate", rate: Math.min(50, RATE), timeUnit: "1s", duration: "30s",
       preAllocatedVUs: 50, maxVUs: 200, exec: "traffic", tags: { phase: "warmup" },
     },
     steady: {
-      executor: "constant-arrival-rate", rate: 200, timeUnit: "1s", duration: "2m",
+      executor: "constant-arrival-rate", rate: RATE, timeUnit: "1s", duration: DURATION,
       startTime: "30s", preAllocatedVUs: 200, maxVUs: 600, exec: "traffic",
       tags: { phase: "steady" },
     },

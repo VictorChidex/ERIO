@@ -80,8 +80,15 @@ MAPPINGS: dict[str, Any] = {
 @lru_cache
 def client() -> OpenSearch:
     settings = get_settings()
+    # The pool keeps one connection per request thread (the API runs 40 at a
+    # time); with the default of 1, every concurrent request opened a new
+    # connection and dropped it, which stalled the load test (docs/load-test.md).
     return OpenSearch(
-        hosts=[settings.opensearch_url], timeout=10, max_retries=2, retry_on_timeout=True
+        hosts=[settings.opensearch_url],
+        timeout=10,
+        max_retries=2,
+        retry_on_timeout=True,
+        pool_maxsize=40,
     )
 
 

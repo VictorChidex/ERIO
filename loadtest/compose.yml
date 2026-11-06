@@ -1,6 +1,6 @@
 # Load-test override: lifts the internal rate limit (D-15), which would
 # otherwise cap the test at 100 requests a second. Everything else is the
-# normal stack. Use only for load tests; see loadtest/README.md.
+# normal stack. Use only for load tests; see docs/load-test.md.
 services:
   api:
     environment:
