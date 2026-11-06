@@ -1,7 +1,8 @@
 """Turn raw postings into canonical jobs (spec section 6).
 
 Picks up every raw posting whose current content has not been normalized
-yet, reads its stored payload, lets its connector parse it, normalizes it,
+yet, reads its stored payload (before any transaction opens, so a stalled object store
+never holds locks), lets its connector parse it, normalizes it,
 and upserts the job built from it. A new posting's job is then checked for
 duplicates and may merge into another (erio_ingest.dedup). Job status then
 follows the postings through the status rules.
@@ -10,6 +11,7 @@ follows the postings through the status rules.
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import datetime
+from typing import Any
 
 from sqlalchemy import Engine, func, select
 from sqlalchemy.dialects.postgresql import insert
@@ -54,17 +56,21 @@ def normalize_pending(
     engine: Engine, store: RawStore, now: Callable[[], datetime], limit: int = BATCH
 ) -> NormalizeResult:
     result = NormalizeResult()
+    # Read the stored payloads first, with no transaction open: a slow or stalled object
+    # store must never hold row locks that other writers queue behind.
+    payloads = _read_payloads(engine, store, limit, result)
+    if not payloads:
+        return result
     with Session(engine) as session, session.begin():
         rates = latest_rates(session)
         pending = session.execute(
             select(RawPosting, CompanyBoard)
             .join(CompanyBoard, CompanyBoard.id == RawPosting.board_id)
             .where(
-                RawPosting.payload_s3_key.is_not(None),
+                RawPosting.id.in_(list(payloads)),
                 RawPosting.normalized_hash.is_distinct_from(RawPosting.content_hash),
             )
             .order_by(RawPosting.id)
-            .limit(limit)
             .with_for_update(of=RawPosting, skip_locked=True)
         ).all()
 
@@ -73,7 +79,9 @@ def normalize_pending(
             try:
                 # A savepoint per posting: a failure rolls back only that posting.
                 with session.begin_nested():
-                    job_id = _normalize_one(session, posting, board, store, rates, now())
+                    job_id = _normalize_one(
+                        session, posting, board, payloads[posting.id], rates, now()
+                    )
             except Exception as error:
                 result.failed.append(
                     f"{posting.source_slug}:{posting.external_id}: {error!r}"[:300]
@@ -98,11 +106,43 @@ def normalize_pending(
     return result
 
 
+def _read_payloads(
+    engine: Engine, store: RawStore, limit: int, result: NormalizeResult
+) -> dict[int, dict[str, Any]]:
+    """The stored payloads of the next postings to normalize, by posting id.
+
+    A payload that cannot be read is reported as a failure and its posting stays
+    pending, so the next run tries it again.
+    """
+    with Session(engine) as session:
+        wanted = session.execute(
+            select(
+                RawPosting.id,
+                RawPosting.source_slug,
+                RawPosting.external_id,
+                RawPosting.payload_s3_key,
+            )
+            .where(
+                RawPosting.payload_s3_key.is_not(None),
+                RawPosting.normalized_hash.is_distinct_from(RawPosting.content_hash),
+            )
+            .order_by(RawPosting.id)
+            .limit(limit)
+        ).all()
+    payloads: dict[int, dict[str, Any]] = {}
+    for posting_id, source_slug, external_id, key in wanted:
+        try:
+            payloads[posting_id] = store.get_posting(str(key))
+        except Exception as error:
+            result.failed.append(f"{source_slug}:{external_id}: {error!r}"[:300])
+    return payloads
+
+
 def _normalize_one(
     session: Session,
     posting: RawPosting,
     board: CompanyBoard,
-    store: RawStore,
+    payload: dict[str, Any],
     rates: dict[str, float],
     now: datetime,
 ) -> str:
@@ -111,7 +151,7 @@ def _normalize_one(
         source_slug=posting.source_slug,
         board_token=board.board_token,
         external_id=posting.external_id,
-        payload=store.get_posting(str(posting.payload_s3_key)),
+        payload=payload,
     )
     partial = connector.parse(raw)
     job = normalize(partial, rates)

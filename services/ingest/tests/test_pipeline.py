@@ -5,13 +5,14 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pytest
-from sqlalchemy import Engine, func, select
+from sqlalchemy import Engine, func, select, text
 from sqlalchemy.orm import Session
 
 from erio_core.connectors import FetchResponse
 from erio_core.connectors.greenhouse import GreenhouseConnector
 from erio_core.db.models import Company, CompanyBoard, CrawlRun, RawPosting
 from erio_core.db.seed import sync_sources
+from erio_core.schemas import RawPosting as RawPostingData
 from erio_ingest.pipeline import PAUSE_AFTER_FAILURES, crawl_board
 from erio_ingest.storage import MemoryRawStore
 
@@ -212,3 +213,21 @@ def test_quiet_boards_slow_down_and_speed_up_on_change(
     clock.advance()
     crawl_board(migrated_engine, board_id, Source(200, json.dumps(data).encode()), store, clock)
     assert board(migrated_engine, board_id).cadence_min == 15
+
+
+def test_payloads_are_stored_before_the_transaction_that_records_them(
+    migrated_engine: Engine, board_id: int
+) -> None:
+    class Probe(MemoryRawStore):
+        """Tries to lock the board and its postings while a payload is being stored."""
+
+        def put_posting(self, posting: RawPostingData) -> str:
+            with migrated_engine.connect() as connection:  # fails at once if a lock is held
+                connection.execute(text("select id from company_boards for update nowait")).all()
+                connection.execute(text("select id from raw_postings for update nowait")).all()
+            return super().put_posting(posting)
+
+    result = crawl_board(migrated_engine, board_id, Source(200, truelayer()), Probe(), Clock())
+
+    assert (result.outcome, result.new_postings) == ("ok", 3)
+    assert all(p.payload_s3_key for p in postings(migrated_engine))

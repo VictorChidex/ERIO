@@ -38,7 +38,12 @@ def _decode(blob: bytes) -> dict[str, Any]:
 
 class S3RawStore:
     def __init__(self, settings: Settings):
-        config = Config(signature_version=UNSIGNED) if settings.s3_unsigned else None
+        config = Config(
+            signature_version=UNSIGNED if settings.s3_unsigned else None,
+            connect_timeout=settings.s3_connect_timeout_s,
+            read_timeout=settings.s3_read_timeout_s,
+            retries={"max_attempts": 3, "mode": "standard"},
+        )
         self.bucket = settings.raw_bucket
         self.client = boto3.client(
             "s3", endpoint_url=settings.s3_endpoint_url, config=config, region_name="us-east-1"

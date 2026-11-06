@@ -25,6 +25,13 @@ class Settings(BaseSettings):
     # Local S3Mock accepts unsigned requests; real S3 uses the IAM role.
     s3_unsigned: bool = True
     dependency_timeout_s: float = 2.0
+    # A database session left in an open transaction, or waiting on a lock, longer than
+    # this is ended by Postgres itself, so one stalled worker can never freeze the rest.
+    db_idle_in_transaction_s: int = 300
+    db_lock_timeout_s: int = 60
+    # Object storage: a stalled S3 fails fast and is retried instead of hanging a worker.
+    s3_connect_timeout_s: float = 5.0
+    s3_read_timeout_s: float = 30.0
 
     # API access (decision D-15). Requests from these networks count as
     # internal and need no token: in local compose, the website's network.

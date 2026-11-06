@@ -5,15 +5,16 @@ from typing import Any
 
 from opensearchpy import OpenSearch
 from opensearchpy.exceptions import NotFoundError
-from sqlalchemy import Engine, create_engine
+from sqlalchemy import Engine
 
+from erio_core.db.engine import make_engine
 from erio_core.search.index import client, ensure_alias
 from erio_core.settings import get_settings
 
 
 @lru_cache
 def engine() -> Engine:
-    return create_engine(get_settings().sqlalchemy_url, pool_pre_ping=True)
+    return make_engine(get_settings())
 
 
 def search_client() -> OpenSearch:

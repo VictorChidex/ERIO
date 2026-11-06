@@ -11,13 +11,14 @@ from urllib.parse import urlsplit
 
 from celery import Celery, Task, signals
 from redis import Redis
-from sqlalchemy import Engine, create_engine, select
+from sqlalchemy import Engine, select
 from sqlalchemy.orm import Session
 
 from erio_core import live
 from erio_core.ai import Gateway, default_routing
 from erio_core.ai.store import PostgresStore
 from erio_core.connectors import CONNECTORS
+from erio_core.db.engine import make_engine
 from erio_core.db.models import CompanyBoard
 from erio_core.observability import bind, configure_logging, setup_tracing
 from erio_core.search.index import client as search_client
@@ -94,7 +95,7 @@ MAX_RETRIES = 2
 
 @lru_cache
 def engine() -> Engine:
-    return create_engine(settings.sqlalchemy_url, pool_pre_ping=True)
+    return make_engine(settings)
 
 
 def board_hosts() -> set[str]:

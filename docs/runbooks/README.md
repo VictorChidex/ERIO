@@ -11,6 +11,7 @@ One page per alert in `infra/observability/alerts.yml`. Each alert's `runbook_ur
 | QueueBacklogHigh | page | [queue-backlog-high.md](queue-backlog-high.md) |
 | ApiErrorRateHigh | page | [api-error-rate-high.md](api-error-rate-high.md) |
 | MetricsDown | page | [metrics-down.md](metrics-down.md) |
+| (no alert yet) writers stopped, locks held | page | [database-locks-stuck.md](database-locks-stuck.md) |
 
 **Where to look**
 

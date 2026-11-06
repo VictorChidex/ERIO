@@ -113,7 +113,8 @@ services:
   worker:
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
-    command: ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "crawl"]
+    # Four processes, not one per core: more only starves Postgres, OpenSearch and S3 of memory.
+    command: ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "crawl", "-c", "4"]
     environment: *erio-addresses
     depends_on:
       migrate: { condition: service_completed_successfully }

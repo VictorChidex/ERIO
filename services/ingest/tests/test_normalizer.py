@@ -3,9 +3,10 @@
 import json
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
+from typing import Any
 
 import pytest
-from sqlalchemy import Engine, func, select, update
+from sqlalchemy import Engine, func, select, text, update
 from sqlalchemy.orm import Session
 
 from erio_core.connectors import FetchResponse
@@ -162,3 +163,24 @@ def test_salary_is_converted_to_usd(setup: tuple[Engine, MemoryRawStore, int]) -
         job = session.scalars(select(Job).where(Job.salary_currency == "NGN")).one()
     assert (job.salary_min, job.salary_max, job.salary_period) == (3_500_000, 5_000_000, "month")
     assert job.salary_usd_annual_min == 29_400
+
+
+def test_payloads_are_read_with_no_row_locks_held(
+    setup: tuple[Engine, MemoryRawStore, int],
+) -> None:
+    engine, store, _ = setup
+
+    class Probe(MemoryRawStore):
+        """Tries to lock every raw posting while the normalizer is reading from storage."""
+
+        def get_posting(self, key: str) -> dict[str, Any]:
+            with engine.connect() as connection:  # fails at once if a row lock is held
+                connection.execute(text("select id from raw_postings for update nowait")).all()
+            return super().get_posting(key)
+
+    probe = Probe()
+    probe.objects = store.objects
+
+    result = normalize_pending(engine, probe, lambda: T0)
+
+    assert (result.jobs, result.failed) == (4, [])

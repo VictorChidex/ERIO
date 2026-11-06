@@ -155,6 +155,10 @@ def _record_success(
 ) -> CrawlResult:
     now = clock()
     new = changed = reopened = 0
+    # Payloads go to object storage before the transaction opens, so a slow or stalled
+    # store never holds the row locks other writers queue behind. Keys include the
+    # content hash, so storing one twice is harmless.
+    keys = _store_changed_payloads(engine, source_slug, fetched, store)
     with Session(engine) as session, session.begin():
         if fetched.unchanged:
             # 304: everything listed last time is still listed.
@@ -184,14 +188,7 @@ def _record_success(
                 elif previous != posting.content_hash:
                     changed += 1
                 reopened += posting.external_id in closed
-                _upsert_posting(
-                    session,
-                    board_id,
-                    posting,
-                    store,
-                    now,
-                    store_payload=previous != posting.content_hash,
-                )
+                _upsert_posting(session, board_id, posting, keys.get(posting.external_id), now)
             seen = len(fetched.postings)
 
         listed = None if fetched.unchanged else {p.external_id for p in fetched.postings}
@@ -219,13 +216,36 @@ def _record_success(
     )
 
 
+def _store_changed_payloads(
+    engine: Engine, source_slug: str, fetched: BoardFetch, store: RawStore
+) -> dict[str, str]:
+    """Store the payload of every posting that is new or has changed; keys by external id."""
+    if fetched.unchanged or not fetched.postings:
+        return {}
+    with Session(engine) as session:
+        known = dict(
+            session.execute(
+                select(RawPosting.external_id, RawPosting.content_hash).where(
+                    RawPosting.source_slug == source_slug,
+                    RawPosting.external_id.in_([p.external_id for p in fetched.postings]),
+                )
+            )
+            .tuples()
+            .all()
+        )
+    return {
+        posting.external_id: store.put_posting(posting)
+        for posting in fetched.postings
+        if known.get(posting.external_id) != posting.content_hash
+    }
+
+
 def _upsert_posting(
     session: Session,
     board_id: int,
     posting: RawPostingData,
-    store: RawStore,
+    payload_key: str | None,
     now: datetime,
-    store_payload: bool,
 ) -> None:
     values = {
         "source_slug": posting.source_slug,
@@ -243,10 +263,9 @@ def _upsert_posting(
         "missing_since": None,
         "closed_at": None,
     }
-    if store_payload:
-        key = store.put_posting(posting)
-        values["payload_s3_key"] = key
-        updates["payload_s3_key"] = key
+    if payload_key is not None:
+        values["payload_s3_key"] = payload_key
+        updates["payload_s3_key"] = payload_key
     statement = insert(RawPosting).values(values)
     session.execute(
         statement.on_conflict_do_update(
