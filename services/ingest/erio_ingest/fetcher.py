@@ -17,7 +17,7 @@ import time
 import urllib.robotparser
 from collections.abc import Callable, Iterable
 from typing import Any
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
 import httpx
 
@@ -30,6 +30,8 @@ Resolver = Callable[[str], Iterable[str]]
 ROBOTS_TTL_S = 3600.0
 # How often the hosts of registered boards are read again.
 EXTRA_HOSTS_TTL_S = 300.0
+MAX_REDIRECTS = 3
+REDIRECTS = frozenset({301, 302, 303, 307, 308})
 
 
 def resolve(host: str) -> list[str]:
@@ -63,13 +65,30 @@ class PoliteFetcher:
         self._robots: dict[str, tuple[float, urllib.robotparser.RobotFileParser]] = {}
 
     def get(self, url: str, etag: str | None = None) -> FetchResponse:
-        host = self._check_host(url)
-        robots = self._robots_for(host)
-        if not robots.can_fetch(self.settings.crawler_user_agent, url):
-            raise FetchError("http_error", f"robots.txt disallows {url}")
-        delay = robots.crawl_delay(self.settings.crawler_user_agent)
-        headers = {"If-None-Match": etag} if etag else {}
-        return self._request(host, url, headers, float(delay) if delay else None)
+        return self._get(url, {"If-None-Match": etag} if etag else {})
+
+    def get_with(self, url: str, headers: dict[str, str]) -> FetchResponse:
+        """GET with extra request headers, under exactly the same rules as ``get``."""
+        return self._get(url, dict(headers))
+
+    def _get(self, url: str, headers: dict[str, str]) -> FetchResponse:
+        """GET, following up to ``MAX_REDIRECTS`` redirects. Every hop is checked like
+        the first request: https only, an allowed host that resolves to a public
+        address, and robots.txt, so a redirect can never lead anywhere the
+        crawler was not already allowed to go."""
+        for hop in range(MAX_REDIRECTS + 1):
+            host = self._check_host(url)
+            robots = self._robots_for(host)
+            if not robots.can_fetch(self.settings.crawler_user_agent, url):
+                raise FetchError("http_error", f"robots.txt disallows {url}")
+            delay = robots.crawl_delay(self.settings.crawler_user_agent)
+            response = self._request(host, url, headers, float(delay) if delay else None)
+            location = {k.lower(): v for k, v in response.headers.items()}.get("location")
+            if response.status in REDIRECTS and location and hop < MAX_REDIRECTS:
+                url = urljoin(url, location)
+                continue
+            return response
+        raise AssertionError("unreachable")
 
     def post_json(self, url: str, payload: Any) -> FetchResponse:
         """POST a JSON body, under exactly the same rules as ``get``."""

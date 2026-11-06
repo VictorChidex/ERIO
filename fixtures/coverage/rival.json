@@ -1,0 +1,142 @@
+[
+ {
+  "source_slug": "rival",
+  "board_token": "https://jobs.silkroad.com/tvcca/Careers",
+  "external_id": "8e013edabd5d97a9507ad253",
+  "payload": {
+   "page_url": "https://jobs.silkroad.com/TVCCA/Careers/jobs/1442",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "title": "SEP Administrative Assistant",
+    "description": "<p>This position is responsible for providing overall administrative support. This individual must possess high energy and motivation.&nbsp; He/She should be a self-starter who can work independently, be well organized, able to multitask and prioritize projects. This individual will be responsible for preparing program information, data entry, reports, correspondence, faxing, filing, assisting with coordinating meetings and appointments.</p>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Career Opportunities",
+     "value": "1442-088"
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 16.94
+     }
+    },
+    "datePosted": "2024-09-23T15:31:17+00:00",
+    "educationRequirements": "N/A",
+    "employmentType": "TEMPORARY",
+    "experienceRequirements": null,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Career Opportunities"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressLocality": "Uncasville",
+      "addressRegion": "US-CT",
+      "postalCode": "06382",
+      "streetAddress": "601 Norwich New London Tpke Suite 1"
+     }
+    },
+    "occupationalCategory": "Clerical and Administrative",
+    "skills": "<ul>\r\n<li>H S Diploma plus two years of related work experience.</li>\r\n<li>Excellent customer service and communication skills, verbal and written. Strong Word Processing, Excel, PowerPoint and Internet applications skills required.</li>\r\n</ul>\r\n<p>&nbsp;</p>"
+   }
+  },
+  "fetched_at": "2026-11-06T00:42:08.504408Z",
+  "content_hash": "dd393ec65e2ce7e11d07b91d5553425a1bb0c54e8cb28eea423980808bbd26d7"
+ },
+ {
+  "source_slug": "rival",
+  "board_token": "https://jobs.silkroad.com/tvcca/Careers",
+  "external_id": "b636b81f0f55c1c347b3a7aa",
+  "payload": {
+   "page_url": "https://jobs.silkroad.com/TVCCA/Careers/jobs/1626",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "title": "Driver-Commissary/Warehouse",
+    "description": "<p class=\"MsoNormal\" style=\"margin-left: 1.5in; text-align: justify; text-indent: -1.5in;\"><strong style=\"mso-bidi-font-weight: normal;\"><u><span style=\"font-size: 12.0pt;\">JOB SUMMARY</span></u></strong><span style=\"font-size: 12.0pt;\">:<span style=\"mso-tab-count: 1;\">&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: 1.5in; text-align: justify; text-indent: -1.5in;\"><span style=\"font-size: 12.0pt;\">Work with administrative and commissary staff to ensure accurate delivery of food </span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: 1.5in; text-align: justify; text-indent: -1.5in;\"><span style=\"font-size: 12.0pt;\">and supplies to assigned service area.<strong style=\"mso-bidi-font-weight: normal;\"><span style=\"mso-tab-count: 1;\"> </span> </strong>Load trucks<strong style=\"mso-bidi-font-weight: normal;\">. </strong>Perform daily safety check of vehicles<strong style=\"mso-bidi-font-weight: normal;\">. </strong></span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: 1.5in; text-align: justify; text-indent: -1.5in;\"><span style=\"font-size: 12.0pt;\">Keep accurate logs of mileage and maintenance.<span style=\"mso-spacerun: yes;\">&nbsp; </span>Ensure deliveries are complete and timely. </span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: 1.5in; text-align: justify; text-indent: -1.5in;\"><span style=\"font-size: 12.0pt;\">Be responsible for cleanliness and routine maintenance of trucks.<span style=\"mso-spacerun: yes;\">&nbsp;&nbsp; </span></span></p>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Career Opportunities",
+     "value": "1626-088"
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 16.94
+     }
+    },
+    "datePosted": "2026-10-08T14:37:16+00:00",
+    "educationRequirements": "HIG",
+    "employmentType": "PART_TIME",
+    "experienceRequirements": null,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Career Opportunities"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressLocality": "Bozrah",
+      "addressRegion": "US-CT",
+      "postalCode": "06330",
+      "streetAddress": "81 Stockhouse Road"
+     }
+    },
+    "occupationalCategory": "Drivers",
+    "skills": "<p class=\"MsoNormal\" style=\"text-align: justify;\"><strong style=\"mso-bidi-font-weight: normal;\"><u><span style=\"font-size: 12.0pt;\">QUALIFICATIONS:</span></u></strong></p>\r\n<ul style=\"margin-top: 0in;\" type=\"disc\">\r\n<li class=\"MsoNormal\" style=\"text-align: justify; mso-list: l0 level1 lfo1;\"><span style=\"font-size: 12.0pt;\">High School Diploma or equivalent</span></li>\r\n<li class=\"MsoNormal\" style=\"text-align: justify; mso-list: l0 level1 lfo1;\"><span style=\"font-size: 12.0pt;\">Possess current Connecticut driver&rsquo;s license</span></li>\r\n<li class=\"MsoNormal\" style=\"mso-list: l0 level1 lfo1;\"><span style=\"font-size: 12.0pt;\">Excellent driving record and able to drive truck or large vehicle</span></li>\r\n<li class=\"MsoNormal\" style=\"mso-list: l0 level1 lfo1;\"><span style=\"font-size: 12.0pt;\">Be able to drive standard transmission </span></li>\r\n<li class=\"MsoNormal\" style=\"mso-list: l0 level1 lfo1;\"><span style=\"font-size: 12.0pt;\">Knowledge of basic automobile maintenance </span></li>\r\n</ul>\r\n<p><span style=\"font-size: 12.0pt;\">One year experience in delivery driving</span></p>\r\n<p class=\"MsoNoSpacing\" style=\"margin-left: .5in;\"><strong><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">TVCCA offers a generous benefits package including;</span></strong><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">&nbsp;</span></p>\r\n<ul>\r\n<li class=\"MsoNoSpacing\"><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">403B Retirement Plan</span></li>\r\n<li class=\"MsoNoSpacing\"><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">Medical, Dental, Vision, Life &amp; Accidental Death benefits, short-term disability, long-term disability and voluntary benefits</span></li>\r\n<li class=\"MsoNoSpacing\"><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">12 paid Holidays, vacation/sick time</span></li>\r\n</ul>"
+   }
+  },
+  "fetched_at": "2026-11-06T00:42:09.042364Z",
+  "content_hash": "fb653990ba4c1236ceb72ff7a4d1e769c4973eb6fb28410b0d440f2ae700e504"
+ },
+ {
+  "source_slug": "rival",
+  "board_token": "https://jobs.silkroad.com/tvcca/Careers",
+  "external_id": "b2f6bc080c6531e521ddc2f4",
+  "payload": {
+   "page_url": "https://jobs.silkroad.com/TVCCA/Careers/jobs/1611",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "title": "Assistant Teacher, Little Learners",
+    "description": "<p><strong>JOB SUMMARY</strong></p>\r\n<p>The Assistant Teacher is responsible for the care, supervision, and safety of center children. Assists staff in planning and implementing age-appropriate curriculum. Responsible for keeping classroom and playground clean, safe, and orderly. Must have compassion and understanding of needs of children and families from economically and culturally diverse backgrounds. Must learn, implement, and follow all program policies and procedures. Encourage self-esteem and independence for the social, emotional, cognitive and physical needs of each child. Ensure that health, safety and nutritional education is integrated into the overall curriculum planning. Responsible for the program operations in the absence of the Head Teacher.</p>\r\n<p>Pay rates are as follows:</p>\r\n<ul>\r\n<li>$19.50 Enrolled in a CDA or degree program&nbsp;</li>\r\n<li>$19.75 CDA and 12 ECE credits</li>\r\n<li>$20.50 Associate&rsquo;s Degree in ECE or relevant field with 12 ECE credits</li>\r\n<li>$21.50 Bachelor&rsquo;s Degree in ECE or relevant field with 12 ECE credits</li>\r\n</ul>\r\n<p>New London</p>\r\n<p class=\"MsoNoSpacing\" style=\"margin-left: 1.0in;\"><strong style=\"mso-bidi-font-weight: normal;\">TVCCA offers a generous benefits package including;</strong></p>\r\n<ul>\r\n<li class=\"MsoNoSpacing\"><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">403B Retirement Plan</span></li>\r\n<li class=\"MsoNoSpacing\"><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">Medical, Dental, Vision, Life &amp; Accidental Death benefits, short-term disability, long-term disability and voluntary benefits</span></li>\r\n<li class=\"MsoNoSpacing\"><span style=\"font-size: 12.0pt; font-family: 'Times New Roman',serif;\">13 paid Holidays, vacation/sick time</span></li>\r\n</ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Career Opportunities",
+     "value": "1611-088"
+    },
+    "datePosted": "2026-09-01T17:46:52+00:00",
+    "educationRequirements": "COM",
+    "employmentType": "FULL_TIME",
+    "experienceRequirements": null,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Career Opportunities"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressLocality": "New London",
+      "addressRegion": "US-CT",
+      "postalCode": "06320",
+      "streetAddress": "387 Bayonet Street"
+     }
+    },
+    "occupationalCategory": "Early Childhood Education",
+    "skills": "<p class=\"MsoNormal\"><strong><u><span style=\"font-size: 12.0pt; color: black; text-transform: uppercase;\">Qualifications :</span></u></strong></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .5in; text-indent: -.5in; mso-list: l1 level1 lfo1; tab-stops: list .25in; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\">Valid CDA with 12 credits in ECE, Associate&rsquo;s or Bachelor&rsquo;s degree in ECE or a related field with 12 ECE credits, preferred.</span></p>\r\n<p class=\"MsoNormal\" style=\"text-autospace: ideograph-numeric ideograph-other;\"><span style=\"font-size: 12.0pt;\"><span style=\"mso-tab-count: 2;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>OR</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .5in; text-indent: -.5in; mso-list: l1 level1 lfo1; tab-stops: list .25in; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\"><span style=\"mso-spacerun: yes;\">&nbsp;</span>Enrolled in a program that will lead to an Associate&rsquo;s or Bachelor&rsquo;s degree in ECE or a related field with 12 ECE credits, to be completed within three years of the time of hire.</span></p>\r\n<p class=\"MsoNormal\" style=\"text-autospace: ideograph-numeric ideograph-other;\"><span style=\"font-size: 12.0pt;\"><span style=\"mso-tab-count: 2;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>OR</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .5in; text-indent: -.5in; mso-list: l1 level1 lfo1; tab-stops: list .25in; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\">Enrolled in a CDA credential program, and obtain 12 ECE credits to be completed within two years of the time of hire. </span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .25in; text-indent: -.25in; mso-list: l0 level1 lfo2; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\">Have access to reliable, insured transportation.</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .25in; text-indent: -.25in; mso-list: l0 level1 lfo2; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\">Must have or obtain and maintain CT child care first-aid, child CPR, and medication administration certification.</span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .25in; text-indent: -.25in; mso-list: l0 level1 lfo2; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\">Provide a TVCCA Staff Statement of Good Health statement signed by a physician, physician&rsquo;s assistant, or nurse practitioner completed within twelve (12) months before the date of employment, and every twenty-four (24) months for current staff.<span style=\"mso-spacerun: yes;\">&nbsp; </span></span></p>\r\n<p class=\"MsoNormal\" style=\"margin-left: .25in; text-indent: -.25in; mso-list: l0 level1 lfo2; text-autospace: ideograph-numeric ideograph-other;\"><!-- [if !supportLists]--><span style=\"font-size: 12.0pt; font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;\"><span style=\"mso-list: Ignore;\">&middot;<span style=\"font: 7.0pt 'Times New Roman';\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style=\"font-size: 12.0pt;\">Provide a written report of negative tuberculin test completed within twelve (12) months prior to the date of employment, or for a known prior reactor, no evidence of active tuberculosis on a chest x-ray.</span></p>"
+   }
+  },
+  "fetched_at": "2026-11-06T00:42:09.456700Z",
+  "content_hash": "7fa7bac2e4d3e64459a775560af733f37eefef5743226f9906c885bea4a7ddc0"
+ }
+]

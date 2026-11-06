@@ -1,0 +1,150 @@
+[
+ {
+  "source_slug": "careerplug",
+  "board_token": "https://ufc-gym-careers.careerplug.com/jobs",
+  "external_id": "459973d461384aecd7764105",
+  "payload": {
+   "page_url": "https://ufc-gym-careers.careerplug.com/jobs/3680262",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Front Desk Opener",
+    "description": "&lt;div class=&quot;trix-content&quot;&gt;\n  &lt;div class=&quot;trix-content&quot;&gt;  &lt;div&gt;&lt;strong&gt;We Empower the Fighting Spirit in You!&lt;/strong&gt;&lt;/div&gt;\n&lt;div&gt;&lt;br&gt;&lt;/div&gt;\n&lt;div&gt;&lt;strong&gt;We Offer&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;strong&gt;Compensation package:&lt;/strong&gt; Competitive base salary plus bonus.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Comprehensive health benefits:&lt;/strong&gt; Full coverage for medical, dental, and vision.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Free membership perks:&lt;/strong&gt; Complimentary access to all our fitness centers.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Employee discounts and special offers:&lt;/strong&gt; Exclusive deals on fitness products and wellness services.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Flexible scheduling tailored to your needs:&lt;/strong&gt; Work hours that fit your personal and professional commitments.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;A fitness-focused workplace vibe: &lt;/strong&gt;On-site fitness classes, wellness programs, and a supportive community.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Free or discounted recertification (NASM, ACE, ISSA): &lt;/strong&gt;Maintain and upgrade your certifications at little to no cost.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Expand your client base: &lt;/strong&gt;Leverage our large member network to grow your business.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Ongoing in-house training&lt;/strong&gt;: Regular workshops and training sessions.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Plus, more exciting perks&lt;/strong&gt;: Team-building events, wellness challenges, and UFC recognition programs!&lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt;&lt;strong&gt;Responsibilities&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;Responsible for food preparation and stocking Juice Bar Grab N Go.&lt;/li&gt;\n&lt;li&gt;Ensures self-serve station is fully stocked (Spoons, Forks, Knifes etc.).&lt;/li&gt;\n&lt;li&gt;Maintains Juice Bar cleanliness. &lt;/li&gt;\n&lt;li&gt;Keeps merchandise clean and ready to be displayed.&lt;/li&gt;\n&lt;li&gt;Oversees inventory and ensure items are stocked in Gym Store.&lt;/li&gt;\n&lt;li&gt;Responsible for hitting individual sales goals assigned to you by the Merchandise Supervisor.&lt;/li&gt;\n&lt;li&gt;Greets and assists customers and advises on utilization and care of merchandise.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt;&lt;strong&gt;Qualifications&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;Ensures that guests and members are warmly greeted and promptly assisted.&lt;/li&gt;\n&lt;li&gt;Ensures incoming calls are answered in a professional and efficient manner. &lt;/li&gt;\n&lt;li&gt;Responds effectively to member questions and requests.&lt;/li&gt;\n&lt;li&gt;Maintains the Maintenance Log, Fitness profiles, telephone inquiries and group fitness reservations.&lt;/li&gt;\n&lt;li&gt;Keeps front desk and lobby neat and clean at all times.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt; &lt;strong&gt;About UFC GYM&lt;/strong&gt;\n&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;The ultimate “Big Gym” experience, UFC GYM raises the bar of what big-box gyms should offer their members. &lt;/li&gt;\n&lt;li&gt;Members get everything they need under one roof – robust cardio equipment, coach-led group classes, weightlifting and free weights, martial arts and MMA-inspired fitness training, martial arts equipment, youth programming, personal training, yoga, Pilates, and more!&lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt;&lt;br&gt;&lt;/div&gt;\n&lt;div&gt;Apply today! We respond to all applications!&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n",
+    "datePosted": "2026-11-06T00:21:17+00:00",
+    "employmentType": "FULL_TIME",
+    "directApply": true,
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "CareerPlug Job ID",
+     "value": "3680262"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "UFC Gym",
+     "sameAs": "https://ufcgym.com/"
+    },
+    "industry": "Fitness",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "new hyde ",
+      "addressRegion": "NY",
+      "postalCode": "11040",
+      "addressCountry": "US"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "HOUR",
+      "value": "14.00"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:34:21.157461Z",
+  "content_hash": "36f773ea641717afe7668c1e680ce7f842e0b19cd6961a97fcc5df74c866852f"
+ },
+ {
+  "source_slug": "careerplug",
+  "board_token": "https://ufc-gym-careers.careerplug.com/jobs",
+  "external_id": "c9c86adcd41ed809a84e684e",
+  "payload": {
+   "page_url": "https://ufc-gym-careers.careerplug.com/jobs/3154500",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Membership Sales Associate",
+    "description": "&lt;div class=&quot;trix-content&quot;&gt;\n  &lt;div&gt; &lt;/div&gt;&lt;div&gt;&lt;strong&gt;UFC GYM Mission&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;We are the original. The world leader. The trail-blazer of MMA-inspired fitness. Rooted in authenticity, we are an extension of the Ultimate Fighting Championship® and proud to make the training programs and benefits of elite MMA athletes accessible to all, regardless of age or athletic ability.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;We Offer&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;\n&lt;strong&gt;Compensation package:&lt;/strong&gt; Competitive base salary plus commission and bonus.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Comprehensive health benefits:&lt;/strong&gt; Full coverage for medical, dental, and vision.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Free membership perks:&lt;/strong&gt; Complimentary access to all our fitness centers.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Employee discounts and special offers:&lt;/strong&gt; Exclusive deals on fitness products and wellness services.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Flexible scheduling tailored to your needs:&lt;/strong&gt; Work hours that fit your personal and professional commitments.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;A fitness-focused workplace vibe: &lt;/strong&gt;On-site fitness classes, wellness programs, and a supportive community.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Free or discounted recertification (NASM, ACE, ISSA): &lt;/strong&gt;Maintain and upgrade your certifications at little to no cost.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Expand your client base: &lt;/strong&gt;Leverage our large member network to grow your business.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Ongoing in-house training&lt;/strong&gt;: Regular workshops and training sessions.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Plus, more exciting perks&lt;/strong&gt;: Team-building events, wellness challenges, and UFC recognition programs!&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Responsibilities&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;The Membership Specialist (MS) will represent UFC GYM by providing a welcoming, informative and entertaining experience for all members and guests during their visits. &lt;/li&gt;\n&lt;li&gt;The Membership Specialist is responsible for driving potential members into the gym to deliver industry leading customer services to them as well as our current members. &lt;/li&gt;\n&lt;li&gt;Book membership appointments through productive phone activities and meet or exceed monthly appointment goals set forth by the company. &lt;/li&gt;\n&lt;li&gt;Ensure that 100% of guests are presented the “Fitness Tour” when touring guests around the gym as detailed in the Membership Specialist Playbook.&lt;/li&gt;\n&lt;li&gt;Follow up with members that have enrolled to ensure we are exceeding expectations.&lt;/li&gt;\n&lt;li&gt;Provide the highest level of customer service possible when communicating and interacting with guests. &lt;/li&gt;\n&lt;li&gt;Assist in maintaining a clean and operational facility.&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Qualifications&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;In-depth knowledge of sales practices and techniques.&lt;/li&gt;\n&lt;li&gt;General understanding of Fitness Industry.&lt;/li&gt;\n&lt;li&gt;Ability to work with computers. &lt;/li&gt;\n&lt;li&gt;Must have good interpersonal communication skills.&lt;/li&gt;\n&lt;li&gt;Excellent customer service skills&lt;/li&gt;\n&lt;li&gt;Independent, self-starter with strong organizational skills.&lt;/li&gt;\n&lt;li&gt;Must be a team player &lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt; &lt;strong&gt;About UFC GYM&lt;/strong&gt;\n&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;The ultimate “Big Gym” experience, UFC GYM raises the bar of what big-box gyms should offer their members. &lt;/li&gt;\n&lt;li&gt;Members get everything they need under one roof – robust cardio equipment, coach-led group classes, weightlifting and free weights, martial arts and MMA-inspired fitness training, martial arts equipment, youth programming, personal training, yoga, Pilates, and more!&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Apply today! We respond to all applications!&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt; &lt;br&gt;&lt;br&gt;\n&lt;/div&gt;&lt;div&gt;\n&lt;br&gt; &lt;/div&gt;\n&lt;/div&gt;\n",
+    "datePosted": "2025-10-28T01:19:22+00:00",
+    "employmentType": "FULL_TIME",
+    "directApply": true,
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "CareerPlug Job ID",
+     "value": "3154500"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "UFC Gym",
+     "sameAs": "https://ufcgym.com/"
+    },
+    "industry": "Fitness",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "La Mirada",
+      "addressRegion": "CA",
+      "postalCode": "90638",
+      "addressCountry": "US"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "MONTH",
+      "minValue": "5000.00",
+      "maxValue": "7500.00"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:34:22.087627Z",
+  "content_hash": "89b0af18bb8980ce57b65487686c7df7983af299b315599480305b3fb29f7762"
+ },
+ {
+  "source_slug": "careerplug",
+  "board_token": "https://ufc-gym-careers.careerplug.com/jobs",
+  "external_id": "a9a13ea90d29d93ff5c55125",
+  "payload": {
+   "page_url": "https://ufc-gym-careers.careerplug.com/jobs/3383212",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Recovery Attendant",
+    "description": "&lt;div class=&quot;benefits&quot;&gt;\n  &lt;div&gt;&lt;strong&gt;Benefits:&lt;/strong&gt;&lt;/div&gt;\n  &lt;ul&gt;\n      &lt;li&gt;Bonus based on performance&lt;/li&gt;\n      &lt;li&gt;Health insurance&lt;/li&gt;\n      &lt;li&gt;Training &amp; development&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/div&gt;\n&lt;div class=&quot;trix-content&quot;&gt;\n  &lt;div&gt;&lt;strong&gt;Position Overview&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;UFC GYM Recovery Attendant is responsible for ensuring a positive customer experience and delivering great member service in our Recovery Centers. &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;We Offer&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;\n&lt;strong&gt;Compensation&lt;/strong&gt;: Commission and bonus based on sales and performance.&lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Flexibility&lt;/strong&gt;: Depending on client needs, we will prioritize your scheduling preferences. We have multiple shifts for you to choose from. &lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Growth&lt;/strong&gt;: We provide online certifications and training. Select courses provide required CEUs to renew your certification(s).  &lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;Paid Training&lt;/strong&gt;: Learn the fundamentals of sales and growing your business. We offer a paid onboarding program along with ongoing 1:1 coaching. &lt;/li&gt;\n&lt;li&gt;\n&lt;strong&gt;UFC GYM&lt;/strong&gt;: Work for a fitness brand that is internationally famous! &lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;strong&gt;Responsibilities&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;Focus on changing lives through Service, Science, and Sales.&lt;/li&gt;\n&lt;li&gt;Be a brand ambassador of UFC Gym and its “Train Different” philosophy.&lt;/li&gt;\n&lt;li&gt;Bring T.R.A.I.N (Timely, Ready, Aware, Inspiring, Noble) to life.&lt;/li&gt;\n&lt;li&gt;Conduct safe and effective Recovery sessions using our state of the art modalities.&lt;/li&gt;\n&lt;li&gt;Maintain the organization and neat presentation of the Recovery Center.&lt;/li&gt;\n&lt;li&gt;Respond professionally to requests and inquiries from guests, members and staff.&lt;/li&gt;\n&lt;li&gt;Sell subscriptions to the Recovery Center and provide introductory session for members and guests. &lt;/li&gt;\n&lt;li&gt;Assist members and encourage member involvement in the Recovery Center. &lt;/li&gt;\n&lt;li&gt;Ensure accurate administration of client programs (dotFIT, supplements, and modality usage). &lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;strong&gt;Qualifications&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;Current dotFIT certification (or in progress).&lt;/li&gt;\n&lt;li&gt;Current CPR/AED certification (or in progress).&lt;/li&gt;\n&lt;li&gt;High school diploma or general education degree (GED).&lt;/li&gt;\n&lt;li&gt;Background in customer service and sales.&lt;/li&gt;\n&lt;li&gt;Ability to work, setup, and execute successful weekends.&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Benefits:&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;Employee discounts&lt;/li&gt;\n&lt;li&gt;Free uniforms&lt;/li&gt;\n&lt;li&gt;Health insurance for eligible employees&lt;/li&gt;\n&lt;li&gt;Opportunity for advancement&lt;/li&gt;\n&lt;li&gt;Training &amp; development&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;strong&gt;Benefits:&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;Bonus based on performance for eligible employees&lt;/li&gt;\n&lt;li&gt;Competitive salary&lt;/li&gt;\n&lt;li&gt;Dental insurance for eligible employees&lt;/li&gt;\n&lt;li&gt;Employee discounts&lt;/li&gt;\n&lt;li&gt;Flexible schedule&lt;/li&gt;\n&lt;li&gt;Free uniforms&lt;/li&gt;\n&lt;li&gt;Health insurance for eligible employees&lt;/li&gt;\n&lt;li&gt;Opportunity for advancement&lt;/li&gt;\n&lt;li&gt;Paid time off&lt;/li&gt;\n&lt;li&gt;Training &amp; development&lt;/li&gt;\n&lt;li&gt;Tuition assistance&lt;/li&gt;\n&lt;li&gt;Vision insurance for eligible employees&lt;/li&gt;\n&lt;li&gt;Wellness resources&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt; &lt;strong&gt;About UFC GYM&lt;/strong&gt;\n&lt;/div&gt;&lt;ul&gt;\n&lt;li&gt;The ultimate “Big Gym” experience, UFC GYM raises the bar of what big-box gyms should offer their members. &lt;/li&gt;\n&lt;li&gt;Members get everything they need under one roof – robust cardio equipment, coach-led group classes, weightlifting and free weights, martial arts and MMA-inspired fitness training, martial arts equipment, youth programming, personal training, yoga, Pilates, and more!&lt;/li&gt;\n&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Apply today! We respond to all applications!&lt;/div&gt;\n&lt;/div&gt;\n",
+    "datePosted": "2026-04-29T15:53:52+00:00",
+    "employmentType": "PART_TIME",
+    "directApply": true,
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "CareerPlug Job ID",
+     "value": "3383212"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "UFC Gym",
+     "sameAs": "https://ufcgym.com/"
+    },
+    "industry": "Fitness",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "La Mirada",
+      "addressRegion": "CA",
+      "postalCode": "90638",
+      "addressCountry": "US"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "HOUR",
+      "value": "5.00"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:34:23.119396Z",
+  "content_hash": "153ad74424c6eac4e3d0668cf979c2d5fef99c1052aeac1d508d309280d97921"
+ }
+]

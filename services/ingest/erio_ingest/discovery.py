@@ -44,9 +44,19 @@ class DiscoveryResult:
     found: dict[str, list[str]] = field(default_factory=dict)  # source -> tokens
 
 
+# Sources whose board tokens can be guessed from a company's name or domain. Other
+# platforms' boards are found from their sitemaps and customer lists instead: probing
+# them with guessed names would register other companies' boards.
+DISCOVERABLE = frozenset(
+    {"greenhouse", "lever", "ashby", "smartrecruiters", "recruitee", "workable"}
+)
+
+
 def due_pairs(session: Session, now: datetime, limit: int) -> list[tuple[Company, str]]:
     """Company and source pairs with no board, never tried or not tried lately."""
-    live_sources = select(Source.slug).where(Source.status != "paused", Source.slug.in_(CONNECTORS))
+    live_sources = select(Source.slug).where(
+        Source.status != "paused", Source.slug.in_(DISCOVERABLE & CONNECTORS.keys())
+    )
     has_board = select(CompanyBoard.id).where(
         CompanyBoard.company_id == Company.id, CompanyBoard.source_slug == Source.slug
     )

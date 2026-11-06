@@ -1,13 +1,23 @@
 """Small readers shared by the connectors."""
 
+import html
+import re
 from datetime import UTC, datetime
 from typing import Any
+
+from pydantic import HttpUrl
 
 from erio_core.schemas import SalaryHint, SalaryPeriod
 
 PERIOD_WORDS: dict[str, SalaryPeriod] = {
     "year": "year", "annual": "year", "month": "month", "hour": "hour"
 }  # fmt: skip
+
+BOLD = re.compile(r"\*\*(.+?)\*\*")
+LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+BULLET = re.compile(r"[-*+] (.*)")
+HEADING = re.compile(r"#{1,6}\s+(.*)")
+AMOUNT = re.compile(r"\d[\d,]*(?:\.\d+)?")
 
 
 def iso_datetime(value: Any) -> datetime | None:
@@ -22,6 +32,15 @@ def epoch_ms(value: Any) -> datetime | None:
     if not isinstance(value, int | float) or value <= 0:
         return None
     return datetime.fromtimestamp(value / 1000, tz=UTC)
+
+
+def epoch_seconds(value: Any) -> datetime | None:
+    """Unix seconds, as a number or a numeric string."""
+    try:
+        seconds = float(value)
+    except (TypeError, ValueError):
+        return None
+    return datetime.fromtimestamp(seconds, tz=UTC) if seconds > 0 else None
 
 
 def salary_period(text: Any) -> SalaryPeriod | None:
@@ -48,6 +67,47 @@ def salary(low: Any, high: Any, currency: Any, period: Any) -> SalaryHint | None
     return SalaryHint(min=low_n, max=high_n, currency=code, period=named)
 
 
+def as_url(value: str) -> HttpUrl:
+    return HttpUrl(value)
+
+
+def numbers_in(text: str | None, limit: int = 2) -> list[float]:
+    """The first amounts written in a string: "160,000–200,000 + equity" is 160000, 200000."""
+    return [float(n.replace(",", "")) for n in AMOUNT.findall(text or "")][:limit]
+
+
+def markdown_to_html(text: str | None) -> str | None:
+    """Headings, bullets, bold, links and paragraphs: the Markdown job boards store."""
+    if not text or not text.strip():
+        return None
+
+    def inline(line: str) -> str:
+        line = html.escape(line, quote=False)
+        line = BOLD.sub(lambda m: f"<strong>{m.group(1)}</strong>", line)
+        return LINK.sub(lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>', line)
+
+    out: list[str] = []
+    bullets = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        item = BULLET.match(stripped)
+        if bullets and not item:
+            out.append("</ul>")
+            bullets = False
+        if item:
+            if not bullets:
+                out.append("<ul>")
+                bullets = True
+            out.append(f"<li>{inline(item.group(1))}</li>")
+        elif heading := HEADING.match(stripped):
+            out.append(f"<h3>{inline(heading.group(1))}</h3>")
+        elif stripped:
+            out.append(f"<p>{inline(stripped)}</p>")
+    if bullets:
+        out.append("</ul>")
+    return "".join(out)
+
+
 def join_html(*parts: str | None) -> str | None:
-    html = "".join(part for part in parts if part)
-    return html or None
+    joined = "".join(part for part in parts if part)
+    return joined or None

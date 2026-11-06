@@ -210,3 +210,48 @@ def test_hosts_of_registered_boards_are_allowed() -> None:
     private.extra_hosts = registered
     with pytest.raises(FetchError, match="public address"):
         private.get("https://jobs.example.org/jobs.rss")
+
+
+def redirecting(chain: dict[str, str]) -> Callable[[httpx.Request], httpx.Response]:
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path == "/robots.txt":
+            return httpx.Response(404)
+        target = chain.get(str(request.url))
+        if target:
+            return httpx.Response(302, headers={"Location": target})
+        return httpx.Response(200, content=b"done")
+
+    return handler
+
+
+def test_redirects_are_followed_within_the_allow_list() -> None:
+    fetcher, _, seen = make_fetcher(
+        redirecting({URL: f"https://{HOST}/v1/boards/acme/jobs/apps/new"})
+    )
+    response = fetcher.get(URL)
+    assert (response.status, response.body) == (200, b"done")
+    assert str(seen[-1].url).endswith("/apps/new")
+    # A relative Location is resolved against the URL that redirected.
+    relative, _, _ = make_fetcher(redirecting({URL: "/v1/other"}))
+    assert relative.get(URL).body == b"done"
+
+
+def test_a_redirect_to_a_host_that_is_not_allowed_is_refused() -> None:
+    fetcher, _, seen = make_fetcher(redirecting({URL: "https://evil.example.org/x"}))
+    with pytest.raises(FetchError, match="host not allowed"):
+        fetcher.get(URL)
+    assert all(r.url.host == HOST for r in seen)
+
+
+def test_a_redirect_to_plain_http_is_refused() -> None:
+    fetcher, _, _ = make_fetcher(redirecting({URL: f"http://{HOST}/v1"}))
+    with pytest.raises(FetchError, match="host not allowed"):
+        fetcher.get(URL)
+
+
+def test_redirect_loops_stop_after_a_few_hops() -> None:
+    a, b = f"https://{HOST}/a", f"https://{HOST}/b"
+    fetcher, _, seen = make_fetcher(redirecting({a: b, b: a}))
+    response = fetcher.get(a)
+    assert response.status == 302  # the last hop is returned, not followed forever
+    assert len([r for r in seen if r.url.path != "/robots.txt"]) == 4

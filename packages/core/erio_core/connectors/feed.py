@@ -92,6 +92,24 @@ def parse_feed(body: bytes) -> list[dict[str, Any]]:
     return [job for job in jobs if job["title"] and job["url"]]
 
 
+def xml_items(body: bytes, tags: tuple[str, ...] = ("item",)) -> list[dict[str, list[str]]]:
+    """Each ``tags`` element as {child name: every text that name has}, for
+    platform connectors that read feeds with fields the generic reader skips
+    (two ``description`` elements, namespaced extras)."""
+    try:
+        root = ElementTree.fromstring(body)
+    except ElementTree.ParseError as error:
+        raise ValueError(f"not XML: {error}") from error
+    items = []
+    for element in root.iter():
+        if _local(element.tag) in tags:
+            fields: dict[str, list[str]] = {}
+            for child in element:
+                fields.setdefault(_local(child.tag), []).append((child.text or "").strip())
+            items.append(fields)
+    return items
+
+
 def feed_date(value: Any) -> datetime | None:
     """RSS dates are RFC 822 ("Tue, 04 Nov 2026 10:00:00 GMT"), Atom's ISO 8601."""
     if not value:

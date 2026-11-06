@@ -1,0 +1,161 @@
+[
+ {
+  "source_slug": "join",
+  "board_token": "36/bring",
+  "external_id": "16530286",
+  "payload": {
+   "id": 16530286,
+   "idParam": "16896219-head-of-product-m-f-x",
+   "title": "Head of Product (m/f/x)",
+   "createdAt": "2026-08-03T06:33:55.098Z",
+   "employmentTypeId": 6,
+   "salaryFrequency": "PER_YEAR",
+   "categoryId": 257,
+   "countryId": 218,
+   "cityId": "bc57295b-392a-4fbe-9488-ee9bf0e580e5",
+   "companyId": 36,
+   "languageId": 5,
+   "settings": {
+    "showSalary": true
+   },
+   "workplaceType": "ONSITE",
+   "office": {
+    "id": 244938,
+    "countryId": 218,
+    "cityId": "bc57295b-392a-4fbe-9488-ee9bf0e580e5"
+   },
+   "category": {
+    "id": 257,
+    "name": "Marketing and Communication"
+   },
+   "employmentType": {
+    "id": 6,
+    "name": "Employee"
+   },
+   "country": {
+    "id": 218,
+    "iso3166": "CH",
+    "name": "Switzerland"
+   },
+   "city": {
+    "id": "bc57295b-392a-4fbe-9488-ee9bf0e580e5",
+    "countryCode": "ch",
+    "lat": 47.376888275146484,
+    "lng": 8.541693687438965,
+    "defaultZipCode": "8001",
+    "cityName": "Zürich",
+    "countryName": "Switzerland",
+    "googlePlaceId": "ChIJGaK-SZcLkEcRA9wf5_GNbuY",
+    "regionName": "Zurich"
+   }
+  },
+  "fetched_at": "2026-11-06T00:18:49.381713Z",
+  "content_hash": "9c221313c63c31bd6ceb693d2c4202cead994e03e80d77e5f4f9870258b8e87e"
+ },
+ {
+  "source_slug": "join",
+  "board_token": "36/bring",
+  "external_id": "16530287",
+  "payload": {
+   "id": 16530287,
+   "idParam": "16898413-head-of-product-m-w-x",
+   "title": "Head of Product (m/w/x)",
+   "createdAt": "2026-08-03T06:33:55.165Z",
+   "employmentTypeId": 6,
+   "salaryFrequency": "PER_YEAR",
+   "categoryId": 257,
+   "countryId": 218,
+   "cityId": "bc57295b-392a-4fbe-9488-ee9bf0e580e5",
+   "companyId": 36,
+   "languageId": 1,
+   "settings": {
+    "showSalary": true
+   },
+   "workplaceType": "ONSITE",
+   "office": {
+    "id": 244938,
+    "countryId": 218,
+    "cityId": "bc57295b-392a-4fbe-9488-ee9bf0e580e5"
+   },
+   "category": {
+    "id": 257,
+    "name": "Marketing and Communication"
+   },
+   "employmentType": {
+    "id": 6,
+    "name": "Employee"
+   },
+   "country": {
+    "id": 218,
+    "iso3166": "CH",
+    "name": "Switzerland"
+   },
+   "city": {
+    "id": "bc57295b-392a-4fbe-9488-ee9bf0e580e5",
+    "countryCode": "ch",
+    "lat": 47.376888275146484,
+    "lng": 8.541693687438965,
+    "defaultZipCode": "8001",
+    "cityName": "Zürich",
+    "countryName": "Switzerland",
+    "googlePlaceId": "ChIJGaK-SZcLkEcRA9wf5_GNbuY",
+    "regionName": "Zurich"
+   }
+  },
+  "fetched_at": "2026-11-06T00:18:49.381713Z",
+  "content_hash": "0c5615a03d7866aff078a035079513798572e05366390df50498cc9e45040aba"
+ },
+ {
+  "source_slug": "join",
+  "board_token": "36/bring",
+  "external_id": "16880565",
+  "payload": {
+   "id": 16880565,
+   "idParam": "16880565-senior-accountant-und-controller-80-100-w-m-x",
+   "title": "(Senior) Accountant & Controller 80-100% (w/m/x)",
+   "createdAt": "2026-10-27T13:32:21.947Z",
+   "employmentTypeId": 6,
+   "salaryFrequency": "PER_YEAR",
+   "categoryId": 239,
+   "countryId": 218,
+   "cityId": "bc57295b-392a-4fbe-9488-ee9bf0e580e5",
+   "companyId": 36,
+   "languageId": 1,
+   "settings": {
+    "showSalary": true
+   },
+   "workplaceType": "ONSITE",
+   "office": {
+    "id": 244938,
+    "countryId": 218,
+    "cityId": "bc57295b-392a-4fbe-9488-ee9bf0e580e5"
+   },
+   "category": {
+    "id": 239,
+    "name": "Finance"
+   },
+   "employmentType": {
+    "id": 6,
+    "name": "Employee"
+   },
+   "country": {
+    "id": 218,
+    "iso3166": "CH",
+    "name": "Switzerland"
+   },
+   "city": {
+    "id": "bc57295b-392a-4fbe-9488-ee9bf0e580e5",
+    "countryCode": "ch",
+    "lat": 47.376888275146484,
+    "lng": 8.541693687438965,
+    "defaultZipCode": "8001",
+    "cityName": "Zürich",
+    "countryName": "Switzerland",
+    "googlePlaceId": "ChIJGaK-SZcLkEcRA9wf5_GNbuY",
+    "regionName": "Zurich"
+   }
+  },
+  "fetched_at": "2026-11-06T00:18:49.381713Z",
+  "content_hash": "7aea816bc57e949fd65b05372b8e290792abd5edb350962e3038e28fad4301f7"
+ }
+]

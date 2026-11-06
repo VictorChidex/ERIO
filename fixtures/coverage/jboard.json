@@ -1,0 +1,138 @@
+[
+ {
+  "source_slug": "jboard",
+  "board_token": "https://jobs.vpppa.org/sitemap-jobs-1.xml",
+  "external_id": "2787b410c00d872976c65e0d",
+  "payload": {
+   "page_url": "https://jobs.vpppa.org/jobs/105053434-safety-coordinator",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Safety Coordinator",
+    "description": "<ul>\n <li>Implements, and coordinates program, training, and activities to reduce or eliminate occupational injuries, illnesses, deaths and associated financial losses.</li>\n <li>Identifies and appraises conditions which could produce accidents and financial losses and evaluates potential extent of injuries resulting from accidents</li>\n <li>Identifies safety hazards in various areas of our fabrication shops and promotes engagement by all employees in doing the same</li>\n <li>Develops accident-prevention and loss-control programs and prepares Root Cause Analysis and training to proactively eliminate repeat occurrences</li>\n <li>Conducts quality safety orientation for all new hire employees.</li>\n</ul>",
+    "datePosted": "2026-02-27T03:05:31.000000Z",
+    "validThrough": "2026-12-24T03:05:31.000000Z",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "MK Consulting Group",
+     "sameAs": "https://www.indeed.com/cmp/Mk-Consulting-Group",
+     "logo": "https://d3535lqr6sqxto.cloudfront.net/company_logos/mk-consultinggroup.com.png"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "MK Consulting Group",
+     "value": "105053434"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "United States"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:07.556591Z",
+  "content_hash": "82b9a7f03e74bc585483ff2b5418bb7052f26a8910b396b0f58ae417535304ba"
+ },
+ {
+  "source_slug": "jboard",
+  "board_token": "https://jobs.vpppa.org/sitemap-jobs-1.xml",
+  "external_id": "c70b0ad0dff0086552e80a74",
+  "payload": {
+   "page_url": "https://jobs.vpppa.org/jobs/165334564-safety-specialist",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Safety Specialist",
+    "description": "<div>\n The full salary range for the Safety Specialist is $79,698.96 - $144,155.52 annually. However, the expected pay scale for this position is $79,698.96 - $106,000.00 annually. We base salary offers on a variety of considerations, such as education, licensure and certifications, experience, and other business and organizational needs. Under the direction of the Director of Occupational Safety and Environmental Programs, the incumbent will serve as the campus Safety Specialist. As the Safety Specialist, this individual will collaborate with various campus units and departmental staff in the efficient and integrated administration of environmental, health, and safety (EH&amp;S) compliance programs and delivery of EH&amp;S services. The Safety Specialist will oversee the administration of EH&amp;S programs, perform routine and impromptu audits of campus work locations, provide training and outreach, apply technical knowledge in all campus related EH&amp;S issues and ensures procedures are properly followed. Follows up with EH&amp;S leadership and campus management as appropriate. In support of the campus EH&amp;S program, the incumbent will work as a safety liaison to multiple departments ensuring that each department has a strong safety program. The incumbent will work with other EH&amp;S subject matter experts, Risk and Insurance Management, Occupational Health, Office of Emergency Management and Training to ensure a comprehensive and holistic safety program is in place and maintained. Strong analytical skills will assist in identifying trends and offering solutions to challenging and complex safety issues. Applicants must have current work authorization when accepting a UCR staff position. Currently, we are unable to sponsor or take over sponsorship of an employment Visa for staff. As a University employee, you will be required to comply with all applicable University policies and/or collective bargaining agreements, as may be amended from time to time. Federal, state, or local government directives may impose additional requirements.\n</div>\n<br />\n<div>\n <div>\n  <ul>\n   <li>\n    <div>\n     <div>\n      degree\n     </div>\n     <div>\n      Bachelor's degree in related area and/or equivalent experience/training.\n     </div>\n     \n     <div>\n      Required\n     </div>\n    </div></li>\n  </ul>\n </div>\n</div>\n\n<br />\n<div>\n <div>\n  <ul>\n   <li>\n    <div>\n     <div>\n      experience\n     </div>\n     <div>\n      4 - 7 years of related experience.\n     </div>\n     \n     <div>\n      Required\n     </div>\n    </div></li>\n  </ul>\n </div>\n</div>\n\n<br />\n\n<div>\n <div>\n  <ul>\n   <li>\n    <div>\n     <div>\n      Must pass a background check prior to appointment date.\n     </div>\n     <div>\n      required\n     </div>\n     <div>\n      Required\n     </div>\n    </div></li>\n  </ul>\n </div>\n</div>\n\n<br />\n<div>\n Strong skill to appropriately use technology and relevant scientific equipment as required. Thorough written, verbal, and interpersonal communication skills, including political acumen and skill to communicate effectively in a diverse environment. Thorough knowledge and skill in applying and interpreting applicable local, state, and federal regulations and related standards and guidelines. Thorough knowledge/understanding of specific EH&amp;S field(s) including related laws and regulations; and general knowledge/understanding of all EH&amp;S fields. Strong analytical and organizational skills to organize, prioritize and manage the successful completion of projects within time and budget constraints.\n</div>\n<br />\n\n<div>\n <div>\n  <ul>\n   <li>\n    <div>\n     <div>\n      Thorough knowledge/understanding of specific EH&amp;S field(s) including related laws and regulations; and general knowledge/understanding of all EH&amp;S fields.\n     </div>\n     \n     <div>\n      Required\n     </div>\n    </div></li>\n  </ul>\n </div>\n</div>",
+    "datePosted": "2026-08-18T21:54:16.000000Z",
+    "validThrough": "2026-12-16T21:54:16.000000Z",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "University of California, Riverside",
+     "sameAs": "https://www.indeed.com/cmp/University-of-California,-Riverside",
+     "logo": "https://d3535lqr6sqxto.cloudfront.net/employers/48fJGOHJjOr4MnBY1pv0vK5MJD2bgBBa94FGIZUl.jpeg"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "University of California, Riverside",
+     "value": "165334564"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "United States",
+      "addressRegion": "CA",
+      "postalCode": "92521",
+      "addressLocality": "Riverside"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "YEAR",
+      "minValue": "79698.00",
+      "maxValue": "144155.00"
+     }
+    },
+    "employmentType": "FULL_TIME"
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:08.468404Z",
+  "content_hash": "29b87559c38b29aaacf7d303628ce1b7c21668fc99da778ddda51a9be0b870c6"
+ },
+ {
+  "source_slug": "jboard",
+  "board_token": "https://jobs.vpppa.org/sitemap-jobs-1.xml",
+  "external_id": "71124903282e6c3be780caeb",
+  "payload": {
+   "page_url": "https://jobs.vpppa.org/jobs/168235183-safety-coordinator-data-center",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Safety Coordinator - Data Center",
+    "description": "<div>\n <div>\n  <div>\n   Safety Professionals — New Construction Data Center \n   <br />\n   <br />\n    Alpha &amp; Omega Safety Services, Inc. seeks multiple experienced Safety Professionals for a long-term new construction data center project in Nevada. This is an excellent opportunity to work on a high-profile project with competitive pay and benefits. \n   <br />\n   <br />\n    Position Details: \n   <br />\n   <ul>\n    <li>Industry: New Construction – Data Center</li>\n    <li>Duration: 12+ months (with potential for extension)</li>\n    <li>Location: Nevada</li>\n    <li>Pay Rate: $50-$55/hour</li>\n    <li>Per Diem: $265/day (7 days per week)</li>\n    <li>Travel (Mob/Demob): GSA rate at $0.70/mile from home to project location</li>\n    <li>Start Date: TBD (Immediate to September 2025)</li>\n   </ul>\n   <br />\n    Qualifications: \n   <br />\n   <ul>\n    <li>OSHA 30 &amp; OSHA 510 (minimum)</li>\n    <li>OSHA 500 and/or CHST (a plus)</li>\n    <li>Minimum 5 years of construction safety experience</li>\n    <li>Data Center experience is a plus</li>\n    <li>Strong knowledge of OSHA regulations and industry best practices</li>\n    <li>Ability to conduct site audits, safety training, and ensure compliance with safety standards</li>\n    <li>Effective communication and leadership skills</li>\n   </ul>\n  </div>\n </div>\n</div>",
+    "datePosted": "2025-10-23T01:09:07.000000Z",
+    "validThrough": "2026-12-17T01:09:07.000000Z",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "ALPHA AND OMEGA SAFETY SERVICES INC",
+     "sameAs": null,
+     "logo": null
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "ALPHA AND OMEGA SAFETY SERVICES INC",
+     "value": "168235183"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "United States",
+      "addressRegion": "NV",
+      "postalCode": "89036",
+      "addressLocality": "North Las Vegas"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "HOUR",
+      "minValue": "50.00",
+      "maxValue": "55.00"
+     }
+    },
+    "employmentType": "FULL_TIME"
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:09.495741Z",
+  "content_hash": "613b19151ecddb0f802488467582766557550925741e3afd991ba5fa10c700bd"
+ }
+]

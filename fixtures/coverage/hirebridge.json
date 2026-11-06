@@ -1,0 +1,124 @@
+[
+ {
+  "source_slug": "hirebridge",
+  "board_token": "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=6766",
+  "external_id": "99b2429cadec2eff5e29cb9c",
+  "payload": {
+   "page_url": "https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid=648995&cid=6766",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-09-10",
+    "description": "<p>At IMC Construction, our Assistant Project Managers play a key role in keeping projects organized and moving forward. You&rsquo;ll work closely with Project Managers, Superintendents, and field teams to support all phases of a project, from preconstruction through closeout.</p>\r\n<p>This is a great opportunity for someone who has a solid foundation in construction and is ready to take the next step in their career by getting more exposure to project management, cost control, and client interaction.</p>\r\n<p><strong>What You&rsquo;ll Do</strong></p>\r\n<p><strong>Support Project Execution: </strong>Assist in managing projects from post-bid through closeout, helping ensure alignment between scope, schedule, budget, and client expectations. Support the project team in driving coordination across internal teams and trade partners.</p>\r\n<p><strong>Assist with Preconstruction &amp; Buyout: </strong>Work with Estimating and Project Management to support bid packaging, scope review, and the buyout process. Help ensure subcontractor scopes are complete and coordinated to avoid gaps or overlaps.</p>\r\n<p><strong>Support Financial Management: </strong>Assist in developing and tracking project budgets, monitoring cost performance, and supporting change management efforts. Help review subcontractor invoices and contribute to the preparation of owner pay applications.</p>\r\n<p><strong>Support Schedule &amp; Coordination: </strong>Assist in maintaining the project schedule in collaboration with the Superintendent and Project Manager. Help coordinate materials, trades, and project logistics to keep work progressing as planned.</p>\r\n<p><strong>Build Strong Relationships: </strong>Maintain positive working relationships with clients, design teams, subcontractors, and internal team members. Communicate clearly and professionally in both written and verbal interactions.</p>\r\n<p><strong>Support Safety Efforts: </strong>Work with field leadership and Safety to uphold IMC&rsquo;s &ldquo;Safety First&rdquo; culture. Support the implementation and consistent execution of project-specific safety plans to promote a safe jobsite.</p>\r\n<p><strong>Contribute to Team Success: </strong>Support team in day-to-day project activities. Take initiative, stay organized, and contribute to a collaborative, high-performing team environment.</p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "IMC Construction",
+     "sameAs": "",
+     "logo": "https://recruit.hirebridge.com/v3/xFiles/6766/Images/IMC_logoNoTag.jpg"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Bethesda",
+      "addressRegion": "MD",
+      "postalCode": "20814",
+      "addressCountry": "US"
+     }
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "IMC Construction",
+     "value": "648995"
+    },
+    "title": "Assistant Project Manager",
+    "employmentType": "FULL_TIME",
+    "skills": "<ul>\r\n    <li>Bachelor&rsquo;s degree in Construction Management, Engineering, or a related field (or equivalent experience) </li>\r\n    <li>3+ years of experience in commercial construction </li>\r\n    <li>Ability to read and interpret drawings, specifications, and contract documents </li>\r\n    <li>Experience supporting RFIs, submittals, change orders, and project documentation </li>\r\n    <li>Familiarity with construction management software (Procore, Primavera/P6, TimberScan, etc.) </li>\r\n    <li>Proficient in Microsoft Office (Excel, Word, Outlook) </li>\r\n    <li>Strong organizational skills with attention to detail </li>\r\n    <li>Clear communication skills </li>\r\n    <li>OSHA 30 certification preferred </li>\r\n    <li>LEED experience is a plus</li>\r\n</ul>"
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:19.689972Z",
+  "content_hash": "58b8902343cff1f0b3c8e1dbbedc7090a5ecc862ad12e29261ee6583d114b86a"
+ },
+ {
+  "source_slug": "hirebridge",
+  "board_token": "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=6766",
+  "external_id": "a71ead345c7e9304342a9a4d",
+  "payload": {
+   "page_url": "https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid=648996&cid=6766",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-09-10",
+    "description": "<p>At IMC Construction, our Assistant Superintendents are hands-on field leaders who help keep projects organized, safe, and moving forward. You&rsquo;ll work closely with the Superintendent and project team to support daily field operations, coordinate subcontractors, and ensure work is completed according to plan.</p>\r\n<p>This role is ideal for someone who enjoys being in the field, solving problems in real time, and is looking for flexibility to grow into a variety of career paths within the organization.</p>\r\n<p><strong>What You&rsquo;ll Do</strong></p>\r\n<p><strong>Help Drive the Schedule: </strong>Support the development and maintenance of the project schedule, including Three Week Look Ahead plans. Help coordinate manpower, materials, and sequencing to keep work progressing on time.</p>\r\n<p><strong>Coordinate Trades &amp; Site Activities: </strong>Assist in coordinating subcontractors, suppliers, inspections, and testing to ensure work is completed efficiently and in the proper sequence. Communicate upcoming work and jobsite expectations to all parties.</p>\r\n<p><strong>Maintain Jobsite Organization: </strong>Help ensure the site remains clean, organized, and well-managed. Support site logistics planning, material deliveries, and staging to keep operations running smoothly.</p>\r\n<p><strong>Support Quality &amp; Workmanship: </strong>Assist in monitoring construction quality and ensuring all work meets project requirements. Maintain familiarity with drawings, specifications, and project documents to support proper execution.</p>\r\n<p><strong>Reinforce Safety Standards: </strong>Work with field leadership to uphold IMC&rsquo;s &ldquo;Safety First&rdquo; culture. Support site safety efforts, including orientations, inspections, and reinforcing safe work practices across all trades.</p>\r\n<p><strong>Track &amp; Document Field Activity: </strong>Assist with daily reports, manpower tracking, material logs, and general field documentation. Maintain accurate project records, including as-built information.</p>\r\n<p><strong>Contribute to Team Success: </strong>Work closely with the Superintendent and Project Manager to support overall project execution. Take initiative in identifying issues, helping solve problems, and keeping the team aligned.</p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "IMC Construction",
+     "sameAs": "",
+     "logo": "https://recruit.hirebridge.com/v3/xFiles/6766/Images/IMC_logoNoTag.jpg"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Bethesda",
+      "addressRegion": "MD",
+      "postalCode": "20814",
+      "addressCountry": "US"
+     }
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "IMC Construction",
+     "value": "648996"
+    },
+    "title": "Assistant Superintendent",
+    "employmentType": "FULL_TIME",
+    "skills": "<ul>\r\n    <li>2&ndash;5+ years of experience in commercial construction </li>\r\n    <li>Degree in Construction Management, Engineering, or related field, or equivalent trade school, technical training, or hands-on construction experience</li>\r\n    <li>Basic understanding of construction sequencing, scheduling, and field coordination </li>\r\n    <li>Ability to read and interpret drawings, specifications, and contract documents </li>\r\n    <li>Strong organizational and communication skills </li>\r\n    <li>OSHA 30 certification preferred </li>\r\n    <li>Willingness to be on-site and actively engaged in daily field operations</li>\r\n</ul>"
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:20.165236Z",
+  "content_hash": "78368383334717239cbb87a03e9c8cb607fdb126abb88491416e3cb7cd11b964"
+ },
+ {
+  "source_slug": "hirebridge",
+  "board_token": "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=6766",
+  "external_id": "cb49314a54799e336a7899d4",
+  "payload": {
+   "page_url": "https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid=654611&cid=6766",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-09-14",
+    "description": "<div>\r\n<p paraid=\"1245981762\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{6}\">At IMC Construction, our Preconstruction / Estimating Interns play an important role in supporting the planning and estimating efforts that lay the foundation for successful projects. Working alongside experienced estimators, preconstruction professionals, and operational leaders, this position provides hands-on exposure to project budgeting, value engineering, procurement strategies, and construction technology.&nbsp;<br />\r\n&nbsp;<br />\r\nWe're looking for motivated architecture, engineering, and construction management students who are eager to learn, ask questions, and gain real-world experience in a fast-paced and collaborative environment. This internship offers the opportunity to develop technical skills, build industry relationships, and gain insight into every stage of the preconstruction process while contributing to meaningful projects.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"520002971\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{8}\"><strong>What You'll Do&nbsp;</strong></p>\r\n</div>\r\n<div>\r\n<p paraid=\"540800292\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{10}\">Support Estimating Activities Shadow IMC Estimators and assist with the preparation of bid packages, solicitation of subcontractor and material supplier pricing, and analysis of bid proposals. You will gain firsthand experience in how project costs are developed and evaluated during the preconstruction phase.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"475780788\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{12}\">Develop Quantity Take-Offs &amp; Cost Models Work alongside the Estimating and VDC/BIM teams to develop quantity take-offs, value engineering studies, and project cost models throughout the design development and bidding process.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"798861504\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{14}\">Leverage Construction Technology Assist in the development of staging plans, logistics plans, and visual project studies utilizing REVIT and other digital tools.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"296737491\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{16}\">Support Bid Analysis &amp; Procurement Help ensure project estimates are accurate, complete, and aligned with project requirements.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"399601881\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{18}\">Participate in Preconstruction Strategy Attend preconstruction strategy meetings and observe how project teams develop approaches to estimating, planning, risk management, and client expectations.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"816858207\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{20}\">Assist with Client Deliverables Support the team in assembling preconstruction materials for presentations and project pursuits.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"810854739\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{22}\">Build Industry Relationships Assist with identifying and qualifying new material suppliers and subcontractors for inclusion within IMC bid management systems.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"692044336\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{24}\">Learn from Industry Experts Work closely with Estimators, MEP Estimators, and Preconstruction leadership while gaining exposure to all aspects of the preconstruction process.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"438300745\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{26}\">Explore Innovative Solutions Gain exposure to IMC technology initiatives, including AR/VR applications, drones, Assemble, and other emerging construction technologies.&nbsp;</p>\r\n</div>\r\n<div>\r\n<p paraid=\"1750921602\" paraeid=\"{f30403f5-ed8d-4ae1-b69c-bc6b0e3aedbb}{28}\">Expand Technical Knowledge Become familiar with industry software such as SmartBid, Revit, SketchUp, and other preconstruction tools.&nbsp;</p>\r\n</div>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "IMC Construction",
+     "sameAs": "",
+     "logo": "https://recruit.hirebridge.com/v3/xFiles/6766/Images/IMC_logoNoTag.jpg"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Bethesda",
+      "addressRegion": "MD",
+      "postalCode": "20814",
+      "addressCountry": "US"
+     }
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "IMC Construction",
+     "value": "654611"
+    },
+    "title": "Intern/Co-Op - Estimating Department",
+    "skills": "<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"1\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"540857283\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{26}\">Current student enrolled in a college or university pursuing a construction-related degree; Architectural Drafting focus preferred but not required&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"2\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"1013327503\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{28}\">Strong interest in VDC and BIM&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"3\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"1517658129\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{30}\">Proficiency with computer applications&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"4\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"1672698555\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{32}\">Strong interpersonal and communication skills&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"5\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"61997393\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{34}\">Ability to work collaboratively&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"6\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"476213203\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{36}\">Strong attention to detail and organizational skills&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"7\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"363783653\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{38}\">Self-motivated with a desire to learn&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>\r\n<div>\r\n<ul role=\"list\">\r\n    <li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props=\"{'335552541':1,'335559685':360,'335559991':360,'469769226':'Symbol','469769242':[8226],'469777803':'left','469777804':'','469777815':'singleLevel'}\" data-aria-posinset=\"8\" data-aria-level=\"1\" role=\"listitem\">\r\n    <p paraid=\"1841050745\" paraeid=\"{480cad57-d961-4e7e-ab77-9cc87c2de92b}{40}\">Positive attitude and proactive approach&nbsp;</p>\r\n    </li>\r\n</ul>\r\n</div>"
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:20.682516Z",
+  "content_hash": "f075ed6dfe31a2f0ef7b1c1b8906566e3a12456ab0098a048a4c148643eba6f2"
+ }
+]

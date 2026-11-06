@@ -1,0 +1,181 @@
+[
+ {
+  "source_slug": "jobboard_com",
+  "board_token": "https://www.gradsouthwest.com/xml-sitemaps/1.xml",
+  "external_id": "ee27df8e4447f0ce413a6850",
+  "payload": {
+   "page_url": "https://www.gradsouthwest.com/jobs/personal-travel-specialists-tailor-made-travel-exeter/3863-1/",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 26000.0,
+      "maxValue": 30000.0,
+      "unitText": "YEAR"
+     }
+    },
+    "datePosted": "2026-10-15T08:40:24.49Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Personal Travel Specialists &amp;ndash; tailor-made travel&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;br /&gt;\r\nWe are recruiting for personal travel specialists to work in a sales capacity on both our European and long-haul tailor-made, luxury holiday programmes. &lt;/p&gt;\r\n&lt;p&gt;Our programmes include:&lt;br /&gt;\r\n&amp;bull; Tailor-made, luxury hotel holidays to France, Italy, Spain, other Mediterranean countries, the Caribbean and the Indian Ocean&lt;br /&gt;\r\n&amp;bull; Tailor-made touring holidays for individuals to Italy, France, Spain, Norway, Sri Lanka, Vietnam and New Zealand&lt;br /&gt;\r\n&amp;bull; Tailor-made rail holidays throughout Europe including Italy, France, Spain and Norway but also to Switzerland, Austria, Germany and other central European countries&lt;br /&gt;\r\n&amp;bull; Special interest holidays such as gardens, wine appreciation, walking, cookery and opera&lt;br /&gt;\r\n&amp;bull; Cultural and sporting holidays for families&lt;br /&gt;\r\n&lt;br /&gt;\r\nWhat does this role entail?&lt;br /&gt;\r\n&amp;bull; Responsibility for putting together appropriate holidays&lt;br /&gt;\r\n&amp;bull; Pricing holidays from scratch&lt;br /&gt;\r\n&amp;bull; Tailoring the holiday details to fit the client brief&lt;br /&gt;\r\n&amp;bull; Making sure all the elements are in place&lt;br /&gt;\r\n&amp;bull; Delivering outstanding customer service. &lt;/p&gt;\r\n&lt;p&gt;It is a sales role with company and personal targets, but driven by the need for high-quality personal service and integrity of product delivery to our customers.&lt;br /&gt;\r\n&lt;br /&gt;\r\nIn support of this front-line sales activity (and driven by financial targets) you may be involved, (according to the season), in product updating, itinerary and copy writing, pricing, contract loading and product development and planning.&lt;br /&gt;\r\n&lt;br /&gt;\r\nThe role will be based at our offices in Exeter.&lt;br /&gt;\r\n&lt;br /&gt;\r\nWhat are we looking for?&lt;br /&gt;\r\n&amp;bull; Energetic and highly motivated people.&lt;br /&gt;\r\n&amp;bull; Drive and passion for travel plus an understanding of what niche and specialist travel at the high end is all about.&lt;br /&gt;\r\n&amp;bull; An understanding of our client base and what we have to do to deliver exceptional and honest holidays to them.&lt;br /&gt;\r\n&amp;bull; An ability to work to generously-remunerated financial targets whilst delivering top quality service to our clients.&lt;br /&gt;\r\n&lt;br /&gt;\r\nSkills required&lt;br /&gt;\r\n&amp;bull; Previous luxury travel experience with a tour operator and proven track record in luxury sales is not essential. However, knowledge of our destinations and suppliers is an advantage as is a clear understanding of our clients (their background and purchasing habits).&lt;br /&gt;\r\n&amp;bull; An ability to communicate with our clients is essential. Absolutely correct spoken and written English is required.&lt;br /&gt;\r\n&amp;bull; You should also have a commercial aptitude and be very numerate.&lt;br /&gt;\r\n&amp;bull; Accuracy with detail on our high value and complex bookings.&lt;br /&gt;\r\n&amp;bull; You should be at ease with high sales values (&amp;pound;10K to &amp;pound;20k per holiday).&lt;br /&gt;\r\n&amp;bull; Goal focus combined with trustworthiness.&lt;br /&gt;\r\n&amp;bull; An ability to juggle volume, deadlines and the unexpected at once&lt;br /&gt;\r\n&amp;bull; A competitiveness and eagerness to 'close the sale' is important as is a resilience and tenacity in the current competitive market place.&lt;br /&gt;\r\n&amp;bull; You will have an ability to communicate with suppliers in different countries and knowledge of Italian, French, German and/or Spanish is a requirement.&lt;/p&gt;\r\n&lt;p&gt;You will be educated to UK degree level, ideally from a Russell Group university. You should have very good Microsoft Office skills and experience. Any foreign language is an advantage (the company uses French, Italian, Spanish and German regularly) as we are an international business.&lt;/p&gt;\r\n&lt;p&gt;You will be joining a team of other graduates, some from Exeter, others from&amp;nbsp;other UK universities, who work across the company in holiday sales, marketing, product, admin and accounts, based in our attractive offices in Exeter. Training will be provided on the job, in-house and externally.&lt;/p&gt;\r\n&lt;p&gt;You will be expected to undertake visits overseas to inspect and explore our suppliers and their regions. On occasion you will be required to represent the company at events with suppliers and travel agents, both in the UK and overseas.&lt;br /&gt;\r\n&lt;br /&gt;\r\nStarting salary - &amp;pound;26,000 per annum plus targeted bonus of up to &amp;pound;10,000.&lt;/p&gt;\r\n&lt;p&gt;Click&amp;nbsp;&lt;strong&gt;APPLY NOW&amp;nbsp;&lt;/strong&gt;to submit your CV and a covering letter explaining why you want to work for Expressions Holidays to&amp;nbsp;&lt;a href=\"mailto:recruitment@expressionsholidays.co.uk\"&gt;recruitment@expressionsholidays.co.uk&lt;/a&gt;&lt;/p&gt;",
+    "directApply": true,
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Expressions Holidays",
+     "logo": "https://www.gradsouthwest.com/_resx/imageresourcegooglejobs/7e723e5c585f065d5f7f1cd9cf84f6ba9571650e-256"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Gradsouthwest",
+     "value": "00003863-1"
+    },
+    "incentiveCompensation": "£10,000 - £15,000",
+    "industry": [
+     "Call Centre / Customer Service",
+     "Hospitality &amp; Tourism",
+     "Sales &amp; Marketing"
+    ],
+    "jobLocation": {
+     "@type": "Place",
+     "name": "Exeter",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Exeter",
+      "addressRegion": "Devon",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "title": "Personal Travel Specialists – tailor-made travel",
+    "url": "https://www.gradsouthwest.com/jobs/personal-travel-specialists-tailor-made-travel-exeter/3863-1/",
+    "validThrough": "2026-12-01T23:59:59Z"
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:47.086889Z",
+  "content_hash": "82fd61e692a25c5735ca5db1841c8f6d779650d2c6296af6b03fa364b95ab935"
+ },
+ {
+  "source_slug": "jobboard_com",
+  "board_token": "https://www.gradsouthwest.com/xml-sitemaps/1.xml",
+  "external_id": "41323174c8d98c3a9e4fc71c",
+  "payload": {
+   "page_url": "https://www.gradsouthwest.com/jobs/supplier-relationship-executive-exeter-devon/3864-1/",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 26000.0,
+      "maxValue": 30000.0,
+      "unitText": "YEAR"
+     }
+    },
+    "datePosted": "2026-10-15T08:38:05.83Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Supplier Relationship Executive&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;\r\n&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;\r\n&lt;/strong&gt;Expressions Holidays is a specialist, luxury tour operator, in business since 1989, arranging tailor-made holidays to selected destinations in Europe and further afield.&lt;/p&gt;\r\n&lt;p&gt;We are looking to recruit a Supplier Relationship Executive who will be responsible for this important commercial role within our company. &lt;/p&gt;\r\n&lt;p&gt;This is an extremely exciting opportunity for a graduate to gain experience of the travel industry, to take ownership of projects, to work independently within a team and to contribute to the well-being of the company.&lt;/p&gt;\r\n&lt;p&gt;The focus of the role is on managing and administering the relationships the company has with many international suppliers (mainly hotels, but also local transport and experience companies).&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;The role involves:&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;\r\n&lt;/strong&gt;&amp;bull; Supplier contract management&lt;br /&gt;\r\n&amp;bull; Supplier database management&lt;br /&gt;\r\n&amp;bull; Up-dating website with contract information&lt;br /&gt;\r\n&amp;bull; Up-dating website with special offers from suppliers&lt;br /&gt;\r\n&amp;bull; Loading costs and rates from suppliers into our reservations system&lt;br /&gt;\r\n&amp;bull; Maintaining accurate information from suppliers such as bank account details&lt;br /&gt;\r\n&amp;bull; Managing commercial terms with suppliers&lt;br /&gt;\r\n&amp;bull; Liaising between suppliers and our sales team for contracts and agreements&lt;br /&gt;\r\n&amp;bull; Dealing with invoice queries&lt;br /&gt;\r\n&amp;bull; Obtaining images from suppliers for product management&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;Skills and requirements:&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;\r\n&lt;/strong&gt;&amp;bull; Commercial understanding&lt;br /&gt;\r\n&amp;bull; Being methodical and disciplined&lt;br /&gt;\r\n&amp;bull; Perseverance&lt;br /&gt;\r\n&amp;bull; Ability to finish a project, not to leave loose ends&lt;br /&gt;\r\n&amp;bull; Good organisational skills&lt;br /&gt;\r\n&amp;bull; Able to work as part of a team but also willing to challenge&lt;br /&gt;\r\n&amp;bull; Eye for detail &amp;ndash; accurate numbers and use of English&lt;br /&gt;\r\n&amp;bull; Accuracy&lt;br /&gt;\r\n&amp;bull; Communication skills &amp;ndash; external with international suppliers and internal&lt;br /&gt;\r\n&amp;bull; Displaying sensitivity to cultural differences between suppliers&lt;/p&gt;\r\n&lt;p&gt;You will be educated to UK degree level, ideally from a Russell Group university. You should have very good Microsoft Office skills and experience. Any foreign language is an advantage (the company uses French, Italian, Spanish and German regularly).&lt;/p&gt;\r\n&lt;p&gt;You will be joining a team of other graduates, some from Exeter, others from&amp;nbsp;other UK universities, who work across the company in holiday sales, marketing, product, admin and accounts, based in our attractive and spacious offices with parking in Exeter. Training will be provided on the job, in-house and externally.&lt;/p&gt;\r\n&lt;p&gt;Please note: this is a full-time, not a part-time role&lt;/p&gt;\r\n&lt;p&gt;Starting salary - &amp;pound;26,000 per annum&lt;br /&gt;\r\n&lt;br /&gt;\r\nClick &lt;strong&gt;APPLY NOW &lt;/strong&gt;to submit your CV and a covering letter explaining why you want to work for Expressions Holidays.&lt;/p&gt;",
+    "directApply": true,
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Expressions Holidays",
+     "logo": "https://www.gradsouthwest.com/_resx/imageresourcegooglejobs/7e723e5c585f065d5f7f1cd9cf84f6ba9571650e-256"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Gradsouthwest",
+     "value": "00003864-1"
+    },
+    "incentiveCompensation": "",
+    "industry": [
+     "Accounting",
+     "Administration",
+     "Hospitality &amp; Tourism",
+     "Science &amp; Technology"
+    ],
+    "jobLocation": {
+     "@type": "Place",
+     "name": "Exeter, Devon",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Exeter",
+      "addressRegion": "Devon",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "title": "Supplier relationship executive",
+    "url": "https://www.gradsouthwest.com/jobs/supplier-relationship-executive-exeter-devon/3864-1/",
+    "validThrough": "2026-12-01T23:59:59Z"
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:47.598451Z",
+  "content_hash": "136584f32a13836341c43594b4251d8143c3d0628aeb8fd0125ffe03239762d9"
+ },
+ {
+  "source_slug": "jobboard_com",
+  "board_token": "https://www.gradsouthwest.com/xml-sitemaps/1.xml",
+  "external_id": "c569ee47525a1101e62fe0ad",
+  "payload": {
+   "page_url": "https://www.gradsouthwest.com/jobs/partnership-executive-tailor-made-travel-exeter-devon/3865-1/",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 26000.0,
+      "maxValue": 30000.0,
+      "unitText": "YEAR"
+     }
+    },
+    "datePosted": "2026-10-15T08:38:50.75Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;\r\n&lt;/strong&gt;Expressions Holidays is a specialist, luxury tour operator, in business since 1989, arranging tailor-made holidays to selected destinations in Europe and further afield.&lt;/p&gt;\r\n&lt;p&gt;We are looking to recruit a Partnership executive who will be responsible for our commercial partnerships with third parties such as travel agents and closed user groups. &lt;/p&gt;\r\n&lt;p&gt;This is an extremely exciting opportunity for a graduate to gain experience of the travel industry, to take ownership of projects, to work independently within a team and to contribute to the well-being of the company.&lt;/p&gt;\r\n&lt;p&gt;The focus of the role is on liaising with our travel agent partners and others such as closed user groups to achieve our business targets. There will be an element of servicing existing relationships but also a requirement to target new partners.&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;The role involves:&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;\r\n&lt;/strong&gt;&amp;bull; Reviewing the performance of travel agents&lt;br /&gt;\r\n&amp;bull; Maintaining the agent database&lt;br /&gt;\r\n&amp;bull; Identifying new agent partners&lt;br /&gt;\r\n&amp;bull; Engaging new agent partners&lt;br /&gt;\r\n&amp;bull; On-boarding new agents&lt;br /&gt;\r\n&amp;bull; Managing agency contracts&lt;br /&gt;\r\n&amp;bull; Negotiating special offers and incentives for partners&lt;br /&gt;\r\n&amp;bull; Partnership marketing communications &amp;ndash; print and digital&lt;br /&gt;\r\n&amp;bull; Attending agency events&lt;br /&gt;\r\n&amp;bull; Arranging agent educationals&lt;br /&gt;\r\n&amp;bull; Creating and implementing monthly newsletters for agents&lt;br /&gt;\r\n&amp;bull; Identify closed user groups&lt;br /&gt;\r\n&amp;bull; Implementing a marketing strategy for closed user groups&lt;br /&gt;\r\n&amp;bull; Negotiating deals with closed user groups&lt;br /&gt;\r\n&amp;bull; Up-dating our sales team about new partners, incentives and targets&lt;br /&gt;\r\n&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;&lt;strong&gt;Skills and requirements:&lt;/strong&gt;&lt;strong&gt;&lt;br /&gt;\r\n&lt;/strong&gt;&amp;bull; Commercial understanding&lt;br /&gt;\r\n&amp;bull; Desire to win and get a deal&lt;br /&gt;\r\n&amp;bull; Focused on achieving goals and targets&lt;br /&gt;\r\n&amp;bull; Clever and personable negotiating skills&lt;br /&gt;\r\n&amp;bull; Able to approach new contacts and communicate fluently&lt;br /&gt;\r\n&amp;bull; Combine a drive for success with inter-personal skills&lt;br /&gt;\r\n&amp;bull; Good organisational skills&lt;br /&gt;\r\n&amp;bull; Accurate with numbers and use of English&lt;/p&gt;\r\n&lt;p&gt;You will be educated to UK degree level, ideally from a Russell Group university. You should have very good Microsoft Office skills and experience. Any foreign language is an advantage (the company uses French, Italian, Spanish and German regularly) as we are an international business. Previous experience is not a requirement although some knowledge of the travel industry may be.&lt;/p&gt;\r\n&lt;p&gt;You will be joining a team of other graduates, some from Exeter, others from&amp;nbsp;other UK universities, who work across the company in holiday sales, marketing, product, admin and accounts, based in our attractive offices in Exeter. Training will be provided on the job, in-house and externally.&lt;/p&gt;\r\n&lt;p&gt;On occasion you will be required to represent the company at events, both in the UK and overseas.&lt;/p&gt;\r\n&lt;p&gt;Please note: this is a full-time, not a part-time role.&lt;/p&gt;\r\n&lt;p&gt;Starting salary - &amp;nbsp;&amp;pound;30,000 per annum&lt;br /&gt;\r\n&lt;br /&gt;\r\nClick&amp;nbsp;&lt;strong&gt;APPLY NOW&amp;nbsp;&lt;/strong&gt;to submit your CV and a covering letter explaining why you want to work for Expressions Holidays.&lt;/p&gt;",
+    "directApply": true,
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Garland Hoff",
+     "logo": ""
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Gradsouthwest",
+     "value": "00003865-1"
+    },
+    "incentiveCompensation": "",
+    "industry": [
+     "Accounting",
+     "Hospitality &amp; Tourism",
+     "Retail &amp; Consumer Products",
+     "Sales &amp; Marketing"
+    ],
+    "jobLocation": {
+     "@type": "Place",
+     "name": "Exeter, Devon",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Exeter",
+      "addressRegion": "Devon",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "title": "Partnership executive – tailor-made travel",
+    "url": "https://www.gradsouthwest.com/jobs/partnership-executive-tailor-made-travel-exeter-devon/3865-1/",
+    "validThrough": "2026-12-01T23:59:59Z"
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:48.138133Z",
+  "content_hash": "3e8042e2822d02f289fbb33a2c9fa1cea44e1e7452890ced4700f468225dcf62"
+ }
+]

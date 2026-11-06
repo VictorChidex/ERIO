@@ -16,6 +16,7 @@ from sqlalchemy import Engine, select
 from sqlalchemy.orm import Session
 
 from erio_core.connectors import CONNECTORS, Connector, Fetcher, FetchError
+from erio_core.data import example_boards
 from erio_core.db.models import CompanyBoard, Source, SourceCheck
 
 log = logging.getLogger(__name__)
@@ -31,13 +32,16 @@ class Check:
 
 
 def canary_board(session: Session, source: str) -> str | None:
-    """The board on ``source`` that last fetched cleanly; any board if none has."""
-    return session.scalar(
+    """The board on ``source`` that last fetched cleanly; any board if none has;
+    and, for a platform with no registered board yet, its first known example board
+    (platforms.json), so every connector is tested live every night."""
+    registered = session.scalar(
         select(CompanyBoard.board_token)
         .where(CompanyBoard.source_slug == source)
         .order_by(CompanyBoard.last_ok_at.desc().nulls_last(), CompanyBoard.id)
         .limit(1)
     )
+    return registered or next(iter(example_boards().get(source, [])), None)
 
 
 def check_source(connector: Connector, fetcher: Fetcher, token: str | None) -> Check:

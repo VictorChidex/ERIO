@@ -1,0 +1,113 @@
+[
+ {
+  "source_slug": "recooty",
+  "board_token": "https://jobs.recooty.com/davis-cartage-company",
+  "external_id": "5d916936d11850406e68374a",
+  "payload": {
+   "page_url": "https://jobs.recooty.com/davis-cartage-company/local-class-a-driver-corunna-mi-75k-da637",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "description": "<p><em>Davis Cartage Co. is hiring a full time Local Class A CDL Driver in Corunna, MI.&nbsp;</em></p><br />\r\n<br />\r\n<p><em>Enjoy steady, year-round work, weekly pay,&nbsp;and&nbsp;weekends off with a well established, family owned company that has served the transportation, warehousing and logistics industry since 1941.&nbsp;</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em><strong>Position details:</strong></em></p><br />\r\n<br />\r\n<p><em>Monday through Friday</em></p><br />\r\n<br />\r\n<p><em>Day shift</em></p><br />\r\n<br />\r\n<p><em>Approximately 10-14 hours per day</em></p><br />\r\n<br />\r\n<p><em>Average annual pay of $75,000</em></p><br />\r\n<br />\r\n<p><em>Weekly pay</em></p><br />\r\n<br />\r\n<p><em>Local routes primarily throught Michigan</em></p><br />\r\n<br />\r\n<p><em>Most weekends off , with occasional Saturday work- typically only 3-4 Saturdays per year</em></p><br />\r\n<br />\r\n<p><em>Well maintained equipment</em></p><br />\r\n<br />\r\n<p><em>Our fleet includes Freightliner Cascadias, day cabs, sleepers, and 53&#39; dry vans.</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><strong><em>Benefits include:</em></strong></p><br />\r\n<br />\r\n<p><em>Medical, dental, and vision insurance</em></p><br />\r\n<br />\r\n<p><em>401k with company match</em></p><br />\r\n<br />\r\n<p><em>Paid time off</em></p><br />\r\n<br />\r\n<p><em>Disability insurance</em></p><br />\r\n<br />\r\n<p><em>Life insurance</em></p><br />\r\n<br />\r\n<p><em>Monthly safety bonuses</em></p><br />\r\n<br />\r\n<p><em>Safe, reliable equipment</em></p><br />\r\n<br />\r\n<p><em>Company shirts and jacket</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Qualified candidates must have 2 years of verifiable experience, a clean MVR and pass a drug screen and physical.&nbsp;</em></p><br />\r\n<br />\r\n<p><em>To learn more about Davis Cartage Co., please visit www.daviscartage.com and follow&nbsp;us on Facebook.</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Join a company that values safety, dependable service, and the drivers who make it all possible.&nbsp;</em></p><br />\r\n<br />\r\n<p><em><strong>Apply today to become part of the Davis Cartage team! (989) 743-4445 ext. 274</strong></em></p>",
+    "title": "Local Class A driver, Corunna, MI 75k",
+    "experienceRequirements": "Entry Level",
+    "datePosted": "2026-11-05 20:33:06",
+    "hiringOrganization": {
+     "@context": "http://schema.org",
+     "@type": "Organization",
+     "name": "Davis Cartage Company",
+     "sameAs": "https://daviscartage.com/",
+     "identifier": "davis-cartage-company"
+    },
+    "employmentType": "FULL_TIME",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Chesaning",
+      "addressLocality": "Chesaning",
+      "addressRegion": "Michigan",
+      "postalCode": "48616",
+      "addressCountry": "US"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:45:35.633244Z",
+  "content_hash": "4632053447ef6f40d713ea94b8759ed198d7c78d46214b470de1becec7e6f1eb"
+ },
+ {
+  "source_slug": "recooty",
+  "board_token": "https://jobs.recooty.com/davis-cartage-company",
+  "external_id": "6d3b98c2f2a5c522d5a04256",
+  "payload": {
+   "page_url": "https://jobs.recooty.com/davis-cartage-company/class-a-local-driver-corunna-75k-da635",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "description": "<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Davis Cartage Co. is hiring a full time Local Class A CDL Driver in Corunna, MI.&nbsp;</em></p><br />\r\n<br />\r\n<p><em>Enjoy steady, year-round work, weekly pay,&nbsp;and&nbsp;weekends off with a well established, family owned company that has served the transportation, warehousing and logistics industry since 1941.&nbsp;</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em><strong>Position details:</strong></em></p><br />\r\n<br />\r\n<p><em>Monday through Friday</em></p><br />\r\n<br />\r\n<p><em>Day shift</em></p><br />\r\n<br />\r\n<p><em>Approximately 10-14 hours per day</em></p><br />\r\n<br />\r\n<p><em>Average annual pay of $75,000</em></p><br />\r\n<br />\r\n<p><em>Weekly pay</em></p><br />\r\n<br />\r\n<p><em>Local routes primarily throught Michigan</em></p><br />\r\n<br />\r\n<p><em>Most weekends off , with occasional Saturday work- typically only 3-4 Saturdays per year</em></p><br />\r\n<br />\r\n<p><em>Well maintained equipment</em></p><br />\r\n<br />\r\n<p><em>Our fleet includes Freightliner Cascadias, day cabs, sleepers, and 53&#39; dry vans.</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><strong><em>Benefits include:</em></strong></p><br />\r\n<br />\r\n<p><em>Medical, dental, and vision insurance</em></p><br />\r\n<br />\r\n<p><em>401k with company match</em></p><br />\r\n<br />\r\n<p><em>Paid time off</em></p><br />\r\n<br />\r\n<p><em>Disability insurance</em></p><br />\r\n<br />\r\n<p><em>Life insurance</em></p><br />\r\n<br />\r\n<p><em>Monthly safety bonuses</em></p><br />\r\n<br />\r\n<p><em>Safe, reliable equipment</em></p><br />\r\n<br />\r\n<p><em>Company shirts and jacket</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Qualified candidates must have 2 years of verifiable experience, a clean MVR and pass a drug screen and physical.&nbsp;</em></p><br />\r\n<br />\r\n<p><em>To learn more about Davis Cartage Co., please visit www.daviscartage.com and follow&nbsp;us on Facebook.</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Join a company that values safety, dependable service, and the drivers who make it all possible.&nbsp;</em></p><br />\r\n<br />\r\n<p><em><strong>Apply today to become part of the Davis Cartage team! (989) 743-4445 ext. 274</strong></em></p>",
+    "title": "Class A Local Driver - Corunna, MI 75k",
+    "experienceRequirements": "Entry Level",
+    "datePosted": "2026-11-05 20:30:35",
+    "hiringOrganization": {
+     "@context": "http://schema.org",
+     "@type": "Organization",
+     "name": "Davis Cartage Company",
+     "sameAs": "https://daviscartage.com/",
+     "identifier": "davis-cartage-company"
+    },
+    "employmentType": "FULL_TIME",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Corunna",
+      "addressLocality": "Corunna",
+      "addressRegion": "MI",
+      "postalCode": "48817",
+      "addressCountry": "US"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:45:36.132503Z",
+  "content_hash": "ffd996e27f9f82b9511c25ad7d642a5baaaa2c000bc91bebae32fec341311de9"
+ },
+ {
+  "source_slug": "recooty",
+  "board_token": "https://jobs.recooty.com/davis-cartage-company",
+  "external_id": "2454ed6da7713fa3ea5edbd4",
+  "payload": {
+   "page_url": "https://jobs.recooty.com/davis-cartage-company/class-a-local-driver-corunna-mi-75k-da636",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "description": "<p><em>Davis Cartage Co. is hiring a full time Local Class A CDL Driver in Corunna, MI.&nbsp;</em></p><br />\r\n<br />\r\n<p><em>Enjoy steady, year-round work, weekly pay,&nbsp;and&nbsp;weekends off with a well established, family owned company that has served the transportation, warehousing and logistics industry since 1941.&nbsp;</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em><strong>Position details:</strong></em></p><br />\r\n<br />\r\n<p><em>Monday through Friday</em></p><br />\r\n<br />\r\n<p><em>Day shift</em></p><br />\r\n<br />\r\n<p><em>Approximately 10-14 hours per day</em></p><br />\r\n<br />\r\n<p><em>Average annual pay of $75,000</em></p><br />\r\n<br />\r\n<p><em>Weekly pay</em></p><br />\r\n<br />\r\n<p><em>Local routes primarily throught Michigan</em></p><br />\r\n<br />\r\n<p><em>Most weekends off , with occasional Saturday work- typically only 3-4 Saturdays per year</em></p><br />\r\n<br />\r\n<p><em>Well maintained equipment</em></p><br />\r\n<br />\r\n<p><em>Our fleet includes Freightliner Cascadias, day cabs, sleepers, and 53&#39; dry vans.</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><strong><em>Benefits include:</em></strong></p><br />\r\n<br />\r\n<p><em>Medical, dental, and vision insurance</em></p><br />\r\n<br />\r\n<p><em>401k with company match</em></p><br />\r\n<br />\r\n<p><em>Paid time off</em></p><br />\r\n<br />\r\n<p><em>Disability insurance</em></p><br />\r\n<br />\r\n<p><em>Life insurance</em></p><br />\r\n<br />\r\n<p><em>Monthly safety bonuses</em></p><br />\r\n<br />\r\n<p><em>Safe, reliable equipment</em></p><br />\r\n<br />\r\n<p><em>Company shirts and jacket</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Qualified candidates must have 2 years of verifiable experience, a clean MVR and pass a drug screen and physical.&nbsp;</em></p><br />\r\n<br />\r\n<p><em>To learn more about Davis Cartage Co., please visit www.daviscartage.com and follow&nbsp;us on Facebook.</em></p><br />\r\n<br />\r\n<p>&nbsp;</p><br />\r\n<br />\r\n<p><em>Join a company that values safety, dependable service, and the drivers who make it all possible.&nbsp;</em></p><br />\r\n<br />\r\n<p><em><strong>Apply today to become part of the Davis Cartage team! (989) 743-4445 ext. 274</strong></em></p>",
+    "title": "Class A Local Driver, Corunna, MI 75k",
+    "experienceRequirements": "Entry Level",
+    "datePosted": "2026-11-05 20:29:02",
+    "hiringOrganization": {
+     "@context": "http://schema.org",
+     "@type": "Organization",
+     "name": "Davis Cartage Company",
+     "sameAs": "https://daviscartage.com/",
+     "identifier": "davis-cartage-company"
+    },
+    "employmentType": "FULL_TIME",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Flint",
+      "addressLocality": "Flint",
+      "addressRegion": "Michigan",
+      "postalCode": "48507",
+      "addressCountry": "US"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:45:36.712367Z",
+  "content_hash": "530cd76a0d04e42b2da702ab2497e5849bcc3cd17f0d3cd1890fae9e1570a475"
+ }
+]

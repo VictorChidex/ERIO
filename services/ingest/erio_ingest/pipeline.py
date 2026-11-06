@@ -158,7 +158,7 @@ def _record_success(
             seen = len(fetched.postings)
 
         listed = None if fetched.unchanged else {p.external_id for p in fetched.postings}
-        changes = apply_successful_fetch(session, board_id, listed, now)
+        changes = apply_successful_fetch(session, board_id, listed, now, fetched.complete)
 
         board = session.get_one(CompanyBoard, board_id, with_for_update=True)
         board.last_ok_at = now

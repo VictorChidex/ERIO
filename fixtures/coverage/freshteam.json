@@ -1,0 +1,37 @@
+[
+ {
+  "source_slug": "freshteam",
+  "board_token": "https://giaspace.freshteam.com/jobs",
+  "external_id": "31594805768fcff9ec98762a",
+  "payload": {
+   "page_url": "https://giaspace.freshteam.com/jobs/BrN_g61K-tb6/help-desk-technician",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "url": "https://giaspace.freshteam.com/jobs/BrN_g61K-tb6/Help%20Desk%20Technician",
+    "title": "Help Desk Technician",
+    "description": "&lt;p&gt;&lt;strong&gt;The days of reading old, boring IT Technician Job Ads are over. We just gotta’ ask…&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tired of being treated like just a “geek?”&lt;/li&gt;&lt;li&gt;Feel like your career is stuck in “rinse and repeat” mode?&lt;/li&gt;&lt;li&gt;Are you fed up with poor pay for being a really good tech?&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Well, you’re reading this; that’s good. That means, you’re ready for a change. So are we.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;We are GiaSpace, an enterprise services company that feeds the technology demands and network needs of small and medium sized businesses in the South Florida Market. Each of us make up a brilliant team of dedicated intellectuals, some are great at Sales &amp;amp; Marketing, and others are great at Technology &amp;amp; Network infrastructures. Every role, serving an absolute purpose.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;That’s where you come in… Keep reading, it gets better.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;We don’t want a tech that just knows computers, because we could find that really easily. Instead, here are the skillsets we’re actively looking for with our next Help Desk Technician (III):&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Windows Server, Troubleshooting and Repair&lt;/li&gt;&lt;li&gt;Network Component Installation, Diagnostics&lt;/li&gt;&lt;li&gt;DHCP and DNS Working Experience, Diagnostics&lt;/li&gt;&lt;li&gt;VPN Configuration, Setup and Implementations&lt;/li&gt;&lt;li&gt;Routers and Switches, Working Utility Expertise&lt;/li&gt;&lt;li&gt;Virus and Security Troubleshooting &amp;amp; Remedies&lt;/li&gt;&lt;li&gt;Proficient Capacity to Serve People, and Problems&lt;/li&gt;&lt;li&gt;Working Ability to Ask for Help, when needed&lt;/li&gt;&lt;li&gt;Identify potential band-aids or issues that need to be addressed before they become larger problems&lt;/li&gt;&lt;li&gt;Standby rotation&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Now, let’s talk about the Why you’d want to work here…&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Yes, we have benefits. Yes, we have a 401k. In today’s market, nearly everyone does. We will train you, how to utilize our proven Service Processes, and support you as a Proficient Technical resource in the field, every day. We have a competitive salary range, and it’s reserved for the right candidate to learn in the interview process.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ready for the next step? Good, here are a few final details to consider…&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;We do not believe that, being career-stuck is a strategy. The greatest rewards are reserved for those, who want to be more and then put in the work, to be their best version of themselves. We expect to retain the best, and that is why we are so bold about what we want – because we expect to find it. Send in your Cover Letter and Resume, to: &lt;strong&gt;help_desk_technician_id_BrN_g61K-tb6@giaspace.freshteam.com&lt;/strong&gt;&amp;nbsp; and be sure to list in the Cover Letter, why this specific role fits into your Career Path. Only submissions with these articulations will be considered.&lt;/p&gt;&lt;p&gt;No recruiters, please.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;",
+    "datePosted": "2026-03-06 02:01:12 UTC",
+    "employmentType": "FULL_TIME",
+    "remote": "false",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "GiaSpace Inc"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressRegion": "Fort Lauderdale",
+      "postalCode": "33308",
+      "addressLocality": "Florida",
+      "addressCountry": "United States of America"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:11.958337Z",
+  "content_hash": "d513a5f95b34c6e48bb19c5f1ba2dbead310e0e390551551c94010079e749a52"
+ }
+]

@@ -1,0 +1,131 @@
+[
+ {
+  "source_slug": "paradox",
+  "board_token": "https://careers.marriott.com/sitemap-3a392567-en.xml",
+  "external_id": "c9f812ed27ae796b7fb4b9cf",
+  "payload": {
+   "page_url": "https://careers.marriott.com/lead-line-cook-corner/job/00885A6A8FF9414FBCCCA95B66A2BB24",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "url": "https://careers.marriott.com/lead-line-cook-corner/job/00885A6A8FF9414FBCCCA95B66A2BB24",
+    "directApply": false,
+    "title": "Lead Line Cook - Corner",
+    "description": "<div class='description'><p><b>Description</b> </p> <table style=\"width:100%\"><tbody><tr bgcolor=\"#595959\"><td><font face=\"Arial\" color=\"#ffffff\" style=\"font-size:14pt\">Position Information</font></td></tr><tr><td><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Location: JW Marriott Austin</font></p><p style=\"margin-bottom:0px;margin-top:0px\"> </p></td></tr><tr bgcolor=\"#595959\"><td></td></tr><tr><td><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Summary:<BR><p><b>Enjoy advanced scheduling and the flexibility to swap or pick up shifts easily using our app—perfect for achieving better balance while pursuing your passion in the food and beverage industry!</b></p> <br /> <p>White Lodging develops and operates a portfolio of award-winning, premium-brand hotels, rooftop bars and restaurants in some of the country’s best cities to live. We know that the hospitality business, like life, is how you make people feel. That’s where you come in. You’ll help bring the virtue of hospitality to life while we create an environment that allows you to be your best self and grow.</p></font></p><p style=\"margin-bottom:0px;margin-top:0px\"> </p></td></tr><tr bgcolor=\"#595959\"><td></td></tr><tr><td height=\"14\"><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Responsibilities:<BR><p></p><section> <p><u><b>What You’ll Do</b></u></p> <ul><li>Serve as a Sous Chef in training, learning and practicing full job duties in the absence of the Sous Chef.</li><li>Mentor and collaborate with Entry and Senior Line Cooks, apprentices, and stewards while managing daily preparation and production in the food outlet.</li><li>Follow company F&B procedures, health department regulations, and federal guidelines.</li><li>Assist in maintaining food cost and labor cost standards.</li><li>Check freshness of foods and ingredients; ensure all recipes and portion-use records are followed.</li><li>Be aware of guest feedback scores and work to positively influence rankings.</li><li>Foster a climate of cooperation and respect among coworkers.</li><li>Perform other duties as assigned.</li></ul> </section> <section> <p><u><b>What You’ll Bring</b></u></p> <ul><li>Knowledge of all cooking and preparation equipment.</li><li>Basic cooking skills including sautéing, broiling, frying, roasting, butchery, garde manger, pantry, and breakfast cookery.</li><li>Culinary education or apprenticeship preferred but not mandatory.</li><li>Ability to stand and move at a fast pace for long periods of time.</li></ul> </section><BR><p></p></font></p><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" style=\"font-size:14pt\"> </font></p><p style=\"margin-bottom:0px;margin-top:0px\"> </p><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" style=\"font-size:14pt\"> </font></p></td></tr><tr bgcolor=\"#595959\"><td></td></tr><tr><td height=\"14\"><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Other information:<BR><p> </p><section> <p><u><b>What You Can Look Forward To</b></u></p> <ul><li>Medical, Dental, and Vision insurance (starting Day 1)</li><li>Life Insurance and Disability Insurance</li><li>Paid Parental Leave</li><li>DailyPay option</li><li>Employee Assistance Program (EAP)</li><li>401(k) with company match</li><li>Vacation/Paid Time Off (PTO) with rollover</li><li>Complimentary wellness tools</li><li>Unlimited referral bonuses</li><li>Leadership development and tuition reimbursement</li><li>Discounts on hotel rooms, dining, and other travel/entertainment experiences</li><li>Multiple hotels in each market = more opportunities for growth</li></ul> </section> <footer> <p> White Lodging is an equal opportunity employer. We value diversity and are committed to creating an inclusive environment for all associates. </p> </footer><p></p></font></p></td></tr></tbody></table><p> </p>  Additional Information: This hotel is owned and operated by an independent franchisee. The franchisee is a separate company and a separate employer from Marriott International, Inc. and its subsidiary companies (collectively, “Marriott”). The franchisee solely controls all aspects of the hotel’s employment policies and practices, including hiring, termination, discipline, staffing, compensation, benefits, and all other terms and conditions of employment. If you apply for this position, Marriott will have no involvement in the selection process. Your application information will not be provided to or accessible by Marriott. If you accept a position at this hotel, you will be employed by a franchisee, not Marriott.</div>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Marriott",
+     "value": "75-INFOR-20787"
+    },
+    "datePosted": "2026-11-06T00:05:25.741404+00:00",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "White Lodging",
+     "sameAs": "https://www.marriott.com/",
+     "logo": "https://d25zu39ynyitwy.cloudfront.net/oms/000000/image/2024/8/YW9PP_marriott-google-1x-1/marriott-google-1x-1_-1x-1.jpg"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "109 E. 7th St.",
+       "addressLocality": "Austin",
+       "addressRegion": "TX",
+       "postalCode": "78701",
+       "addressCountry": "US"
+      }
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-06T00:35:37.608803Z",
+  "content_hash": "546c3479916674fe1f2a24dcca6db94859ba50a469e9074a25560d2f6558bf02"
+ },
+ {
+  "source_slug": "paradox",
+  "board_token": "https://careers.marriott.com/sitemap-3a392567-en.xml",
+  "external_id": "51ab41a76569439eff38b8db",
+  "payload": {
+   "page_url": "https://careers.marriott.com/busperson-dean-s/job/00B120CFA3ADEC359541791C54FACFBB",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "url": "https://careers.marriott.com/busperson-dean-s/job/00B120CFA3ADEC359541791C54FACFBB",
+    "directApply": false,
+    "title": "Busperson - Dean's",
+    "description": "<div class='description'><p><b>Description</b> </p> <table style=\"width:100%\"><tbody><tr bgcolor=\"#595959\"><td><font face=\"Arial\" color=\"#ffffff\" style=\"font-size:14pt\">Position Information</font></td></tr><tr><td><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Location: JW Marriott Indianapolis</font></p><p style=\"margin-bottom:0px;margin-top:0px\"> </p></td></tr><tr bgcolor=\"#595959\"><td></td></tr><tr><td><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Summary:<BR>White Lodging develops and operates a portfolio of award-winning, premium-brand hotels, rooftop bars and restaurants in some of the country’s best cities to live. We know that the hospitality business, like life, is how you make people feel. That’s where you come in. You’ll help bring the virtue of hospitality to life while we create an environment that allows you to be your best self and grow.</font></p><p style=\"margin-bottom:0px;margin-top:0px\"> </p></td></tr><tr bgcolor=\"#595959\"><td></td></tr><tr><td height=\"14\"><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Responsibilities:<BR>WHAT YOU'LL DO<BR><BR>•A Busperson will ensure that all tables are clean and properly set while also assisting the Food Runner when necessary <BR>•Work closely and maintain excellent communication with servers. Assist servers with table maintenance, clearing, marking, and beverage delivery<BR>•Anticipate guest needs and offer exemplary hospitality. Exhibit professionalism and friendliness at all times<BR>•Learn to operate the Host Stand<BR>•Be knowledgeable of all menu items, contents, preparation methods, and garnishes. Accurately answer any guest questions <BR>•Perform all cleaning, opening, and closing duties as assigned <BR>•Process all payment methods <BR>•Be an ambassador of our establishment by maintaining a neat and professional personal appearance<BR>•Perform other duties as assigned  <BR><BR>WHAT YOU'LL BRING<BR><BR>•A Busperson will have an outgoing and social personality <BR>•Excellent communication and listening skills<BR>•A passion for service with a positive, can-do attitude<BR>•A willingness to learn and move into the server role <BR>•Ability to handle high volume and work under pressure<BR>•A team-player mindset<BR>•Ability to stand and move at a fast pace for long periods of time. Working long hours may also be required based on business needs.</font></p><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" style=\"font-size:14pt\"> </font></p><p style=\"margin-bottom:0px;margin-top:0px\"> </p><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" style=\"font-size:14pt\"> </font></p></td></tr><tr bgcolor=\"#595959\"><td></td></tr><tr><td height=\"14\"><p style=\"margin-bottom:0px;margin-top:0px\"><font face=\"Trebuchet MS\" color=\"#000000\" style=\"font-size:14pt\">Other information:<BR>•DailyPay option <BR>•Day 1 Medical, Dental and Vision insurance<BR>•Vacation/Paid Time Off (PTO) with rollover<BR>•Complimentary wellness tools <BR>•Unlimited referral bonuses<BR>•401(k) with company match<BR>•Hostcare Resources healthcare concierge  <BR>•Leadership development <BR>•Tuition reimbursement <BR>•Discounts on hotel rooms, dining, and other travel/entertainment experiences<BR>•Multiple hotels in each market = more opportunities<BR><BR>White Lodging is an equal opportunity employer. We value diversity and are committed to creating an inclusive environment for all associates.</font></p></td></tr></tbody></table><p> </p>  Additional Information: This hotel is owned and operated by an independent franchisee. The franchisee is a separate company and a separate employer from Marriott International, Inc. and its subsidiary companies (collectively, “Marriott”). The franchisee solely controls all aspects of the hotel’s employment policies and practices, including hiring, termination, discipline, staffing, compensation, benefits, and all other terms and conditions of employment. If you apply for this position, Marriott will have no involvement in the selection process. Your application information will not be provided to or accessible by Marriott. If you accept a position at this hotel, you will be employed by a franchisee, not Marriott.</div>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Marriott",
+     "value": "75-INFOR-21696"
+    },
+    "datePosted": "2026-11-05T06:05:14.574551+00:00",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "White Lodging",
+     "sameAs": "https://www.marriott.com/",
+     "logo": "https://d25zu39ynyitwy.cloudfront.net/oms/000000/image/2024/8/YW9PP_marriott-google-1x-1/marriott-google-1x-1_-1x-1.jpg"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "10 S West St",
+       "addressLocality": "Indianapolis",
+       "addressRegion": "IN",
+       "postalCode": "46204",
+       "addressCountry": "US"
+      }
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-06T00:35:38.049146Z",
+  "content_hash": "e0b964bcbe8ecaa9ac8682480f1f3870c809032a98032765d1c6be5ea6ceead7"
+ },
+ {
+  "source_slug": "paradox",
+  "board_token": "https://careers.marriott.com/sitemap-3a392567-en.xml",
+  "external_id": "af14532faad3f70ad6b123ec",
+  "payload": {
+   "page_url": "https://careers.marriott.com/security/job/024C0A0C402149A4F751D2BB55AD94C1",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "url": "https://careers.marriott.com/security/job/024C0A0C402149A4F751D2BB55AD94C1",
+    "directApply": false,
+    "title": "Security",
+    "description": "<div class='description'><p><b>Description</b> </p> <p><font face=\"font-size:1.0pt;\">Summary:<BR><p></p><section> <p><u><b>Who We Are</b></u></p> <p> White Lodging develops and operates a portfolio of award-winning, premium-brand hotels, rooftop bars, and restaurants in some of the country’s best cities to live. We know that the hospitality business, like life, is about how you make people feel. That’s where you come in. You’ll help bring the virtue of hospitality to life while we create an environment that allows you to be your best self and grow. The Security Officer promotes a safe and welcoming environment for guests and associates by maintaining order, enforcing property policies, and responding to incidents. This role is responsible for patrolling hotel grounds, monitoring security systems, and investigating and documenting events such as theft, injury, or property damage. </p> </section><p></p></font></p><p>Responsibilities:<BR><p></p><section> <p><u><b>What You’ll Do</b></u></p> <ul><li>Patrol interior and exterior areas to identify safety risks, suspicious behavior, or security breaches.</li><li>Monitor and document activity from security cameras, reporting any unusual or unsafe conditions.</li><li>Control access to associate entrances, issue and collect visitor passes, and safeguard hotel keys.</li><li>Respond to incidents including theft, property damage, unlawful entry, or guest disturbances, creating clear written reports.</li><li>Assist with lost and found, secure property, and maintain detailed activity logs.</li><li>Support emergency response efforts including fire, medical, severe weather, or evacuation procedures.</li><li>Generate associate identification cards and assist with other security-related administrative tasks.</li><li>Collaborate with hotel leadership and associates to ensure a safe and positive guest experience.</li></ul> </section> <section> <p><u><b>What You’ll Bring</b></u></p> <ul><li>Previous security, hospitality, or customer service experience preferred.</li><li>Knowledge of CCTV operations is a plus.</li><li>CPR and First Aid certification (or willingness to obtain after hire).</li><li>Ability to write clear, professional incident and investigative reports.</li><li>Strong interpersonal skills with the ability to remain calm and tactful in stressful situations.</li><li>Basic computer skills (Microsoft Office Suite).</li><li>Bilingual in English and Spanish preferred.</li></ul> </section><p></p></p><p>Other information:<BR><p></p><section> <p><u><b>What You Can Look Forward To</b></u></p> <ul><li>Medical, Dental, and Vision insurance (starting Day 1)</li><li>Life Insurance and Disability Insurance</li><li>Paid Parental Leave</li><li>DailyPay option</li><li>Employee Assistance Program (EAP)</li><li>401(k) with company match</li><li>Vacation/Paid Time Off (PTO) with rollover</li><li>Complimentary wellness tools</li><li>Unlimited referral bonuses</li><li>Leadership development and tuition reimbursement</li><li>Discounts on hotel rooms, dining, and other travel/entertainment experiences</li><li>Multiple hotels in each market = more opportunities for growth</li></ul> </section> <footer> <p> White Lodging is an equal opportunity employer. We value diversity and are committed to creating an inclusive environment for all associates. </p> </footer><BR><p></p></p>  Additional Information: This hotel is owned and operated by an independent franchisee. The franchisee is a separate company and a separate employer from Marriott International, Inc. and its subsidiary companies (collectively, “Marriott”). The franchisee solely controls all aspects of the hotel’s employment policies and practices, including hiring, termination, discipline, staffing, compensation, benefits, and all other terms and conditions of employment. If you apply for this position, Marriott will have no involvement in the selection process. Your application information will not be provided to or accessible by Marriott. If you accept a position at this hotel, you will be employed by a franchisee, not Marriott.</div>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Marriott",
+     "value": "75-INFOR-27573"
+    },
+    "datePosted": "2026-11-06T00:05:26.411499+00:00",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "White Lodging",
+     "sameAs": "https://www.marriott.com/",
+     "logo": "https://d25zu39ynyitwy.cloudfront.net/oms/000000/image/2024/8/YW9PP_marriott-google-1x-1/marriott-google-1x-1_-1x-1.jpg"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "109 E. 7th St.",
+       "addressLocality": "Austin",
+       "addressRegion": "TX",
+       "postalCode": "78701",
+       "addressCountry": "US"
+      }
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-06T00:35:38.799539Z",
+  "content_hash": "322d56b58b97a29be405e9a1109bb6695c98e6f54e1ada147f0365d6228d022b"
+ }
+]

@@ -20,7 +20,7 @@ from erio_core.connectors.greenhouse import GreenhouseConnector
 from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
 from erio_core.db.seed import sync_sources
 from erio_ingest.pipeline import crawl_board
-from erio_ingest.status import mark_unverified
+from erio_ingest.status import apply_successful_fetch, mark_unverified
 from erio_ingest.storage import MemoryRawStore
 
 FIXTURE = Path(__file__).resolve().parents[3] / "fixtures" / "greenhouse" / "truelayer.json"
@@ -218,3 +218,18 @@ def test_failing_board_keeps_jobs_open_then_unknown_after_72_hours(board: Board)
 
     board.crawl(ok())  # the board recovers
     assert board.statuses() == ["open", "open", "open"]
+
+
+def test_an_incomplete_fetch_closes_nothing(board: Board) -> None:
+    board.crawl()
+    with Session(board.engine) as session, session.begin():
+        for minutes in (0, 45, 90):
+            # A capped crawl listed nothing it knows of: the rest are unknown, not gone.
+            apply_successful_fetch(
+                session,
+                board.board_id,
+                set(),
+                board.now + timedelta(minutes=minutes),
+                complete=False,
+            )
+    assert {state for state, _ in board.jobs().values()} == {"open"}

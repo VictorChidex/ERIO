@@ -1,0 +1,127 @@
+[
+ {
+  "source_slug": "jobkit",
+  "board_token": "https://jobs.rubyonrails.org",
+  "external_id": "44740",
+  "payload": {
+   "id": 44740,
+   "title": "Lead Engineer, AI Accounting",
+   "description": "### About Exponent\r\n\r\nExponent is a financial platform built for franchise and multi-location restaurant operators. We offer three integrated products: financing programs including a charge card, acquisition and build-out loans, and an AI-powered Accountant. Operators get one place to manage spend, get growth capital and automate their financial operations. We have secured significant equity and credit capital, and we're backed by leading institutional investors and family offices who run large franchise portfolios.\r\n\r\n### The role\r\n\r\nYou'll own core systems in our AI Accountant, built on Ruby on Rails. It pulls in an operator's POS, banking, payroll and processor data, classifies and reconciles it, and automates the monthly close.\r\n\r\nThis is a full-stack role with a focus on backend architecture. You'll report to our Head of AI Accounting & Engineering, on a small, experienced team that ships to production multiple times a day. It's hands-on IC work, with a path to leading engineers as the team grows.\r\n\r\n### What you'll do\r\n\r\n- **Own systems end to end.** Design, build, ship and run systems in production, from schema to UI to deploy to on-call. You own what you build after it goes live.\r\n- **Shape the backend architecture.** Make the calls on how the AI Accountant's data, jobs and services fit together as it grows.\r\n- **Make unreliable data reliable.** Integrate with difficult third-party APIs. Build ingestion that is idempotent by default (deduplication, safe replay, historical backfill), so any source can be re-pulled and re-processed without corrupting the ledger.\r\n- **Keep every account in sync.** Own the background job system that keeps thousands of accounts in sync: scheduling, locking, retries, failure handling, and the monitoring that tells us when a sync quietly stopped. A stuck job is a product bug, not an ops chore.\r\n- **Put LLMs and ML into the product path.** Models already do classification and reconciliation in the product, and we're taking it from build to first pilots. That's when the real decisions get made about output validation, confidence thresholds, fallbacks and failure handling. You'll make them, and make a probabilistic component behave inside a system that has to be deterministic where it counts.\r\n- **Help build the company.** Small team, broad scope. Every engineer owns what they ship and uses judgment instead of waiting for direction. You'll learn how our technology helps operators move faster and run better.\r\n\r\n### The ideal candidate\r\n\r\n- **You ship fast.** You've taken a feature from idea to production in a week. You'd rather ship a small thing this week than a big thing next month.\r\n- **You know when to slow down and focus on the big thing.** Ledgers, money movement and anything a customer trusts us with get the time they need.\r\n- **Thoughtful critique makes you better.** You ask for review early, take hard feedback well and give it with care.\r\n- **You make the people around you smarter.** You share what you know, say \"I don't know\" without hesitating, and work hard at explaining things clearly.\r\n- **You want to build something new.** You'd rather shape a product early than maintain a finished one, and having no playbook appeals to you.\r\n- **Quality is part of every step.** Fast means a smaller scope, not rougher work. Tests, error states and the words an operator reads all count from the start.\r\n\r\n### Requirements\r\n\r\n- 5+ years of engineering, with end-to-end ownership of systems in production\r\n- Full-stack experience, with depth on the backend\r\n- Deep experience in a server-side framework: Rails, Django, Phoenix, TypeScript or similar\r\n- Expertise in AI-assisted development: you use AI tools in your daily work and know where they help and where they don't\r\n- PostgreSQL: schema design, indexing, transactional correctness\r\n- Integrating with unreliable third-party APIs: thin docs, no webhooks, surprise format changes, duplicate or partial data\r\n- Idempotent data ingestion (deduplication, replay, backfill) and background job infrastructure (scheduling, locking, retries, failure handling)\r\n\r\n### Strongly preferred\r\n\r\n- Fintech experience, or anywhere getting money math right was the job\r\n- Ruby on Rails experience. It doesn't need to be recent\r\n- POS or restaurant data: Square, Toast, Qu, Revel, delivery platform payouts, processor settlement files\r\n- Accounting platforms: QuickBooks Online, Sage Intacct, NetSuite, Restaurant365\r\n- Financial data aggregators: Plaid, Rutter, Stripe\r\n\r\n### Nice to have\r\n\r\n- Production LLM experience: LLMs in a product path, including output validation and failure handling\r\n- Ledger, double-entry or reconciliation system design\r\n- Classification models with measurable evaluation\r\n- CSV and file-based import pipelines at scale\r\n\r\n### The details\r\n\r\n- $160,000–$200,000 base salary, commensurate with experience, plus equity\r\n- Hybrid, based at our Flatiron office in New York: at least 2 days a week in the office, 3+ preferred. Commuting in from NJ, Westchester, Connecticut, Long Island or Philly works.\r\n- Benefits: PTO, healthcare, HSA/FSA, 401(k)\r\n\r\n### How to apply\r\n\r\nEmail careers@exponentfi.com with a short note on why this role interests you.",
+   "location": "New York, NY (Flatiron)",
+   "arrangement": "hybrid",
+   "salary": "160,000–200,000 + equity",
+   "salary_currency": "USD",
+   "salary_period": "yearly",
+   "company": "Exponent",
+   "company_website": "https://exponentfi.com",
+   "application_type": "email",
+   "application_email": "careers@exponentfi.com",
+   "term": {
+    "id": 1,
+    "name": "Full-time"
+   },
+   "category": {
+    "id": 300,
+    "name": "Senior"
+   },
+   "plan": {
+    "id": 1782,
+    "name": "Featured",
+    "price": 299,
+    "period": 60,
+    "highlight": true,
+    "badge": false,
+    "pin": true
+   },
+   "logo": "https://jobs.rubyonrails.org/files/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTQwODksInB1ciI6ImJsb2JfaWQifX0=--5de568c5b279a11acb7f0ab096a2449bb07ce3c3/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzEyOCwxMjhdfSwicHVyIjoidmFyaWF0aW9uIn19--539c1950d94df9972d6c5a98e921f74f9ecd5632/exponent-mark-color-on-black.png",
+   "url": "https://jobs.rubyonrails.org/jobs/44740-lead-engineer-ai-accounting-exponent.json",
+   "preview_image_url": "https://jobs.rubyonrails.org/jobs/44740-lead-engineer-ai-accounting-exponent.png",
+   "created_at": "2026-11-03T17:33:49.155Z"
+  },
+  "fetched_at": "2026-11-06T00:18:50.497252Z",
+  "content_hash": "b249e1d6671ebda1f3575f8b92861f817fad1485e1d8a3dcb18d13613824f2b5"
+ },
+ {
+  "source_slug": "jobkit",
+  "board_token": "https://jobs.rubyonrails.org",
+  "external_id": "44739",
+  "payload": {
+   "id": 44739,
+   "title": "Senior Software Engineer, Developer Enablement",
+   "description": "A little about us…Fleetio is a modern software platform that helps thousands of organizations worldwide manage their fleet operations. Transportation technology is a hot market, and we’re leading the charge with raving fans and new customers signing up every day. We raised $450M in our Series D funding round in March of 2025 and are on an exciting trajectory as a company. Fleetio is also a proud founding member of the Rails Foundation!\r\n\r\nMore about our team and company:\r\n\r\nFleetio overview video: https://www.youtube.com/watch?v=YoXyXTFWbkg\r\nOur careers page: https://www.fleetio.com/careers\r\nDescription\r\nFleetio is seeking an experienced Senior Software Engineer to join our Developer Enablement team. The Developer Enablement team owns Fleetio’s public API, webhooks, Developer Portal, and the tools that let customers and partners build on Fleetio. You will be a key player in making our API reliable, well-documented, and easy to build on, so that customers and integration partners can connect, extend, and automate Fleetio on their own.\r\n\r\nIf you are passionate about leveraging technology to drive meaningful impact, excel in problem-solving, and possess a keen eye for developer experience, we encourage you to apply and join us in shaping the future of fleet management software.\r\n\r\nMore About Our Team and Company\r\nWatch our culture videos: https://fleet.io/culture\r\nEngineering culture, interview process and videos: https://www.fleetio.com/careers/engineering\r\nFleetio Go overview video: https://www.fleetio.com/go\r\nMore about the Fleetio platform: https://www.fleetio.com/features\r\nAPI docs: developer.fleetio.com\r\nTest drive Fleetio to get an even better feel for what we're building: https://www.fleetio.com/register\r\n\r\nThis is a remote opportunity and is open to candidates in the United States, Canada, or Mexico.\r\n\r\nWho You Are\r\nThe ideal candidate for this role will demonstrate a strong proficiency in backend development and API design, with a proven track record of delivering high-quality software solutions. You are passionate about building APIs and developer tools with clean, consistent design and scalable architecture. You should be an effective communicator and be comfortable working in an asynchronous environment with your team. You are product-minded and team-oriented, willing to hear others' opinions and educate on best practices.\r\n\r\nYour Impact\r\nYou will collaborate closely with Product Managers, Designers, and other Engineers to consistently deliver high-quality software.\r\nYou will take part in planning, designing, and implementing improvements to Fleetio’s public API, webhooks, and Developer Portal.\r\nYou will engage in collaborative design and architecture of features.\r\nYou will deliver well-tested, maintainable, and performant code.\r\nYou will research and implement prototypes and spikes as necessary to validate assumptions and technical feasibility.\r\nYou will possess a strong voice in development and planning processes.\r\nYou will thoroughly review your peers’ code to ensure quality and consistency and to share knowledge.\r\nYou will set and uphold API standards, and guide engineers across Fleetio as they design and review changes to our public API.\r\nYou will improve the experience of developers who build on Fleetio through clear documentation, examples, sandbox environments, and tooling.\r\nYou will help prepare our API for AI-driven use, so that AI assistants and agents can work with Fleetio data safely.\r\nYou will help customers and integration partners succeed with our API, and take part in the team’s on-call rotation to keep our API, webhooks, and integrations reliable.\r\n\r\nYour Experience\r\n5+ years experience with Ruby on Rails \r\n2+ years experience with ReactJS, Typescript\r\nVaried experience building full-stack web-based systems and features\r\nExperience designing, building, and maintaining public REST APIs, including authentication (such as OAuth), versioning, rate limiting, and documentation (such as OpenAPI)\r\nExperience with webhooks, event-driven systems, or third-party integrations\r\nPrevious experience working closely with a product team to architect solutions\r\nStrong attention to detail in API design, consistency, and documentation\r\nExcellent written and verbal communication skills\r\nExperienced writing unit, integration, and API tests\r\nExperience with developer portals, SDKs, or AI tooling is a plus\r\nBe sure to mention “coffee” in your application so we know you actually read this\r\n\r\nBenefits \r\nMultiple health/dental coverage options (100% coverage for employee, 50% for family)\r\nVision insurance\r\nIncentive stock options\r\n401(k) match of 4%\r\nPTO - 4 weeks (increases at year two!)\r\n12 company holidays + 2 floating holidays\r\nParental leave - birthing parent (16 weeks paid) non-birthing (4 weeks paid)\r\nFSA & HSA options\r\nShort and long term disability (short term 100% paid)\r\nCommunity service funds\r\nProfessional development funds\r\nWellbeing fund - $150 quarterly\r\nBusiness expense stipend - $125 quarterly\r\nMac laptop + new hire equipment stipend",
+   "location": "USA, Mexico, and Canada",
+   "arrangement": "remote",
+   "salary": "",
+   "salary_currency": "USD",
+   "salary_period": "monthly",
+   "company": "Fleetio",
+   "company_website": "https://www.fleetio.com/",
+   "application_type": "url",
+   "application_url": "https://grnh.se/w15kge847us",
+   "term": {
+    "id": 1,
+    "name": "Full-time"
+   },
+   "category": {
+    "id": 300,
+    "name": "Senior"
+   },
+   "plan": {
+    "id": 1782,
+    "name": "Featured",
+    "price": 299,
+    "period": 60,
+    "highlight": true,
+    "badge": false,
+    "pin": true
+   },
+   "url": "https://jobs.rubyonrails.org/jobs/44739-senior-software-engineer-developer-enablement-fleetio.json",
+   "preview_image_url": "https://jobs.rubyonrails.org/jobs/44739-senior-software-engineer-developer-enablement-fleetio.png",
+   "created_at": "2026-11-02T22:24:57.023Z"
+  },
+  "fetched_at": "2026-11-06T00:18:50.497252Z",
+  "content_hash": "8619cad4ba1d70a4c5bc713165e06392647412fdbc5f7a431a29905bead617be"
+ },
+ {
+  "source_slug": "jobkit",
+  "board_token": "https://jobs.rubyonrails.org",
+  "external_id": "44697",
+  "payload": {
+   "id": 44697,
+   "title": "Senior Platform Engineer",
+   "description": "A little about us…Fleetio is a modern software platform that helps thousands of organizations worldwide manage their fleet operations. Transportation technology is a hot market, and we’re leading the charge with raving fans and new customers signing up every day. We raised $450M in our Series D funding round in March of 2025 and are on an exciting trajectory as a company. Fleetio is also a proud founding member of the Rails Foundation!\r\n\r\n**More about our team and company:**\r\nFleetio overview video: https://www.youtube.com/watch?v=YoXyXTFWbkg\r\nOur careers page: https://www.fleetio.com/careers\r\n\r\n###Description\r\nOur Platform Engineering team is looking for a Senior Platform Engineer to help run, maintain, and improve the performance of our Ruby on Rails Stack and Infrastructure. You will help scale our application using best in class architecture and software design. This includes training, software engineering, system design, and operational practices that support the needs of our engineers and customers while accounting for future growth. You will be entrusted with proactively identifying and owning initiatives that will help improve the performance, reliability, and scalability of our application stack and databases.\r\n\r\nOur team treats AI as a core part of how we engineer. We build and use AI agents, skills, and automated workflows to handle toil, speed up investigation and remediation, and give our engineers more time for high-leverage work.\r\n\r\n**More About Our Team and Company**\r\n- Watch our culture videos: https://fleet.io/culture\r\n- Engineering culture, interview process and videos: https://www.fleetio.com/careers/engineering\r\n- Fleetio Go overview video: https://www.fleetio.com/go\r\n- More about the Fleetio platform: https://www.fleetio.com/features\r\n- API docs: developer.fleetio.com\r\n- Test drive Fleetio to get an even better feel for what we're building: https://www.fleetio.com/register\r\n\r\n*This is a remote opportunity and is open to candidates in the United States.*\r\n\r\n###Who You Are\r\nOur ideal candidate is an Infrastructure Engineer experienced in scaling Ruby on Rails applications, with a passion for optimization and performance improvements. You bring a strong background in Site Reliability and Infrastructure Engineering for Rails applications. You follow Agile and DevOps principles, can effectively influence teams to achieve goals, and demonstrate excellent problem-solving skills in our fast-paced environment.\r\n\r\nYou're curious about how AI is changing infrastructure and reliability work, and you're eager to shape how a platform team puts it to use.\r\n\r\n###Your Impact\r\nAs a Senior Platform Engineer on Fleetio's Platform Engineering team, you will:\r\n- Proactively identify, triage, and resolve performance issues\r\n- Enhance system observability by monitoring performance metrics across Ruby, Rails, and database systems, including SLOs and SLIs\r\n- Build and maintain AI agents, skills, and automations that reduce operational toil across incident response, triage, and routine maintenance\r\n- Use AI-assisted tooling to accelerate performance analysis, root-cause investigation, and code review\r\n- Collaborate with other SREs to proactively identify and address performance bottlenecks\r\n- Help product engineers adopt AI-driven workflows for performance and reliability best practices\r\n- Lead database capacity planning and upgrade initiatives\r\n- Manage the database-specific components of disaster recovery planning and execution\r\n- Oversee backup systems and pre-production databases\r\n- Create and maintain infrastructure and operations documentation, including runbooks and context that both engineers and AI agents can act on\r\n- Participate in the on-call rotation\r\n\r\n###Your Experience\r\n- 5+ years of Ruby/Rails Experience\r\n- 3+ years of AWS Experience\r\n- Kubernetes experience\r\n- Experience with profiling and benchmarking source code\r\n- Effective at code review and identifying potential performance problems before they reach production\r\n- Experience with Datadog or other APM tools\r\n- Excellent written and verbal communication skills\r\n\r\n###Considered a Plus\r\n- Experience building AI agents, LLM-powered automations, or integrations (e.g., using tool/function calling or MCP) for engineering or operations workflows\r\nInfrastructure as Code tools (Terraform)\r\n- Deep understanding of cloud network fundamentals (routing, firewalls, load balancers, CDNs, VPCs, etc.)\r\n- Experience with distributed event and data stores, such as Kafka, Redis, Elasticsearch, Memcached, and TimescaleDB\r\n- You know a thing or two about the fleet management industry\r\n\r\n###Benefits \r\n- Multiple health/dental coverage options (100% coverage for employee, 50% for family)\r\n- Vision insurance\r\n- Incentive stock options\r\n- 401(k) match of 4%\r\n- PTO - 4 weeks (increases at year two!)\r\n- 12 company holidays + 2 floating holidays\r\n- Parental leave - birthing parent (16 weeks paid) non-birthing (4 weeks paid)\r\n- FSA & HSA options\r\n- Short and long term disability (short term 100% paid)\r\n- Community service funds\r\n- Professional development funds\r\n- Wellbeing fund - $150 quarterly\r\n- Business expense stipend - $125 quarterly\r\n- Mac laptop + new hire equipment stipend\r\n- Fully stocked kitchen with tons of drinks & snacks (BHM only)\r\n- Remote working friendly since 2012 #LI-Remote\r\n\r\nFleetio provides equal employment opportunities to all employees and applicants and prohibits discrimination and harassment. We celebrate diversity and are committed to creating an inclusive environment for all. All employment is decided on the basis of qualifications, merit and business need.\r\n\r\nThis application is not intended to and does not create a contract or offer of employment. Employment with Fleetio is at will.\r\n\r\n*If you have a disability or a special need that requires an accommodation to fill out the online application, please let us know by calling (205) 718-7500.*",
+   "location": "Remote in the US, CAN, MEX",
+   "arrangement": "remote",
+   "salary": "",
+   "salary_currency": "USD",
+   "salary_period": "monthly",
+   "company": "Fleetio",
+   "company_website": "https://www.fleetio.com/",
+   "application_type": "url",
+   "application_url": "https://grnh.se/zdi3nik57us",
+   "term": {
+    "id": 1,
+    "name": "Full-time"
+   },
+   "category": {
+    "id": 300,
+    "name": "Senior"
+   },
+   "plan": {
+    "id": 1782,
+    "name": "Featured",
+    "price": 299,
+    "period": 60,
+    "highlight": true,
+    "badge": false,
+    "pin": true
+   },
+   "logo": "https://jobs.rubyonrails.org/files/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTQwMzEsInB1ciI6ImJsb2JfaWQifX0=--ccef4045d0eec67b80ddee4d00037a17c137b6b0/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fZmlsbCI6WzEyOCwxMjhdfSwicHVyIjoidmFyaWF0aW9uIn19--539c1950d94df9972d6c5a98e921f74f9ecd5632/Fleetio%20logo%20only.png",
+   "url": "https://jobs.rubyonrails.org/jobs/44697-senior-platform-engineer-fleetio.json",
+   "preview_image_url": "https://jobs.rubyonrails.org/jobs/44697-senior-platform-engineer-fleetio.png",
+   "created_at": "2026-10-15T11:58:25.158Z"
+  },
+  "fetched_at": "2026-11-06T00:18:50.497252Z",
+  "content_hash": "d1637a009df0fce072a87c69fec31f40b1cb386177490e6c38d35a7d5aa740f4"
+ }
+]

@@ -5,6 +5,7 @@ from pathlib import Path
 
 from sqlalchemy import Engine, select
 
+from erio_core.connectors import CONNECTORS
 from erio_core.db.models import Company, Country, Source
 from erio_core.db.seed import load_companies, load_countries, seed
 
@@ -45,7 +46,7 @@ def test_region_groups() -> None:
 
 # 30 starter boards, and 84 companies: the 57 in the seed list plus the
 # board companies not in it.
-SEEDED = {"countries": 233, "sources": 6, "companies": 84, "boards": 30}
+SEEDED = {"countries": 233, "sources": len(CONNECTORS), "companies": 84, "boards": 30}
 
 
 def test_seed_loads_countries_and_sources(migrated_engine: Engine) -> None:

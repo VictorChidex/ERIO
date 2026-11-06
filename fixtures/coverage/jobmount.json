@@ -1,0 +1,135 @@
+[
+ {
+  "source_slug": "jobmount",
+  "board_token": "https://jobnet.wacities.org/sitemap.xml",
+  "external_id": "4e311507ef2ed79ec4fd1343",
+  "payload": {
+   "page_url": "https://jobnet.wacities.org/career/45286/City-Administrator-Region-Bonney-Lake",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-05T10:13:54",
+    "validThrough": "2026-12-05T10:13:54",
+    "title": "City Administrator",
+    "description": "<p><strong>Apply by: December 8, 2026 (First Review, Open Until Filled)</strong></p><p>The City of Bonney Lake seeks a collaborative and strategically focused, experienced municipal executive to serve as its next City Administrator. Appointed by the Mayor, the City Administrator leads day-to-day operations across all city departments and carries out the policies set by the City Council.</p><p><strong>Come be part of Team Bonney Lake!</strong></p><ul><li>2027-2028 biennial budget of approximately $75 million. </li><li>23,500 population (OFM 2025 Estimate). </li><li>Water and service area serve approximately 42,000 people.</li><li>150 FTE’s of professional, dedicated staff focused on providing excellent service to the community.</li></ul><p>Job Summary</p><p>Pperform a high level of administrative, technical, supervisory and professional work in coordinating and administering the programs and services of the city government. Coordinate between the Mayor, City Council, governmental agencies and the community. Directs and coordinates the activities of the executive leadership team. Serve as the administrative head of the city and independently manage and direct city operations with ordinances and directives of the City Council. </p><p>The City Administrator is responsible to the mayor for the general coordination and supervision of the activities of the various city departments and offices, subject to the directives of the mayor. Responsible for promoting efficient and effective service delivery and to see that departments are coordinating their activities. Contribute to the City’s vision, mission, and goals in the performance of all job duties.</p><p><strong>Visit the City's Job Opportunities Page for the detailed job announcement.</strong></p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "City of Bonney Lake"
+    },
+    "jobLocation": {
+     "address": {
+      "@type": "PostalAddress",
+      "postalCode": "98391",
+      "addressLocality": "Bonney Lake",
+      "addressRegion": "Pierce"
+     },
+     "@type": "Place"
+    },
+    "industry": "Executive/City Manager/Administrator",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "minValue": "191484",
+      "@type": "QuantitativeValue",
+      "maxValue": "239488",
+      "unitText": "YEAR"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:33.366112Z",
+  "content_hash": "cf75eff9a13c0a06b1a9cff3088e1b0635652f860a364990a1ba60d78f6cf9eb"
+ },
+ {
+  "source_slug": "jobmount",
+  "board_token": "https://jobnet.wacities.org/sitemap.xml",
+  "external_id": "2e467540c1c4c20e72732939",
+  "payload": {
+   "page_url": "https://jobnet.wacities.org/career/45287/Network-Infrastructure-Manager-Region-Moses-Lake",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-05T08:12:11",
+    "validThrough": "2026-12-05T08:12:11",
+    "title": "Network & Infrastructure Manager",
+    "description": "<p>Are you a technology leader who wants your work to matter every time someone dials 911? Would you like to run infrastructure for an agency that keeps choosing to be first? If so, the Multi Agency Communications Center (MACC 911) invites you to apply to become its first Network &amp;amp; Infrastructure Manager. No background in emergency communications is required. Reporting to the Director and serving as a peer to the Public Safety Systems Manager, this newly created position leads the networks, servers, cloud and identity platforms, cybersecurity, backup and recovery, and critical facility systems behind Grant County’s primary 911 center. The Manager supervises the Information Services Technician and treats responsive support to dispatchers as a central obligation of the role. </p><p>We’re seeking a technically credible, service-oriented leader who is: </p><ul><li>A hands-on troubleshooter with a solid foundation in enterprise networks, Microsoft cloud products, and cybersecurity.&nbsp;</li><li>A builder of stable, documented systems who reduces single points of failure and cross-trains others, including the Public Safety Systems Manager. </li><li>A dependable team leader who develops staff and understands, or is eager to learn, the demands of a 24/7 public safety operation.</li></ul><p>Established in 1995 through an interlocal agreement under Washington law, the Multi Agency Communications Center (MACC 911) is an independent governmental entity. Governed by a Board representing its member agencies, MACC operates Grant County’s primary 911 answering and dispatch center for law enforcement, fire, and EMS agencies. Guided by the motto “Safety is Our First Priority. Integrity is Our Commitment,” MACC emphasizes trusted service, teamwork, and integrity. With a 2027 adopted budget of $9,660,068.71 and 31 authorized positions supplemented by contract staff, MACC is a lean, mission-focused organization in which a single technology leader can make a visible difference in reliability, security, and service to dispatchers.</p><p>Required qualifications include:</p><ul><li><span>Bachelor’s\rdegree in information technology, computer science, cybersecurity, network\rengineering, information systems, or a related field; relevant progressively\rresponsible professional experience may substitute for formal education on a\ryear-for-year basis</span></li><li><span>Five\ryears of progressively responsible professional IT experience involving\renterprise network, server, systems, cloud, cybersecurity, or infrastructure\radministration, including substantial independent responsibility for production\rsystems</span></li><li><span>Substantial\rhands-on competence across multiple enterprise infrastructure domains</span></li><li><span>Demonstrated\rproject leadership, vendor and contractor coordination, and sound risk-based\rjudgment</span></li><li><span>Commitment\rto responsive technical service</span></li><li><span>Valid\rdriver’s license and ability to travel to supported locations</span></li><li><span>Eligibility\rfor security-sensitive system access and successful completion of appropriate\rbackground screening</span></li><li><span>Availability\rfor occasional after-hours or emergency response</span></li></ul><p>Preferred:</p><ul><li><span>Prior\rsupervisory or management experience; strong technical leaders with substantial\rproject, mentoring, and vendor management experience will also be considered</span></li><li><span>Relevant\rcertifications in Microsoft, Cisco, CompTIA, VMware, cloud, cybersecurity,\rinfrastructure, or project management</span></li><li><span>Experience\rin a mission-critical 24/7 setting such as 911, public safety, healthcare, or\rutilities</span></li><li><span>Experience\rwith Azure/AWS, enterprise networking, virtualization, backup and disaster\rrecovery, endpoint management, SD-WAN/telecommunications, and resilient\rconnectivity</span></li><li><span>Familiarity\rwith CJIS/ACCESS or other regulated security environments</span></li></ul><p>The salary range for this position is $125,552.71 – $160,366.83 annually.</p><p>Please apply online: https://www.governmentresource.com/recruitment/multi-agency-communications-center-macc-911-wa-network-infrastructure-manager</p><p>For more information on this position, contact:</p><p>Billy Owens, Senior Vice President, Executive Recruitment</p><p>billyowens@governmentresource.com | 972-989-3686</p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Strategic Government Resources"
+    },
+    "jobLocation": {
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Moses Lake",
+      "addressRegion": "Grant"
+     },
+     "@type": "Place"
+    },
+    "industry": "Information Technology",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "minValue": "12555271",
+      "@type": "QuantitativeValue",
+      "maxValue": "16036683",
+      "unitText": "YEAR"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:33.873957Z",
+  "content_hash": "75a53d7c06a662d0cbe3a6e24ed0111d5945b6a97f5b261403674b56f3002267"
+ },
+ {
+  "source_slug": "jobmount",
+  "board_token": "https://jobnet.wacities.org/sitemap.xml",
+  "external_id": "c7045c69c07d03cb552e9efc",
+  "payload": {
+   "page_url": "https://jobnet.wacities.org/career/45285/Assistant-Attorney-General-Regional-Services-Division-Kennewick-Or-Yakima-Wa-Region-Kennewick-Or-Yakima-Washington",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-04T06:04:08",
+    "validThrough": "2026-12-04T06:04:08",
+    "title": "Assistant Attorney General – Regional Services Division (Kennewick or Yakima, WA)",
+    "description": "<p><strong><span>Assistant Attorney General - Regional Services Division</span></strong></p>\r<p><strong><span>Washington State Office of the Attorney General</span></strong></p>\r<p><strong><span>Kennewick or Yakima, Washington</span></strong></p>\r<p><strong><span>Salary</span></strong><strong><span>: </span></strong><strong><span>$90,708 - $157,080 DOQ</span></strong></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>Are you an experienced attorney looking to\rjoin an agency that supports work-life balance? The Washington State Attorney\rGeneral’s Office is recruiting for an Assistant Attorney General with its\rJuvenile Litigation team. This position represents the Department of Children,\rYouth, and Families in child welfare cases that directly influence the lives of\rchildren in Washington in a meaningful way. </span></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>The Attorney General’s Office (AGO) serves\rroughly 200 state agencies, boards, commissions, colleges, and universities, as\rwell as the Governor and Legislature. The AGO is the largest public law office\rin the state, with more than 1,800 employees, including nearly 800 attorneys. </span></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>Attorneys in the Regional Services Division\rrepresent state agencies and higher education institutions. The primary\remphasis of this position is representing the Department of Children, Youth,\rand Families (DCYF) in child welfare cases to protect abused and neglected\rchildren in dependency, guardianship, and termination of parental rights cases.\rThe work is rewarding, while difficult at times, and directly influences the\rlives of children in Washington. The attorney will also advise the client\rregarding regulatory enforcement matters. </span></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>Responsibilities include evaluating evidence\rto determine legal sufficiency to support court intervention; applying the\rIndian Child Welfare Act and Washington Indian Child Welfare Act; reviewing\rpetitions, documents, and court reports; consulting with social workers and\rother employees; submitting and responding to discovery; and preparing\rwitnesses and evidence for hearings or trials. The Assistant Attorney General\rin this position will perform legal research and analysis, submit briefing to\rthe court, communicate frequently with other attorneys and guardians ad litem\rto resolve issues related to underlying cases, and consider settlement options.\rThe position involves regular regional travel within Washington State. The\rsuccessful candidate may be based in Kennewick or Yakima and will primarily\rrepresent DCYF in Benton, Franklin, Columbia, Garfield, and Walla Walla\rcounties. Candidates based in Yakima will travel for court appearances. State\rvehicles are available for travel purposes.</span></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>Education &amp; Experience: Applicants must\rhave graduated from a law school accredited by the American Bar Association or\rcompleted the Washington State Bar Association's Rule 6 Law Clerk Program and\rbe licensed to practice law in Washington State. Applicants who meet the other\rstated qualifications and are actively pursuing Washington admission will also\rbe considered, including out-of-state attorneys. Washington licensure is\rrequired to serve as an Assistant Attorney General.</span></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>Benefits include: Medical, dental, and vision\rcoverage. Basic life and long-term disability insurance. Washington Public\rEmployees' Retirement System (PERS) and optional Deferred Compensation Program.\r11 paid holidays and one personal holiday annually. Eight (8) hours of sick\rleave accrual per month. Annual leave accrual starting at 9.33 hours and\rincreasing to 16.67 hours per month, based on years of state service. A 5%\rlongevity premium on base wages after five years with the AGO. Hybrid work and\rflexible schedule options. </span></p>\r<p><span>&nbsp;</span><br></p>\r<p><span>For a complete\rposition profile, additional benefits information, and to apply online, visit the\rProthman Company at </span><span><a href=\"https://www.prothman.com/\"><span>https://www.prothman.com/</span></a> and\r</span><span>click on \"Open Recruitments\"</span><span>. </span><span>For questions, call 206-368-0050. The Washington\rState Office of the Attorney General is an Equal Opportunity Employer. Apply by\r<strong>December 7<strong><span>, 2026. </span></strong></strong>(First review, open until filled.) </span></p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Prothman"
+    },
+    "jobLocation": {
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kennewick or Yakima, Washington",
+      "addressRegion": "Benton"
+     },
+     "@type": "Place"
+    },
+    "industry": "Attorney/Legal",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "minValue": "90708",
+      "@type": "QuantitativeValue",
+      "maxValue": "157080",
+      "unitText": "YEAR"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:41:34.381223Z",
+  "content_hash": "17d3ebc86effd26d7f36bf652a4153cd310bf9437bec6e754718e1ca31f4c582"
+ }
+]

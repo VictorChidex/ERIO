@@ -1,0 +1,2815 @@
+[
+ {
+  "source_slug": "bamboohr",
+  "board_token": "instabug",
+  "external_id": "33",
+  "payload": {
+   "id": "33",
+   "jobOpeningName": "Enterprise Account Executive",
+   "departmentId": "18638",
+   "departmentLabel": "Enterprise Sales",
+   "employmentStatusLabel": "Full-Time",
+   "employmentType": null,
+   "location": {
+    "city": "San Francisco",
+    "state": "California"
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "2",
+   "detail": {
+    "meta": {},
+    "result": {
+     "jobOpening": {
+      "jobOpeningShareUrl": "https://instabug.bamboohr.com/careers/33",
+      "jobOpeningName": "Enterprise Account Executive",
+      "jobOpeningStatus": "Open",
+      "jobCategoryId": null,
+      "departmentId": "18638",
+      "departmentLabel": "Enterprise Sales",
+      "employmentStatusLabel": "Full-Time",
+      "employmentType": null,
+      "location": {
+       "city": "San Francisco",
+       "state": "California",
+       "postalCode": "94301",
+       "addressCountry": "United States"
+      },
+      "atsLocation": {
+       "country": null,
+       "countryId": null,
+       "state": null,
+       "city": null
+      },
+      "description": "<p><span style=\"font-weight: bold\"><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Job Purpose</span></span></p>\n<p><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Responsible for driving growth in an assigned territory for Luciq by designing and executing a territory plan for landing new logos and expanding existing accounts</span></p>\n<p><br></p>\n<p><span style=\"font-weight: bold\"><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Job Responsibilities</span></span></p>\n<ul>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Create and execute a territory plan designed to attain predetermined goals and quotas on a quarterly and annual basis</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Manage the entire sales cycle from prospecting to close including multiple customer personas and internal teams to optimize revenue and internal resources</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Maintain consistent levels of outbound activity to ensure adequate pipeline coverage</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Create detailed account plans for key customers and expand existing relationships to grow account revenue </span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Maintain Relationships with key internal teams including inside sales, marketing, sales engineering and customer success</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Become a subject matter expert on Luciq products and the Mobile APM space to provide value to customers and prospects in your territory</span></li>\n</ul>\n<p><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\"><br><br></span></p>\n<p><span style=\"font-weight: bold\"><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Job Requirements</span></span></p>\n<p><br></p>\n<ul>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">7+ years of relevant experience in enterprise software sales focusing on new logos with a consistent track record of success and quota attainment</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Ability to navigate a fast-paced, high-growth environment and create opportunities through outbound activity and also manage complex sales processes with large enterprise customers</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Excellent communication, leadership, and interpersonal skills.</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Strong technical acumen with knowledge of the mobile application ecosystem or APM space a plus</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Ability to sell to developers and also navigate the C-Suite</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Excellent Organizational and time-management skills</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Experience with value-based selling, knowledge of MEDDIC and Command of Message a plus</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Approximately 25% travel or less within the territory</span></li>\n<li><span style=\"color: #222222; font-family: Arial, sans-serif; font-size: 15px\">Bachelor’s degree or equivalent</span></li>\n</ul>",
+      "compensation": null,
+      "datePosted": "2023-06-04",
+      "minimumExperience": "Experienced",
+      "locationType": "2",
+      "seekPromoted": false,
+      "aiProcessingDisclosureEnabled": false
+     },
+     "formFields": {
+      "firstName": {
+       "isRequired": true,
+       "value": "",
+       "label": "First Name"
+      },
+      "lastName": {
+       "isRequired": true,
+       "value": "",
+       "label": "Last Name"
+      },
+      "email": {
+       "isRequired": true,
+       "value": "",
+       "label": "Email"
+      },
+      "phone": {
+       "isRequired": true,
+       "value": "",
+       "label": "Phone"
+      },
+      "streetAddress": {
+       "isRequired": true,
+       "value": "",
+       "label": "Address"
+      },
+      "city": {
+       "isRequired": true,
+       "value": "",
+       "label": "City"
+      },
+      "state": {
+       "isRequired": true,
+       "value": "",
+       "label": "State",
+       "options": [
+        {
+         "id": "2",
+         "text": "AK"
+        },
+        {
+         "id": "1",
+         "text": "AL"
+        },
+        {
+         "id": "4",
+         "text": "AR"
+        },
+        {
+         "id": "361",
+         "text": "AS"
+        },
+        {
+         "id": "3",
+         "text": "AZ"
+        },
+        {
+         "id": "5",
+         "text": "CA"
+        },
+        {
+         "id": "6",
+         "text": "CO"
+        },
+        {
+         "id": "7",
+         "text": "CT"
+        },
+        {
+         "id": "9",
+         "text": "DC"
+        },
+        {
+         "id": "8",
+         "text": "DE"
+        },
+        {
+         "id": "10",
+         "text": "FL"
+        },
+        {
+         "id": "356",
+         "text": "FM"
+        },
+        {
+         "id": "11",
+         "text": "GA"
+        },
+        {
+         "id": "354",
+         "text": "GU"
+        },
+        {
+         "id": "12",
+         "text": "HI"
+        },
+        {
+         "id": "16",
+         "text": "IA"
+        },
+        {
+         "id": "13",
+         "text": "ID"
+        },
+        {
+         "id": "14",
+         "text": "IL"
+        },
+        {
+         "id": "15",
+         "text": "IN"
+        },
+        {
+         "id": "17",
+         "text": "KS"
+        },
+        {
+         "id": "18",
+         "text": "KY"
+        },
+        {
+         "id": "19",
+         "text": "LA"
+        },
+        {
+         "id": "22",
+         "text": "MA"
+        },
+        {
+         "id": "21",
+         "text": "MD"
+        },
+        {
+         "id": "20",
+         "text": "ME"
+        },
+        {
+         "id": "355",
+         "text": "MH"
+        },
+        {
+         "id": "23",
+         "text": "MI"
+        },
+        {
+         "id": "24",
+         "text": "MN"
+        },
+        {
+         "id": "26",
+         "text": "MO"
+        },
+        {
+         "id": "357",
+         "text": "MP"
+        },
+        {
+         "id": "25",
+         "text": "MS"
+        },
+        {
+         "id": "27",
+         "text": "MT"
+        },
+        {
+         "id": "34",
+         "text": "NC"
+        },
+        {
+         "id": "35",
+         "text": "ND"
+        },
+        {
+         "id": "28",
+         "text": "NE"
+        },
+        {
+         "id": "30",
+         "text": "NH"
+        },
+        {
+         "id": "31",
+         "text": "NJ"
+        },
+        {
+         "id": "32",
+         "text": "NM"
+        },
+        {
+         "id": "29",
+         "text": "NV"
+        },
+        {
+         "id": "33",
+         "text": "NY"
+        },
+        {
+         "id": "36",
+         "text": "OH"
+        },
+        {
+         "id": "37",
+         "text": "OK"
+        },
+        {
+         "id": "38",
+         "text": "OR"
+        },
+        {
+         "id": "39",
+         "text": "PA"
+        },
+        {
+         "id": "359",
+         "text": "PR"
+        },
+        {
+         "id": "358",
+         "text": "PW"
+        },
+        {
+         "id": "40",
+         "text": "RI"
+        },
+        {
+         "id": "41",
+         "text": "SC"
+        },
+        {
+         "id": "42",
+         "text": "SD"
+        },
+        {
+         "id": "43",
+         "text": "TN"
+        },
+        {
+         "id": "44",
+         "text": "TX"
+        },
+        {
+         "id": "372",
+         "text": "UM"
+        },
+        {
+         "id": "45",
+         "text": "UT"
+        },
+        {
+         "id": "47",
+         "text": "VA"
+        },
+        {
+         "id": "360",
+         "text": "VI"
+        },
+        {
+         "id": "46",
+         "text": "VT"
+        },
+        {
+         "id": "48",
+         "text": "WA"
+        },
+        {
+         "id": "50",
+         "text": "WI"
+        },
+        {
+         "id": "49",
+         "text": "WV"
+        },
+        {
+         "id": "51",
+         "text": "WY"
+        }
+       ]
+      },
+      "zip": {
+       "isRequired": true,
+       "value": "",
+       "label": "ZIP"
+      },
+      "countryId": {
+       "isRequired": true,
+       "value": "1",
+       "label": "Country",
+       "options": [
+        {
+         "id": "1",
+         "text": "United States"
+        },
+        {
+         "id": "2",
+         "text": "Canada"
+        },
+        {
+         "id": "3",
+         "text": "Australia"
+        },
+        {
+         "id": "4",
+         "text": "Afghanistan"
+        },
+        {
+         "id": "5",
+         "text": "Albania"
+        },
+        {
+         "id": "6",
+         "text": "Algeria"
+        },
+        {
+         "id": "7",
+         "text": "American Samoa"
+        },
+        {
+         "id": "8",
+         "text": "Andorra"
+        },
+        {
+         "id": "9",
+         "text": "Anguilla"
+        },
+        {
+         "id": "10",
+         "text": "Angola"
+        },
+        {
+         "id": "11",
+         "text": "Antarctica"
+        },
+        {
+         "id": "12",
+         "text": "Antigua and Barbuda"
+        },
+        {
+         "id": "13",
+         "text": "Argentina"
+        },
+        {
+         "id": "14",
+         "text": "Armenia"
+        },
+        {
+         "id": "15",
+         "text": "Aruba"
+        },
+        {
+         "id": "16",
+         "text": "Austria"
+        },
+        {
+         "id": "17",
+         "text": "Azerbaijan"
+        },
+        {
+         "id": "18",
+         "text": "Bahamas"
+        },
+        {
+         "id": "19",
+         "text": "Bahrain"
+        },
+        {
+         "id": "20",
+         "text": "Bangladesh"
+        },
+        {
+         "id": "21",
+         "text": "Barbados"
+        },
+        {
+         "id": "22",
+         "text": "Belgium"
+        },
+        {
+         "id": "23",
+         "text": "Belize"
+        },
+        {
+         "id": "24",
+         "text": "Benin"
+        },
+        {
+         "id": "25",
+         "text": "Bermuda"
+        },
+        {
+         "id": "26",
+         "text": "Bhutan"
+        },
+        {
+         "id": "27",
+         "text": "Bolivia"
+        },
+        {
+         "id": "28",
+         "text": "Bosnia and Herzegovina"
+        },
+        {
+         "id": "29",
+         "text": "Botswana"
+        },
+        {
+         "id": "30",
+         "text": "Bouvet Island"
+        },
+        {
+         "id": "31",
+         "text": "Brazil"
+        },
+        {
+         "id": "32",
+         "text": "British Indian Ocean Territory"
+        },
+        {
+         "id": "33",
+         "text": "Brunei Darussalam"
+        },
+        {
+         "id": "34",
+         "text": "Bulgaria"
+        },
+        {
+         "id": "35",
+         "text": "Burkina Faso"
+        },
+        {
+         "id": "36",
+         "text": "Burundi"
+        },
+        {
+         "id": "37",
+         "text": "Cambodia"
+        },
+        {
+         "id": "38",
+         "text": "Cameroon"
+        },
+        {
+         "id": "39",
+         "text": "Cape Verde"
+        },
+        {
+         "id": "40",
+         "text": "Cayman Islands"
+        },
+        {
+         "id": "41",
+         "text": "Central African Republic"
+        },
+        {
+         "id": "42",
+         "text": "Chad"
+        },
+        {
+         "id": "43",
+         "text": "Chile"
+        },
+        {
+         "id": "44",
+         "text": "China"
+        },
+        {
+         "id": "45",
+         "text": "Christmas Island"
+        },
+        {
+         "id": "46",
+         "text": "Cocos (Keeling Islands)"
+        },
+        {
+         "id": "47",
+         "text": "Colombia"
+        },
+        {
+         "id": "48",
+         "text": "Comoros"
+        },
+        {
+         "id": "49",
+         "text": "Congo"
+        },
+        {
+         "id": "50",
+         "text": "Cook Islands"
+        },
+        {
+         "id": "51",
+         "text": "Costa Rica"
+        },
+        {
+         "id": "52",
+         "text": "Cote D'Ivoire (Ivory Coast)"
+        },
+        {
+         "id": "53",
+         "text": "Croatia (Hrvatska)"
+        },
+        {
+         "id": "54",
+         "text": "Cuba"
+        },
+        {
+         "id": "55",
+         "text": "Cyprus"
+        },
+        {
+         "id": "56",
+         "text": "Czech Republic"
+        },
+        {
+         "id": "57",
+         "text": "Denmark"
+        },
+        {
+         "id": "58",
+         "text": "Djibouti"
+        },
+        {
+         "id": "59",
+         "text": "Dominica"
+        },
+        {
+         "id": "60",
+         "text": "Dominican Republic"
+        },
+        {
+         "id": "61",
+         "text": "East Timor"
+        },
+        {
+         "id": "62",
+         "text": "Egypt"
+        },
+        {
+         "id": "63",
+         "text": "El Salvador"
+        },
+        {
+         "id": "64",
+         "text": "Ecuador"
+        },
+        {
+         "id": "65",
+         "text": "Equatorial Guinea"
+        },
+        {
+         "id": "66",
+         "text": "Eritrea"
+        },
+        {
+         "id": "67",
+         "text": "Estonia"
+        },
+        {
+         "id": "68",
+         "text": "Ethiopia"
+        },
+        {
+         "id": "69",
+         "text": "Falkland Islands (Malvinas)"
+        },
+        {
+         "id": "70",
+         "text": "Faroe Islands"
+        },
+        {
+         "id": "71",
+         "text": "Fiji"
+        },
+        {
+         "id": "72",
+         "text": "Finland"
+        },
+        {
+         "id": "73",
+         "text": "France"
+        },
+        {
+         "id": "74",
+         "text": "France, Metropolitan"
+        },
+        {
+         "id": "75",
+         "text": "French Guiana"
+        },
+        {
+         "id": "76",
+         "text": "French Polynesia"
+        },
+        {
+         "id": "77",
+         "text": "French Southern Territories"
+        },
+        {
+         "id": "78",
+         "text": "French West Indies"
+        },
+        {
+         "id": "79",
+         "text": "Gabon"
+        },
+        {
+         "id": "80",
+         "text": "Gambia"
+        },
+        {
+         "id": "81",
+         "text": "Georgia"
+        },
+        {
+         "id": "82",
+         "text": "Germany"
+        },
+        {
+         "id": "83",
+         "text": "Ghana"
+        },
+        {
+         "id": "84",
+         "text": "Gibraltar"
+        },
+        {
+         "id": "85",
+         "text": "Greece"
+        },
+        {
+         "id": "86",
+         "text": "Greenland"
+        },
+        {
+         "id": "87",
+         "text": "Grenada"
+        },
+        {
+         "id": "88",
+         "text": "Guadeloupe"
+        },
+        {
+         "id": "89",
+         "text": "Guam"
+        },
+        {
+         "id": "90",
+         "text": "Guatemala"
+        },
+        {
+         "id": "91",
+         "text": "Guinea"
+        },
+        {
+         "id": "92",
+         "text": "Guinea-Bissau"
+        },
+        {
+         "id": "93",
+         "text": "Guyana"
+        },
+        {
+         "id": "94",
+         "text": "Haiti"
+        },
+        {
+         "id": "95",
+         "text": "Heard and McDonald Islands"
+        },
+        {
+         "id": "96",
+         "text": "Honduras"
+        },
+        {
+         "id": "97",
+         "text": "Hong Kong"
+        },
+        {
+         "id": "98",
+         "text": "Hungary"
+        },
+        {
+         "id": "99",
+         "text": "Iceland"
+        },
+        {
+         "id": "100",
+         "text": "India"
+        },
+        {
+         "id": "101",
+         "text": "Indonesia"
+        },
+        {
+         "id": "102",
+         "text": "Iran"
+        },
+        {
+         "id": "103",
+         "text": "Iraq"
+        },
+        {
+         "id": "104",
+         "text": "Ireland"
+        },
+        {
+         "id": "105",
+         "text": "Israel"
+        },
+        {
+         "id": "106",
+         "text": "Italy"
+        },
+        {
+         "id": "107",
+         "text": "Jamaica"
+        },
+        {
+         "id": "108",
+         "text": "Japan"
+        },
+        {
+         "id": "109",
+         "text": "Jordan"
+        },
+        {
+         "id": "110",
+         "text": "Kazakhstan"
+        },
+        {
+         "id": "111",
+         "text": "Kenya"
+        },
+        {
+         "id": "112",
+         "text": "Kiribati"
+        },
+        {
+         "id": "113",
+         "text": "Korea (North)"
+        },
+        {
+         "id": "114",
+         "text": "Korea (South)"
+        },
+        {
+         "id": "115",
+         "text": "Kuwait"
+        },
+        {
+         "id": "116",
+         "text": "Kyrgyzstan"
+        },
+        {
+         "id": "117",
+         "text": "Laos"
+        },
+        {
+         "id": "118",
+         "text": "Latvia"
+        },
+        {
+         "id": "119",
+         "text": "Lebanon"
+        },
+        {
+         "id": "120",
+         "text": "Lesotho"
+        },
+        {
+         "id": "121",
+         "text": "Liberia"
+        },
+        {
+         "id": "122",
+         "text": "Libya"
+        },
+        {
+         "id": "123",
+         "text": "Liechtenstein"
+        },
+        {
+         "id": "124",
+         "text": "Lithuania"
+        },
+        {
+         "id": "125",
+         "text": "Luxembourg"
+        },
+        {
+         "id": "126",
+         "text": "Macao"
+        },
+        {
+         "id": "127",
+         "text": "Macedonia"
+        },
+        {
+         "id": "128",
+         "text": "Madagascar"
+        },
+        {
+         "id": "129",
+         "text": "Malawi"
+        },
+        {
+         "id": "130",
+         "text": "Malaysia"
+        },
+        {
+         "id": "131",
+         "text": "Maldives"
+        },
+        {
+         "id": "132",
+         "text": "Mali"
+        },
+        {
+         "id": "133",
+         "text": "Malta"
+        },
+        {
+         "id": "134",
+         "text": "Marshall Islands"
+        },
+        {
+         "id": "135",
+         "text": "Martinique"
+        },
+        {
+         "id": "136",
+         "text": "Mauritania"
+        },
+        {
+         "id": "137",
+         "text": "Mauritius"
+        },
+        {
+         "id": "138",
+         "text": "Mayotte"
+        },
+        {
+         "id": "139",
+         "text": "Mexico"
+        },
+        {
+         "id": "140",
+         "text": "Micronesia"
+        },
+        {
+         "id": "141",
+         "text": "Moldova"
+        },
+        {
+         "id": "142",
+         "text": "Monaco"
+        },
+        {
+         "id": "143",
+         "text": "Mongolia"
+        },
+        {
+         "id": "144",
+         "text": "Montenegro"
+        },
+        {
+         "id": "145",
+         "text": "Montserrat"
+        },
+        {
+         "id": "146",
+         "text": "Morocco"
+        },
+        {
+         "id": "147",
+         "text": "Mozambique"
+        },
+        {
+         "id": "148",
+         "text": "Namibia"
+        },
+        {
+         "id": "149",
+         "text": "Nauru"
+        },
+        {
+         "id": "150",
+         "text": "Nepal"
+        },
+        {
+         "id": "151",
+         "text": "Netherlands"
+        },
+        {
+         "id": "152",
+         "text": "Netherlands Antilles"
+        },
+        {
+         "id": "153",
+         "text": "New Caledonia"
+        },
+        {
+         "id": "154",
+         "text": "New Zealand"
+        },
+        {
+         "id": "155",
+         "text": "Nicaragua"
+        },
+        {
+         "id": "156",
+         "text": "Niger"
+        },
+        {
+         "id": "157",
+         "text": "Nigeria"
+        },
+        {
+         "id": "158",
+         "text": "Niue"
+        },
+        {
+         "id": "159",
+         "text": "Norfolk Island"
+        },
+        {
+         "id": "160",
+         "text": "Northern Mariana Islands"
+        },
+        {
+         "id": "161",
+         "text": "Norway"
+        },
+        {
+         "id": "162",
+         "text": "Oman"
+        },
+        {
+         "id": "163",
+         "text": "Pakistan"
+        },
+        {
+         "id": "164",
+         "text": "Palau"
+        },
+        {
+         "id": "165",
+         "text": "Panama"
+        },
+        {
+         "id": "166",
+         "text": "Papua New Guinea"
+        },
+        {
+         "id": "167",
+         "text": "Paraguay"
+        },
+        {
+         "id": "168",
+         "text": "Peru"
+        },
+        {
+         "id": "169",
+         "text": "Philippines"
+        },
+        {
+         "id": "170",
+         "text": "Pitcairn"
+        },
+        {
+         "id": "171",
+         "text": "Poland"
+        },
+        {
+         "id": "172",
+         "text": "Portugal"
+        },
+        {
+         "id": "173",
+         "text": "Puerto Rico"
+        },
+        {
+         "id": "174",
+         "text": "Qatar"
+        },
+        {
+         "id": "175",
+         "text": "Rwanda"
+        },
+        {
+         "id": "176",
+         "text": "Reunion"
+        },
+        {
+         "id": "177",
+         "text": "Romania"
+        },
+        {
+         "id": "178",
+         "text": "Russian Federation"
+        },
+        {
+         "id": "179",
+         "text": "Samoa"
+        },
+        {
+         "id": "180",
+         "text": "San Marino"
+        },
+        {
+         "id": "181",
+         "text": "Sao Tome and Principe"
+        },
+        {
+         "id": "182",
+         "text": "Saudi Arabia"
+        },
+        {
+         "id": "183",
+         "text": "Senegal"
+        },
+        {
+         "id": "184",
+         "text": "Serbia"
+        },
+        {
+         "id": "185",
+         "text": "Seychelles"
+        },
+        {
+         "id": "186",
+         "text": "Sierra Leone"
+        },
+        {
+         "id": "187",
+         "text": "Singapore"
+        },
+        {
+         "id": "188",
+         "text": "Slovakia"
+        },
+        {
+         "id": "189",
+         "text": "Slovenia"
+        },
+        {
+         "id": "190",
+         "text": "Solomon Islands"
+        },
+        {
+         "id": "191",
+         "text": "South Africa"
+        },
+        {
+         "id": "192",
+         "text": "Spain"
+        },
+        {
+         "id": "193",
+         "text": "Sri Lanka"
+        },
+        {
+         "id": "194",
+         "text": "St. Helena"
+        },
+        {
+         "id": "195",
+         "text": "Saint Kitts and Nevis"
+        },
+        {
+         "id": "196",
+         "text": "Saint Lucia"
+        },
+        {
+         "id": "197",
+         "text": "St. Pierre and Miquelon"
+        },
+        {
+         "id": "198",
+         "text": "Saint Vincent and the Grenadines"
+        },
+        {
+         "id": "199",
+         "text": "Sudan"
+        },
+        {
+         "id": "200",
+         "text": "Suriname"
+        },
+        {
+         "id": "201",
+         "text": "Svalbard"
+        },
+        {
+         "id": "202",
+         "text": "Swaziland"
+        },
+        {
+         "id": "203",
+         "text": "Sweden"
+        },
+        {
+         "id": "204",
+         "text": "Switzerland"
+        },
+        {
+         "id": "205",
+         "text": "Syria"
+        },
+        {
+         "id": "206",
+         "text": "Taiwan"
+        },
+        {
+         "id": "207",
+         "text": "Tajikistan"
+        },
+        {
+         "id": "208",
+         "text": "Tanzania"
+        },
+        {
+         "id": "209",
+         "text": "Thailand"
+        },
+        {
+         "id": "210",
+         "text": "Togo"
+        },
+        {
+         "id": "211",
+         "text": "Tokelau"
+        },
+        {
+         "id": "212",
+         "text": "Tonga"
+        },
+        {
+         "id": "213",
+         "text": "Trinidad and Tobago"
+        },
+        {
+         "id": "214",
+         "text": "Tunisia"
+        },
+        {
+         "id": "215",
+         "text": "Turkey"
+        },
+        {
+         "id": "216",
+         "text": "Turkmenistan"
+        },
+        {
+         "id": "217",
+         "text": "Turks and Caicos Islands"
+        },
+        {
+         "id": "218",
+         "text": "Tuvalu"
+        },
+        {
+         "id": "219",
+         "text": "Uganda"
+        },
+        {
+         "id": "220",
+         "text": "Ukraine"
+        },
+        {
+         "id": "221",
+         "text": "United Arab Emirates"
+        },
+        {
+         "id": "222",
+         "text": "United Kingdom"
+        },
+        {
+         "id": "223",
+         "text": "US Minor Outlying Islands"
+        },
+        {
+         "id": "224",
+         "text": "Uruguay"
+        },
+        {
+         "id": "225",
+         "text": "Uzbekistan"
+        },
+        {
+         "id": "226",
+         "text": "Vanuatu"
+        },
+        {
+         "id": "227",
+         "text": "Vatican City State"
+        },
+        {
+         "id": "228",
+         "text": "Venezuela"
+        },
+        {
+         "id": "229",
+         "text": "Viet Nam"
+        },
+        {
+         "id": "230",
+         "text": "Virgin Islands (British)"
+        },
+        {
+         "id": "231",
+         "text": "Virgin Islands, U.S."
+        },
+        {
+         "id": "232",
+         "text": "Wallis and Futuna Islands"
+        },
+        {
+         "id": "233",
+         "text": "Western Sahara"
+        },
+        {
+         "id": "234",
+         "text": "Yemen"
+        },
+        {
+         "id": "235",
+         "text": "Yugoslavia"
+        },
+        {
+         "id": "236",
+         "text": "Zaire"
+        },
+        {
+         "id": "237",
+         "text": "Zambia"
+        },
+        {
+         "id": "238",
+         "text": "Åland Islands"
+        },
+        {
+         "id": "239",
+         "text": "Saint Barthélemy"
+        },
+        {
+         "id": "240",
+         "text": "Bonaire, Sint Eustatius and Saba"
+        },
+        {
+         "id": "241",
+         "text": "Belarus"
+        },
+        {
+         "id": "242",
+         "text": "Congo, the Democratic Republic of the"
+        },
+        {
+         "id": "243",
+         "text": "Curaçao"
+        },
+        {
+         "id": "244",
+         "text": "Guernsey"
+        },
+        {
+         "id": "245",
+         "text": "South Georgia and the South Sandwich Islands"
+        },
+        {
+         "id": "246",
+         "text": "Isle of Man"
+        },
+        {
+         "id": "247",
+         "text": "Jersey"
+        },
+        {
+         "id": "248",
+         "text": "Myanmar"
+        },
+        {
+         "id": "249",
+         "text": "Palestinian Territories"
+        },
+        {
+         "id": "250",
+         "text": "Somalia"
+        },
+        {
+         "id": "251",
+         "text": "South Sudan"
+        },
+        {
+         "id": "252",
+         "text": "Sint Maarten (Dutch part)"
+        },
+        {
+         "id": "253",
+         "text": "Zimbabwe"
+        },
+        {
+         "id": "254",
+         "text": "Kosovo"
+        },
+        {
+         "id": "255",
+         "text": "Kurdistan"
+        },
+        {
+         "id": "256",
+         "text": "Saint Martin (French part)"
+        }
+       ]
+      },
+      "linkedinUrl": {
+       "isRequired": true,
+       "value": "",
+       "label": "LinkedIn URL"
+      },
+      "resumeFileId": {
+       "isRequired": true,
+       "value": "",
+       "label": "Resume"
+      },
+      "customQuestions": [],
+      "genderId": [],
+      "ethnicityId": [],
+      "veteranStatusId": [],
+      "disabilityId": []
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:18:26.928009Z",
+  "content_hash": "80fe6260d436d7e964fb7bc4622c07a77d2bfc8f19efdec2d8fc0835f8b2491a"
+ },
+ {
+  "source_slug": "bamboohr",
+  "board_token": "instabug",
+  "external_id": "124",
+  "payload": {
+   "id": "124",
+   "jobOpeningName": "Product Engineer (Backend)",
+   "departmentId": null,
+   "departmentLabel": null,
+   "employmentStatusLabel": "Full-Time",
+   "employmentType": null,
+   "location": {
+    "city": null,
+    "state": null
+   },
+   "atsLocation": {
+    "country": null,
+    "state": null,
+    "province": null,
+    "city": null
+   },
+   "isRemote": null,
+   "locationType": "1",
+   "detail": {
+    "meta": {},
+    "result": {
+     "jobOpening": {
+      "jobOpeningShareUrl": "https://instabug.bamboohr.com/careers/124",
+      "jobOpeningName": "Product Engineer (Backend)",
+      "jobOpeningStatus": "Open",
+      "jobCategoryId": null,
+      "departmentId": null,
+      "departmentLabel": "",
+      "employmentStatusLabel": "Full-Time",
+      "employmentType": null,
+      "location": {
+       "city": null,
+       "state": null,
+       "postalCode": null,
+       "addressCountry": null
+      },
+      "atsLocation": {
+       "country": null,
+       "countryId": null,
+       "state": null,
+       "city": null
+      },
+      "description": "<p><br></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 18pt\">What this role is</span></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">You own a slice of Luciq end to end: the problem, the design calls, the code, the rollout, and customer value. Engineers bring a lot of value to driving product decisions and we innovate on the implementation layer to create differentiating solutions.</span></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">The stack is Ruby on Rails and Golang hosted on Kubernetes clusters on AWS, with ClickHouse, Kafka, and Flink behind ingestion and query. You will hand-write less of it than engineers did two years ago. We expect you to work with coding agents the way a strong engineer works with a capable junior: delegate hard, review harder, stay accountable for what ships.</span></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Half the job is judgment about what to build. Luciq is repositioning around agentic mobile observability and experience. We are a broad mobile platform with large enterprise customers who get a lot of value from the different capabilities and signals we capture and innovate on.<br><br></span></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 18pt\">What you'll do</span></p>\n<ul>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Ship a product area end to end: scope it, build it, launch it, then watch the usage numbers and make sure customers get a lot of value.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Build the agentic parts of the product.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Use agents on your own work. Codegen, migrations, test coverage, spec-to-PR. Bring what works back to the rest of engineering.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Talk to customers directly. Join escalations, read session replays, sit on calls.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">As you gain knowledge of the product and customer space, participate actively in driving scope and work in iterations to deliver.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Instrument what you ship. You should know your feature's adoption, p95 and infrastructure cost. We invest in helping our Product Engineers get to this level of detail and want them engaged in evolving it, creating efficiencies and making decisions to drive further improvements.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Operate what you build. On-call responsibility is part of the role and more importantly, share the learnings, implement the preventative measures and continue to iterate.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Make the rest of the company faster. We all share in the success of our customers, we win together.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Raise the floor on quality and security in the code you touch, and leave the codebase easier to work in than you found it.<br><br></span></li>\n</ul>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 18pt\">What we're looking for</span></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">We do not screen on years or degrees. Tell us what you built, who used it, and what changed because of it.</span></p>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Required</span></p>\n<ul>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">A track record of shipping products that real users depended on, with your fingerprints on the product decisions, not only the implementation.<br></span></li>\n<li><span style=\"font-family: arial, helvetica, sans-serif; font-size: 10pt\">Minimum of 7 years of experience shipping production software, ideally in a fast-moving product engineering environment.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Deep production experience in Golang, or enough depth in another server language.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">AWS at production scale: compute, storage, networking, CI/CD, and a working sense of what things cost.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Shipped something built on LLMs. You can talk about retrieval, tool calling, evals, latency and failure modes from experience, not from reading.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">A daily agent-assisted workflow, and an opinion about where it breaks down. Taking full ownership of the work generated, the quality and the approach to the implementation. We love simple solutions to complex problems and we value engineers and the high leverage they bring. AI is a tool in the toolbox.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Solid API design, and comfort with MySQL, Redis and a messaging system such as Kafka.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">You test where tests pay and skip where they don't, and you apply a pragmatic approach to building guardrails.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">You write clearly. Design notes, incident writeups, release notes.</span> <br></li>\n</ul>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Helps</span></p>\n<ul>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Mobile experience: iOS or Android, SDK work, or debugging someone else's app in production.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Columnar and streaming infrastructure: ClickHouse, Flink, or similar at volume.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Developer tools or observability as a product domain.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Open source work.<br></span><br></li>\n</ul>\n<p><span style=\"font-family: Arial, sans-serif; font-size: 18pt\">How we work</span></p>\n<ul>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Pods own customer outcomes, not services. Your scope follows the problem across the SDK, the pipeline, the API, and the dashboard.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">Decisions happen in the open, in writing, and fast. If you need three meetings to change a schema, this will frustrate you.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">You will be in the room when pricing, packaging, and positioning touch your area, and your objections count.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">We deploy continuously, and we watch what we deploy.</span></li>\n<li><span style=\"font-family: Arial, sans-serif; font-size: 10pt\">There is no queue of pre-chewed tickets waiting for you. There is a roadmap, a lot of customer signals, and room to drive high-impact work.</span></li>\n</ul>",
+      "compensation": null,
+      "datePosted": "2026-09-21",
+      "minimumExperience": null,
+      "locationType": "1",
+      "seekPromoted": false,
+      "aiProcessingDisclosureEnabled": false
+     },
+     "formFields": {
+      "firstName": {
+       "isRequired": true,
+       "value": "",
+       "label": "First Name"
+      },
+      "lastName": {
+       "isRequired": true,
+       "value": "",
+       "label": "Last Name"
+      },
+      "email": {
+       "isRequired": true,
+       "value": "",
+       "label": "Email"
+      },
+      "phone": {
+       "isRequired": true,
+       "value": "",
+       "label": "Phone"
+      },
+      "streetAddress": {
+       "isRequired": false,
+       "value": "",
+       "label": "Address"
+      },
+      "city": {
+       "isRequired": false,
+       "value": "",
+       "label": "City"
+      },
+      "state": {
+       "isRequired": false,
+       "value": "",
+       "label": "State",
+       "options": [
+        {
+         "id": "2",
+         "text": "AK"
+        },
+        {
+         "id": "1",
+         "text": "AL"
+        },
+        {
+         "id": "4",
+         "text": "AR"
+        },
+        {
+         "id": "361",
+         "text": "AS"
+        },
+        {
+         "id": "3",
+         "text": "AZ"
+        },
+        {
+         "id": "5",
+         "text": "CA"
+        },
+        {
+         "id": "6",
+         "text": "CO"
+        },
+        {
+         "id": "7",
+         "text": "CT"
+        },
+        {
+         "id": "9",
+         "text": "DC"
+        },
+        {
+         "id": "8",
+         "text": "DE"
+        },
+        {
+         "id": "10",
+         "text": "FL"
+        },
+        {
+         "id": "356",
+         "text": "FM"
+        },
+        {
+         "id": "11",
+         "text": "GA"
+        },
+        {
+         "id": "354",
+         "text": "GU"
+        },
+        {
+         "id": "12",
+         "text": "HI"
+        },
+        {
+         "id": "16",
+         "text": "IA"
+        },
+        {
+         "id": "13",
+         "text": "ID"
+        },
+        {
+         "id": "14",
+         "text": "IL"
+        },
+        {
+         "id": "15",
+         "text": "IN"
+        },
+        {
+         "id": "17",
+         "text": "KS"
+        },
+        {
+         "id": "18",
+         "text": "KY"
+        },
+        {
+         "id": "19",
+         "text": "LA"
+        },
+        {
+         "id": "22",
+         "text": "MA"
+        },
+        {
+         "id": "21",
+         "text": "MD"
+        },
+        {
+         "id": "20",
+         "text": "ME"
+        },
+        {
+         "id": "355",
+         "text": "MH"
+        },
+        {
+         "id": "23",
+         "text": "MI"
+        },
+        {
+         "id": "24",
+         "text": "MN"
+        },
+        {
+         "id": "26",
+         "text": "MO"
+        },
+        {
+         "id": "357",
+         "text": "MP"
+        },
+        {
+         "id": "25",
+         "text": "MS"
+        },
+        {
+         "id": "27",
+         "text": "MT"
+        },
+        {
+         "id": "34",
+         "text": "NC"
+        },
+        {
+         "id": "35",
+         "text": "ND"
+        },
+        {
+         "id": "28",
+         "text": "NE"
+        },
+        {
+         "id": "30",
+         "text": "NH"
+        },
+        {
+         "id": "31",
+         "text": "NJ"
+        },
+        {
+         "id": "32",
+         "text": "NM"
+        },
+        {
+         "id": "29",
+         "text": "NV"
+        },
+        {
+         "id": "33",
+         "text": "NY"
+        },
+        {
+         "id": "36",
+         "text": "OH"
+        },
+        {
+         "id": "37",
+         "text": "OK"
+        },
+        {
+         "id": "38",
+         "text": "OR"
+        },
+        {
+         "id": "39",
+         "text": "PA"
+        },
+        {
+         "id": "359",
+         "text": "PR"
+        },
+        {
+         "id": "358",
+         "text": "PW"
+        },
+        {
+         "id": "40",
+         "text": "RI"
+        },
+        {
+         "id": "41",
+         "text": "SC"
+        },
+        {
+         "id": "42",
+         "text": "SD"
+        },
+        {
+         "id": "43",
+         "text": "TN"
+        },
+        {
+         "id": "44",
+         "text": "TX"
+        },
+        {
+         "id": "372",
+         "text": "UM"
+        },
+        {
+         "id": "45",
+         "text": "UT"
+        },
+        {
+         "id": "47",
+         "text": "VA"
+        },
+        {
+         "id": "360",
+         "text": "VI"
+        },
+        {
+         "id": "46",
+         "text": "VT"
+        },
+        {
+         "id": "48",
+         "text": "WA"
+        },
+        {
+         "id": "50",
+         "text": "WI"
+        },
+        {
+         "id": "49",
+         "text": "WV"
+        },
+        {
+         "id": "51",
+         "text": "WY"
+        }
+       ]
+      },
+      "zip": {
+       "isRequired": false,
+       "value": "",
+       "label": "ZIP"
+      },
+      "countryId": {
+       "isRequired": false,
+       "value": "",
+       "label": "Country",
+       "options": [
+        {
+         "id": "1",
+         "text": "United States"
+        },
+        {
+         "id": "2",
+         "text": "Canada"
+        },
+        {
+         "id": "3",
+         "text": "Australia"
+        },
+        {
+         "id": "4",
+         "text": "Afghanistan"
+        },
+        {
+         "id": "5",
+         "text": "Albania"
+        },
+        {
+         "id": "6",
+         "text": "Algeria"
+        },
+        {
+         "id": "7",
+         "text": "American Samoa"
+        },
+        {
+         "id": "8",
+         "text": "Andorra"
+        },
+        {
+         "id": "9",
+         "text": "Anguilla"
+        },
+        {
+         "id": "10",
+         "text": "Angola"
+        },
+        {
+         "id": "11",
+         "text": "Antarctica"
+        },
+        {
+         "id": "12",
+         "text": "Antigua and Barbuda"
+        },
+        {
+         "id": "13",
+         "text": "Argentina"
+        },
+        {
+         "id": "14",
+         "text": "Armenia"
+        },
+        {
+         "id": "15",
+         "text": "Aruba"
+        },
+        {
+         "id": "16",
+         "text": "Austria"
+        },
+        {
+         "id": "17",
+         "text": "Azerbaijan"
+        },
+        {
+         "id": "18",
+         "text": "Bahamas"
+        },
+        {
+         "id": "19",
+         "text": "Bahrain"
+        },
+        {
+         "id": "20",
+         "text": "Bangladesh"
+        },
+        {
+         "id": "21",
+         "text": "Barbados"
+        },
+        {
+         "id": "22",
+         "text": "Belgium"
+        },
+        {
+         "id": "23",
+         "text": "Belize"
+        },
+        {
+         "id": "24",
+         "text": "Benin"
+        },
+        {
+         "id": "25",
+         "text": "Bermuda"
+        },
+        {
+         "id": "26",
+         "text": "Bhutan"
+        },
+        {
+         "id": "27",
+         "text": "Bolivia"
+        },
+        {
+         "id": "28",
+         "text": "Bosnia and Herzegovina"
+        },
+        {
+         "id": "29",
+         "text": "Botswana"
+        },
+        {
+         "id": "30",
+         "text": "Bouvet Island"
+        },
+        {
+         "id": "31",
+         "text": "Brazil"
+        },
+        {
+         "id": "32",
+         "text": "British Indian Ocean Territory"
+        },
+        {
+         "id": "33",
+         "text": "Brunei Darussalam"
+        },
+        {
+         "id": "34",
+         "text": "Bulgaria"
+        },
+        {
+         "id": "35",
+         "text": "Burkina Faso"
+        },
+        {
+         "id": "36",
+         "text": "Burundi"
+        },
+        {
+         "id": "37",
+         "text": "Cambodia"
+        },
+        {
+         "id": "38",
+         "text": "Cameroon"
+        },
+        {
+         "id": "39",
+         "text": "Cape Verde"
+        },
+        {
+         "id": "40",
+         "text": "Cayman Islands"
+        },
+        {
+         "id": "41",
+         "text": "Central African Republic"
+        },
+        {
+         "id": "42",
+         "text": "Chad"
+        },
+        {
+         "id": "43",
+         "text": "Chile"
+        },
+        {
+         "id": "44",
+         "text": "China"
+        },
+        {
+         "id": "45",
+         "text": "Christmas Island"
+        },
+        {
+         "id": "46",
+         "text": "Cocos (Keeling Islands)"
+        },
+        {
+         "id": "47",
+         "text": "Colombia"
+        },
+        {
+         "id": "48",
+         "text": "Comoros"
+        },
+        {
+         "id": "49",
+         "text": "Congo"
+        },
+        {
+         "id": "50",
+         "text": "Cook Islands"
+        },
+        {
+         "id": "51",
+         "text": "Costa Rica"
+        },
+        {
+         "id": "52",
+         "text": "Cote D'Ivoire (Ivory Coast)"
+        },
+        {
+         "id": "53",
+         "text": "Croatia (Hrvatska)"
+        },
+        {
+         "id": "54",
+         "text": "Cuba"
+        },
+        {
+         "id": "55",
+         "text": "Cyprus"
+        },
+        {
+         "id": "56",
+         "text": "Czech Republic"
+        },
+        {
+         "id": "57",
+         "text": "Denmark"
+        },
+        {
+         "id": "58",
+         "text": "Djibouti"
+        },
+        {
+         "id": "59",
+         "text": "Dominica"
+        },
+        {
+         "id": "60",
+         "text": "Dominican Republic"
+        },
+        {
+         "id": "61",
+         "text": "East Timor"
+        },
+        {
+         "id": "62",
+         "text": "Egypt"
+        },
+        {
+         "id": "63",
+         "text": "El Salvador"
+        },
+        {
+         "id": "64",
+         "text": "Ecuador"
+        },
+        {
+         "id": "65",
+         "text": "Equatorial Guinea"
+        },
+        {
+         "id": "66",
+         "text": "Eritrea"
+        },
+        {
+         "id": "67",
+         "text": "Estonia"
+        },
+        {
+         "id": "68",
+         "text": "Ethiopia"
+        },
+        {
+         "id": "69",
+         "text": "Falkland Islands (Malvinas)"
+        },
+        {
+         "id": "70",
+         "text": "Faroe Islands"
+        },
+        {
+         "id": "71",
+         "text": "Fiji"
+        },
+        {
+         "id": "72",
+         "text": "Finland"
+        },
+        {
+         "id": "73",
+         "text": "France"
+        },
+        {
+         "id": "74",
+         "text": "France, Metropolitan"
+        },
+        {
+         "id": "75",
+         "text": "French Guiana"
+        },
+        {
+         "id": "76",
+         "text": "French Polynesia"
+        },
+        {
+         "id": "77",
+         "text": "French Southern Territories"
+        },
+        {
+         "id": "78",
+         "text": "French West Indies"
+        },
+        {
+         "id": "79",
+         "text": "Gabon"
+        },
+        {
+         "id": "80",
+         "text": "Gambia"
+        },
+        {
+         "id": "81",
+         "text": "Georgia"
+        },
+        {
+         "id": "82",
+         "text": "Germany"
+        },
+        {
+         "id": "83",
+         "text": "Ghana"
+        },
+        {
+         "id": "84",
+         "text": "Gibraltar"
+        },
+        {
+         "id": "85",
+         "text": "Greece"
+        },
+        {
+         "id": "86",
+         "text": "Greenland"
+        },
+        {
+         "id": "87",
+         "text": "Grenada"
+        },
+        {
+         "id": "88",
+         "text": "Guadeloupe"
+        },
+        {
+         "id": "89",
+         "text": "Guam"
+        },
+        {
+         "id": "90",
+         "text": "Guatemala"
+        },
+        {
+         "id": "91",
+         "text": "Guinea"
+        },
+        {
+         "id": "92",
+         "text": "Guinea-Bissau"
+        },
+        {
+         "id": "93",
+         "text": "Guyana"
+        },
+        {
+         "id": "94",
+         "text": "Haiti"
+        },
+        {
+         "id": "95",
+         "text": "Heard and McDonald Islands"
+        },
+        {
+         "id": "96",
+         "text": "Honduras"
+        },
+        {
+         "id": "97",
+         "text": "Hong Kong"
+        },
+        {
+         "id": "98",
+         "text": "Hungary"
+        },
+        {
+         "id": "99",
+         "text": "Iceland"
+        },
+        {
+         "id": "100",
+         "text": "India"
+        },
+        {
+         "id": "101",
+         "text": "Indonesia"
+        },
+        {
+         "id": "102",
+         "text": "Iran"
+        },
+        {
+         "id": "103",
+         "text": "Iraq"
+        },
+        {
+         "id": "104",
+         "text": "Ireland"
+        },
+        {
+         "id": "105",
+         "text": "Israel"
+        },
+        {
+         "id": "106",
+         "text": "Italy"
+        },
+        {
+         "id": "107",
+         "text": "Jamaica"
+        },
+        {
+         "id": "108",
+         "text": "Japan"
+        },
+        {
+         "id": "109",
+         "text": "Jordan"
+        },
+        {
+         "id": "110",
+         "text": "Kazakhstan"
+        },
+        {
+         "id": "111",
+         "text": "Kenya"
+        },
+        {
+         "id": "112",
+         "text": "Kiribati"
+        },
+        {
+         "id": "113",
+         "text": "Korea (North)"
+        },
+        {
+         "id": "114",
+         "text": "Korea (South)"
+        },
+        {
+         "id": "115",
+         "text": "Kuwait"
+        },
+        {
+         "id": "116",
+         "text": "Kyrgyzstan"
+        },
+        {
+         "id": "117",
+         "text": "Laos"
+        },
+        {
+         "id": "118",
+         "text": "Latvia"
+        },
+        {
+         "id": "119",
+         "text": "Lebanon"
+        },
+        {
+         "id": "120",
+         "text": "Lesotho"
+        },
+        {
+         "id": "121",
+         "text": "Liberia"
+        },
+        {
+         "id": "122",
+         "text": "Libya"
+        },
+        {
+         "id": "123",
+         "text": "Liechtenstein"
+        },
+        {
+         "id": "124",
+         "text": "Lithuania"
+        },
+        {
+         "id": "125",
+         "text": "Luxembourg"
+        },
+        {
+         "id": "126",
+         "text": "Macao"
+        },
+        {
+         "id": "127",
+         "text": "Macedonia"
+        },
+        {
+         "id": "128",
+         "text": "Madagascar"
+        },
+        {
+         "id": "129",
+         "text": "Malawi"
+        },
+        {
+         "id": "130",
+         "text": "Malaysia"
+        },
+        {
+         "id": "131",
+         "text": "Maldives"
+        },
+        {
+         "id": "132",
+         "text": "Mali"
+        },
+        {
+         "id": "133",
+         "text": "Malta"
+        },
+        {
+         "id": "134",
+         "text": "Marshall Islands"
+        },
+        {
+         "id": "135",
+         "text": "Martinique"
+        },
+        {
+         "id": "136",
+         "text": "Mauritania"
+        },
+        {
+         "id": "137",
+         "text": "Mauritius"
+        },
+        {
+         "id": "138",
+         "text": "Mayotte"
+        },
+        {
+         "id": "139",
+         "text": "Mexico"
+        },
+        {
+         "id": "140",
+         "text": "Micronesia"
+        },
+        {
+         "id": "141",
+         "text": "Moldova"
+        },
+        {
+         "id": "142",
+         "text": "Monaco"
+        },
+        {
+         "id": "143",
+         "text": "Mongolia"
+        },
+        {
+         "id": "144",
+         "text": "Montenegro"
+        },
+        {
+         "id": "145",
+         "text": "Montserrat"
+        },
+        {
+         "id": "146",
+         "text": "Morocco"
+        },
+        {
+         "id": "147",
+         "text": "Mozambique"
+        },
+        {
+         "id": "148",
+         "text": "Namibia"
+        },
+        {
+         "id": "149",
+         "text": "Nauru"
+        },
+        {
+         "id": "150",
+         "text": "Nepal"
+        },
+        {
+         "id": "151",
+         "text": "Netherlands"
+        },
+        {
+         "id": "152",
+         "text": "Netherlands Antilles"
+        },
+        {
+         "id": "153",
+         "text": "New Caledonia"
+        },
+        {
+         "id": "154",
+         "text": "New Zealand"
+        },
+        {
+         "id": "155",
+         "text": "Nicaragua"
+        },
+        {
+         "id": "156",
+         "text": "Niger"
+        },
+        {
+         "id": "157",
+         "text": "Nigeria"
+        },
+        {
+         "id": "158",
+         "text": "Niue"
+        },
+        {
+         "id": "159",
+         "text": "Norfolk Island"
+        },
+        {
+         "id": "160",
+         "text": "Northern Mariana Islands"
+        },
+        {
+         "id": "161",
+         "text": "Norway"
+        },
+        {
+         "id": "162",
+         "text": "Oman"
+        },
+        {
+         "id": "163",
+         "text": "Pakistan"
+        },
+        {
+         "id": "164",
+         "text": "Palau"
+        },
+        {
+         "id": "165",
+         "text": "Panama"
+        },
+        {
+         "id": "166",
+         "text": "Papua New Guinea"
+        },
+        {
+         "id": "167",
+         "text": "Paraguay"
+        },
+        {
+         "id": "168",
+         "text": "Peru"
+        },
+        {
+         "id": "169",
+         "text": "Philippines"
+        },
+        {
+         "id": "170",
+         "text": "Pitcairn"
+        },
+        {
+         "id": "171",
+         "text": "Poland"
+        },
+        {
+         "id": "172",
+         "text": "Portugal"
+        },
+        {
+         "id": "173",
+         "text": "Puerto Rico"
+        },
+        {
+         "id": "174",
+         "text": "Qatar"
+        },
+        {
+         "id": "175",
+         "text": "Rwanda"
+        },
+        {
+         "id": "176",
+         "text": "Reunion"
+        },
+        {
+         "id": "177",
+         "text": "Romania"
+        },
+        {
+         "id": "178",
+         "text": "Russian Federation"
+        },
+        {
+         "id": "179",
+         "text": "Samoa"
+        },
+        {
+         "id": "180",
+         "text": "San Marino"
+        },
+        {
+         "id": "181",
+         "text": "Sao Tome and Principe"
+        },
+        {
+         "id": "182",
+         "text": "Saudi Arabia"
+        },
+        {
+         "id": "183",
+         "text": "Senegal"
+        },
+        {
+         "id": "184",
+         "text": "Serbia"
+        },
+        {
+         "id": "185",
+         "text": "Seychelles"
+        },
+        {
+         "id": "186",
+         "text": "Sierra Leone"
+        },
+        {
+         "id": "187",
+         "text": "Singapore"
+        },
+        {
+         "id": "188",
+         "text": "Slovakia"
+        },
+        {
+         "id": "189",
+         "text": "Slovenia"
+        },
+        {
+         "id": "190",
+         "text": "Solomon Islands"
+        },
+        {
+         "id": "191",
+         "text": "South Africa"
+        },
+        {
+         "id": "192",
+         "text": "Spain"
+        },
+        {
+         "id": "193",
+         "text": "Sri Lanka"
+        },
+        {
+         "id": "194",
+         "text": "St. Helena"
+        },
+        {
+         "id": "195",
+         "text": "Saint Kitts and Nevis"
+        },
+        {
+         "id": "196",
+         "text": "Saint Lucia"
+        },
+        {
+         "id": "197",
+         "text": "St. Pierre and Miquelon"
+        },
+        {
+         "id": "198",
+         "text": "Saint Vincent and the Grenadines"
+        },
+        {
+         "id": "199",
+         "text": "Sudan"
+        },
+        {
+         "id": "200",
+         "text": "Suriname"
+        },
+        {
+         "id": "201",
+         "text": "Svalbard"
+        },
+        {
+         "id": "202",
+         "text": "Swaziland"
+        },
+        {
+         "id": "203",
+         "text": "Sweden"
+        },
+        {
+         "id": "204",
+         "text": "Switzerland"
+        },
+        {
+         "id": "205",
+         "text": "Syria"
+        },
+        {
+         "id": "206",
+         "text": "Taiwan"
+        },
+        {
+         "id": "207",
+         "text": "Tajikistan"
+        },
+        {
+         "id": "208",
+         "text": "Tanzania"
+        },
+        {
+         "id": "209",
+         "text": "Thailand"
+        },
+        {
+         "id": "210",
+         "text": "Togo"
+        },
+        {
+         "id": "211",
+         "text": "Tokelau"
+        },
+        {
+         "id": "212",
+         "text": "Tonga"
+        },
+        {
+         "id": "213",
+         "text": "Trinidad and Tobago"
+        },
+        {
+         "id": "214",
+         "text": "Tunisia"
+        },
+        {
+         "id": "215",
+         "text": "Turkey"
+        },
+        {
+         "id": "216",
+         "text": "Turkmenistan"
+        },
+        {
+         "id": "217",
+         "text": "Turks and Caicos Islands"
+        },
+        {
+         "id": "218",
+         "text": "Tuvalu"
+        },
+        {
+         "id": "219",
+         "text": "Uganda"
+        },
+        {
+         "id": "220",
+         "text": "Ukraine"
+        },
+        {
+         "id": "221",
+         "text": "United Arab Emirates"
+        },
+        {
+         "id": "222",
+         "text": "United Kingdom"
+        },
+        {
+         "id": "223",
+         "text": "US Minor Outlying Islands"
+        },
+        {
+         "id": "224",
+         "text": "Uruguay"
+        },
+        {
+         "id": "225",
+         "text": "Uzbekistan"
+        },
+        {
+         "id": "226",
+         "text": "Vanuatu"
+        },
+        {
+         "id": "227",
+         "text": "Vatican City State"
+        },
+        {
+         "id": "228",
+         "text": "Venezuela"
+        },
+        {
+         "id": "229",
+         "text": "Viet Nam"
+        },
+        {
+         "id": "230",
+         "text": "Virgin Islands (British)"
+        },
+        {
+         "id": "231",
+         "text": "Virgin Islands, U.S."
+        },
+        {
+         "id": "232",
+         "text": "Wallis and Futuna Islands"
+        },
+        {
+         "id": "233",
+         "text": "Western Sahara"
+        },
+        {
+         "id": "234",
+         "text": "Yemen"
+        },
+        {
+         "id": "235",
+         "text": "Yugoslavia"
+        },
+        {
+         "id": "236",
+         "text": "Zaire"
+        },
+        {
+         "id": "237",
+         "text": "Zambia"
+        },
+        {
+         "id": "238",
+         "text": "Åland Islands"
+        },
+        {
+         "id": "239",
+         "text": "Saint Barthélemy"
+        },
+        {
+         "id": "240",
+         "text": "Bonaire, Sint Eustatius and Saba"
+        },
+        {
+         "id": "241",
+         "text": "Belarus"
+        },
+        {
+         "id": "242",
+         "text": "Congo, the Democratic Republic of the"
+        },
+        {
+         "id": "243",
+         "text": "Curaçao"
+        },
+        {
+         "id": "244",
+         "text": "Guernsey"
+        },
+        {
+         "id": "245",
+         "text": "South Georgia and the South Sandwich Islands"
+        },
+        {
+         "id": "246",
+         "text": "Isle of Man"
+        },
+        {
+         "id": "247",
+         "text": "Jersey"
+        },
+        {
+         "id": "248",
+         "text": "Myanmar"
+        },
+        {
+         "id": "249",
+         "text": "Palestinian Territories"
+        },
+        {
+         "id": "250",
+         "text": "Somalia"
+        },
+        {
+         "id": "251",
+         "text": "South Sudan"
+        },
+        {
+         "id": "252",
+         "text": "Sint Maarten (Dutch part)"
+        },
+        {
+         "id": "253",
+         "text": "Zimbabwe"
+        },
+        {
+         "id": "254",
+         "text": "Kosovo"
+        },
+        {
+         "id": "255",
+         "text": "Kurdistan"
+        },
+        {
+         "id": "256",
+         "text": "Saint Martin (French part)"
+        }
+       ]
+      },
+      "linkedinUrl": {
+       "isRequired": true,
+       "value": "",
+       "label": "LinkedIn URL"
+      },
+      "resumeFileId": {
+       "isRequired": true,
+       "value": "",
+       "label": "Resume"
+      },
+      "customQuestions": [
+       {
+        "id": "320",
+        "isRequired": true,
+        "question": "What is your nationality?",
+        "type": "short",
+        "value": "",
+        "isValueOther": false,
+        "hasOther": "no",
+        "options": []
+       },
+       {
+        "id": "321",
+        "isRequired": true,
+        "question": "What is your military status, if applicable? ",
+        "type": "short",
+        "value": "",
+        "isValueOther": false,
+        "hasOther": "no",
+        "options": []
+       },
+       {
+        "id": "322",
+        "isRequired": true,
+        "question": "Year of Graduation: ",
+        "type": "short",
+        "value": "",
+        "isValueOther": false,
+        "hasOther": "no",
+        "options": []
+       }
+      ],
+      "genderId": [],
+      "ethnicityId": [],
+      "veteranStatusId": [],
+      "disabilityId": []
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:18:26.928009Z",
+  "content_hash": "5d71fcb354637eb6dcf589fae2302306c34b5d2d9c9d212a56a02b34ed7b0976"
+ }
+]

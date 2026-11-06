@@ -1,0 +1,170 @@
+[
+ {
+  "source_slug": "kula",
+  "board_token": "https://careers.kula.ai/deepscribe",
+  "external_id": "7f4a013c9ea58a38622656a1",
+  "payload": {
+   "page_url": "https://careers.kula.ai/deepscribe/59433-engineering-manager-infrastructure-and-agentic-platform",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Engineering Manager, Infrastructure and Agentic Platform",
+    "description": "<h3>About DeepScribe</h3><p>We're on a mission to reduce administrative burden on clinicians pre, post, and during the visit. By integrating AI agents seamlessly into practitioner workflows, we create space for them to focus on what matters: patient care.</p><p>As a rapidly growing healthcare AI company, we face a unique challenge: building reliable, secure, and compliant infrastructure while leveraging AI to accelerate our team’s impact. This is where you come in.</p><h3>The Role</h3><p>We're looking for a hands-on engineering manager to lead our small Infrastructure and Agentic Platform team. This is a player-coach role (50/50 split) where you'll spend half of your time building software using the latest agentic tools, and half the time empowering your team to do their best work. To facilitate this balance, your team will remain reasonably small and senior.</p><p>You'll own the foundation that our entire engineering organization builds on: from AWS-based infrastructure and security to the agentic tools that help us ship faster safely.</p><p>You'll continuously evaluate cutting-edge software development practices and apply what fits DeepScribe's specific needs. Your role is to implement transformative tools while filtering out hype.</p><h3>What You'll Do</h3><p><strong>Lead and grow a high-impact team</strong></p><ul><li><p>Manage and mentor a fairly senior team of 2-5 engineers, setting them up for success through planning, coaching, and technical guidance.</p></li><li><p>Establish hiring practices and grow the team as needed.</p></li><li><p>Foster a culture of excellence, ownership, and continuous learning.</p></li></ul><p><strong>Build reliable foundations for rapid scaling</strong></p><ul><li><p>Own AWS infrastructure and data platform for a fast-growing healthcare AI product.</p></li><li><p>Lead efforts to strengthen our security and compliance posture (SOC2, HIPAA).</p></li><li><p>Establish engineering best practices that accelerate delivery while providing reliability that healthcare providers and patients have come to depend on every day.</p></li></ul><p><strong>Define AI-native engineering workflows</strong></p><ul><li><p>Help build a “Software Factory” for DeepScribe by enabling tools and processes that help engineers iterate on the SDLC faster: planning, coding, testing, monitoring, and triaging.</p></li><li><p>Own the team roadmap - decide what to build and why. Weigh reliability, cost, and velocity to pragmatically prioritize investments.</p></li><li><p>Strike a balance between AI acceleration and engineering craft.</p></li></ul><h3>Who You Are</h3><p><strong>Required:</strong></p><ul><li><p><strong>6+ years of software engineering experience</strong>, with a strong foundation in system design, agentic workflows, or DevOps.</p></li><li><p><strong>1+ year of engineering management experience</strong> – you've led people, not just projects, and you’ve seen the impact of your decisions months down the line.</p></li><li><p><strong>AWS expertise</strong> – you're comfortable designing and operating production systems on AWS</p></li><li><p><strong>Experience with Software Factory concepts</strong> – you're familiar with agentic loops, MCPs, and orchestrators. You're excited about AI's potential but understand its limitations.</p></li></ul><p><strong>You'll thrive here if you:</strong></p><ul><li><p>Thrive with autonomy. You can set direction, manage competing priorities, and communicate credibly with both technical teams and Customer Success.</p></li><li><p>Get energy from generating impact through your own contributions, your direct reports, <em>and</em> AI agents.</p></li><li><p>Love collaborating with smart, thoughtful, mission-driven engineers. You appreciate the irreplaceable value of great people in the age of automation.</p></li><li><p>Want to work on technology that makes a real difference in people's lives.</p></li></ul><h3>Nice to Have</h3><ul><li><p>Experience with passing SOC2 and HIPAA certifications and audits.</p></li><li><p>Experience with python, typescript, terraform and AWS.</p></li><li><p>Experience deploying and operating LLMs at scale: evals, observability, and cost tracking.</p></li><li><p>Familiarity with the healthcare domain and the challenges that it brings.</p></li></ul><h3>Why DeepScribe?</h3><p><strong>Mission that matters</strong>: Our technology directly improves the lives of physicians and their patients. You'll see the impact of your work in the real world.</p><p><strong>AI-native culture</strong>: We don't just build AI products - we are building a future where agents transform how we build. You'll help decide what that looks like.</p><p><strong>Exceptional team</strong>: Work alongside mission-driven engineers who care deeply about craft, impact, and each other.</p><p><strong>Values we live by:</strong>&nbsp;Act Like an Owner · Make It Happen Fast · Never Stop Evolving · Care Beyond Expectation</p><p></p><h3><strong>Perks and benefits</strong></h3><p>$180,000 to $240,000 annual salary. Actual compensation will be determined based on factors including but not limited to experience, education, skill level, location, and internal equity, and may vary from the posted range.</p><p>Meaningful equity stake in the company</p><p>Flexible PTO</p><p>Work from home stipend</p><p>Medical, Dental, Vision, 401K and other benefits are also offered</p><p></p><h3><strong>About the Team</strong></h3><p>At DeepScribe, we value trust, teamwork, and transparency, and we’re dedicated to promoting diversity and equity in the workforce through inclusive hiring practices. Candidates with backgrounds that are underrepresented in the technology industry are encouraged to apply.</p><p>In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required eligibility verification form upon hire.</p><p></p><p>We’re excited to connect with people who feel inspired by our mission to transform medical documentation with AI. As part of your application, we ask you to briefly tell us why you want to work at DeepScribe. Applications without a thoughtful response may not be considered.</p><p></p><p><strong>How to use AI during our hiring process</strong></p><ul><li><p><strong>When applying: </strong>create the first draft of your resume yourself, but it’s OK to use AI to help you polish it</p></li><li><p><strong>While preparing:</strong> use AI to research DeepScribe, practice your answers, or prepare questions for us</p></li><li><p><strong>During live interviews:</strong> no AI assistance of any kind unless we indicate otherwise. We want to see how you think, approach problems, and work through challenges in real time.</p></li></ul>",
+    "datePosted": "2026-10-06T16:26:55.000Z",
+    "employmentType": "FULL_TIME",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "DeepScribe ",
+     "value": "59433"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "DeepScribe ",
+     "logo": "https://assets.kula.ai/images/career/ob5tp22iqtg4amw14p7hkd86f936",
+     "sameAs": "https://www.deepscribe.ai"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "US"
+      }
+     }
+    ],
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+     {
+      "@type": "Country",
+      "name": "United States"
+     }
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 180000,
+      "maxValue": 240000,
+      "unitText": "YEAR"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-06T00:35:27.662589Z",
+  "content_hash": "4377c3f2dda85c2c06b0b9fd506b8a6185e2bd27556d5623b5f9e3c95765ef4b"
+ },
+ {
+  "source_slug": "kula",
+  "board_token": "https://careers.kula.ai/deepscribe",
+  "external_id": "230aa5074f417d88805b16f0",
+  "payload": {
+   "page_url": "https://careers.kula.ai/deepscribe/62582-software-engineer-product",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Software Engineer, Product ",
+    "description": "<h3><strong>About DeepScribe</strong></h3><p>DeepScribe is building the future of healthcare technology. Our vision goes beyond automating medical notes - we are building AI agents for providers, streamlining diverse clinical workflows such as clinical trial matching, billing, and more. By embedding AI deeply into healthcare operations, we empower clinicians to deliver exceptional care.</p><p>We’ve raised over <strong>$60 million</strong> in total funding from top-tier investors, including <strong>Index Ventures</strong> and prominent angels such as <strong>Alexandr Wang</strong> (CEO of Scale AI) and <strong>Dylan Field</strong> (CEO of Figma). Our solutions are trusted by some of the largest healthcare organizations in the country, including <strong>The US Oncology Network</strong> (the nation’s largest oncology network) and <strong>Ochsner Health</strong> (the largest healthcare system on the Gulf Coast).</p><p></p><h3><strong>About the role</strong></h3><p>We’re looking for an exceptional Product Engineer who would thrive in a fast-paced, rapidly scaling startup environment. You will build the backbone of AI-powered workflows that saves doctors hours of documentation time, enabling them to focus on patient care. You’ll write code across the stack to get the job done.</p><p></p><h3><strong>What you’ll do</strong></h3><ul><li><p>Contribute to the design and implementation of our real-time LLM-powered platform, delivering core features that will shape the future of our product</p></li><li><p>Build and enhance key pieces of the user journey such as onboarding, note customization, and in-the-moment insights</p></li><li><p>Collaborate across functions (product, design, clinical subject matter experts, sales/go-to-market, etc) to ensure we’re building and launching best-in-class products</p></li><li><p>Learn and grow alongside experienced engineers while implementing best practices for building robust, scalable code for AI-first applications</p></li></ul><p></p><h3><strong>About you</strong></h3><ul><li><p>You enjoy solving problems and writing code using languages like Python and/or Typescript/React</p></li><li><p>You’re comfortable working across the stack and are eager to learn whatever you need to ship the right product</p></li><li><p>You love working directly with end-users and are excited about working with doctors first-hand</p></li><li><p>You move really, really fast while keeping the quality bar high</p></li><li><p>You are curious and are excited by the challenge of applying LLMs to novel problems in healthcare</p></li><li><p>You care deeply about your teammates and contribute to a collaborative, team-oriented culture</p></li></ul><p></p><h3><strong>Nice to have</strong></h3><ul><li><p>Experience in healthcare, integrating with EHR systems, or familiarity with clinical documentation</p></li><li><p>Experience working with sensitive data and familiarity with SOC-2/HIPAA</p></li><li><p>Experience with building and deploying mobile applications</p></li><li><p>Experience managing and deploying code in AWS architecture</p></li></ul><p><strong>This is a remote position, although Bay Area residents are encouraged to work from our SF office.</strong></p><p></p><h3><strong>Perks and benefits</strong></h3><p>$100,000 to $185,000 annual salary. Actual compensation will be determined based on factors including but not limited to experience, education, skill level, location, and internal equity, and may vary from the posted range.</p><p>Meaningful equity stake in the company</p><p>Flexible PTO</p><p>Work from home stipend</p><p>Medical, Dental, Vision, 401K and other benefits are also offered</p><p></p><h3><strong>About the Team</strong></h3><p>At DeepScribe, we value trust, teamwork, and transparency, and we’re dedicated to promoting diversity and equity in the workforce through inclusive hiring practices. Candidates with backgrounds that are underrepresented in the technology industry are encouraged to apply.</p><p>In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required eligibility verification form upon hire.</p><p></p><p>We’re excited to connect with people who feel inspired by our mission to transform medical documentation with AI. As part of your application, we ask you to briefly tell us why you want to work at DeepScribe. Applications without a thoughtful response may not be considered.</p><p></p><p><strong>How to use AI during our hiring process</strong></p><ul><li><p><strong>When applying: </strong>create the first draft of your resume yourself, but it’s OK to use AI to help you polish it</p></li><li><p><strong>While preparing:</strong> use AI to research DeepScribe, practice your answers, or prepare questions for us</p></li><li><p><strong>During live interviews:</strong> no AI assistance of any kind unless we indicate otherwise. We want to see how you think, approach problems, and work through challenges in real time.</p></li></ul>",
+    "datePosted": "2026-10-14T14:25:01.000Z",
+    "employmentType": "FULL_TIME",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "DeepScribe ",
+     "value": "62582"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "DeepScribe ",
+     "logo": "https://assets.kula.ai/images/career/ob5tp22iqtg4amw14p7hkd86f936",
+     "sameAs": "https://www.deepscribe.ai"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "US"
+      }
+     }
+    ],
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+     {
+      "@type": "Country",
+      "name": "United States"
+     }
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 100000,
+      "maxValue": 185000,
+      "unitText": "YEAR"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-06T00:35:28.027089Z",
+  "content_hash": "b8490ab84f02c6d630b57810c053dd04e14f7ff0beeeb2cf27cea7a401b7c2b9"
+ },
+ {
+  "source_slug": "kula",
+  "board_token": "https://careers.kula.ai/deepscribe",
+  "external_id": "6ab0d2b3bee13596fce8b734",
+  "payload": {
+   "page_url": "https://careers.kula.ai/deepscribe/62583-ai-engineer",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "AI Engineer",
+    "description": "<h3><strong>About DeepScribe</strong></h3><p>DeepScribe is building AI agents to automate and transform clinical workflows. Our mission goes beyond note-taking - we’re building the operating system for healthcare. From clinical trial matching to billing and ambient documentation, we’re embedding AI directly into the workflows of the most overburdened professionals in the world.</p><p></p><p>We’ve raised over <strong>$60 million</strong> in total funding from top-tier investors, including <strong>Index Ventures</strong> and prominent angels such as <strong>Alexandr Wang</strong> (fmr CEO of Scale AI) and <strong>Dylan Field</strong> (CEO of Figma). Our solutions are trusted by some of the largest healthcare organizations in the country, including <strong>The US Oncology Network</strong> (the nation’s largest oncology network) and <strong>Ochsner Health</strong> (the largest healthcare system on the Gulf Coast).</p><p></p><h3><strong>About the Role</strong></h3><p>We are looking for an <strong>AI Engineer</strong> to build and ship LLM-powered healthcare applications. You’ll have ownership over new AI workflows, from prototype to production. Expect to ship fast, talk directly to customers, and build systems that genuinely reduce clinician burnout.</p><p>This is a deeply technical role that blends ML, product thinking, and engineering. You'll build and own production services that rely on LLMs, speech models, and medical reasoning.</p><p></p><h3><strong>What you’ll do</strong></h3><ul><li><p>Develop and own <strong>end-to-end AI applications</strong>, such as clinical trial matching, ambient copilots, billing automation, and more.</p></li><li><p>Improve our <strong>LLM-powered documentation platform</strong>, used daily by thousands of clinicians</p></li><li><p>Build and optimize <strong>inference pipelines</strong> and <strong>real-time speech recognition systems</strong></p></li><li><p>Collaborate closely with PMs, designers, clinical experts, and GTM teams to iterate rapidly and launch high-impact features</p></li></ul><h3><strong>About You</strong></h3><p>We’re looking for exceptional, top-tier talent to join our team.</p><ul><li><p>3+ years building production AI systems, ideally in fast-moving environments or as a founder</p></li><li><p>Extensive experience with <strong>LLM inference</strong> (e.g., OpenAI, Anthropic, Llama, etc.)</p></li><li><p>Strong product sense</p></li><li><p>Comfortable working across the stack (frontend, backend, etc) to get features shipped</p></li><li><p>Obsessed with speed, ownership, and getting real user feedback</p></li></ul><p><strong>This is a remote position, although Bay Area residents are encouraged to work from our SF office.</strong></p><h3><strong>Nice to Haves</strong></h3><ul><li><p>Experience with <strong>ASR systems</strong> (e.g. Whisper)</p></li><li><p>Experience with <strong>EHR integrations</strong> (FHIR, HL7) or healthcare-specific ontologies</p></li><li><p>Familiarity with SOC-2, HIPAA, or sensitive data pipelines</p></li></ul><h3><strong>Perks and benefits</strong></h3><p>$150,000 to $250,000 annual salary. Actual compensation will be determined based on factors including but not limited to experience, education, skill level, location, and internal equity, and may vary from the posted range.</p><p>Meaningful equity stake in the company</p><p>Flexible PTO</p><p>Work from home stipend</p><p>Medical, Dental, Vision, 401K</p><p></p><h3><strong>About the Team</strong></h3><p>At DeepScribe, we value trust, teamwork, and transparency, and we’re dedicated to promoting diversity and equity in the workforce through inclusive hiring practices. Candidates with backgrounds that are underrepresented in the technology industry are encouraged to apply.</p><p></p><p>In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required eligibility verification form upon hire.</p><p></p><p>We’re excited to connect with people who feel inspired by our mission to transform medical documentation with AI. As part of your application, we ask you to briefly tell us why you want to work at DeepScribe. Applications without a thoughtful response may not be considered.</p><p></p><p><strong>How to use AI during our hiring process</strong></p><ul><li><p><strong>When applying: </strong>create the first draft of your resume yourself, but it’s OK to use AI to help you polish it</p></li><li><p><strong>While preparing:</strong> use AI to research DeepScribe, practice your answers, or prepare questions for us</p></li><li><p><strong>During live interviews:</strong> no AI assistance of any kind unless we indicate otherwise. We want to see how you think, approach problems, and work through challenges in real time.</p></li></ul>",
+    "datePosted": "2026-10-14T14:25:49.000Z",
+    "employmentType": "FULL_TIME",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "DeepScribe ",
+     "value": "62583"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "DeepScribe ",
+     "logo": "https://assets.kula.ai/images/career/ob5tp22iqtg4amw14p7hkd86f936",
+     "sameAs": "https://www.deepscribe.ai"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "US"
+      }
+     }
+    ],
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+     {
+      "@type": "Country",
+      "name": "United States"
+     }
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 150000,
+      "maxValue": 250000,
+      "unitText": "YEAR"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-06T00:35:28.516617Z",
+  "content_hash": "51968fd232fab595f5f4dc07bcfb11f679d72cdd509afa0e939d468f0ece4e58"
+ }
+]

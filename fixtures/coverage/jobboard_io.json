@@ -1,0 +1,29 @@
+[
+ {
+  "source_slug": "jobboard_io",
+  "board_token": "https://jobs.motionographer.com",
+  "external_id": "632690426",
+  "payload": {
+   "guid": [
+    "https://jobs.motionographer.com/jobs/632690426-anime-obsessed-video-editor-with-strong-narrative-skills-at-psyopanime"
+   ],
+   "link": [
+    "https://jobs.motionographer.com/jobs/632690426-anime-obsessed-video-editor-with-strong-narrative-skills-at-psyopanime"
+   ],
+   "title": [
+    "Anime-obsessed Video Editor with strong Narrative skills at Psyopanime (Brooklyn, NY, USA)"
+   ],
+   "enclosure": [
+    ""
+   ],
+   "description": [
+    "PsyopAnime is a cutting-edge studio building the Toonami of AI animation—delivering no-compromises, hard-hitting, irreverent, world-class anime.\nWe are..."
+   ],
+   "pubdate": [
+    "Mon, 26 Oct 2026 13:40:00 +0000"
+   ]
+  },
+  "fetched_at": "2026-11-06T00:20:20.470710Z",
+  "content_hash": "b4f8a37cc64d48f2fcf5566050e090e61bc97bc53fa6e512508ef943b5aca0cf"
+ }
+]

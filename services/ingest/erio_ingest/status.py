@@ -33,12 +33,18 @@ class StatusChanges:
 
 
 def apply_successful_fetch(
-    session: Session, board_id: int, listed: Collection[str] | None, now: datetime
+    session: Session,
+    board_id: int,
+    listed: Collection[str] | None,
+    now: datetime,
+    complete: bool = True,
 ) -> StatusChanges:
     """Apply rules 3 and 5 after a successful fetch of one board.
 
     ``listed`` holds the external IDs the board listed; ``None`` means the
-    source answered 304, so it lists exactly what it listed last time.
+    source answered 304, so it lists exactly what it listed last time. An
+    incomplete fetch (``complete`` False: the connector stopped at a cap)
+    closes nothing: postings it did not list are unknown, not missing.
     Postings it lists were already marked seen (and reopened) by the upsert.
     """
     changes = StatusChanges()
@@ -49,7 +55,7 @@ def apply_successful_fetch(
         still_listed = (
             posting.missing_since is None if listed is None else posting.external_id in listed
         )
-        if still_listed:
+        if still_listed or not complete:
             continue
         if posting.missing_since is None:
             posting.missing_since = now

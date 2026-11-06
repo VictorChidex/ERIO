@@ -1,0 +1,209 @@
+[
+ {
+  "source_slug": "workday",
+  "board_token": "nvidia.wd5/NVIDIAExternalCareerSite",
+  "external_id": "JR2028318",
+  "payload": {
+   "title": "AI Research Scientist",
+   "externalPath": "/job/Korea-Seoul/AI-Research-Scientist_JR2028318",
+   "locationsText": "Korea, Seoul",
+   "postedOn": "Posted Today",
+   "bulletFields": [
+    "JR2028318"
+   ],
+   "detail": {
+    "jobPostingInfo": {
+     "id": "faa6a0b37d861048ddb17f42a2a00000",
+     "title": "AI Research Scientist",
+     "jobDescription": "<p><span style=\"color:#000000\">NVIDIA is searching for outstanding AI researchers to join the NVIDIA Research Korea team. Our mission is to advance the frontiers of foundation models and agentic AI through data-centric research. We focus on developing more capable, efficient, and self-improving AI systems by improving how models learn from data, spanning pre-training, post-training, and inference-time scaling. Our research explores synthetic data generation, data selection and curation, data-efficient learning, agentic reasoning, and iterative self-improvement.</span></p><br /><p style=\"color:!important\"><span style=\"color:#000000\">A broader goal of our research is to advance Sovereign AI by developing generalizable methods and reproducible recipes that enable countries and language communities to build advanced AI systems without relying on massive amounts of human-annotated data. Building on NVIDIA Nemotron open models, we aim to make cutting-edge foundation models and agentic AI capabilities more accessible across languages, regions, and applications.</span></p><p style=\"color:!important\"><span style=\"color:#000000\">You will join a highly collaborative research team tackling fundamental challenges in foundation models and agentic AI. Our team aims to conduct groundbreaking research, contribute to the open-source AI ecosystem, and translate research innovations into NVIDIA technologies and products.</span></p><br /><p style=\"color:!important\"><span style=\"color:#000000\"><b>What you&#39;ll be doing:</b></span></p><ul><li style=\"color:!important\"><span style=\"color:#000000\">Conduct cutting-edge research in foundation models and agentic AI, including reasoning, planning, tool use, and autonomous problem-solving.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Develop novel methods for data-efficient learning, data curation, and scalable model training for both pre-training and post-training.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Explore self-improvement techniques, including RL, distillation, self-training, and learning from model-generated feedback.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Advance the capabilities and efficiency of foundation models and agentic systems through innovative pre-training, post-training, and inference-time methods.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Develop advanced Korean-language foundation models and agentic systems, establishing methods and training recipes that generalize to other languages and regions.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Publish original research at leading conferences and contribute to open-source research.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Collaborate with researchers across NVIDIA and external academic institutions.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Mentor research interns from the NVIDIA-KAIST Joint AI Research Lab and contribute to a collaborative research environment with KAIST.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Present research findings at conferences, workshops, and other scientific events.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Transfer research innovations to NVIDIA product teams.</span></li></ul><br /><p style=\"color:!important\"><span style=\"color:#000000\"><b>What we need to see:</b></span></p><ul><li style=\"color:!important\"><span style=\"color:#000000\">PhD in AI, Computer Science, Electrical Engineering, or a related field (or equivalent experience).</span></li><li style=\"color:!important\"><span style=\"color:#000000\">At least 4 years of relevant research experience.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Strong expertise in one or more of the following areas: LLMs, pre-training, agentic AI, reasoning, reinforcement learning, efficient model training, synthetic data generation, data-efficient learning, distillation, or self-improving AI.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Publications at leading conferences such as NeurIPS, ICML, ICLR, COLM, ACL, EMNLP, or CVPR.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Strong understanding of modern deep learning methods and foundation models.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Excellent programming skills in Python and experience with deep learning frameworks such as PyTorch.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Ability to identify important research problems, develop novel approaches, and conduct rigorous empirical evaluations.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Excellent communication skills and ability to collaborate effectively across research teams.</span></li></ul><br /><p style=\"color:!important\"><span style=\"color:#000000\"><b>Ways to stand out from the crowd:</b></span></p><ul><li style=\"color:!important\"><span style=\"color:#000000\">Research contributions to state-of-the-art foundation models, agentic systems, reasoning models, or autonomous AI.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Experience with large-scale distributed pre-training, efficient post-training, or inference-time scaling.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Impactful contributions to Korean-language AI, multilingual foundation models, or cross-lingual transfer.</span></li><li style=\"color:!important\"><span style=\"color:#000000\">Significant open-source contributions to foundation models, datasets, or agentic AI frameworks.</span></li></ul><br /><p>NVIDIA is widely considered to be one of the technology world&#39;s most desirable employers. We have some of the most forward-thinking and productive people in the world working for us. Looking forward to hear from you!</p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>",
+     "location": "Korea, Seoul",
+     "postedOn": "Posted Today",
+     "startDate": "2026-11-06",
+     "timeType": "Full time",
+     "jobReqId": "JR2028318",
+     "jobPostingId": "AI-Research-Scientist_JR2028318",
+     "jobPostingSiteId": "NVIDIAExternalCareerSite",
+     "country": {
+      "descriptor": "Korea, Republic of",
+      "id": "7a5a2aadf9d34086a2bfbfd408bc28da"
+     },
+     "canApply": true,
+     "posted": true,
+     "includeResumeParsing": true,
+     "jobRequisitionLocation": {
+      "descriptor": "Korea, Seoul",
+      "country": {
+       "descriptor": "Korea, Republic of",
+       "id": "7a5a2aadf9d34086a2bfbfd408bc28da",
+       "alpha2Code": "KR"
+      }
+     },
+     "externalUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Korea-Seoul/AI-Research-Scientist_JR2028318",
+     "questionnaireId": "2f2764b3a82910064296831695150000"
+    },
+    "hiringOrganization": {
+     "name": "KR02 NVIDIA HK HldLtd.Korea Br",
+     "url": ""
+    },
+    "similarJobs": [],
+    "userAuthenticated": false
+   }
+  },
+  "fetched_at": "2026-11-06T00:51:52.236436Z",
+  "content_hash": "8e80a00cf3631d553b6eeeee007ced7664cc98f09b0940b23f355fdf3197fb1f"
+ },
+ {
+  "source_slug": "workday",
+  "board_token": "nvidia.wd5/NVIDIAExternalCareerSite",
+  "external_id": "JR2014177",
+  "payload": {
+   "title": "Senior Software Engineer - CUDA and Unified Memory",
+   "externalPath": "/job/US-CA-Santa-Clara/Senior-Software-Engineer---CUDA-and-Unified-Memory_JR2014177",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted Today",
+   "bulletFields": [
+    "JR2014177"
+   ],
+   "detail": {
+    "jobPostingInfo": {
+     "id": "f0d2d9510e9c10011b49e38066c10000",
+     "title": "Senior Software Engineer - CUDA and Unified Memory",
+     "jobDescription": "<div><div><p><span><span>We are hiring software engineers to work on the CUDA driver, a core </span><span>component</span><span> of our </span><span>platform</span><span> for accelerating general purpose computation on the GPU. Our team delivers features and improvements to better realize the potential of NVIDIA hardware for a growing range of computational workloads, ranging from deep learning, scientific computation, and self-driving cars to video games and virtual reality! </span></span><span> </span></p><p></p></div><div><p><span><span>CUDA defines a unified programming model across a range of system configurations and hardware capabilities. To </span><span>accomplish</span><span> this, the CUDA driver interacts with GPU hardware, kernel mode drivers, and the operating system. Unified Memory kernel </span><span>driver</span><span> provides kernel memory management that enables these advanced features. </span></span><span> </span></p><p></p></div><div><p><b><span>What </span><span>you&#39;ll</span><span> be doing:</span></b><span><span> </span></span><span> </span></p></div><div><p><span><span>As a member of our team, you will apply your design, coding </span><span>expertise</span><span>,</span></span><u><span><span> and</span></span></u><span><span> creativity, </span></span><span><span><span>and </span></span></span><u><span><span>to </span></span></u><span><span>collaborate with peers across NVIDIA to deliver upon the best </span><span>compute</span><span> platform in the world. You will craft sophisticated solutions to exciting problems shaping the future direction of CUDA! </span></span><span> </span></p></div><div><ul><li><p><span><span>Architect, and implement new features for new chips and new kernel features </span></span><span> </span></p></li><li><p><span><span>Coordinate with other teams to accomplish</span><span> your work daily </span></span><span> </span></p></li><li><p><span><span>Help define forward-looking improvements to the CUDA APIs and programming model </span></span><span> </span></p></li><li><p><span><span>Write effective, maintainable, and well-tested </span></span><u><span><span>kernel and </span><span>userspace</span><span> </span></span></u><span><span>code </span></span><span> </span></p></li><li><p><span><span>Develop code for </span></span><span><span><span>multiple </span></span></span><u><span><span>Linux </span></span></u><span><span>operating systems </span></span><span> </span></p></li></ul></div><div><p></p><p><b><span>What we need to see:</span></b><span><span> </span></span><span> </span></p></div><div><ul><li><p><span><span>BS or MS degree in Computer Science, Electrical </span><span>Engineering</span><span> or related field (or equivalent experience) </span></span><span> </span></p></li><li><p><span><span>Strong C programming skills</span></span></p></li><li><p><span><span>Minimum of 10&#43; years of related development experience </span></span><span> </span></p></li><li><p><span><span>Experience working with large codebases </span></span><span> </span></p></li><li><p><span><span>Background with operating system interfaces for threads, process control, and virtual memory </span></span><span> </span></p></li><li><p><span><span>Experience writing and debugging multithreaded programs </span></span><span> </span></p></li><li><p><span><span>Good written communication </span></span></p><p></p></li></ul><p><b><span><span>Ways to stand out from the crowd: </span></span><span> </span></b></p></div><div><ul><li><p><span><span>Understanding of system level architecture, such as interconnects, memory hierarchy, interrupts, and memory-mapped IO </span></span></p></li><li><p><span><span>Knowledge of memory coherence and consistency models </span> </span></p></li><li><p><span><span>Experience with kernel mode development </span></span><span> </span></p></li><li><p><span><span>Experience with Windows, Linux, or macOS driver development </span></span><span> </span></p></li><li><p>Some familiarity w C&#43;&#43;​</p></li></ul></div></div><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>Your base salary will be determined based on your location, experience, and other objective job-related factors. The expected base salary ranges for this position are:<br>184,000 USD – 287,500 USD for Level 4; and 224,000 USD – 356,500 USD for Level 5.<div><div><div><div><div><div><div><p></p><p><span>You will also be eligible for equity and <a href=\"https://www.nvidia.com/en-us/benefits/\" target=\"_blank\">benefits</a>.</span></p><p></p></div></div></div></div></div></div></div>Applications for this job will be accepted at least until November 9, 2026.<p></p><p>This posting is for an existing vacancy. </p><p>NVIDIA uses AI tools in its recruiting processes.</p><p></p>NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.<p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>",
+     "location": "US, CA, Santa Clara",
+     "additionalLocations": [
+      "US, TX, Austin"
+     ],
+     "postedOn": "Posted Today",
+     "startDate": "2026-11-05",
+     "timeType": "Full time",
+     "jobReqId": "JR2014177",
+     "jobPostingId": "Senior-Software-Engineer---CUDA-and-Unified-Memory_JR2014177",
+     "jobPostingSiteId": "NVIDIAExternalCareerSite",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09"
+     },
+     "canApply": true,
+     "posted": true,
+     "includeResumeParsing": true,
+     "jobRequisitionLocation": {
+      "descriptor": "US, CA, Santa Clara",
+      "country": {
+       "descriptor": "United States of America",
+       "id": "bc33aa3152ec42d4995f4791a106ed09",
+       "alpha2Code": "US"
+      }
+     },
+     "externalUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---CUDA-and-Unified-Memory_JR2014177",
+     "questionnaireId": "028095df097b1001ac9358c586600000",
+     "endDate": "2026-12-15"
+    },
+    "hiringOrganization": {
+     "name": "2100 NVIDIA USA",
+     "url": ""
+    },
+    "similarJobs": [
+     {
+      "title": "Senior Software Engineer, CUDA Rust Core Libraries",
+      "externalPath": "/job/US-CA-Santa-Clara/Senior-Software-Engineer--CUDA-Core-Libraries_JR2021170",
+      "timeType": "Full time",
+      "locationsText": "2 Locations",
+      "postedOn": "Posted 6 Days Ago",
+      "startDate": "2026-10-30"
+     },
+     {
+      "title": "Senior Software Engineer, CUDA UMD - Graphs and GPU Sharing",
+      "externalPath": "/job/US-CA-Santa-Clara/Senior-Software-Engineer--CUDA-UMD---Graphs-and-GPU-Sharing_JR2014056",
+      "timeType": "Full time",
+      "locationsText": "US, CA, Santa Clara",
+      "postedOn": "Posted 3 Days Ago",
+      "startDate": "2026-11-02"
+     },
+     {
+      "title": "Senior Software Engineer CUDA UMD - GPU Kernel Scheduling",
+      "externalPath": "/job/US-CA-Santa-Clara/Senior-Software-Engineer-CUDA-UMD---GPU-Kernel-Scheduling_JR2024920",
+      "timeType": "Full time",
+      "locationsText": "US, CA, Santa Clara",
+      "postedOn": "Posted 6 Days Ago",
+      "startDate": "2026-10-30"
+     },
+     {
+      "title": "Senior System Software Engineer - CUDA Chips",
+      "externalPath": "/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---CUDA-Chips_JR2013322",
+      "timeType": "Full time",
+      "locationsText": "US, CA, Santa Clara",
+      "postedOn": "Posted Today",
+      "startDate": "2026-11-05"
+     },
+     {
+      "title": "Senior System Software Engineer, CUDA Driver for Windows",
+      "externalPath": "/job/US-CA-Santa-Clara/Senior-System-Software-Engineer--CUDA-Driver-for-Windows_JR2022474",
+      "timeType": "Full time",
+      "locationsText": "3 Locations",
+      "postedOn": "Posted 3 Days Ago",
+      "startDate": "2026-11-02"
+     }
+    ],
+    "userAuthenticated": false
+   }
+  },
+  "fetched_at": "2026-11-06T00:51:52.236436Z",
+  "content_hash": "d0d6de522e571ead773e764269420572cbb201e26ffb2d2f743304b5c9863eec"
+ },
+ {
+  "source_slug": "workday",
+  "board_token": "nvidia.wd5/NVIDIAExternalCareerSite",
+  "external_id": "JR2029062",
+  "payload": {
+   "title": "Firmware DevOps and Infrastructure Manager",
+   "externalPath": "/job/Israel-Yokneam/Firmware-DevOps-and-Infrastructure-Manager_JR2029062",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted Today",
+   "bulletFields": [
+    "JR2029062"
+   ],
+   "detail": {
+    "jobPostingInfo": {
+     "id": "965d4e18cd19104cfe0df4f6dc640000",
+     "title": "Firmware DevOps and Infrastructure Manager",
+     "jobDescription": "<p>NVIDIA is looking for an experienced and dedicated DevOps / Automation Manager to lead our Firmware Regression &amp; DevOps team. In this role, you will lead a team of engineers responsible for maintaining and improving Firmware regression processes, ensuring the  stability and reliability of Firmware CI infrastructure, and developing innovative tools and AI-powered automation. You will drive bug triage and prioritization, continuously improve regression efficiency and coverage, and ensure the quality and readiness of Firmware releases by serving as the quality gatekeeper before the release. The team plays a critical role in delivering cutting-edge networking technologies that meet the demanding quality standards of industry-leading customers. You will collaborate closely with NVIDIA’s Networking NIC Firmware team, gaining deep exposure to NVIDIA’s products and technologies while driving quality, efficiency, and engineering excellence.</p><br /><p><b>What you will be doing:</b></p><p><span></span></p><ul><li>Lead and develop a DevOps &amp; Firmware engineering team by setting priorities, allocating resources, mentoring engineers, and creating a culture of ownership, technical excellence, and continuous improvement.</li><li>Own and drive the Firmware regression process, ensuring comprehensive test coverage, reliable execution, timely issue identification, and accurate bug assignment. Continuously improve regression efficiency and collaborate closely with Firmware release teams to ensure high-quality releases.</li><li>Lead the Firmware CI &amp; DevOps infrastructures, taking ownership of its stability, scalability, and efficiency. Ensure a reliable, robust, and lean environment that serves as a critical quality gate for Firmware releases.</li><li>integrate AI-powered solutions to improve stability, reliability, maintenance efficiency, and visualization.</li><li>Drive regression analysis and quality reporting by overseeing regression results, identifying stability degradations between Firmware versions, and communicating regression status, risks, and critical issues to relevant stakeholders.</li><li>Lead bug triage and prioritization, ensuring issues are properly investigated, assigned, tracked, and resolved. Guide the team in troubleshooting complex issues, identifying root causes, and delivering high-quality fixes and patches.</li><li>Collaborate with Firmware release teams by communicating release readiness, highlighting newly introduced issues, reflecting their impact, and take part of the plans to support informed release decisions.</li></ul><br /><p><b>What we need to see:</b></p><ul><li>B.Sc. degree in Electrical Engineering, Computer Engineering, Computer Science, or equivalent practical experience.</li><li>2&#43; years of experience in a technical team leadership role, with proven ability to lead, mentor, and develop engineers.</li><li>5&#43; overall years of hands-on experience in Firmware regression, Continuous Integration (CI), and DevOps infrastructure.</li><li>Hands-on experience working in Linux environments.</li><li>Strong programming skills in Python or C&#43;&#43;, with a solid understanding of object-oriented programming (OOP) concepts.</li><li>Strong problem-solving skills, creativity, motivation, adaptability, and the ability to work independently while collaborating effectively within a team.</li><li>Flexibility to support critical debugging and bring-up activities outside regular working hours when required.</li><li>Excellent verbal and written communication skills in both English and Hebrew.</li></ul><p> </p><p><b>Ways to stand out of the crowd:</b></p><p><span></span></p><ul><li>Strong proficiency in Python, C&#43;&#43;, and SQL, with experience developing automation tools and infrastructure.</li><li>Hands-on experience developing agentic AI solutions and integrating AI into engineering workflows.</li><li>Knowledge of networking protocols and networking technologies.</li><li>Experience with software development and CI/CD tools such as Git, Gerrit, Jenkins, and Docker.</li><li>Experience working in Agile development environments and collaborating across engineering teams.</li></ul><p> </p><p>NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. Are you a creative and autonomous engineer who loves a challenge? Come join our Firmaware Verification team and help us build future interconnect architectures that will continue to drive us forward in the fields of High-Performance Computing, Graphics, AI and Networking.​​</p><p> </p><p>We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status. We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation. </p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p>",
+     "location": "Israel, Yokneam",
+     "additionalLocations": [
+      "Israel, Tel Aviv"
+     ],
+     "postedOn": "Posted Today",
+     "startDate": "2026-11-06",
+     "timeType": "Full time",
+     "jobReqId": "JR2029062",
+     "jobPostingId": "Firmware-DevOps-and-Infrastructure-Manager_JR2029062",
+     "jobPostingSiteId": "NVIDIAExternalCareerSite",
+     "country": {
+      "descriptor": "Israel",
+      "id": "084562884af243748dad7c84c304d89a"
+     },
+     "canApply": true,
+     "posted": true,
+     "includeResumeParsing": true,
+     "jobRequisitionLocation": {
+      "descriptor": "Israel, Yokneam",
+      "country": {
+       "descriptor": "Israel",
+       "id": "084562884af243748dad7c84c304d89a",
+       "alpha2Code": "IL"
+      }
+     },
+     "externalUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Firmware-DevOps-and-Infrastructure-Manager_JR2029062",
+     "questionnaireId": "2f2764b3a82910064296831695150000"
+    },
+    "hiringOrganization": {
+     "name": "IL00 Mellanox Technologies, Ltd.",
+     "url": ""
+    },
+    "similarJobs": [],
+    "userAuthenticated": false
+   }
+  },
+  "fetched_at": "2026-11-06T00:51:52.236436Z",
+  "content_hash": "54a8236b93cbb9f5c4a86630ac46dca493b9e1de7e363ee1b31f4e3cab2dd3bd"
+ }
+]

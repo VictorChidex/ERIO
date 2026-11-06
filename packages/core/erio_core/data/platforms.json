@@ -3,661 +3,765 @@
   "slug": "adp",
   "name": "ADP",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "applicantpro",
   "name": "ApplicantPro",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "ashby",
   "name": "Ashby",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "linear",
    "andela"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "avature",
   "name": "Avature",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "bamboohr",
   "name": "BambooHR",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "lxt",
+   "instabug"
+  ]
  },
  {
   "slug": "brassring",
   "name": "BrassRing",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "breezy",
   "name": "Breezy HR",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "german-american-chambers-of-commerce",
+   "elite-amenity-management"
+  ]
  },
  {
   "slug": "careerplug",
   "name": "CareerPlug",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://midas-careers.careerplug.com/jobs",
+   "https://ufc-gym-careers.careerplug.com/jobs"
+  ]
  },
  {
   "slug": "comeet",
   "name": "Comeet",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "csod",
   "name": "CSOD",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "dayforce",
   "name": "Dayforce",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "deel",
   "name": "Deel",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.deel.com/deel/sitemap.xml",
+   "https://jobs.deel.com/klarna/sitemap.xml"
+  ]
  },
  {
   "slug": "dover",
   "name": "Dover",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "the job data endpoints are disallowed by robots.txt; only job URLs are allowed",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "eightfold",
   "name": "Eightfold AI",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "firststage",
   "name": "FirstStage",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://reflexivity.firststage.co/jobs",
+   "https://softwire.firststage.co/jobs"
+  ]
  },
  {
   "slug": "freshteam",
   "name": "Freshteam",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "Only one live board found (1 job); its JSON-LD swaps region and city",
+  "examples": [
+   "https://giaspace.freshteam.com/jobs"
+  ]
  },
  {
   "slug": "gem",
   "name": "Gem.com",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "retool",
+   "gem"
+  ]
  },
  {
   "slug": "gohire",
   "name": "GoHire",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "Only one populated board found, and it looks like a test account; every other board found is empty",
+  "examples": [
+   "6oK69dA8"
+  ]
  },
  {
   "slug": "greenhouse",
   "name": "Greenhouse",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "truelayer",
    "stripe"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "hibob",
   "name": "HiBob",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "gresham",
+   "liquidia"
+  ]
  },
  {
   "slug": "hirebridge",
   "name": "HireBridge",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=5535",
+   "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=6766"
+  ]
  },
  {
   "slug": "hirehive",
   "name": "HireHive",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "focus-ireland",
+   "catalyx"
+  ]
  },
  {
   "slug": "hireology",
   "name": "Hireology",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "nextpoint",
+   "hireology2"
+  ]
  },
  {
   "slug": "hiringthing",
   "name": "HiringThing",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "structuresinc",
+   "tic"
+  ]
  },
  {
   "slug": "icims",
   "name": "iCIMS",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://careers-primehealthcare.icims.com/sitemap.xml",
+   "https://careers-gdms.icims.com/sitemap.xml"
+  ]
  },
  {
   "slug": "isolvedhire",
   "name": "iSolvedHire",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "jazzhr",
   "name": "JazzHR",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "A feed over the 10 MB response cap (Crunch Fitness, 843 jobs) cannot be read; boards are listed in app.jazz.co's public sitemaps",
+  "examples": [
+   "brennancenter",
+   "mobomo",
+   "techsoup"
+  ]
  },
  {
   "slug": "jobvite",
   "name": "Jobvite",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "join",
   "name": "JOIN.com",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "54/join",
+   "36/bring"
+  ]
  },
  {
   "slug": "kula",
   "name": "Kula.ai",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://careers.kula.ai/rocketlane",
+   "https://careers.kula.ai/deepscribe"
+  ]
  },
  {
   "slug": "lever",
   "name": "Lever.co",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "kavak",
    "spotify"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "manatal",
   "name": "Manatal",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "talentrecruit",
    "job-expert-thailand-co-ltd"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "oracle_recruiting",
   "name": "Oracle Recruiting",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "pageup",
   "name": "PageUp",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "782/en-us",
+   "513/en"
+  ]
  },
  {
   "slug": "paradox",
   "name": "Paradox",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://www.essentiacareers.org/sitemap-fc5ff90e-en.xml",
+   "https://careers.marriott.com/sitemap-3a392567-en.xml"
+  ]
  },
  {
   "slug": "paycom",
   "name": "Paycom",
   "kind": "ats",
-  "status": "planned",
-  "examples": [],
-  "notes": "job lists load with a session token the career page issues each visitor; using it needs the owner's decision"
+  "blocked": "",
+  "notes": "job lists load with a session token the career page issues each visitor; using it needs the owner's decision",
+  "examples": []
  },
  {
   "slug": "paycor",
   "name": "Paycor",
   "kind": "ats",
-  "status": "blocked",
-  "examples": [],
-  "notes": "robots.txt on recruitingbypaycor.com disallows everything"
+  "blocked": "robots.txt on recruitingbypaycor.com disallows everything",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "paylocity",
   "name": "Paylocity",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "personio",
   "name": "Personio",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "1komma5grad",
    "join"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "phenom",
   "name": "Phenom People",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "pinpoint",
   "name": "Pinpoint",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "workwithus",
    "made-tech"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "polymer",
   "name": "Polymer",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "invicta-software",
    "bladework-games"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "recooty",
   "name": "Recooty",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.recooty.com/gibbons-group",
+   "https://jobs.recooty.com/davis-cartage-company"
+  ]
  },
  {
   "slug": "recruitee",
   "name": "Recruitee",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "bunq",
    "channable"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "rippling",
   "name": "Rippling",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "skillable-careers",
    "rts"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "rival",
   "name": "Rival",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "robots.txt asks for a 10-second crawl delay, so a full crawl is slow",
+  "examples": [
+   "https://jobs.silkroad.com/SOCCo/Careers",
+   "https://jobs.silkroad.com/tvcca/Careers"
+  ]
  },
  {
   "slug": "successfactors",
   "name": "SAP SuccessFactors",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "smartrecruiters",
   "name": "SmartRecruiters",
   "kind": "ats",
-  "status": "blocked",
+  "blocked": "robots.txt turns away every crawler except LinkedIn's",
+  "notes": "",
   "examples": [
    "Visa"
-  ],
-  "notes": "robots.txt turns away every crawler except LinkedIn's"
+  ]
  },
  {
   "slug": "talentreef",
   "name": "talentReef",
   "kind": "ats",
-  "status": "planned",
-  "examples": [],
-  "notes": "jobs come only from an internal-looking search host; whether it is meant for public use needs the owner's decision"
+  "blocked": "",
+  "notes": "jobs come only from an internal-looking search host; whether it is meant for public use needs the owner's decision",
+  "examples": []
  },
  {
   "slug": "taleo",
   "name": "Taleo",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "teamtailor",
   "name": "Teamtailor",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "career",
    "polestar"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "trakstar",
   "name": "Trakstar",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
    "rideco",
    "registrarcorp"
-  ],
-  "notes": ""
+  ]
  },
  {
   "slug": "trinet",
   "name": "TriNet",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "ultipro",
   "name": "UltiPro",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "werecruit",
   "name": "WeRecruit",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "workable",
   "name": "Workable",
   "kind": "ats",
-  "status": "live",
+  "blocked": "",
+  "notes": "",
   "examples": [
-   "huggingface"
-  ],
-  "notes": ""
+   "huggingface",
+   "icarda",
+   "getresponse"
+  ]
  },
  {
   "slug": "workday",
   "name": "Workday",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "salesforce.wd12/External_Career_Site",
+   "nvidia.wd5/NVIDIAExternalCareerSite"
+  ]
  },
  {
   "slug": "zoho_recruit",
   "name": "Zoho Recruit",
   "kind": "ats",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "niceboard",
   "name": "Niceboard",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://unitedwayjobbank.niceboard.co/sitemap-jobs.xml",
+   "https://jobs.forcebrands.com/sitemap-jobs.xml"
+  ]
  },
  {
   "slug": "wp_job_manager",
   "name": "WP Job Manager",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://radioinsight.com",
+   "https://sportyjob.com"
+  ]
  },
  {
   "slug": "jobkit",
   "name": "JobKit",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.rubyonrails.org"
+  ]
  },
  {
   "slug": "jobboardly",
   "name": "Jobboardly",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://medicalcourierjobs.com",
+   "https://apnejob.com"
+  ]
  },
  {
   "slug": "jobiqo",
   "name": "Jobiqo",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.aerosociety.com/sitemap.xml",
+   "https://www.miamijobs.com/sitemap.xml"
+  ]
  },
  {
   "slug": "jboard",
   "name": "JBoard.io",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://nuclearjobscanada.ca/sitemap-jobs-1.xml",
+   "https://jobs.vpppa.org/sitemap-jobs-1.xml"
+  ]
  },
  {
   "slug": "jobboardfire",
   "name": "JobBoardFire",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "Only one live board found (a second platform board had no jobs)",
+  "examples": [
+   "https://jobs.girlboss.com/sitemap-jobs.xml"
+  ]
  },
  {
   "slug": "smartjobboard",
   "name": "SmartJobBoard",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.psychologicalscience.org",
+   "https://academiccareers.com"
+  ]
  },
  {
   "slug": "jobboard_io",
   "name": "JobBoard.io",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.cityandstateny.com",
+   "https://jobs.motionographer.com"
+  ]
  },
  {
   "slug": "madgex",
   "name": "Wiley Madgex",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.sciencecareers.org",
+   "https://jobs.chronicle.com"
+  ]
  },
  {
   "slug": "talenetic",
   "name": "Talenetic",
   "kind": "board",
-  "status": "blocked",
-  "examples": [],
-  "notes": "the hosted boards found disallow everything in robots.txt and require sign-in"
+  "blocked": "hosted boards disallow everything in robots.txt and require sign-in",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "jobmount",
   "name": "JobMount",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://www.fleetjobs.com/sitemap.xml",
+   "https://jobnet.wacities.org/sitemap.xml"
+  ]
  },
  {
   "slug": "careersitecloud",
   "name": "CareerSiteCloud",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "Only wpp.careersitecloud.com allows crawlers; other tenants found disallow everything",
+  "examples": [
+   "https://wpp.careersitecloud.com/sitemap.xml"
+  ]
  },
  {
   "slug": "jobboard_com",
   "name": "JobBoard.com",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "Only one live board found",
+  "examples": [
+   "https://www.gradsouthwest.com/xml-sitemaps/1.xml"
+  ]
  },
  {
   "slug": "artha",
   "name": "Artha",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "jobboardsoftware",
   "name": "jobboardsoftware.com",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "jobboardhq",
   "name": "jobBoardHQ",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "nodex",
   "name": "Nodex",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "Only one live board found",
+  "examples": [
+   "https://www.mytraveljobs.co.uk/sitemap.xml"
+  ]
  },
  {
   "slug": "ejobboard",
   "name": "eJobBoard",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  },
  {
   "slug": "ejobsitesoftware",
   "name": "ejobsitesoftware.com",
   "kind": "board",
-  "status": "live",
-  "examples": [],
-  "notes": ""
+  "blocked": "",
+  "notes": "",
+  "examples": []
  }
 ]

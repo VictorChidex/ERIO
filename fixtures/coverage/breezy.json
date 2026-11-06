@@ -1,0 +1,178 @@
+[
+ {
+  "source_slug": "breezy",
+  "board_token": "elite-amenity-management",
+  "external_id": "dd5c1d042daa",
+  "payload": {
+   "id": "dd5c1d042daa",
+   "friendly_id": "dd5c1d042daa-assistant-manager-queens",
+   "name": "Assistant Manager | Queens",
+   "url": "https://elite-amenity-management.breezy.hr/p/dd5c1d042daa-assistant-manager-queens",
+   "published_date": "2026-10-28T19:18:07.474Z",
+   "type": {
+    "id": "fullTime",
+    "name": "Full-Time"
+   },
+   "location": {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "NY",
+     "name": "New York"
+    },
+    "city": "Queens",
+    "primary": true,
+    "is_remote": false,
+    "name": "Queens, NY",
+    "id": "eff75a358be0"
+   },
+   "department": "Management",
+   "salary": "$50,000 – $55,000 / year",
+   "company": {
+    "name": "Elite Amenity Management",
+    "logo_url": null,
+    "friendly_id": "elite-amenity-management",
+    "isMultipleLocationsEnabled": true
+   },
+   "locations": [
+    {
+     "country": {
+      "name": "United States",
+      "id": "US"
+     },
+     "state": {
+      "id": "NY",
+      "name": "New York"
+     },
+     "city": "Queens",
+     "primary": true,
+     "is_remote": false,
+     "name": "Queens, NY",
+     "id": "eff75a358be0"
+    }
+   ],
+   "description": "<p><strong>WHY ELITE?</strong></p>\n<p>Elite Amenity Management is a full-service amenity management company based in New York City. We specialize in providing residential and commercial properties with high-end, personalized amenities and services. Our team of experienced professionals provides a wide range of services, including management, wellness services, design, and much more, creating a great amenity experience for each client. ELITE exists to make ordinary days feel extraordinary by transforming shared spaces into sanctuaries of health, well-being, and genuine connection with dedication and passion.</p>\n<p>We are looking for a highly motivated and hospitality-driven <strong>Assistant</strong><strong>&nbsp;Manager&nbsp;</strong>to join our team.</p>\n<p><strong>WHAT YOU WILL DO</strong></p>\n<ul><li><strong>Facility Management</strong><ul><li><strong></strong>Supervise daily operations, ensuring compliance with policies and regulations.</li><li>Manage facility maintenance, repairs, and vendor coordination.</li><li>Regularly assess and improve services&nbsp;and&nbsp;operating procedures.</li></ul></li><li><strong>Customer Service</strong><ul><li><strong></strong>Provide a welcoming and professional experience for members, guests, and visitors.</li><li>Address member concerns, maintain strong relationships, and resolve issues promptly.</li><li>Conduct member engagement initiatives to ensure high satisfaction.</li></ul></li><li><strong><strong>Staff Management and Development</strong></strong><ul><li><strong></strong>Collaborate with the assistant manager to hire and supervise a professional, efficient team.</li><li>Provide training sessions ensuring that staff are well-versed in all necessary Department of Health (DOH) regulations and materials.</li></ul></li><li><strong>P<strong>rogramming and Events</strong></strong><ul><li><strong></strong>Design and aid in the implementation of activities and programming,&nbsp;ensuring they align with Elite's standards and community preferences.</li></ul></li><li><strong>Administrative Support</strong><ul><li><strong></strong>Act as a pivotal liaison between area supervisors, board members, and building management to ensure smooth communication and effective execution of services.</li></ul></li><ul><li>Perform administrative duties as required, maintaining records and sharing necessary reports with leadership.</li></ul></ul>\n<p><strong>WHAT YOU BRING TO THE TABLE</strong></p>\n<ul><li>1+ years' experience working in a supervisory or managerial role, preferably in a customer service setting.&nbsp;</li><li>Proven ability in leading and motivating a team, ensuring excellence in service and operations.</li><li>Excellent understanding of organizational effectiveness and operations management.</li><li>Strong organizational skills with the ability to effectively communicate with all levels of the organization.</li><li>Bachelor's degree in business management or other related area.</li><li>Knowledge of Department of Health regulations.</li><li>Ability to adapt to a fast-paced environment and to handle situations proactively with a&nbsp;focus on delivering high-end service and customer satisfaction.</li><li>Ability to work flexible hours, including evenings and weekends, as necessary.</li></ul>\n<p><strong>WHAT WE OFFER</strong></p>\n<ul><li>$50,000 to $55,000&nbsp;annually</li><li>Accrued PTO and paid sick days for eligible employees.</li><li>Competitive health insurance package.</li><li>401(k) with matching contribution for eligible employees.</li></ul>\n<p>If you are passionate about making ordinary moments feel extraordinary&nbsp;and believe in making genuine, personal connections, apply now!</p>\n<p>Elite Amenity Management is an equal-opportunity employer. We do not discriminate based on race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics.</p>"
+  },
+  "fetched_at": "2026-11-06T00:18:28.592585Z",
+  "content_hash": "29816c5f9821eb0f7a2194eafb8a39390f2318f9c1eacc0ea574823d0149f527"
+ },
+ {
+  "source_slug": "breezy",
+  "board_token": "elite-amenity-management",
+  "external_id": "9a06007c0681",
+  "payload": {
+   "id": "9a06007c0681",
+   "friendly_id": "9a06007c0681-boxing-instructor-i-long-island-city",
+   "name": "Boxing Instructor I Long Island City",
+   "url": "https://elite-amenity-management.breezy.hr/p/9a06007c0681-boxing-instructor-i-long-island-city",
+   "published_date": "2026-07-15T23:03:53.897Z",
+   "type": {
+    "id": "contract",
+    "name": "Contract"
+   },
+   "location": {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "NY",
+     "name": "New York"
+    },
+    "city": "Long island city",
+    "primary": true,
+    "is_remote": false,
+    "name": "Long island city, NY"
+   },
+   "department": null,
+   "salary": "$65 – $75 / hour",
+   "company": {
+    "name": "Elite Amenity Management",
+    "logo_url": null,
+    "friendly_id": "elite-amenity-management",
+    "isMultipleLocationsEnabled": true
+   },
+   "locations": [
+    {
+     "country": {
+      "name": "United States",
+      "id": "US"
+     },
+     "state": {
+      "id": "NY",
+      "name": "New York"
+     },
+     "city": "Long island city",
+     "primary": true,
+     "is_remote": false,
+     "name": "Long island city, NY",
+     "id": "1e58472a324f"
+    }
+   ],
+   "description": "<p><strong>WHY ELITE?</strong></p>\n<p>Elite Amenity Management is a full-service amenity management company based in New York City. We specialize in providing residential and commercial properties with high-end, personalized amenities and services. Our team of experienced professionals provides a wide range of services, including management, wellness services, design, and much more, creating a great amenity experience for each client. ELITE exists to make ordinary days feel extraordinary by transforming shared spaces into sanctuaries of health, well-being, and genuine connection with dedication and passion.&nbsp;</p>\n<p>We are looking for a highly motivated and hospitality-driven&nbsp;<strong>Contract Boxing Instructor I Long Island City (LIC)&nbsp;</strong>to join our team.</p>\n<p><strong>WHAT YOU WILL DO</strong><br></p>\n<ul><li>Plan and lead 45–60 minute group boxing classes (8–30 people) multiple times per day: warm-up, shadowboxing, heavy bag rounds, pad/mitt work, partner drills, conditioning circuits, cool-down, and stretching</li><li>Conduct 60-minute private and semi-private personal training sessions with full program design, progress tracking, and homework assignments</li><li>Teach proper boxing technique from the ground up: stance, guard, footwork, jab, cross, hooks, uppercuts, head movement, defensive responsibility, combination punching, and ring generalship</li><li>Supervise and coach controlled sparring sessions (when clients are ready), enforce safety rules, match partners appropriately, and provide real-time feedback</li><li>Create individualized training plans for clients with specific goals: fat loss, muscle gain, first amateur fight, charity boxing event, confidence building, stress relief, etc.</li><li>Run specialty classes such as: Beginners Only, Women’s Boxing, Kids/Teens (ages 8–17), Boxing Fitness (non-contact), Advanced Fighter Training, Corporate Bootcamps</li><li>Lead strength &amp; conditioning portions using bodyweight, kettlebells, sleds, battle ropes, medicine balls, and functional tools specific to boxing performance</li><li>Demonstrate and correct technique with high energy while maintaining safety for all fitness levels and ages</li><li>Manage class music playlists, timing rounds (3-minute rounds + 1-minute rest), and keep the energy extremely high</li><li>Check and maintain equipment daily (clean gloves, wraps, bags, floor, mirrors)</li><li>Check in with members before/after class, remember names and goals, celebrate milestones (first 100 push-ups, first spar, weight loss achievements)<br></li><li>Actively prospect for private boxing and personal training packages&nbsp;<br></li><li>Help retain and grow membership through excellent coaching and member engagement</li><li>Maintain a clean, safe, and motivating training environment</li><li>Assist with gym events, fight nights, in-house tournaments, and community outreach</li><li>Lead mitt work, heavy bag circuits, strength &amp; conditioning, and sparring supervision (when appropriate)</li><li>Create and lead exercise sessions, catering to one or more designated fitness areas, fostering a motivating and supportive atmosphere.</li><li>Responsible for the setup, monitoring, and maintenance of exercise equipment, ensuring it remains in optimal and serviceable condition.</li><li>Adapt workout routines to accommodate various fitness levels, offering a challenging yet safe and effective workout experience.</li><li>Address participants' inquiries and concerns, providing assistance and support related to the workout routine or equipment.</li><li>Collaborate with management to introduce new spin class formats or enhancements, aligning with current fitness trends.</li></ul>\n<p><strong>WHAT YOU BRING TO THE TABLE</strong><br></p>\n<ul><li>High school diploma or GED; at least 1 year of experience directly related to the duties and responsibilities specified.&nbsp;</li><li>Recognized competency in the field of instructional expertise.</li><li>Certification dependent on the instructional specialty (AFAA, ACE, NETA, NASM, etc.). Boxing/Kickboxing certification required.</li><li>Professional insurance and liability coverage, either currently insured, or policy purchased upon hiring agreement</li><li>Proficiency in administering first aid procedures.</li><li>Strong interpersonal and communication abilities, effectively collaborating with diverse communities.</li><li>Ability to maintain accurate records and&nbsp;handle routine administrative tasks.</li><li>Familiarity with specialized fitness training and educational methods.</li><li>Understanding of exercise principles, technology, and their application.</li><li>Knowledge of maintaining and operating fitness equipment and facilities.</li><li>Capability to comprehend, follow, and enforce safety protocols.</li></ul>\n<p><strong>WHAT WE OFFER</strong></p>\n<ul><li>$65 to $75 an hour</li></ul>\n<p>If you are passionate about making ordinary moments feel extraordinary and believe in making genuine, personal connections, apply now!</p>\n<p>Elite Amenity Management is an equal-opportunity employer. We do not discriminate based on race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics.</p>"
+  },
+  "fetched_at": "2026-11-06T00:18:28.592585Z",
+  "content_hash": "3bfbd89d1710cf571c532a1592cc44f7851a7f964530e6ed17f640cf2e44895c"
+ },
+ {
+  "source_slug": "breezy",
+  "board_token": "elite-amenity-management",
+  "external_id": "0fb2e2189376",
+  "payload": {
+   "id": "0fb2e2189376",
+   "friendly_id": "0fb2e2189376-boxing-instructor-i-manhattan",
+   "name": "Boxing Instructor I Manhattan",
+   "url": "https://elite-amenity-management.breezy.hr/p/0fb2e2189376-boxing-instructor-i-manhattan",
+   "published_date": "2026-07-15T23:03:55.646Z",
+   "type": {
+    "id": "contract",
+    "name": "Contract"
+   },
+   "location": {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "NY",
+     "name": "New York"
+    },
+    "city": "New York City",
+    "primary": true,
+    "is_remote": false,
+    "name": "New York City, NY",
+    "id": "6f07997045cb"
+   },
+   "department": null,
+   "salary": "$65 – $75 / hour",
+   "company": {
+    "name": "Elite Amenity Management",
+    "logo_url": null,
+    "friendly_id": "elite-amenity-management",
+    "isMultipleLocationsEnabled": true
+   },
+   "locations": [
+    {
+     "country": {
+      "name": "United States",
+      "id": "US"
+     },
+     "state": {
+      "id": "NY",
+      "name": "New York"
+     },
+     "city": "New York City",
+     "primary": true,
+     "is_remote": false,
+     "name": "New York City, NY",
+     "id": "6f07997045cb"
+    }
+   ],
+   "description": "<p><strong>WHY ELITE?</strong></p>\n<p>Elite Amenity Management is a full-service amenity management company based in New York City. We specialize in providing residential and commercial properties with high-end, personalized amenities and services. Our team of experienced professionals provides a wide range of services, including management, wellness services, design, and much more, creating a great amenity experience for each client. ELITE exists to make ordinary days feel extraordinary by transforming shared spaces into sanctuaries of health, well-being, and genuine connection with dedication and passion.&nbsp;</p>\n<p>We are looking for a highly motivated and hospitality-driven&nbsp;<strong>Contract Boxing Instructor I&nbsp;Manhattan&nbsp;</strong>to join our team.</p>\n<p><strong>WHAT YOU WILL DO</strong><br></p>\n<ul><li>Plan and lead 45–60 minute group boxing classes (8–30 people) multiple times per day: warm-up, shadowboxing, heavy bag rounds, pad/mitt work, partner drills, conditioning circuits, cool-down, and stretching</li><li>Conduct 60-minute private and semi-private personal training sessions with full program design, progress tracking, and homework assignments</li><li>Teach proper boxing technique from the ground up: stance, guard, footwork, jab, cross, hooks, uppercuts, head movement, defensive responsibility, combination punching, and ring generalship</li><li>Supervise and coach controlled sparring sessions (when clients are ready), enforce safety rules, match partners appropriately, and provide real-time feedback</li><li>Create individualized training plans for clients with specific goals: fat loss, muscle gain, first amateur fight, charity boxing event, confidence building, stress relief, etc.</li><li>Run specialty classes such as: Beginners Only, Women’s Boxing, Kids/Teens (ages 8–17), Boxing Fitness (non-contact), Advanced Fighter Training, Corporate Bootcamps</li><li>Lead strength &amp; conditioning portions using bodyweight, kettlebells, sleds, battle ropes, medicine balls, and functional tools specific to boxing performance</li><li>Demonstrate and correct technique with high energy while maintaining safety for all fitness levels and ages</li><li>Manage class music playlists, timing rounds (3-minute rounds + 1-minute rest), and keep the energy extremely high</li><li>Check and maintain equipment daily (clean gloves, wraps, bags, floor, mirrors)</li><li>Check in with members before/after class, remember names and goals, celebrate milestones (first 100 push-ups, first spar, weight loss achievements)<br></li><li>Actively prospect for private boxing and personal training packages&nbsp;<br></li><li>Help retain and grow membership through excellent coaching and member engagement</li><li>Maintain a clean, safe, and motivating training environment</li><li>Assist with gym events, fight nights, in-house tournaments, and community outreach</li><li>Lead mitt work, heavy bag circuits, strength &amp; conditioning, and sparring supervision (when appropriate)</li><li>Create and lead exercise sessions, catering to one or more designated fitness areas, fostering a motivating and supportive atmosphere.</li><li>Responsible for the setup, monitoring, and maintenance of exercise equipment, ensuring it remains in optimal and serviceable condition.</li><li>Adapt workout routines to accommodate various fitness levels, offering a challenging yet safe and effective workout experience.</li><li>Address participants' inquiries and concerns, providing assistance and support related to the workout routine or equipment.</li><li>Collaborate with management to introduce new spin class formats or enhancements, aligning with current fitness trends.</li></ul>\n<p><strong>WHAT YOU BRING TO THE TABLE</strong><br></p>\n<ul><li>High school diploma or GED; at least 1 year of experience directly related to the duties and responsibilities specified.&nbsp;</li><li>Recognized competency in the field of instructional expertise.</li><li>Certification dependent on the instructional specialty (AFAA, ACE, NETA, NASM, etc.). Boxing/Kickboxing certification required.</li><li>Professional insurance and liability coverage, either currently insured, or policy purchased upon hiring agreement</li><li>Proficiency in administering first aid procedures.</li><li>Strong interpersonal and communication abilities, effectively collaborating with diverse communities.</li><li>Ability to maintain accurate records and&nbsp;handle routine administrative tasks.</li><li>Familiarity with specialized fitness training and educational methods.</li><li>Understanding of exercise principles, technology, and their application.</li><li>Knowledge of maintaining and operating fitness equipment and facilities.</li><li>Capability to comprehend, follow, and enforce safety protocols.</li></ul>\n<p><strong>WHAT WE OFFER</strong></p>\n<ul><li>$65 to $75 an hour</li></ul>\n<p>If you are passionate about making ordinary moments feel extraordinary and believe in making genuine, personal connections, apply now!</p>\n<p>Elite Amenity Management is an equal-opportunity employer. We do not discriminate based on race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics.</p>"
+  },
+  "fetched_at": "2026-11-06T00:18:28.592585Z",
+  "content_hash": "a81046e54d6cd156f337dce724451d2d18073775b1bd74dc3ed93e35ff943604"
+ }
+]

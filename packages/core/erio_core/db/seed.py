@@ -17,18 +17,26 @@ from sqlalchemy.dialects.postgresql import insert
 from erio_core.db.models import Company, CompanyBoard, Country, Source
 from erio_core.settings import Settings
 
-# The six first-release ATS sources (decision D-04). They stay "scheduled"
-# until legal review is recorded. The status is set only when a source is
-# first added; after that it is changed by hand, never by the seed.
-SOURCES = [
-    {"slug": "greenhouse", "name": "Greenhouse", "kind": "ats", "status": "scheduled"},
-    {"slug": "lever", "name": "Lever", "kind": "ats", "status": "scheduled"},
-    {"slug": "ashby", "name": "Ashby", "kind": "ats", "status": "scheduled"},
-    # Its robots.txt turns away every crawler but LinkedIn's (docs/sources.md).
-    {"slug": "smartrecruiters", "name": "SmartRecruiters", "kind": "ats", "status": "paused"},
-    {"slug": "recruitee", "name": "Recruitee", "kind": "ats", "status": "scheduled"},
-    {"slug": "workable", "name": "Workable", "kind": "ats", "status": "scheduled"},
-]
+
+def platform_sources() -> list[dict[str, str]]:
+    """One source per platform that has a connector (erio_core/data/platforms.json
+    lists the 78 platforms of the coverage brief). A platform whose robots.txt
+    turns crawlers away starts "paused"; the rest start "scheduled" until legal
+    review is recorded. The status is set only when a source is first added;
+    after that it is changed by hand, never by the seed."""
+    from erio_core.connectors import CONNECTORS
+
+    raw = files("erio_core").joinpath("data/platforms.json").read_text(encoding="utf-8")
+    return [
+        {
+            "slug": row["slug"],
+            "name": row["name"],
+            "kind": row["kind"],
+            "status": "paused" if row["blocked"] else "scheduled",
+        }
+        for row in json.loads(raw)
+        if row["slug"] in CONNECTORS
+    ]
 
 
 def load_countries() -> list[dict[str, Any]]:
@@ -59,14 +67,15 @@ def sync_countries(engine: Engine) -> int:
 
 
 def sync_sources(engine: Engine) -> int:
-    statement = insert(Source).values(SOURCES)
+    sources = platform_sources()
+    statement = insert(Source).values(sources)
     statement = statement.on_conflict_do_update(
         index_elements=[Source.slug],
         set_={"name": statement.excluded.name, "kind": statement.excluded.kind},
     )
     with engine.begin() as connection:
         connection.execute(statement)
-    return len(SOURCES)
+    return len(sources)
 
 
 def load_boards() -> list[dict[str, str]]:

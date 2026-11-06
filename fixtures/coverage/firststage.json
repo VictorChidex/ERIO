@@ -1,0 +1,122 @@
+[
+ {
+  "source_slug": "firststage",
+  "board_token": "https://softwire.firststage.co/jobs",
+  "external_id": "409fe6c681a840af9ffd168d",
+  "payload": {
+   "page_url": "https://softwire.firststage.co/jobs/D1SAeSVpND/view?layout=grid",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Delivery Lead",
+    "description": "<h2>About Softwire</h2>\n<p>Softwire is a leading UK technology and strategy consultancy. From enterprise to government, we help visionary organisations turn strategic ambitions into results at scale. Our practices cover AI transformation, data platforms, systems engineering and experience design.</p>\n<p>Softwire was founded on one simple idea: be <em>the</em> outstanding place to work for smart, passionate technologists who want to make an impact. Attract the best, create a culture where people thrive, and offer our customers access to capabilities that are truly market leading.</p>\n<p>And it seems to be working - We were recently voted number 1 company to work for in the UK at the Best Company awards; we employ outstanding people across all capabilities (typical destinations after Softwire include Google, DeepMind, start-up founder, algorithmic trading, and AI research roles); and we have helped our clients deliver some of the hardest, most interesting tech programmes, across private and public sectors.</p>\n<p>A big part of this is our culture and values and we are looking for people who share our core beliefs about what makes a great place to work:</p>\n<ul>\n<li>That if a job is worth doing, it’s worth doing properly</li>\n<li>That work should be fulfilling but can also be fun</li>\n<li>That kindness matters and should be extended to employees and clients alike</li>\n<li>That by being trusting and trustworthy as an organisation and as individuals we can dispense with tedious bureaucracy and rules</li>\n</ul>\n<h2>The role</h2>\n<p>Delivery Leads are responsible for the successful delivery of our clients’ projects across the full lifecycle, from inception to launch and beyond. Typical project sizes range from 50 to 1,000 days, spanning financial services and insurance, energy and utilities, and healthcare. In a given year you might:</p>\n<ul>\n<li>Lead a team of eight rebuilding the purchase and claims journey for a large insurer, taking increasing conversions, with compliance and the operations floor bought into every change</li>\n<li>Take a smart metering data platform for an energy supplier from a two page brief to a live service, coordinating three delivery teams and a hardware partner, and helping the client work out which of their legacy reports are worth migrating</li>\n<li>Pick up a programme that has lost its sponsor’s confidence, find out what has actually gone wrong, and rebuild trust with a plan the client believes and reporting they can check.</li>\n</ul>\n<p>You own the outcome. That means the project achieves what the client set out to achieve, and their experience of working with us is as good as the result. You keep the team motivated, supported and well briefed, deliver on time and within budget, give the client honest value for their money, and protect Softwire’s commercial position. Where those pull against each other, you raise it early rather than absorbing it.</p>\n<p>You will often be involved from inception, working alongside service designers or on your own to understand what the client is really trying to achieve, then shaping the work around their business outcomes so delivery runs well for them and for the team.</p>\n<p>You will also meet clients as part of the sales process and contribute to proposals, shaping how we would scope, structure and deliver the work.</p>\n<h2>Your Experience</h2>\n<ul>\n<li>Have delivered projects within at least one of the following: Financial Services and Insurance, Energy and Utilities, or Healthcare; including working with senior stakeholders</li>\n<li>Have led projects for external clients in a consultancy or professional services setting, holding the client relationship alongside the delivery and working within the commercial and contractual terms of an engagement</li>\n<li>Have led projects that span the full business change lifecycle, not just the technology build, but the people, process, and organisational change needed to make it stick</li>\n<li>Have experience in process analysis and optimisation including techniques such as Value Stream Mapping to identify waste and drive meaningful improvements</li>\n<li>Have worked across programmes involving multiple teams, using scaled agile approaches such as SAFe, LeSS, or Scrum at Scale. Are familiar with lean/agile techniques tools and principles</li>\n<li>Have a history of solving problems, managing risks and overcoming challenges</li>\n<li>Have worked in multidisciplinary teams, including directly with developers and designers</li>\n<li>Are familiar with how AI tools are changing the way software teams work, and can factor this into planning, estimation, and ways of working</li>\n<li>Show evidence of a dedication to continuous improvement – both supporting/coaching a team and in your own ways of working</li>\n</ul>\n<h2>Your Approach</h2>\n<ul>\n<li>Are comfortable taking the initiative and working with ambiguity</li>\n<li>Can communicate clearly including an ability to explain technical concepts to people with diverse backgrounds in a way that is meaningful to them</li>\n<li>Are interested in and familiar with how software is built and delivered, including knowing when things are technically easy or difficult. Have an equal interest in how business change is run to ensure technology projects are successful and vice versa.</li>\n<li>Are curious about emerging technologies, particularly AI, and bring a considered, practical view on how they can improve delivery outcomes</li>\n<li>Understand the commercial dynamics of client engagements and can balance client outcomes with Softwire's business interests</li>\n</ul>\n<h2>You may also</h2>\n<ul>\n<li>Have experience in understanding clients needs and prioritising them into user stories</li>\n<li>Have worked in other delivery roles such as product ownership, business analysis or technical roles</li>\n<li>Have contributed to proposals or pre-sales activity, including scoping, estimating, or shaping how a project would be structured and delivered</li>\n</ul>\n<h2>Package</h2>\n<p>Softwire operates transparent pay scales and a profit share scheme based on role and overall company performance</p>\n<ul>\n<li>Base salary is based on experience in role and ranges from <strong>£58,100 - £65,600.</strong></li>\n<li>You can expect to receive an average of between <strong>£5,750 and £7,500</strong> in profit share depending on your experience and company performance.</li>\n<li>Pension: Additional 5% of salary</li>\n</ul>\n<p><strong>Additional benefits</strong></p>\n<ul>\n<li>25 days annual leave (with the option to buy 10 and sell 5)</li>\n<li>3.5 days additional days off for company-wide morale activities</li>\n<li>AIG income protection</li>\n<li>Travel card loan scheme</li>\n<li>Zero emission car scheme</li>\n<li>Cycle to work scheme</li>\n<li>Enhanced maternity/paternity pay</li>\n<li>Time off for charitable activities</li>\n<li>Sabbatical available on request</li>\n<li>Payroll charity donations</li>\n<li>Headspace plus</li>\n<li>Free annual eye test</li>\n<li>Long service awards</li>\n<li>Flexible working options and patterns</li>\n<li>(Hybrid Working: Generally able to work at least 2dpw from home)</li>\n</ul>\n",
+    "datePosted": "2026-10-05T13:44:03.666Z",
+    "directApply": "https://softwire.firststage.co/jobs/D1SAeSVpND/view",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 59600,
+      "maxValue": 67200
+     }
+    },
+    "salaryCurrency": "GBP",
+    "incentiveCompensation": "plus an average of between £5,750 and £7,500 in profit share",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Softwire",
+     "sameAs": "https://www.softwire.com",
+     "logo": "https://d1veki9ug7drtq.cloudfront.net/org-logo/ebP1q6Ksve/4pwkg76lIs.png"
+    },
+    "employerOverview": "",
+    "jobLocation": {
+     "@type": "Place",
+     "address": "Cambridge, UK, London, UK"
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:09.770592Z",
+  "content_hash": "33958881bfc726d552bc591150e8590d6e01ff13dc7c661faacdd839077d5bda"
+ },
+ {
+  "source_slug": "firststage",
+  "board_token": "https://softwire.firststage.co/jobs",
+  "external_id": "11d4d731edd79725e71f7a28",
+  "payload": {
+   "page_url": "https://softwire.firststage.co/jobs/Bsa87rkMML/view?layout=grid",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "C# Software Engineer",
+    "description": "<h2>About Softwire</h2>\n<p>Softwire is one of the UK’s leading digital technology consultancies, offering services in software engineering, design, innovation, cloud, mobile and data. We deliver high-profile and cutting-edge digital projects for household names across the public and private sectors.</p>\n<p>Softwire was founded on one simple idea: if we can create the best possible culture and working environment then everything else will fall into place. And it seems to be working – We were recently voted number 1 company to work for in the UK at the Best Company awards, and we have a loyal and growing client base who trust us with their hardest problems and their mission critical projects.</p>\n<p>We focus on creating a great culture and working environment and we are looking for people who share our core beliefs about what makes a great place to work:</p>\n<ul>\n<li>That if a job is worth doing, it’s worth doing properly.</li>\n<li>That work should be fulfilling but can also be fun.</li>\n<li>That kindness matters and should be extended to employees and clients alike.</li>\n<li>That by being trusting and trustworthy as an organisation and as individuals we can dispense with tedious bureaucracy and rules.</li>\n</ul>\n<p>When you work with Softwire, you’re not only becoming part of a team with in-depth technical skills and delivery expertise – you’ll be working in a high-trust environment alongside skilled, kind, fun people who are passionate about creating amazing services and experiences that solve real problems.</p>\n<h2>In Brief</h2>\n<p>We’re looking for experienced developers to join our team, with strong technical, mentoring and client communication skills, and a passion for finding great solutions through technology.</p>\n<p>In return, we can offer interesting projects with brilliant clients, high levels of autonomy, strong support from a passionate and welcoming technical community, and exciting further career opportunities. And of course, a competitive package to match.</p>\n<h2>Experience and qualifications</h2>\n<p>You have 3+ years’ experience and a breadth &amp; depth of technical knowledge &amp; expertise, and can solve technical challenges across front-end, back-end and infrastructure. You have strong experience and understanding in at least some of the following technologies:</p>\n<p>(Essential)</p>\n<ul>\n<li>C# (Front and backend)</li>\n<li>.Net (Front and backend)</li>\n</ul>\n<p>(Desirable)</p>\n<ul>\n<li>Blazor, EF Core</li>\n<li>Postgres</li>\n<li>MS SQL</li>\n<li>AWS and Azure</li>\n</ul>\n<p>You are a fast learner, and can leverage your existing expertise to quickly become effective in unfamiliar tech stacks and novel situations, as well as rapidly acquiring client/sector knowledge.</p>\n<p>You have a good understanding of best practice principles for technical architecture, and are comfortable applying these in unfamiliar situations to design new systems.</p>\n<p>You are a strong communicator, who can explain technical concepts effectively to non-technical people and impress clients.</p>\n<h2>Your Approach</h2>\n<ul>\n<li>You are passionate about leveraging technology to deliver great outcomes for clients and end users</li>\n<li>You are focused on effective delivery – ensuring great technical quality and efficient, high-value output</li>\n<li>You want to help our clients increase their technical maturity, while remaining sensitive to their business needs</li>\n<li>You enjoy mentoring developers, and helping them reach their personal development goals</li>\n<li>You enjoy collaborating with designers and product owners to innovate and devise great technical solutions to meet user needs</li>\n<li>You are comfortable with ambiguity and fast-paced, changing environments</li>\n</ul>\n<h2>The Package</h2>\n<p>Softwire operates transparent pay scales and a profit share scheme based on role and overall company performance</p>\n<ul>\n<li>Base salary is based on experience in role and ranges from £52,100 - £69,000</li>\n<li>You can expect to receive an average of between £3,500 – £7,500 in profit share depending on your experience and company performance.</li>\n<li>Pension: Additional 5% of salary</li>\n</ul>\n<p>Additional benefits</p>\n<ul>\n<li>25 days annual leave (with the option to buy 10 and sell 5)</li>\n<li>3.5 days additional days off for company-wide morale activities</li>\n<li>AIG income protection</li>\n<li>Travel card loan scheme</li>\n<li>Zero emission car scheme</li>\n<li>Cycle to work scheme</li>\n<li>Enhanced maternity/paternity pay</li>\n<li>Time off for charitable activities</li>\n<li>Sabbatical available on request</li>\n<li>Payroll charity donations</li>\n<li>Headspace plus</li>\n<li>Free annual eye test</li>\n<li>Long service awards</li>\n<li>Flexible working options and patterns</li>\n</ul>\n<h2>Working at Softwire</h2>\n<p>Here at Softwire, we are always on the lookout for talented individuals to join our team. You’ll work with the industry’s smartest people and collaborate on leading-edge projects in a relaxed and informal atmosphere, refreshingly free of bureaucracy.</p>\n",
+    "datePosted": "2026-10-05T11:47:51.747Z",
+    "directApply": "https://softwire.firststage.co/jobs/Bsa87rkMML/view",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 52100,
+      "maxValue": 69000
+     }
+    },
+    "salaryCurrency": "GBP",
+    "incentiveCompensation": "Plus an average of between £3,500 – £7,500 of profit share ",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Softwire",
+     "sameAs": "https://www.softwire.com",
+     "logo": "https://d1veki9ug7drtq.cloudfront.net/org-logo/ebP1q6Ksve/4pwkg76lIs.png"
+    },
+    "employerOverview": "",
+    "jobLocation": {
+     "@type": "Place",
+     "address": "London"
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:10.555814Z",
+  "content_hash": "8930054456d21345bcae85ff9434464c52bb2b207c38735e2e33886469906c86"
+ },
+ {
+  "source_slug": "firststage",
+  "board_token": "https://softwire.firststage.co/jobs",
+  "external_id": "634f1fed4e24bd0a3eba6456",
+  "payload": {
+   "page_url": "https://softwire.firststage.co/jobs/Cka7G8MWue/view?layout=grid",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Lead User Researcher",
+    "description": "<h2>If you already have all the answers, please don’t apply for this role.</h2>\n<p>We’re looking for a Lead User Researcher to join our Design and Research team – who asks questions of us, our processes, and our clients.</p>\n<p>The key is someone who can ask the right questions at the right time. Questions about work itself, about the conditions that enable us to produce our best work, and those that help us grow as individuals, as a team and as a company.</p>\n<p>You’ll operate in a blended role, between overseeing projects and being actively involved in research where you can have the greatest impact. You’ll work closely with our clients in user-focused engagements and support us in developing long-term relationships.</p>\n<h2>Who we are</h2>\n<p>Our design team is a collaborative mix of service designers, researchers, UX and UI designers, working shoulder-to-shoulder with engineers, delivery managers, AI and data specialists.</p>\n<p>What sets us apart:</p>\n<ul>\n<li>We follow work across both design diamonds, from discovery through to delivery</li>\n<li>We don’t stop at ideas, we build and run real services</li>\n<li>We work in prototype-driven, user-centred, delivery-focused teams</li>\n<li>We form long-term client partnerships, allowing us to deliver real-world outcomes</li>\n</ul>\n<p>We don’t just do research. We have impact.</p>\n<p>Softwire is a leading UK technology and strategy consultancy. From enterprise to government, we help visionary organisations turn strategic ambitions into results at scale. Our practices cover AI transformation, data platforms, systems engineering advanced CX and experience design. Softwire was founded on one simple idea: if we can create the best possible culture and working environment then everything else will fall into place. And it seems to be working – We were recently voted number 1 company to work for in the UK at the Best Company awards, and we have a loyal and growing client base who trust us with their hardest problems and their mission critical projects.</p>\n<h2>What You'll Do</h2>\n<p><strong>Deliver excellent user research</strong></p>\n<ul>\n<li>Plan and lead research across different stages of delivery, from discovery through to live.</li>\n<li>Choose and apply the right research methods for the context, including interviews, usability testing, co-design and mixed-method approaches.</li>\n<li>Work directly with users to understand their needs, behaviours, contexts and barriers, including people with access needs or in vulnerable circumstances.</li>\n</ul>\n<p><strong>Turn insight into action</strong></p>\n<ul>\n<li>Synthesise findings into clear, persuasive outputs that help teams and clients make confident product and service decisions.</li>\n<li>Translate research insight into practical recommendations for service design, product strategy and delivery priorities.</li>\n<li>Facilitate workshops, playback sessions and stakeholder discussions to build shared understanding and momentum around user needs.</li>\n</ul>\n<p><strong>Work closely with teams and clients</strong></p>\n<ul>\n<li>Build strong, trusted relationships with senior client stakeholders, helping them embed user-centred ways of working.</li>\n<li>Collaborate day to day with designers, engineers, product managers and delivery leads in multidisciplinary teams.</li>\n</ul>\n<p><strong>Provide stretch and support</strong></p>\n<ul>\n<li>Advise clients and teams on research strategy, participant recruitment, ethics, consent and good research practice.</li>\n<li>Provide quality assurance and senior oversight for research activities, ensuring high standards in approach, delivery and outputs.</li>\n<li>Support public sector clients to meet the Government Service Standard and build inclusive, accessible services that work for diverse users.</li>\n</ul>\n<p><strong>Grow people and practice</strong></p>\n<ul>\n<li>Coach and mentor researchers and designers, helping develop the user-centred design capability across projects and within Softwire.</li>\n<li>Contribute to Softwire’s design and research practice by improving methods, tools, standards and thought leadership.</li>\n<li>Advocate for the value of user research internally and externally, showing how evidence-led design can create better services and better outcomes.</li>\n</ul>\n<p><strong>Support business growth</strong></p>\n<ul>\n<li>Help scope new opportunities, shape proposals and contribute to bids, especially where user-centred design and public sector delivery are central.</li>\n</ul>\n<h2>What You Bring</h2>\n<ul>\n<li>7+ years of experience working in a user research or related roles.</li>\n<li>Deep expertise in user research methods and user-centred practice</li>\n<li>Strong background in Government / public sector service delivery</li>\n<li>Experience delivering against the Government Service Standard</li>\n<li>With full accountability, has led research on complex agile projects with large teams.</li>\n<li>Know-how to guide organisations to adopt inclusive practices and apply what they learn to design and deliver accessible services that work for all users.</li>\n<li>Can evaluate and implement tools and technologies that enhance delivery of user research.</li>\n<li>Can engage, collaborate and influence key stakeholders, including senior decision makers, product managers, designers and engineers.</li>\n<li>Experience managing other researchers, fostering a culture of continuous learning and professional development.</li>\n<li>Can provide senior oversight and support for user research activities and expert advice on methodology, approaches, tools, equipment, quality and standards</li>\n<li>Can effectively scope user-centred design projects and define resource requirements.</li>\n<li>Experience in presales and/or government procurement</li>\n<li>Ability to achieve SC clearance</li>\n</ul>\n<h2>What We Offer</h2>\n<p>Softwire operates transparent pay scales and a profit share scheme based on role and overall company performance</p>\n<ul>\n<li>Base salary is based on experience in role and ranges from £79,000 - £88,700</li>\n<li>You can expect to receive an average of between £11,500 - £15,250 in profit share depending on your experience and company performance.</li>\n<li>Pension: Additional 5% of salary</li>\n</ul>\n<p><strong>Additional benefits</strong></p>\n<ul>\n<li>25 days annual leave (with the option to buy 10 and sell 5)</li>\n<li>3.5 days additional days off for company-wide morale activities</li>\n<li>AIG income protection</li>\n<li>Travel card loan scheme</li>\n<li>Zero emission car scheme</li>\n<li>Cycle to work scheme</li>\n<li>Enhanced maternity/paternity pay</li>\n<li>Time off for charitable activities</li>\n<li>Sabbatical available on request</li>\n<li>Payroll charity donations</li>\n<li>Headspace plus</li>\n<li>Free annual eye test</li>\n<li>Long service awards</li>\n<li>Flexible working options and patterns</li>\n</ul>\n<h2>Working at Softwire</h2>\n<p>Here at Softwire, we are always on the lookout for talented individuals to join our team. You’ll work with the industry’s smartest people and collaborate on leading-edge projects in a relaxed and informal atmosphere, refreshingly free of bureaucracy.</p>\n",
+    "datePosted": "2026-10-01T10:34:51.550Z",
+    "directApply": "https://softwire.firststage.co/jobs/Cka7G8MWue/view",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 81000,
+      "maxValue": 90900
+     }
+    },
+    "salaryCurrency": "GBP",
+    "incentiveCompensation": "Profit share bonus of between £11,500 - £15,250",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Softwire",
+     "sameAs": "https://www.softwire.com",
+     "logo": "https://d1veki9ug7drtq.cloudfront.net/org-logo/ebP1q6Ksve/4pwkg76lIs.png"
+    },
+    "employerOverview": "",
+    "jobLocation": {
+     "@type": "Place",
+     "address": "London"
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T00:44:10.783747Z",
+  "content_hash": "df7de5a6a00cc79cf7380df3ef938050582b611620cd761264f12560f752d2fe"
+ }
+]

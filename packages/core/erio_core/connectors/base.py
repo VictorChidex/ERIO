@@ -31,6 +31,20 @@ class Fetcher(Protocol):
 
 
 @runtime_checkable
+class HeaderGetter(Protocol):
+    """A fetcher that can GET with extra request headers, for sources whose
+    public career sites send one (HiBob's ``companyIdentifier``)."""
+
+    def get_with(self, url: str, headers: dict[str, str]) -> FetchResponse: ...
+
+
+def header_getter(fetcher: Fetcher) -> HeaderGetter:
+    if not isinstance(fetcher, HeaderGetter):
+        raise FetchError("http_error", "this fetcher cannot send request headers")
+    return fetcher
+
+
+@runtime_checkable
 class JsonPoster(Protocol):
     """A fetcher that can also POST a JSON body, for sources whose public
     career sites search jobs that way (Workday, for example)."""
@@ -59,6 +73,10 @@ class BoardFetch:
 
     ``unchanged`` means the source answered 304 Not Modified to our ETag:
     every posting seen last time is still listed, and ``postings`` is empty.
+
+    ``complete`` is False when the connector stopped before the end of a large
+    board (a page or detail cap). Postings it did not list are then unknown,
+    not gone: the status rules never close anything on an incomplete fetch.
     """
 
     postings: list[RawPosting]
@@ -66,6 +84,7 @@ class BoardFetch:
     body: bytes
     etag: str | None = None
     unchanged: bool = False
+    complete: bool = True
 
 
 def _fold(name: str) -> str:

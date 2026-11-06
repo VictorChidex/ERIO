@@ -8,11 +8,14 @@ or a listing page, whose same-site links matching the platform's job-page
 pattern are. Each job page is then fetched and its JobPosting read.
 
 A crawl fetches at most ``max_pages`` job pages, one by one through the
-polite fetcher, so a large board is covered over several crawls.
+polite fetcher. A board with more jobs is reported as an incomplete fetch, so
+the jobs not read this time are never closed for being absent.
 """
 
+import html as htmllib
 import json
 import re
+from collections.abc import Callable
 from html.parser import HTMLParser
 from typing import Any
 from urllib.parse import urljoin, urlsplit
@@ -50,12 +53,27 @@ def _walk(node: Any) -> list[dict[str, Any]]:
     return found
 
 
+def _load(block: str) -> Any:
+    """JSON from a JSON-LD block; some boards HTML-escape the whole block, once or twice."""
+    text = block.strip()
+    for _ in range(3):
+        try:
+            # strict=False: some boards leave raw line breaks inside the JSON strings.
+            return json.loads(text, strict=False)
+        except json.JSONDecodeError:
+            unescaped = htmllib.unescape(text)
+            if unescaped == text:
+                raise
+            text = unescaped
+    return json.loads(text, strict=False)
+
+
 def job_postings(html: str) -> list[dict[str, Any]]:
     """The JobPosting objects in a page's JSON-LD blocks (malformed blocks skipped)."""
     postings: list[dict[str, Any]] = []
     for block in SCRIPT.findall(html):
         try:
-            postings += _walk(json.loads(block.strip()))
+            postings += _walk(_load(block))
         except json.JSONDecodeError:
             continue
     return postings
@@ -132,6 +150,11 @@ def parse_job_posting(
     pay = pay if isinstance(pay, dict) else {}
     value: dict[str, Any] = pay["value"] if isinstance(pay.get("value"), dict) else {}
     kinds = posting.get("employmentType") or []
+    if isinstance(kinds, str) and kinds.strip().startswith("["):
+        try:  # some boards store the array as a string: '["FULL_TIME"]'
+            kinds = json.loads(kinds)
+        except ValueError:
+            pass
     kinds = kinds if isinstance(kinds, list) else [kinds]
     locations = [text for a in addresses if (text := _location_text(a))]
     if not locations and remote:
@@ -159,8 +182,16 @@ def parse_job_posting(
             pay.get("currency"),
             value.get("unitText") or pay.get("unitText"),
         ),
-        description_html=_text(posting.get("description")),
+        description_html=_description(posting.get("description")),
     )
+
+
+def _description(value: Any) -> str | None:
+    """The description, un-escaped when a board sends its HTML as entities."""
+    text = _text(value)
+    if text and "&lt;" in text and "<" not in text:
+        return htmllib.unescape(text)
+    return text
 
 
 def _date(value: Any) -> Any:
@@ -181,11 +212,22 @@ class JsonLdConnector(Connector):
         job_path: str,
         hosts: frozenset[str] = frozenset(),
         max_pages: int = MAX_PAGES,
+        page_param: str | None = None,
+        listing_pages: int = 1,
+        page_query: str = "",
+        rewrite: Callable[[str], str] | None = None,
     ):
         self.slug = slug
         self.hosts = hosts
-        self.job_path = re.compile(job_path)
+        self.job_path = re.compile(job_path, re.IGNORECASE)
+        #: Query added to every job page request (iCIMS serves its data with in_iframe=1).
+        self.page_query = page_query
+        #: Maps a link found on a listing or sitemap to the page that carries the data.
+        self.rewrite = rewrite
         self.max_pages = max_pages
+        #: Listing pages paged with ``?{page_param}=n``: how many to read.
+        self.page_param = page_param
+        self.listing_pages = listing_pages
 
     def board_url(self, board_token: str) -> str:
         if not board_token.startswith("https://"):
@@ -225,25 +267,57 @@ class JsonLdConnector(Connector):
                         pages += sitemap_locations(more.body)[0]
             except ElementTree.ParseError as error:
                 raise FetchError("parse_error", f"malformed sitemap: {error}", 200) from error
-            return [p for p in dict.fromkeys(pages) if self.job_path.search(urlsplit(p).path)]
-        return page_links(response.body.decode("utf-8", "replace"), board_token, self.job_path)
+            wanted = [p for p in dict.fromkeys(pages) if self.job_path.search(urlsplit(p).path)]
+            return self._rewritten(wanted)
+        links = page_links(response.body.decode("utf-8", "replace"), board_token, self.job_path)
+        for number in range(2, self.listing_pages + 1 if self.page_param else 1):
+            joiner = "&" if "?" in board_token else "?"
+            more = fetcher.get(f"{board_token}{joiner}{self.page_param}={number}")
+            found = (
+                page_links(more.body.decode("utf-8", "replace"), board_token, self.job_path)
+                if more.status == 200
+                else []
+            )
+            fresh = [link for link in found if link not in links]
+            if not fresh:
+                break
+            links += fresh
+        return self._rewritten(links)
+
+    def _rewritten(self, urls: list[str]) -> list[str]:
+        return list(dict.fromkeys(self.rewrite(u) for u in urls)) if self.rewrite else urls
+
+    def _page_url(self, url: str) -> str:
+        if not self.page_query:
+            return url
+        return f"{url}{'&' if '?' in url else '?'}{self.page_query}"
 
     def list_postings(
         self, fetcher: Fetcher, board_token: str, etag: str | None = None
     ) -> BoardFetch:
         pages = self.job_pages(fetcher, board_token)
         postings: list[RawPosting] = []
+        unread = 0
         for url in pages[: self.max_pages]:
             try:
-                response = fetcher.get(url)
+                response = fetcher.get(self._page_url(url))
             except FetchError:
-                continue  # one unreachable job page does not fail the board
+                unread += 1  # one unreachable job page does not fail the board
+                continue
             if response.status == 200:
                 found = self._postings(response.body.decode("utf-8", "replace"), url)
                 postings += [p.model_copy(update={"board_token": board_token}) for p in found]
+            elif response.status not in (404, 410):
+                unread += 1  # bot checks and errors: the job may still be there
         if pages and not postings:
             raise FetchError("parse_error", "job pages carry no JobPosting data", 200)
-        return BoardFetch(postings=postings, http_status=200, body=b"")
+        # A page that could not be read is unknown, not gone: never close on it.
+        return BoardFetch(
+            postings=postings,
+            http_status=200,
+            body=b"",
+            complete=len(pages) <= self.max_pages and unread == 0,
+        )
 
     def parse(self, raw: RawPosting) -> PartialJob:
         payload = raw.payload

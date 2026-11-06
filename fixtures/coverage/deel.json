@@ -1,0 +1,139 @@
+[
+ {
+  "source_slug": "deel",
+  "board_token": "https://jobs.deel.com/klarna/sitemap.xml",
+  "external_id": "4e9c7edf9fd91bfefa3d376d",
+  "payload": {
+   "page_url": "https://jobs.deel.com/klarna/job-details/87bd8299-48ef-4c79-9005-0347ecf8b054/overview",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Business Development Associate ",
+    "description": "What you will do As a Business Development Associate, you will be responsible for driving Klarna’s commercial growth in Austrian market by identifying, negotiating, and launching strategic partnerships with leading merchants. You will manage the full sales cycle from prospecting and relationship building to contract negotiation and go-live, ensuring long-term value creation for both Klarna and our partners. Working closely with cross-functional teams including Marketing, Product, Analytics, and Operations, you will shape tailored solutions that meet merchant needs and strengthen Klarna’s market position. You will also contribute to defining the local commercial strategy, identifying new market opportunities, and supporting scalable growth initiatives. Who you are • 3+ years of experience in Business Development, Sales, or Account Management, preferably within payments, fintech, e-commerce, or technology • Proven track record of negotiating and closing complex commercial agreements with mid-sized to large merchants • Strong commercial acumen with the ability to identify growth opportunities and translate insights into actionable plans • Excellent stakeholder management skills, with experience engaging senior decision-makers • Structured and data-informed approach to pipeline management and forecasting • Fluent in English and German, both written and spoken Awesome to have • Experience working in the Austrian market with strong local merchant network • Familiarity with payment solutions, consumer finance, or digital commerce ecosystems • Experience collaborating in cross-functional, international environments • Proficiency in CRM tools and sales performance tracking Please include a CV in English Curious to learn more about Klarna and what it’s like to work here? Explore our career site!",
+    "datePosted": "2026-07-17T14:16:35.046Z",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Klarna",
+     "logo": "https://s3.eu-west-1.amazonaws.com/api-prod.letsdeel.com/public/ats/7e2ccf5c-ce28-451a-adf0-625015848270/light_logo/C4bjpIXSOrrm5d38Vk7fp"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Vienna"
+      }
+     }
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Deel ATS Job Posting ID",
+     "value": "87bd8299-48ef-4c79-9005-0347ecf8b054"
+    },
+    "directApply": true,
+    "url": "https://jobs.deel.com/klarna/job-details/87bd8299-48ef-4c79-9005-0347ecf8b054/overview"
+   }
+  },
+  "fetched_at": "2026-11-06T00:34:44.070419Z",
+  "content_hash": "f69ab9d1e316f469514db89a77b0d3a8db903f723e77f5bac649ed4778f3f564"
+ },
+ {
+  "source_slug": "deel",
+  "board_token": "https://jobs.deel.com/klarna/sitemap.xml",
+  "external_id": "0d223b3efbea9e59bea53db2",
+  "payload": {
+   "page_url": "https://jobs.deel.com/klarna/job-details/18d2f158-45f7-47d4-a3a7-f314d9b76a5b/overview",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Senior Analytics Manager - Pricing & Optimisation",
+    "description": "Klarna, briefly At Klarna, we're building an everyday finance network, helping over 120 million consumers across 26 countries save time and money, and worry less about their finances. Working here means taking on problems most companies never get to solve, and being hands-on enough that the interesting part of the work lands with you, not someone else — you'll build with AI, not watch it happen. This is the stretch zone. Come find out what you're capable of. About the role Every merchant-funded financing offer Klarna runs trades volume against margin, and someone has to decide where that line sits. In this position, that's you. You'll own the economics of our long-term financing product from the Win Financing team, working side by side with Pricing, commercial teams and partners. This is a commercial position with an analytical core. You'll size and structure deals, watch the live book, and turn evidence into a recommendation that Pricing and commercial leads can act on. You'll own the commercial recommendation and the post-launch review. Pricing owns firm-wide policy and committee decisions. What you'll do You'll structure merchant-funded and subsidised financing packages, setting MDR and buy rates, term mix and minimums, and showing how consumer APR and merchant cost fit together. You'll size each package so it is competitive and clears a return hurdle, then take your recommended route to market to Pricing. You'll review live packages, campaigns and default pricing on an ongoing basis to find where subsidy is wasted, where Klarna is uncompetitive, and where volume or margin is being left behind. You'll recommend reprices, mix changes, exclusions and keep-or-kill decisions based on what the live book shows. You'll partner with commercial leads on new business and market launches, including enterprise 0% offers, mass enablement, high-AOV verticals, in-store, and affiliate- or partner-funded offers. You'll run pre/post and experiment analysis on pricing, terms, credit mix and incrementality, and deliver a go/no-go with the pricing implication attached. You'll quantify competitive and policy gaps, size the commercial risk, and write short pre-reads that move Pricing, underwriting and commercial teams to a decision. You'll own the recurring reporting on volume, share of checkout, conversion, subsidy use, and realised versus expected economics, and define what sales and partners need to access. Who you are You write SQL regularly and analyse deals at merchant and session level. You know MDR, subsidy, APR, credit mix and lending unit economics well enough to size a deal against a return hurdle. You've designed A/B or pre/post tests and reviewed a live commercial book, and you can turn the results into a decision. You write short, decision-ready papers that get leadership to a decision. You're comfortable in rooms with sales, partners and enterprise stakeholders. Bonus points for Experience in fintech, lending, ecommerce or BNPL. Time spent in pricing, deal desk, commercial finance or consulting. Things you should know before applying This position is open in London and in the US. Working together: we value co-located teams; most teams currently meet in the office 2–3 days per week, and this varies by team and can change over time. Non-obvious backgrounds are welcome. Diversity of skills, perspectives and backgrounds is how we create, innovate, and disrupt like no other. Final compensation will be based on the candidate's qualifications, skills, and experience. Please include a CV in English. Concrete beats comprehensive — what you built, what it did, what it cost. Curious to learn more about Klarna and what it's like to work here? Explore our career site!",
+    "datePosted": "2026-10-13T15:44:33.777Z",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Klarna",
+     "logo": "https://s3.eu-west-1.amazonaws.com/api-prod.letsdeel.com/public/ats/7e2ccf5c-ce28-451a-adf0-625015848270/light_logo/C4bjpIXSOrrm5d38Vk7fp"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "London"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "New York"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Columbus"
+      }
+     }
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Deel ATS Job Posting ID",
+     "value": "18d2f158-45f7-47d4-a3a7-f314d9b76a5b"
+    },
+    "directApply": true,
+    "url": "https://jobs.deel.com/klarna/job-details/18d2f158-45f7-47d4-a3a7-f314d9b76a5b/overview"
+   }
+  },
+  "fetched_at": "2026-11-06T00:34:44.675781Z",
+  "content_hash": "1913eb82dffcf30e868f77d9cd16935b8ef21ecba85449bbe215dd79a74fddfe"
+ },
+ {
+  "source_slug": "deel",
+  "board_token": "https://jobs.deel.com/klarna/sitemap.xml",
+  "external_id": "c79000d1276b19582643965b",
+  "payload": {
+   "page_url": "https://jobs.deel.com/klarna/job-details/eb349c8d-361b-4ecc-a6d5-018ab67ad63d/overview",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Screening Adjudication Expert ",
+    "description": "Klarna, briefly At Klarna, we're building an everyday finance network, helping over 120 million consumers across 26 countries save time and money, and worry less about their finances. Working here means taking on problems most companies never get to solve, and being hands-on enough that the interesting part of the work lands with you, not someone else — you'll build with AI, not watch it happen. This is the stretch zone. Come find out what you're capable of. About the position As a Screening Adjudication Expert, you are Klarna's global centre of excellence for sanctions, PEP, and adverse media screening. You own the end-to-end process across all three disciplines, ensuring the outsourced vendor operates to the highest standard, personally handling the most complex or sensitive cases, and continuously raising the bar on quality, consistency, and efficiency. This role suits someone who combines deep subject-matter expertise with a genuine appetite for change. Someone who does not wait to be asked to improve things, picks up new tools and technology at speed, and brings the intellectual rigour to challenge decisions, including their own. What you will do Own the operational health of sanctions, PEP, and adverse media screening processes, act as the single point of contact for vendor performance and internal escalations across all three disciplines Personally conduct alert reviews, PEP and high-risk case investigations, and adverse media assessments to maintain end-to-end expertise and step in during volume spikes or vendor disruptions Review vendor output with a critical eye across sanctions, PEP, and adverse media, challenge decisions where warranted, escalate confirmed matches and sensitive cases appropriately, and drive accountability Identify friction points and inefficiencies across all screening processes; design and implement improvements in collaboration with the vendor, Product, and Tech teams, including leveraging AI and automation Actively explore, test, and implement AI and automation solutions to improve screening throughput, decision consistency, and alert quality, working with Product and Tech to move from idea to production Own and maintain up-to-date Standard Operating Procedures (SOPs), ensuring they reflect current regulatory requirements and internal standards Track and report on screening performance against SLA targets across all disciplines, flagging risks and deviations early Stay current on developments across EU, UN, UK, and other applicable sanctions regimes, AML/CTF regulation, and adverse media best practice, feeding changes back into process and procedure Support blocking, freezing, or reporting actions as required under applicable sanctions regimes Support audit and regulatory examination readiness, including producing documentation and responding to internal and external enquiries Onboard and train new team members on screening processes, tools, and escalation frameworks across all three disciplines What you bring A minimum o f 5 years of hands-on experience across sanctions screening, PEP or adverse media investigations, within a fintech or banking environment Demonstrable breadth across at least two of the three screening disciplines (sanctions, PEP, adverse media), with a track record of quickly building expertise in new areas Genuine curiosity about AI and automation, hands-on experience using or implementing AI-assisted tools in a compliance or operational context, or a clear track record of proactively adopting technology to solve real problems Exceptional energy, drive, and agency: you have a clear trajectory and are looking for the environment to accelerate it; your record shows you get there faster than anyone expects A senior specialist who unlocks capabilities the team does not have today, your experience materially changes what is possible, whether through deep technical knowledge, a new approach to automation, or expertise in a discipline we are building from scratch Strong knowledge of EU, UN, and UK sanctions regimes, AML/CTF regulatory requirements, and customer lifecycle risk frameworks Proven ability to drive meaningful change, you have led or materially contributed to process improvements, not just flagged them Fast learner who absorbs new tools, regulatory developments, and process changes at pace, comfortable working in an environment that evolves quickly Familiarity with screening and case management tools such as World-Check, LexisNexis, Fircosoft, or equivalent, including name-matching methodology Analytical sharpness and the ability to make well-reasoned, clearly documented decisions under time pressure and in ambiguous situations Strong written communication skills and disciplined documentation practices — you escalate clearly and leave a complete audit trail Self-starter who takes ownership without waiting to be prompted, and who energises others around improvement Experience supporting audit or regulatory examinations is an advantage A relevant certification such as CAMS, CGSS, ICA, or equivalent is a plus Please include a CV in English. Curious to learn more about Klarna and what it's like to work here? Explore our career site! Klarna is proud to be an equal opportunity employer. We are committed to building a diverse workforce that reflects our global customer base and to fostering a culture where everyone belongs. We provide equal employment opportunities to all individuals regardless of race, color, religion, creed, sex, sexual orientation, gender identity or expression, national origin, age, disability, genetic information, veteran status, marital status, pregnancy, parental status, or any other characteristic protected by applicable law. We encourage applications from individuals of all backgrounds and identities. We consider qualified applicants with criminal history for employment in accordance with state and local laws and “fair chance” ordinances. If you require reasonable accommodation for any part of the application or hiring process, please contact talent.acquisition@klarna.com. In accordance with applicable law, the salary range for this position is provided in the job posting. The salary offered will be determined by the candidate's location, qualifications, experience, and education. The salary range posted in the job advertisement refers to the base pay. Base pay is part of a total compensation package, which may also include equity rewards, monthly stipends for health and wellness, and benefits such as life insurance, medical, dental, and vision coverage for you and your dependents.",
+    "datePosted": "2026-08-05T16:05:58.873Z",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Klarna",
+     "logo": "https://s3.eu-west-1.amazonaws.com/api-prod.letsdeel.com/public/ats/7e2ccf5c-ce28-451a-adf0-625015848270/light_logo/C4bjpIXSOrrm5d38Vk7fp"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "London"
+      }
+     }
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Deel ATS Job Posting ID",
+     "value": "eb349c8d-361b-4ecc-a6d5-018ab67ad63d"
+    },
+    "directApply": true,
+    "url": "https://jobs.deel.com/klarna/job-details/eb349c8d-361b-4ecc-a6d5-018ab67ad63d/overview"
+   }
+  },
+  "fetched_at": "2026-11-06T00:34:45.153921Z",
+  "content_hash": "707cea75efd9cb505bfac4861cf32a78395a1d2ad11a7898b586ed421bc1375b"
+ }
+]
