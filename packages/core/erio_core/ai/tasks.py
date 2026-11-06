@@ -27,6 +27,13 @@ ROLE_HELP = (
     "operations: finance, legal, people, recruiting, risk, compliance, customer support "
     "and success, admin, supply chain. sales: account executives, business development, "
     "sales engineers, partnerships. marketing: marketing, communications, content, growth. "
+    "healthcare: nurses, doctors, clinicians, caregivers, pharmacy, dental, lab and therapy. "
+    "education: teachers, lecturers, tutors, coaches, instructors. "
+    "hospitality: cooks, chefs, servers, baristas, hotel and restaurant staff. "
+    "retail: store staff, cashiers, store managers, merchandisers. "
+    "logistics: drivers, warehouse, delivery, courier, cabin crew. "
+    "trades: mechanics, electricians, construction, production, maintenance, cleaning. "
+    "security: guards and protective services. "
     "other: anything else."
 )
 

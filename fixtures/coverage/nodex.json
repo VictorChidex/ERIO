@@ -1,104 +1,212 @@
 [
  {
   "source_slug": "nodex",
-  "board_token": "https://www.mytraveljobs.co.uk/sitemap.xml",
-  "external_id": "e26fa1cee84133584bb83f30",
+  "board_token": "https://www.bigantgroup.co.uk/sitemap.xml",
+  "external_id": "f7c99acd392f08ad7f374de1",
   "payload": {
-   "page_url": "https://www.mytraveljobs.co.uk/job/full-time-uk-outstations-engineer-stansted",
+   "page_url": "https://www.bigantgroup.co.uk/job/support-worker/613",
    "posting": {
     "@context": "http://schema.org",
     "@type": "JobPosting",
-    "title": "UK Outstations Engineer | Stansted | Competitive | Full time",
-    "url": "https://www.mytraveljobs.co.uk/job/full-time-uk-outstations-engineer-stansted",
-    "industry": "Airlines & Aviation",
-    "jobLocation": {
-     "@type": "Place",
-     "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Stansted",
-      "addressRegion": "Stansted"
+    "title": "Support Worker",
+    "identifier": {
+     "@type": "PropertyValue",
+     "value": "SW2"
+    },
+    "url": "https://www.bigantgroup.co.uk/job/support-worker/613",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "PropertyValue",
+      "value": "Up to £18.77 per hour"
      }
     },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Torquay, Borough of Torbay",
+       "addressRegion": "Borough of Torbay"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Paignton",
+       "addressRegion": "Paignton"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Brixham",
+       "addressRegion": "Brixham"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Torquay",
+       "addressRegion": "Torquay"
+      }
+     }
+    ],
     "employmentType": "Full time",
-    "datePosted": "2026-11-05T10:36:42+00:00",
-    "validThrough": "2026-12-05T10:36:42+00:00",
-    "description": "Description\nJob Description\nAircraft Engineering Service (AES Ltd) are inviting applications for a UK Outstations Engineer to be based in Stansted, Birmingham or Manchester Airport working in cooperation with our client Ryanair, Europe's largest airline. With a fleet of 600+ aircraft, state of the art facilities and excellent training provisions, Ryanair offer exceptional career oppotunities and progression within the industry. The successful candidate will be an operationally focused, highly adaptable and proven leader, who is able to demonstrate a flexiable working attitude in fast-changing environment.\nDuties and Responsibilities\nReporting directly to the UK General Manager and the Technical Operations Manager the successful candidate, who will work on a 4 on 4 off day shift rotation will be responsible for the leadership and management of Ryanair's Engineering Line Stations in the UK.\nDuties will include, but not be limited to:\n\nManagement of Routine Maintenance, Aircraft Incidents/AOG's and Third-Party Liaison.\nManpower planning, recruitment, retention and staff performance management.\nEnsuring appropriate spares and equipment are available at each location.\nBudgeting, invoicing and negotiation/management of contracts with external suppliers/companies.\nConducting regular base visits, ensuring staff welfare and regulatory (UK CAA and EASA) compliances.\nSupervisions and mentoring of Engineer, Aircraft Mechanics and Apprentices.\nInvestigating Maintenance Delays, Engineering Safety Reports and Non- Compliances, implementing strategies to prevent recurrence.\n\nRequirements\nRequirements\nWe are looking for a motivated self-starter with managerial experience who is ready, willing and able to manage technical teams in a diverse and fast-changing environment. The successful candidate should be able to demonstrate:\n\nAircraft Line Maintenance experience (Essential).\nEASA Part-66 B1/B2 License holder &amp; Recency (Desirable).\nBoeing 737-NG Type Endorsement (Desirable - Type Courses Available)\nBoeing 737-Max Type Endorsement (Desirable - Type Courses Available)\nExcellent time management, with the ability to manage multiple competing priorities and effectively communicate progress to Senior Management.\nStrong organisational skills and attention to detail.\nProven leadership experience, capable of remotely managing diverse teams.\nAeronautical Engineering background required.\nPrevious experience in Aviation or Engineering.\nGood IT Literacy (Essential), with AMOS Experience (Desirable).\nExcellent communication skills, both verbal and written.\n\nApplicants must have unrestricted right to work in the UK and hold a valid UK Driving License.\nIf you are a Licensed Engineer or Engineering Manager and feel that you can deliver in this exciting hands-on role with Ryanair, then we want to hear from you!\nBenefitsCompetencies",
+    "datePosted": "2025-11-03T15:19:00+00:00",
+    "validThrough": "2026-11-11T12:00:00+00:00",
+    "description": "We're looking for a dedicated Support Worker with\r\nThe passion to put the heart into care and make a difference to the quality of life for the residents you care for. We are looking for you to be reliable, committed and a good team-player with a passion for supporting individuals with daily skills. You will be required to have;\r\n\r\n4-Months UK care experience from within the past 3-years\r\nMoving and Handling\r\nPersonal care experience may be required\r\nThe right to work in the UK\r\nA driving licence is required\r\n\r\nSome of your your expected duties as a Support Worker will be:\r\n\r\nSupporting individuals with daily tasks\r\nSupporting with laundry and cleaning\r\nAssisting with excursions with the individuals you support\r\nSupporting with meals times.\r\nGetting involved with and helping with activities.\r\n\r\nJoin us today to be a part of a team that puts the HEART into CARE.\r\nJob description\r\n\r\nStarting salary £14.29 per hour up to £18.77 for bank holidays.\r\nYou can make a difference and help put the heart into care by becoming a Support Worker for BIGANT Healthcare.\r\nWe are looking for a dedicated and reliable Support Worker to join our team in Torquay and the surrounding areas such as Paignton, Brixham and Newton Abbot. You can earn up to £18.77 per hour (Bank holiday nights) including holiday pay.\r\nIn joining our team of Support Workers, you can enjoy additional benifits such as;\r\n\r\nWeekly pay: Payment is processed and paid to you every Friday on receiveing a timesheet.\r\n£150.00 Refer a friend Scheme: You can receive £100.00 for referering a friend and they can receive £50.00\r\nFlexible shifts available: Choose full-time, Part-time, day and night shifts, Weekday, and weekend shifts through our app.\r\nDaily support from the team: daily support availble for your needs from our dedicated office staff.\r\nFree training: this is set for you at the start of your recruitment process with endless courses available.\r\nFree welcome gift box: Goodies sent to you on completion of your recruitment stage with a free BIGANT Healthcare uniform when you book your first shift.\r\nFree DBS: We complete a DBS for you FREE OF CHARGE.\r\n\r\n",
     "hiringOrganization": {
      "@type": "http://schema.org/Organization",
-     "name": "Ryanair",
-     "logo": "https://www.mytraveljobs.co.uk/modules/fabricjobs/uploads/recruiter/26/08/13/ryanair-stansted-essex-gfj.png"
+     "name": "Big Ant Group"
     }
    }
   },
-  "fetched_at": "2026-11-06T00:41:51.730699Z",
-  "content_hash": "a0f6e9383719a7e22fb4bdff28ee4b5810532eec579af126975ecf88f92dcff2"
+  "fetched_at": "2026-11-06T04:13:24.212845Z",
+  "content_hash": "b4c1a18f37dd0c0ce87c82514fcbb3801271a21b85188dddc45a3bd093dadfdc"
  },
  {
   "source_slug": "nodex",
-  "board_token": "https://www.mytraveljobs.co.uk/sitemap.xml",
-  "external_id": "4c689ac4bd49f046d72cf2a5",
+  "board_token": "https://www.bigantgroup.co.uk/sitemap.xml",
+  "external_id": "13a4704b4c9ea7120e150cd6",
   "payload": {
-   "page_url": "https://www.mytraveljobs.co.uk/job/full-time-b1-licensed-engineer-leeds-bradford",
+   "page_url": "https://www.bigantgroup.co.uk/job/care-assistant-days/614",
    "posting": {
     "@context": "http://schema.org",
     "@type": "JobPosting",
-    "title": "B1 Licensed Engineer | Leeds Bradford | Competitive | Full time",
-    "url": "https://www.mytraveljobs.co.uk/job/full-time-b1-licensed-engineer-leeds-bradford",
-    "industry": "Airlines & Aviation",
-    "jobLocation": {
-     "@type": "Place",
-     "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Leeds Bradford",
-      "addressRegion": "Leeds Bradford"
+    "title": "Care Assistant (DAYS)",
+    "identifier": {
+     "@type": "PropertyValue",
+     "value": "CA1"
+    },
+    "url": "https://www.bigantgroup.co.uk/job/care-assistant-days/614",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "PropertyValue",
+      "value": "Up to £18.77 per hour"
      }
     },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Torquay, Borough of Torbay",
+       "addressRegion": "Borough of Torbay"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Paignton",
+       "addressRegion": "Paignton"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Brixham",
+       "addressRegion": "Brixham"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Torquay",
+       "addressRegion": "Torquay"
+      }
+     }
+    ],
     "employmentType": "Full time",
-    "datePosted": "2026-11-05T10:36:40+00:00",
-    "validThrough": "2026-12-05T10:36:40+00:00",
-    "description": "Description\nB1 LICENSED ENGINEER - LEEDS BRADFORD (UK CAA/EASA)\nRyanair is a fast-paced and dynamic airline known for its exceptional career opportunities and industry-leading growth.\nWith our fleet of 640+ aircraft, including the new Boeing 737-8200 'Gamechanger' and 300 Boeing 737 MAX 10 on order, this is an excellent time to join our team, advance your career and join Europe's leading airline.\nAbout the role:\nAES (Aircraft Engineering Services Ltd) are inviting applications for experienced B1 Licensed Engineers to be based at Leeds Bradford Airport working 2D2N (2 days, 2 nights) shift pattern, in partnership with our client Ryanair, Europe's largest airline.\nResponsibilities - Reporting to the Engineering Shift Leader, the successful candidate will be responsible for ensuring the highest standards of safety, reliability and performance across the Line Maintenance operation. Duties will include:\n&middot; Routine servicing and defect rectification of Ryanair's 737-800 and 737-8200 Fleet.\n&middot; Aircraft on Ground (AOG) recovery.\n&middot; Supervision and mentoring of Aircraft Mechanics and Trainees assigned to their team.\n&middot; Ensuring maintenance is completed safely, efficiently and in accordance with the approved procedures and regulatory requirements, including the promotion of a strong safety and compliance culture.\nRequirements\nAbout You:\nWe are looking for a self-motivated individual who will work without direct supervision and be able to demonstrate a flexible working attitude in a fast-changing environment.\nYou will have proven Line Maintenance experience, strong technical knowledge of the Boeing 737 and the ability to supervise a team effectively in a time sensitive operation.\nYou should be comfortable working independently, making sound decisions under pressure and adapting to changing operational priorities.\nWhat We're Looking For\nQualifications and Experience:\n&middot; Aircraft Line Maintenance experience (Essential).\n&middot; UK CAA Part-66 B1 Licence holder with Boeing 737-NG Type Endorsement &amp; Recency (Essential).\n&middot; EASA Part-66 B1 Licence holder with Boeing 737-NG Type Endorsement &amp; Recency (Desirable)\n&middot; Boeing 737-Max Type Endorsement (Desirable - Type Courses Available).\n&middot; Airbus A320 (CFM56 &amp; IAE V2500) Type Endorsement (Desirable)\n&middot; Excellent communication skills, both verbal and written (Essential).\n&middot; Good IT Literacy (Essential), with AMOS Experience (Desirable).\n&middot; All applicants must have unrestricted right to work and travel in the UK and hold a Full UK Driving Licence.\nBenefits\nWhy Join AES?\n\n&#9989; Career development and training opportunities\n&#9989; Supportive, team-oriented working environment\n&#9989; Stable, long-term employment\n\nReady for Take-Off? &#9992;&#65039;\nApply today and become part of a industry leading team that keeps aircraft operating safely and efficiently\nIf you are a B1 Licensed Engineer and feel that you can deliver in this exciting hands-on role with Ryanair, then we want to hear from you!\nCompetencies",
+    "datePosted": "2025-11-03T15:25:00+00:00",
+    "validThrough": "2026-11-11T12:00:00+00:00",
+    "description": "We're looking for the very best Care Assistants with\r\nThe passion to put the heart into care and make a difference to the quality of life for the residents you care for. We are looking for you to be reliable, committed and a good team-player with a passion for caring for elderly residents. You will be required to have;\r\n\r\n6-Months UK care experience from within the past 3-years\r\nMoving and Handling\r\nPersonal care expereince\r\nThe right to work in the UK\r\nA driving licence is desirable\r\n\r\nSome of your expected duties as a Health Care Assistant will be:\r\n\r\nAssisting residents with personal care.\r\nHelping residents to dress.\r\nInfection control.\r\nAssisting with meal times.\r\nGetting involved with and helping with activities.\r\nLaundry\r\n\r\nStarting salary £14.29 per hour up to £18.77 for bank holidays.\r\n\r\nYou can make a difference and help put the heart into care by becoming a Care Assistant for BIGANT Healthcare.\r\nWe are looking for a dedicated and reliable Care Assistant to join our team in Torquay and the surrounding areas. You can earn up to £18.77 per hour (Bank holiday nights) including holiday pay.\r\nIn joining our team of Care Assistants, you can enjoy additional benifits such as;\r\n\r\nWeekly pay: Payment is processed and paid to you every Friday on receiveing a timesheet.\r\n£150.00 Refer a friend Scheme: You can receive £100.00 for referering a friend and they can receive £50.00\r\nFlexible shifts available: Choose full-time, Part-time, day and night shifts, Weekday, and weekend shifts through our app.\r\nDaily support from the team: Daily support availble for your needs from our dedicated office staff.\r\nFree training: This is set for you at the start of your recruitment process with endless courses available.\r\nFree welcome gift box: Goodies sent to you on completion of your recruitment stage with a free BIGANT Healthcare uniform when you book your first shift.\r\nFree DBS: We complete a DBS for you FREE OF CHARGE.\r\n\r\n",
     "hiringOrganization": {
      "@type": "http://schema.org/Organization",
-     "name": "Ryanair",
-     "logo": "https://www.mytraveljobs.co.uk/modules/fabricjobs/uploads/recruiter/26/08/13/ryanair-stansted-essex-gfj.png"
+     "name": "Big Ant Group"
     }
    }
   },
-  "fetched_at": "2026-11-06T00:41:51.953522Z",
-  "content_hash": "a0d9a21d5d1466c042f52775175e30bc5846eaa3d53671cc6590adf1e57e79c7"
+  "fetched_at": "2026-11-06T04:13:24.709920Z",
+  "content_hash": "a5746ed19c1221caa3ca73c2966dc6a4289defeff27f8fbf096b27a6573aa5f1"
  },
  {
   "source_slug": "nodex",
-  "board_token": "https://www.mytraveljobs.co.uk/sitemap.xml",
-  "external_id": "9648e37f57a52613bb6e0f7f",
+  "board_token": "https://www.bigantgroup.co.uk/sitemap.xml",
+  "external_id": "03e5e5ce9e8d752e8cf00898",
   "payload": {
-   "page_url": "https://www.mytraveljobs.co.uk/job/full-time-cabin-crew-stansted-london-stansted-airport",
+   "page_url": "https://www.bigantgroup.co.uk/job/care-assistant-nights/626",
    "posting": {
     "@context": "http://schema.org",
     "@type": "JobPosting",
-    "title": "Cabin Crew - Stansted | London Stansted Airport | Competitive | Full time",
-    "url": "https://www.mytraveljobs.co.uk/job/full-time-cabin-crew-stansted-london-stansted-airport",
-    "industry": "Airlines & Aviation",
-    "jobLocation": {
-     "@type": "Place",
-     "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "London Stansted Airport",
-      "addressRegion": "London Stansted Airport"
+    "title": "Care Assistant (NIGHTS)",
+    "identifier": {
+     "@type": "PropertyValue",
+     "value": "CAPAI"
+    },
+    "url": "https://www.bigantgroup.co.uk/job/care-assistant-nights/626",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "PropertyValue",
+      "value": "Up to £18.77 per hour"
      }
     },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Paignton, Borough of Torbay",
+       "addressRegion": "Borough of Torbay"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Paignton",
+       "addressRegion": "Paignton"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Brixham",
+       "addressRegion": "Brixham"
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Torquay",
+       "addressRegion": "Torquay"
+      }
+     }
+    ],
     "employmentType": "Full time",
-    "datePosted": "2026-11-05T10:36:41+00:00",
-    "validThrough": "2026-12-05T10:36:41+00:00",
-    "description": "NO PRIOR EXPERIENCE is necessary as our training courses are designed to provide you with all the fundamental skills our crew use every day, which will allow you to deliver a safe and top-class inflight experience to our guests. Once complete, you will be issued with your 'Cabin Crew Wings' and ready to take to the Skies!!!\nAs a member of the Ryanair Group Cabin Crew family, you will be immersed in our culture from day one, the career opportunities are endless including becoming a Cabin Supervisor, Base Supervisor, Regional Manager or why not aspire to become our next Director of Inflight?\nLife as Cabin Crew is fun &amp; rewarding, it is however a demanding position where safety is our number 1 priority. You will be required to operate both early &amp; late shifts &amp; report for duty as early as 5 am in the morning on the early roster &amp; not return home until midnight on the afternoon roster. If you are not a morning person, then think twice before applying. However, if you are customer-orientated, and like to work in a fast-paced environment with loads of enthusiasm, this could be the career for you!!!!\nPlease note: As part of the application process, candidates are required to complete a mandatory English proficiency test and a situational judgment test. Failure to complete these assessments will result in disqualification from progressing to the interview stage.",
+    "datePosted": "2025-11-03T15:44:00+00:00",
+    "validThrough": "2026-11-11T12:00:00+00:00",
+    "description": "\r\nWe're looking for fabulous Care Assistants with\r\nThe passion to put the heart into care and make a difference to the quality of life for the residents you care for. We are looking for you to be reliable, committed and a good team-player with a passion for caring for elderly residents. You will be required to have;\r\n\r\n4-Months UK care experience from within the past 3-years\r\nMoving and Handling\r\nPersonal care expereince\r\nThe right to work in the UK\r\nA driving licence is desirable\r\n\r\nSome of your expected duties as a Health Care Assistant will be:\r\n\r\nAssisting residents with personal care.\r\nHelping residents with their night time and morning routines.\r\nInfection control.\r\nSupporting residents with dressing.\r\nHelping with residents getting to bed.\r\nLaundry\r\n\r\nJob description\r\n\r\nStarting salary £14.29 per hour up to £18.77 for bank holidays.\r\nYou can make a difference and help put the heart into care by becoming a Care Assistant for BIGANT Healthcare.\r\nWe are looking for a dedicated and reliable Care Assistant to join our team in Paignton and the surrounding areas. You can earn up to £18.77 per hour (Bank holiday nights) including holiday pay.\r\nIn joining our team of Care Assistants, you can enjoy additional benifits such as;\r\n\r\nWeekly pay: Payment is processed and paid to you every Friday on receiveing a timesheet.\r\n£150 Refer a friend Scheme: You can receive £100.00 for referering a friend and they can receive £50.00\r\nFlexible shifts available: Choose full-time, Part-time, day and night shifts, Weekday, and weekend shifts through our app.\r\nDaily support from the team: Daily support availble for your needs from our dedicated office staff.\r\nFree training: This is set for you at the start of your recruitment process with endless courses available.\r\nFree welcome gift box: Goodies sent to you on completion of your recruitment stage with a free BIGANT Healthcare uniform when you book your first shift.\r\nFree DBS: We complete a DBS for you FREE OF CHARGE.\r\n\r\n\r\n",
     "hiringOrganization": {
      "@type": "http://schema.org/Organization",
-     "name": "Ryanair",
-     "logo": "https://www.mytraveljobs.co.uk/modules/fabricjobs/uploads/recruiter/26/08/13/ryanair-stansted-essex-gfj.png"
+     "name": "Big Ant Group"
     }
    }
   },
-  "fetched_at": "2026-11-06T00:41:52.476369Z",
-  "content_hash": "1c40505649ba89198fe7d684914060cf57ecdcc0b37914c6ac144c6cc67ea2dd"
+  "fetched_at": "2026-11-06T04:13:25.191041Z",
+  "content_hash": "9feb021f6c48bfba0ee1020b69eea9d8789a466e5408fc6f006a057ea897ef97"
  }
 ]

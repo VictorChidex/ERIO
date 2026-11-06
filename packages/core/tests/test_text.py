@@ -49,6 +49,8 @@ def test_html_to_text() -> None:
 def test_trade_words_match_whole_words_only() -> None:
     from erio_core.normalize.roles import classify_role
 
-    assert classify_role("Mechanic") == "other"
+    assert classify_role("Mechanic") == "trades"
     assert classify_role("Senior Mechanical and Industrial Design Engineer") == "engineering"
-    assert classify_role("Registered Nurse") == "other"
+    assert classify_role("Registered Nurse") == "healthcare"
+    assert classify_role("Healthcare Platform Engineer") == "engineering"
+    assert classify_role("Device Driver Engineer") == "engineering"

@@ -170,9 +170,12 @@
   "name": "Freshteam",
   "kind": "ats",
   "blocked": "",
-  "notes": "Only one live board found (1 job); its JSON-LD swaps region and city",
+  "notes": "Some boards' schema.org data may swap region and city.",
   "examples": [
-   "https://giaspace.freshteam.com/jobs"
+   "https://giaspace.freshteam.com/jobs",
+   "https://mhubenterprise.freshteam.com/jobs",
+   "https://gjirafa.freshteam.com/jobs",
+   "https://framemediaexcel.freshteam.com/jobs"
   ]
  },
  {
@@ -191,9 +194,12 @@
   "name": "GoHire",
   "kind": "ats",
   "blocked": "",
-  "notes": "Only one populated board found, and it looks like a test account; every other board found is empty",
+  "notes": "Board ids are case-sensitive.",
   "examples": [
-   "6oK69dA8"
+   "6oK69dA8",
+   "b0mqN9Dn",
+   "t1DMB5ET",
+   "2YFKBlAY"
   ]
  },
  {
@@ -664,7 +670,7 @@
   "name": "JobKit",
   "kind": "board",
   "blocked": "",
-  "notes": "",
+  "notes": "Only one populated board exists (jobs.rubyonrails.org); about 20 other JobKit boards are empty.",
   "examples": [
    "https://jobs.rubyonrails.org"
   ]
@@ -707,9 +713,10 @@
   "name": "JobBoardFire",
   "kind": "board",
   "blocked": "",
-  "notes": "Only one live board found (a second platform board had no jobs)",
+  "notes": "Cloudflare answers some job pages with HTTP 429, so a fast crawl can read part of a board.",
   "examples": [
-   "https://jobs.girlboss.com/sitemap-jobs.xml"
+   "https://jobs.girlboss.com/sitemap-jobs.xml",
+   "https://greenbiz.jobboardfire.com/sitemap-jobs.xml"
   ]
  },
  {
@@ -769,7 +776,7 @@
   "name": "CareerSiteCloud",
   "kind": "board",
   "blocked": "",
-  "notes": "Only wpp.careersitecloud.com allows crawlers; other tenants found disallow everything",
+  "notes": "Only wpp.careersitecloud.com allows crawlers; every other tenant checked disallows everything or refuses requests.",
   "examples": [
    "https://wpp.careersitecloud.com/sitemap.xml"
   ]
@@ -779,7 +786,7 @@
   "name": "JobBoard.com",
   "kind": "board",
   "blocked": "",
-  "notes": "Only one live board found",
+  "notes": "Only one live board found: the vendor lists no customers, and every showcase site is dead or off the platform.",
   "examples": [
    "https://www.gradsouthwest.com/xml-sitemaps/1.xml"
   ]
@@ -819,9 +826,11 @@
   "name": "Nodex",
   "kind": "board",
   "blocked": "",
-  "notes": "Only one live board found",
+  "notes": "",
   "examples": [
-   "https://www.mytraveljobs.co.uk/sitemap.xml"
+   "https://www.mytraveljobs.co.uk/sitemap.xml",
+   "https://www.antellarecruitment.co.uk/sitemap.xml",
+   "https://www.bigantgroup.co.uk/sitemap.xml"
   ]
  },
  {

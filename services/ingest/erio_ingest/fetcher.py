@@ -31,6 +31,10 @@ Resolver = Callable[[str], Iterable[str]]
 ROBOTS_TTL_S = 3600.0
 # How often the hosts of registered boards are read again.
 EXTRA_HOSTS_TTL_S = 300.0
+# A 429 is retried this many times, waiting Retry-After (or 4 s, then 8 s) up to 20 s.
+MAX_RETRIES = 2
+BACKOFF_BASE_S = 4.0
+MAX_BACKOFF_S = 20.0
 MAX_REDIRECTS = 3
 REDIRECTS = frozenset({301, 302, 303, 307, 308})
 
@@ -98,6 +102,7 @@ class PoliteFetcher:
             timeout=settings.crawl_timeout_s, follow_redirects=False
         )
         self._robots: dict[str, tuple[float, urllib.robotparser.RobotFileParser]] = {}
+        self._sleep: Callable[[float], None] = time.sleep
 
     def get(self, url: str, etag: str | None = None) -> FetchResponse:
         return self._get(url, {"If-None-Match": etag} if etag else {})
@@ -149,13 +154,29 @@ class PoliteFetcher:
         method: str = "GET",
         content: bytes | None = None,
     ) -> FetchResponse:
-        """One request; network failures come back as FetchError, like any other."""
+        """One request; network failures come back as FetchError, like any other.
+
+        A site that answers 429 is asked for time, not hammered: the request waits (as the
+        site's Retry-After says, within ``MAX_BACKOFF_S``) and tries again, at most
+        ``MAX_RETRIES`` times; a host still refusing then reports its 429.
+        """
         try:
-            return self._send(host, url, headers, crawl_delay_s, method, content)
+            for attempt in range(MAX_RETRIES + 1):
+                response = self._send(host, url, headers, crawl_delay_s, method, content)
+                if response.status != 429 or attempt == MAX_RETRIES:
+                    return response
+                self._sleep(self._backoff(response, attempt))
+            raise AssertionError("unreachable")
         except httpx.TimeoutException as error:
             raise FetchError("timeout", f"{host} timed out: {error!r}") from error
         except httpx.HTTPError as error:
             raise FetchError("http_error", f"{host} failed: {error!r}") from error
+
+    @staticmethod
+    def _backoff(response: FetchResponse, attempt: int) -> float:
+        header = {k.lower(): v for k, v in response.headers.items()}.get("retry-after", "")
+        wait = float(header) if header.isdigit() else BACKOFF_BASE_S * 2**attempt
+        return min(wait, MAX_BACKOFF_S)
 
     def _allowed(self, host: str) -> str | None:
         """The allow-list entry that admits ``host``: itself or a "*.domain" wildcard.

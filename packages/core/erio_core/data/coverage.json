@@ -168,12 +168,12 @@
   "slug": "freshteam",
   "name": "Freshteam",
   "kind": "ats",
-  "status": "Partial",
-  "boards_verified": 1,
-  "jobs_read": 1,
+  "status": "Verified",
+  "boards_verified": 4,
+  "jobs_read": 14,
   "partial_read": false,
-  "checked_at": "2026-11-06T00:44:11+00:00",
-  "note": "Only one live board found (1 job); its JSON-LD swaps region and city"
+  "checked_at": "2026-11-06T04:12:06+00:00",
+  "note": "Some boards' schema.org data may swap region and city."
  },
  {
   "slug": "gem",
@@ -190,12 +190,12 @@
   "slug": "gohire",
   "name": "GoHire",
   "kind": "ats",
-  "status": "Partial",
-  "boards_verified": 1,
-  "jobs_read": 282,
+  "status": "Verified",
+  "boards_verified": 4,
+  "jobs_read": 313,
   "partial_read": false,
-  "checked_at": "2026-11-06T00:22:32+00:00",
-  "note": "Only one populated board found, and it looks like a test account; every other board found is empty"
+  "checked_at": "2026-11-06T04:12:09+00:00",
+  "note": "Board ids are case-sensitive."
  },
  {
   "slug": "greenhouse",
@@ -668,7 +668,7 @@
   "jobs_read": 13,
   "partial_read": false,
   "checked_at": "2026-11-06T00:18:50+00:00",
-  "note": ""
+  "note": "Only one populated board exists (jobs.rubyonrails.org); about 20 other JobKit boards are empty."
  },
  {
   "slug": "jobboardly",
@@ -707,12 +707,12 @@
   "slug": "jobboardfire",
   "name": "JobBoardFire",
   "kind": "board",
-  "status": "Partial",
-  "boards_verified": 1,
-  "jobs_read": 12,
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 223,
   "partial_read": true,
-  "checked_at": "2026-11-06T00:41:25+00:00",
-  "note": "Only one live board found (a second platform board had no jobs)"
+  "checked_at": "2026-11-06T04:32:32+00:00",
+  "note": "Cloudflare answers some job pages with HTTP 429, so a fast crawl can read part of a board."
  },
  {
   "slug": "smartjobboard",
@@ -778,7 +778,7 @@
   "jobs_read": 11,
   "partial_read": true,
   "checked_at": "2026-11-06T00:41:45+00:00",
-  "note": "Only wpp.careersitecloud.com allows crawlers; other tenants found disallow everything"
+  "note": "Only wpp.careersitecloud.com allows crawlers; every other tenant checked disallows everything or refuses requests."
  },
  {
   "slug": "jobboard_com",
@@ -789,7 +789,7 @@
   "jobs_read": 7,
   "partial_read": false,
   "checked_at": "2026-11-06T00:41:50+00:00",
-  "note": "Only one live board found"
+  "note": "Only one live board found: the vendor lists no customers, and every showcase site is dead or off the platform."
  },
  {
   "slug": "artha",
@@ -828,12 +828,12 @@
   "slug": "nodex",
   "name": "Nodex",
   "kind": "board",
-  "status": "Partial",
-  "boards_verified": 1,
-  "jobs_read": 12,
-  "partial_read": true,
-  "checked_at": "2026-11-06T00:41:56+00:00",
-  "note": "Only one live board found"
+  "status": "Verified",
+  "boards_verified": 3,
+  "jobs_read": 154,
+  "partial_read": false,
+  "checked_at": "2026-11-06T04:13:29+00:00",
+  "note": ""
  },
  {
   "slug": "ejobboard",

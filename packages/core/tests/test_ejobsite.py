@@ -27,3 +27,10 @@ def test_a_link_is_upgraded_to_https() -> None:
     (posting,) = EJobSiteConnector().extract(feed("http://jobs.example.org/7/x"), BOARD)
 
     assert str(EJobSiteConnector().parse(posting).apply_url).startswith("https://jobs.example.org/")
+
+
+def test_an_http_apply_link_becomes_https_for_every_connector() -> None:
+    from erio_core.connectors._util import as_url
+
+    assert str(as_url("http://careers.example.org/job-1/")) == "https://careers.example.org/job-1/"
+    assert str(as_url("https://careers.example.org/x")) == "https://careers.example.org/x"

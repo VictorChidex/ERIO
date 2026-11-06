@@ -298,15 +298,15 @@ Program Manager, Social Impact		operations
 Head of People		operations
 Accountant		operations
 Internal Auditor		operations
-Registered Nurse		other
-Chef de Partie		other
-Delivery Driver		other
-Mechanic		other
-Pharmacist		other
-Teacher, Mathematics		other
-Electrician		other
-Barista		other
-Physiotherapist		other
+Registered Nurse		healthcare
+Chef de Partie		hospitality
+Delivery Driver		logistics
+Mechanic		trades
+Pharmacist		healthcare
+Teacher, Mathematics		education
+Electrician		trades
+Barista		hospitality
+Physiotherapist		healthcare
 Architect (Buildings)		other
 Data Director, Payments		data
 Regional Lead, Client Implementation		operations
@@ -351,3 +351,84 @@ SOX Business Controls Specialist		operations
 Manager, Account Management		sales
 Head of Hardware Partnerships		sales
 Implementation Specialist, GTM Accelerate		operations
+# Rows 344 onward: the roles of employers outside tech. Real titles from Taleo, Dayforce, Paylocity,
+# Recruiting platforms and job boards crawled 2026-11-06, plus tech titles the new rules must not take.
+Advanced Practice Provider - Advanced Lung Disease- COPD		healthcare
+Special Caregiver	Caregiver	healthcare
+Clinical Lab Scientist		healthcare
+Dental Hygienist		healthcare
+Medical Assistant		healthcare
+Licensed Practical Nurse		healthcare
+Pharmacy Technician		healthcare
+Physical Therapist		healthcare
+Medical Monitor Sr Manager	Clinical Research	healthcare
+Assistant Teacher, Little Learners		education
+Expressions of Interest - Lecturers - School of Media Film and Photography	Academic - Teaching and Research	education
+Agriculture and Nutrition Educator		education
+Head Women's Soccer Coach		education
+Professor of Computer Science		education
+Math Tutor		education
+Lead Line Cook - Corner		hospitality
+Busperson - Dean's		hospitality
+Restaurant General Manager		hospitality
+Hotel Front Desk Agent		hospitality
+Housekeeper at the Grand Hotel		hospitality
+Sale Associate		retail
+Store Manager HOKA Opera		retail
+Cashier		retail
+Retail Sales Associate		retail
+Visual Merchandiser		retail
+Hotshot Driver - Class A required - 339		logistics
+Class A Local Driver, Corunna, MI 75k		logistics
+Sr. Warehouse Associate		logistics
+Forklift Operator		logistics
+Cabin Crew - Stansted	London Stansted Airport	logistics
+Truck Driver		logistics
+Industrial Painter		trades
+Allround Timmerman gezocht in Utrecht	Bouw en Installatie	trades
+Houtrotsaneerder Bergen op Zoom		trades
+Glaszetter Rotterdam		trades
+1st Shift Grader Operator 1 [1817]	Processing Plant	trades
+1st Shift PT Tray Washer  [1535]	Processing Plant	trades
+Maintenance Technician		trades
+Welder		trades
+Armored Car Crew Leader -  ***SIGN ON BONUS $5,000***	302 - Armored Guards	security
+Armored Truck Driver - ***SIGN ON BONUS $5,000***		security
+Evenementen beveiliger		security
+Beveiligers gezocht omgeving Lochem		security
+Security Guard		security
+Device Driver Engineer		engineering
+Senior Server Engineer		engineering
+Clinical Data Scientist		data
+Customer Success Manager		operations
+Account Executive		sales
+# Real titles from Peace Corps, Kohler, Bloomberg, EA and manufacturing boards (2026-11-06).
+Community Health Promoter		healthcare
+Adolescent Health Advisor		healthcare
+HIV/AIDS Care and Treatment Facilitator		healthcare
+Literacy Education Trainer		education
+Special Education Expert		education
+Computer Science Trainer		education
+Kids Core Staff I		education
+Youth Development Sports Facilitator		education
+Library Science Advisor		education
+Room Service Attendant, The American Club		hospitality
+Male Spa Attendant, Kohler Waters Spa		hospitality
+Fitness Receptionist		hospitality
+Personal Trainer | Garden City		hospitality
+Night Shift Shipping Supervisor		logistics
+Metal Fabrication Operator - 3rd Shift		trades
+Iron Foundry Operator/ Core room		trades
+Night Shift Die Polisher/Corrector – Aluminum Extrusion		trades
+Wet Coat Paint Line Manager		trades
+Cassopolis-General Labor		trades
+Supervisor de Producción Moldes		trades
+Associate Customer Service Representative, B2C		operations
+Senior Manager-Quality		operations
+Trainee-Stelle Rechtsabteilung (12 Monate)		operations
+IT Business Solutions Manager - Global Product Innovation		engineering
+Ingeniero de Proyectos - Facilities y Mantenimiento		engineering
+Healthcare Data Engineer		data
+Truck Software Developer		engineering
+Summer Internship		other
+English Transcriber/ Annotator (Part-time/Week-end Shift)		other

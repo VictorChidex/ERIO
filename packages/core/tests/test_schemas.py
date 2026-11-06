@@ -139,3 +139,16 @@ def test_raw_posting_hashes_its_payload_and_needs_timezones() -> None:
 def test_partial_job_needs_a_valid_apply_url() -> None:
     with pytest.raises(ValidationError):
         PartialJob(source_slug="greenhouse", external_id="1", title="Engineer", apply_url="nope")
+
+
+def test_a_partial_job_never_keeps_an_http_apply_link() -> None:
+    from erio_core.schemas import PartialJob
+
+    job = PartialJob(
+        source_slug="gohire",
+        external_id="1",
+        title="HR Executive",
+        apply_url="http://x.example.org/j/1",
+    )
+
+    assert str(job.apply_url) == "https://x.example.org/j/1"

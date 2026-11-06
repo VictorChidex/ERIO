@@ -1,4 +1,4 @@
-"""Classify a job into one of ERIO's role categories (spec section 6).
+"""Classify a job into one of ERIO's role categories (spec section 6, widened).
 
 Rules first, on the title and then the source's departments; a learned
 classifier can replace them later. The order matters: "Sales Engineer" is
@@ -7,6 +7,13 @@ is engineering. Boundaries: sales includes sales engineers, solutions
 architects and value engineers; operations includes finance, legal, people,
 risk, compliance and customer support and success; data includes analysts
 and machine learning; product includes technical program managers.
+
+The jobs of employers outside tech get their own categories, so a nurse, a
+driver or a cook is never lumped into "other": healthcare (clinical and care
+work), education (teaching and coaching), hospitality (kitchens, restaurants,
+hotels), retail (stores and tills), logistics (drivers, warehouse, delivery,
+cabin crew), trades (skilled trades, production, maintenance, construction,
+cleaning) and security (guards). "other" is what no rule recognises.
 """
 
 import re
@@ -20,21 +27,187 @@ def _words(*patterns: str) -> re.Pattern[str]:
 
 RULES: list[tuple[RoleCategory, re.Pattern[str]]] = [
     (
-        "other",
+        "healthcare",
         _words(
-            r"nurse\b",
-            r"chef\b",
+            r"nurs(?:e|ing)\b",
+            r"physician",
+            r"surgeon",
+            r"clinician",
+            r"clinical (?:lab|nurse|specialist|pharmacist|psycholog|therap)",
+            r"clinical (?:care|coordinator|educator|supervisor|assistant)",
+            r"lab(?:oratory)? (?:scientist|technician|technologist|assistant)",
+            r"medical (?:assistant|technologist|director|officer|doctor|receptionist)",
+            r"medical (?:biller|coder|monitor|laboratory)",
+            r"pharmac",
+            r"dentist",
+            r"dental",
+            r"hygienist",
+            r"therapist",
+            r"physiotherap",
+            r"paramedic",
+            r"care ?giver",
+            r"care assistant",
+            r"health ?care",
+            r"practitioner",
+            r"advanced practice provider",
+            r"patient",
+            r"radiolog",
+            r"sonograph",
+            r"phlebotom",
+            r"veterinar",
+            r"optometr",
+            r"midwife",
+            r"psycholog",
+            r"mental health",
+            r"health (?:promoter|advisor|adviser|worker|systems?)",
+            r"\bhiv\b",
+            r"community health",
+            r"home health",
+        ),
+    ),
+    (
+        "security",
+        _words(
+            r"security (?:guard|agent|attendant|patrol)",
+            r"guard\b",
+            r"armou?red (?:car|truck)",
+            r"beveilig",
+            r"bewaker",
+            r"loss prevention",
+            r"bodyguard",
+        ),
+    ),
+    (
+        "education",
+        _words(
+            r"teach",
+            r"lecturer",
+            r"professor",
+            r"tutor",
+            r"instructor",
+            r"educator",
+            r"faculty",
+            r"curriculum",
+            r"education\b",
+            r"(?<!personal )trainer\b",
+            r"literacy",
+            r"librar(?:y|ian)",
+            r"\bkids\b",
+            r"child ?care",
+            r"youth (?:development|sports)",
+            r"after[- ]school",
+            r"early childhood",
+            r"(?:head|assistant|athletic) coach",
+            r"(?:soccer|football|basketball|baseball|softball|swimming|tennis|volleyball) coach",
+        ),
+    ),
+    (
+        "hospitality",
+        _words(
+            r"chef",
             r"cook\b",
-            r"driver\b",
-            r"mechanic\b",
-            r"pharmacist",
-            r"teacher",
+            r"sous\b",
+            r"kitchen",
+            r"waiter",
+            r"waitress",
+            r"server\b(?!\s*(?:engineer|developer|admin|side))",
+            r"barista",
+            r"bartend",
+            r"bus ?(?:person|ser)\b",
+            r"dishwasher",
+            r"hostess",
+            r"restaurant",
+            r"hotel",
+            r"housekeep",
+            r"concierge",
+            r"cater",
+            r"baker\b",
+            r"pastry",
+            r"food (?:service|prep)",
+            r"(?:room service|spa|public area|pool|guest|lobby) attendant",
+            r"\bspa\b",
+            r"fitness",
+            r"personal trainer",
+        ),
+    ),
+    (
+        "retail",
+        _words(
+            r"sales? associate",
+            r"retail",
+            r"cashier",
+            r"store (?:manager|associate|lead|team|supervisor)",
+            r"merchandis",
+            r"shop assistant",
+        ),
+    ),
+    (
+        "logistics",
+        _words(
+            r"drivers?\b(?!\s*(?:engineer|developer))",
+            r"warehouse",
+            r"forklift",
+            r"courier",
+            r"dispatcher",
+            r"picker\b",
+            r"packer\b",
+            r"truck",
+            r"cdl\b",
+            r"freight",
+            r"shipping",
+            r"chauffeur",
+            r"flight attendant",
+            r"cabin crew",
+            r"delivery (?:associate|person|partner|specialist)",
+        ),
+    ),
+    (
+        "trades",
+        _words(
+            r"mechanic",
             r"electrician",
             r"plumber",
-            r"barista",
-            r"physiotherapist",
-            r"waiter",
-            r"cashier",
+            r"carpent",
+            r"timmerman",
+            r"welder",
+            r"welding",
+            r"machinist",
+            r"(?:machine|plant|production|equipment|crane|press|cnc|grader|line) operator",
+            r"(?:maintenance|hvac|field|automotive|diesel) (?:technician|tech)\b",
+            r"(?:aircraft|electronics|production|manufacturing|facilities) (?:technician|tech)\b",
+            r"maintenance",
+            r"mason\b",
+            r"bricklayer",
+            r"roofer",
+            r"painter",
+            r"schilder",
+            r"glazier",
+            r"glaszetter",
+            r"construction",
+            r"labou?rer",
+            r"foreman",
+            r"assembl(?:er|y)\b",
+            r"installer",
+            r"installateur",
+            r"monteur",
+            r"loodgieter",
+            r"elektricien",
+            r"\w*saneerder",
+            r"landscap",
+            r"groundskeeper",
+            r"janitor",
+            r"custodian",
+            r"cleaner",
+            r"tray washer",
+            r"fabrication",
+            r"foundry",
+            r"extrusion",
+            r"die (?:shop|polish|cast|setter)",
+            r"paint line",
+            r"general labou?r",
+            r"producci[oó]n",
+            r"mantenimiento",
+            r"production (?:worker|associate|supervisor|lead)",
         ),
     ),
     (
@@ -111,6 +284,7 @@ RULES: list[tuple[RoleCategory, re.Pattern[str]]] = [
             r"staff engineer",
             r"customer reliability engineer",
             r"business systems",
+            r"business solutions",
             r"business technology",
             r"(?:ios|android|mobile) (?:engineer|developer)",
             r"security researcher",
@@ -241,6 +415,14 @@ RULES: list[tuple[RoleCategory, re.Pattern[str]]] = [
             r"treasury",
             r"business partner",
             r"customer care",
+            r"customer service",
+            r"quality (?:manager|control)",
+            r"(?:manager|director|head)[- ]quality",
+            r"executive director",
+            r"general manager",
+            r"organizational development",
+            r"change management",
+            r"rechts(?:abteilung|referendar)",
             r"partner care",
             r"care (?:advisor|agent|manager)",
             r"collections?",
@@ -257,13 +439,24 @@ RULES: list[tuple[RoleCategory, re.Pattern[str]]] = [
             r"security manager",
         ),
     ),
-    ("engineering", _words(r"engineer", r"developer", r"architect", r"programmer")),
+    ("engineering", _words(r"engineer", r"developer", r"architect", r"programmer", r"ingenier")),
 ]
+
+
+# Categories for work outside tech; a title that names an engineering or software role
+# ("Healthcare Data Engineer", "Truck Software Developer") is never one of them.
+NON_TECH: frozenset[str] = frozenset(
+    {"healthcare", "security", "education", "hospitality", "retail", "logistics", "trades"}
+)
+TECH_ROLE = _words(r"engineer", r"developer", r"programmer", r"software", r"ingenier")
 
 
 def classify_role(title: str, departments: list[str] | None = None) -> RoleCategory:
     for text in (title, " ".join(departments or [])):
+        tech = bool(TECH_ROLE.search(text))
         for category, pattern in RULES:
+            if tech and category in NON_TECH:
+                continue
             if pattern.search(text):
                 return category
     return "other"

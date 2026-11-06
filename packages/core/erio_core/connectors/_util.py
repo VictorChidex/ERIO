@@ -68,7 +68,12 @@ def salary(low: Any, high: Any, currency: Any, period: Any) -> SalaryHint | None
 
 
 def as_url(value: str) -> HttpUrl:
-    return HttpUrl(value)
+    """An apply link as a URL. ERIO links candidates only to https pages, so a source
+    that publishes ``http://`` gets its https twin (sites redirect there anyway)."""
+    text = value.strip()
+    if text[:7].lower() == "http://":
+        text = "https://" + text[7:]
+    return HttpUrl(text)
 
 
 def numbers_in(text: str | None, limit: int = 2) -> list[float]:

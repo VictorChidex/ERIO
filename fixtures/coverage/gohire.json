@@ -1,53 +1,53 @@
 [
  {
   "source_slug": "gohire",
-  "board_token": "6oK69dA8",
-  "external_id": "261837",
+  "board_token": "2YFKBlAY",
+  "external_id": "305521",
   "payload": {
-   "id": 261837,
-   "title": "marketing manager",
+   "id": 305521,
+   "title": "HR Executive",
    "description": "",
-   "location": "Mohali, India",
-   "salary": "54 - 65 INR Per annum",
+   "location": "Bengaluru, India",
+   "salary": "300000 - 350000 GBP Per annum",
    "type": "Full-time",
-   "date": "20 November, 2025",
-   "link": "https://jobs.gohire.io/testifyai-6ok69da8/marketing-manager-261837/"
+   "date": "28 October, 2026",
+   "link": "http://careers.proziod.com/hr-executive-305521/"
   },
-  "fetched_at": "2026-11-06T00:22:32.730940Z",
-  "content_hash": "5cda788a3f3eb793672e720f55672e17d2269c15f08b1911e6b348c1cbd3f63c"
+  "fetched_at": "2026-11-06T04:12:09.333631Z",
+  "content_hash": "861630d20b442d27a97bce0d7df0044b8bcdfe3e2a34d1e703ab3fd07c7ca055"
  },
  {
   "source_slug": "gohire",
-  "board_token": "6oK69dA8",
-  "external_id": "261804",
+  "board_token": "2YFKBlAY",
+  "external_id": "303703",
   "payload": {
-   "id": 261804,
-   "title": "Delhi Developer Art",
+   "id": 303703,
+   "title": "Physical Design Engineer - 3+ yrs exp, Immediate Joiner",
    "description": "",
-   "location": "Mohali, India",
-   "salary": "11 - 19 INR Per hour",
+   "location": "Bengaluru, India",
+   "salary": "1000000 - 1500000 INR Per annum",
    "type": "Full-time",
-   "date": "20 November, 2025",
-   "link": "https://jobs.gohire.io/testifyai-6ok69da8/delhi-developer-art-261804/"
+   "date": "09 October, 2026",
+   "link": "http://careers.proziod.com/physical-design-engineer-3-yrs-exp-immediate-joiner-303703/"
   },
-  "fetched_at": "2026-11-06T00:22:32.730940Z",
-  "content_hash": "bc86434c885226d53c63109216db25b94c7dae45cf3d9337863f17bb25921b64"
+  "fetched_at": "2026-11-06T04:12:09.333631Z",
+  "content_hash": "14252c27e15218171edf166aa0567dd096e337078bdc99561ec925823825b237"
  },
  {
   "source_slug": "gohire",
-  "board_token": "6oK69dA8",
-  "external_id": "261803",
+  "board_token": "2YFKBlAY",
+  "external_id": "302140",
   "payload": {
-   "id": 261803,
-   "title": "Delhi Developer Art",
+   "id": 302140,
+   "title": "Civil Engineer",
    "description": "",
-   "location": "Mohali, India",
-   "salary": "11 - 19 INR Per hour",
+   "location": "Bengaluru, India",
+   "salary": "25000 - 30000 GBP Per month",
    "type": "Full-time",
-   "date": "20 November, 2025",
-   "link": "https://jobs.gohire.io/testifyai-6ok69da8/delhi-developer-art-261803/"
+   "date": "24 September, 2026",
+   "link": "http://careers.proziod.com/civil-engineer-302140/"
   },
-  "fetched_at": "2026-11-06T00:22:32.730940Z",
-  "content_hash": "70296c2156de6a8560664703d5e73aa20dcac4d108b3e7410909288a41e21f03"
+  "fetched_at": "2026-11-06T04:12:09.333631Z",
+  "content_hash": "ab59afcaaada5538cafefcf0e665fd1c69fa7d789710e92dc337b0dd0aca88d5"
  }
 ]

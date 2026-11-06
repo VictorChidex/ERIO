@@ -568,9 +568,48 @@
     "sample_titles": [
      "Help Desk Technician"
     ]
+   },
+   {
+    "board": "https://mhubenterprise.freshteam.com/jobs",
+    "complete": true,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Administrative Assistant (Remote)",
+     "Online Marketplace Assistant (Remote)",
+     "Website Administrator (Remote)"
+    ]
+   },
+   {
+    "board": "https://gjirafa.freshteam.com/jobs",
+    "complete": true,
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Marketing Specialist - iGjirafa",
+     "Warehouse and Fulfillment Assistant (E-Commerce)",
+     "Apply for Future Roles"
+    ]
+   },
+   {
+    "board": "https://framemediaexcel.freshteam.com/jobs",
+    "complete": true,
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Copywriter/ Content Writer (Remote)",
+     "Customer Support Representative (Remote) online",
+     "Social Media Manager (Remote)"
+    ]
    }
   ],
-  "checked_at": "2026-11-06T00:44:11+00:00"
+  "checked_at": "2026-11-06T04:12:06+00:00"
  },
  "gem": {
   "boards": [
@@ -603,6 +642,7 @@
   "boards": [
    {
     "board": "6oK69dA8",
+    "complete": true,
     "error": "",
     "jobs": 282,
     "ok": true,
@@ -612,9 +652,48 @@
      "Delhi Developer Art",
      "Delhi Developer Art"
     ]
+   },
+   {
+    "board": "b0mqN9Dn",
+    "complete": true,
+    "error": "",
+    "jobs": 15,
+    "ok": true,
+    "parsed": 15,
+    "sample_titles": [
+     "Healthcare Access Coordinator & ISP Writer",
+     "Real Estate Underwriter and Financial Analyst",
+     "IT Manager"
+    ]
+   },
+   {
+    "board": "t1DMB5ET",
+    "complete": true,
+    "error": "",
+    "jobs": 10,
+    "ok": true,
+    "parsed": 10,
+    "sample_titles": [
+     "Social Media Specialist",
+     "Senior Manager – Business Operations & Delivery Control",
+     "Senior SEO Manager"
+    ]
+   },
+   {
+    "board": "2YFKBlAY",
+    "complete": true,
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "HR Executive",
+     "Physical Design Engineer - 3+ yrs exp, Immediate Joiner",
+     "Civil Engineer"
+    ]
    }
   ],
-  "checked_at": "2026-11-06T00:22:32+00:00"
+  "checked_at": "2026-11-06T04:12:09+00:00"
  },
  "greenhouse": {
   "boards": [
@@ -975,17 +1054,30 @@
     "board": "https://jobs.girlboss.com/sitemap-jobs.xml",
     "complete": false,
     "error": "",
-    "jobs": 12,
+    "jobs": 197,
     "ok": true,
-    "parsed": 12,
+    "parsed": 197,
     "sample_titles": [
      "2027 Business Operations Engineer Intern",
      "3D Digital Sculptor",
      "Account Executive"
     ]
+   },
+   {
+    "board": "https://greenbiz.jobboardfire.com/sitemap-jobs.xml",
+    "complete": true,
+    "error": "",
+    "jobs": 26,
+    "ok": true,
+    "parsed": 26,
+    "sample_titles": [
+     "Building Performance Specialist",
+     "Chief Executive Officer",
+     "Climate Corps Fellow - Summer 2027"
+    ]
    }
   ],
-  "checked_at": "2026-11-06T00:41:25+00:00"
+  "checked_at": "2026-11-06T04:32:32+00:00"
  },
  "jobboardhq": {
   "boards": [
@@ -1339,19 +1431,45 @@
   "boards": [
    {
     "board": "https://www.mytraveljobs.co.uk/sitemap.xml",
-    "complete": false,
+    "complete": true,
     "error": "",
-    "jobs": 12,
+    "jobs": 120,
     "ok": true,
-    "parsed": 12,
+    "parsed": 120,
     "sample_titles": [
      "UK Outstations Engineer | Stansted | Competitive | Full time",
      "B1 Licensed Engineer | Leeds Bradford | Competitive | Full time",
      "Cabin Crew - Stansted | London Stansted Airport | Competitive | Full time"
     ]
+   },
+   {
+    "board": "https://www.antellarecruitment.co.uk/sitemap.xml",
+    "complete": true,
+    "error": "",
+    "jobs": 22,
+    "ok": true,
+    "parsed": 22,
+    "sample_titles": [
+     "Travel Sales Consultant Latin America",
+     "Travel Sales Consultant Africa",
+     "Travel Ticketing Support Executive"
+    ]
+   },
+   {
+    "board": "https://www.bigantgroup.co.uk/sitemap.xml",
+    "complete": true,
+    "error": "",
+    "jobs": 12,
+    "ok": true,
+    "parsed": 12,
+    "sample_titles": [
+     "Support Worker",
+     "Care Assistant (DAYS)",
+     "Care Assistant (NIGHTS)"
+    ]
    }
   ],
-  "checked_at": "2026-11-06T00:41:56+00:00"
+  "checked_at": "2026-11-06T04:13:29+00:00"
  },
  "oracle_recruiting": {
   "boards": [

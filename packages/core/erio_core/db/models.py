@@ -49,6 +49,13 @@ ROLE_CATEGORIES = (
     "operations",
     "sales",
     "marketing",
+    "healthcare",
+    "education",
+    "hospitality",
+    "retail",
+    "logistics",
+    "trades",
+    "security",
     "other",
 )
 REMOTE_STATUSES = ("remote", "hybrid", "onsite")

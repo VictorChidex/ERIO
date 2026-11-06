@@ -3,6 +3,8 @@
 // Links can be shared and the back button works. Repeated parameters
 // (country=NG&country=CA, as a plain HTML form sends them) are read too.
 
+import { ROLE_LABELS } from "./format";
+
 export type Filters = {
   q: string;
   countries: string[];
@@ -17,7 +19,7 @@ export type Filters = {
 export type RawParams = Record<string, string | string[] | undefined>;
 
 const TYPES = ["remote", "hybrid", "onsite"];
-const ROLES = ["engineering", "product", "design", "data", "operations", "sales", "marketing", "other"];
+const ROLES = Object.keys(ROLE_LABELS);
 const SORTS = ["recent", "salary", "relevance"] as const;
 
 function values(raw: string | string[] | undefined): string[] {

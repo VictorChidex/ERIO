@@ -13,10 +13,20 @@ import json
 from datetime import UTC, datetime
 from typing import Any, Literal
 
-from pydantic import AwareDatetime, BaseModel, ConfigDict, Field, HttpUrl, computed_field
+from pydantic import (
+    AwareDatetime,
+    BaseModel,
+    ConfigDict,
+    Field,
+    HttpUrl,
+    computed_field,
+    field_validator,
+)
 
 RoleCategory = Literal[
-    "engineering", "product", "design", "data", "operations", "sales", "marketing", "other"
+    "engineering", "product", "design", "data", "operations", "sales", "marketing",
+    "healthcare", "education", "hospitality", "retail", "logistics", "trades", "security",
+    "other",
 ]  # fmt: skip
 RemoteStatus = Literal["remote", "hybrid", "onsite"]
 RemoteScope = Literal["country", "region", "worldwide"]
@@ -85,6 +95,14 @@ class PartialJob(BaseModel):
     departments: list[str] = Field(default_factory=list)
     salary: SalaryHint | None = None
     description_html: str | None = None
+
+    @field_validator("apply_url", mode="before")
+    @classmethod
+    def apply_links_are_https(cls, value: Any) -> Any:
+        """Candidates are sent only to https pages; sites redirect an http link there."""
+        if isinstance(value, str) and value.strip()[:7].lower() == "http://":
+            return "https://" + value.strip()[7:]
+        return value
 
 
 class Company(BaseModel):

@@ -168,6 +168,55 @@ def test_the_longest_matching_robots_rule_wins() -> None:
         fetcher.get(URL)  # the longer Disallow wins over the shorter Allow
 
 
+def throttled(answers: list[httpx.Response]):
+    """A site that answers the page with each response in turn, then keeps the last."""
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path == "/robots.txt":
+            return httpx.Response(404)
+        return answers.pop(0) if len(answers) > 1 else answers[0]
+
+    return handler
+
+
+def test_a_429_waits_as_the_site_asks_and_tries_again() -> None:
+    answers = [
+        httpx.Response(429, headers={"Retry-After": "7"}),
+        httpx.Response(200, content=b"ok"),
+    ]
+    fetcher, limiter, _ = make_fetcher(throttled(answers))
+    waits: list[float] = []
+    fetcher._sleep = waits.append
+
+    response = fetcher.get(URL)
+
+    assert (response.status, waits) == (200, [7.0])
+    assert limiter.hosts == [HOST, HOST, HOST]  # robots.txt, the refused page, the retry
+
+
+def test_a_host_that_keeps_refusing_is_asked_a_bounded_number_of_times() -> None:
+    fetcher, _, seen = make_fetcher(throttled([httpx.Response(429)]))
+    waits: list[float] = []
+    fetcher._sleep = waits.append
+
+    response = fetcher.get(URL)
+
+    assert response.status == 429
+    assert waits == [4.0, 8.0]  # no Retry-After: 4 s, then 8 s
+    assert [r.url.path for r in seen].count(URL.removeprefix(f"https://{HOST}")) == 3
+
+
+def test_a_long_retry_after_is_capped() -> None:
+    answers = [httpx.Response(429, headers={"Retry-After": "3600"}), httpx.Response(200)]
+    fetcher, _, _ = make_fetcher(throttled(answers))
+    waits: list[float] = []
+    fetcher._sleep = waits.append
+
+    fetcher.get(URL)
+
+    assert waits == [20.0]
+
+
 def test_robots_wildcards_and_end_anchors_work() -> None:
     robots = (200, "User-agent: *\nDisallow: /\nAllow: /*/boards/\nDisallow: /*.json$\n")
     fetcher, _, _ = make_fetcher(site(robots=robots))

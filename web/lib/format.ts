@@ -19,6 +19,13 @@ export const ROLE_LABELS: Record<string, string> = {
   operations: "Operations",
   sales: "Sales",
   marketing: "Marketing",
+  healthcare: "Healthcare",
+  education: "Education",
+  hospitality: "Hospitality & food",
+  retail: "Retail",
+  logistics: "Logistics & drivers",
+  trades: "Trades & production",
+  security: "Security",
   other: "Other",
 };
 
