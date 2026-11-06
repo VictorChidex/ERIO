@@ -1,0 +1,101 @@
+[
+ {
+  "source_slug": "brassring",
+  "board_token": "25332/5414",
+  "external_id": "356724",
+  "payload": {
+   "fields": {
+    "reqid": "356724",
+    "hotjob": "No",
+    "clientid": "25332",
+    "siteid": "5414",
+    "gqid": "2164",
+    "jobreqlanguage": "1",
+    "latitude": "0.0",
+    "longitude": "0.0",
+    "lastupdated": "04-Nov-2026",
+    "jobtitle": "English Teacher",
+    "jobdescription": "Cambodian schools are seeking individuals with a passion for English language learning to prepare students in grades 4-12 for academic and professional success. <br><br>English language skills are highly valued by employers across Cambodia, especially international business, international development, and tourism. To prepare students for these opportunities, Cambodia is modernizing its education system by strengthening English language instruction and expanding digital literacy. These efforts will also foster a workforce that can support the country’s transition to a digital economy. The Ministry of Education, Youth, and Sport (MoEYS) is prioritizing English education. However, many schools continue to face a shortage of qualified English teachers as there are limited resources for recruiting, training, and providing competitive pay for teachers. <br><br>As an English Teacher, you will teach alongside Cambodian teachers, integrating effective student-centered teaching strategies aimed at improving English proficiency. You will facilitate extracurricular activities and projects that will serve as additional language and life skill development opportunities. Your service will contribute to the country’s long-term goals of developing a resilient, innovative workforce.",
+    "formtext3": "Cambodia",
+    "formtext45": "PCV"
+   },
+   "link": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25332&siteid=5414&PageType=JobDetails&jobid=356724",
+   "layout": {
+    "Position1": "formtext45",
+    "JobTitle": "jobtitle",
+    "Position3": [
+     "formtext3"
+    ],
+    "Summary": "jobdescription"
+   }
+  },
+  "fetched_at": "2026-11-06T02:55:43.804017Z",
+  "content_hash": "6b7e0daac14ff92958f7ba9bc4dbbc5c38da03e588c49b86acccac7a4463cdb3"
+ },
+ {
+  "source_slug": "brassring",
+  "board_token": "25332/5414",
+  "external_id": "356726",
+  "payload": {
+   "fields": {
+    "reqid": "356726",
+    "hotjob": "No",
+    "clientid": "25332",
+    "siteid": "5414",
+    "gqid": "2164",
+    "jobreqlanguage": "1",
+    "latitude": "0.0",
+    "longitude": "0.0",
+    "lastupdated": "04-Nov-2026",
+    "jobtitle": "Coastal Management Educator",
+    "jobdescription": "Do you want to be at the frontlines of safeguarding the world’s richest ecosystems? Individuals with a background in environmental science or coastal resource management are invited to support communities in the Philippines.  <br><br>The archipelagic country is one of 17 megadiverse countries in the world, renowned for its ecosystems—from forested mountains and tropical mangroves to coral reefs teeming with marine life. Located at the heart of the Coral Triangle, the epicenter of marine biodiversity, the country boasts 21,000 miles of coastline running along its 7,641 islands. The country’s natural resources face mounting environmental pressures though.  Deforestation, land degradation, pollution, biodiversity loss, and poor solid waste management threaten both the ecosystems and the communities that depend on them. Changing weather patterns and natural disasters further strain the country’s ability to manage its resources.  <br><br>As a Costal Management Educator, you will collaborate with the government units at the provincial, city, and municipal level to assess resources and develop nature-based solutions. You’ll also work with nongovernmental organizations (NGOs), colleges, and universities to expand environmental education and strengthen capacity. Your efforts will contribute to the long-term resilience of one of the world’s most biologically significant regions.",
+    "formtext3": "Philippines",
+    "formtext45": "PCV"
+   },
+   "link": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25332&siteid=5414&PageType=JobDetails&jobid=356726",
+   "layout": {
+    "Position1": "formtext45",
+    "JobTitle": "jobtitle",
+    "Position3": [
+     "formtext3"
+    ],
+    "Summary": "jobdescription"
+   }
+  },
+  "fetched_at": "2026-11-06T02:55:43.804017Z",
+  "content_hash": "b1ca09df3f5d8e4020d9d09effb73d7c74965b08aeb7d8bda79d1e6a3c92b021"
+ },
+ {
+  "source_slug": "brassring",
+  "board_token": "25332/5414",
+  "external_id": "356882",
+  "payload": {
+   "fields": {
+    "reqid": "356882",
+    "hotjob": "No",
+    "clientid": "25332",
+    "siteid": "5414",
+    "gqid": "2164",
+    "jobreqlanguage": "1",
+    "latitude": "0.0",
+    "longitude": "0.0",
+    "lastupdated": "04-Nov-2026",
+    "jobtitle": "Agriculture and Nutrition Educator",
+    "jobdescription": "Calling all beekeepers, horticulturalists, and at-home gardeners! Farmers in The Gambia are looking for your support as they strengthen the country’s food and nutrition security. <br> <br>Agricultural activities in The Gambia are traditionally completed during the short rainy season, which runs three to four months. Farmers are interested in learning new agriculture techniques to establish and improve dry-season vegetable gardens and tree nurseries. Animal husbandry management practices, such as beekeeping and raising chickens, are also of interest and will improve nutrition and provide additional sources of income to households.  <br> <br>As an Agriculture and Nutrition Educator, you will implement nutrition-sensitive agricultural projects. You and your farming colleagues will train women, young adults, and individuals with developmental and physical disabilities to generate agriculture-related income.",
+    "formtext3": "The Gambia",
+    "formtext45": "PCV"
+   },
+   "link": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25332&siteid=5414&PageType=JobDetails&jobid=356882",
+   "layout": {
+    "Position1": "formtext45",
+    "JobTitle": "jobtitle",
+    "Position3": [
+     "formtext3"
+    ],
+    "Summary": "jobdescription"
+   }
+  },
+  "fetched_at": "2026-11-06T02:55:43.804017Z",
+  "content_hash": "8960d9fc22ddc5bd327e2de510adf4feadf1243b4b11fcb34eea2c6c8a0a65c5"
+ }
+]

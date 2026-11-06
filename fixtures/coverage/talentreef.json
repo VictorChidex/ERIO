@@ -1,0 +1,31 @@
+[
+ {
+  "source_slug": "talentreef",
+  "board_token": "21207",
+  "external_id": "7910684",
+  "payload": {
+   "address": {
+    "country": "US",
+    "stateOrProvince": "TX",
+    "city": "Granbury",
+    "postalCode": "76049",
+    "street1": "Outreach Health of Fort Worth",
+    "street2": ""
+   },
+   "clientId": 21207,
+   "positionType": "Special Caregiver ",
+   "internalOrExternal": "externalOnly",
+   "clientName": "Outreach Health",
+   "contractType": "fullTime",
+   "pubCompensation": 0,
+   "description": "<p class=\"ql-align-center\"><strong style=\"color: black;\">Job Description</strong></p><p class=\"ql-align-center\"><br></p><p>As a Special Caregiver for Outreach Health, you are responsible for helping clients that are disabled or elderly by serving as a back-up Caregiver in instances where the permanent caregiver is unable to provide services to the client(s). To ensure the client is properly cared for, you will understand and perform basic safety techniques.</p><p><br></p><p>The Special Caregiver is a positive leader and mentor, torchbearer for company values, and will represent Outreach Health with integrity in the community.</p><p><br></p><p>The Special Caregiver will be expected to adhere to Outreach’s workplace values. Our purpose at Outreach is to care for others; therefore, empathy is at the core of everything we do. We treat others with compassion, love, and respect. All our communications are to be respectful and in a professional manner. We encourage ourselves and our team to be positive leaders, creating an environment of trust and a culture where everyone feels valued. We each take responsibly for our own personal development, striving to be teachable, humble, and lifelong learners.</p><p>We work tirelessly to earn and keep the trust of our clients, that includes bringing compassion, purpose, and value wherever we go. We strive to always do the right thing, even when no one is watching. We are good stewards of the resources and responsibilities entrusted to us, making every effort to accomplish more with less.</p><p><strong style=\"color: rgb(66, 66, 66);\">&nbsp;</strong></p><p><strong style=\"color: rgb(66, 66, 66);\">Benefits:</strong></p><ul><li>Healthcare Plan</li><li>Flexible schedules FT/ PT</li><li>Great opportunity to grow</li><li>Work in client homes</li><li>Independent fieldwork</li><li>Get paid to help those in need</li><li>Make a huge difference in someone's life</li></ul><p><br></p><p><strong style=\"color: rgb(66, 66, 66);\">The Job:</strong></p><ul><li>Companionship, conversation, and assistance</li><li>Meal prep, groceries, housekeeping, and laundry</li><li>Personal care</li><li>Medicine reminders and watching for health changes</li><li>Ensure client safety and maintain the environment</li></ul><p><br></p><p><strong style=\"color: rgb(66, 66, 66);\">Requirements:</strong></p><p>\t\t• Must have a minimum of 6 months working experience as a caregiver, or enrolled in a vocational education program, and/or be a certified</p><p>Nursing Assistant</p><p>\t\t• Must pass a criminal background screening</p><p>\t\t• Must be able to follow verbal and written instructions</p><p>\t\t• Must be flexible to service several different clients a day</p><p>\t\t• Must be able to work with limited supervision and on weekends and holidays</p><p>\t\t• Must comply with applicable healthcare laws and statues (local, state, and/or federal); e.g., protect patient’s privacy</p><p>\t\t• Maintain a valid driver’s license and own a legally registered vehicle that holds the minimum liability insurance coverage.</p><p>\t\t<span style=\"color: rgb(0, 0, 0);\">• </span>Must be 18 years of age with a High School Diploma or GED, or equivalent experience</p><p><br></p><p><br></p><p><span style=\"color: rgb(66, 66, 66);\">Join Outreach and the growing healthcare industry to help make a difference in your community!</span></p>",
+   "isSalaried": false,
+   "jobId": 7910684,
+   "createdDate": "2022-09-12",
+   "category": "Caregiver",
+   "brand": "Outreach Health"
+  },
+  "fetched_at": "2026-11-06T03:07:05.949294Z",
+  "content_hash": "3415da8c8b51acfd42cb787ae51c97fed7a821c02654b6c7f5d639e6dc02b492"
+ }
+]

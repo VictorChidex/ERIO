@@ -12,12 +12,13 @@ Every request:
 
 import ipaddress
 import json
+import re
 import socket
 import time
 import urllib.robotparser
 from collections.abc import Callable, Iterable
 from typing import Any
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 
 import httpx
 
@@ -32,6 +33,40 @@ ROBOTS_TTL_S = 3600.0
 EXTRA_HOSTS_TTL_S = 300.0
 MAX_REDIRECTS = 3
 REDIRECTS = frozenset({301, 302, 303, 307, 308})
+
+
+class Robots(urllib.robotparser.RobotFileParser):
+    """robots.txt rules as RFC 9309 reads them: ``*`` and a closing ``$`` in a path
+    pattern work, the longest matching rule wins, and an Allow beats a Disallow of the
+    same length. The standard library takes the first literal prefix match, which
+    refuses paths a site explicitly allows (``Disallow: /`` then ``Allow: /api``)."""
+
+    disallow_all: bool
+    allow_all: bool
+    entries: list[Any]
+    default_entry: Any
+
+    @staticmethod
+    def _pattern(rule_path: str) -> re.Pattern[str]:
+        # The stdlib percent-encodes the rule's path, wildcard characters included.
+        text = rule_path.replace("%2A", "*").replace("%24", "$")
+        anchored = text.endswith("$")
+        body = ".*".join(re.escape(part) for part in text.removesuffix("$").split("*"))
+        return re.compile(body + ("$" if anchored else ""))
+
+    def can_fetch(self, useragent: str, url: str) -> bool:
+        if self.disallow_all:
+            return False
+        if self.allow_all:
+            return True
+        parts = urlsplit(url)
+        path = quote(urlunsplit(("", "", parts.path, parts.query, ""))) or "/"
+        entry = next((e for e in self.entries if e.applies_to(useragent)), self.default_entry)
+        rules = [r for r in entry.rulelines if self._pattern(r.path).match(path)] if entry else []
+        if not rules:
+            return True
+        best = max(rules, key=lambda r: (len(r.path.replace("%2A", "*")), r.allowance))
+        return bool(best.allowance)
 
 
 def resolve(host: str) -> list[str]:
@@ -92,14 +127,18 @@ class PoliteFetcher:
 
     def post_json(self, url: str, payload: Any) -> FetchResponse:
         """POST a JSON body, under exactly the same rules as ``get``."""
+        return self.post_json_with(url, payload, {})
+
+    def post_json_with(self, url: str, payload: Any, headers: dict[str, str]) -> FetchResponse:
+        """POST a JSON body with extra request headers, under the same rules as ``get``."""
         host = self._check_host(url)
         robots = self._robots_for(host)
         if not robots.can_fetch(self.settings.crawler_user_agent, url):
             raise FetchError("http_error", f"robots.txt disallows {url}")
         delay = robots.crawl_delay(self.settings.crawler_user_agent)
-        headers = {"Content-Type": "application/json", "Accept": "application/json"}
+        merged = {"Content-Type": "application/json", "Accept": "application/json", **headers}
         content = json.dumps(payload).encode()
-        return self._request(host, url, headers, float(delay) if delay else None, "POST", content)
+        return self._request(host, url, merged, float(delay) if delay else None, "POST", content)
 
     def _request(
         self,
@@ -153,7 +192,7 @@ class PoliteFetcher:
     def _robots_for(self, host: str) -> urllib.robotparser.RobotFileParser:
         cached = self._robots.get(host)
         if cached is None or time.monotonic() - cached[0] > ROBOTS_TTL_S:
-            parser = urllib.robotparser.RobotFileParser()
+            parser = Robots()
             response = self._request(host, f"https://{host}/robots.txt", {})
             if response.status >= 500:
                 # Unreachable robots.txt: be cautious and skip this round.

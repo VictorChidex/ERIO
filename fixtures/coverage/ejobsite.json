@@ -1,0 +1,92 @@
+[
+ {
+  "source_slug": "ejobsite",
+  "board_token": "https://www.beveiligingsvacature.nl/industry_rss.php",
+  "external_id": "10",
+  "payload": {
+   "title": [
+    "Objectbeveiliger (loondienst) - Mast Protect B.V."
+   ],
+   "description": [
+    "Zet jouw beveiligingsskills in bij Mast Protect B.V.! Wij bieden vaste uren, goed salaris en een sterk team in Noord-Nederland."
+   ],
+   "job_id": [
+    "10"
+   ],
+   "state": [
+    "Drenthe"
+   ],
+   "location": [
+    "Drenthe/Groningen/Friesland"
+   ],
+   "link": [
+    "https://beveiligingsvacature.nl/10/Objectbeveiliger-loondienst-Mast-Protect-B-V-"
+   ],
+   "guid": [
+    "https://beveiligingsvacature.nl/10/Objectbeveiliger-loondienst-Mast-Protect-B-V-"
+   ]
+  },
+  "fetched_at": "2026-11-06T03:01:28.939262Z",
+  "content_hash": "a5567b44c81d63aa875b897acfb3c07701548b348722e7d4a9c74c6481083651"
+ },
+ {
+  "source_slug": "ejobsite",
+  "board_token": "https://www.beveiligingsvacature.nl/industry_rss.php",
+  "external_id": "8",
+  "payload": {
+   "title": [
+    "Beveiligers gezocht omgeving Lochem"
+   ],
+   "description": [
+    "Objectbeveiliger â Lochem"
+   ],
+   "job_id": [
+    "8"
+   ],
+   "state": [
+    ""
+   ],
+   "location": [
+    "Lochem"
+   ],
+   "link": [
+    "https://beveiligingsvacature.nl/8/Beveiligers-gezocht-omgeving-Lochem"
+   ],
+   "guid": [
+    "https://beveiligingsvacature.nl/8/Beveiligers-gezocht-omgeving-Lochem"
+   ]
+  },
+  "fetched_at": "2026-11-06T03:01:28.939262Z",
+  "content_hash": "10695fe9f062e4267579624174fa1d54d306a962afcb373fe153dd15972673fa"
+ },
+ {
+  "source_slug": "ejobsite",
+  "board_token": "https://www.beveiligingsvacature.nl/industry_rss.php",
+  "external_id": "6",
+  "payload": {
+   "title": [
+    "Evenementen beveiliger"
+   ],
+   "description": [
+    "Wij zoeken beveiligers voor onze volle evenementen agenda!"
+   ],
+   "job_id": [
+    "6"
+   ],
+   "state": [
+    "Gelderland"
+   ],
+   "location": [
+    "Arnhem"
+   ],
+   "link": [
+    "https://beveiligingsvacature.nl/6/Evenementen-beveiliger"
+   ],
+   "guid": [
+    "https://beveiligingsvacature.nl/6/Evenementen-beveiliger"
+   ]
+  },
+  "fetched_at": "2026-11-06T03:01:30.457845Z",
+  "content_hash": "c25e7b53413c4fbb472c583badfa7badba81d4b21efd33c0025a9dd4973c5a11"
+ }
+]

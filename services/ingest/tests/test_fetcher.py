@@ -157,6 +157,26 @@ def test_obeys_robots_txt() -> None:
     assert [r.url.path for r in seen] == ["/robots.txt"]
 
 
+def test_the_longest_matching_robots_rule_wins() -> None:
+    robots = (200, "User-agent: *\nDisallow: /\nAllow: /v1/\n")
+    fetcher, _, _ = make_fetcher(site(robots=robots))
+    assert fetcher.get(URL).status == 200  # a specific Allow beats Disallow: /
+    fetcher, _, _ = make_fetcher(
+        site(robots=(200, "User-agent: *\nDisallow: /v1/boards\nAllow: /v1/\n"))
+    )
+    with pytest.raises(FetchError, match=r"robots\.txt disallows"):
+        fetcher.get(URL)  # the longer Disallow wins over the shorter Allow
+
+
+def test_robots_wildcards_and_end_anchors_work() -> None:
+    robots = (200, "User-agent: *\nDisallow: /\nAllow: /*/boards/\nDisallow: /*.json$\n")
+    fetcher, _, _ = make_fetcher(site(robots=robots))
+    assert fetcher.get(URL).status == 200  # /v1/boards/acme/jobs matches /*/boards/
+    blocked, _, _ = make_fetcher(site(robots=(200, "User-agent: *\nDisallow: /v1/*/jobs$\n")))
+    with pytest.raises(FetchError, match=r"robots\.txt disallows"):
+        blocked.get(URL)
+
+
 def test_skips_the_round_when_robots_txt_is_unreachable() -> None:
     fetcher, _, _ = make_fetcher(site(robots=(503, "")))
     with pytest.raises(FetchError, match=r"robots\.txt answered 503"):
@@ -189,6 +209,19 @@ def test_post_json_follows_the_same_rules() -> None:
     blocked, _, _ = make_fetcher(site(robots=(200, "User-agent: *\nDisallow: /v1/")))
     with pytest.raises(FetchError, match=r"robots.txt disallows"):
         blocked.post_json(URL, {})
+
+
+def test_post_json_with_adds_headers_and_keeps_the_rules() -> None:
+    fetcher, _, seen = make_fetcher(site(page=(200, b"{}")))
+
+    fetcher.post_json_with(URL, {"a": 1}, {"tz": "America/Chicago"})
+
+    request = seen[-1]
+    assert request.headers["tz"] == "America/Chicago"
+    assert request.headers["Content-Type"] == "application/json"
+    blocked, _, _ = make_fetcher(site(robots=(200, "User-agent: *\nDisallow: /v1/")))
+    with pytest.raises(FetchError, match=r"robots.txt disallows"):
+        blocked.post_json_with(URL, {}, {"tz": "x"})
 
 
 def test_hosts_of_registered_boards_are_allowed() -> None:

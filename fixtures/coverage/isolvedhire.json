@@ -1,0 +1,251 @@
+[
+ {
+  "source_slug": "isolvedhire",
+  "board_token": "shieldsbusinesssolutions/435",
+  "external_id": "1778828",
+  "payload": {
+   "id": 1778828,
+   "title": " 2nd Shift Cash Logistics Processor ",
+   "city": "Moorestown",
+   "subdomain": "shieldsbusinesssolutions",
+   "iso3": "USA",
+   "abbreviation": "NJ",
+   "classification": null,
+   "siteId": 435,
+   "startDateRef": "May 21, 2026",
+   "endDateRef": "Jun 22, 2031",
+   "untilFilled": 1,
+   "orgTitle": "303 - Vault",
+   "parentTitle": null,
+   "domainName": "isolvedhire.com",
+   "stateName": "New Jersey",
+   "workplaceType": "Onsite",
+   "employmentType": "Full Time",
+   "jobCategory": null,
+   "customCategory": null,
+   "payRate": null,
+   "payType": "Hourly",
+   "payTypeFrame": "per hour",
+   "payDetails": "",
+   "minSalary": "",
+   "maxSalary": "21.00",
+   "jobLocation": "Moorestown, NJ 08057, USA",
+   "streetAddress": "",
+   "chatToApplyEnabled": "0",
+   "jobUrl": "https://shieldsbusinesssolutions.isolvedhire.com/jobs/1778828",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": " 2nd Shift Cash Logistics Processor ",
+    "url": "https://shieldsbusinesssolutions.isolvedhire.com/jobs/1778828.html",
+    "description": "<p><span style=\"font-size: 12pt;\">Shields Business Solutions, Inc, an NCR Certified Reseller of NCR ATM's and Cash Services provider, is currently seeking a Cash Logistics Processor to work from 2:00pm to 10:00pm. This position works out of our Moorestown, NJ location.</span></p>\n<p><strong><span style=\"font-size: 12pt;\">Must be 21 years of age and willing to obtain a New Jersey Carry Permit once you have purchased your own firearm.</span></strong></p>\n<p style=\"line-height: normal; background: #FFFFFF;\"><strong><span style=\"font-size: 12pt;\"><span style=\"font-family: Arial, sans-serif; color: #000000;\">Job Summary</span></span></strong></p>\n<ul>\n<li style=\"line-height: normal; background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Responsible for Checking in Routes.</span></li>\n<li style=\"line-height: normal; background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Prepare next day shipments for routes.</span></li>\n<li style=\"line-height: normal; background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Maintain a clean and safe work area.</span></li>\n<li style=\"line-height: normal; background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Complete all admin and day end paperwork</span></li>\n</ul>\n<p style=\"line-height: normal; background: #FFFFFF;\"><span style=\"font-size: 12pt;\"><strong><span style=\"font-family: Arial, sans-serif; color: #000000;\">Qualifications</span></strong></span></p>\n<ul>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Good math skills</span></li>\n<li style=\"line-height: normal; background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Ability to lift 50 pounds</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Problem-solving skills</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Organization skills</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Ability to follow procedures</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Communication skills</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Documentation skills</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">General computer knowledge</span></li>\n<li style=\"background: #FFFFFF;\"><span style=\"color: #000000; font-size: 12pt;\">Must have the ability to work Monday through Friday</span></li>\n</ul>\n<p style=\"background: #FFFFFF;\"><strong><span style=\"font-size: 12pt; font-family: Arial, sans-serif; color: #000000;\">About the Company </span></strong></p>\n<p style=\"text-align: justify; background: #FFFFFF;\"><span style=\"font-size: 12pt; font-family: Arial, sans-serif; color: #000000;\">Shields Business Solutions, Inc. is an NCR Certified Reseller of NCR ATM's and Cash Services provider. We provide cash replenishment and repair to automated teller machines in Northern and Southern NJ. Our mechanical repair roots spanning five decades has instilled Shields with a heritage of extreme technical proficiency and quality customer service. Shields offers highly competitive wages and a generous benefits package including medical, dental, life insurance, a 401k plan and paid time off. We are seeking responsible individuals who are ready for a challenging position with a growing company. </span></p>\n<p style=\"text-align: justify; background: #FFFFFF;\"><span style=\"font-size: 12pt; font-family: Arial, sans-serif; color: #000000;\">Shields Business Solutions, Inc. is an Equal Opportunity Employer.</span></p>\n<p>&nbsp;</p>\n<ul><br><li>Consent to extensive background screening which includes: criminal, credit and drug test</li><br></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Shields Business Solutions",
+     "sameAs": "1778828"
+    },
+    "datePosted": "2026-05-21 00:00:00",
+    "validThrough": "2031-06-22 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": "",
+      "unitText": "HOUR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Shields Business Solutions",
+     "sameAs": "https://shieldsbusinesssolutions.isolvedhire.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Moorestown",
+      "addressRegion": "NJ",
+      "postalCode": "08057",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.97909040000000",
+      "longitude": "-74.93256830000000"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:47:02.670157Z",
+  "content_hash": "69cd08d4899a53f2e66f22308d3a9015db658a737d5b7d5929f532cdd89eda62"
+ },
+ {
+  "source_slug": "isolvedhire",
+  "board_token": "shieldsbusinesssolutions/435",
+  "external_id": "1644476",
+  "payload": {
+   "id": 1644476,
+   "title": "Armored Car Crew Leader -  ***SIGN ON BONUS $5,000***",
+   "city": "Moorestown",
+   "subdomain": "shieldsbusinesssolutions",
+   "iso3": "USA",
+   "abbreviation": "NJ",
+   "classification": null,
+   "siteId": 435,
+   "startDateRef": "Apr 17, 2026",
+   "endDateRef": "Jun 17, 2031",
+   "untilFilled": 1,
+   "orgTitle": "302 - Armored Guards",
+   "parentTitle": null,
+   "domainName": "isolvedhire.com",
+   "stateName": "New Jersey",
+   "workplaceType": "Onsite",
+   "employmentType": "Full Time",
+   "jobCategory": null,
+   "customCategory": null,
+   "payRate": "",
+   "payType": "Hourly",
+   "payTypeFrame": "per hour",
+   "payDetails": "",
+   "minSalary": "21.00",
+   "maxSalary": "",
+   "jobLocation": "Moorestown, NJ 08057, USA",
+   "streetAddress": "",
+   "chatToApplyEnabled": "0",
+   "jobUrl": "https://shieldsbusinesssolutions.isolvedhire.com/jobs/1644476",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Armored Car Crew Leader -  ***SIGN ON BONUS $5,000***",
+    "url": "https://shieldsbusinesssolutions.isolvedhire.com/jobs/1644476.html",
+    "description": "<p style=\"line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Shield's Business Solutions</span></strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\"> of <strong>Moorestown, NJ</strong> is looking to hire a <strong>full-time Armored Car Guard and Crew Leaders</strong>. Are you an outgoing person with strong leadership qualities who likes to be <strong>out and about</strong> rather than stuck in an office? Do you want to <strong>start a career</strong> with an <strong>established company</strong> in the <strong>essential armored transportation industry</strong> that has <strong>sound business practices</strong> and offers <strong>opportunities for career development</strong>? If so, please read on!</span></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">The Crew Leader Position hourly rate starts at <strong>$21.00/hour</strong> with required firearms licensing and successful completion of training. The position offers a <strong>potential for overtime</strong>. Earn between $42,000 - $50,000 your first year based on experience and possession of existing license requirements. We also offer <strong>excellent benefits</strong>, including <strong>medical, dental, vision, a 401(k) plan, paid holidays, paid time off (PTO), life insurance, free training, fully paid fees for permits, and company issued uniforms with bullet-resistant vests</strong>. If this sounds like the right opportunity for you in the essential armored transportation industry, apply today!</span></p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">ABOUT SHIELDS BUSINESS SOLUTIONS</span></strong></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Founded in 1970 as a leading service provider of adding machines, dictating machines, and typewriters, we have evolved. Today, we are the largest independent ATM, cash handling, and armored transportation company in NJ and Eastern PA. Built upon the foundation of technical services and bolstered along the way by the addition of our suite of armored car security services, we have structured our offerings to meet the wide-ranging needs of today's financial institutions. Our mission is to deliver a premier level of customer service built on trust.</span></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">We really <strong>value our employees</strong> and have worked hard to maintain a <strong>family-friendly environment where people enjoy working</strong>. Several of our employees have been with us since the early '80s and a few of them even go back to the early '70s. More than just jobs, we offer <strong>education</strong>, <strong>experiences</strong>, and <strong>opportunities</strong>. We trust our employees to solve problems for our customers and our employees trust us to provide them with the <strong>resources they need to take good care of themselves and their families</strong>.</span></p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">A DAY IN THE LIFE OF AN ARMORED CREW LEADER</span></strong></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">As an Armored Crew Leader, you are on the front line of our company. With the utmost professionalism, you take responsibility for the safe transportation of coins, currency, and other valuables via armored vehicles to and from our clients' locations. You drive safely by being attentive and carefully following your designated routes. While completing your designated routes, you stay in close communication with the dispatch team about any issues or events.</span></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Happy to get a workout in while on the job, you load and unload cargo consisting of multiple bags of coins weighing as much as 50 lbs. each. You love driving for a living and take your role in the security of the guards who go in and out of the banks seriously. With attention to detail, you keep any necessary paperwork up-to-date and accurate. You take great pride in getting our clients' valuable assets to their destinations safely and efficiently!</span></p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">QUALIFICATIONS FOR ARMORED CREW LEADER</span></strong></p>\n<ul>\n<li style=\"list-style-type: none;\">\n<ul>\n<li style=\"color: #2d2d2d; line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">21 years of age</span></li>\n<li style=\"color: #2d2d2d; line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">High school diploma or equivalent</span></li>\n<li style=\"color: #2d2d2d; line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Valid driver's license and a good driving record</span></li>\n<li style=\"color: #2d2d2d; line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Ability to complete all Department of Transportation requirements including a federal drug test&nbsp;&nbsp;</span></strong></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li style=\"color: #2d2d2d; line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Ownership of or willingness to obtain a firearm (Required for Crew Leader position)</span></strong></li>\n</ul>\n<ul>\n<li style=\"color: #2d2d2d; line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Possession of a valid firearm permit <strong>OR</strong> the ability to pass applicable firearm licensing requirements (<strong>NJ OR PA Carry Permit Required for Crew Leader Position</strong>)</span></li>\n<li style=\"color: #2d2d2d; line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Ability to obtain a PA Act 235F card (<strong>Required for crew leader position</strong>)</span></li>\n<li style=\"color: #2d2d2d; line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Ability to lift at least 50 pounds</span></li>\n</ul>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Are you mature, responsible, and dependable? Do you have a positive and cooperative attitude? Are you honest and trustworthy? Can you exercise sound judgment during tense situations? Do you take personal pride in presenting a professional appearance? If so, you might just be perfect for this entry-level driving position!</span></p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">WORK SCHEDULES</span></strong></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">These full-time armored transportation positions are 1st shift. Routes start from 6:00 AM 9:00AM. Monday through Saturday. <strong>You must be willing to work overtime as needed.</strong> There is not a hard stop for the day. The day is over when all scheduled stops are complete. Shields Drivers and Crew Leaders are scheduled four (4) or five (5) days per work week Monday through Saturday. Work schedules are posted the week prior. </span></p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">READY TO JOIN OUR TEAM?</span></strong></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">If you feel that you would be right fit for you in the essential armored transportation industry, please fill out our initial <strong>3-minute, mobile-friendly application</strong>. We look forward to meeting you!</span></p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Shields Business Solutions, Inc. is an Equal Opportunity Employer</span></p>\n<ul><br><li><span style=\"font-size: 10pt; font-family: 'Times New Roman', serif; color: #000000;\">Consent to extensive background screening which includes: criminal, credit, driving and drug test</span></li><br></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Shields Business Solutions",
+     "sameAs": "1644476"
+    },
+    "datePosted": "2026-04-17 00:00:00",
+    "validThrough": "2031-06-17 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": "",
+      "unitText": "HOUR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Shields Business Solutions",
+     "sameAs": "https://shieldsbusinesssolutions.isolvedhire.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Moorestown",
+      "addressRegion": "NJ",
+      "postalCode": "08057",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.97909040000000",
+      "longitude": "-74.93256830000000"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:47:02.670157Z",
+  "content_hash": "be550a22d315fae0b0a5de59da446b6c84db1e1945cd34a0122ef5917bc4344d"
+ },
+ {
+  "source_slug": "isolvedhire",
+  "board_token": "shieldsbusinesssolutions/435",
+  "external_id": "1718787",
+  "payload": {
+   "id": 1718787,
+   "title": "Armored Truck Driver - ***SIGN ON BONUS $5,000***",
+   "city": "Moorestown",
+   "subdomain": "shieldsbusinesssolutions",
+   "iso3": "USA",
+   "abbreviation": "NJ",
+   "classification": null,
+   "siteId": 435,
+   "startDateRef": "May 18, 2026",
+   "endDateRef": "Jun 30, 2031",
+   "untilFilled": 1,
+   "orgTitle": "302 - Armored Guards",
+   "parentTitle": null,
+   "domainName": "isolvedhire.com",
+   "stateName": "New Jersey",
+   "workplaceType": "Onsite",
+   "employmentType": "Full Time",
+   "jobCategory": null,
+   "customCategory": null,
+   "payRate": null,
+   "payType": "Hourly",
+   "payTypeFrame": "per hour",
+   "payDetails": "Pay rate is commensurate with experience",
+   "minSalary": "19.00",
+   "maxSalary": "",
+   "jobLocation": "Moorestown, NJ 08057, USA",
+   "streetAddress": "",
+   "chatToApplyEnabled": "0",
+   "jobUrl": "https://shieldsbusinesssolutions.isolvedhire.com/jobs/1718787",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Armored Truck Driver - ***SIGN ON BONUS $5,000***",
+    "url": "https://shieldsbusinesssolutions.isolvedhire.com/jobs/1718787.html",
+    "description": "<p><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Shield's Business Solutions</span></strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\"> of <strong>Moorestown, NJ</strong> is looking to hire experienced <strong>full-time Armored Truck Drivers</strong>. Are you an outgoing person with strong leadership qualities who likes to be <strong>out and about</strong> rather than stuck in an office? Do you want to <strong>start a career</strong> with an <strong>established company</strong> in the <strong>essential armored transportation industry</strong> that has <strong>sound business practices</strong> and offers <strong>opportunities for career development</strong>? If so, please read on!</span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">This entry-level Armored Truck Driver position starts at <strong>$19.00/hour</strong>. Earn between $40,000 - $47,000 your first year based on <span style=\"text-decoration: underline;\"><strong>experience</strong></span> and<span style=\"text-decoration: underline;\"><strong> possession of existing license requirements</strong></span>. We also offer <strong>excellent benefits</strong>, including <strong>medical, dental, vision, a 401(k) plan, paid holidays, paid time off (PTO), life insurance, free training, fully paid fees for permits, and company issued uniforms with bullet-resistant vests</strong>. If this sounds like the right opportunity for you in the essential armored transportation industry, apply today!</span></p>\n<p><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">ABOUT SHIELDS BUSINESS SOLUTIONS</span></strong></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Founded in 1970 as a leading service provider of adding machines, dictating machines, and typewriters, we have evolved. Today, we are the largest independent ATM, cash handling, and armored transportation company in NJ and Eastern PA. Built upon the foundation of technical services and bolstered along the way by the addition of our suite of armored car security services, we have structured our offerings to meet the wide-ranging needs of today's financial institutions. Our mission is to deliver a premier level of customer service built on trust.</span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">We really <strong>value our employees</strong> and have worked hard to maintain a <strong>family-friendly environment where people enjoy working</strong>. Several of our employees have been with us since the early '80s and a few of them even go back to the early '70s. More than just jobs, we offer <strong>education</strong>, <strong>experiences</strong>, and <strong>opportunities</strong>. We trust our employees to solve problems for our customers and our employees trust us to provide them with the <strong>resources they need to take good care of themselves and their families</strong>.</span></p>\n<p><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">A DAY IN THE LIFE OF AN ARMORED TRUCK DRIVER</span></strong></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">As an Armored Truck Driver, </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- you are on the front line of our company. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- With the utmost professionalism, you take responsibility for the safe transportation of coins, currency, and other valuables via armored vehicles to and from our clients' locations. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- You drive safely by being attentive and carefully following your designated routes. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- While completing your designated routes, you stay in close communication with the dispatch team about any issues or events.</span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- Happy to get a workout in while on the job, you load and unload cargo consisting of multiple bags of coins weighing as much as 50 lbs. each. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- You love driving for a living and take your role in the security of the guards who go in and out of the banks seriously.</span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- With attention to detail, you keep any necessary paperwork up-to-date and accurate. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- You take great pride in getting our clients' valuable assets to their destinations safely and efficiently!</span></p>\n<p><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">QUALIFICATIONS FOR ARMORED CAR DRIVER</span></strong></p>\n<ul>\n<li style=\"list-style-type: none;\">\n<ul>\n<li style=\"color: #2d2d2d;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">21 years of age</span></li>\n<li style=\"color: #2d2d2d;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">High school diploma or equivalent</span></li>\n<li style=\"color: #2d2d2d;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Valid driver's license and a good driving record</span></li>\n<li style=\"color: #2d2d2d;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Ability to complete all Department of Transportation requirements, including federal drug testing</span></strong></li>\n<li style=\"color: #2d2d2d;\"><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Minimum of 1 year -3 years of driving a work vehicle (i.e. tow trucks, armored trucks, etc)</span></strong></li>\n<li style=\"color: #2d2d2d;\"><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif;\">Ability to lift at least 50 pounds</span></li>\n</ul>\n</li>\n</ul>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">Are you mature, responsible, and dependable? Do you have a positive and cooperative attitude? Are you honest and trustworthy? Can you exercise sound judgment during tense situations? Do you take personal pride in presenting a professional appearance? If so, you might just be perfect for this entry-level driving position!</span></p>\n<p><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">WORK SCHEDULES</span></strong></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- These full-time armored transportation positions are 1st shift. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- Routes start from 6:00 AM - 9:00AM; Monday through Saturday. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\"><strong>- You must be willing to work overtime as needed.</strong> </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- There is not a hard stop for the day, the day is over when all scheduled stops are complete. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- Shields Drivers are scheduled four (4) or five (5) days per work week Monday through Saturday. </span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">- Work schedules are posted the week prior. </span></p>\n<p><strong><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">READY TO JOIN OUR TEAM?</span></strong></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\">If you feel that you would be right fit for you in the essential armored transportation industry, please fill out our initial <strong>3-minute, mobile-friendly application</strong>. We look forward to meeting you!</span></p>\n<p><span style=\"font-size: 12pt; font-family: 'Times New Roman', serif; color: #2d2d2d;\"><span style=\"font-family: 'Times New Roman', serif; color: #000000;\">Shields Business Solutions, Inc. is an Equal Opportunity</span></span></p>\n<ul><br><li><span style=\"font-size: 10pt; font-family: 'Times New Roman', serif; color: #000000;\">Consent to extensive background screening which includes: criminal, credit, driving and drug test</span></li><br></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Shields Business Solutions",
+     "sameAs": "1718787"
+    },
+    "datePosted": "2026-05-18 00:00:00",
+    "validThrough": "2031-06-30 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": "",
+      "unitText": "HOUR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Shields Business Solutions",
+     "sameAs": "https://shieldsbusinesssolutions.isolvedhire.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Moorestown",
+      "addressRegion": "NJ",
+      "postalCode": "08057",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.97909040000000",
+      "longitude": "-74.93256830000000"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:47:02.670157Z",
+  "content_hash": "6e47285659ec5d688c90687288e77701b7a4e4cf063cf234d9b17e66c116a1ba"
+ }
+]

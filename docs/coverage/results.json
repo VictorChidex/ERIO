@@ -1,4 +1,77 @@
 {
+ "adp": {
+  "boards": [
+   {
+    "board": "a40f480a-47ae-461b-bf11-ceedb843d226",
+    "complete": true,
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "Research Scientist",
+     "Government Property Manager",
+     "Electronics Manufacturing Apprentice"
+    ]
+   },
+   {
+    "board": "a4c08bd3-eedf-419a-9fb6-5d2ac8a3bafa",
+    "complete": true,
+    "error": "",
+    "jobs": 19,
+    "ok": true,
+    "parsed": 19,
+    "sample_titles": [
+     "2nd Shift Welders",
+     "Operations Support Coordinator",
+     "Class A Driver"
+    ]
+   },
+   {
+    "board": "2de708e1-c847-43b1-bf0d-0bad30aca014",
+    "complete": true,
+    "error": "",
+    "jobs": 1,
+    "ok": true,
+    "parsed": 1,
+    "sample_titles": [
+     "Researcher (Options)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:46:25+00:00"
+ },
+ "applicantpro": {
+  "boards": [
+   {
+    "board": "northwesternenergy/3465",
+    "complete": true,
+    "error": "",
+    "jobs": 20,
+    "ok": true,
+    "parsed": 20,
+    "sample_titles": [
+     "Biologist",
+     "Construction Engineer",
+     "Construction Engineer"
+    ]
+   },
+   {
+    "board": "agtexas/5091",
+    "complete": true,
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "Customer Success Specialist",
+     "Customer Success Specialist",
+     "Project Manager"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:46:42+00:00"
+ },
  "ashby": {
   "boards": [
    {
@@ -28,6 +101,37 @@
   ],
   "checked_at": "2026-11-05T21:30:06+00:00"
  },
+ "avature": {
+  "boards": [
+   {
+    "board": "https://bloomberg.avature.net/careers/sitemap.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Bloomberg Intelligence Consumer Senior Research Analyst: Beverages",
+     "Containerboard Market Research Sales Consultant - Remote (Contract)",
+     "Product Manager – Client Compliance (KYC &amp; Screening)"
+    ]
+   },
+   {
+    "board": "https://jobs.ea.com/en_US/careers/sitemap.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Head of Product Experience, FC",
+     "Lead Product Manager",
+     "Senior AI Solutions Lead (Software Quality)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:56:01+00:00"
+ },
  "bamboohr": {
   "boards": [
    {
@@ -55,6 +159,50 @@
    }
   ],
   "checked_at": "2026-11-06T00:18:26+00:00"
+ },
+ "brassring": {
+  "boards": [
+   {
+    "board": "26336/5014",
+    "complete": false,
+    "error": "",
+    "jobs": 250,
+    "ok": true,
+    "parsed": 250,
+    "sample_titles": [
+     "Customer Service Associate",
+     "Beauty and Wellness Consultant",
+     "Customer Service Associate - Temporary"
+    ]
+   },
+   {
+    "board": "25526/5032",
+    "complete": false,
+    "error": "",
+    "jobs": 246,
+    "ok": true,
+    "parsed": 246,
+    "sample_titles": [
+     "Asset Protection Specialist",
+     "Cashier",
+     "Customer Service/Sales"
+    ]
+   },
+   {
+    "board": "25332/5414",
+    "complete": true,
+    "error": "",
+    "jobs": 236,
+    "ok": true,
+    "parsed": 236,
+    "sample_titles": [
+     "English Teacher",
+     "Coastal Management Educator",
+     "Agriculture and Nutrition Educator"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:55:46+00:00"
  },
  "breezy": {
   "boards": [
@@ -134,6 +282,112 @@
   ],
   "checked_at": "2026-11-06T00:41:45+00:00"
  },
+ "comeet": {
+  "boards": [
+   {
+    "board": "coralogix/06.004",
+    "complete": true,
+    "error": "",
+    "jobs": 58,
+    "ok": true,
+    "parsed": 58,
+    "sample_titles": [
+     "Backend Engineer",
+     "Backend Engineer",
+     "Backend Engineer - Alerting"
+    ]
+   },
+   {
+    "board": "vastdata/43.001",
+    "complete": true,
+    "error": "",
+    "jobs": 264,
+    "ok": true,
+    "parsed": 264,
+    "sample_titles": [
+     "Account Executive - Austin, TX",
+     "Account Executive - Federal",
+     "Account Executive - Federal"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:47:09+00:00"
+ },
+ "csod": {
+  "boards": [
+   {
+    "board": "kohler/16",
+    "complete": true,
+    "error": "",
+    "jobs": 273,
+    "ok": true,
+    "parsed": 273,
+    "sample_titles": [
+     "Host, Immigrant Room",
+     "Spa Attendant, Lodge Kohler",
+     "Massage Therapist Casual Part-Time, Lodge Kohler"
+    ]
+   },
+   {
+    "board": "gmv/4",
+    "complete": true,
+    "error": "",
+    "jobs": 208,
+    "ok": true,
+    "parsed": 208,
+    "sample_titles": [
+     "FPGA and SoC Engineer",
+     "Senior GNSS Engineer",
+     "Ground Segment Systems Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:48:18+00:00"
+ },
+ "dayforce": {
+  "boards": [
+   {
+    "board": "prometric/CANDIDATEPORTAL",
+    "complete": true,
+    "error": "",
+    "jobs": 112,
+    "ok": true,
+    "parsed": 112,
+    "sample_titles": [
+     "Seasonal Test Center Administrator (PT)",
+     "Communications Manager",
+     "Test Center Administrator (PT)"
+    ]
+   },
+   {
+    "board": "woodmenlife/candidateportal",
+    "complete": true,
+    "error": "",
+    "jobs": 31,
+    "ok": true,
+    "parsed": 31,
+    "sample_titles": [
+     "Temporary CRM Business Lead",
+     "2027 Summer AI Engineer Intern",
+     "2027 Summer Data Analytics Intern"
+    ]
+   },
+   {
+    "board": "copart/CANDIDATEPORTAL",
+    "complete": true,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Hotshot Driver - Class A required - 069",
+     "Hotshot Driver - Class A required - 903",
+     "Hotshot Driver - Class A required - 339"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T03:06:46+00:00"
+ },
  "deel": {
   "boards": [
    {
@@ -164,6 +418,112 @@
    }
   ],
   "checked_at": "2026-11-06T00:34:49+00:00"
+ },
+ "eightfold": {
+  "boards": [
+   {
+    "board": "paypal/paypal.com",
+    "complete": false,
+    "error": "",
+    "jobs": 47,
+    "ok": true,
+    "parsed": 47,
+    "sample_titles": [
+     "Sr Manager, Revenue Operations",
+     "Account Representative, SMB Outbound Sales",
+     "Account Representative, SMB Outbound Sales"
+    ]
+   },
+   {
+    "board": "vodafone/vodafone.com",
+    "complete": false,
+    "error": "",
+    "jobs": 50,
+    "ok": true,
+    "parsed": 50,
+    "sample_titles": [
+     "Data ​Products & Insights Lead",
+     "Lead Data Engineer",
+     "Lead Data Scientist"
+    ]
+   },
+   {
+    "board": "qualcomm/qualcomm.com",
+    "complete": false,
+    "error": "",
+    "jobs": 50,
+    "ok": true,
+    "parsed": 50,
+    "sample_titles": [
+     "Staff Wireless Systems Engineer",
+     "Software Engineer, Machine Learning",
+     "Lead engineer Pre-Silicon System Performance"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:54:49+00:00"
+ },
+ "ejobsite": {
+  "boards": [
+   {
+    "board": "https://eyetasticjobs.com/industry_rss.php",
+    "complete": true,
+    "error": "",
+    "jobs": 72,
+    "ok": true,
+    "parsed": 72,
+    "sample_titles": [
+     "Optical Manager - St. Johns Town Center, FL",
+     "Ophthalmologist - Westminster, MD",
+     "Ophthalmologist - Johnstown, PA"
+    ]
+   },
+   {
+    "board": "https://www.beveiligingsvacature.nl/industry_rss.php",
+    "complete": true,
+    "error": "",
+    "jobs": 3,
+    "ok": true,
+    "parsed": 3,
+    "sample_titles": [
+     "Objectbeveiliger (loondienst) - Mast Protect B.V.",
+     "Beveiligers gezocht omgeving Lochem",
+     "Evenementen beveiliger"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T03:01:33+00:00"
+ },
+ "exenzo": {
+  "boards": [
+   {
+    "board": "https://greenjobs.api.exenzo.com/1",
+    "complete": true,
+    "error": "",
+    "jobs": 263,
+    "ok": true,
+    "parsed": 263,
+    "sample_titles": [
+     "Projectmanager Energietransitie Noord-Nederland",
+     "Head Finance & Legal (lid directie)",
+     "Projectmanager Energietransitie"
+    ]
+   },
+   {
+    "board": "https://api.vacatures.co/1",
+    "complete": false,
+    "error": "",
+    "jobs": 500,
+    "ok": true,
+    "parsed": 500,
+    "sample_titles": [
+     "Allround Timmerman gezocht in Utrecht",
+     "Houtrotsaneerder Bergen op Zoom",
+     "Glaszetter Rotterdam"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:56:25+00:00"
  },
  "firststage": {
   "boards": [
@@ -462,6 +822,37 @@
   ],
   "checked_at": "2026-11-06T00:35:19+00:00"
  },
+ "isolvedhire": {
+  "boards": [
+   {
+    "board": "isolved/424",
+    "complete": true,
+    "error": "",
+    "jobs": 36,
+    "ok": true,
+    "parsed": 36,
+    "sample_titles": [
+     "Associate Product Manager",
+     "ATS Implementation Specialist I",
+     "Benefit Services Sales Executive"
+    ]
+   },
+   {
+    "board": "shieldsbusinesssolutions/435",
+    "complete": true,
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "2nd Shift Cash Logistics Processor",
+     "Armored Car Crew Leader -  ***SIGN ON BONUS $5,000***",
+     "Armored Truck Driver - ***SIGN ON BONUS $5,000***"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:47:05+00:00"
+ },
  "jazzhr": {
   "boards": [
    {
@@ -596,6 +987,37 @@
   ],
   "checked_at": "2026-11-06T00:41:25+00:00"
  },
+ "jobboardhq": {
+  "boards": [
+   {
+    "board": "https://www.jobsindoorcounty.com/search",
+    "complete": false,
+    "error": "",
+    "jobs": 20,
+    "ok": true,
+    "parsed": 20,
+    "sample_titles": [
+     "Mi Casa Cleaning Associates",
+     "Granite Fabricator / Polisher & Installer",
+     "Dishwasher"
+    ]
+   },
+   {
+    "board": "https://www.greaterroccareers.com/search",
+    "complete": false,
+    "error": "",
+    "jobs": 20,
+    "ok": true,
+    "parsed": 20,
+    "sample_titles": [
+     "Applications Engineer - Thread Rolling Solutions Team",
+     "Sales & Customer Support Specialist",
+     "Qualitrol Fall Hiring Event - November 11"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:51:37+00:00"
+ },
  "jobboardly": {
   "boards": [
    {
@@ -703,6 +1125,37 @@
    }
   ],
   "checked_at": "2026-11-06T00:41:38+00:00"
+ },
+ "jobvite": {
+  "boards": [
+   {
+    "board": "nutanix",
+    "complete": true,
+    "error": "",
+    "jobs": 134,
+    "ok": true,
+    "parsed": 134,
+    "sample_titles": [
+     "Senior Systems Engineer",
+     "Systems Sales Engineer",
+     "Senior Systems Engineer - Federal"
+    ]
+   },
+   {
+    "board": "egnyte",
+    "complete": true,
+    "error": "",
+    "jobs": 24,
+    "ok": true,
+    "parsed": 24,
+    "sample_titles": [
+     "Customer Support Specialist, AR & Billing",
+     "FP&A Manager – GTM",
+     "Senior G/L Accountant"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:49:39+00:00"
  },
  "join": {
   "boards": [
@@ -900,6 +1353,37 @@
   ],
   "checked_at": "2026-11-06T00:41:56+00:00"
  },
+ "oracle_recruiting": {
+  "boards": [
+   {
+    "board": "eeho.fa.us2.oraclecloud.com/CX_45001",
+    "complete": false,
+    "error": "",
+    "jobs": 250,
+    "ok": true,
+    "parsed": 250,
+    "sample_titles": [
+     "Site Reliability Developer 4",
+     "Data Center Technician 2",
+     "Data Center Technician 2"
+    ]
+   },
+   {
+    "board": "jpmc.fa.oraclecloud.com/CX_1001",
+    "complete": false,
+    "error": "",
+    "jobs": 250,
+    "ok": true,
+    "parsed": 250,
+    "sample_titles": [
+     "Hiring Event - Part Time Associate Banker Santa Clarita  West (30 Hours)",
+     "Liquidity Controller Analyst",
+     "Director of Software Engineering — Securities Lending Technology"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:55:06+00:00"
+ },
  "pageup": {
   "boards": [
    {
@@ -960,6 +1444,37 @@
   ],
   "checked_at": "2026-11-06T00:35:43+00:00"
  },
+ "paylocity": {
+  "boards": [
+   {
+    "board": "ff517f63-c379-48fb-acc8-8d66e8d5b076",
+    "complete": true,
+    "error": "",
+    "jobs": 57,
+    "ok": true,
+    "parsed": 57,
+    "sample_titles": [
+     "Parts Warehouse Attendant - NIGHT SHIFT",
+     "Parts Warehouse Attendant",
+     "General Utility"
+    ]
+   },
+   {
+    "board": "c47e27a2-5dd2-408a-9ef0-c799cbdd5796",
+    "complete": true,
+    "error": "",
+    "jobs": 34,
+    "ok": true,
+    "parsed": 34,
+    "sample_titles": [
+     "1st Shift Grader Operator 1 [1817]",
+     "3rd Shift Sanitation 1 [1449]",
+     "1st Shift PT Tray Washer  [1535]"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:47:56+00:00"
+ },
  "personio": {
   "boards": [
    {
@@ -987,6 +1502,37 @@
    }
   ],
   "checked_at": "2026-11-05T21:30:28+00:00"
+ },
+ "phenom": {
+  "boards": [
+   {
+    "board": "https://careers.tranetechnologies.com/global/en",
+    "complete": false,
+    "error": "",
+    "jobs": 250,
+    "ok": true,
+    "parsed": 250,
+    "sample_titles": [
+     "Associate Account Manager - Controls",
+     "Project Manager - Equipment",
+     "2027 Technical Sales Intern - Services"
+    ]
+   },
+   {
+    "board": "https://jobs.thermofisher.com/global/en",
+    "complete": false,
+    "error": "",
+    "jobs": 250,
+    "ok": true,
+    "parsed": 250,
+    "sample_titles": [
+     "DO NOT APPLY - TEST REQ - CRG - Medical Monitor Sr Manager - St. Louis US",
+     "DO NOT APPLY - TEST REQ - CRG - Manager, Clinical Lab Scientist - Athlon Ireland",
+     "DO NOT APPLY - TEST REQ - CRG - Trial management Manager - St. Louis US"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:55:34+00:00"
  },
  "pinpoint": {
   "boards": [
@@ -1206,6 +1752,136 @@
   ],
   "checked_at": "2026-11-05T21:31:01+00:00"
  },
+ "successfactors": {
+  "boards": [
+   {
+    "board": "https://jobs.ball.com",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Palletizer Driver",
+     "Operador(a) de Produção I - Afirmativa para Pessoas com Deficiência (Águas Claras, Viamão/RS)",
+     "Ajustador(a) Mecânico (Frutal/MG)"
+    ]
+   },
+   {
+    "board": "https://jobs.zf.com",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "operátor na obrobně- Rychnov",
+     "Supply Chain Supv-Warehs/Inv",
+     "Senior Executive"
+    ]
+   },
+   {
+    "board": "https://jobs.mcdonalds.com",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Manager, Project Management",
+     "McDonald's Progressive Young Farmer Programme",
+     "Specialist, Real Estate"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:56:12+00:00"
+ },
+ "talentreef": {
+  "boards": [
+   {
+    "board": "14637",
+    "complete": true,
+    "error": "",
+    "jobs": 1292,
+    "ok": true,
+    "parsed": 1292,
+    "sample_titles": [
+     "Material Handler",
+     "Forklift Operator",
+     "Forklift Operator"
+    ]
+   },
+   {
+    "board": "17170",
+    "complete": true,
+    "error": "",
+    "jobs": 180,
+    "ok": true,
+    "parsed": 180,
+    "sample_titles": [
+     "Restaurant General Manager",
+     "Restaurant General Manager",
+     "Restaurant General Manager"
+    ]
+   },
+   {
+    "board": "22144",
+    "complete": true,
+    "error": "",
+    "jobs": 207,
+    "ok": true,
+    "parsed": 207,
+    "sample_titles": [
+     "Concrete Finisher",
+     "Pipefitter",
+     "Heavy Equipment Operator- Motor Grader- Fine Grade"
+    ]
+   },
+   {
+    "board": "21207",
+    "complete": true,
+    "error": "",
+    "jobs": 1,
+    "ok": true,
+    "parsed": 1,
+    "sample_titles": [
+     "Special Caregiver"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T03:07:05+00:00"
+ },
+ "taleo": {
+  "boards": [
+   {
+    "board": "massanf/ex/101430233",
+    "complete": false,
+    "error": "",
+    "jobs": 125,
+    "ok": true,
+    "parsed": 125,
+    "sample_titles": [
+     "Learning and Development Clerk IV",
+     "Supervising Attorney - PDD Boston Central & Boston Metro",
+     "Supervising Administrative Assistant - Training Department"
+    ]
+   },
+   {
+    "board": "tgh/ex/101430233",
+    "complete": false,
+    "error": "",
+    "jobs": 125,
+    "ok": true,
+    "parsed": 125,
+    "sample_titles": [
+     "Advanced Practice Provider - Advanced Lung Disease- Pulmonary HTN",
+     "Advanced Practice Provider - Advanced Lung Disease- Pulmonary HTN",
+     "Advanced Practice Provider - Advanced Lung Disease- COPD"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:55:17+00:00"
+ },
  "teamtailor": {
   "boards": [
    {
@@ -1263,6 +1939,111 @@
    }
   ],
   "checked_at": "2026-11-05T21:31:04+00:00"
+ },
+ "trinet": {
+  "boards": [
+   {
+    "board": "31905-adaptation",
+    "complete": true,
+    "error": "",
+    "jobs": 7,
+    "ok": true,
+    "parsed": 7,
+    "sample_titles": [
+     "Senior Business Analyst – Transportation and Tolling Industry (Remote)",
+     "Product Support Analyst - Overnight Shift - Maintenance Monitoring Center - Lower Manhattan, NY",
+     "Systems Specialist"
+    ]
+   },
+   {
+    "board": "203100-precor-incorporated",
+    "complete": true,
+    "error": "",
+    "jobs": 17,
+    "ok": true,
+    "parsed": 17,
+    "sample_titles": [
+     "Sr. Warehouse Associate",
+     "Supply Planner",
+     "Electrical Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:48:10+00:00"
+ },
+ "ultipro": {
+  "boards": [
+   {
+    "board": "COM1019CTDI1/ab728dae-48cf-43af-8869-6b591e5d9495",
+    "complete": false,
+    "error": "",
+    "jobs": 20,
+    "ok": true,
+    "parsed": 20,
+    "sample_titles": [
+     "Sr HR Generalist",
+     "Revenue Manager",
+     "Production Scheduler"
+    ]
+   },
+   {
+    "board": "recruiting2.ultipro.com/ARU1000ARUP/62cc791d-612e-42e6-909f-0de27efe2038",
+    "complete": false,
+    "error": "",
+    "jobs": 2,
+    "ok": true,
+    "parsed": 2,
+    "sample_titles": [
+     "Vulnerability Analyst IV",
+     "Account Executive - Eastern Region"
+    ]
+   },
+   {
+    "board": "recruiting.ultipro.com/APP1010ARAI/07442cec-d18e-4589-ab15-8342edc29af7",
+    "complete": false,
+    "error": "",
+    "jobs": 7,
+    "ok": true,
+    "parsed": 7,
+    "sample_titles": [
+     "Senior Technical Project Manager",
+     "Mechanical Engineer",
+     "Staff Missile Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:54:25+00:00"
+ },
+ "werecruit": {
+  "boards": [
+   {
+    "board": "happy-job",
+    "complete": true,
+    "error": "",
+    "jobs": 219,
+    "ok": true,
+    "parsed": 219,
+    "sample_titles": [
+     "Chef D'Équipe Paysagiste en Entretien F/H",
+     "Ouvrier Paysagiste Entretien / Création F/H",
+     "Carrossier Peintre Automobile F/H"
+    ]
+   },
+   {
+    "board": "ge16-emploi",
+    "complete": true,
+    "error": "",
+    "jobs": 12,
+    "ok": true,
+    "parsed": 12,
+    "sample_titles": [
+     "Technicien de maintenance industrielle F/H",
+     "Programmeur CFAO / Usinage CN F/H",
+     "Opérateur-régleur en usinage F/H"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:51:06+00:00"
  },
  "workable": {
   "boards": [
@@ -1364,5 +2145,61 @@
    }
   ],
   "checked_at": "2026-11-06T00:19:34+00:00"
+ },
+ "zohorecruit": {
+  "boards": [
+   {
+    "board": "unrl",
+    "complete": true,
+    "error": "",
+    "jobs": 12,
+    "ok": true,
+    "parsed": 12,
+    "sample_titles": [
+     "Sales Operations Manager",
+     "Customer Service and Retail Manager",
+     "Digital Marketing Manager"
+    ]
+   },
+   {
+    "board": "shortlist",
+    "complete": true,
+    "error": "",
+    "jobs": 23,
+    "ok": true,
+    "parsed": 23,
+    "sample_titles": [
+     "Finance Associate",
+     "People Associate",
+     "Site Performance & Energy Associate"
+    ]
+   },
+   {
+    "board": "coorb",
+    "complete": true,
+    "error": "",
+    "jobs": 48,
+    "ok": true,
+    "parsed": 48,
+    "sample_titles": [
+     "Senior QA Engineer",
+     "Senior IOS Engineer",
+     "Android Enigneer"
+    ]
+   },
+   {
+    "board": "https://careers.zohocorp.com",
+    "complete": true,
+    "error": "",
+    "jobs": 2,
+    "ok": true,
+    "parsed": 2,
+    "sample_titles": [
+     "Technical Support Engineers",
+     "Sales Executives"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-06T02:51:15+00:00"
  }
 }

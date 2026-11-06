@@ -5,7 +5,11 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "a40f480a-47ae-461b-bf11-ceedb843d226",
+   "a4c08bd3-eedf-419a-9fb6-5d2ac8a3bafa",
+   "2de708e1-c847-43b1-bf0d-0bad30aca014"
+  ]
  },
  {
   "slug": "applicantpro",
@@ -13,7 +17,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "northwesternenergy/3465",
+   "agtexas/5091"
+  ]
  },
  {
   "slug": "ashby",
@@ -32,7 +39,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "https://bloomberg.avature.net/careers/sitemap.xml",
+   "https://jobs.ea.com/en_US/careers/sitemap.xml"
+  ]
  },
  {
   "slug": "bamboohr",
@@ -51,7 +61,11 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "26336/5014",
+   "25526/5032",
+   "25332/5414"
+  ]
  },
  {
   "slug": "breezy",
@@ -81,23 +95,33 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "coralogix/06.004",
+   "vastdata/43.001"
+  ]
  },
  {
   "slug": "csod",
   "name": "CSOD",
   "kind": "ats",
   "blocked": "",
-  "notes": "",
-  "examples": []
+  "notes": "The anonymous visitor token comes from the career page itself and is sent only to the platform's own API; no login.",
+  "examples": [
+   "kohler/16",
+   "gmv/4"
+  ]
  },
  {
   "slug": "dayforce",
   "name": "Dayforce",
   "kind": "ats",
   "blocked": "",
-  "notes": "",
-  "examples": []
+  "notes": "Reads the anonymous CSRF token the site issues to every visitor; no challenge is served. Descriptions from the list are cut short on long postings.",
+  "examples": [
+   "prometric/CANDIDATEPORTAL",
+   "woodmenlife/candidateportal",
+   "copart/CANDIDATEPORTAL"
+  ]
  },
  {
   "slug": "deel",
@@ -124,7 +148,11 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "paypal/paypal.com",
+   "vodafone/vodafone.com",
+   "qualcomm/qualcomm.com"
+  ]
  },
  {
   "slug": "firststage",
@@ -251,7 +279,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "isolved/424",
+   "shieldsbusinesssolutions/435"
+  ]
  },
  {
   "slug": "jazzhr",
@@ -271,7 +302,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "nutanix",
+   "egnyte"
+  ]
  },
  {
   "slug": "join",
@@ -323,7 +357,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "eeho.fa.us2.oraclecloud.com/CX_45001",
+   "jpmc.fa.oraclecloud.com/CX_1001"
+  ]
  },
  {
   "slug": "pageup",
@@ -351,8 +388,8 @@
   "slug": "paycom",
   "name": "Paycom",
   "kind": "ats",
-  "blocked": "",
-  "notes": "job lists load with a session token the career page issues each visitor; using it needs the owner's decision",
+  "blocked": "robots.txt disallows the search endpoint that lists jobs (only single known postings are allowed) and there is no sitemap, so jobs cannot be enumerated without ignoring it.",
+  "notes": "",
   "examples": []
  },
  {
@@ -369,7 +406,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "ff517f63-c379-48fb-acc8-8d66e8d5b076",
+   "c47e27a2-5dd2-408a-9ef0-c799cbdd5796"
+  ]
  },
  {
   "slug": "personio",
@@ -388,7 +428,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "https://careers.tranetechnologies.com/global/en",
+   "https://jobs.thermofisher.com/global/en"
+  ]
  },
  {
   "slug": "pinpoint",
@@ -462,7 +505,11 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "https://jobs.ball.com",
+   "https://jobs.zf.com",
+   "https://jobs.mcdonalds.com"
+  ]
  },
  {
   "slug": "smartrecruiters",
@@ -479,8 +526,13 @@
   "name": "talentReef",
   "kind": "ats",
   "blocked": "",
-  "notes": "jobs come only from an internal-looking search host; whether it is meant for public use needs the owner's decision",
-  "examples": []
+  "notes": "Reads the public search host that talentReef's own career page calls for every visitor (its name says internal, but it is the production address, answers anonymous requests and has no robots.txt rules).",
+  "examples": [
+   "14637",
+   "17170",
+   "22144",
+   "21207"
+  ]
  },
  {
   "slug": "taleo",
@@ -488,7 +540,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "massanf/ex/101430233",
+   "tgh/ex/101430233"
+  ]
  },
  {
   "slug": "teamtailor",
@@ -517,16 +572,23 @@
   "name": "TriNet",
   "kind": "ats",
   "blocked": "",
-  "notes": "",
-  "examples": []
+  "notes": "Robots.txt signals ai-train=no: ERIO indexes these jobs for search only and never trains a model on them.",
+  "examples": [
+   "31905-adaptation",
+   "203100-precor-incorporated"
+  ]
  },
  {
   "slug": "ultipro",
   "name": "UltiPro",
   "kind": "ats",
   "blocked": "",
-  "notes": "",
-  "examples": []
+  "notes": "robots.txt disallows the search API, so only the featured jobs on each board page (2 to 20) are read.",
+  "examples": [
+   "COM1019CTDI1/ab728dae-48cf-43af-8869-6b591e5d9495",
+   "recruiting2.ultipro.com/ARU1000ARUP/62cc791d-612e-42e6-909f-0de27efe2038",
+   "recruiting.ultipro.com/APP1010ARAI/07442cec-d18e-4589-ab15-8342edc29af7"
+  ]
  },
  {
   "slug": "werecruit",
@@ -534,7 +596,10 @@
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "happy-job",
+   "ge16-emploi"
+  ]
  },
  {
   "slug": "workable",
@@ -560,12 +625,17 @@
   ]
  },
  {
-  "slug": "zoho_recruit",
+  "slug": "zohorecruit",
   "name": "Zoho Recruit",
   "kind": "ats",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "unrl",
+   "shortlist",
+   "coorb",
+   "https://careers.zohocorp.com"
+  ]
  },
  {
   "slug": "niceboard",
@@ -718,17 +788,20 @@
   "slug": "artha",
   "name": "Artha",
   "kind": "board",
-  "blocked": "",
+  "blocked": "Job pages sit behind a Cloudflare challenge (HTTP 403) and the lists render client-side; reading them would mean working around bot protection.",
   "notes": "",
   "examples": []
  },
  {
-  "slug": "jobboardsoftware",
+  "slug": "exenzo",
   "name": "jobboardsoftware.com",
   "kind": "board",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "https://greenjobs.api.exenzo.com/1",
+   "https://api.vacatures.co/1"
+  ]
  },
  {
   "slug": "jobboardhq",
@@ -736,7 +809,10 @@
   "kind": "board",
   "blocked": "",
   "notes": "",
-  "examples": []
+  "examples": [
+   "https://www.jobsindoorcounty.com/search",
+   "https://www.greaterroccareers.com/search"
+  ]
  },
  {
   "slug": "nodex",
@@ -752,16 +828,19 @@
   "slug": "ejobboard",
   "name": "eJobBoard",
   "kind": "board",
-  "blocked": "",
+  "blocked": "No live job board running the software could be found: the vendor's sites are dead or parked, so there is nothing to read.",
   "notes": "",
   "examples": []
  },
  {
-  "slug": "ejobsitesoftware",
+  "slug": "ejobsite",
   "name": "ejobsitesoftware.com",
   "kind": "board",
   "blocked": "",
-  "notes": "",
-  "examples": []
+  "notes": "connectagri.com was dropped as an example: its jobs link to a private address, which ERIO rejects.",
+  "examples": [
+   "https://eyetasticjobs.com/industry_rss.php",
+   "https://www.beveiligingsvacature.nl/industry_rss.php"
+  ]
  }
 ]

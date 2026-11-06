@@ -1,0 +1,332 @@
+[
+ {
+  "source_slug": "phenom",
+  "board_token": "https://jobs.thermofisher.com/global/en",
+  "external_id": "R-01369244",
+  "payload": {
+   "ml_skills": [],
+   "type": "Full time",
+   "descriptionTeaser": "Work ScheduleStandard (Mon-Fri)Environmental ConditionsOfficeJob Descriptiontest",
+   "state": "Missouri",
+   "siteType": "external",
+   "multi_category": [
+    "Clinical Research"
+   ],
+   "reqId": "R-01369244",
+   "city": "St. Louis",
+   "latitude": "38.62727",
+   "industry": "Healthcare",
+   "multi_location": [
+    "St. Louis, Missouri, United States of America"
+   ],
+   "reward": "0",
+   "address": "1 Job Posting, St. Louis, MO 63134, United States of America",
+   "applyUrl": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/St-Louis-Missouri-USA/DO-NOT-APPLY---TEST-REQ---CRG---Medical-Monitor-Sr-Manager---St-Louis-US_R-01369244/apply",
+   "ml_job_parser": {
+    "descriptionTeaser": "",
+    "descriptionTeaser_ats": "Work ScheduleStandard (Mon-Fri)Environmental ConditionsOfficeJob Descriptiontest",
+    "descriptionTeaser_keyword": "",
+    "descriptionTeaser_first200": ""
+   },
+   "externalApply": false,
+   "cityState": "St. Louis, Missouri",
+   "country": "United States of America",
+   "postalCode": "63134",
+   "visibilityType": "External",
+   "longitude": "-90.19789",
+   "jobId": "R-01369244",
+   "locale": "en_GLOBAL",
+   "title": "DO NOT APPLY - TEST REQ - CRG - Medical Monitor Sr Manager - St. Louis US",
+   "jobSeqNo": "TFSCGLOBALR01369244EXTERNALENGLOBAL",
+   "postedDate": "2026-09-23T00:00:00.000+0000",
+   "dateCreated": "2026-09-22T16:06:46.735+0000",
+   "recruiterName": "Pamela Smith",
+   "cityStateCountry": "St. Louis, Missouri, United States of America",
+   "jobVisibility": [
+    "external",
+    "internal"
+   ],
+   "location": "St. Louis, Missouri, United States of America",
+   "category": "Clinical Research",
+   "isMultiLocation": true,
+   "multi_location_array": [
+    {
+     "latlong": {
+      "lon": -90.19789,
+      "lat": 38.62727
+     },
+     "location": "St. Louis, Missouri, United States of America"
+    }
+   ],
+   "isMultiCategory": true,
+   "multi_category_array": [
+    {
+     "category": "Clinical Research"
+    }
+   ],
+   "badge": "",
+   "posting": {
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Thermo Fisher Scientific",
+     "value": "R-01369244"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Thermo Fisher Scientific",
+     "sameAs": "https://jobs.thermofisher.com/global/en",
+     "url": "https://jobs.thermofisher.com/global/en/job/R-01369244/DO-NOT-APPLY-TEST-REQ-CRG-Medical-Monitor-Sr-Manager-St-Louis-US",
+     "logo": "https://assets.phenompeople.com/CareerConnectResources/pp/TFSCGLOBAL/images/job_logo_config-1576064636944.png"
+    },
+    "jobLocation": {
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "38.62727",
+      "longitude": "-90.19789"
+     },
+     "address": {
+      "@type": "PostalAddress",
+      "postalCode": "63134",
+      "addressCountry": "United States of America",
+      "addressLocality": "St. Louis",
+      "addressRegion": "Missouri"
+     },
+     "@type": "Place"
+    },
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "@type": "JobPosting",
+    "workHours": "40 hours per week",
+    "description": "&lt;p style=\"text-align:left\"&gt;&lt;b&gt;Work Schedule&lt;/b&gt;&lt;/p&gt;Standard (Mon-Fri)&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;&lt;p style=\"text-align:left\"&gt;&lt;b&gt;Environmental Conditions&lt;/b&gt;&lt;/p&gt;Office&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;&lt;p style=\"text-align:left\"&gt;&lt;b&gt;&lt;u&gt;Job Description&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;test&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;",
+    "title": "DO NOT APPLY - TEST REQ - CRG - Medical Monitor Sr Manager - St. Louis US",
+    "datePosted": "2026-11-06",
+    "@context": "http://schema.org",
+    "occupationalCategory": "Clinical Research",
+    "directApply": false
+   }
+  },
+  "fetched_at": "2026-11-06T02:55:29.140667Z",
+  "content_hash": "d993b1511bbcb08b3ae3e6886f7b5c7ea5a3d79bac661042f77a72f0fe70acaf"
+ },
+ {
+  "source_slug": "phenom",
+  "board_token": "https://jobs.thermofisher.com/global/en",
+  "external_id": "R-01369217",
+  "payload": {
+   "ml_skills": [],
+   "type": "Full time",
+   "descriptionTeaser": "Work ScheduleStandard (Mon-Fri)Environmental ConditionsOfficeJob Descriptiontest",
+   "state": "",
+   "siteType": "external",
+   "multi_category": [
+    "Laboratory Services"
+   ],
+   "reqId": "R-01369217",
+   "city": "Athlone",
+   "latitude": "53.42278",
+   "industry": "Healthcare",
+   "multi_location": [
+    "Athlone, Ireland"
+   ],
+   "reward": "0",
+   "address": "1 Job Posting, Athlone, N37 TE84, Ireland",
+   "applyUrl": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Athlone-Ireland/DO-NOT-APPLY---TEST-REQ---CRG---Manager--Clinical-Lab-Scientist---Athlon-Ireland_R-01369217/apply",
+   "ml_job_parser": {
+    "descriptionTeaser": "",
+    "descriptionTeaser_ats": "Work ScheduleStandard (Mon-Fri)Environmental ConditionsOfficeJob Descriptiontest",
+    "descriptionTeaser_keyword": "",
+    "descriptionTeaser_first200": ""
+   },
+   "externalApply": false,
+   "cityState": "Athlone",
+   "country": "Ireland",
+   "postalCode": "N37 TE84",
+   "visibilityType": "External",
+   "longitude": "-7.93722",
+   "jobId": "R-01369217",
+   "locale": "en_GLOBAL",
+   "title": "DO NOT APPLY - TEST REQ - CRG - Manager, Clinical Lab Scientist - Athlon Ireland",
+   "jobSeqNo": "TFSCGLOBALR01369217EXTERNALENGLOBAL",
+   "postedDate": "2026-09-23T00:00:00.000+0000",
+   "dateCreated": "2026-09-22T16:06:46.734+0000",
+   "recruiterName": "Pamela Smith",
+   "cityStateCountry": "Athlone, Ireland",
+   "jobVisibility": [
+    "external",
+    "internal"
+   ],
+   "location": "Athlone, Ireland",
+   "category": "Laboratory Services",
+   "isMultiLocation": true,
+   "multi_location_array": [
+    {
+     "latlong": {
+      "lon": -7.93722,
+      "lat": 53.42278
+     },
+     "location": "Athlone, Ireland"
+    }
+   ],
+   "isMultiCategory": true,
+   "multi_category_array": [
+    {
+     "category": "Laboratory Services"
+    }
+   ],
+   "badge": "",
+   "posting": {
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Thermo Fisher Scientific",
+     "value": "R-01369217"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Thermo Fisher Scientific",
+     "sameAs": "https://jobs.thermofisher.com/global/en",
+     "url": "https://jobs.thermofisher.com/global/en/job/R-01369217/DO-NOT-APPLY-TEST-REQ-CRG-Manager-Clinical-Lab-Scientist-Athlon-Ireland",
+     "logo": "https://assets.phenompeople.com/CareerConnectResources/pp/TFSCGLOBAL/images/job_logo_config-1576064636944.png"
+    },
+    "jobLocation": {
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "53.42278",
+      "longitude": "-7.93722"
+     },
+     "address": {
+      "@type": "PostalAddress",
+      "postalCode": "N37 TE84",
+      "addressCountry": "Ireland",
+      "addressLocality": "Athlone",
+      "addressRegion": ""
+     },
+     "@type": "Place"
+    },
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "@type": "JobPosting",
+    "workHours": "40 hours per week",
+    "description": "&lt;p style=\"text-align:left\"&gt;&lt;b&gt;Work Schedule&lt;/b&gt;&lt;/p&gt;Standard (Mon-Fri)&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;&lt;p style=\"text-align:left\"&gt;&lt;b&gt;Environmental Conditions&lt;/b&gt;&lt;/p&gt;Office&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;&lt;p style=\"text-align:left\"&gt;&lt;b&gt;&lt;u&gt;Job Description&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;test&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;",
+    "title": "DO NOT APPLY - TEST REQ - CRG - Manager, Clinical Lab Scientist - Athlon Ireland",
+    "datePosted": "2026-09-24",
+    "@context": "http://schema.org",
+    "occupationalCategory": "Laboratory Services",
+    "directApply": false
+   }
+  },
+  "fetched_at": "2026-11-06T02:55:29.140667Z",
+  "content_hash": "9ec8d0a07660ef10d23a547ef5076206db7f0789a1f49e7ff27a59303cf854d2"
+ },
+ {
+  "source_slug": "phenom",
+  "board_token": "https://jobs.thermofisher.com/global/en",
+  "external_id": "R-01369245",
+  "payload": {
+   "ml_skills": [],
+   "type": "Full time",
+   "descriptionTeaser": "Work ScheduleStandard (Mon-Fri)Environmental ConditionsOfficeJob Descriptiontest",
+   "state": "Missouri",
+   "siteType": "external",
+   "multi_category": [
+    "Clinical Research"
+   ],
+   "reqId": "R-01369245",
+   "city": "St. Louis",
+   "latitude": "38.62727",
+   "industry": "Healthcare",
+   "multi_location": [
+    "St. Louis, Missouri, United States of America"
+   ],
+   "reward": "0",
+   "address": "1 Job Posting, St. Louis, MO 63134, United States of America",
+   "applyUrl": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/St-Louis-Missouri-USA/DO-NOT-APPLY---TEST-REQ---CRG---Trial-management-Manager---St-Louis-US_R-01369245/apply",
+   "ml_job_parser": {
+    "descriptionTeaser": "",
+    "descriptionTeaser_ats": "Work ScheduleStandard (Mon-Fri)Environmental ConditionsOfficeJob Descriptiontest",
+    "descriptionTeaser_keyword": "",
+    "descriptionTeaser_first200": ""
+   },
+   "externalApply": false,
+   "cityState": "St. Louis, Missouri",
+   "country": "United States of America",
+   "postalCode": "63134",
+   "visibilityType": "External",
+   "longitude": "-90.19789",
+   "jobId": "R-01369245",
+   "locale": "en_GLOBAL",
+   "title": "DO NOT APPLY - TEST REQ - CRG - Trial management Manager - St. Louis US",
+   "jobSeqNo": "TFSCGLOBALR01369245EXTERNALENGLOBAL",
+   "postedDate": "2026-09-23T00:00:00.000+0000",
+   "dateCreated": "2026-09-22T16:06:46.783+0000",
+   "recruiterName": "Pamela Smith",
+   "cityStateCountry": "St. Louis, Missouri, United States of America",
+   "jobVisibility": [
+    "external",
+    "internal"
+   ],
+   "location": "St. Louis, Missouri, United States of America",
+   "category": "Clinical Research",
+   "isMultiLocation": true,
+   "multi_location_array": [
+    {
+     "latlong": {
+      "lon": -90.19789,
+      "lat": 38.62727
+     },
+     "location": "St. Louis, Missouri, United States of America"
+    }
+   ],
+   "isMultiCategory": true,
+   "multi_category_array": [
+    {
+     "category": "Clinical Research"
+    }
+   ],
+   "badge": "",
+   "posting": {
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Thermo Fisher Scientific",
+     "value": "R-01369245"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Thermo Fisher Scientific",
+     "sameAs": "https://jobs.thermofisher.com/global/en",
+     "url": "https://jobs.thermofisher.com/global/en/job/R-01369245/DO-NOT-APPLY-TEST-REQ-CRG-Trial-management-Manager-St-Louis-US",
+     "logo": "https://assets.phenompeople.com/CareerConnectResources/pp/TFSCGLOBAL/images/job_logo_config-1576064636944.png"
+    },
+    "jobLocation": {
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "38.62727",
+      "longitude": "-90.19789"
+     },
+     "address": {
+      "@type": "PostalAddress",
+      "postalCode": "63134",
+      "addressCountry": "United States of America",
+      "addressLocality": "St. Louis",
+      "addressRegion": "Missouri"
+     },
+     "@type": "Place"
+    },
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "@type": "JobPosting",
+    "workHours": "40 hours per week",
+    "description": "&lt;p style=\"text-align:left\"&gt;&lt;b&gt;Work Schedule&lt;/b&gt;&lt;/p&gt;Standard (Mon-Fri)&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;&lt;p style=\"text-align:left\"&gt;&lt;b&gt;Environmental Conditions&lt;/b&gt;&lt;/p&gt;Office&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;&lt;p style=\"text-align:left\"&gt;&lt;b&gt;&lt;u&gt;Job Description&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=\"text-align:inherit\"&gt;&lt;/p&gt;test&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;",
+    "title": "DO NOT APPLY - TEST REQ - CRG - Trial management Manager - St. Louis US",
+    "datePosted": "2026-09-24",
+    "@context": "http://schema.org",
+    "occupationalCategory": "Clinical Research",
+    "directApply": false
+   }
+  },
+  "fetched_at": "2026-11-06T02:55:29.140667Z",
+  "content_hash": "55fa14c819c0ef6068e053c614f99e7c14847a1ca182762970202e396870399a"
+ }
+]

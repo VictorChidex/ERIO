@@ -1,0 +1,42 @@
+[
+ {
+  "source_slug": "zohorecruit",
+  "board_token": "https://careers.zohocorp.com",
+  "external_id": "193779000024445975",
+  "payload": {
+   "Job_Description": "Provide voice-based support to international/domestic customers over the phone (Inbound and Outbound). Build a rapport with customers with clear and c...",
+   "Remote_Job": false,
+   "Job_Type": "Full time",
+   "Job_Opening_Name": "Technical Support Engineers",
+   "Posting_Title": "Technical Support Engineers",
+   "Country1": "India",
+   "Is_Locked": false,
+   "id": "193779000024445975",
+   "Publish": true,
+   "Keep_on_Career_Site": false,
+   "base": "https://careers.zohocorp.com"
+  },
+  "fetched_at": "2026-11-06T02:51:15.972679Z",
+  "content_hash": "991d3c2adca114905b97845e973f1a92c5c726bf6f5345b02c6c560f15e90e94"
+ },
+ {
+  "source_slug": "zohorecruit",
+  "board_token": "https://careers.zohocorp.com",
+  "external_id": "193779000024446028",
+  "payload": {
+   "Job_Description": "Build rapport with contacts and understand where the prospect is in the buying process. Identify opportunities that meet a minimum qualification crite...",
+   "Remote_Job": false,
+   "Job_Type": "Full time",
+   "Job_Opening_Name": "Sales Executives",
+   "Posting_Title": "Sales Executives",
+   "Country1": "India",
+   "Is_Locked": false,
+   "id": "193779000024446028",
+   "Publish": true,
+   "Keep_on_Career_Site": false,
+   "base": "https://careers.zohocorp.com"
+  },
+  "fetched_at": "2026-11-06T02:51:15.972679Z",
+  "content_hash": "28eb5ab05d742c9ce1f098051adfc0d244e02b60017219d95dd0404dddd6a68a"
+ }
+]

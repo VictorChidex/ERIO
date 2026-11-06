@@ -1,0 +1,200 @@
+[
+ {
+  "source_slug": "paylocity",
+  "board_token": "00000000-0000-0000-0000-000000000000",
+  "external_id": "4121648",
+  "payload": {
+   "JobId": 4121648,
+   "JobTitle": "1st Shift Grader Operator 1 [1817]",
+   "LocationName": "Howard Lake, MN",
+   "ShouldDisplayLocation": true,
+   "PublishedDate": "2026-11-03T12:55:45-06:00",
+   "Description": "Job SummaryThe Grader Operator is responsible for palletizing, denesting, and the flow of product from entry i",
+   "IsInternal": false,
+   "HiringDepartment": "Processing Plant",
+   "JobLocation": {
+    "LocationId": 4046705,
+    "ModuleId": 32079,
+    "Name": "Howard Lake, MN",
+    "Address": "1200 Commerce Blvd",
+    "Address2": null,
+    "Metro": null,
+    "City": "Howard Lake",
+    "State": "MN",
+    "Zip": "55349-4542",
+    "Country": "USA",
+    "County": "Wright",
+    "SmartyAddressId": "ad067c8c-7c09-4b4b-be0f-5d70ad0e95b7"
+   },
+   "IsRemote": false,
+   "IndeedRemoteType": 2,
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "1st Shift Grader Operator 1 [1817]",
+    "datePosted": "2026-11-03T18:54:57-06:00",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Forsman Farms",
+     "logo": "https://recruiting.paylocity.com/recruiting/jobs/GetLogoFile?moduleId=32079"
+    },
+    "description": "<p>Description</p><p><strong>Job Summary</strong></p><p>The Grader Operator is responsible for palletizing, denesting, and the flow of product from entry into denesting through plant and out the cooler door.&nbsp;</p><p><strong>Responsibilities</strong></p><ul><li>Ensure denester team is aware and prepared when product type is changing</li><li>Monitor issues with the grader machines</li><li>Verify egg size; ensure eggs are getting the appropriate packaging</li><li>Serve as liaison with quality team</li><li>Print labels for pelletizing</li><li>Work closely with USDA representative&nbsp;</li><li>Keep work area clean, follow GMP, and wear appropriate PPE</li><li>Other duties as assigned</li></ul><p><strong>Qualifications</strong></p><ul><li>Ability to work independently and with a team&nbsp;</li><li>Ability to take direction and follow detailed instructions</li><li>Ability to work in a fast-paced environment</li><li>Strong communication skills&nbsp;</li></ul><p><strong>Resumen de trabajo</strong></p><p>El operador del grader es responsable de la paletización, el denesting y el flujo de producto desde la entrada al denester a través de la planta y fuera de la puerta del refrigerador.&nbsp;</p><p><strong>Responsabilidades</strong></p><ul><li>Asegúrese de que el equipo del denester esté al tanto y preparado cuando cambie el tipo de producto.</li><li>Supervisar los problemas con las máquinas del grader</li><li>Verificar el tamaño del huevo; Asegúrese de que los huevos reciban el empaque adecuado</li><li>Servir como enlace con el equipo de calidad</li><li>Impresión de etiquetas para peletización</li><li>Trabaje en estrecha colaboración con el representante del USDA&nbsp;</li><li>Mantenga el área de trabajo limpia, siga las buenas prácticas de fabricación y use el EPP adecuado</li><li>Otras funciones asignadas</li></ul><p>&nbsp;<strong>Calificaciones:</strong></p><ul><li>Capacidad para trabajar de forma independiente y en equipo&nbsp;</li><li>Capacidad para seguir instrucciones y seguir instrucciones detalladas</li><li>Capacidad para trabajar en un entorno de ritmo rápido</li><li>Fuertes habilidades de comunicación&nbsp;</li></ul>",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1200 Commerce Blvd",
+      "addressLocality": "Howard Lake",
+      "addressRegion": "MN",
+      "postalCode": "55349-4542",
+      "addressCountry": "US"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 18.0,
+      "maxValue": 22.0,
+      "unitText": "HOUR"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:47:39.311254Z",
+  "content_hash": "67ae5fde1b3646ab4af050155b7608ec1b277c3d3fd75c528137b2f1d840b44c"
+ },
+ {
+  "source_slug": "paylocity",
+  "board_token": "00000000-0000-0000-0000-000000000000",
+  "external_id": "4633106",
+  "payload": {
+   "JobId": 4633106,
+   "JobTitle": "3rd Shift Sanitation 1 [1449]",
+   "LocationName": "Howard Lake, MN",
+   "ShouldDisplayLocation": true,
+   "PublishedDate": "2026-11-03T12:14:08-06:00",
+   "Description": "General Hours of Work: 10pm - 6:30amPosition SummaryThe 3rd Shift Sanitation 1 employee helps clean the egg pr",
+   "IsInternal": false,
+   "HiringDepartment": "Sanitation",
+   "JobLocation": {
+    "LocationId": 4558513,
+    "ModuleId": 32079,
+    "Name": "Howard Lake, MN",
+    "Address": "1200 Commerce Blvd",
+    "Address2": null,
+    "Metro": null,
+    "City": "Howard Lake",
+    "State": "MN",
+    "Zip": "55349-4542",
+    "Country": "USA",
+    "County": "Wright",
+    "SmartyAddressId": "ad067c8c-7c09-4b4b-be0f-5d70ad0e95b7"
+   },
+   "IsRemote": false,
+   "IndeedRemoteType": 2,
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "3rd Shift Sanitation 1 [1449]",
+    "datePosted": "2026-11-03T18:46:31-06:00",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Forsman Farms",
+     "logo": "https://recruiting.paylocity.com/recruiting/jobs/GetLogoFile?moduleId=32079"
+    },
+    "description": "<p>Description</p><p><strong>General Hours of Work: 10pm - 6:30am</strong></p><p><br/></p><p>Position Summary</p><p>The 3rd Shift Sanitation 1 employee helps clean the egg processing plant after production is finished for the day. This includes cleaning equipment, floors, tools, and work areas so the plant is clean, safe, and ready for the next shift. Training will be provided.</p><p>Key Responsibilities</p><ul><li>Clean and sanitize equipment, tools, floors, drains, and work areas after production is complete.</li><li>Remove egg debris, waste, and other material from assigned areas.</li><li>Use hoses, foamers, scrubbers, squeegees, and other cleaning tools as trained.</li><li>Use cleaning chemicals safely and follow instructions on labels and from supervisors.</li><li>Follow safety rules, food safety rules, and wear required personal protective equipment.</li><li>Tell a supervisor or lead about equipment problems, safety concerns, or areas that need attention.</li><li>Perform other cleaning and sanitation duties as assigned.</li></ul><p>Qualifications</p><ul><li>No previous sanitation experience required; training will be provided.</li><li>Able to work 3rd shift and overnight hours.</li><li>Able to follow directions and learn cleaning procedures.</li><li>Able to work in a wet, cool, and fast-paced plant environment.</li><li>Dependable, safety-minded, and willing to work as part of a team.</li></ul><p><strong>&nbsp;Horario general de trabajo: 10pm - 6:30am</strong></p><p><br/></p><p>Resumen de la posición</p><p>El empleado de Saneamiento de Tercer Turno Nivel 1 Nayuda a limpiar la planta de procesamiento de huevos después de que finaliza la producción del día. Esto incluye la limpieza de equipos, pisos, herramientas y áreas de trabajo para que la planta esté limpia, segura y lista para el siguiente turno. Se proporcionará capacitación.</p><p>Responsabilidades clave&nbsp;</p><p>Limpiar y sanitizar equipos, herramientas, pisos, drenajes y áreas de trabajo después de finalizar la producción.&nbsp;</p><ul><li>Retirar residuos de huevo, desechos y otros materiales de las áreas asignadas.&nbsp;</li><li>Utilizar mangueras, equipos de espuma, cepillos de limpieza, jaladores de piso (squeegees) y otras herramientas de limpieza según la capacitación recibida.&nbsp;</li><li>Utilizar productos químicos de limpieza de manera segura y seguir las instrucciones de las etiquetas y de los supervisores.&nbsp;</li><li>Cumplir con las normas de seguridad, las normas de seguridad alimentaria y utilizar el equipo de protección personal requerido (EPP).&nbsp;</li><li>Informar al supervisor o líder sobre problemas con equipos, preocupaciones de seguridad o áreas que necesiten atención.&nbsp;</li><li>Realizar otras tareas de limpieza y saneamiento según se asignen.</li></ul><p>Calificaciones&nbsp;</p><ul><li>No se requiere experiencia previa en saneamiento; se proporcionará capacitación.&nbsp;</li><li>Capacidad para trabajar en el tercer turno y durante la noche.&nbsp;</li><li>Capacidad para seguir instrucciones y aprender procedimientos de limpieza.&nbsp;</li><li>Capacidad para trabajar en un ambiente de planta húmedo, frío y de ritmo rápido.&nbsp;</li><li>Persona responsable, enfocada en la seguridad y dispuesta a trabajar como parte de un equipo.</li></ul>",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1200 Commerce Blvd",
+      "addressLocality": "Howard Lake",
+      "addressRegion": "MN",
+      "postalCode": "55349-4542",
+      "addressCountry": "US"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 23.0,
+      "maxValue": 27.0,
+      "unitText": "HOUR"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:47:39.311254Z",
+  "content_hash": "6c62d2e3729949b98ef3421dc59429d7f1694873066c7f75740f15034123381f"
+ },
+ {
+  "source_slug": "paylocity",
+  "board_token": "00000000-0000-0000-0000-000000000000",
+  "external_id": "4633294",
+  "payload": {
+   "JobId": 4633294,
+   "JobTitle": "1st Shift PT Tray Washer  [1535]",
+   "LocationName": "Howard Lake, MN",
+   "ShouldDisplayLocation": true,
+   "PublishedDate": "2026-11-02T12:08:48-06:00",
+   "Description": "Shift Hours: 6am - 2:30pm - Flexible hours or daysPosition SummaryThe Tray Washer is responsible for maintaini",
+   "IsInternal": false,
+   "HiringDepartment": "Processing Plant",
+   "JobLocation": {
+    "LocationId": 4558680,
+    "ModuleId": 32079,
+    "Name": "Howard Lake, MN",
+    "Address": "1200 Commerce Blvd",
+    "Address2": null,
+    "Metro": null,
+    "City": "Howard Lake",
+    "State": "MN",
+    "Zip": "55349-4542",
+    "Country": "USA",
+    "County": "Wright",
+    "SmartyAddressId": "ad067c8c-7c09-4b4b-be0f-5d70ad0e95b7"
+   },
+   "IsRemote": false,
+   "IndeedRemoteType": 2,
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "1st Shift PT Tray Washer  [1535]",
+    "datePosted": "2026-11-02T18:08:51-06:00",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Forsman Farms",
+     "logo": "https://recruiting.paylocity.com/recruiting/jobs/GetLogoFile?moduleId=32079"
+    },
+    "description": "<p>Description</p><p><strong>Shift Hours: 6am - 2:30pm - Flexible hours or days</strong></p><p><br/></p><p>Position Summary</p><p>The Tray Washer is responsible for maintaining cleanliness, sanitation, and proper handling of trays used in the food processing environment. This role is essential to ensuring compliance with food safety standards, supporting sanitation protocols, and contributing to efficient plant operations.</p><p>Key Responsibilities</p><ul><li>Remove residual product from trays prior to washing</li><li>Operate correct tray washer equipment to sanitize trays, clearing jams as necessary</li><li>Replace soiled trays with clean, sanitized trays to maintain workflow efficiency</li><li>Inspect trays for damage, wear, or defects</li><li>Follow all sanitation procedures, food safety standards, and company safety policies</li><li>Assist with the organization, storage, and handling of clean trays and related equipment</li><li>Maintain a clean and safe work area by following Good Manufacturing Practices (GMPs), safety procedures, and wearing required Personal Protective Equipment (PPE)</li></ul><p>Qualifications</p><ul><li>Ability to follow sanitation, food safety, and safety procedures consistently</li><li>Ability to perform repetitive tasks in a fast-paced production environment</li><li>Attention to detail and ability to identify damaged or non-compliant trays</li><li>Ability to stand for the duration of the work shift</li><li>Ability to lift, carry, push, and pull trays as required throughout the shift</li></ul><p><strong>Horario general de trabajo: 6:00 a. m. a 2:30 p. m.</strong></p><p><br/></p><p>Resumen del Puesto:</p><p>El Lavador de Bandejas es responsable de mantener la limpieza, desinfección y el manejo adecuado de las bandejas utilizadas en el entorno de procesamiento de alimentos. Este puesto es fundamental para garantizar el cumplimiento de las normas de seguridad alimentaria, apoyar los protocolos de saneamiento y contribuir a la eficiencia de las operaciones de la planta.</p><p>Responsabilidades Clave</p><ul><li>Retirar los residuos de producto de las bandejas antes del lavado</li><li>Operar correctamente el equipo de lavado de bandejas para su sanitización, despejando atascos cuando sea necesario</li><li>Reemplazar las bandejas sucias con bandejas limpias y sanitizadas para mantener la eficiencia del flujo de trabajo</li><li>Inspeccionar las bandejas para detectar daños, desgaste o defectos</li><li>Cumplir con todos los procedimientos de saneamiento, normas de seguridad alimentaria y políticas de seguridad de la empresa</li><li>Apoyar en la organización, almacenamiento y manejo de bandejas limpias y equipos relacionados</li><li>Mantener un área de trabajo limpia y segura siguiendo las Buenas Prácticas de Manufactura (BPM), los procedimientos de seguridad y el uso del Equipo de Protección Personal (EPP) requerido</li></ul><p>Calificaciones</p><ul><li>Capacidad para seguir de manera consistente los procedimientos de saneamiento, seguridad alimentaria y seguridad laboral</li><li>Capacidad para realizar tareas repetitivas en un entorno de producción de ritmo acelerado</li><li>Atención al detalle y capacidad para identificar bandejas dañadas o que no cumplan con los requisitos</li><li>Capacidad para permanecer de pie durante toda la jornada laboral</li><li>Capacidad para levantar, cargar, empujar y jalar bandejas según se requiera durante el turno</li></ul>",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1200 Commerce Blvd",
+      "addressLocality": "Howard Lake",
+      "addressRegion": "MN",
+      "postalCode": "55349-4542",
+      "addressCountry": "US"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 18.0,
+      "maxValue": 22.0,
+      "unitText": "HOUR"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:47:39.311254Z",
+  "content_hash": "90548e85db6690069bce82bb1777296d8ab211811e628ef5885173148aa8a609"
+ }
+]

@@ -1,0 +1,701 @@
+[
+ {
+  "source_slug": "exenzo",
+  "board_token": "https://api.vacatures.co/1",
+  "external_id": "f8f60af3-c172-44b5-921f-75d99af55938",
+  "payload": {
+   "id": 17044785,
+   "uuid": "f8f60af3-c172-44b5-921f-75d99af55938",
+   "client_token_id": 803,
+   "organisation_id": 3017,
+   "state_id": null,
+   "subscription_id": null,
+   "client_feed_id": null,
+   "product_id": 3,
+   "status": "active",
+   "locale": "nl",
+   "slug": "allround-timmerman-gezocht-in-utrecht-ui",
+   "title": "Allround Timmerman gezocht in Utrecht",
+   "description": null,
+   "organisation_name": "Meestersgilde",
+   "logo": null,
+   "date_order": "2026-11-04 04:06:36",
+   "premium_till": "2026-12-04 00:00:00",
+   "from": "2026-11-04 00:00:00",
+   "till": "2026-12-04 00:00:00",
+   "finished_at": null,
+   "text_type": "own",
+   "text_search": "FunctieomschrijvingBen jij een allround timmerman en zoek je nieuw werk in de regio Utrecht? Of je nu in loondienst wilt of liever als zzp'er aan de slag gaat: deze vacature is het bekijken waard.Je komt te werken bij een bouwbedrijf uit Utrecht dat zich heeft gespecialiseerd in renovatie en onderho...",
+   "text_own": "<b>Functieomschrijving</b><br/>Ben jij een<strong> allround timmerman</strong> en zoek je nieuw werk in de regio <strong>Utrecht</strong>? Of je nu in loondienst wilt of liever als zzp'er aan de slag gaat: deze vacature is het bekijken waard.<br/><br/>Je komt te werken bij een bouwbedrijf uit Utrecht dat zich heeft gespecialiseerd in renovatie en onderhoudsprojecten. Als allround timmerman pak je een breed pakket aan werkzaamheden op, van het stellen van kozijnen tot het maken van dakkapellen.<br/>Benieuwd wat de functie precies inhoudt? Lees snel verder.<br/>\n<h3>Wat ga je doen?</h3>Als Allround Timmerman in Utrecht houd je je onder andere bezig met:<br/><ul><li>Het stellen van profielen en kozijnen</li><li>Het plaatsen van balklagen</li><li>Het vervangen van plafonds, wanden en vloeren</li><li>Het timmeren van goten en dakkapellen</li><li>Aftimmerwerk van onder andere kozijnen en koven</li></ul><p> </p><b>Functie-eisen</b><br/><h3>Wat vragen wij van jou?</h3><ul><li>Aantoonbare ervaring als timmerman</li><li>Rijbewijs B(E) en woonachtig in de regio Utrecht</li><li>Ervaring met gereedschappen zoals de invalzaag</li><li>In bezit van een geldig VCA-certificaat</li><li><br/></li></ul><p> </p><b>Arbeidsvoorwaarden</b><br/><h3>Wat bieden wij jou?</h3><ul><li>Een goed uurtarief</li><li>Flexibiliteit in je werktijden</li><li>Uitdagende projecten in de regio Utrecht</li><li>Administratieve ondersteuning, zodat jij je kunt richten op je vak</li><li>Stipte betaling van je facturen</li><li>Uitzicht op vast werk in de toekomst</li></ul><h3>Enthousiast?</h3>Herken jij jezelf in deze vacature voor Allround Timmerman in Utrecht? Neem dan contact op met Bastian Bos via 06-44172009. Bel of app gerust, we vertellen je graag meer.<br/><br/><strong>Meestersgilde in het kort</strong><br/>Al ruim 16 jaar bemiddelen we vakkrachten en kaderpersoneel in de onderhoudsbranche. Met een deskundig en enthousiast team stellen we vakmensen ter beschikking aan toonaangevende bedrijven uit de bouw en het vastgoedonderhoud. Dit doen we op projectbasis met uitzicht op een vaste baan bij Meestersgilde of één van haar opdrachtgevers. Daarnaast opereren we ook als recruitment bureau voor onze opdrachtgevers. Vakmensen van Meestersgilde zijn professionals die gewaardeerd worden om hun vakmanschap!<br/>",
+   "text_platform": {
+    "job": "",
+    "function": "",
+    "company": "",
+    "offer": ""
+   },
+   "remote": null,
+   "country_code": "NL",
+   "location_name": "Utrecht",
+   "city": "Utrecht",
+   "postal_code": "3534 AA",
+   "lat": null,
+   "lon": null,
+   "apply_url": "https://easyapply.jobs/r/xIpiygx27yHnOx4B3IKi",
+   "apply_email": null,
+   "external_reference": "2026-01058",
+   "recruiter_name": null,
+   "recruiter_phone_country": "NL",
+   "recruiter_phone": "+31 644172009",
+   "recruiter_email": "bastian@meestersgilde.nl",
+   "salary_min": 3100,
+   "salary_max": 3800,
+   "salary_type": "month",
+   "hours_min": 40,
+   "hours_max": 40,
+   "segment_ids": [
+    "1",
+    "6",
+    "12",
+    "17",
+    "25"
+   ],
+   "custom_fields": null,
+   "premium": true,
+   "show_logo": true,
+   "pixel_url": null,
+   "boost_factor": 2,
+   "reference_code": "99e87c12b7afb9a696dc78bd8d6e67ea",
+   "created_at": "2026-11-04 04:06:36",
+   "updated_at": "2026-11-04 04:06:36",
+   "deleted_at": null,
+   "slogan": null,
+   "header_image": null,
+   "client_uuid": "eeb61528-41b4-4a69-a8ae-ae7ddefc24ea",
+   "segments": {
+    "time": [
+     1
+    ],
+    "education": [
+     6
+    ],
+    "career_level": [
+     12
+    ],
+    "contract": [
+     17
+    ],
+    "category": [
+     25
+    ]
+   },
+   "segments_names": {
+    "time": [
+     "Fulltime"
+    ],
+    "education": [
+     "MBO"
+    ],
+    "career_level": [
+     "Medior (mid-career)"
+    ],
+    "contract": [
+     "Tijdelijk / Project / ZZP"
+    ],
+    "category": [
+     "Bouw en Installatie"
+    ]
+   },
+   "job_url": "https://api.vacatures.co/api/public/v1/jobs/f8f60af3-c172-44b5-921f-75d99af55938/url",
+   "salary": {
+    "salary_year": {
+     "min": 37200,
+     "max": 45600
+    },
+    "salary_month": {
+     "min": 3100,
+     "max": 3800
+    },
+    "salary_day": {
+     "min": 147.62,
+     "max": 180.95
+    },
+    "salary_hour": {
+     "min": 387.5,
+     "max": 475
+    },
+    "salary_project": {
+     "min": 3100,
+     "max": 3800
+    }
+   },
+   "job_boards_url": {
+    "vacatures-co": "https://vacatures.co/vacature/allround-timmerman-gezocht-in-utrecht-ui"
+   },
+   "product_info": {
+    "product_name": "Boost vacature",
+    "product_image": null
+   },
+   "job_boards": [
+    {
+     "id": 1,
+     "job_board_id": null,
+     "job_board_builder_site_id": 1,
+     "status": "active",
+     "host": "vacatures.co",
+     "url": "https://vacatures.co",
+     "slug": "vacatures-co",
+     "name": "Vacatures&co",
+     "description": "Vacatures&co",
+     "logo": "https://storage.googleapis.com/exenzo-jobboard/vacco/public/thumb/vacatures-co-logo-rgb-png-1-png.png",
+     "fav_icon": null,
+     "job_url_show": "https://vacatures.co/vacature/{slug}",
+     "job_url_apply": "https://vacatures.co/vacature/{slug}",
+     "client_xxxx_reset_url": null,
+     "client_verify_url": null,
+     "client_resume_url": null,
+     "candidate_xxxx_reset_url": null,
+     "candidate_verify_url": null,
+     "candidate_resume_url": null,
+     "job_alert_unsubscribe_url": null,
+     "email_send_address": "no-reply@vacatures.co",
+     "email_send_name": "Vacatures&co",
+     "rank": null,
+     "custom_fields": null,
+     "created_at": null,
+     "updated_at": "2020-04-16 17:28:22",
+     "laravel_through_key": 17044785
+    }
+   ],
+   "product": {
+    "id": 3,
+    "product_id": null,
+    "email_template_job_published_id": null,
+    "payment_type": "once",
+    "product_type": "job_posting",
+    "job_up_sell": null,
+    "image": null,
+    "job_image": null,
+    "slug": "boost-vacature",
+    "name": "Boost vacature",
+    "text": "<p></p><h1>Wij boosten jouw vacature de wereld in.</h1>\n<p>Via jobboost.io wordt je vacature de wereld ingeboost!</p><p></p>",
+    "purchase_url": null,
+    "benefits": [
+     {
+      "lang": "en",
+      "name": "30x meer views",
+      "icon": "StarIcon",
+      "key": 0
+     },
+     {
+      "lang": "en",
+      "name": "Meer sollicitaties",
+      "icon": "SmileIcon",
+      "key": 1
+     },
+     {
+      "lang": "en",
+      "name": "Vacature optimalisatie",
+      "icon": "CheckIcon",
+      "key": 2
+     },
+     {
+      "lang": "en",
+      "name": "Alles van Gratis",
+      "icon": "GiftIcon",
+      "key": 3
+     }
+    ],
+    "price": 249,
+    "price_normal": null,
+    "recurring_type": null,
+    "premium": true,
+    "premium_days": null,
+    "amount": 1,
+    "job_days": 30,
+    "max_views": null,
+    "active": true,
+    "trial": false,
+    "client_register_activate": null,
+    "subscription_amount": null,
+    "subscription_valid_months": null,
+    "boost_factor": 2,
+    "email_only": null,
+    "payment_types": null,
+    "created_by": null,
+    "updated_by": null,
+    "created_at": "2020-09-14 11:42:48",
+    "updated_at": "2020-09-14 11:49:00",
+    "job_media": 0,
+    "order_rank": null
+   }
+  },
+  "fetched_at": "2026-11-06T02:56:23.703354Z",
+  "content_hash": "2ebc63a4a9191146ff8e4bd8e452ccdbc2f014fdc2e60e18ddf6173acd61d2f0"
+ },
+ {
+  "source_slug": "exenzo",
+  "board_token": "https://api.vacatures.co/1",
+  "external_id": "01ffd2fd-6896-44f9-ad44-a957944b11cf",
+  "payload": {
+   "id": 17043607,
+   "uuid": "01ffd2fd-6896-44f9-ad44-a957944b11cf",
+   "client_token_id": 803,
+   "organisation_id": 3017,
+   "state_id": null,
+   "subscription_id": null,
+   "client_feed_id": null,
+   "product_id": 3,
+   "status": "active",
+   "locale": "nl",
+   "slug": "houtrotsaneerder-bergen-op-zoom-oi",
+   "title": "Houtrotsaneerder Bergen op Zoom",
+   "description": null,
+   "organisation_name": "Meestersgilde",
+   "logo": null,
+   "date_order": "2026-11-03 00:52:31",
+   "premium_till": "2026-12-03 00:00:00",
+   "from": "2026-11-03 00:00:00",
+   "till": "2026-12-03 00:00:00",
+   "finished_at": null,
+   "text_type": "own",
+   "text_search": "FunctieomschrijvingVoor onze opdrachtgever uit Brabant is Meestersgilde op zoek naar een houtrotsaneerder voor in Bergen op Zoom! Ben jij een houtrotsaneerder die vakkundig en kwalitatief goede reparaties uitvoert? Geniet jij van het resultaat na het repareren van houtrot? Dan kunnen wij jouw vakman...",
+   "text_own": "<b>Functieomschrijving</b><br/>Voor onze opdrachtgever uit Brabant is Meestersgilde op zoek naar een houtrotsaneerder voor in Bergen op Zoom! Ben jij een houtrotsaneerder die vakkundig en kwalitatief goede reparaties uitvoert? Geniet jij van het resultaat na het repareren van houtrot? Dan kunnen wij jouw vakmanschap goed gebruiken! Jij zorgt ervoor dat het pand er weer als nieuw uitziet.<br/>\nJe herkent rotte plekken in de houten delen van de gevel. Je saneert het ongezonde hout en houdt daarbij rekening met de eisen die het epoxy-systeem daaraan stelt. Je herkent alle ongezonde schimmels en laat geen aangetast hout zitten. Je impregneert de verbinding en zorgt voor een optimale hechting door de verbinding zorgvuldig aan te branden met de reparatiepasta. Daarna zet je hem vol met de reparatiepasta en mest het geheel goed af, zodat het in vorm komt met het houtwerk. Het was een flinke ingreep, maar nadat het overgeschilderd is, geniet jij van deze reparatie.<br/><p> </p><b>Functie-eisen</b><br/><strong>Wie jij bent en wat jij kunt</strong><br/>•\tJe hebt minimaal 2 jaar aantoonbare werkervaring als houtrotsaneerder;<br/>•\tJe bent in het bezit van een geldig VCA-certificaat, of bereid dit via ons te halen;<br/>•\tJe kunt goed in teamverband werken;<br/>•\tJe werkt met plezier en voert je werk nauwkeurig uit.<br/><br/><p> </p><b>Arbeidsvoorwaarden</b><br/><strong>Wat wij bieden</strong><br/>•\tCorrecte betaling van een uitstekend loon tussen de €3.400 en €3.900 per maand;<br/>•\tKeuze voor pensioenopbouw bij het Bedrijfstakpensioenfonds Bouw of Stipp;<br/>•\tMogelijkheid tot deelname aan het eigen scholingsprogramma van Meestersgilde.<br/><br/><strong>Ik wil graag aan de slag als houtrotsaneerder in Brabant!</strong><br/>Leuk dat je enthousiast bent! Ik maak graag snel een afspraak met je om persoonlijk kennis te maken. Vervolgens stellen wij jou voor aan onze opdrachtgever en wie weet start jij binnenkort op je nieuwe werkplek in Bergen op Zoom. Neem contact op met <strong>Frans Vaders</strong> op <strong>06 44 32 30 86 </strong>of stuur een mail naar f<strong>rans@meestersgilde.nl.</strong><br/><br/><strong>Meestersgilde in het kort </strong><br/>Meestersgilde bemiddelt al ruim 20 jaar timmerlieden, schilders, betonreparateurs en houtrotsaneerders. Met een deskundig en enthousiast team stellen wij op projectbasis vakmensen ter beschikking aan toonaangevende bedrijven uit de bouw en het vastgoedonderhoud. Onze vakkrachten zijn verzekerd van waardering voor hun vakmanschap!<br/>",
+   "text_platform": {
+    "job": "",
+    "function": "",
+    "company": "",
+    "offer": ""
+   },
+   "remote": null,
+   "country_code": "NL",
+   "location_name": "Bergen Op Zoom",
+   "city": "Bergen op Zoom",
+   "postal_code": "4611 BX",
+   "lat": null,
+   "lon": null,
+   "apply_url": "https://easyapply.jobs/r/EJGaHBE27xg2uE4iwGvy",
+   "apply_email": null,
+   "external_reference": "2026-01315",
+   "recruiter_name": null,
+   "recruiter_phone_country": "NL",
+   "recruiter_phone": "0659877526",
+   "recruiter_email": "renzo@meestersgilde.nl",
+   "salary_min": 3400,
+   "salary_max": 3900,
+   "salary_type": "month",
+   "hours_min": 32,
+   "hours_max": 40,
+   "segment_ids": [
+    "1",
+    "6",
+    "12",
+    "17",
+    "25"
+   ],
+   "custom_fields": null,
+   "premium": true,
+   "show_logo": true,
+   "pixel_url": null,
+   "boost_factor": 2,
+   "reference_code": "acf420cbfa07a9789e8d401cc16a2b7a",
+   "created_at": "2026-11-03 00:52:31",
+   "updated_at": "2026-11-03 00:52:31",
+   "deleted_at": null,
+   "slogan": null,
+   "header_image": null,
+   "client_uuid": "eeb61528-41b4-4a69-a8ae-ae7ddefc24ea",
+   "segments": {
+    "time": [
+     1
+    ],
+    "education": [
+     6
+    ],
+    "career_level": [
+     12
+    ],
+    "contract": [
+     17
+    ],
+    "category": [
+     25
+    ]
+   },
+   "segments_names": {
+    "time": [
+     "Fulltime"
+    ],
+    "education": [
+     "MBO"
+    ],
+    "career_level": [
+     "Medior (mid-career)"
+    ],
+    "contract": [
+     "Tijdelijk / Project / ZZP"
+    ],
+    "category": [
+     "Bouw en Installatie"
+    ]
+   },
+   "job_url": "https://api.vacatures.co/api/public/v1/jobs/01ffd2fd-6896-44f9-ad44-a957944b11cf/url",
+   "salary": {
+    "salary_year": {
+     "min": 40800,
+     "max": 46800
+    },
+    "salary_month": {
+     "min": 3400,
+     "max": 3900
+    },
+    "salary_day": {
+     "min": 161.9,
+     "max": 185.71
+    },
+    "salary_hour": {
+     "min": 425,
+     "max": 487.5
+    },
+    "salary_project": {
+     "min": 3400,
+     "max": 3900
+    }
+   },
+   "job_boards_url": {
+    "vacatures-co": "https://vacatures.co/vacature/houtrotsaneerder-bergen-op-zoom-oi"
+   },
+   "product_info": {
+    "product_name": "Boost vacature",
+    "product_image": null
+   },
+   "job_boards": [
+    {
+     "id": 1,
+     "job_board_id": null,
+     "job_board_builder_site_id": 1,
+     "status": "active",
+     "host": "vacatures.co",
+     "url": "https://vacatures.co",
+     "slug": "vacatures-co",
+     "name": "Vacatures&co",
+     "description": "Vacatures&co",
+     "logo": "https://storage.googleapis.com/exenzo-jobboard/vacco/public/thumb/vacatures-co-logo-rgb-png-1-png.png",
+     "fav_icon": null,
+     "job_url_show": "https://vacatures.co/vacature/{slug}",
+     "job_url_apply": "https://vacatures.co/vacature/{slug}",
+     "client_xxxx_reset_url": null,
+     "client_verify_url": null,
+     "client_resume_url": null,
+     "candidate_xxxx_reset_url": null,
+     "candidate_verify_url": null,
+     "candidate_resume_url": null,
+     "job_alert_unsubscribe_url": null,
+     "email_send_address": "no-reply@vacatures.co",
+     "email_send_name": "Vacatures&co",
+     "rank": null,
+     "custom_fields": null,
+     "created_at": null,
+     "updated_at": "2020-04-16 17:28:22",
+     "laravel_through_key": 17043607
+    }
+   ],
+   "product": {
+    "id": 3,
+    "product_id": null,
+    "email_template_job_published_id": null,
+    "payment_type": "once",
+    "product_type": "job_posting",
+    "job_up_sell": null,
+    "image": null,
+    "job_image": null,
+    "slug": "boost-vacature",
+    "name": "Boost vacature",
+    "text": "<p></p><h1>Wij boosten jouw vacature de wereld in.</h1>\n<p>Via jobboost.io wordt je vacature de wereld ingeboost!</p><p></p>",
+    "purchase_url": null,
+    "benefits": [
+     {
+      "lang": "en",
+      "name": "30x meer views",
+      "icon": "StarIcon",
+      "key": 0
+     },
+     {
+      "lang": "en",
+      "name": "Meer sollicitaties",
+      "icon": "SmileIcon",
+      "key": 1
+     },
+     {
+      "lang": "en",
+      "name": "Vacature optimalisatie",
+      "icon": "CheckIcon",
+      "key": 2
+     },
+     {
+      "lang": "en",
+      "name": "Alles van Gratis",
+      "icon": "GiftIcon",
+      "key": 3
+     }
+    ],
+    "price": 249,
+    "price_normal": null,
+    "recurring_type": null,
+    "premium": true,
+    "premium_days": null,
+    "amount": 1,
+    "job_days": 30,
+    "max_views": null,
+    "active": true,
+    "trial": false,
+    "client_register_activate": null,
+    "subscription_amount": null,
+    "subscription_valid_months": null,
+    "boost_factor": 2,
+    "email_only": null,
+    "payment_types": null,
+    "created_by": null,
+    "updated_by": null,
+    "created_at": "2020-09-14 11:42:48",
+    "updated_at": "2020-09-14 11:49:00",
+    "job_media": 0,
+    "order_rank": null
+   }
+  },
+  "fetched_at": "2026-11-06T02:56:23.703354Z",
+  "content_hash": "c0c7cd165466570b69fc940a6fddff81059abf51f12ff10153eb4f59dfa21023"
+ },
+ {
+  "source_slug": "exenzo",
+  "board_token": "https://api.vacatures.co/1",
+  "external_id": "f772f955-ea42-4706-baca-9e6f4ec29ef7",
+  "payload": {
+   "id": 17043608,
+   "uuid": "f772f955-ea42-4706-baca-9e6f4ec29ef7",
+   "client_token_id": 803,
+   "organisation_id": 3017,
+   "state_id": null,
+   "subscription_id": null,
+   "client_feed_id": null,
+   "product_id": 3,
+   "status": "active",
+   "locale": "nl",
+   "slug": "glaszetter-rotterdam-if",
+   "title": "Glaszetter Rotterdam",
+   "description": null,
+   "organisation_name": "Meestersgilde",
+   "logo": null,
+   "date_order": "2026-11-03 00:52:31",
+   "premium_till": "2026-12-03 00:00:00",
+   "from": "2026-11-03 00:00:00",
+   "till": "2026-12-03 00:00:00",
+   "finished_at": null,
+   "text_type": "own",
+   "text_search": "FunctieomschrijvingVoor een gerenommeerde opdrachtgever in de regio Rotterdam is Meestersgilde op zoek naar een ervaren en zelfstandige glaszetter.Onze opdrachtgever is gespecialiseerd in vastgoedonderhoud en voert voornamelijk werkzaamheden uit voor woningcorporaties. Je werkt aan diverse onderhoud...",
+   "text_own": "<b>Functieomschrijving</b><br/>Voor een gerenommeerde opdrachtgever in de regio Rotterdam is <strong>Meestersgilde op zoek naar een ervaren en zelfstandige glaszetter</strong>.<br/>Onze opdrachtgever is gespecialiseerd in vastgoedonderhoud en voert voornamelijk werkzaamheden uit voor woningcorporaties. Je werkt aan diverse onderhoudsprojecten, vaak in bewoonde woningen. Hierdoor heb je regelmatig contact met bewoners. Goede communicatieve vaardigheden en een klantvriendelijke houding zijn daarom belangrijk.<br/>Ben jij een ervaren glaszetter die graag zelfstandig werkt en op zoek is naar een afwisselende baan bij een professioneel en betrokken bedrijf? <strong>Dan komen wij graag met jou in contact!</strong><br/>\n<strong>Wat ga je doen?</strong><br/>Als glaszetter ga je aan de slag bij een professioneel vastgoedonderhoudsbedrijf in de regio Rotterdam. Je werkt samen met een team aan diverse beglazingsprojecten en krijgt daarbij veel zelfstandigheid en verantwoordelijkheid.<br/>De werkzaamheden vinden voornamelijk plaats in bewoonde woningen. Daarom is het belangrijk dat je netjes, zorgvuldig en klantvriendelijk te werk gaat.<br/><br/><strong>Jouw werkzaamheden bestaan onder andere uit:</strong><br/><ul><li>Het verwijderen van bestaande beglazing en kitwerk;</li><li>Het plaatsen van nieuwe isolerende beglazing;</li><li>Het monteren van ventilatieroosters en glaslatten;</li><li>Het zorgvuldig afkitten en netjes afwerken van de geplaatste beglazing;</li><li>Het maken van afspraken met bewoners en het zelfstandig uitvoeren van de werkzaamheden.</li></ul><p> </p><b>Functie-eisen</b><br/><strong>Wat vragen we van jou als glaszetter in Rotterdam?</strong><br/><ul><li>Je hebt minimaal 2 jaar recente en aantoonbare werkervaring als glaszetter;</li><li>Je bent in het bezit van een VCA-certificaat of bereid dit op korte termijn te behalen;</li><li>Je beschikt over een geldig rijbewijs B.</li></ul><strong>Wat verwacht onze opdrachtgever van jou?</strong><br/><ul><li>Je bent klantgericht en hecht veel waarde aan goede service;</li><li>Je kunt zelfstandig werken en bent in staat om problemen tijdig te signaleren en op te lossen;</li><li>Je neemt verantwoordelijkheid voor je werkzaamheden en de samenwerking met collega’s;</li><li>Je communiceert duidelijk en professioneel met collega’s én bewoners.</li></ul><br/><p> </p><b>Arbeidsvoorwaarden</b><br/><strong>Werken bij Meestersgilde betekent:</strong><br/><br/><ul><li>Een bruto maandsalaris tussen <strong>€ 3.400 - € 3.800</strong>, afhankelijk van ervaring;</li><li>Pensioenopbouw via het bedrijfstakpensioenfonds Schilders;</li><li>Toegang tot ons eigen scholingsprogramma voor verdere vakontwikkeling;</li><li>Werken aan uitdagende en afwisselende projecten bij toonaangevende bedrijven in de regio;</li><li>Kans op een vast dienstverband bij goed functioneren.</li></ul><br/><strong>Enthousiast geworden over de functie Glaszetter in Rotterdam?</strong><br/>Neem dan direct contact op met Michiel van der Glas op <strong>06-25422235 </strong>of mail naar <strong>michiel@meestersgilde.nl</strong><br/><br/><strong>Over Meestersgilde</strong><br/>Sinds 2004 bemiddelen wij vakmensen zoals timmerlieden, schilders, betonreparateurs en houtrotsaneerders. Met een betrokken en ervaren team koppelen we professionals aan gerenommeerde bedrijven binnen de bouw- en vastgoedonderhoudssector. <br/><br/>Onze vakmensen zijn niet zomaar vakkrachten – het zijn specialisten die gewaardeerd worden om hun vakmanschap, betrouwbaarheid en inzet.<br/>",
+   "text_platform": {
+    "job": "",
+    "function": "",
+    "company": "",
+    "offer": ""
+   },
+   "remote": null,
+   "country_code": "NL",
+   "location_name": "Rotterdam",
+   "city": "Rotterdam",
+   "postal_code": "3044 ER",
+   "lat": null,
+   "lon": null,
+   "apply_url": "https://easyapply.jobs/r/iJFNv9i27yg2wi3Y7eoX",
+   "apply_email": null,
+   "external_reference": "2026-01311",
+   "recruiter_name": null,
+   "recruiter_phone_country": "NL",
+   "recruiter_phone": "0659877526",
+   "recruiter_email": "renzo@meestersgilde.nl",
+   "salary_min": 3400,
+   "salary_max": 3800,
+   "salary_type": "month",
+   "hours_min": 32,
+   "hours_max": 40,
+   "segment_ids": [
+    "1",
+    "6",
+    "12",
+    "17",
+    "25"
+   ],
+   "custom_fields": null,
+   "premium": true,
+   "show_logo": true,
+   "pixel_url": null,
+   "boost_factor": 2,
+   "reference_code": "48ec172e4b54ac55507a0b13ba223ec1",
+   "created_at": "2026-11-03 00:52:31",
+   "updated_at": "2026-11-03 00:52:31",
+   "deleted_at": null,
+   "slogan": null,
+   "header_image": null,
+   "client_uuid": "eeb61528-41b4-4a69-a8ae-ae7ddefc24ea",
+   "segments": {
+    "time": [
+     1
+    ],
+    "education": [
+     6
+    ],
+    "career_level": [
+     12
+    ],
+    "contract": [
+     17
+    ],
+    "category": [
+     25
+    ]
+   },
+   "segments_names": {
+    "time": [
+     "Fulltime"
+    ],
+    "education": [
+     "MBO"
+    ],
+    "career_level": [
+     "Medior (mid-career)"
+    ],
+    "contract": [
+     "Tijdelijk / Project / ZZP"
+    ],
+    "category": [
+     "Bouw en Installatie"
+    ]
+   },
+   "job_url": "https://api.vacatures.co/api/public/v1/jobs/f772f955-ea42-4706-baca-9e6f4ec29ef7/url",
+   "salary": {
+    "salary_year": {
+     "min": 40800,
+     "max": 45600
+    },
+    "salary_month": {
+     "min": 3400,
+     "max": 3800
+    },
+    "salary_day": {
+     "min": 161.9,
+     "max": 180.95
+    },
+    "salary_hour": {
+     "min": 425,
+     "max": 475
+    },
+    "salary_project": {
+     "min": 3400,
+     "max": 3800
+    }
+   },
+   "job_boards_url": {
+    "vacatures-co": "https://vacatures.co/vacature/glaszetter-rotterdam-if"
+   },
+   "product_info": {
+    "product_name": "Boost vacature",
+    "product_image": null
+   },
+   "job_boards": [
+    {
+     "id": 1,
+     "job_board_id": null,
+     "job_board_builder_site_id": 1,
+     "status": "active",
+     "host": "vacatures.co",
+     "url": "https://vacatures.co",
+     "slug": "vacatures-co",
+     "name": "Vacatures&co",
+     "description": "Vacatures&co",
+     "logo": "https://storage.googleapis.com/exenzo-jobboard/vacco/public/thumb/vacatures-co-logo-rgb-png-1-png.png",
+     "fav_icon": null,
+     "job_url_show": "https://vacatures.co/vacature/{slug}",
+     "job_url_apply": "https://vacatures.co/vacature/{slug}",
+     "client_xxxx_reset_url": null,
+     "client_verify_url": null,
+     "client_resume_url": null,
+     "candidate_xxxx_reset_url": null,
+     "candidate_verify_url": null,
+     "candidate_resume_url": null,
+     "job_alert_unsubscribe_url": null,
+     "email_send_address": "no-reply@vacatures.co",
+     "email_send_name": "Vacatures&co",
+     "rank": null,
+     "custom_fields": null,
+     "created_at": null,
+     "updated_at": "2020-04-16 17:28:22",
+     "laravel_through_key": 17043608
+    }
+   ],
+   "product": {
+    "id": 3,
+    "product_id": null,
+    "email_template_job_published_id": null,
+    "payment_type": "once",
+    "product_type": "job_posting",
+    "job_up_sell": null,
+    "image": null,
+    "job_image": null,
+    "slug": "boost-vacature",
+    "name": "Boost vacature",
+    "text": "<p></p><h1>Wij boosten jouw vacature de wereld in.</h1>\n<p>Via jobboost.io wordt je vacature de wereld ingeboost!</p><p></p>",
+    "purchase_url": null,
+    "benefits": [
+     {
+      "lang": "en",
+      "name": "30x meer views",
+      "icon": "StarIcon",
+      "key": 0
+     },
+     {
+      "lang": "en",
+      "name": "Meer sollicitaties",
+      "icon": "SmileIcon",
+      "key": 1
+     },
+     {
+      "lang": "en",
+      "name": "Vacature optimalisatie",
+      "icon": "CheckIcon",
+      "key": 2
+     },
+     {
+      "lang": "en",
+      "name": "Alles van Gratis",
+      "icon": "GiftIcon",
+      "key": 3
+     }
+    ],
+    "price": 249,
+    "price_normal": null,
+    "recurring_type": null,
+    "premium": true,
+    "premium_days": null,
+    "amount": 1,
+    "job_days": 30,
+    "max_views": null,
+    "active": true,
+    "trial": false,
+    "client_register_activate": null,
+    "subscription_amount": null,
+    "subscription_valid_months": null,
+    "boost_factor": 2,
+    "email_only": null,
+    "payment_types": null,
+    "created_by": null,
+    "updated_by": null,
+    "created_at": "2020-09-14 11:42:48",
+    "updated_at": "2020-09-14 11:49:00",
+    "job_media": 0,
+    "order_rank": null
+   }
+  },
+  "fetched_at": "2026-11-06T02:56:23.703354Z",
+  "content_hash": "610f9d931ccfeeb7f993c44e368e5755b67444cc3b371106468a6f6b040454f3"
+ }
+]

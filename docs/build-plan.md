@@ -20,7 +20,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 8 | 10 | Website | In progress (Lighthouse, Storybook) |
 | 9 | 11 | Globe and country filter | Done (60 fps to check on the reference laptop) |
 | 10 | 7 | Remaining 5 connectors and company list | In progress (company list: D-07) |
-| 10b | 7b | Platform coverage: the brief's 78 platforms | In progress (41 of 78 verified live) |
+| 10b | 7b | Platform coverage: the brief's 78 platforms | In progress (64 of 78 verified live) |
 | 11 | 8 | Deduplication | Done (admin merge page with the admin view) |
 | 12 | 12 | AI providers and MCP server | In progress (Claude check by the owner; cloud providers wait for the vault) |
 | 13 | 2e | Terraform staging and deploy on merge | On hold until local is complete |
@@ -114,9 +114,9 @@ The original brief (`Think like a software developer, So.txt`, outside the repo)
 - [x] A crawl that reads only part of a large board (a page or detail cap, an unreadable page) reports an incomplete fetch, and the status rules close nothing on it.
 - [x] Every connector is seeded as a source, and the nightly smoke test falls back to each platform's example board, so every connector is tested live every night. Nightly discovery stays on the original six sources.
 - [x] Employment type is kept when a source gives it (`jobs.employment_type`), and search filters by company, location and employment type.
-- [ ] 24 platforms not built yet: ADP, ApplicantPro, Avature, BrassRing, Comeet, CSOD, Dayforce, Eightfold AI, iSolvedHire, Jobvite, Oracle Recruiting, Paylocity, Phenom People, SAP SuccessFactors, Taleo, TriNet, UltiPro, WeRecruit, Zoho Recruit, Artha, jobboardsoftware.com, jobBoardHQ, eJobBoard, ejobsitesoftware.com. How each works is in `docs/connectors.md`.
-- [ ] 7 platforms verified on one board only (no second live board found): Freshteam, GoHire, JobKit, JobBoardFire, CareerSiteCloud, JobBoard.com, Nodex. Workday is verified but reads at most 1,000 jobs per board per crawl.
-- [ ] 4 platforms blocked by robots.txt or sign-in (SmartRecruiters, Paycor, Dover, Talenetic) and 2 that need your decision (Paycom, talentReef).
+- [x] 23 more connectors built and verified live on two or more boards each (ADP, ApplicantPro, Avature, BrassRing, Comeet, CSOD, Dayforce, Eightfold AI, iSolvedHire, Jobvite, Oracle Recruiting, Paylocity, Phenom People, SAP SuccessFactors, Taleo, talentReef, TriNet, UltiPro, WeRecruit, Zoho Recruit, jobboardsoftware.com, jobBoardHQ, ejobsitesoftware.com). Fetcher: robots.txt follows RFC 9309 (longest match, `*` and `$`) and a POST can carry request headers. Boards whose jobs link to a stray address are rejected (eJobSite).
+- [ ] 7 platforms verified on one board only (no second live board found): Freshteam, GoHire, JobKit, JobBoardFire, CareerSiteCloud, JobBoard.com, Nodex. Workday is verified but reads at most 1,000 jobs per board per crawl; UltiPro, jobBoardHQ, Avature and SuccessFactors read only part of each board (see `docs/coverage.md`).
+- [ ] 6 platforms blocked and not worked around: SmartRecruiters, Paycor, Dover, Talenetic and Paycom (robots.txt or sign-in), Artha (bot-protection challenge); eJobBoard has no live boards. `docs/platform-access-requests.md` holds the permission requests to send; a platform moves out of Blocked only when it says yes in writing.
 - [ ] An end-to-end indexing run per platform in the local stack (crawl, normalize, index), recorded in the checklist.
 - [ ] Job boards list many employers: jobs on a board take the board's name as their company until the company is read per job.
 

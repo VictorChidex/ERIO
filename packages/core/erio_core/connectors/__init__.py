@@ -17,6 +17,11 @@ from erio_core.connectors.breezy import BreezyConnector
 from erio_core.connectors.gem import GemConnector
 from erio_core.connectors.gohire import GoHireConnector
 from erio_core.connectors.greenhouse import GreenhouseConnector
+from erio_core.connectors.group_a import GROUP_A_CONNECTORS
+from erio_core.connectors.group_b import GROUP_B_CONNECTORS
+from erio_core.connectors.group_c import GROUP_C_CONNECTORS
+from erio_core.connectors.group_d import GROUP_D_CONNECTORS
+from erio_core.connectors.group_e import GROUP_E_CONNECTORS
 from erio_core.connectors.hibob import HiBobConnector
 from erio_core.connectors.hirehive import HireHiveConnector
 from erio_core.connectors.hireology import HireologyConnector
@@ -81,6 +86,11 @@ ALL_CONNECTORS: list[Connector] = [
     JobBoardIoConnector(),
     WorkdayConnector(),
     *JSONLD_CONNECTORS,
+    *GROUP_A_CONNECTORS,
+    *GROUP_B_CONNECTORS,
+    *GROUP_C_CONNECTORS,
+    *GROUP_D_CONNECTORS,
+    *GROUP_E_CONNECTORS,
 ]
 
 CONNECTORS: dict[str, Connector] = {connector.slug: connector for connector in ALL_CONNECTORS}

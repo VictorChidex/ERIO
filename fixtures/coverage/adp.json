@@ -1,0 +1,378 @@
+[
+ {
+  "source_slug": "adp",
+  "board_token": "00000000-0000-0000-0000-000000000000",
+  "external_id": "9201356950519_1",
+  "payload": {
+   "itemID": "9201356950519_1",
+   "postingInstructions": [],
+   "links": [],
+   "clientRequisitionID": "1079",
+   "customFieldGroup": {
+    "codeFields": [
+     {
+      "codeValue": "AN",
+      "nameCode": {
+       "codeValue": "SalaryType"
+      },
+      "shortName": "Annually"
+     },
+     {
+      "codeValue": "RANGE",
+      "nameCode": {
+       "codeValue": "SalaryRangeType"
+      },
+      "shortName": "RANGE"
+     }
+    ],
+    "dateFields": [
+     {
+      "dateValue": "2026-09-02T13:54Z",
+      "nameCode": {
+       "codeValue": "PostingDate"
+      }
+     },
+     {
+      "dateValue": "2026-11-05T21:46Z",
+      "nameCode": {
+       "codeValue": "CurrentServerDateTime"
+      }
+     }
+    ],
+    "indicatorFields": [
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "PriortyStatusFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "InternalPostingFlag"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "MinValue"
+      }
+     },
+     {
+      "indicatorValue": true,
+      "nameCode": {
+       "codeValue": "IsVsidApplicable"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForExtPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsSassDlReqForIntPostFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsMonetaryFlag"
+      }
+     },
+     {
+      "indicatorValue": false,
+      "nameCode": {
+       "codeValue": "IsNonMonetaryFlag"
+      }
+     }
+    ],
+    "numberFields": [
+     {
+      "categoryCode": {
+       "codeValue": "ApplicantCount"
+      },
+      "numberValue": 0.0
+     },
+     {
+      "categoryCode": {
+       "codeValue": "AwardAmount"
+      }
+     }
+    ],
+    "stringFields": [
+     {
+      "nameCode": {
+       "codeValue": "ExternalJobID"
+      },
+      "stringValue": "595225"
+     },
+     {
+      "nameCode": {
+       "codeValue": "CareerCenterRefId"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "GuidelineOid"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "CurrencySymbolOrCode"
+      }
+     },
+     {
+      "nameCode": {
+       "codeValue": "HomeDepartment"
+      },
+      "stringValue": ""
+     },
+     {
+      "nameCode": {
+       "codeValue": "JobClass"
+      },
+      "stringValue": "Professional"
+     },
+     {
+      "nameCode": {
+       "codeValue": "SalaryRange"
+      },
+      "stringValue": "100000.00 to 180000.00 (USD) Annually"
+     }
+    ]
+   },
+   "organizationalUnits": [],
+   "payGradeRange": {
+    "minimumRate": {
+     "amountValue": 100000.0,
+     "currencyCode": "USD"
+    },
+    "maximumRate": {
+     "amountValue": 180000.0,
+     "currencyCode": "USD"
+    }
+   },
+   "postDate": "2026-09-02T23:24:00",
+   "requisitionLocations": [
+    {
+     "address": {
+      "cityName": "Baltimore",
+      "countrySubdivisionLevel1": {
+       "codeValue": "MD"
+      },
+      "postalCode": "21209"
+     },
+     "aliasNames": [],
+     "nameCode": {
+      "shortName": " Baltimore, MD, US"
+     }
+    }
+   ],
+   "requisitionTitle": "Researcher (Options)",
+   "screeningRequirements": [],
+   "sponsoredVisaTypeCodes": [],
+   "workLevelCode": {
+    "shortName": "Full Time"
+   },
+   "detail": {
+    "itemID": "9201356950519_1",
+    "postingInstructions": [],
+    "links": [
+     {
+      "title": "Researcher - Options 2026.pdf",
+      "targetSchema": "pdf",
+      "schema": "444feaa9-4007-4e4d-a7c1-0bff4aa6a91c",
+      "payLoadArguments": [
+       {
+        "argumentPath": "0052/PAYXSCH0114404/Client/Recruitment/RecruitmentDocs/",
+        "argumentValue": "Researcher - Options 2026.pdf"
+       }
+      ]
+     }
+    ],
+    "clientRequisitionID": "1079",
+    "customFieldGroup": {
+     "codeFields": [
+      {
+       "codeValue": "AN",
+       "nameCode": {
+        "codeValue": "SalaryType"
+       },
+       "shortName": "Annually"
+      },
+      {
+       "codeValue": "RANGE",
+       "nameCode": {
+        "codeValue": "SalaryRangeType"
+       },
+       "shortName": "RANGE"
+      }
+     ],
+     "dateFields": [
+      {
+       "dateValue": "2026-09-02T13:54Z",
+       "nameCode": {
+        "codeValue": "PostingDate"
+       }
+      },
+      {
+       "dateValue": "2026-11-05T21:46Z",
+       "nameCode": {
+        "codeValue": "CurrentServerDateTime"
+       }
+      }
+     ],
+     "indicatorFields": [
+      {
+       "indicatorValue": false,
+       "nameCode": {
+        "codeValue": "PriortyStatusFlag"
+       }
+      },
+      {
+       "indicatorValue": false,
+       "nameCode": {
+        "codeValue": "InternalPostingFlag"
+       }
+      },
+      {
+       "indicatorValue": true,
+       "nameCode": {
+        "codeValue": "MinValue"
+       }
+      },
+      {
+       "indicatorValue": true,
+       "nameCode": {
+        "codeValue": "IsVsidApplicable"
+       }
+      },
+      {
+       "indicatorValue": false,
+       "nameCode": {
+        "codeValue": "IsSassDlReqForExtPostFlag"
+       }
+      },
+      {
+       "indicatorValue": false,
+       "nameCode": {
+        "codeValue": "IsSassDlReqForIntPostFlag"
+       }
+      },
+      {
+       "indicatorValue": false,
+       "nameCode": {
+        "codeValue": "IsMonetaryFlag"
+       }
+      },
+      {
+       "indicatorValue": false,
+       "nameCode": {
+        "codeValue": "IsNonMonetaryFlag"
+       }
+      }
+     ],
+     "numberFields": [
+      {
+       "categoryCode": {
+        "codeValue": "ApplicantCount"
+       },
+       "numberValue": 194.0
+      },
+      {
+       "categoryCode": {
+        "codeValue": "AwardAmount"
+       }
+      }
+     ],
+     "stringFields": [
+      {
+       "nameCode": {
+        "codeValue": "ExternalJobID"
+       },
+       "stringValue": "595225"
+      },
+      {
+       "nameCode": {
+        "codeValue": "CareerCenterRefId"
+       }
+      },
+      {
+       "nameCode": {
+        "codeValue": "GuidelineOid"
+       }
+      },
+      {
+       "nameCode": {
+        "codeValue": "CurrencySymbolOrCode"
+       }
+      },
+      {
+       "nameCode": {
+        "codeValue": "SassStatus"
+       },
+       "stringValue": "null"
+      },
+      {
+       "nameCode": {
+        "codeValue": "HomeDepartment"
+       },
+       "stringValue": "Research"
+      },
+      {
+       "nameCode": {
+        "codeValue": "JobClass"
+       },
+       "stringValue": "Professional"
+      },
+      {
+       "nameCode": {
+        "codeValue": "SalaryRange"
+       },
+       "stringValue": "100000.00 to 180000.00 (USD) Annually"
+      }
+     ]
+    },
+    "organizationalUnits": [],
+    "payGradeRange": {
+     "minimumRate": {
+      "amountValue": 100000.0,
+      "currencyCode": "USD"
+     },
+     "maximumRate": {
+      "amountValue": 180000.0,
+      "currencyCode": "USD"
+     }
+    },
+    "postDate": "2026-09-02T23:24:00",
+    "requisitionDescription": "<div><div><div><link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_editor.pkgd.min.css\" rel=\"stylesheet\" type=\"text/css\"></div><p data-pasted=\"true\"><strong>Awarded in 2025 as &ldquo;Best Place to Work in Money Management&rdquo; by <em>Pensions &amp; Investments,&nbsp;</em></strong></p><p><strong>&ldquo;Best Place to Work for Women&rdquo;</strong><strong><em>&nbsp;</em></strong><strong>by</strong><strong><em>&nbsp;Best Companies Group</em></strong></p><p><strong>and recognized by <em>Best Companies Group</em> and <em>COLOR Magazine</em> as an &ldquo;Inclusive Workplace&rdquo;&nbsp;</strong></p><p><strong>Hybrid position &ndash; In office 3 days a week/ remote 2 days a week&nbsp;</strong></p><p><strong>&nbsp;</strong></p><p>We are seeking a motivated Researcher to help evolve Campbell&rsquo;s options trading program. This role is designed for a quantitative thinker who enjoys translating models into programmatic trading strategies. Working with the options research team, you can make a direct impact on the firm&#39;s portfolio in an atmosphere that prizes intellectual curiosity and creative problem-solving. We believe in the value of in-person collaboration; as such, this role provides proximity and access to research leadership in an environment that fosters mentorship and rapid technical growth.</p><p><br></p><p><strong><u>Principal Responsibilities:</u></strong></p><ul style=\"list-style-type: disc;margin-left: 0in;\"><li>Strategy Development: Develop new systematic options strategies and risk management methods.</li><li>Quantitative Modeling: Apply mathematical frameworks to options and derivative pricing.</li><li>Coding: Develop trading signals from theoretical and empirical research.</li><li>Portfolio Oversight: Monitor production portfolios and suggest solutions to production issues.</li><li>Collaboration: Work closely with the Director, Options Research. Contribute to the research department through seminars, papers, and presentations.</li><li>Continuous Learning: Stay abreast of academic research and market developments in volatility trading.</li></ul><p><br></p><p><strong><u>Required Qualifications</u></strong></p><ul style=\"list-style-type: disc;margin-left: 0in;\"><li>BS degree in a quantitative discipline (Finance, Physics, Math, or related) and 2+ years of experience</li><li>Solid understanding of financial markets and investment concepts</li><li>Strong foundational knowledge of options pricing, Greeks, and derivative mathematics</li><li>Proficiency in a computational programming language such as Python or MATLAB.</li><li>Ability to effectively communicate ideas and results in both written and verbal form</li><li>Self-motivated, well-organized, intellectually curious, and possessing an acute attention to detail</li><li>Ability to collaborate effectively with team members and contribute to team&rsquo;s deliverables</li><li>Ability to operate with a sense of urgency in a fast-paced environment</li></ul><p style=\"margin-left:.25in;\"><br></p><p><strong><u>Preferred Qualifications</u></strong></p><ul style=\"list-style-type: disc;margin-left: 0in;\"><li>MS degree or PhD in a quantitative discipline</li><li>Experience at a hedge fund, proprietary trading firm, or investment bank</li><li>Expertise in options</li></ul><p><strong>&nbsp;</strong></p><p><strong>&nbsp;&nbsp;</strong></p><div class=\"fr-page-break fr-deletable\" contenteditable=\"false\" style=\"break-after: always;\" data-title=\"PageBreak\"><div class=\"fr-page-break-line\"><strong><span class=\"fr-page-break-label\">Page Break</span></strong></div></div><strong>&nbsp;</strong><p></p><p><strong>&nbsp;</strong></p><p><strong>Why Campbell and Company?</strong></p><p>At Campbell, our mission is to provide our investors with world-class investment performance. We accomplish this through a quantitative multi-strategy framework guided by a culture of continuous innovation. We trade over 100 derivative markets and 5000+ cash equities across the globe, based on over 100 systematic strategies with trades ranging from hours to months. We manage $6+ billion, with clients ranging from large public pensions to individual investors.</p><p>We enjoy working together to solve hard problems with real-world applications. Our collaborative culture allows us to obtain better results as a team without losing sight of the need to reward individual contributions. Two-thirds of staff are investment professionals, with 40% having been at Campbell for ten years or more. We believe the long tenure of our staff is a testament to our culture and the work-life balance we offer to all of our associates.</p><p>Our new, renovated offices are located at the Quarry Lake in Greenspring in upscale Baltimore County with walking access to premier shopping and dining options, high-end salons, fitness facilities, and medical offices. Many beautiful neighborhoods can be found within a few minutes&rsquo; drive from Campbell. For those who prefer downtown living, the Inner Harbor, Fells Point, and Federal Hill are less than 15 miles away.&nbsp;</p><p>We recognize that producing the best work and maintaining the best talent includes putting an overall premium on the overall wellness and financial well-being of our employees. We offer a hybrid work environment for all associates, very competitive pay and benefits, parental leave, 80% tuition reimbursement up to $50,000, an annual $2,000 vacation allowance (yes-we pay you to go on vacation!), employer-funded Health Savings Account, a $10,000 family forming HRA benefit, group health, employer paid dental and vision benefits, a $1000 fitness allowance, free onsite massages, and a 401(k) matching 100% up to 9% of your salary, plus an additional annual employer discretionary contribution, up to 7.25%.&nbsp;</p><p>Regular social gatherings, biweekly catered staff lunches, arcade and video games, ping pong tournaments, and diversity and inclusion events are just a few of our engagement activities to ensure working at Campbell isn&rsquo;t just challenging and rewarding, but also fun!</p><p>We offer a competitive base salary range for this role of $100,000 to $180,000 per annum, which does not include discretionary bonus compensation or our comprehensive benefits package. The base salary is contingent on experience and qualifications, with the minimum suitable for candidates under two years of experience and the maximum reserved for those possessing an advanced degree and relevant work experience. Position is also eligible for an annual discretionary bonus.</p><p><strong>Campbell &amp; Company takes pride in our inclusive work environment where people of various backgrounds, perspectives, and skills collaborate and grow professionally. We welcome and encourage qualified candidates, including those under-represented in the investment industry, to explore the exciting opportunities at Campbell.</strong></p><div>&nbsp;<link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_style.min.css\" rel=\"stylesheet\" type=\"text/css\"><div class=\"fr-view\"><div><link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_editor.pkgd.min.css\" rel=\"stylesheet\" type=\"text/css\">&nbsp;<link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_style.min.css\" rel=\"stylesheet\" type=\"text/css\"><div class=\"fr-view\"><div><link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_editor.pkgd.min.css\" rel=\"stylesheet\" type=\"text/css\">&nbsp;<link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_style.min.css\" rel=\"stylesheet\" type=\"text/css\"><div class=\"fr-view\"><div><link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_editor.pkgd.min.css\" rel=\"stylesheet\" type=\"text/css\">&nbsp;<link href=\"https://static.workforcenow.adp.com/mas/mdf-components/22.7.18/styles/froala_style.min.css\" rel=\"stylesheet\" type=\"text/css\"><div class=\"fr-view\"><p id=\"isPasted\" style='margin-right:0in;margin-left:0in;font-size:13px;font-family:\"Times New Roman\",serif;margin:0in;margin-bottom:.0001pt;text-align:center;'><br></p></div></div></div></div></div></div></div></div></div></div>\n",
+    "requisitionLocations": [
+     {
+      "address": {
+       "cityName": "Baltimore",
+       "countrySubdivisionLevel1": {
+        "codeValue": "MD"
+       },
+       "postalCode": "21209"
+      },
+      "aliasNames": [],
+      "nameCode": {
+       "shortName": " Baltimore, MD, US"
+      }
+     }
+    ],
+    "requisitionTitle": "Researcher (Options)",
+    "screeningRequirements": [],
+    "sponsoredVisaTypeCodes": [],
+    "workLevelCode": {
+     "shortName": "Full Time"
+    }
+   }
+  },
+  "fetched_at": "2026-11-06T02:46:25.988947Z",
+  "content_hash": "903f46fa703adcc9a88bfb24ff10f6db066adc66488af5da18e5d4ba8f9985b9"
+ }
+]

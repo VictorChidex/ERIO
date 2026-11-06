@@ -52,7 +52,15 @@ FORBIDDEN = re.compile(
 LOOKALIKES = re.compile(r'("(?:uniqueKey|indeed-apply-apitoken)": *")[^"]*(")')
 
 
+# A board token that is a GUID looks like a key too; an all-zero GUID parses the same way.
+GUID_TOKEN = re.compile(
+    r'("board_token": *")[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}(")'
+)
+ZERO_GUID = "00000000-0000-0000-0000-000000000000"
+
+
 def masked(text: str) -> str:
+    text = GUID_TOKEN.sub(rf"\g<1>{ZERO_GUID}\g<2>", text)
     return LOOKALIKES.sub(r"xxxx", FORBIDDEN.sub("xxxx", text))
 
 

@@ -1,0 +1,164 @@
+[
+ {
+  "source_slug": "comeet",
+  "board_token": "vastdata/43.001",
+  "external_id": "6D.76F",
+  "payload": {
+   "name": "Account Executive - Austin, TX",
+   "department": "Sales",
+   "email": "vastdata.6D.76F@applynow.io",
+   "location": {
+    "name": "Austin, TX",
+    "country": "US",
+    "city": "Austin",
+    "state": "AZ",
+    "postal_code": null,
+    "street_name": null,
+    "arrival_instructions": null,
+    "street_number": null,
+    "timezone": "America/Chicago",
+    "location_uid": "80.50D",
+    "is_remote": true
+   },
+   "url_comeet_hosted_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---austin-tx/6D.76F",
+   "url_recruit_hosted_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---austin-tx/6D.76F",
+   "url_active_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---austin-tx/6D.76F",
+   "employment_type": "Full-time",
+   "experience_level": "Senior",
+   "uid": "6D.76F",
+   "custom_fields": {
+    "details": [
+     {
+      "name": "Description",
+      "value": "<p>VAST Data is looking for an Account Executive to join our growing team!</p><p><br></p><p>This is a great opportunity to be part of one of the fastest-growing infrastructure companies in history, an organization that is in the center of the hurricane being created by the revolution in artificial intelligence.</p><p><br></p><p><strong>\"VAST's data management vision is the future of the market.\"- Forbes</strong></p><p><br></p><p>VAST Data is the data platform company for the AI era. We are building the enterprise software infrastructure to capture, catalog, refine, enrich, and protect massive datasets and make them available for real-time data analysis and AI training and inference. Designed from the ground up to make AI simple to deploy and manage, VAST takes the cost and complexity out of deploying enterprise and AI infrastructure across data center, edge, and cloud.</p><p><br></p><p>Our success has been built through intense innovation, a customer-first mentality and a team of fearless VASTronauts who leverage their skills &amp; experiences to make real market impact. This is an opportunity to be a key contributor at a pivotal time in our company’s growth and at a pivotal point in computing history.</p><p><br></p><p><br></p><p><br></p><p><strong>THE ROLE:</strong></p><p><br></p><ul><li>Develop business across a mix of enterprise level customers across the spectrum</li><li>Generate revenue and work closely with a network of Channel Partners to successfully sell the VAST Data offering</li><li>Manage the sales process to align with customer buying cycles</li><li>Manage customer relationships from first meeting through (optional) proof of concept as well as after the sale to enable opportunities to expand the VAST Data footprint.</li><li>Develop and present proposals to customers with information that demonstrates the ability of the VAST solution to meet customers’ business objectives and justify the sale.</li><li>Prospect, penetrate large accounts, reaching decision-makers, and closing business.</li></ul>",
+      "order": 1
+     },
+     {
+      "name": "Requirements",
+      "value": "<p><br></p><ul><li>Consistent track record of exceeding quota and driving referenceable business with large strategic customers.</li><li>A history of developing selling regions from the ground up, with little resources.</li><li>Passion for developing account expansion strategies and the value of post-sales customer success.</li><li>Excellent time management and communication skills.</li><li>Desire to drive change and evangelize new technologies in a way that resonates with customers.</li><li>Minimum&nbsp;of 7 years direct Enterprise selling experience</li><li>Ability to thrive in a fast-paced environment experience is key, a mix of large company and startup experience.</li><li>The ability to speak with customers and partners at both a business-level and technical-level</li><li>Knowledge of the storage industry specifically: NFS, Object Storage and Enterprise Computing architectures.</li><li>Competitive attitude and strong work ethic with the ability to enthusiastically represent the company.</li><li>Proficient with Salesforce.com and Microsoft Office</li></ul>",
+      "order": 2
+     }
+    ],
+    "categories": []
+   },
+   "internal_use_custom_id": "VDT27533",
+   "url_detected_page": null,
+   "picture_url": null,
+   "time_updated": "2026-09-22T16:55:35Z",
+   "company_name": "VAST Data",
+   "is_internal": false,
+   "linkedin_job_posting_id": "MTVfMTE3NDYzXzQyNTMyN18xNzI1MDUy",
+   "workplace_type": "Remote"
+  },
+  "fetched_at": "2026-11-06T02:47:08.488794Z",
+  "content_hash": "abdcc2feebb24269fb1700e7666733be5a766bfad26df95dfb874cad3a5a54f1"
+ },
+ {
+  "source_slug": "comeet",
+  "board_token": "vastdata/43.001",
+  "external_id": "7F.076",
+  "payload": {
+   "name": "Account Executive - Federal",
+   "department": "Sales",
+   "email": "vastdata.7F.076@applynow.io",
+   "location": {
+    "name": "Washington D.C",
+    "country": "US",
+    "city": "Sterling",
+    "state": "VA",
+    "postal_code": "",
+    "street_name": "",
+    "arrival_instructions": null,
+    "street_number": "",
+    "timezone": "America/New_York",
+    "location_uid": "C4.400",
+    "is_remote": true
+   },
+   "url_comeet_hosted_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---federal/7F.076",
+   "url_recruit_hosted_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---federal/7F.076",
+   "url_active_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---federal/7F.076",
+   "employment_type": null,
+   "experience_level": null,
+   "uid": "7F.076",
+   "custom_fields": {
+    "details": [
+     {
+      "name": "Description",
+      "value": "<p>VAST Data is looking for an Account Executive to join our growing team!</p><p><br></p><p>This is a great opportunity to be part of one of the fastest-growing infrastructure companies in history, an organization that is in the center of the hurricane being created by the revolution in artificial intelligence.</p><p><br></p><p><strong>\"VAST's data management vision is the future of the market.\" - Forbes</strong></p><p><br></p><p>VAST Data is the data platform company for the AI era. We are building the enterprise software infrastructure to capture, catalog, refine, enrich, and protect massive datasets and make them available for real-time data analysis and AI training and inference. Designed from the ground up to make AI simple to deploy and manage, VAST takes the cost and complexity out of deploying enterprise and AI infrastructure across data center, edge, and cloud.</p><p><br></p><p>Our success has been built through intense innovation, a customer-first mentality and a team of fearless VASTronauts who leverage their skills &amp; experiences to make real market impact. This is an opportunity to be a key contributor at a pivotal time in our company’s growth and at a pivotal point in computing history.</p><p><br></p><p><br></p><p>As a DOD Account Executive, you will be responsible for driving revenue across multiple DOD customers.&nbsp;A combination of Hunting and Farming to drive long term reoccurring revenue streams.&nbsp;You will required to help build new partnerships and develop existing ones to include FSI, OEM, and Application strategic partners.</p><p><br></p><p><br></p><p><strong>THE ROLE:</strong></p><p><strong>﻿</strong></p><ul><li>Develop business with DOD customers supporting an array of applications including Splunk, AI/ML, HPC, Backup, Edge Computing.</li><li>Prospect and penetrate large accounts, reaching decision-makers, and close business</li><li>Manage the sales process to align with customer buying cycles</li><li>Manage customer relationships from first meeting through proof of concept, to after the sale to enable opportunities to expand the VAST Data footprint</li><li>Develop and present proposals to customers with information that demonstrates the ability of the VAST solution to meet customers’ business objectives and justify the sale</li><li>Channel Development: work with a select number of systems resellers and integrators to enable market leverage.</li></ul><p><br></p>",
+      "order": 1
+     },
+     {
+      "name": "Requirements",
+      "value": "<ul><li>Minimum&nbsp;of 10 years Direct DOD sales experience</li><li>Consistent track record of exceeding quota and driving referenceable business with large DOD customers</li><li>A history of developing customers from the ground up, with minimal resources</li><li>Passion for developing account expansion strategies and the value of post-sales customer success</li><li>Excellent time management and communication skills</li><li>Desire to drive innovation and evangelize new technologies in a way that resonates with customers</li><li>Possess the ability to thrive in a fast-paced environment</li><li>Ideally experience working in both large and start up environments</li><li>The ability to speak with customers and partners at both a business and technical level</li><li>Knowledge of the storage industry specifically: File and Object Storage and Enterprise Computing architectures</li><li>Competitive attitude and strong work ethic with the ability to enthusiastically represent the company</li><li>Proficient with Salesforce.com and Microsoft Office</li></ul><p><br></p>",
+      "order": 2
+     }
+    ],
+    "categories": []
+   },
+   "internal_use_custom_id": "VDT27343",
+   "url_detected_page": null,
+   "picture_url": null,
+   "time_updated": "2026-08-24T19:44:09Z",
+   "company_name": "VAST Data",
+   "is_internal": false,
+   "linkedin_job_posting_id": "MTVfMTE3NDYzXzQ2MjcxMF8xODY2NjE0",
+   "workplace_type": "Remote"
+  },
+  "fetched_at": "2026-11-06T02:47:08.488794Z",
+  "content_hash": "c01db1362f1c276bf18cc467608097abed5c541da7001b52db943dd5d2fb47cd"
+ },
+ {
+  "source_slug": "comeet",
+  "board_token": "vastdata/43.001",
+  "external_id": "7F.076-0D.50B",
+  "payload": {
+   "name": "Account Executive - Federal",
+   "department": "Sales",
+   "email": "vastdata.7F.076-0D.50B@applynow.io",
+   "location": {
+    "name": "East Coast, United States",
+    "country": "US",
+    "city": "New York",
+    "state": "NY",
+    "postal_code": null,
+    "street_name": null,
+    "arrival_instructions": null,
+    "street_number": null,
+    "timezone": "America/Iqaluit",
+    "location_uid": "0D.50B",
+    "is_remote": true
+   },
+   "url_comeet_hosted_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---federal/7F.076-0D.50B",
+   "url_recruit_hosted_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---federal/7F.076-0D.50B",
+   "url_active_page": "https://www.comeet.com/jobs/vastdata/43.001/account-executive---federal/7F.076-0D.50B",
+   "employment_type": null,
+   "experience_level": null,
+   "uid": "7F.076-0D.50B",
+   "custom_fields": {
+    "details": [
+     {
+      "name": "Description",
+      "value": "<p>VAST Data is looking for an Account Executive to join our growing team!</p><p><br></p><p>This is a great opportunity to be part of one of the fastest-growing infrastructure companies in history, an organization that is in the center of the hurricane being created by the revolution in artificial intelligence.</p><p><br></p><p><strong>\"VAST's data management vision is the future of the market.\" - Forbes</strong></p><p><br></p><p>VAST Data is the data platform company for the AI era. We are building the enterprise software infrastructure to capture, catalog, refine, enrich, and protect massive datasets and make them available for real-time data analysis and AI training and inference. Designed from the ground up to make AI simple to deploy and manage, VAST takes the cost and complexity out of deploying enterprise and AI infrastructure across data center, edge, and cloud.</p><p><br></p><p>Our success has been built through intense innovation, a customer-first mentality and a team of fearless VASTronauts who leverage their skills &amp; experiences to make real market impact. This is an opportunity to be a key contributor at a pivotal time in our company’s growth and at a pivotal point in computing history.</p><p><br></p><p><br></p><p>As a DOD Account Executive, you will be responsible for driving revenue across multiple DOD customers.&nbsp;A combination of Hunting and Farming to drive long term reoccurring revenue streams.&nbsp;You will required to help build new partnerships and develop existing ones to include FSI, OEM, and Application strategic partners.</p><p><br></p><p><br></p><p><strong>THE ROLE:</strong></p><p><strong>﻿</strong></p><ul><li>Develop business with DOD customers supporting an array of applications including Splunk, AI/ML, HPC, Backup, Edge Computing.</li><li>Prospect and penetrate large accounts, reaching decision-makers, and close business</li><li>Manage the sales process to align with customer buying cycles</li><li>Manage customer relationships from first meeting through proof of concept, to after the sale to enable opportunities to expand the VAST Data footprint</li><li>Develop and present proposals to customers with information that demonstrates the ability of the VAST solution to meet customers’ business objectives and justify the sale</li><li>Channel Development: work with a select number of systems resellers and integrators to enable market leverage.</li></ul><p><br></p>",
+      "order": 1
+     },
+     {
+      "name": "Requirements",
+      "value": "<ul><li>Minimum&nbsp;of 10 years Direct DOD sales experience</li><li>Consistent track record of exceeding quota and driving referenceable business with large DOD customers</li><li>A history of developing customers from the ground up, with minimal resources</li><li>Passion for developing account expansion strategies and the value of post-sales customer success</li><li>Excellent time management and communication skills</li><li>Desire to drive innovation and evangelize new technologies in a way that resonates with customers</li><li>Possess the ability to thrive in a fast-paced environment</li><li>Ideally experience working in both large and start up environments</li><li>The ability to speak with customers and partners at both a business and technical level</li><li>Knowledge of the storage industry specifically: File and Object Storage and Enterprise Computing architectures</li><li>Competitive attitude and strong work ethic with the ability to enthusiastically represent the company</li><li>Proficient with Salesforce.com and Microsoft Office</li></ul><p><br></p>",
+      "order": 2
+     }
+    ],
+    "categories": []
+   },
+   "internal_use_custom_id": "VDT27343",
+   "url_detected_page": null,
+   "picture_url": null,
+   "time_updated": "2026-08-24T19:44:09Z",
+   "company_name": "VAST Data",
+   "is_internal": false,
+   "linkedin_job_posting_id": "MTVfMTE3NDYzXzQ2MjcxMF8xODY2NjE1XzIzODE5",
+   "workplace_type": "Remote"
+  },
+  "fetched_at": "2026-11-06T02:47:08.488794Z",
+  "content_hash": "2e5f29c9c279edefb96a951011e71d2acbc45a249e2ab266d0ea2bc76b9254e3"
+ }
+]

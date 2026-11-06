@@ -1,0 +1,113 @@
+[
+ {
+  "source_slug": "dayforce",
+  "board_token": "copart/CANDIDATEPORTAL",
+  "external_id": "40098",
+  "payload": {
+   "clientNamespace": "copart",
+   "jobBoardId": 1,
+   "jobPostingId": 40098,
+   "jobReqId": 8864,
+   "jobTitle": "Hotshot Driver - Class A required - 069",
+   "jobDescription": "Copart is now seeking hotshot transport drivers, in select markets, for their FlexForce team. This team will drive hotshot-style trucks with 4/5 car trailers.&nbsp;These drivers will support the local Copart facility in moving vehicles to and from other Copart locations as needed. In addition, the candidate will operate one of our frontend loaders to load/unload and move cars about the facility when not driving. During a special project or catastrophe, the drivers will be deployed to various locations across the country to assist in Catastrophe Response (hurricane, hail, flooding). Overnight travel is expected to be 25-50+% of the time and catastrophe response travel will be mandatory.&nbsp;\n&nbsp;\nIf you're seeking competitive pay in the auto transportation industry, look no further.&nbsp;&nbsp;At Copart, we believe in rewarding hard work, and with our piece rate-based pay system, the right person has the&nbsp;potential to&nbsp;earn $85,000/year, while traveling and assisting other facilities. Copart&rsquo;s top performers earn $100,000/year. When you are not driving you will earn an hourly rate of $27.33.&nbsp; Drivers will receive additional compensation as well as a $45/day in per diem when traveling.\n&nbsp;\nWhat qualities do we seek in our drivers?&nbsp;\nWe value professionalism, hard work, focus, and teamwork.&nbsp; Class A driver's license is required, we will provide comprehensive training to equip you with everything you need to succeed.&nbsp;\n&nbsp;\nWhat will we bring to the table?&nbsp;\nWe have everything you need to get started - Newly delivered trucks and 4 and 5-car transports, insurance, training, and advancement opportunities. Copart offers health insurance (vision, dental available), life insurance, 401k match, employee assistance program, flexible spending account, paid time off, and our&nbsp;employee stock purchase program!&nbsp;\n&nbsp;\nResponsibilities and Duties:&nbsp;\n\nMust be willing to travel nationally on short notice for extended periods of time&nbsp;&nbsp;\nDeploy to catastrophe events within 24 hours when directed to do so&nbsp;\nPick-up and delivery of vehicles to designated Copart facility&nbsp;\nLoad/unload vehicles safely and free of damage&nbsp;\nOperate company equipment in compliance with safety regulations&nbsp;\nMaintain and assure good operating condition of all equipment and facilities&nbsp;\nOther tasks as assigned by the manager in support of daily auctions\n\n&nbsp;\nSkills &amp; Experience&nbsp;\n\nMust meet background screening criteria&nbsp;\nMust possess a&nbsp;Class A&nbsp;Driver's License issued by your state of residence&nbsp;\nAbility to travel by plane&nbsp;\nMilitary applicants are strongly encouraged to apply&nbsp;\nCompletive piece-rate pay&nbsp;\nMust be able to work long hours 12+ hours per day&nbsp;\nBe able to travel with 24 hours or less notice&nbsp;\nAbility to work in extreme conditions,&nbsp;weather and terrain&nbsp;\nOccasional&nbsp;overtime&nbsp;as needed.&nbsp;\nTravel&nbsp;will&nbsp;be required&nbsp;\n\n&nbsp;\nBenefits include:\n\nMedical, Dental, &amp; Vision\n401 (K)\nEmployee Stock Purchase Plan\nFlexible Spending Accounts and Health Savings Account\nLife &amp; AD&amp;D\n\n&nbsp;\nPHYSICAL REQUIREMENTS:\n\nSTANDING: 20%\nSITTING: 50%\nWALKING: 20%\nBENDING: 5%\nSTOOPING:5%\nCLIMBING: 10%\nTRAVEL: 50% + \nLIFTING: 35 Pounds\n\n",
+   "hasVirtualLocation": false,
+   "postingStartTimestampUTC": "2024-11-19T06:00:00+00:00",
+   "postingExpiryTimestampUTC": null,
+   "isEvergreen": false,
+   "reapplyPeriodDays": null,
+   "postingLocations": [
+    {
+     "formattedAddress": "781 Jacob Harris Ln, Glassboro, NJ 08028, USA",
+     "locationId": 888,
+     "locationType": 2,
+     "isoCountryCode": "US",
+     "stateCode": "NJ",
+     "cityName": "Glassboro",
+     "coordinates": "lat:39.6890283;lng:-75.1319948"
+    }
+   ],
+   "postingAppliedStatus": {
+    "jobPostingId": 40098,
+    "hasApplied": false,
+    "canApplyAgain": true
+   },
+   "searchScore": 0
+  },
+  "fetched_at": "2026-11-06T03:06:46.918558Z",
+  "content_hash": "936528d9e3be8f640f3ea850c6f3c30a20e9dc158478f378845633756d71c731"
+ },
+ {
+  "source_slug": "dayforce",
+  "board_token": "copart/CANDIDATEPORTAL",
+  "external_id": "39988",
+  "payload": {
+   "clientNamespace": "copart",
+   "jobBoardId": 1,
+   "jobPostingId": 39988,
+   "jobReqId": 8832,
+   "jobTitle": "Hotshot Driver - Class A required - 903",
+   "jobDescription": "Copart is now seeking hotshot transport drivers, in select markets, for their FlexForce team. This team will drive hotshot-style trucks with 4/5 car trailers.&nbsp;These drivers will support the local Copart facility in moving vehicles to and from other Copart locations as needed. In addition, the candidate will operate one of our frontend loaders to load/unload and move cars about the facility when not driving. During a special project or catastrophe, the drivers will be deployed to various locations across the country to assist in Catastrophe Response (hurricane, hail, flooding). Overnight travel is expected to be 25-50+% of the time and catastrophe response travel will be mandatory.&nbsp;\n&nbsp;\nIf you're seeking competitive pay in the auto transportation industry, look no further.&nbsp;&nbsp;At Copart, we believe in rewarding hard work, and with our piece rate-based pay system, the right person has the&nbsp;potential to&nbsp;earn $85,000/year, while traveling and assisting other facilities. Copart&rsquo;s top performers earn $100,000/year. When you are not driving you will earn an hourly rate of $27.33.&nbsp; Drivers will receive additional compensation as well as a $45/day in per diem when traveling.\n&nbsp;\nWhat qualities do we seek in our drivers?&nbsp;\nWe value professionalism, hard work, focus, and teamwork.&nbsp; Class A driver's license is required, we will provide comprehensive training to equip you with everything you need to succeed.&nbsp;\n&nbsp;\nWhat will we bring to the table?&nbsp;\nWe have everything you need to get started - Newly delivered trucks and 4 and 5-car transports, insurance, training, and advancement opportunities. Copart offers health insurance (vision, dental available), life insurance, 401k match, employee assistance program, flexible spending account, paid time off, and our&nbsp;employee stock purchase program!&nbsp;\n&nbsp;\nResponsibilities and Duties:&nbsp;\n\nMust be willing to travel nationally on short notice for extended periods of time&nbsp;&nbsp;\nDeploy to catastrophe events within 24 hours when directed to do so&nbsp;\nPick-up and delivery of vehicles to designated Copart facility&nbsp;\nLoad/unload vehicles safely and free of damage&nbsp;\nOperate company equipment in compliance with safety regulations&nbsp;\nMaintain and assure good operating condition of all equipment and facilities&nbsp;\nOther tasks as assigned by the manager in support of daily auctions\n\n&nbsp;\nSkills &amp; Experience&nbsp;\n\nMust meet background screening criteria&nbsp;\nMust possess a&nbsp;Class A&nbsp;Driver's License issued by your state of residence&nbsp;\nAbility to travel by plane&nbsp;\nMilitary applicants are strongly encouraged to apply&nbsp;\nCompletive piece-rate pay&nbsp;\nMust be able to work long hours 12+ hours per day&nbsp;\nBe able to travel with 24 hours or less notice&nbsp;\nAbility to work in extreme conditions,&nbsp;weather and terrain&nbsp;\nOccasional&nbsp;overtime&nbsp;as needed.&nbsp;\nTravel&nbsp;will&nbsp;be required&nbsp;\n\n&nbsp;\nBenefits include:\n\nMedical, Dental, &amp; Vision\n401 (K)\nEmployee Stock Purchase Plan\nFlexible Spending Accounts and Health Savings Account\nLife &amp; AD&amp;D\n\n&nbsp;\nPHYSICAL REQUIREMENTS:\n\nSTANDING: 20%\nSITTING: 50%\nWALKING: 20%\nBENDING: 5%\nSTOOPING:5%\nCLIMBING: 10%\nTRAVEL: 50% + \nLIFTING: 35 Pounds\n\n",
+   "hasVirtualLocation": false,
+   "postingStartTimestampUTC": "2024-11-15T06:00:00+00:00",
+   "postingExpiryTimestampUTC": null,
+   "isEvergreen": false,
+   "reapplyPeriodDays": null,
+   "postingLocations": [
+    {
+     "formattedAddress": "7131 Virginia Manor Ct, Laurel, MD 20707, USA",
+     "locationId": 974,
+     "locationType": 2,
+     "isoCountryCode": "US",
+     "stateCode": "MD",
+     "cityName": "Laurel",
+     "coordinates": "lat:39.0789165;lng:-76.8838513"
+    }
+   ],
+   "postingAppliedStatus": {
+    "jobPostingId": 39988,
+    "hasApplied": false,
+    "canApplyAgain": true
+   },
+   "searchScore": 0
+  },
+  "fetched_at": "2026-11-06T03:06:46.918558Z",
+  "content_hash": "0dfa01300040de9b0da45cc4efdf670b808a8ee68d92cc28005ec15f6b57776d"
+ },
+ {
+  "source_slug": "dayforce",
+  "board_token": "copart/CANDIDATEPORTAL",
+  "external_id": "39984",
+  "payload": {
+   "clientNamespace": "copart",
+   "jobBoardId": 1,
+   "jobPostingId": 39984,
+   "jobReqId": 8831,
+   "jobTitle": "Hotshot Driver - Class A required - 339",
+   "jobDescription": "Copart is now seeking hotshot transport drivers, in select markets, for their FlexForce team. This team will drive hotshot-style trucks with 4/5 car trailers.&nbsp;These drivers will support the local Copart facility in moving vehicles to and from other Copart locations as needed. In addition, the candidate will operate one of our frontend loaders to load/unload and move cars about the facility when not driving. During a special project or catastrophe, the drivers will be deployed to various locations across the country to assist in Catastrophe Response (hurricane, hail, flooding). Overnight travel is expected to be 25-50+% of the time and catastrophe response travel will be mandatory.&nbsp;\n&nbsp;\nIf you're seeking competitive pay in the auto transportation industry, look no further.&nbsp;&nbsp;At Copart, we believe in rewarding hard work, and with our piece rate-based pay system, the right person has the&nbsp;potential to&nbsp;earn $85,000/year, while traveling and assisting other facilities. Copart&rsquo;s top performers earn $100,000/year. When you are not driving you will earn an hourly rate of $24.60.&nbsp; Drivers will receive additional compensation as well as a $45/day in per diem when traveling.\n&nbsp;\nWhat qualities do we seek in our drivers?&nbsp;\nWe value professionalism, hard work, focus, and teamwork.&nbsp; Class A driver's license is required, we will provide comprehensive training to equip you with everything you need to succeed.&nbsp;\n&nbsp;\nWhat will we bring to the table?&nbsp;\nWe have everything you need to get started - Newly delivered trucks and 4 and 5-car transports, insurance, training, and advancement opportunities. Copart offers health insurance (vision, dental available), life insurance, 401k match, employee assistance program, flexible spending account, paid time off, and our&nbsp;employee stock purchase program!&nbsp;\n&nbsp;\nResponsibilities and Duties:&nbsp;\n\nMust be willing to travel nationally on short notice for extended periods of time&nbsp;&nbsp;\nDeploy to catastrophe events within 24 hours when directed to do so&nbsp;\nPick-up and delivery of vehicles to designated Copart facility&nbsp;\nLoad/unload vehicles safely and free of damage&nbsp;\nOperate company equipment in compliance with safety regulations&nbsp;\nMaintain and assure good operating condition of all equipment and facilities&nbsp;\nOther tasks as assigned by the manager in support of daily auctions\n\n&nbsp;\nSkills &amp; Experience&nbsp;\n\nMust meet background screening criteria&nbsp;\nMust possess a&nbsp;Class A&nbsp;Driver's License issued by your state of residence&nbsp;\nAbility to travel by plane&nbsp;\nMilitary applicants are strongly encouraged to apply&nbsp;\nCompletive piece-rate pay&nbsp;\nMust be able to work long hours 12+ hours per day&nbsp;\nBe able to travel with 24 hours or less notice&nbsp;\nAbility to work in extreme conditions,&nbsp;weather and terrain&nbsp;\nOccasional&nbsp;overtime&nbsp;as needed.&nbsp;\nTravel&nbsp;will&nbsp;be required&nbsp;\n\n&nbsp;\nBenefits include:\n\nMedical, Dental, &amp; Vision\n401 (K)\nEmployee Stock Purchase Plan\nFlexible Spending Accounts and Health Savings Account\nLife &amp; AD&amp;D\n\n&nbsp;\nPHYSICAL REQUIREMENTS:\n\nSTANDING: 20%\nSITTING: 50%\nWALKING: 20%\nBENDING: 5%\nSTOOPING:5%\nCLIMBING: 10%\nTRAVEL: 50% + \nLIFTING: 35 Pounds\n\n",
+   "hasVirtualLocation": false,
+   "postingStartTimestampUTC": "2024-11-15T06:00:00+00:00",
+   "postingExpiryTimestampUTC": null,
+   "isEvergreen": false,
+   "reapplyPeriodDays": null,
+   "postingLocations": [
+    {
+     "formattedAddress": "9201 N 107th St bldg 1, Milwaukee, WI 53224, USA",
+     "locationId": 419,
+     "locationType": 2,
+     "isoCountryCode": "US",
+     "stateCode": "WI",
+     "cityName": "Milwaukee",
+     "coordinates": "lat:43.1837473;lng:-88.0467141"
+    }
+   ],
+   "postingAppliedStatus": {
+    "jobPostingId": 39984,
+    "hasApplied": false,
+    "canApplyAgain": true
+   },
+   "searchScore": 0
+  },
+  "fetched_at": "2026-11-06T03:06:46.918558Z",
+  "content_hash": "b95cbc95308b63085dfcaf7f4f1a0f6b8889c117dd1363148a52c836c876670d"
+ }
+]
