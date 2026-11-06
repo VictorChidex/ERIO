@@ -24,7 +24,7 @@ Everything is built and proven on the local `docker compose` stack before any cl
 | 11 | 8 | Deduplication | Done (admin merge page with the admin view) |
 | 12 | 12 | AI providers and MCP server | In progress (Claude check by the owner; cloud providers wait for the vault) |
 | 13 | 2e | Terraform staging and deploy on merge | On hold until local is complete |
-| 14 | 13 | Observability, load and security | Not started |
+| 14 | 13 | Observability, load and security | In progress (built and tested locally; load target and staging drill open) |
 | 15 | 14 | Beta and launch gate | Not started |
 
 ## Step 1 — Lock decisions and verify sources
@@ -186,9 +186,14 @@ Neither local model reaches any gate, so locally the fallback calls no model and
 
 ## Step 13 — Observability, load and security
 
-- [ ] Each alert has fired once in a staging drill and its runbook was followed.
-- [ ] Load test passes: p95 < 300 ms, error rate < 0.1% at 200 requests per second.
-- [ ] Credential-word check, gitleaks and image scan are clean.
+Built locally (staging does not exist yet, D-14): JSON logs with request and crawl context, OpenTelemetry traces to Jaeger when `ERIO_OTEL_ENDPOINT` is set, per-source and pipeline metrics (`/metrics` on the API, a metrics exporter for crawl, index and queue figures), the freshness metric behind the site's refresh-lag stat (`jobs.searchable_at`, migration 0013), 7 alerts with a runbook each, two Grafana dashboards, the security headers and Content Security Policy, and the k6 load test. See [security.md](security.md), [load-test.md](load-test.md) and [runbooks/README.md](runbooks/README.md).
+
+- [x] Every alert has a runbook and a test that fires it: `promtool check rules` finds the 7 rules, `promtool test rules infra/observability/alerts.test.yml` passes (`prom/prometheus:v3.15.1`), and `amtool check-config` accepts the Alertmanager file. Both dashboards are valid JSON and `docker compose --profile obs config` is valid.
+- [ ] Each alert has fired once in a staging drill and its runbook was followed. Not done: there is no staging yet, and the local drill (a throwaway Prometheus and Alertmanager reading a fake exporter) could not be run because Docker's engine stopped answering on the laptop after the load tests.
+- [ ] Load test passes: p95 < 300 ms, error rate < 0.1% at 200 requests per second. Not met locally: 100 requests per second passes (p95 199 ms, 0% errors) and 200 does not (about 110 to 120 requests per second reached, p95 5 to 9 s) on a shared laptop. One real defect was found and fixed (the search client's connection pool of 1). To be run on staging; details in [load-test.md](load-test.md).
+- [ ] Credential-word check, gitleaks and image scan are clean. The credential-word check is clean (run before every commit). gitleaks and the Trivy image scan run in CI; they were not re-run for this step.
+- [x] No credential in the repo, an environment variable or an image: compose passes addresses only, and `.env.example` holds placeholders.
+- [ ] Alerts wired to the on-call channel: the channel is not chosen (D-21); Alertmanager has a receiver with no destination.
 
 ## Step 14 — Beta and launch gate
 
