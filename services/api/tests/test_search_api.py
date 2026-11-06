@@ -249,6 +249,16 @@ def test_countries_feed_the_globe(api: TestClient) -> None:
     assert body["meta"]["worldwide_remote_jobs"] == 1
 
 
+def test_coverage_lists_the_78_platforms_with_their_status(api: TestClient) -> None:
+    rows = api.get("/v1/coverage").json()["data"]
+    assert len(rows) == 78
+    assert sum(r["kind"] == "ats" for r in rows) == 58
+    assert sum(r["kind"] == "board" for r in rows) == 20
+    by_slug = {r["slug"]: r for r in rows}
+    assert by_slug["greenhouse"]["status"] == "Verified"
+    assert by_slug["paycom"]["status"] == "Blocked" and by_slug["paycom"]["note"]
+
+
 def test_platforms_and_stats(api: TestClient) -> None:
     platforms = {p["slug"]: p for p in api.get("/v1/platforms").json()["data"]}
     assert platforms["greenhouse"]["job_count"] == 5 and platforms["greenhouse"]["boards"] == 1

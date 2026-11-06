@@ -3,7 +3,7 @@
 from typing import Any
 
 from erio_ingest import coverage
-from erio_ingest.coverage import CHECKLIST, report, status
+from erio_ingest.coverage import CHECKLIST, SUMMARY, report, status, summary
 
 
 def row(**changes: Any) -> dict[str, Any]:
@@ -41,6 +41,11 @@ def test_committed_checklist_is_what_the_live_results_generate() -> None:
     # Edit docs/coverage.md by hand and this fails: regenerate it with
     # `python -m erio_ingest.coverage report`.
     assert CHECKLIST.read_text(encoding="utf-8") == report() + "\n"
+
+
+def test_committed_summary_is_what_the_live_results_generate() -> None:
+    # The API and website serve this file; regenerate it with the same command.
+    assert SUMMARY.read_text(encoding="utf-8") == summary()
 
 
 def test_every_verified_platform_in_the_checklist_has_live_results() -> None:

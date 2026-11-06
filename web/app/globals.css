@@ -396,3 +396,26 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .api-right .code{white-space:pre-wrap;overflow-wrap:anywhere}
 /* Globe: square placeholder until the globe code loads after the page is interactive */
 .globe-placeholder{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 34%,rgba(121,185,230,.25),rgba(47,104,166,.12) 60%,transparent 70%)}
+
+/* Coverage checklist */
+.cov-filters{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:28px 0 16px}
+.cov-filters a{padding:6px 14px;border:1px solid var(--brd);border-radius:999px;font-size:13px;color:var(--fg2);background:var(--sf)}
+.cov-filters a:hover{border-color:var(--brdhi);color:var(--fg)}
+.cov-filters a[aria-current]{background:var(--acc);border-color:var(--acc);color:#fff}
+.cov-sep{width:1px;height:20px;background:var(--brd);margin:0 6px}
+.cov-table-wrap{overflow-x:auto;border:1px solid var(--brd);border-radius:var(--radius-sm);background:var(--sf);margin-bottom:56px}
+.cov-table{width:100%;border-collapse:collapse;font-size:14px}
+.cov-table th,.cov-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--brd);vertical-align:top}
+.cov-table thead th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg3);white-space:nowrap}
+.cov-table tbody th{font-weight:600}
+.cov-table tbody tr:last-child th,.cov-table tbody tr:last-child td{border-bottom:0}
+.cov-pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.cov-pill.ok{background:rgba(16,185,129,.15);color:var(--grn)}
+.cov-pill.part{background:rgba(245,158,11,.15);color:var(--amb)}
+.cov-pill.blk{background:rgba(239,68,68,.15);color:var(--red)}
+.cov-pill.other{background:var(--sf3);color:var(--fg2)}
+.cov-part{color:var(--fg3);font-size:12px}
+.cov-notes{color:var(--fg2);font-size:13px;max-width:420px}
+.cov-h{margin-bottom:12px}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

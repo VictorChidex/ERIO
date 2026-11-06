@@ -14,7 +14,7 @@ const LINKS = [
 ];
 
 export function Nav() {
-  const path = usePathname();
+  const path = usePathname() ?? "";
   const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
 
   return (

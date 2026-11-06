@@ -78,6 +78,18 @@ export type Platform = {
   fetch_success_rate_24h: number | null;
 };
 
+export type CoverageRow = {
+  slug: string;
+  name: string;
+  kind: "ats" | "board";
+  status: "Verified" | "Partial" | "Blocked" | "Failing" | "Built, not run live" | "Needs decision" | "Not built";
+  boards_verified: number;
+  jobs_read: number;
+  partial_read: boolean;
+  checked_at: string | null;
+  note: string;
+};
+
 export type Stats = {
   total_jobs: number;
   remote_jobs: number;
@@ -130,6 +142,7 @@ export const searchJobs = (params: Params) => get<JobsPage>("/v1/jobs", params);
 export const getJob = (id: string) => get<{ data: JobRecord }>(`/v1/jobs/${encodeURIComponent(id)}`);
 export const getCountries = () => get<Countries>("/v1/countries", {}, 60);
 export const getPlatforms = () => get<{ data: Platform[] }>("/v1/platforms", {}, 60);
+export const getCoverage = () => get<{ data: CoverageRow[] }>("/v1/coverage", {}, 300);
 export const getStats = () => get<Stats>("/v1/stats", {}, 30);
 export const getOpenApi = () => get<Record<string, unknown>>("/v1/openapi.json", {}, 300);
 

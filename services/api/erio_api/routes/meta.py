@@ -3,8 +3,10 @@
 Every number comes from the live index or database; nothing is hard-coded.
 """
 
+import json
 from datetime import UTC, datetime, timedelta
 from functools import lru_cache
+from importlib.resources import files
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends
@@ -68,6 +70,22 @@ class PlatformOut(BaseModel):
 
 class PlatformsOut(BaseModel):
     data: list[PlatformOut]
+
+
+class CoverageRowOut(BaseModel):
+    slug: str
+    name: str
+    kind: str
+    status: str
+    boards_verified: int
+    jobs_read: int
+    partial_read: bool
+    checked_at: datetime | None
+    note: str
+
+
+class CoverageOut(BaseModel):
+    data: list[CoverageRowOut]
 
 
 class StatsOut(BaseModel):
@@ -173,6 +191,24 @@ def _platform_status(source: Source, last_success: datetime | None, now: datetim
     if last_success and now - last_success <= LIVE_WITHIN:
         return "live"
     return "indexing"
+
+
+@lru_cache
+def _coverage() -> list[dict[str, Any]]:
+    raw = files("erio_core").joinpath("data/coverage.json").read_text(encoding="utf-8")
+    rows: list[dict[str, Any]] = json.loads(raw)
+    return rows
+
+
+@router.get(
+    "/coverage",
+    response_model=CoverageOut,
+    summary="The 78 platforms of the coverage brief, with each one's verified status",
+)
+def coverage() -> dict[str, Any]:
+    """Generated from live runs against real boards (`python -m erio_ingest.coverage`);
+    a platform is Verified only when two or more of its boards were read in full."""
+    return {"data": _coverage()}
 
 
 @router.get(

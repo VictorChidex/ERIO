@@ -36,6 +36,8 @@ from erio_ingest.ratelimit import HostRateLimiter
 ROOT = Path(__file__).resolve().parents[3]
 RESULTS = ROOT / "docs" / "coverage" / "results.json"
 CHECKLIST = ROOT / "docs" / "coverage.md"
+# The same statuses for the API and website (erio_core is the package both can read).
+SUMMARY = ROOT / "packages" / "core" / "erio_core" / "data" / "coverage.json"
 FIXTURES = ROOT / "fixtures" / "coverage"
 SAMPLES = 3
 VERIFIED_BOARDS = 2
@@ -185,6 +187,30 @@ def status(row: dict[str, Any], run: dict[str, Any] | None) -> str:
     return "Failing" if (run or {}).get("boards") else "Built, not run live"
 
 
+def summary() -> str:
+    """Every platform's computed status, as JSON for ``GET /v1/coverage``."""
+    results = load_results()
+    rows = []
+    for row in platforms():
+        run = results.get(row["slug"]) or {}
+        boards = run.get("boards", [])
+        working = [b for b in boards if b["ok"]]
+        rows.append(
+            {
+                "slug": row["slug"],
+                "name": row["name"],
+                "kind": row["kind"],
+                "status": status(row, run or None),
+                "boards_verified": len(working),
+                "jobs_read": sum(b["parsed"] for b in working),
+                "partial_read": any(not b.get("complete", True) for b in working),
+                "checked_at": run.get("checked_at"),
+                "note": row["blocked"] or row["notes"],
+            }
+        )
+    return json.dumps(rows, indent=1, ensure_ascii=False) + "\n"
+
+
 def report() -> str:
     results = load_results()
     rows = platforms()
@@ -256,7 +282,8 @@ def main() -> None:
             sys.exit("name platforms to verify, or --all")
         verify(slugs, args.record, args.sample)
     CHECKLIST.write_text(report() + "\n", encoding="utf-8")
-    print(f"wrote {CHECKLIST}")
+    SUMMARY.write_text(summary(), encoding="utf-8")
+    print(f"wrote {CHECKLIST} and {SUMMARY}")
 
 
 if __name__ == "__main__":

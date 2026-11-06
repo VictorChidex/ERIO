@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { ApiUnavailable, getPlatforms, getStats, type Platform, type Stats } from "@/lib/api";
+import { CoverageChecklist } from "@/components/CoverageChecklist";
+import {
+  ApiUnavailable,
+  getCoverage,
+  getPlatforms,
+  getStats,
+  type CoverageRow,
+  type Platform,
+  type Stats,
+} from "@/lib/api";
 import { ageLabel, formatCount } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -18,17 +27,22 @@ const STATUS: Record<Platform["status"], { cls: string; label: string }> = {
   paused: { cls: "sched", label: "Paused" },
 };
 
-async function load(): Promise<{ platforms: Platform[]; stats: Stats } | null> {
+async function load(): Promise<{ platforms: Platform[]; stats: Stats; coverage: CoverageRow[] } | null> {
   try {
-    const [platforms, stats] = await Promise.all([getPlatforms(), getStats()]);
-    return { platforms: platforms.data, stats };
+    const [platforms, stats, coverage] = await Promise.all([getPlatforms(), getStats(), getCoverage()]);
+    return { platforms: platforms.data, stats, coverage: coverage.data };
   } catch (error) {
     if (error instanceof ApiUnavailable) return null;
     throw error;
   }
 }
 
-export default async function CoveragePage() {
+export default async function CoveragePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ kind?: string; status?: string }>;
+}) {
+  const filter = await searchParams;
   const data = await load();
   const live = data?.platforms.filter((p) => p.status === "live").length ?? 0;
 
@@ -64,8 +78,10 @@ export default async function CoveragePage() {
           </div>
         </div>
       </div>
+      {data && <CoverageChecklist rows={data.coverage} filter={filter} />}
       <section>
         <div className="wrap">
+          <h2 className="cov-h">Sources crawled live</h2>
           <div className="cov-legend">
             <span className="cl">
               <span className="cldot cl-live" />
