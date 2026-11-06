@@ -43,7 +43,7 @@ docker compose up --build
 | Postgres 16 | localhost:5432 | Database and user `erio`; trusts local connections. Tables are created by the one-off `migrate` service |
 | Redis 7 | localhost:6379 | Queue and rate limits |
 | OpenSearch 2 | http://localhost:9200 | Search; security plugin off locally |
-| Fake S3 | http://localhost:9090 | Adobe S3Mock with bucket `erio-raw` (decision D-13) |
+| Raw payloads | volume `raw-data` | Plain files under `/data/raw` (decision D-13); `docker compose --profile s3 up` adds a fake S3 on http://localhost:9090 |
 | MCP server | http://127.0.0.1:8100/mcp | Tools `search_jobs`, `get_job`, `list_countries`, `list_platforms`; OpenAI and Gemini definitions at `/tools/openai.json` and `/tools/gemini.json` |
 
 Nothing in the stack needs a credential, and every port listens on 127.0.0.1 only. Stop with `docker compose down`; add `-v` to also delete the local data.
@@ -121,7 +121,7 @@ GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)) runs on ev
 | Credential scan | `scripts/check-credential-words.sh` (decision D-08) and gitleaks over the full history |
 | Python | ruff, ruff format, mypy (strict), pytest |
 | Website | ESLint, TypeScript, `next build` |
-| Local stack | `docker compose up --build`, checks the API, worker, fake S3 and website answer, then runs the frontend tests |
+| Local stack | `docker compose up --build`, checks the API, worker and website answer, then runs the frontend tests |
 
 A fresh stack has no jobs until beat crawls the boards. To load a small known set offline (the recorded fixtures, through the real pipeline; only on an empty database):
 

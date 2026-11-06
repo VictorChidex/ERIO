@@ -134,7 +134,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       # Every service except beat: CI never crawls the live job boards.
       - name: Build and start the stack
-        run: docker compose up --build --detach --wait --wait-timeout 420 api worker web s3 mcp metrics
+        run: docker compose up --build --detach --wait --wait-timeout 420 api worker web mcp metrics
       # Images: no fixable high or critical vulnerability, no credential baked in
       # (Trivy scans for both by default).
       - name: Image scan (Trivy)
@@ -150,7 +150,8 @@ jobs:
           test "$(docker compose exec -T postgres psql -U erio -d erio -tAc 'select version_num from alembic_version')" = "$(docker compose run --rm --no-deps migrate alembic -c packages/core/alembic.ini heads | cut -d' ' -f1)"
           docker compose exec -T api python -c \
             "from erio_ingest.worker import ping; assert ping.delay().get(timeout=30) == 'pong'"
-          curl -sSf http://127.0.0.1:9090/ | grep -q '<Name>erio-raw</Name>'
+          # Raw payloads are files on the raw-data volume: the worker's user can write and read one.
+          docker compose exec -T worker python -c             "from erio_core.settings import get_settings; from erio_ingest.storage import FileRawStore, make_store; store = make_store(get_settings()); assert isinstance(store, FileRawStore); store.put_bytes('ci/probe', b'ok'); assert store._path('ci/probe').read_bytes() == b'ok'"
           curl -sSf http://127.0.0.1:3000/ | grep -q 'jobs indexed'
           docker compose exec -T metrics python -c \
             "import urllib.request; assert b'erio_queue_backlog' in urllib.request.urlopen('http://localhost:9108/metrics').read()"

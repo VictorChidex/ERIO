@@ -60,7 +60,7 @@ Each page of the prototype maps to one API call. The website uses the same publi
 - **Postgres** is the source of truth: `sources`, `companies`, `company_boards`, `crawl_runs`, `raw_postings`, `jobs`, `job_sources`, `countries` (233 entries matching the globe) and `api_tokens`, as defined in spec section 4.
 - **OpenSearch** answers searches and facet counts. It can be rebuilt from Postgres at any time.
 - **Redis** holds the task queue and per-host rate limits.
-- **S3** (S3Mock locally, decision D-13) keeps raw payloads for 30 days so any crawl can be replayed.
+- **Raw payload storage** (S3 in the cloud, plain files on a volume locally, decision D-13) keeps raw payloads for 30 days so any crawl can be replayed.
 
 ## Rules that protect trust
 

@@ -7,6 +7,7 @@ changes from what successful fetches saw are applied by erio_ingest.status.
 
 import logging
 from collections.abc import Callable
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 from typing import Any
@@ -21,7 +22,7 @@ from erio_core.db.models import CompanyBoard, CrawlRun, RawPosting
 from erio_core.observability import log_context
 from erio_core.schemas import RawPosting as RawPostingData
 from erio_ingest.status import apply_successful_fetch
-from erio_ingest.storage import RawStore
+from erio_ingest.storage import STORE_WORKERS, RawStore
 
 PAUSE_AFTER_FAILURES = 5
 PAUSE_FOR = timedelta(hours=1)
@@ -233,11 +234,10 @@ def _store_changed_payloads(
             .tuples()
             .all()
         )
-    return {
-        posting.external_id: store.put_posting(posting)
-        for posting in fetched.postings
-        if known.get(posting.external_id) != posting.content_hash
-    }
+    changed = [p for p in fetched.postings if known.get(p.external_id) != p.content_hash]
+    with ThreadPoolExecutor(STORE_WORKERS) as pool:
+        keys = list(pool.map(store.put_posting, changed))
+    return {posting.external_id: key for posting, key in zip(changed, keys, strict=True)}
 
 
 def _upsert_posting(

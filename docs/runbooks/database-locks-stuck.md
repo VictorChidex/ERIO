@@ -2,7 +2,7 @@
 
 Not an alert yet: the signs are writers that stop (jobs and the index stop growing, crawl runs
 never finish) while the API still answers searches. It happened once on the local stack, when the
-S3 mock was killed under memory pressure and the normalizer waited on it inside a transaction.
+S3 mock (the local raw payload store at the time) was killed under memory pressure and the normalizer waited on it inside a transaction. The local stack now keeps raw payloads as files, so this is a cloud S3 failure mode locally only with `--profile s3`.
 
 Commands are for the local stack (`docker compose ...`).
 
@@ -19,7 +19,7 @@ A session `idle in transaction` for minutes, with others waiting on `Lock`, is t
 
 ## Likely causes and fixes
 
-- **Object storage down or slow**: `docker compose ps s3`. Start it (`docker compose up -d s3`), then restart the workers (`docker compose restart worker worker-live beat`), which drops their connections and releases the locks.
+- **Object storage down or slow** (S3, or the fake S3 under `--profile s3`): check it, start it, then restart the workers (`docker compose restart worker worker-live beat`), which drops their connections and releases the locks.
 - **A worker crashed mid-batch**: the same restart.
 - **Memory pressure** (`s3` or `worker` exit code 137): free memory or lower the worker count (`-c` in `docker-compose.yml`); the crawl worker runs four processes.
 

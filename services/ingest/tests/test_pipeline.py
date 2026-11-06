@@ -223,8 +223,8 @@ def test_payloads_are_stored_before_the_transaction_that_records_them(
 
         def put_posting(self, posting: RawPostingData) -> str:
             with migrated_engine.connect() as connection:  # fails at once if a lock is held
-                connection.execute(text("select id from company_boards for update nowait")).all()
-                connection.execute(text("select id from raw_postings for update nowait")).all()
+                connection.execute(text("select id from company_boards for share nowait")).all()
+                connection.execute(text("select id from raw_postings for share nowait")).all()
             return super().put_posting(posting)
 
     result = crawl_board(migrated_engine, board_id, Source(200, truelayer()), Probe(), Clock())

@@ -30,13 +30,13 @@ from erio_ingest.discovery import discover_boards
 from erio_ingest.fetcher import PoliteFetcher
 from erio_ingest.fx import FX_HOSTS, refresh_rates
 from erio_ingest.indexer import rebuild, sync_changed
-from erio_ingest.normalizer import BATCH, latest_rates, normalize_pending
+from erio_ingest.normalizer import latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
 from erio_ingest.scheduler import schedule_due_boards
 from erio_ingest.smoke import smoke_test_sources
 from erio_ingest.status import mark_unverified
-from erio_ingest.storage import S3RawStore
+from erio_ingest.storage import RawStore, make_store
 
 settings = get_settings()
 
@@ -71,6 +71,12 @@ app.conf.update(
     task_reject_on_worker_lost=True,
     worker_prefetch_multiplier=1,
     task_default_queue="crawl",
+    # Turning crawled postings into searchable jobs runs on its own queue and worker: behind
+    # a hundred board crawls (some take minutes) it would wait for hours.
+    task_routes={
+        "erio.normalize_pending": {"queue": "pipeline"},
+        "erio.index_changed": {"queue": "pipeline"},
+    },
     result_expires=3600,
     timezone="UTC",
     # Celery beat (`celery -A erio_ingest.worker beat`) queues due boards every minute.
@@ -123,8 +129,8 @@ def fx_fetcher() -> PoliteFetcher:
 
 
 @lru_cache
-def store() -> S3RawStore:
-    return S3RawStore(settings)
+def store() -> RawStore:
+    return make_store(settings)
 
 
 def backoff_seconds(retries: int) -> float:
@@ -163,8 +169,8 @@ def normalize_pending_task() -> dict[str, Any]:
     if not have_rates:
         refresh_fx_rates_task()
     result = normalize_pending(engine(), store(), utcnow)
-    if result.jobs == BATCH:
-        normalize_pending_task.delay()  # more waiting: keep going
+    if result.jobs:
+        normalize_pending_task.delay()  # progress was made: keep going until nothing moves
     if result.jobs:
         index_changed_task.delay()
     return {

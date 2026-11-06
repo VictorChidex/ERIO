@@ -29,7 +29,7 @@ from erio_ingest.fx import store_rates
 from erio_ingest.indexer import sync_changed
 from erio_ingest.normalizer import normalize_pending
 from erio_ingest.pipeline import crawl_board
-from erio_ingest.storage import RawStore, S3RawStore
+from erio_ingest.storage import RawStore, make_store
 
 DEMO_PREFIX = "demo-"
 COMPANIES = {
@@ -105,7 +105,7 @@ def main() -> None:
     engine = create_engine(get_settings().sqlalchemy_url)
     try:
         settings = get_settings()
-        counts = load(engine, fixtures, S3RawStore(settings), client(), settings.search_alias)
+        counts = load(engine, fixtures, make_store(settings), client(), settings.search_alias)
     finally:
         engine.dispose()
     postings, jobs, indexed = counts["postings"], counts["jobs"], counts["indexed"]

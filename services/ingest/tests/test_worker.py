@@ -15,6 +15,15 @@ def test_tasks_go_to_crawl_queue() -> None:
     assert app.conf.task_default_queue == "crawl"
 
 
+def test_normalizing_and_indexing_have_their_own_queue() -> None:
+    def queue(task: str) -> str:
+        return str(app.amqp.router.route({}, task)["queue"].name)
+
+    assert queue("erio.normalize_pending") == "pipeline"
+    assert queue("erio.index_changed") == "pipeline"
+    assert queue("erio.crawl_board") == "crawl"  # board crawls keep the default queue
+
+
 class FakeCrawl:
     def __init__(self, new: int = 0, changed: int = 0, error: Exception | None = None) -> None:
         self.new, self.changed, self.error = new, changed, error

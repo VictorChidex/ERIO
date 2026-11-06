@@ -22,6 +22,8 @@ class Settings(BaseSettings):
     search_alias: str = "jobs"
     s3_endpoint_url: str = "http://127.0.0.1:9090"
     raw_bucket: str = "erio-raw"
+    # When set, raw payloads are files under this directory (the local stack) instead of S3.
+    raw_store_dir: str | None = None
     # Local S3Mock accepts unsigned requests; real S3 uses the IAM role.
     s3_unsigned: bool = True
     dependency_timeout_s: float = 2.0

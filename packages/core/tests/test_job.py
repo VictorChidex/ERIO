@@ -4,8 +4,15 @@ import json
 from pathlib import Path
 
 from erio_core.connectors.greenhouse import GreenhouseConnector
-from erio_core.normalize.job import canonical_id, normalize
-from erio_core.schemas import RawPosting
+from erio_core.normalize.job import (
+    CITY_MAX,
+    LOCATION_MAX,
+    TITLE_MAX,
+    canonical_id,
+    fit,
+    normalize,
+)
+from erio_core.schemas import PartialJob, RawPosting
 
 FIXTURES = Path(__file__).resolve().parents[3] / "fixtures" / "greenhouse"
 RATES = {"GBP": 1.30, "EUR": 1.10, "NGN": 0.0007}
@@ -61,3 +68,25 @@ def test_every_recorded_posting_normalizes() -> None:
             columns = normalize(GreenhouseConnector().parse(raw), RATES).columns()
             assert columns["title"]
             assert columns["country_code"] or columns["eligible_country_codes"]
+
+
+def test_text_longer_than_its_column_is_clipped_not_rejected() -> None:
+    partial = PartialJob(
+        source_slug="deel",
+        external_id="1",
+        title="Senior " + "Engineer " * 60,
+        apply_url="https://jobs.example.org/1",
+        location_text="Remote, " + "Somewhere " * 60,
+    )
+
+    columns = normalize(partial, RATES).columns()
+
+    assert len(str(columns["title"])) == TITLE_MAX and str(columns["title"]).endswith("…")
+    assert len(str(columns["location_text"])) == LOCATION_MAX
+
+
+def test_fit_leaves_text_that_fits_alone() -> None:
+    assert fit("Nurse", 300) == "Nurse"
+    assert fit(None, CITY_MAX) is None
+    assert fit("x" * 120, 120) == "x" * 120
+    assert fit("x" * 121, 120) == "x" * 119 + "…"

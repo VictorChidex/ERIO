@@ -31,7 +31,9 @@ COPY services/mcp services/mcp
 COPY fixtures/labeled fixtures/labeled
 RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --no-dev --no-editable
 
-RUN useradd --create-home --uid 10001 erio
+# /data/raw is where the local stack keeps raw payloads (ERIO_RAW_STORE_DIR); a volume mounted
+# there takes this owner.
+RUN useradd --create-home --uid 10001 erio && mkdir -p /data/raw && chown erio /data/raw
 USER erio
 
 EXPOSE 8000

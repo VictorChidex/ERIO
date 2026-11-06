@@ -12,6 +12,20 @@ from erio_core.normalize.salary import parse_salary
 from erio_core.normalize.text import clean_title, html_to_text, sanitize_html
 from erio_core.schemas import EmploymentType, PartialJob, RoleCategory, SalaryHint
 
+# Widths of the ``jobs`` text columns that sources can overfill. A title or place longer than
+# its column used to fail the posting on every run; it is clipped, marked with an ellipsis.
+TITLE_MAX = 300
+LOCATION_MAX = 300
+CITY_MAX = 120
+REGION_MAX = 120
+
+
+def fit(text: str | None, limit: int) -> str | None:
+    """``text`` cut to ``limit`` characters, ending in an ellipsis when it was cut."""
+    if text is None or len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "…"
+
 
 def canonical_id(source_slug: str, external_id: str) -> str:
     """Stable job ID for a posting; dedup (step 8) may later merge several into one."""
@@ -38,11 +52,11 @@ class NormalizedJob:
         loc, pay = self.location, self.salary
         return {
             "canonical_id": self.canonical_id,
-            "title": self.title,
+            "title": fit(self.title, TITLE_MAX),
             "role_category": self.role_category,
-            "location_text": self.location_text,
-            "city": loc.city,
-            "region": loc.region,
+            "location_text": fit(self.location_text, LOCATION_MAX),
+            "city": fit(loc.city, CITY_MAX),
+            "region": fit(loc.region, REGION_MAX),
             "country_code": loc.country_code,
             "lat": loc.lat,
             "lon": loc.lon,

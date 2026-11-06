@@ -9,6 +9,7 @@ follows the postings through the status rules.
 """
 
 from collections.abc import Callable
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
@@ -24,9 +25,13 @@ from erio_core.normalize.job import normalize
 from erio_core.schemas import RawPosting as RawPostingData
 from erio_ingest.dedup import dedup_jobs, survivor
 from erio_ingest.status import refresh_jobs
-from erio_ingest.storage import RawStore
+from erio_ingest.storage import STORE_WORKERS, RawStore
 
 BATCH = 200
+# Payloads are read STORE_WORKERS at a time. When a whole group of at least
+# MIN_GROUP_TO_CALL_DOWN reads fails, object storage is treated as down: the batch stops and
+# the next scheduled run tries again, instead of waiting out every posting in turn.
+MIN_GROUP_TO_CALL_DOWN = 3
 
 
 @dataclass
@@ -111,8 +116,10 @@ def _read_payloads(
 ) -> dict[int, dict[str, Any]]:
     """The stored payloads of the next postings to normalize, by posting id.
 
-    A payload that cannot be read is reported as a failure and its posting stays
-    pending, so the next run tries it again.
+    Read in small parallel groups: one at a time, object storage latency adds up to
+    minutes per batch. A payload that cannot be read is reported as a failure and its
+    posting stays pending, so the next run tries it again; a whole group failing means
+    storage is down, and the batch stops there.
     """
     with Session(engine) as session:
         wanted = session.execute(
@@ -129,12 +136,28 @@ def _read_payloads(
             .order_by(RawPosting.id)
             .limit(limit)
         ).all()
-    payloads: dict[int, dict[str, Any]] = {}
-    for posting_id, source_slug, external_id, key in wanted:
+
+    def read(item: Any) -> tuple[int, dict[str, Any] | None, str | None]:
+        posting_id, source_slug, external_id, key = item
         try:
-            payloads[posting_id] = store.get_posting(str(key))
+            return posting_id, store.get_posting(str(key)), None
         except Exception as error:
-            result.failed.append(f"{source_slug}:{external_id}: {error!r}"[:300])
+            return posting_id, None, f"{source_slug}:{external_id}: {error!r}"[:300]
+
+    payloads: dict[int, dict[str, Any]] = {}
+    with ThreadPoolExecutor(STORE_WORKERS) as pool:
+        for start in range(0, len(wanted), STORE_WORKERS):
+            group = list(pool.map(read, wanted[start : start + STORE_WORKERS]))
+            failures = [error for _, _, error in group if error]
+            for posting_id, payload, error in group:
+                if payload is not None and error is None:
+                    payloads[posting_id] = payload
+            result.failed.extend(failures)
+            if len(failures) == len(group) and len(group) >= MIN_GROUP_TO_CALL_DOWN:
+                result.failed.append(
+                    f"object storage looks down: a whole group of {len(group)} reads failed"
+                )
+                break
     return payloads
 
 

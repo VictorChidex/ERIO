@@ -1,6 +1,8 @@
 """Normalizer tests: real recorded postings, crawled and normalized on Postgres."""
 
 import json
+import threading
+import time
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -14,7 +16,7 @@ from erio_core.db.models import Company, CompanyBoard, FxRate, Job, JobSource, R
 from erio_core.db.seed import sync_countries, sync_sources
 from erio_ingest.normalizer import latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board
-from erio_ingest.storage import MemoryRawStore
+from erio_ingest.storage import STORE_WORKERS, MemoryRawStore
 
 FIXTURES = Path(__file__).resolve().parents[3] / "fixtures" / "greenhouse"
 T0 = datetime(2026, 11, 5, 9, 0, tzinfo=UTC)
@@ -175,7 +177,7 @@ def test_payloads_are_read_with_no_row_locks_held(
 
         def get_posting(self, key: str) -> dict[str, Any]:
             with engine.connect() as connection:  # fails at once if a row lock is held
-                connection.execute(text("select id from raw_postings for update nowait")).all()
+                connection.execute(text("select id from raw_postings for share nowait")).all()
             return super().get_posting(key)
 
     probe = Probe()
@@ -184,3 +186,71 @@ def test_payloads_are_read_with_no_row_locks_held(
     result = normalize_pending(engine, probe, lambda: T0)
 
     assert (result.jobs, result.failed) == (4, [])
+
+
+def test_a_store_that_is_down_stops_the_batch_after_one_group_of_reads(
+    setup: tuple[Engine, MemoryRawStore, int],
+) -> None:
+    engine, _, _ = setup
+    with Session(engine) as session, session.begin():  # many more postings than one group
+        template = session.scalars(select(RawPosting).order_by(RawPosting.id)).first()
+        assert template is not None
+        for n in range(40):
+            session.add(
+                RawPosting(
+                    source_slug=template.source_slug,
+                    board_id=template.board_id,
+                    external_id=f"extra-{n}",
+                    content_hash=f"{n:064d}",
+                    payload_s3_key=f"postings/extra/{n}.json.gz",
+                    first_seen_at=T0,
+                    last_seen_at=T0,
+                )
+            )
+
+    class Down(MemoryRawStore):
+        reads = 0
+
+        def get_posting(self, key: str) -> dict[str, Any]:
+            self.reads += 1
+            raise ConnectionError("s3 is down")
+
+    store = Down()
+
+    result = normalize_pending(engine, store, lambda: T0)
+
+    assert store.reads == STORE_WORKERS  # one group, not one wait per waiting posting
+    assert result.jobs == 0
+    assert "object storage looks down" in result.failed[-1]
+    with Session(engine) as session:  # the postings stay pending for the next run
+        pending = session.scalar(
+            select(func.count())
+            .select_from(RawPosting)
+            .where(RawPosting.normalized_hash.is_distinct_from(RawPosting.content_hash))
+        )
+    assert pending == 44
+
+
+def test_payloads_are_read_in_parallel_groups(setup: tuple[Engine, MemoryRawStore, int]) -> None:
+    engine, store, _ = setup
+    in_flight = peak = 0
+    lock = threading.Lock()
+
+    class Slow(MemoryRawStore):
+        def get_posting(self, key: str) -> dict[str, Any]:
+            nonlocal in_flight, peak
+            with lock:
+                in_flight += 1
+                peak = max(peak, in_flight)
+            time.sleep(0.2)
+            with lock:
+                in_flight -= 1
+            return super().get_posting(key)
+
+    slow = Slow()
+    slow.objects = store.objects
+
+    result = normalize_pending(engine, slow, lambda: T0)
+
+    assert result.jobs == 4
+    assert peak > 1  # reads overlapped
