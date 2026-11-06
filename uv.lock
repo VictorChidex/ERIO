@@ -422,6 +422,7 @@ name = "erio-api"
 version = "0.1.0"
 source = { editable = "services/api" }
 dependencies = [
+    { name = "celery", extra = ["redis"] },
     { name = "erio-core" },
     { name = "fastapi" },
     { name = "httpx" },
@@ -435,6 +436,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "celery", extras = ["redis"], specifier = ">=5.4" },
     { name = "erio-core", editable = "packages/core" },
     { name = "fastapi", specifier = ">=0.115" },
     { name = "httpx", specifier = ">=0.27" },

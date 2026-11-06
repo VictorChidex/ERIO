@@ -15,6 +15,8 @@ from erio_api import access
 from erio_api.deps import engine as engine_dependency
 from erio_api.deps import search_alias as alias_dependency
 from erio_api.main import app
+from erio_api.routes.live import get_enqueue
+from erio_core import live
 from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
 from erio_core.db.seed import sync_countries, sync_sources
 from erio_core.search.index import client
@@ -331,3 +333,89 @@ def test_merged_job_leaves_search_and_its_id_redirects(
     job = api.get("/v1/jobs/j_gb_london").json()["data"]
     assert (job["canonical_id"], job["dedup_method"]) == ("j_ng_lagos", "exact_key")
     assert job["sources"] == ["greenhouse", "ashby"]
+
+
+@pytest.fixture
+def refreshes(api: TestClient, redis_url: str) -> Iterator[tuple[list[tuple[int, str]], Redis]]:
+    """The boards a refresh queues, with the cooldown keys of earlier tests cleared."""
+    redis = Redis.from_url(redis_url)
+    for key in redis.scan_iter("erio:live:*"):
+        redis.delete(key)
+    queued: list[tuple[int, str]] = []
+    app.dependency_overrides[get_enqueue] = lambda: (
+        lambda board, refresh: queued.append((board, refresh))
+    )
+    yield queued, redis
+    for key in redis.scan_iter("erio:live:*"):
+        redis.delete(key)
+
+
+def test_a_refresh_queues_the_boards_behind_the_search(
+    api: TestClient, migrated_engine: Engine, refreshes: Any
+) -> None:
+    queued, redis = refreshes
+    with Session(migrated_engine) as session:
+        board_id = session.scalars(select(CompanyBoard.id)).one()
+
+    started = api.post("/v1/search/refresh", params={"q": "engineer"})
+
+    assert started.status_code == 202
+    body = started.json()
+    assert (body["boards"], body["done"], body["finished"], body["shared"]) == (1, 0, False, False)
+    assert queued == [(board_id, body["id"])]
+
+    waiting = api.get(f"/v1/search/refresh/{body['id']}").json()
+    assert (waiting["done"], waiting["finished"]) == (0, False)
+    live.board_done(redis, body["id"], new=3, changed=1)  # what the live worker does
+    done = api.get(f"/v1/search/refresh/{body['id']}").json()
+    assert (done["done"], done["new_postings"], done["changed_postings"], done["finished"]) == (
+        1,
+        3,
+        1,
+        True,
+    )
+
+
+def test_the_same_search_shares_one_refresh(api: TestClient, refreshes: Any) -> None:
+    queued, _ = refreshes
+
+    first = api.post("/v1/search/refresh", params={"q": "engineer"}).json()
+    second = api.post("/v1/search/refresh", params={"q": "engineer"}).json()
+
+    assert (second["id"], second["shared"]) == (first["id"], True)
+    assert len(queued) == 1
+
+
+def test_a_board_just_refreshed_is_left_alone_for_another_search(
+    api: TestClient, refreshes: Any
+) -> None:
+    queued, _ = refreshes
+    api.post("/v1/search/refresh", params={"q": "engineer"})
+
+    other = api.post("/v1/search/refresh", params={"q": "analyst"}).json()
+
+    assert (other["boards"], other["finished"]) == (0, True)
+    assert len(queued) == 1
+
+
+def test_a_refresh_needs_a_search(api: TestClient, refreshes: Any) -> None:
+    response = api.post("/v1/search/refresh")
+
+    assert response.status_code == 400
+    assert response.json()["error"]["code"] == "invalid_parameter"
+
+
+def test_a_busy_queue_turns_a_refresh_away(
+    api: TestClient, refreshes: Any, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(live, "queue_is_full", lambda redis: True)
+
+    response = api.post("/v1/search/refresh", params={"q": "engineer"})
+
+    assert response.status_code == 503
+    assert response.headers["Retry-After"] == "15"
+
+
+def test_an_unknown_refresh_is_not_found(api: TestClient, refreshes: Any) -> None:
+    assert api.get("/v1/search/refresh/" + "0" * 32).status_code == 404
+    assert api.get("/v1/search/refresh/not-an-id").status_code == 400

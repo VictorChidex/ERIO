@@ -124,6 +124,22 @@ services:
       timeout: 10s
       retries: 10
 
+  # The fast lane: reads the boards behind a user's search right away (erio_core/live.py),
+  # so a refresh never waits behind the steady crawl.
+  worker-live:
+    image: erio-python:local
+    command:
+      ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "live", "-c", "4", "-n", "live@%h"]
+    environment: *erio-addresses
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD-SHELL", "celery -A erio_ingest.worker inspect ping -d live@$$HOSTNAME --timeout 5 | grep -q pong"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
   # Queues every due board once a minute; workers do the crawling.
   beat:
     build: { context: ., dockerfile: docker/python.Dockerfile }

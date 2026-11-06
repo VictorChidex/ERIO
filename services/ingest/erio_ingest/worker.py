@@ -14,6 +14,7 @@ from redis import Redis
 from sqlalchemy import Engine, create_engine, select
 from sqlalchemy.orm import Session
 
+from erio_core import live
 from erio_core.ai import Gateway, default_routing
 from erio_core.ai.store import PostgresStore
 from erio_core.connectors import CONNECTORS
@@ -263,3 +264,23 @@ def crawl_board_task(self: Task, board_id: int) -> dict[str, Any]:
         "changed_postings": result.changed_postings,
         "closed_postings": result.closed_postings,
     }
+
+
+@app.task(name=live.TASK, ignore_result=True)
+def crawl_board_live_task(board_id: int, refresh_id: str) -> dict[str, Any]:
+    """Read one board now, for a user's search, and make what it found searchable.
+
+    Runs on the ``live`` queue so it never waits behind the steady crawl. It normalizes and
+    indexes inline instead of queueing those steps behind that crawl, and it never retries:
+    a board that fails is counted as done and the steady crawl will try it again.
+    """
+    new = changed = 0
+    try:
+        result = crawl_board(engine(), board_id, fetcher(), store())
+        new, changed = result.new_postings, result.changed_postings
+        if new or changed:
+            normalize_pending(engine(), store(), utcnow)
+            index_changed_task()
+    finally:
+        live.board_done(Redis.from_url(settings.redis_url), refresh_id, new, changed)
+    return {"board_id": board_id, "new_postings": new, "changed_postings": changed}

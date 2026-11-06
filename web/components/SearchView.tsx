@@ -5,6 +5,7 @@ import { FilterForm } from "@/components/FilterForm";
 import { SearchGlobe } from "@/components/GlobeLazy";
 import { HeaderCountrySelect } from "@/components/HeaderCountrySelect";
 import { JobCard } from "@/components/JobCard";
+import { LiveRefresh } from "@/components/LiveRefresh";
 import { LoadMore } from "@/components/LoadMore";
 import { ApiUnavailable, type Countries, getCountries, type JobsPage, searchJobs } from "@/lib/api";
 import { type Filters, toApiParams, toQuery } from "@/lib/filters";
@@ -185,6 +186,9 @@ export async function SearchView({
                     </span>
                   )}
                 </span>
+                {!filters.cursor && (filters.q || filters.roles.length > 0 || filters.countries.length > 0) && (
+                  <LiveRefresh query={toQuery(filters)} />
+                )}
                 <select className="rsort" name="sort" defaultValue={filters.sort} aria-label="Sort results">
                   <option value="recent">Most recent</option>
                   <option value="salary">Salary: high to low</option>

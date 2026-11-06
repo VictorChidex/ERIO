@@ -139,6 +139,37 @@ export async function getApiHealth(): Promise<ApiHealth | null> {
 }
 
 export const searchJobs = (params: Params) => get<JobsPage>("/v1/jobs", params);
+
+/** Progress of a live refresh: the employer boards re-read for one search (/v1/search/refresh). */
+export type Refresh = {
+  id: string;
+  boards: number;
+  done: number;
+  new_postings: number;
+  changed_postings: number;
+  finished: boolean;
+  shared: boolean;
+};
+
+async function send<T>(method: "GET" | "POST", path: string, params: Params = {}): Promise<T> {
+  let response: Response;
+  try {
+    response = await fetch(apiUrl(path, params), {
+      method,
+      cache: "no-store",
+      signal: AbortSignal.timeout(8000),
+    });
+  } catch (error) {
+    throw new ApiUnavailable(`ERIO API unreachable: ${String(error)}`);
+  }
+  if (response.status === 404) throw new NotFound(path);
+  if (!response.ok) throw new ApiUnavailable(`ERIO API answered ${response.status} for ${path}`);
+  return (await response.json()) as T;
+}
+
+export const startRefresh = (params: Params) => send<Refresh>("POST", "/v1/search/refresh", params);
+export const getRefresh = (id: string) =>
+  send<Refresh>("GET", `/v1/search/refresh/${encodeURIComponent(id)}`);
 export const getJob = (id: string) => get<{ data: JobRecord }>(`/v1/jobs/${encodeURIComponent(id)}`);
 export const getCountries = () => get<Countries>("/v1/countries", {}, 60);
 export const getPlatforms = () => get<{ data: Platform[] }>("/v1/platforms", {}, 60);

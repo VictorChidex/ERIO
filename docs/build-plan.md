@@ -140,6 +140,7 @@ Built in parts: (a) OpenSearch index and indexer; (b) `/v1/jobs` and `/v1/jobs/{
 - [x] Part d: Bearer tokens (32 random bytes, only the SHA-256 stored, revocable, `python -m erio_api.tokens`), tiers and sliding-window rate limits in Redis with `X-RateLimit-*` headers and 429 + `Retry-After` (D-15). The API recreates a missing search index instead of failing.
 - [x] `country=NG` returns Nigerian jobs plus remote roles open to Nigeria; `include_worldwide=false` removes worldwide ones (API tests on Postgres and OpenSearch).
 - [x] Facet counts per country match a direct database count (API tests).
+- [x] Live refresh (decision D-22): `POST /v1/search/refresh` re-reads the employer boards behind a search on the `live` queue (its own worker, `worker-live`), normalizes and indexes straight away; `GET /v1/search/refresh/{id}` reports progress; the search page shows it and reloads results when a board finds something. Bounded: one refresh per distinct search for 30 s, one read per board per 2 minutes, 20 boards per refresh, 200 waiting at most, and the usual per-host rate limits and robots.txt. It reaches only boards ERIO already knows: finding more employers' boards is board discovery, built next for the new platforms, and keyword search on platforms that offer a query per board is a further part.
 - [ ] p95 < 300 ms at 200 requests per second (load test in step 13). Over-limit returns 429 with rate-limit headers: done (tests).
 
 ## Step 10 — Website

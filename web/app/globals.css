@@ -419,3 +419,8 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .cov-h{margin-bottom:12px}
 
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Live refresh status */
+.live{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--fg2);margin-left:14px}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--amb);animation:lp 1.4s infinite}
+.live-dot.live-done{background:var(--grn);animation:none}
