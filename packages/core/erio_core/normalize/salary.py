@@ -90,6 +90,7 @@ class _Candidate:
     high: float
     currency: str | None
     period: SalaryPeriod | None
+    stated: bool
     text: str
 
 
@@ -122,19 +123,20 @@ def _currency(match: re.Match[str]) -> str | None:
     return None
 
 
-def _period(text: str, start: int, end: int, high: float) -> SalaryPeriod | None:
+def _period(text: str, start: int, end: int, high: float) -> tuple[SalaryPeriod | None, bool]:
+    """The period and whether the text states it (False: guessed from a small number)."""
     inside, after = text[start:end], text[end : end + 40]
     before = text[max(0, start - 80) : start]
     for window in (inside, after, before):
         if HOUR.search(window):
-            return "hour"
+            return "hour", True
         if MONTH.search(window):
-            return "month"
+            return "month", True
         if YEAR.search(window):
-            return "year"
+            return "year", True
     if high < 300:
-        return "hour"
-    return None
+        return "hour", False
+    return None, False
 
 
 def _candidates(text: str) -> list[_Candidate]:
@@ -158,8 +160,8 @@ def _candidates(text: str) -> list[_Candidate]:
         if low <= 0 or high <= 0:
             continue
         low, high = min(low, high), max(low, high)
-        period = _period(text, match.start(), match.end(), high)
-        found.append(_Candidate(low, high, currency, period, match.group(0).strip()))
+        period, stated = _period(text, match.start(), match.end(), high)
+        found.append(_Candidate(low, high, currency, period, stated, match.group(0).strip()))
     return found
 
 
@@ -177,5 +179,6 @@ def parse_salary(description: str | None) -> SalaryHint | None:
         max=round(best.high),
         currency=best.currency,
         period=best.period or "year",
+        period_stated=best.stated,
         text=best.text,
     )

@@ -68,6 +68,8 @@ class SalaryHint(BaseModel):
     max: int | None = None
     currency: str | None = Field(default=None, min_length=3, max_length=3)
     period: SalaryPeriod | None = None
+    # False when the period was only assumed (a range with no "per year" or "/hr" near it).
+    period_stated: bool = True
     text: str | None = None
 
 

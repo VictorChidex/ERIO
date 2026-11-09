@@ -23,8 +23,10 @@ ECB_DAY = re.compile(r"""<Cube\s+time=['"](\d{4}-\d{2}-\d{2})['"]""")
 ECB_RATE = re.compile(r"""<Cube\s+currency=['"]([A-Z]{3})['"]\s+rate=['"]([0-9.]+)['"]""")
 
 PERIOD_FACTOR: dict[SalaryPeriod, float] = {"year": 1.0, "month": 12.0, "hour": 2080.0}
-# Converted values outside this band are almost certainly parse errors.
-PLAUSIBLE_USD_ANNUAL = (1_000, 5_000_000)
+# Converted values outside this band are almost certainly parse errors or a wrong period:
+# nobody is paid under 3,000 dollars a year for a posted job (an hourly or monthly figure
+# stored as yearly lands far below it).
+PLAUSIBLE_USD_ANNUAL = (3_000, 5_000_000)
 
 
 def parse_ecb(body: bytes) -> tuple[date, dict[str, float]]:

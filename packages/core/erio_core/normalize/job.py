@@ -5,10 +5,10 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 
 from erio_core.normalize.employment import employment_type
-from erio_core.normalize.fx import usd_annual
 from erio_core.normalize.location import LocationResult, resolve_location
 from erio_core.normalize.roles import classify_role
 from erio_core.normalize.salary import parse_salary
+from erio_core.normalize.salary_check import check_pay
 from erio_core.normalize.text import clean_title, html_to_text, sanitize_html
 from erio_core.schemas import EmploymentType, PartialJob, RoleCategory, SalaryHint
 
@@ -42,6 +42,7 @@ class NormalizedJob:
     location: LocationResult
     salary: SalaryHint | None
     salary_usd_annual_min: int | None
+    salary_unreliable: bool
     employment_type: EmploymentType | None
     description_html: str | None
     description_text: str | None
@@ -69,6 +70,7 @@ class NormalizedJob:
             "salary_currency": pay.currency if pay else None,
             "salary_period": pay.period if pay else None,
             "salary_usd_annual_min": self.salary_usd_annual_min,
+            "salary_unreliable": self.salary_unreliable,
             "apply_url": self.apply_url,
             "description_html": self.description_html,
             "description_text": self.description_text,
@@ -84,7 +86,9 @@ def normalize(partial: PartialJob, usd_per_unit: Mapping[str, float]) -> Normali
         workplace_type=partial.workplace_type,
     )
     salary = partial.salary or parse_salary(partial.description_html)
-    low = salary.min if salary and salary.min is not None else (salary.max if salary else None)
+    pay = check_pay(salary, usd_per_unit)
+    if salary and pay.period != salary.period:
+        salary = salary.model_copy(update={"period": pay.period})  # the period the size implies
     title = clean_title(partial.title)
     return NormalizedJob(
         canonical_id=canonical_id(partial.source_slug, partial.external_id),
@@ -93,12 +97,8 @@ def normalize(partial: PartialJob, usd_per_unit: Mapping[str, float]) -> Normali
         location_text=(partial.location_text or "").strip() or None,
         location=location,
         salary=salary,
-        salary_usd_annual_min=usd_annual(
-            low,
-            salary.currency if salary else None,
-            salary.period if salary else None,
-            usd_per_unit,
-        ),
+        salary_usd_annual_min=pay.usd_annual_min,
+        salary_unreliable=pay.unreliable,
         employment_type=employment_type(partial.employment_type),
         description_html=sanitize_html(partial.description_html)
         if partial.description_html
