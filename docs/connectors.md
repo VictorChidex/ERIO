@@ -955,3 +955,30 @@ Board token: the identifier a connector is given for one employer's or job board
 - **Notes:** Counts: eyetastic = unique guids across its 13 feeds; connectagri = unique job links on its home page (its feeds were not fully enumerated). Other customers on the vendor home page: beveiligingsvacature.nl, recruitclever.co.uk, gurushrconsultancy.com.
 - **Live boards seen:** Eyetastic Jobs (72 jobs), ConnectAgri (8 jobs)
 
+
+## Public job services
+
+Government job services and open job feeds list the jobs of many employers, so their connectors set
+`multi_employer = True` and take the employer from each posting. They are a third kind in
+`platforms.json` (`"service"`), counted apart from the 58 ATS and 20 job-board platforms. The board
+token is `https://{host}` for a host the connector declares (Werken voor Nederland: its sitemap URL);
+any other token is refused. A service is verified by one live run on its feed. Each credit below is
+also in the platform's registry notes.
+
+| Service | Reads | Credit it asks for | Limits |
+| --- | --- | --- | --- |
+| Arbeitnow | `/api/job-board-api?page=n` (also `.co.uk`) | Link back to Arbeitnow.com | Newest 10 pages of 300 |
+| Remote OK | `/api` JSON | Followed link back to the job on Remote OK and a mention of Remote OK; no logo | One response |
+| We Work Remotely | `/remote-jobs.rss` | Attribute links back to We Work Remotely | 100 newest |
+| Jobicy | `/api/jobs?count=100&cursor=` | Name Jobicy as the source; the job links to its Jobicy listing | Last 7 days, 10 pages |
+| Working Nomads | `/api/exposed_jobs/` | None stated; credited anyway | One response |
+| Python.org Jobs | `/jobs/feed/rss/` | Python Job Board (PSF) with a link | 20 newest, no posted date |
+| Arbetsformedlingen | JobSearch `/search` | CC0; "Arbetsformedlingen / JobTech" given anyway | API pages at most 2,100 ads |
+| EURES | POST `/eures/api/jv-searchengine/public/jv-search/search` | Acknowledge the European Labour Authority (EURES); no logo | robots.txt asks 10 s between requests: 5 pages of 50 |
+| Werken voor Nederland | vacancy pages in `sitemap-vacatures.xml` (JobPosting plus article text) | CC0, none required | First 200 vacancies |
+
+Not built, with reasons (also `blocked` in the registry): Bundesagentur fuer Arbeit (an access key
+header, one constant printed in its docs: a credential), NAV (bearer token on request), Himalayas
+(terms forbid passing jobs on to other aggregators; ERIO's API would), MyCareersFuture (terms reserve
+all rights), Cryptocurrency Jobs (no commercial use), Remotive (robots.txt disallows its API),
+Gemeentebanen (no terms that allow reuse).

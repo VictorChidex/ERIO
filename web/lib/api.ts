@@ -81,7 +81,7 @@ export type Platform = {
 export type CoverageRow = {
   slug: string;
   name: string;
-  kind: "ats" | "board";
+  kind: "ats" | "board" | "service";
   status: "Verified" | "Partial" | "Blocked" | "Failing" | "Built, not run live" | "Needs decision" | "Not built";
   boards_verified: number;
   jobs_read: number;
