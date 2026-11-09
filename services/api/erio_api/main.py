@@ -11,7 +11,7 @@ from opensearchpy.exceptions import OpenSearchException
 
 from erio_api import errors, telemetry
 from erio_api.health import Check, default_checks, run_checks
-from erio_api.routes import insights, jobs, live, meta
+from erio_api.routes import insights, jobs, live, match, meta, workspace
 from erio_core import __version__
 from erio_core.observability import configure_logging
 from erio_core.search.index import client, ensure_alias
@@ -47,6 +47,9 @@ app.include_router(insights.router)
 app.include_router(jobs.router)
 app.include_router(live.router)
 app.include_router(meta.router)
+app.include_router(workspace.router)
+app.include_router(workspace.feeds)
+app.include_router(match.router)
 
 
 def get_checks() -> dict[str, Check]:
