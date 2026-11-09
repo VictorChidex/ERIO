@@ -30,6 +30,7 @@ from sqlalchemy import (
     select,
     text,
 )
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.engine.default import DefaultExecutionContext
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
 
@@ -71,6 +72,10 @@ EMPLOYMENT_TYPES = ("full_time", "part_time", "contract", "temporary", "internsh
 JOB_STATUSES = ("open", "closed", "unknown")
 DEDUP_METHODS = ("exact_id", "exact_key", "simhash")
 TOKEN_TIERS = ("free", "pro")
+# Where a company's name came from: the seed list, a placeholder made from a board token, or
+# what a source's postings call the employer.
+NAME_SOURCES = ("seed", "placeholder", "source")
+JOB_EVENT_KINDS = ("added", "changed", "closed", "reopened", "merged")
 
 
 def text_enum(name: str, values: tuple[str, ...]) -> Enum:
@@ -144,6 +149,11 @@ class Company(Base):
     name: Mapped[str] = mapped_column(String(200))
     # The company's page address, /company/{slug}: lowercase ASCII and hyphens.
     slug: Mapped[str] = mapped_column(String(100), unique=True, default=_new_company_slug)
+    # A placeholder name (made from a board token) is replaced by the name the first
+    # postings carry; a seed name is never overwritten.
+    name_source: Mapped[str] = mapped_column(
+        text_enum("name_source", NAME_SOURCES), server_default="seed"
+    )
     domain: Mapped[str | None] = mapped_column(String(253), unique=True)
     logo_url: Mapped[str | None] = mapped_column(Text)
     # Where the company is based, from the seed list (decision D-07); its
@@ -304,6 +314,9 @@ class Job(Base):
     salary_period: Mapped[str | None] = mapped_column(text_enum("salary_period", SALARY_PERIODS))
     # Used only for filtering and sorting; never displayed as the posted salary.
     salary_usd_annual_min: Mapped[int | None] = mapped_column(Integer, index=True)
+    # The figures are implausible for their currency and period (a yearly 4.5 rupees): kept as
+    # posted but left out of the USD value and of pay statistics.
+    salary_unreliable: Mapped[bool] = mapped_column(Boolean, server_default="false")
     # Indexed through (status, posted_at) above.
     status: Mapped[str] = mapped_column(
         text_enum("job_status", JOB_STATUSES), server_default="open"
@@ -361,6 +374,20 @@ class JobSource(Base):
     # Set when dedup moved this posting here from the job built from it.
     dedup_method: Mapped[str | None] = mapped_column(text_enum("dedup_method", DEDUP_METHODS))
     merged_at: Mapped[datetime | None] = mapped_column(index=True)
+
+
+class JobEvent(Base):
+    """One thing that happened to a job: the history shown on its page."""
+
+    __tablename__ = "job_events"
+    __table_args__ = (Index(None, "job_id", "at"), Index(None, "at"))
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    job_id: Mapped[str] = mapped_column(ForeignKey("jobs.canonical_id", ondelete="CASCADE"))
+    at: Mapped[datetime]
+    kind: Mapped[str] = mapped_column(text_enum("job_event_kind", JOB_EVENT_KINDS))
+    # For "changed": each field that moved, as [old, new].
+    changes: Mapped[dict[str, Any]] = mapped_column(JSONB, server_default="{}")
 
 
 class FxRate(Base):

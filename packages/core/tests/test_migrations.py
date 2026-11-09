@@ -23,6 +23,7 @@ EXPECTED_TABLES = {
     "countries",
     "crawl_runs",
     "fx_rates",
+    "job_events",
     "job_sources",
     "jobs",
     "raw_postings",
