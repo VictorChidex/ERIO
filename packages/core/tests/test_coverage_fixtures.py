@@ -52,8 +52,23 @@ def test_registry_lists_the_58_ats_and_20_job_board_platforms() -> None:
     rows = registry()
     kinds = [row["kind"] for row in rows]
     assert (kinds.count("ats"), kinds.count("board")) == (58, 20)
+    assert set(kinds) == {"ats", "board", "service"}
     slugs = [row["slug"] for row in rows]
     assert len(set(slugs)) == len(slugs)
+
+
+def test_public_job_services_are_listed_apart_from_the_78_platforms() -> None:
+    services = [row for row in registry() if row["kind"] == "service"]
+    assert len(services) >= 9
+    built = [row for row in services if not row["blocked"]]
+    assert built, "at least one service must be built"
+    for row in built:
+        connector = CONNECTORS[str(row["slug"])]
+        assert getattr(connector, "multi_employer", False), row["slug"]
+        assert row["examples"] and row["notes"], f"{row['slug']} needs an example and its credit"
+    for row in services:
+        if row["blocked"]:
+            assert row["slug"] not in CONNECTORS, f"{row['slug']} is blocked but has a connector"
 
 
 def test_every_connector_is_a_listed_platform() -> None:

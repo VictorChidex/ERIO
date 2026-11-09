@@ -856,5 +856,181 @@
   "partial_read": false,
   "checked_at": "2026-11-06T03:01:33+00:00",
   "note": "connectagri.com was dropped as an example: its jobs link to a private address, which ERIO rejects."
+ },
+ {
+  "slug": "arbeitnow",
+  "name": "Arbeitnow",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 2546,
+  "partial_read": true,
+  "checked_at": "2026-11-09T20:02:10+00:00",
+  "note": "Free public API, no access key. Credit: link back to Arbeitnow.com (its terms, section 11); every job links to its Arbeitnow page."
+ },
+ {
+  "slug": "remoteok",
+  "name": "Remote OK",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 99,
+  "partial_read": false,
+  "checked_at": "2026-11-09T20:02:12+00:00",
+  "note": "Public JSON feed, no access key. Credit: a followed link back to the job on Remote OK and a mention of Remote OK as the source (its API terms); the Remote OK logo is not used."
+ },
+ {
+  "slug": "weworkremotely",
+  "name": "We Work Remotely",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 100,
+  "partial_read": false,
+  "checked_at": "2026-11-09T20:02:16+00:00",
+  "note": "Public RSS feed. Credit: attribute the links back to We Work Remotely (its feed page); every job links to its We Work Remotely page."
+ },
+ {
+  "slug": "jobicy",
+  "name": "Jobicy",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 1000,
+  "partial_read": true,
+  "checked_at": "2026-11-09T20:02:36+00:00",
+  "note": "Public Jobs API, no access key; lists the last 7 days. Credit: Jobicy is named as the original source and the job links to its Jobicy listing (its fair-use rules)."
+ },
+ {
+  "slug": "workingnomads",
+  "name": "Working Nomads",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 35,
+  "partial_read": false,
+  "checked_at": "2026-11-09T20:02:38+00:00",
+  "note": "The public JSON feed its site links as API, no access key; it states no attribution rule, so Working Nomads is credited anyway and every job links to its Working Nomads page. Its terms say nothing about reading the feed; worth a written yes before launch."
+ },
+ {
+  "slug": "pythonjobs",
+  "name": "Python.org Jobs",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 20,
+  "partial_read": false,
+  "checked_at": "2026-11-09T20:02:39+00:00",
+  "note": "The Python Job Board's public RSS feed (20 newest jobs, no posted date). Credit: Python Job Board (Python Software Foundation) and a link to the job on python.org. It publishes no reuse terms for the feed beyond offering it for subscription; worth a written yes before launch."
+ },
+ {
+  "slug": "arbetsformedlingen",
+  "name": "Arbetsformedlingen (Sweden)",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 2100,
+  "partial_read": true,
+  "checked_at": "2026-11-09T21:15:22+00:00",
+  "note": "The Swedish Public Employment Service's JobSearch API: no access key, ads licensed CC0. Credit given anyway: Arbetsformedlingen / JobTech. The API pages at most 2,100 ads, so a crawl reads the newest ones and is reported as partial."
+ },
+ {
+  "slug": "eures",
+  "name": "EURES (European Job Mobility Portal)",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 173,
+  "partial_read": true,
+  "checked_at": "2026-11-09T21:15:33+00:00",
+  "note": "The portal's public vacancy search, no access key. Credit: re-use is authorised when the European Labour Authority (EURES) is acknowledged as the source; the EURES logo is not used. Its robots.txt asks for 10 seconds between requests, so a crawl reads the newest 250 jobs and is reported as partial."
+ },
+ {
+  "slug": "werkenvoornederland",
+  "name": "Werken voor Nederland",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 200,
+  "partial_read": true,
+  "checked_at": "2026-11-09T21:19:02+00:00",
+  "note": "Dutch central government vacancies, read from each vacancy page's structured data and text. Its copyright page puts the content under CC0 (no credit required); photos excluded, and the Rijksoverheid must not appear to endorse a derived work. A crawl reads the first 200 vacancies of its sitemap and is reported as partial."
+ },
+ {
+  "slug": "bundesagentur",
+  "name": "Bundesagentur fuer Arbeit (Germany)",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "The Jobsuche API answers 403 without an access key header; the key is one constant value printed in its documentation, which counts as a credential, so it is not used. Ask the agency for terms that allow reading without one."
+ },
+ {
+  "slug": "nav",
+  "name": "NAV (Norway)",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "The Arbeidsplassen job feed answers 401 without a bearer token that has to be requested from NAV, so it needs a credential and is not built. Norwegian vacancies are partly covered through EURES."
+ },
+ {
+  "slug": "himalayas",
+  "name": "Himalayas",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Its API needs no key, but its API terms allow showing jobs only on sites you operate and forbid passing them on to other job boards, aggregators or job search engines, including through feeds; ERIO's public API and assistant tools would pass them on. Needs a decision, or a written permission from the service."
+ },
+ {
+  "slug": "mycareersfuture",
+  "name": "MyCareersFuture (Singapore)",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Its terms of use reserve all rights in the site content and forbid reproducing, publicly displaying or otherwise using it except as the terms or the employer allow; nothing allows listing the jobs elsewhere. Ask the Singapore Workforce Development Agency for permission."
+ },
+ {
+  "slug": "cryptocurrencyjobs",
+  "name": "Cryptocurrency Jobs",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Its terms reserve all rights in the content and forbid commercial use without a licence; the feed it serves carries only a one-line excerpt anyway."
+ },
+ {
+  "slug": "remotive",
+  "name": "Remotive",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Its robots.txt disallows /api/ and the job pages, where its public API and feeds live, so there is no path ERIO may read."
+ },
+ {
+  "slug": "gemeentebanen",
+  "name": "Gemeentebanen (Netherlands)",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission."
  }
 ]
