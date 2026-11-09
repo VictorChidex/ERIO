@@ -118,6 +118,7 @@ test("robots.txt blocks filtered search and AI training, and names the sitemap",
   expect(txt).toContain("Disallow: /jobs?");
   expect(txt).toContain("Allow: /jobs?page=");
   expect(txt).toContain("Disallow: /api/");
+  expect(txt).toContain("Disallow: /feed.xml?");
   expect(txt).toMatch(/User-agent: GPTBot\nDisallow: \/\n/);
   expect(txt).toMatch(/User-agent: ClaudeBot\nDisallow: \/\n/);
   expect(txt).toContain("ai-train=no");

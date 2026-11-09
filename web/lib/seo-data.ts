@@ -6,6 +6,8 @@ import type { Metadata } from "next";
 
 import { ApiUnavailable, apiUrl, type Country, getCountries, type JobRecord, type JobsPage, NotFound } from "./api";
 import { ROLE_LABELS } from "./format";
+import { GUIDES } from "./guides";
+import { allPathSlugs } from "./paths";
 import type { HistoryEvent } from "./history";
 import {
   absoluteUrl,
@@ -23,6 +25,7 @@ import {
   robotsFor,
   SITEMAP_MIN,
   type SitemapUrl,
+  STATIC_PAGE_PATHS,
   titleBySlug,
   TITLE_COUNTRY_LIMIT,
 } from "./seo";
@@ -251,6 +254,17 @@ export async function sitemapLandings(): Promise<{ landing: Landing; total: numb
     }
   });
   return found;
+}
+
+/** Home, the explorers, the guides and every role page: addresses that never need the API. */
+export function fixedSitemapUrls(): SitemapUrl[] {
+  const paths = [
+    "/",
+    ...STATIC_PAGE_PATHS,
+    ...GUIDES.map((g) => `/guides/${g.slug}`),
+    ...allPathSlugs().map((slug) => `/paths/${slug}`),
+  ];
+  return paths.map((path) => ({ loc: absoluteUrl(path) }));
 }
 
 let memo: { at: number; urls: SitemapUrl[] } | null = null;

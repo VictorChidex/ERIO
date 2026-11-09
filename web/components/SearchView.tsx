@@ -190,6 +190,9 @@ export async function SearchView({
                 {!filters.cursor && (filters.q || filters.roles.length > 0 || filters.countries.length > 0) && (
                   <LiveRefresh query={toQuery(filters)} />
                 )}
+                <a className="rfeed" href={`/feed.xml${toQuery(filters)}`} title="Follow this search in a feed reader">
+                  Follow this search
+                </a>
                 <select className="rsort" name="sort" defaultValue={filters.sort} aria-label="Sort results">
                   <option value="recent">Most recent</option>
                   <option value="salary">Salary: high to low</option>

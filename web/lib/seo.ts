@@ -273,6 +273,8 @@ export function robotsTxt(siteUrl: string = SITE_URL): string {
     "Disallow: /search",
     "Disallow: /jobs?",
     "Allow: /jobs?page=",
+    "# Feeds of filtered searches are for feed readers, not crawlers.",
+    "Disallow: /feed.xml?",
     "Disallow: /api/",
     "Content-Signal: search=yes, ai-input=yes, ai-train=no",
     "",
@@ -286,7 +288,10 @@ export function robotsTxt(siteUrl: string = SITE_URL): string {
 
 export type SitemapUrl = { loc: string; lastmod?: string };
 
-const xmlEscape = (text: string): string =>
+/** Pages with fixed addresses that belong in the sitemap, besides the home page. */
+export const STATIC_PAGE_PATHS: string[] = ["/pulse", "/salary", "/new", "/paths", "/guides"];
+
+export const xmlEscape = (text: string): string =>
   text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export function urlsetXml(urls: SitemapUrl[]): string {
