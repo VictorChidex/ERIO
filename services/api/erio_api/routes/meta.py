@@ -14,13 +14,13 @@ from typing import Annotated, Any
 from fastapi import APIRouter, Depends
 from opensearchpy import OpenSearch
 from pydantic import BaseModel
-from sqlalchemy import Engine, case, func, select
+from sqlalchemy import Engine, and_, case, func, or_, select
 from sqlalchemy.orm import Session
 
 from erio_api.access import rate_limit
 from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_core.connectors import CONNECTORS
-from erio_core.db.models import CompanyBoard, Country, CrawlRun, Source
+from erio_core.db.models import CompanyBoard, Country, CrawlRun, Job, JobSource, RawPosting, Source
 from erio_core.db.seed import load_countries
 from erio_core.freshness import freshness_seconds
 
@@ -112,6 +112,19 @@ class CoverageRowOut(BaseModel):
     partial_read: bool
     checked_at: datetime | None
     note: str
+    # What the platform is doing now, from the live index and crawl history.
+    boards_total: int = 0
+    boards_ok_2d: int = 0
+    open_jobs: int = 0
+    runs_7d_ok: int = 0
+    runs_7d_failed: int = 0
+    # Share of the platform's open jobs that carry each field (0 to 1); None with no jobs.
+    with_description: float | None = None
+    with_location: float | None = None
+    with_posted_date: float | None = None
+    with_salary: float | None = None
+    last_success_at: datetime | None = None
+    live: bool = False
 
 
 class CoverageOut(BaseModel):
@@ -231,15 +244,101 @@ def _coverage() -> list[dict[str, Any]]:
     return rows
 
 
+LIVE_WINDOW = timedelta(days=2)
+LIVE_BOARDS = 3
+
+
+def _share(part: int, whole: int) -> float | None:
+    return round(part / whole, 4) if whole else None
+
+
+def _live_stats(
+    db: Engine, search: OpenSearch, alias: str, now: datetime
+) -> dict[str, dict[str, Any]]:
+    """Per platform: boards read lately, open jobs, crawl outcomes and how complete its jobs are."""
+    jobs = {
+        b["key"]: b["doc_count"]
+        for b in _search(search, alias, {"s": {"terms": {"field": "sources", "size": 300}}})[
+            "aggregations"
+        ]["s"]["buckets"]
+    }
+    out: dict[str, dict[str, Any]] = {}
+    with Session(db) as session:
+        boards = session.execute(
+            select(
+                CompanyBoard.source_slug,
+                func.count(),
+                func.count().filter(CompanyBoard.last_ok_at > now - LIVE_WINDOW),
+                func.max(CompanyBoard.last_ok_at),
+            ).group_by(CompanyBoard.source_slug)
+        ).tuples()
+        for slug, total, recent, last_ok in boards:
+            out[slug] = {
+                "boards_total": total,
+                "boards_ok_2d": recent,
+                "last_success_at": last_ok,
+                "live": recent >= LIVE_BOARDS,
+            }
+        runs = session.execute(
+            select(
+                CompanyBoard.source_slug,
+                func.count().filter(CrawlRun.outcome == "ok"),
+                func.count().filter(CrawlRun.outcome != "ok"),
+            )
+            .join(CompanyBoard, CompanyBoard.id == CrawlRun.board_id)
+            .where(CrawlRun.started_at > now - timedelta(days=7), CrawlRun.outcome.is_not(None))
+            .group_by(CompanyBoard.source_slug)
+        ).tuples()
+        for slug, ok, failed in runs:
+            out.setdefault(slug, {}).update({"runs_7d_ok": ok, "runs_7d_failed": failed})
+        fields = session.execute(
+            select(
+                RawPosting.source_slug,
+                func.count(),
+                func.count().filter(func.length(func.coalesce(Job.description_text, "")) > 0),
+                func.count().filter(Job.country_code.is_not(None)),
+                func.count().filter(Job.posted_at.is_not(None)),
+                func.count().filter(or_(Job.salary_min.is_not(None), Job.salary_max.is_not(None))),
+            )
+            .select_from(Job)
+            .join(JobSource, and_(JobSource.job_id == Job.canonical_id, JobSource.is_primary))
+            .join(RawPosting, RawPosting.id == JobSource.raw_posting_id)
+            .where(Job.merged_into.is_(None), Job.status == "open")
+            .group_by(RawPosting.source_slug)
+        ).tuples()
+        for slug, total, description, location, posted, salary in fields:
+            out.setdefault(slug, {}).update(
+                {
+                    "with_description": _share(description, total),
+                    "with_location": _share(location, total),
+                    "with_posted_date": _share(posted, total),
+                    "with_salary": _share(salary, total),
+                }
+            )
+    for slug, count in jobs.items():
+        out.setdefault(slug, {})["open_jobs"] = count
+    return out
+
+
 @router.get(
     "/coverage",
     response_model=CoverageOut,
     summary="The 78 platforms of the coverage brief, with each one's verified status",
 )
-def coverage() -> dict[str, Any]:
-    """Generated from live runs against real boards (`python -m erio_ingest.coverage`);
-    a platform is Verified only when two or more of its boards were read in full."""
-    return {"data": _coverage()}
+@cached
+def coverage(
+    db: Annotated[Engine, Depends(engine)],
+    search: Annotated[OpenSearch, Depends(search_client)],
+    alias: Annotated[str, Depends(search_alias)],
+) -> dict[str, Any]:
+    """Each platform's verified status, and how it is doing right now.
+
+    Verified comes from live runs against real boards (`python -m erio_ingest.coverage`): two or
+    more boards read in full. ``live`` is the operating test: at least ``LIVE_BOARDS`` of the
+    platform's boards were read successfully in the last two days.
+    """
+    live = _live_stats(db, search, alias, datetime.now(UTC))
+    return {"data": [{**row, **live.get(row["slug"], {})} for row in _coverage()]}
 
 
 @router.get(

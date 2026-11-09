@@ -88,6 +88,18 @@ export type CoverageRow = {
   partial_read: boolean;
   checked_at: string | null;
   note: string;
+  // How the platform is doing now (shares are 0 to 1, null when it has no jobs).
+  boards_total: number;
+  boards_ok_2d: number;
+  open_jobs: number;
+  runs_7d_ok: number;
+  runs_7d_failed: number;
+  with_description: number | null;
+  with_location: number | null;
+  with_posted_date: number | null;
+  with_salary: number | null;
+  last_success_at: string | null;
+  live: boolean;
 };
 
 export type Stats = {

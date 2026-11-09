@@ -17,7 +17,7 @@ from erio_api.deps import search_alias as alias_dependency
 from erio_api.main import app
 from erio_api.routes.live import get_enqueue
 from erio_core import live
-from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
+from erio_core.db.models import Company, CompanyBoard, CrawlRun, Job, JobSource, RawPosting
 from erio_core.db.seed import sync_countries, sync_sources
 from erio_core.search.index import client
 from erio_ingest.dedup import merge
@@ -259,6 +259,58 @@ def test_coverage_lists_the_78_platforms_with_their_status(api: TestClient) -> N
     by_slug = {r["slug"]: r for r in rows}
     assert by_slug["greenhouse"]["status"] == "Verified"
     assert by_slug["paycom"]["status"] == "Blocked" and by_slug["paycom"]["note"]
+
+
+def test_coverage_reports_how_each_platform_is_doing_now(
+    api: TestClient, migrated_engine: Engine
+) -> None:
+    now = datetime.now(UTC)
+    with Session(migrated_engine) as session, session.begin():
+        first = session.scalars(select(CompanyBoard)).one()
+        first.last_ok_at = now - timedelta(hours=1)
+        company = session.scalars(select(Company)).one()
+        fresh = [
+            CompanyBoard(
+                company_id=company.id,
+                source_slug="greenhouse",
+                board_token=f"fresh{n}",
+                last_ok_at=now - timedelta(hours=n),
+            )
+            for n in (2, 3)
+        ]
+        stale = CompanyBoard(
+            company_id=company.id,
+            source_slug="greenhouse",
+            board_token="stale",
+            last_ok_at=now - timedelta(days=5),
+        )
+        session.add_all([*fresh, stale])
+        session.flush()
+        for board, outcome, hours_ago in (
+            (first, "ok", 1),
+            (fresh[0], "ok", 3),
+            (stale, "http_error", 120),
+        ):
+            session.add(
+                CrawlRun(
+                    board_id=board.id,
+                    started_at=now - timedelta(hours=hours_ago),
+                    finished_at=now - timedelta(hours=hours_ago),
+                    outcome=outcome,
+                )
+            )
+
+    rows = {r["slug"]: r for r in api.get("/v1/coverage").json()["data"]}
+
+    row = rows["greenhouse"]
+    assert (row["boards_total"], row["boards_ok_2d"]) == (4, 3)
+    assert row["live"] is True  # three boards were read in the last two days
+    assert (row["runs_7d_ok"], row["runs_7d_failed"]) == (2, 1)
+    assert row["open_jobs"] > 0 and row["last_success_at"] is not None
+    assert row["with_description"] == 1.0 and 0 < row["with_location"] <= 1
+    assert row["with_posted_date"] == 1.0
+    idle = rows["lever"]  # no boards, no jobs: nothing to report and not live
+    assert (idle["boards_total"], idle["live"], idle["with_description"]) == (0, False, None)
 
 
 def test_platforms_and_stats(api: TestClient) -> None:

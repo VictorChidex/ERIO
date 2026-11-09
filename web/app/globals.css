@@ -424,3 +424,4 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .live{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--fg2);margin-left:14px}
 .live-dot{width:8px;height:8px;border-radius:50%;background:var(--amb);animation:lp 1.4s infinite}
 .live-dot.live-done{background:var(--grn);animation:none}
+.cov-shares{white-space:nowrap;color:var(--fg2);font-size:13px;font-variant-numeric:tabular-nums}

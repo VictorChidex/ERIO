@@ -9,6 +9,7 @@ from functools import lru_cache
 from typing import Any
 from urllib.parse import urlsplit
 
+import httpx
 from celery import Celery, Task, signals
 from redis import Redis
 from sqlalchemy import Engine, select
@@ -25,6 +26,7 @@ from erio_core.search.index import client as search_client
 from erio_core.settings import get_settings
 from erio_ingest.ai_fallback import BATCH as AI_BATCH
 from erio_ingest.ai_fallback import fill_with_ai
+from erio_ingest.archive_discovery import RedisState, discover_from_archive
 from erio_ingest.dedup import dedup_all
 from erio_ingest.discovery import discover_boards
 from erio_ingest.fetcher import PoliteFetcher
@@ -88,6 +90,7 @@ app.conf.update(
         "index-changed": {"task": "erio.index_changed", "schedule": 20.0},
         "rebuild-index": {"task": "erio.rebuild_index", "schedule": 24 * 3600.0},
         "discover-boards": {"task": "erio.discover_boards", "schedule": 24 * 3600.0},
+        "discover-from-archive": {"task": "erio.discover_from_archive", "schedule": 6 * 3600.0},
         "smoke-test-sources": {"task": "erio.smoke_test_sources", "schedule": 24 * 3600.0},
         "dedup-all": {"task": "erio.dedup_all", "schedule": 24 * 3600.0},
         "ai-fallback": {"task": "erio.ai_fallback", "schedule": 300.0},
@@ -120,6 +123,14 @@ def fetcher() -> PoliteFetcher:
     hosts = {host for connector in CONNECTORS.values() for host in connector.hosts}
     limiter = HostRateLimiter(Redis.from_url(settings.redis_url), settings.crawl_rate_per_host)
     return PoliteFetcher(hosts, limiter, settings, extra_hosts=board_hosts)
+
+
+@lru_cache
+def archive_fetcher() -> PoliteFetcher:
+    """Reads the Internet Archive's CDX index, a request every other second, patiently."""
+    limiter = HostRateLimiter(Redis.from_url(settings.redis_url), settings.archive_rate_per_s)
+    client = httpx.Client(timeout=settings.archive_timeout_s, follow_redirects=False)
+    return PoliteFetcher(frozenset({"web.archive.org"}), limiter, settings, client=client)
 
 
 @lru_cache
@@ -247,6 +258,24 @@ def rebuild_index_task() -> dict[str, Any]:
 def discover_boards_task() -> dict[str, Any]:
     result = discover_boards(engine(), fetcher(), utcnow)
     return {"tried": result.tried, "found": result.found}
+
+
+@app.task(name="erio.discover_from_archive", ignore_result=True)
+def discover_from_archive_task() -> dict[str, Any]:
+    result = discover_from_archive(
+        engine(),
+        archive_fetcher(),
+        fetcher(),
+        RedisState(Redis.from_url(settings.redis_url)),
+        utcnow,
+    )
+    return {
+        "pages": result.pages,
+        "candidates": result.candidates,
+        "probed": result.probed,
+        "found": {source: len(tokens) for source, tokens in result.found.items()},
+        "errors": result.errors[:5],
+    }
 
 
 @app.task(name="erio.smoke_test_sources", ignore_result=True)

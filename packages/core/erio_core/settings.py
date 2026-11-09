@@ -49,6 +49,10 @@ class Settings(BaseSettings):
     crawl_rate_per_host: float = 2.0
     crawl_timeout_s: float = 20.0
     crawl_max_response_bytes: int = 10 * 1024 * 1024
+    # The Internet Archive's CDX index is read slowly: requests per second to web.archive.org.
+    archive_rate_per_s: float = 0.5
+    # A CDX query can take a minute: the archive answers slowly, so it gets its own timeout.
+    archive_timeout_s: float = 180.0
 
     # AI gateway (spec section 13). Routing lives in erio_core/ai/routing.json
     # unless a path is given; provider addresses can be overridden per

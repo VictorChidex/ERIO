@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import type { CoverageRow } from "@/lib/api";
-import { formatCount } from "@/lib/format";
+import { ageLabel, formatCount } from "@/lib/format";
 
 const KINDS = [
   { key: "ats", label: "Applicant tracking systems", short: "ATS" },
@@ -13,6 +13,13 @@ const STATUS_CLASS: Record<string, string> = {
   Partial: "part",
   Blocked: "blk",
 };
+
+// A platform is live when this many of its boards were read successfully in the last two days.
+const LIVE_BOARDS = 3;
+
+function percent(share: number | null): string {
+  return share === null ? "—" : `${Math.round(share * 100)}%`;
+}
 
 export type CoverageFilter = { kind?: string; status?: string };
 
@@ -38,8 +45,9 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
         </h2>
         <p className="cov-p">
           A platform counts as <strong>verified</strong> only when live runs on two or more of its real boards
-          fetched, parsed and normalized every job. Platforms that turn crawlers away are shown as blocked and
-          are never worked around.
+          fetched, parsed and normalized every job, and as <strong>live</strong> while at least{" "}
+          {LIVE_BOARDS} of its boards were read successfully in the last two days. Platforms that turn crawlers
+          away are shown as blocked and are never worked around.
         </p>
         <div className="cov-stats-row">
           {KINDS.map((k) => {
@@ -57,6 +65,12 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
           <div className="cov-stat">
             <div className="cov-stat-num">{rows.filter((r) => r.status === "Verified").length}/{rows.length}</div>
             <div className="cov-stat-lbl">Platforms verified</div>
+          </div>
+          <div className="cov-stat">
+            <div className="cov-stat-num">
+              {rows.filter((r) => r.live).length}/{rows.length}
+            </div>
+            <div className="cov-stat-lbl">Platforms live now</div>
           </div>
         </div>
 
@@ -93,8 +107,14 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
                 <th scope="col">Platform</th>
                 <th scope="col">Type</th>
                 <th scope="col">Status</th>
-                <th scope="col">Boards verified</th>
-                <th scope="col">Jobs read in tests</th>
+                <th scope="col">Live now</th>
+                <th scope="col">Boards ok / total</th>
+                <th scope="col">Open jobs</th>
+                <th scope="col">Runs 7d ok / failed</th>
+                <th scope="col" title="Share of open jobs with a description, a resolved country, a posted date and a stated salary">
+                  Description · Place · Date · Pay
+                </th>
+                <th scope="col">Last success</th>
                 <th scope="col">Notes</th>
               </tr>
             </thead>
@@ -106,11 +126,20 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
                   <td>
                     <span className={`cov-pill ${STATUS_CLASS[r.status] ?? "other"}`}>{r.status}</span>
                   </td>
-                  <td>{r.boards_verified || "—"}</td>
                   <td>
-                    {r.jobs_read ? formatCount(r.jobs_read) : "—"}
-                    {r.partial_read && <span className="cov-part"> · part of each board</span>}
+                    <span className={`cov-pill ${r.live ? "ok" : r.boards_ok_2d > 0 ? "part" : "other"}`}>
+                      {r.live ? "Live" : `${r.boards_ok_2d} of ${LIVE_BOARDS}`}
+                    </span>
                   </td>
+                  <td>{r.boards_total ? `${r.boards_ok_2d} / ${r.boards_total}` : "—"}</td>
+                  <td>{r.open_jobs ? formatCount(r.open_jobs) : "—"}</td>
+                  <td>{r.runs_7d_ok + r.runs_7d_failed ? `${r.runs_7d_ok} / ${r.runs_7d_failed}` : "—"}</td>
+                  <td className="cov-shares">
+                    {[r.with_description, r.with_location, r.with_posted_date, r.with_salary]
+                      .map(percent)
+                      .join(" · ")}
+                  </td>
+                  <td>{r.last_success_at ? ageLabel(r.last_success_at) : "—"}</td>
                   <td className="cov-notes">{r.note || ""}</td>
                 </tr>
               ))}
