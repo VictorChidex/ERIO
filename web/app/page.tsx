@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { Suspense } from "react";
 
 import { CountrySelect } from "@/components/CountrySelect";
 import { HomeGlobe } from "@/components/GlobeLazy";
+import { PopularSearches } from "@/components/PopularSearches";
 import {
   ApiUnavailable,
   type Countries,
@@ -179,6 +181,10 @@ export default async function HomePage() {
           </div>
         </div>
       )}
+
+      <Suspense fallback={null}>
+        <PopularSearches />
+      </Suspense>
 
       <section id="features">
         <div className="wrap">
