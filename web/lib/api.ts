@@ -113,6 +113,98 @@ export type Stats = {
   refresh_lag_minutes: number | null;
 };
 
+// Market pulse and company pages (/v1/insights/pulse, /v1/companies).
+export type Bucket = { key: string; label: string; count: number };
+export type Place = Bucket;
+
+/** Quartiles of each advertised range's midpoint, in the currency and period it was posted in. */
+export type PayQuartiles = {
+  currency: string;
+  period: "year" | "month" | "hour";
+  roles: number;
+  lower: number;
+  median: number;
+  upper: number;
+};
+
+export type FlowDay = { date: string; added: number; removed: number };
+export type Flow = {
+  days: FlowDay[];
+  added: number;
+  removed: number;
+  removals_tracked_since: string | null;
+};
+
+export type Pulse = {
+  generated_at: string;
+  totals: {
+    open_roles: number;
+    companies_hiring: number;
+    sources_watched: number;
+    platforms_live: number;
+    roles_stating_pay: number;
+    pay_stated_pct: number | null;
+    remote_roles: number;
+  };
+  flow: Flow;
+  posted: Bucket[];
+  last_seen: Bucket[];
+  roles: Bucket[];
+  work_mode: Bucket[];
+  pay: PayQuartiles[];
+  countries: { code: string; name: string; roles: number; remote_pct: number | null; pay_stated_pct: number | null }[];
+  sources: {
+    platforms: { slug: string; name: string; kind: string; roles: number }[];
+    ats_roles: number;
+    board_roles: number;
+  };
+};
+
+export type CompanyRow = {
+  slug: string;
+  name: string;
+  domain: string | null;
+  logo_url: string | null;
+  country_code: string | null;
+  open_roles: number;
+};
+
+export type Companies = { data: CompanyRow[]; meta: { total: number; page: number; per_page: number } };
+
+export type CompanyProfile = {
+  slug: string;
+  name: string;
+  domain: string | null;
+  logo_url: string | null;
+  country_code: string | null;
+  tracked_since: string;
+  last_checked_at: string | null;
+  open_roles: number;
+  added_30d: number;
+  removed_30d: number;
+  remote_pct: number | null;
+  pay_stated_pct: number | null;
+  flow: Flow;
+  roles: Bucket[];
+  countries: Place[];
+  locations: Place[];
+  work_mode: Bucket[];
+  contracts: Bucket[];
+  posted: Bucket[];
+  pay: PayQuartiles[];
+  platforms: { slug: string; name: string; kind: string; roles: number }[];
+  latest: {
+    canonical_id: string;
+    title: string;
+    location_text: string | null;
+    country_code: string | null;
+    remote_status: "remote" | "hybrid" | "onsite";
+    employment_type: string | null;
+    posted_at: string | null;
+    indexed_at: string;
+  }[];
+};
+
 export class ApiUnavailable extends Error {}
 
 type Params = Record<string, string | number | boolean | undefined | null>;
@@ -187,6 +279,10 @@ export const getCountries = () => get<Countries>("/v1/countries", {}, 60);
 export const getPlatforms = () => get<{ data: Platform[] }>("/v1/platforms", {}, 60);
 export const getCoverage = () => get<{ data: CoverageRow[] }>("/v1/coverage", {}, 300);
 export const getStats = () => get<Stats>("/v1/stats", {}, 30);
+export const getPulse = () => get<{ data: Pulse }>("/v1/insights/pulse", {}, 60);
+export const getCompanies = (params: Params) => get<Companies>("/v1/companies", params);
+export const getCompany = (slug: string) =>
+  get<{ data: CompanyProfile }>(`/v1/companies/${encodeURIComponent(slug)}`, {}, 60);
 export const getOpenApi = () => get<Record<string, unknown>>("/v1/openapi.json", {}, 300);
 
 // The read-only MCP server (services/mcp) publishes its tools for OpenAI and
