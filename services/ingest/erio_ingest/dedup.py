@@ -32,6 +32,7 @@ from sqlalchemy.orm import Session
 
 from erio_core.db.models import Job, JobSource, RawPosting, Source
 from erio_core.dedup import MAX_DISTANCE, DedupMethod, Fingerprint, hamming, match, simhash
+from erio_ingest.history import record_event
 from erio_ingest.status import refresh_jobs
 
 # Looser methods sort later; a job records the loosest one that built it.
@@ -152,6 +153,7 @@ def merge(session: Session, loser: str, winner: str, method: DedupMethod, now: d
         .execution_options(synchronize_session=False)
     )
     session.expire_all()
+    record_event(session, winner, "merged", now)
     refresh_jobs(session, [winner], now)
 
 

@@ -257,7 +257,7 @@ def register(session: Session, source: str, token: str, now: datetime) -> bool:
     )
     if existing:
         return False
-    company = Company(name=pretty(token))
+    company = Company(name=pretty(token), name_source="placeholder")
     session.add(company)
     session.flush()
     session.execute(

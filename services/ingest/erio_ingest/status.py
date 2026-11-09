@@ -10,6 +10,8 @@
    ``unknown`` (``mark_unverified``, run periodically).
 5. A posting that reappears is reopened, and its job with it, keeping the
    same ``canonical_id``.
+
+A job that closes or reopens gets a history event (``erio_ingest.history``).
 """
 
 from collections.abc import Collection
@@ -20,6 +22,7 @@ from sqlalchemy import or_, select, update
 from sqlalchemy.orm import Session
 
 from erio_core.db.models import Job, JobSource, RawPosting
+from erio_ingest.history import record_event
 
 CLOSE_AFTER_MISSING = timedelta(minutes=30)
 UNVERIFIED_AFTER = timedelta(hours=72)
@@ -79,6 +82,7 @@ def refresh_jobs(session: Session, job_ids: Collection[str], now: datetime) -> i
     """Derive each job's status from the postings it was built from."""
     for job_id in job_ids:
         job = session.get_one(Job, job_id)
+        was_closed = job.status == "closed"
         postings = session.scalars(
             select(RawPosting)
             .join(JobSource, JobSource.raw_posting_id == RawPosting.id)
@@ -97,6 +101,10 @@ def refresh_jobs(session: Session, job_ids: Collection[str], now: datetime) -> i
         elif postings:
             job.status = "closed"
             job.closed_at = max(p.closed_at for p in postings if p.closed_at is not None)
+        if job.status == "closed" and not was_closed:
+            record_event(session, job_id, "closed", now)
+        elif was_closed and job.status != "closed":
+            record_event(session, job_id, "reopened", now)
     return len(job_ids)
 
 

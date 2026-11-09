@@ -24,6 +24,8 @@ from erio_core.dedup import Fingerprint, simhash
 from erio_core.normalize.job import normalize
 from erio_core.schemas import RawPosting as RawPostingData
 from erio_ingest.dedup import dedup_jobs, survivor
+from erio_ingest.employers import adopt_source_name, resolve_company
+from erio_ingest.history import TRACKED, changed_fields, record_event
 from erio_ingest.status import refresh_jobs
 from erio_ingest.storage import STORE_WORKERS, RawStore
 
@@ -178,8 +180,9 @@ def _normalize_one(
     )
     partial = connector.parse(raw)
     job = normalize(partial, rates)
+    company_id = _company_for(session, connector.multi_employer, board, partial.company_name)
     fingerprint = Fingerprint(
-        company_id=board.company_id,
+        company_id=company_id,
         title=job.title,
         city=job.location.city,
         country_code=job.location.country_code,
@@ -190,7 +193,7 @@ def _normalize_one(
         eligible=frozenset(job.location.eligible_country_codes),
     )
     values = job.columns() | {
-        "company_id": board.company_id,
+        "company_id": company_id,
         "dedup_key": fingerprint.key(),
         "simhash": fingerprint.simhash,
         # A new version of the posting: the AI fallback looks at it afresh
@@ -202,11 +205,22 @@ def _normalize_one(
         "updated_at": now,
         "last_verified_at": posting.last_seen_at,
     }
+    stored = session.execute(
+        select(*(getattr(Job, field) for field in TRACKED), Job.ai_filled).where(
+            Job.canonical_id == job.canonical_id
+        )
+    ).one_or_none()
     statement = insert(Job).values(values)
     updates = {key: statement.excluded[key] for key in values if key != "canonical_id"}
     session.execute(
         statement.on_conflict_do_update(index_elements=[Job.canonical_id], set_=updates)
     )
+    if stored is None:
+        record_event(session, job.canonical_id, "added", now)
+    else:
+        changes = changed_fields(stored._asdict(), values, stored.ai_filled)
+        if changes:
+            record_event(session, job.canonical_id, "changed", now, changes)
     session.execute(
         insert(JobSource)
         .values(job_id=job.canonical_id, raw_posting_id=posting.id, is_primary=True)
@@ -214,3 +228,18 @@ def _normalize_one(
     )
     # After a merge the posting belongs to the surviving job.
     return survivor(session, job.canonical_id)
+
+
+def _company_for(
+    session: Session, multi_employer: bool, board: CompanyBoard, named: str | None
+) -> int:
+    """The company a job belongs to.
+
+    A multi-employer board's posting names its own employer (found or created by slug);
+    one that names none keeps the board's company. A single-employer board always keeps its
+    company, which takes the posting's name when it only has a placeholder one.
+    """
+    if multi_employer:
+        return resolve_company(session, named) or board.company_id
+    adopt_source_name(session, board.company_id, named)
+    return board.company_id
