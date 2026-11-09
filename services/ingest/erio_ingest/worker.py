@@ -35,6 +35,7 @@ from erio_ingest.indexer import rebuild, sync_changed
 from erio_ingest.normalizer import latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
+from erio_ingest.saved_searches import cleanup_workspaces, evaluate_saved_searches
 from erio_ingest.scheduler import schedule_due_boards
 from erio_ingest.smoke import smoke_test_sources
 from erio_ingest.status import mark_unverified
@@ -78,6 +79,8 @@ app.conf.update(
     task_routes={
         "erio.normalize_pending": {"queue": "pipeline"},
         "erio.index_changed": {"queue": "pipeline"},
+        "erio.evaluate_saved_searches": {"queue": "pipeline"},
+        "erio.cleanup_workspaces": {"queue": "pipeline"},
     },
     result_expires=3600,
     timezone="UTC",
@@ -95,6 +98,8 @@ app.conf.update(
         "dedup-all": {"task": "erio.dedup_all", "schedule": 24 * 3600.0},
         "ai-fallback": {"task": "erio.ai_fallback", "schedule": 300.0},
         "ai-eval": {"task": "erio.ai_eval", "schedule": 24 * 3600.0},
+        "evaluate-saved-searches": {"task": "erio.evaluate_saved_searches", "schedule": 600.0},
+        "cleanup-workspaces": {"task": "erio.cleanup_workspaces", "schedule": 24 * 3600.0},
     },
 )
 
@@ -246,6 +251,27 @@ def index_changed_task() -> dict[str, int]:
     result = sync_changed(engine(), search_client(), settings.search_alias, since)
     redis.set(WATERMARK_KEY, result.watermark.isoformat())
     return {"indexed": result.indexed, "removed": result.removed}
+
+
+@app.task(name="erio.evaluate_saved_searches", ignore_result=True)
+def evaluate_saved_searches_task() -> dict[str, int]:
+    """Every 10 minutes: new matches for each saved search, then their webhooks."""
+    result = evaluate_saved_searches(
+        engine(), search_client(), settings.search_alias, settings.site_url, utcnow()
+    )
+    return {
+        "searches": result.searches,
+        "new_matches": result.new_matches,
+        "webhooks_sent": result.webhooks_sent,
+        "webhooks_failed": result.webhooks_failed,
+        "errors": result.errors,
+    }
+
+
+@app.task(name="erio.cleanup_workspaces", ignore_result=True)
+def cleanup_workspaces_task() -> int:
+    """Daily: delete workspaces nobody has used for 12 months."""
+    return cleanup_workspaces(engine(), utcnow())
 
 
 @app.task(name="erio.rebuild_index", ignore_result=True)
