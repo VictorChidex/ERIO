@@ -17,7 +17,15 @@ from erio_api.deps import search_alias as alias_dependency
 from erio_api.main import app
 from erio_api.routes.live import get_enqueue
 from erio_core import live
-from erio_core.db.models import Company, CompanyBoard, CrawlRun, Job, JobSource, RawPosting
+from erio_core.db.models import (
+    Company,
+    CompanyBoard,
+    CrawlRun,
+    Job,
+    JobEvent,
+    JobSource,
+    RawPosting,
+)
 from erio_core.db.seed import sync_countries, sync_sources
 from erio_core.search.index import client
 from erio_ingest.dedup import merge
@@ -248,6 +256,39 @@ def test_single_job_lists_where_each_posting_was_found(
         )
     states = [d["status"] for d in api.get("/v1/jobs/j_ng_lagos").json()["data"]["source_details"]]
     assert states == ["closed"]
+
+
+def test_single_job_carries_its_history_newest_first_and_capped(
+    api: TestClient, migrated_engine: Engine
+) -> None:
+    assert api.get("/v1/jobs/j_ng_lagos").json()["data"]["history"] == []
+    with Session(migrated_engine) as session, session.begin():
+        session.add(JobEvent(job_id="j_ng_lagos", at=NOW, kind="added", changes={}))
+        session.add(
+            JobEvent(
+                job_id="j_ng_lagos",
+                at=NOW + timedelta(hours=1),
+                kind="changed",
+                changes={"title": ["Backend Engineer", "Senior Backend Engineer"]},
+            )
+        )
+    history = api.get("/v1/jobs/j_ng_lagos").json()["data"]["history"]
+    assert history == [
+        {
+            "at": "2026-11-05T13:00:00Z",
+            "kind": "changed",
+            "changes": {"title": ["Backend Engineer", "Senior Backend Engineer"]},
+        },
+        {"at": "2026-11-05T12:00:00Z", "kind": "added", "changes": {}},
+    ]
+    with Session(migrated_engine) as session, session.begin():
+        session.add_all(
+            JobEvent(job_id="j_ng_lagos", at=NOW + timedelta(days=n), kind="closed", changes={})
+            for n in range(1, 61)
+        )
+    history = api.get("/v1/jobs/j_ng_lagos").json()["data"]["history"]
+    assert len(history) == 50
+    assert history[0]["at"] == "2027-01-04T12:00:00Z"
 
 
 @pytest.mark.parametrize(

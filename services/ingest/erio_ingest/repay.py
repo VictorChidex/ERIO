@@ -19,13 +19,14 @@ period, may infer an hourly or monthly one from the size.
 
 from collections import Counter
 from dataclasses import dataclass, field
+from typing import cast
 
 from sqlalchemy import Engine, select, update
 from sqlalchemy.orm import Session
 
 from erio_core.db.models import Job, JobSource, RawPosting
 from erio_core.normalize.salary_check import check_pay
-from erio_core.schemas import SalaryHint
+from erio_core.schemas import SalaryHint, SalaryPeriod
 from erio_ingest.normalizer import latest_rates
 
 BATCH = 2000
@@ -68,9 +69,10 @@ def repay(engine: Engine, renormalize: bool = False) -> RepayResult:
                 .limit(BATCH)
             ).all()
             for job_id, low, high, currency, period, usd, unreliable in rows:
-                verdict = check_pay(
-                    SalaryHint(min=low, max=high, currency=currency, period=period), rates
+                hint = SalaryHint(
+                    min=low, max=high, currency=currency, period=cast(SalaryPeriod | None, period)
                 )
+                verdict = check_pay(hint, rates)
                 if (verdict.usd_annual_min, verdict.unreliable) == (usd, unreliable):
                     continue
                 session.execute(

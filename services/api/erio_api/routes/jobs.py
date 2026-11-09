@@ -15,13 +15,14 @@ from erio_api.access import rate_limit
 from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_api.errors import ApiError
 from erio_api.search import BadCursor, JobQuery, Sort, build_search, read_results
-from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
+from erio_core.db.models import Company, CompanyBoard, Job, JobEvent, JobSource, RawPosting
 from erio_core.normalize.text import sanitize_html
 from erio_core.schemas import EmploymentType, JobRecord, JobStatus, RemoteStatus, RoleCategory
 
 router = APIRouter(prefix="/v1", tags=["jobs"], dependencies=[Depends(rate_limit)])
 
 COUNTRY_CODE = re.compile(r"^[A-Z]{2}$")
+HISTORY_LIMIT = 50
 
 
 class Facets(BaseModel):
@@ -53,8 +54,17 @@ class SourceDetail(BaseModel):
     status: Literal["open", "missing", "closed"]
 
 
+class HistoryEvent(BaseModel):
+    """One thing that happened to a job; ``changes`` maps each moved field to [old, new]."""
+
+    at: datetime
+    kind: Literal["added", "changed", "closed", "reopened", "merged"]
+    changes: dict[str, list[Any]]
+
+
 class JobDetailRecord(JobRecord):
     source_details: list[SourceDetail]
+    history: list[HistoryEvent]
 
 
 class JobDetail(BaseModel):
@@ -187,6 +197,12 @@ def get_job(
             }
             for posting, token, primary in postings
         ]
+        history = session.execute(
+            select(JobEvent.at, JobEvent.kind, JobEvent.changes)
+            .where(JobEvent.job_id == canonical_id)
+            .order_by(JobEvent.at.desc(), JobEvent.id.desc())
+            .limit(HISTORY_LIMIT)
+        ).all()
         # The jobs row holds every JobRecord field except company and sources.
         columns = {
             name: getattr(job, name) for name in JobRecord.model_fields if hasattr(job, name)
@@ -205,6 +221,9 @@ def get_job(
                 },
                 "sources": list(dict.fromkeys(sources)),
                 "source_details": source_details,
+                "history": [
+                    {"at": at, "kind": kind, "changes": changes} for at, kind, changes in history
+                ],
             }
         )
     return {"data": record}
