@@ -133,15 +133,21 @@ test.describe("search", () => {
 });
 
 test.describe("pages", () => {
-  test("a job page has the full description and JobPosting data", async ({ page }) => {
+  test("a job page has the full description, where it was found and breadcrumbs, but no JobPosting data", async ({
+    page,
+  }) => {
     await page.goto("/search");
     await page.locator(".jct-link").first().click();
     await expect(page).toHaveURL(/\/jobs\/j_/);
 
-    const posting = JSON.parse((await page.locator('script[type="application/ld+json"]').textContent()) ?? "{}");
-    expect(posting["@type"]).toBe("JobPosting");
-    expect(posting.hiringOrganization.name).toBeTruthy();
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText(posting.title);
+    // Candidates apply on the employer's page, so the page offers breadcrumbs and no JobPosting.
+    const scripts = await page.locator('script[type="application/ld+json"]').allTextContents();
+    const types = scripts.map((text) => JSON.parse(text)["@type"]);
+    expect(types).toContain("BreadcrumbList");
+    expect(types).not.toContain("JobPosting");
+    await expect(page.getByRole("heading", { level: 1 })).not.toBeEmpty();
+    await expect(page.getByRole("heading", { name: "Sources" })).toBeVisible();
+    await expect(page.getByRole("columnheader", { name: "Last checked" })).toBeVisible();
     await expect(page.getByRole("link", { name: /Apply on/ })).toHaveAttribute("href", /^https:\/\//);
     await expect(page.locator(".jd-desc script")).toHaveCount(0);
   });
