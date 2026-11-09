@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { SaveButton } from "@/components/SaveButton";
 import type { JobRecord } from "@/lib/api";
 import { companyHref } from "@/lib/seo";
 import { ageLabel, freshness, locationLabel, salaryLabel, sourceLabel, TYPE_LABELS } from "@/lib/format";
@@ -61,6 +62,7 @@ export function JobCard({
           </span>
           {fresh.checked && <span className="jcchk">{fresh.checked}</span>}
         </span>
+        <SaveButton jobId={job.canonical_id} title={job.title} />
         <Link href={`/jobs/${job.canonical_id}`} className="jcbtn" aria-label={`View ${job.title} at ${job.company.name}`}>
           View Job
         </Link>

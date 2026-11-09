@@ -9,10 +9,14 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const LINKS = [
   { href: "/", label: "Home" },
   { href: "/search", label: "Search" },
+<<<<<<< HEAD
   { href: "/pulse", label: "Pulse" },
   { href: "/salary", label: "Pay" },
   { href: "/paths", label: "Roles" },
   { href: "/companies", label: "Companies" },
+=======
+  { href: "/workspace", label: "Workspace" },
+>>>>>>> 9a0e079 (Workspace website: overview, tracker, saved searches, CV match, settings, privacy)
   { href: "/coverage", label: "Coverage" },
   { href: "/api", label: "API" },
 ];
