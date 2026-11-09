@@ -148,6 +148,7 @@ class MadgexConnector(_XmlConnector):
     the place as the last line. Token: ``https://{board}``."""
 
     slug = "madgex"
+    multi_employer = True
     hosts = frozenset()
     page_size = 20
 
@@ -183,6 +184,7 @@ class SmartJobBoardConnector(_XmlConnector):
     employer, then the job as escaped HTML. Token: ``https://{board}``."""
 
     slug = "smartjobboard"
+    multi_employer = True
     hosts = frozenset()
 
     def list_url(self, board_token: str, page: int) -> str:
@@ -223,6 +225,7 @@ class JobBoardIoConnector(_XmlConnector):
     short description. Token: ``https://{board}``."""
 
     slug = "jobboard_io"
+    multi_employer = True
     hosts = frozenset()
 
     def list_url(self, board_token: str, page: int) -> str:

@@ -35,6 +35,7 @@ def _names(job: dict[str, Any], keys: tuple[str, ...]) -> list[str]:
 
 class ExenzoConnector(PagedJsonConnector):
     slug = "exenzo"
+    multi_employer = True
     hosts = frozenset({"*.api.exenzo.com"})
     max_pages = 100
 

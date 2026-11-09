@@ -96,6 +96,9 @@ class Connector(ABC):
     slug: str
     #: Hosts this connector may contact; the fetcher refuses anything else.
     hosts: frozenset[str]
+    #: True for a job board that lists many employers' jobs: the normalizer then gives each
+    #: job the company its posting names, not the one the board is registered under.
+    multi_employer: bool = False
 
     @abstractmethod
     def board_url(self, board_token: str) -> str:

@@ -13,7 +13,7 @@ from erio_core.connectors.jsonld import JsonLdConnector
 
 class JobBoardHQConnector(JsonLdConnector):
     def __init__(self) -> None:
-        super().__init__("jobboardhq", r"^/job/[a-z0-9]{6}/")
+        super().__init__("jobboardhq", r"^/job/[a-z0-9]{6}/", multi_employer=True)
 
     def list_postings(
         self, fetcher: Fetcher, board_token: str, etag: str | None = None

@@ -217,8 +217,11 @@ class JsonLdConnector(Connector):
         page_query: str = "",
         rewrite: Callable[[str], str] | None = None,
         country_from_host: bool = False,
+        multi_employer: bool = False,
     ):
         self.slug = slug
+        #: A job board listing many employers: each posting names its own.
+        self.multi_employer = multi_employer
         #: Boards of recruiters in one country (a ".co.uk" site) often print only a town:
         #: their domain names the country when the page does not.
         self.country_from_host = country_from_host

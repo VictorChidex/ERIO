@@ -30,6 +30,7 @@ JOB_ID = re.compile(r"^/(\d+)/")
 
 class EJobSiteConnector(Connector):
     slug = "ejobsite"
+    multi_employer = True
     hosts = frozenset()
     max_feeds = 300
 

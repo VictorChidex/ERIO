@@ -28,6 +28,7 @@ ARRANGEMENT: dict[str, RemoteStatus] = {"remote": "remote", "hybrid": "hybrid", 
 
 class JobKitConnector(PagedJsonConnector):
     slug = "jobkit"
+    multi_employer = True
     hosts = frozenset({"*.jobkit.io"})
 
     def list_url(self, board_token: str, page: int) -> str:
@@ -64,6 +65,7 @@ class JobKitConnector(PagedJsonConnector):
 
 class JobboardlyConnector(PagedJsonConnector):
     slug = "jobboardly"
+    multi_employer = True
     hosts = frozenset({"*.jobboardly.com"})
 
     def list_url(self, board_token: str, page: int) -> str:
@@ -105,6 +107,7 @@ class WPJobManagerConnector(PagedJsonConnector):
     past the last answers 400."""
 
     slug = "wp_job_manager"
+    multi_employer = True
     hosts = frozenset()
     past_last_page = frozenset({400, 404})
     per_page = 100
