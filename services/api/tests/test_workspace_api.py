@@ -187,7 +187,9 @@ def test_saving_a_job_copies_its_facts_and_is_idempotent(api: TestClient) -> Non
     assert body["title"] == "Staff Nurse" and body["company"] == "Acme"
     assert body["stage"] == "saved" and body["job"]["status"] == "open"
     assert again.json()["id"] == body["id"]
-    assert api.get("/v1/workspace/saved-ids", headers=headers).json() == {"job_ids": ["j_nurse"]}
+    ids = api.get("/v1/workspace/saved-ids", headers=headers).json()
+    assert ids["job_ids"] == ["j_nurse"]
+    assert ids["items"] == [{"job_id": "j_nurse", "id": body["id"], "stage": "saved"}]
     assert (
         api.post("/v1/workspace/applications", json={"job_id": "nope"}, headers=headers).status_code
         == 404

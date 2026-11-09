@@ -515,15 +515,20 @@ def list_applications(
         return {"data": [_application_out(a, jobs.get(a.job_id or "")) for a in apps]}
 
 
-@router.get("/saved-ids", summary="Job ids in this workspace (so a page can mark saved jobs)")
-def saved_ids(workspace_id: WorkspaceId, db: Db) -> dict[str, list[str]]:
+@router.get("/saved-ids", summary="Jobs in this workspace (so a page can mark saved jobs)")
+def saved_ids(workspace_id: WorkspaceId, db: Db) -> dict[str, Any]:
     with Session(db) as session:
-        ids = session.scalars(
-            select(Application.job_id).where(
+        rows = session.execute(
+            select(Application.job_id, Application.id, Application.stage).where(
                 Application.workspace_id == workspace_id, Application.job_id.is_not(None)
             )
         ).all()
-    return {"job_ids": [i for i in ids if i]}
+    return {
+        "job_ids": [job_id for job_id, _, _ in rows],
+        "items": [
+            {"job_id": job_id, "id": app_id, "stage": stage} for job_id, app_id, stage in rows
+        ],
+    }
 
 
 @router.post(
