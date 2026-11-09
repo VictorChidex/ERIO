@@ -70,6 +70,6 @@ JSONLD_CONNECTORS: list[Connector] = [
     JsonLdConnector("jobiqo", r"^/job/"),
     JsonLdConnector("jobmount", r"^/career/\d+"),
     JsonLdConnector("niceboard", r"^/job/\d+", hosts("*.niceboard.co")),
-    JsonLdConnector("nodex", r"^/job/"),
+    JsonLdConnector("nodex", r"^/job/", country_from_host=True),
     JsonLdConnector("paradox", r"/job/[0-9a-f]{32}"),
 ]

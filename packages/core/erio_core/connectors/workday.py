@@ -19,6 +19,27 @@ from erio_core.connectors._util import as_url, iso_datetime
 from erio_core.connectors.base import Fetcher, FetchResponse, poster
 from erio_core.schemas import PartialJob, RawPosting, RemoteStatus
 
+# A job at several places lists only how many ("3 Locations"); its address path names the first.
+LOCATION_COUNT = re.compile(r"^\d+ locations?$", re.IGNORECASE)
+COUNTRY_CODE = re.compile(r"[A-Z]{2,3}")
+
+
+def path_place(path: str) -> str | None:
+    """The place in a job's address: ``/job/US-CA-Santa-Clara/Title_JR1`` is Santa Clara, CA, US."""
+    parts = path.split("/")
+    if len(parts) < 4 or parts[1] != "job" or not parts[2]:
+        return None
+    slug = parts[2]
+    if "---" in slug:  # "USA---Florida---Tampa", written broad to narrow
+        return slug.replace("---", "-")
+    pieces = [piece for piece in slug.split("-") if piece]
+    if len(pieces) >= 3 and COUNTRY_CODE.fullmatch(pieces[0]) and len(pieces[1]) == 2:
+        return f"{' '.join(pieces[2:])}, {pieces[1]}, {pieces[0]}"
+    if len(pieces) >= 2 and COUNTRY_CODE.fullmatch(pieces[0]):
+        return f"{' '.join(pieces[1:])}, {pieces[0]}"
+    return " ".join(pieces) or None
+
+
 TOKEN = re.compile(r"([a-z0-9][a-z0-9-]{0,62})\.(wd\d{1,3})/([A-Za-z0-9][A-Za-z0-9_-]{0,80})")
 PAGE = 20
 
@@ -74,7 +95,10 @@ class WorkdayConnector(PagedJsonConnector):
         item = raw.payload
         info = (item.get("detail") or {}).get("jobPostingInfo") or {}
         tenant, datacenter, site = _parts(raw.board_token)
-        places = [info.get("location") or item.get("locationsText")]
+        summary = item.get("locationsText")
+        if isinstance(summary, str) and LOCATION_COUNT.match(summary.strip()):
+            summary = path_place(str(item.get("externalPath"))) or summary  # "3 Locations"
+        places = [info.get("location") or summary]
         places += info.get("additionalLocations") or []
         return PartialJob(
             source_slug=self.slug,

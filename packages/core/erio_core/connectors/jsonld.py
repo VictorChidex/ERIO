@@ -23,7 +23,7 @@ from urllib.parse import urljoin, urlsplit
 from defusedxml import ElementTree
 from pydantic import HttpUrl
 
-from erio_core.connectors._util import iso_datetime, salary
+from erio_core.connectors._util import host_country, iso_datetime, salary
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import stable_id
 from erio_core.schemas import PartialJob, RawPosting, RemoteStatus
@@ -216,8 +216,12 @@ class JsonLdConnector(Connector):
         listing_pages: int = 1,
         page_query: str = "",
         rewrite: Callable[[str], str] | None = None,
+        country_from_host: bool = False,
     ):
         self.slug = slug
+        #: Boards of recruiters in one country (a ".co.uk" site) often print only a town:
+        #: their domain names the country when the page does not.
+        self.country_from_host = country_from_host
         self.hosts = hosts
         self.job_path = re.compile(job_path, re.IGNORECASE)
         #: Query added to every job page request (iCIMS serves its data with in_iframe=1).
@@ -321,6 +325,9 @@ class JsonLdConnector(Connector):
 
     def parse(self, raw: RawPosting) -> PartialJob:
         payload = raw.payload
-        return parse_job_posting(
+        job = parse_job_posting(
             self.slug, raw.external_id, str(payload["page_url"]), payload["posting"]
         )
+        if self.country_from_host and not job.country_hint:
+            job = job.model_copy(update={"country_hint": host_country(str(payload["page_url"]))})
+        return job

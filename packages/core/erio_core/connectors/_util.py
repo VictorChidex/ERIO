@@ -4,6 +4,7 @@ import html
 import re
 from datetime import UTC, datetime
 from typing import Any
+from urllib.parse import urlsplit
 
 from pydantic import HttpUrl
 
@@ -65,6 +66,22 @@ def salary(low: Any, high: Any, currency: Any, period: Any) -> SalaryHint | None
     if (low_n is None and high_n is None) or named is None or len(code) != 3:
         return None
     return SalaryHint(min=low_n, max=high_n, currency=code, period=named)
+
+
+# Country-code domains whose sites hire in their own country. Others (".io", ".co", ".ai") are
+# not country domains in practice and are left out on purpose.
+COUNTRY_DOMAINS = {
+    "uk": "GB", "ie": "IE", "au": "AU", "nz": "NZ", "ca": "CA", "de": "DE", "fr": "FR",
+    "nl": "NL", "be": "BE", "es": "ES", "pt": "PT", "it": "IT", "ch": "CH", "at": "AT",
+    "se": "SE", "no": "NO", "dk": "DK", "fi": "FI", "pl": "PL", "in": "IN", "sg": "SG",
+    "za": "ZA", "ng": "NG", "ke": "KE", "br": "BR", "mx": "MX", "ae": "AE",
+}  # fmt: skip
+
+
+def host_country(url: str) -> str | None:
+    """The country a site's domain names ("www.example.co.uk" is GB), or None."""
+    host = (urlsplit(url).hostname or "").lower()
+    return COUNTRY_DOMAINS.get(host.rsplit(".", 1)[-1]) if "." in host else None
 
 
 def as_url(value: str) -> HttpUrl:

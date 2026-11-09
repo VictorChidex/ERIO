@@ -4,6 +4,10 @@
 
 FROM python:3.12-slim
 
+# Security fixes published since the base image was built (the image scan in CI fails on any
+# fixable high or critical finding).
+RUN apt-get update     && apt-get -y --no-install-recommends upgrade     && rm -rf /var/lib/apt/lists/*
+
 COPY --from=ghcr.io/astral-sh/uv:0.9.17 /uv /usr/local/bin/uv
 
 ENV UV_COMPILE_BYTECODE=1 \

@@ -126,6 +126,15 @@ class WPJobManagerConnector(PagedJsonConnector):
     def parse(self, raw: RawPosting) -> PartialJob:
         job = raw.payload
         meta: dict[str, Any] = job["meta"] if isinstance(job.get("meta"), dict) else {}
+        extra: dict[str, Any] = job["all_meta"] if isinstance(job.get("all_meta"), dict) else {}
+
+        def pick(key: str) -> Any:
+            """``meta`` as WordPress registers it, else the site's ``all_meta`` (lists)."""
+            if meta.get(key) not in (None, "", []):
+                return meta[key]
+            listed = extra.get(key)
+            return (listed[0] if isinstance(listed, list) and listed else listed) or None
+
         title = html.unescape((job.get("title") or {}).get("rendered") or "").strip()
         pay = " ".join(
             str(p) for p in (meta.get("_job_salary"), meta.get("_job_salary_currency")) if p
@@ -137,11 +146,14 @@ class WPJobManagerConnector(PagedJsonConnector):
             source_slug=self.slug,
             external_id=raw.external_id,
             title=title,
-            company_name=meta.get("_company_name") or None,
+            company_name=pick("_company_name"),
             apply_url=job["link"],
             posted_at=iso_datetime(job.get("date_gmt") and f"{job['date_gmt']}+00:00"),
-            location_text=meta.get("_job_location") or None,
-            workplace_type="remote" if str(meta.get("_remote_position")) == "1" else None,
+            # Sites that geocode listings (SportyJob) also give the town and country.
+            location_text=pick("geolocation_formatted_address") or pick("_job_location"),
+            city=pick("geolocation_city"),
+            country_hint=pick("geolocation_country_short"),
+            workplace_type="remote" if str(pick("_remote_position")) == "1" else None,
             description_html=description,
         )
 

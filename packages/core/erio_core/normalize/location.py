@@ -251,6 +251,34 @@ def _countries_for(groups: list[str], g: Gazetteer) -> list[str]:
     return codes
 
 
+HYPHEN_PARTS = re.compile(r"(?<=\S)-(?=\S)")
+
+
+def _broad_to_narrow(text: str, g: Gazetteer) -> str | None:
+    """A place written broad to narrow with plain hyphens, as ``City, State, Country``.
+
+    Applicant systems such as Taleo write "United States-Florida-Tampa" or
+    "Massachusetts-Acton". The first part must name a country or a state, so
+    ordinary hyphenated text is left alone; a hyphen inside the city
+    ("Winston-Salem") is kept. None when the text is not such a place.
+    """
+    parts = [part.strip() for part in HYPHEN_PARTS.split(text) if part.strip()]
+    if len(parts) < 2:
+        return None
+    country = g.country(parts[0])
+    i = 1 if country else 0
+    region = None
+    state = g.admin1(parts[i], country) if i < len(parts) else None
+    if state:
+        country = country or state[0]
+        region = parts[i]
+        i += 1
+    if not country or i >= len(parts):
+        return None
+    city = "-".join(parts[i:])
+    return ", ".join([city, *([region] if region else []), g.countries[country].name])
+
+
 def resolve_location(
     text: str | None,
     city_hint: str | None = None,
@@ -259,7 +287,15 @@ def resolve_location(
 ) -> LocationResult:
     g = gazetteer()
     parts = [part for part in SEGMENT_SPLIT.split(text or "") if part and part.strip()]
-    segments = [_SegmentReader(part, g).read() for part in parts]
+    segments = []
+    for part in parts:
+        segment = _SegmentReader(part, g).read()
+        if not segment.places and not segment.groups:
+            # "United States-Florida-Tampa": a place written broad to narrow with plain hyphens.
+            rewritten = _broad_to_narrow(part, g)
+            if rewritten:
+                segment = _SegmentReader(rewritten, g).read()
+        segments.append(segment)
 
     remote = workplace_type == "remote" or any(s.remote for s in segments)
     hybrid = workplace_type == "hybrid" or any(s.hybrid for s in segments)

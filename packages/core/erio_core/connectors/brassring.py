@@ -33,6 +33,22 @@ RFT = re.compile(r'name="__RequestVerificationToken"[^>]*?value="([^"]*)"')
 SESSION = re.compile(r'id="CookieValue"[^>]*?value="([^"]*)"')
 LAYOUT = re.compile(r'"JobFieldsToDisplay":(\{[^{}]*\})')
 KEYWORD_FIELDS = re.compile(r'"KeywordCustomSolrFields":"([^"]*)"')
+# Store sites write places as "0201 - PORT CHARLOTTE FL (R)": number, name, state, flag.
+STORE_NUMBER = re.compile(r"^\d{2,6}\s*-\s*")
+STORE_FLAG = re.compile(r"\s*\([A-Z]\)\s*$")
+US_STATES = frozenset(
+    "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ "
+    "NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC".split()
+)
+
+
+def clean_place(text: str) -> str:
+    """A store site's place without its number and flag, with a comma before a state code."""
+    text = STORE_FLAG.sub("", STORE_NUMBER.sub("", text.strip())).strip(" ,")
+    head, _, tail = text.rpartition(" ")
+    if len(head) >= 3 and tail in US_STATES and "," not in head:
+        return f"{head}, {tail}"
+    return text
 
 
 def _parts(board_token: str) -> tuple[str, str]:
@@ -162,7 +178,7 @@ class BrassRingConnector(Connector):
         layout = raw.payload.get("layout") or {}
         partner, site = _parts(raw.board_token)
         places = [
-            str(fields[name.lower()]).strip(" ,")
+            clean_place(str(fields[name.lower()]))
             for name in layout.get("Position3") or []
             if name.lower() not in ("autoreq", "reqid") and fields.get(name.lower())
         ]
