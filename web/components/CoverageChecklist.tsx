@@ -6,6 +6,7 @@ import { ageLabel, formatCount } from "@/lib/format";
 const KINDS = [
   { key: "ats", label: "Applicant tracking systems", short: "ATS" },
   { key: "board", label: "Job-board platforms", short: "Job boards" },
+  { key: "service", label: "Public job services", short: "Public services" },
 ] as const;
 
 const STATUS_CLASS: Record<string, string> = {
@@ -41,13 +42,14 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
     <section id="checklist" aria-labelledby="checklist-title">
       <div className="wrap">
         <h2 className="cov-h" id="checklist-title">
-          The 78-platform checklist
+          The platform checklist
         </h2>
         <p className="cov-p">
           A platform counts as <strong>verified</strong> only when live runs on two or more of its real boards
-          fetched, parsed and normalized every job, and as <strong>live</strong> while at least{" "}
-          {LIVE_BOARDS} of its boards were read successfully in the last two days. Platforms that turn crawlers
-          away are shown as blocked and are never worked around.
+          fetched, parsed and normalized every job (a public job service, meaning a government job service or an
+          open job feed, counts as verified on one live run of its feed), and as <strong>live</strong> while at
+          least {LIVE_BOARDS} of its boards were read successfully in the last two days. Platforms that turn
+          crawlers away are shown as blocked and are never worked around.
         </p>
         <div className="cov-stats-row">
           {KINDS.map((k) => {
@@ -122,7 +124,7 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
               {shown.map((r) => (
                 <tr key={r.slug}>
                   <th scope="row">{r.name}</th>
-                  <td>{r.kind === "ats" ? "ATS" : "Job board"}</td>
+                  <td>{KINDS.find((k) => k.key === r.kind)?.short ?? r.kind}</td>
                   <td>
                     <span className={`cov-pill ${STATUS_CLASS[r.status] ?? "other"}`}>{r.status}</span>
                   </td>

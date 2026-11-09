@@ -37,6 +37,8 @@ from erio_core.connectors.manatal import ManatalConnector
 from erio_core.connectors.personio import PersonioConnector
 from erio_core.connectors.pinpoint import PinpointConnector
 from erio_core.connectors.polymer import PolymerConnector
+from erio_core.connectors.public_feeds import PUBLIC_FEED_CONNECTORS
+from erio_core.connectors.public_services import PUBLIC_SERVICE_CONNECTORS
 from erio_core.connectors.recruitee import RecruiteeConnector
 from erio_core.connectors.rippling import RipplingConnector
 from erio_core.connectors.smartrecruiters import SmartRecruitersConnector
@@ -91,6 +93,8 @@ ALL_CONNECTORS: list[Connector] = [
     *GROUP_C_CONNECTORS,
     *GROUP_D_CONNECTORS,
     *GROUP_E_CONNECTORS,
+    *PUBLIC_FEED_CONNECTORS,
+    *PUBLIC_SERVICE_CONNECTORS,
 ]
 
 CONNECTORS: dict[str, Connector] = {connector.slug: connector for connector in ALL_CONNECTORS}

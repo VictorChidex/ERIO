@@ -1,0 +1,41 @@
+[
+ {
+  "source_slug": "pythonjobs",
+  "board_token": "https://www.python.org",
+  "external_id": "8206",
+  "payload": {
+   "title": "Senior Python Developer, Eliassen Group",
+   "link": "https://www.python.org/jobs/8206/",
+   "description": "Denver, US\n<p>This is a remote Senior Python Developer role building and operating components of a SaaS risk and compliance AI platform, with work spanning data ingestion, storage, search, cloud deployment, modernization, and production support.</p>\n<p>Responsibilities:</p>\n<ul class=\"simple\">\n<li>Design, develop, and maintain Python services and data pipelines on Linux.</li>\n<li>Ingest, normalize, and query large, messy datasets.</li>\n<li>Implement and optimize data models in PostgreSQL or similar relational databases.</li>\n<li>Build and tune search functionality with Elasticsearch or comparable tools.</li>\n<li>Deploy and operate AWS workloads across services including Lambda, ECS, EC2, RDS, SQS, S3, Route 53, and core networking.</li>\n<li>Manage components end to end, including code, testing and validation, dependencies, and deployment strategies.</li>\n<li>Help modernize the screening platform while maintaining production stability.</li>\n</ul>\n\n<p>Must:</p>\n<ul class=\"simple\">\n<li>Willing and able to work on a W-2 basis.</li>\n<li>At least 5 years of industry experience.</li>\n<li>Strong experience with Python and Linux.</li>\n<li>Proven ability to ingest, store, and query messy, large-scale data.</li>\n<li>Experience with PostgreSQL or another SQL relational database.</li>\n<li>Familiarity with Elasticsearch or another NoSQL search engine.</li>\n<li>Hands-on AWS experience with Lambda, ECS, EC2, RDS, SQS, S3, Route 53, and networking concepts.</li>\n<li>Initiative in independent or self-managed projects; adaptable, self-motivated, and curious, with startup experience preferred.</li>\n<li>Nice to have: experience with NER, NLP, modeling, machine learning, or agent frameworks such as LangGraph.</li>\n</ul>",
+   "guid": "https://www.python.org/jobs/8206/"
+  },
+  "fetched_at": "2026-11-09T20:02:39.231729Z",
+  "content_hash": "ee474f920e375e227fde5536277f26511207b99f21b5bdb1c6db2e071cdb28fc"
+ },
+ {
+  "source_slug": "pythonjobs",
+  "board_token": "https://www.python.org",
+  "external_id": "8205",
+  "payload": {
+   "title": "Data/ML Engineer (Python), Odette Technologies",
+   "link": "https://www.python.org/jobs/8205/",
+   "description": "Remote / Hybrid, North Carolina, USA\n<p>Odette is hiring its first Data/ML Engineer to own the data science behind the platform. You'll turn large volumes of messy, multilingual open-source information into data that users can rely on.</p>\n<p>Python is the core of this role. You'll build entity resolution, information extraction, and evaluation pipelines in Python, working hands-on with large language models.\nResponsibilities:</p>\n<ul class=\"simple\">\n<li>Build entity resolution so the same people, places, and organizations are recognized across messy, multilingual sources</li>\n<li>Own the pipeline that turns open-source reporting into structured, connected data</li>\n<li>Design and evaluate models that measure information quality and reliability</li>\n<li>Build evaluation and testing that hold up against low-quality or adversarial inputs</li>\n</ul>\n<p>Full-time. Hybrid (NC) or remote, East Coast-based.</p>\n<p>To apply, email your resume to <a class=\"reference external\" href=\"mailto:careers@odettetechnologies.com\" rel=\"noopener noreferrer\">careers@odettetechnologies.com</a> with \"Python.org - Data/ML Engineer\" in the subject line.</p>\n\n<ul class=\"simple\">\n<li>US citizen able to obtain a security clearance (existing clearance a plus)</li>\n<li>East Coast-based</li>\n<li>Experience in entity resolution, information extraction, or NLP on messy real-world text</li>\n<li>Strong statistical and evaluation fundamentals</li>\n<li>Strong Python; hands-on experience with large language models</li>\n<li>OSINT, multilingual, or defense and intelligence data experience a strong plus</li>\n</ul>",
+   "guid": "https://www.python.org/jobs/8205/"
+  },
+  "fetched_at": "2026-11-09T20:02:39.231729Z",
+  "content_hash": "756879dbd0bfc162a72e61388b3216985a83d036ceb6cda6e87bb129204640d1"
+ },
+ {
+  "source_slug": "pythonjobs",
+  "board_token": "https://www.python.org",
+  "external_id": "8195",
+  "payload": {
+   "title": "Backend Software Engineering, UNICEF",
+   "link": "https://www.python.org/jobs/8195/",
+   "description": "Remote, Remote\n<p>Connectivity Credits is moving from MVP and pilots to a production-grade platform that supports multiple countries, internet providers, measurement systems and funding models. We're looking for a backend engineer to add dedicated capacity for that move.</p>\n<p>You will:</p>\n<ul class=\"simple\">\n<li>Design, build, test and deploy backend services and APIs in Python (TypeScript also used)</li>\n<li>Build event-driven workflows and rules, e.g. turning measured connectivity performance into credits</li>\n<li>Integrate with measurement systems, partners and other platforms</li>\n<li>Own software quality: automated tests, CI/CD, deployment and operations</li>\n<li>Apply secure development practices</li>\n<li>Document your work and collaborate closely with the product and tech team, who set the architecture</li>\n</ul>\n<p>Most of the work is greenfield, with existing MVPs and prototypes as a starting point. You'll work independently once direction is agreed.</p>\n<p>This is a 6-month consultancy (contract), fully remote. Apply by 12 November 2026 via UNICEF's careers site with a CV, a cover letter (max 2 pages) and a financial proposal (template on the posting).</p>\n\n<p>Required:</p>\n<ul class=\"simple\">\n<li>3+ years of professional software development, mostly hands-on backend</li>\n<li>Backend services and APIs in Python and/or TypeScript</li>\n<li>Distributed or service-oriented systems: async processing, retries, idempotency, failure handling</li>\n<li>REST APIs, JSON integrations and relational data modelling</li>\n<li>Containers, CI/CD and automated testing</li>\n<li>Secure development: authentication, authorization, input validation, xxxxs management, least privilege</li>\n<li>Bachelor's degree in computer science, software engineering, IT or a related field</li>\n<li>Fluent English (another UN language is a plus)</li>\n</ul>\n<p>Nice to have:</p>\n<ul class=\"simple\">\n<li>Apache Kafka or other event streaming platforms</li>\n<li>Rule engines or workflow engines</li>\n<li>Java</li>\n<li>Blockchain / Web3 systems</li>\n</ul>",
+   "guid": "https://www.python.org/jobs/8195/"
+  },
+  "fetched_at": "2026-11-09T20:02:39.231729Z",
+  "content_hash": "c66dd79bd68a4cdc4767b62e04e6826395edcfd8c071ed485721735718a15c0b"
+ }
+]

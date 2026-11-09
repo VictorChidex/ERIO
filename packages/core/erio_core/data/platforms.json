@@ -851,5 +851,151 @@
    "https://eyetasticjobs.com/industry_rss.php",
    "https://www.beveiligingsvacature.nl/industry_rss.php"
   ]
+ },
+ {
+  "slug": "arbeitnow",
+  "name": "Arbeitnow",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Free public API, no access key. Credit: link back to Arbeitnow.com (its terms, section 11); every job links to its Arbeitnow page.",
+  "examples": [
+   "https://www.arbeitnow.com"
+  ]
+ },
+ {
+  "slug": "remoteok",
+  "name": "Remote OK",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public JSON feed, no access key. Credit: a followed link back to the job on Remote OK and a mention of Remote OK as the source (its API terms); the Remote OK logo is not used.",
+  "examples": [
+   "https://remoteok.com"
+  ]
+ },
+ {
+  "slug": "weworkremotely",
+  "name": "We Work Remotely",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public RSS feed. Credit: attribute the links back to We Work Remotely (its feed page); every job links to its We Work Remotely page.",
+  "examples": [
+   "https://weworkremotely.com"
+  ]
+ },
+ {
+  "slug": "jobicy",
+  "name": "Jobicy",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public Jobs API, no access key; lists the last 7 days. Credit: Jobicy is named as the original source and the job links to its Jobicy listing (its fair-use rules).",
+  "examples": [
+   "https://jobicy.com"
+  ]
+ },
+ {
+  "slug": "workingnomads",
+  "name": "Working Nomads",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The public JSON feed its site links as API, no access key; it states no attribution rule, so Working Nomads is credited anyway and every job links to its Working Nomads page. Its terms say nothing about reading the feed; worth a written yes before launch.",
+  "examples": [
+   "https://www.workingnomads.com"
+  ]
+ },
+ {
+  "slug": "pythonjobs",
+  "name": "Python.org Jobs",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The Python Job Board's public RSS feed (20 newest jobs, no posted date). Credit: Python Job Board (Python Software Foundation) and a link to the job on python.org. It publishes no reuse terms for the feed beyond offering it for subscription; worth a written yes before launch.",
+  "examples": [
+   "https://www.python.org"
+  ]
+ },
+ {
+  "slug": "arbetsformedlingen",
+  "name": "Arbetsformedlingen (Sweden)",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The Swedish Public Employment Service's JobSearch API: no access key, ads licensed CC0. Credit given anyway: Arbetsformedlingen / JobTech. The API pages at most 2,100 ads, so a crawl reads the newest ones and is reported as partial.",
+  "examples": [
+   "https://jobsearch.api.jobtechdev.se"
+  ]
+ },
+ {
+  "slug": "eures",
+  "name": "EURES (European Job Mobility Portal)",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The portal's public vacancy search, no access key. Credit: re-use is authorised when the European Labour Authority (EURES) is acknowledged as the source; the EURES logo is not used. Its robots.txt asks for 10 seconds between requests, so a crawl reads the newest 250 jobs and is reported as partial.",
+  "examples": [
+   "https://europa.eu"
+  ]
+ },
+ {
+  "slug": "werkenvoornederland",
+  "name": "Werken voor Nederland",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Dutch central government vacancies, read from each vacancy page's structured data and text. Its copyright page puts the content under CC0 (no credit required); photos excluded, and the Rijksoverheid must not appear to endorse a derived work. A crawl reads the first 200 vacancies of its sitemap and is reported as partial.",
+  "examples": [
+   "https://www.werkenvoornederland.nl/sitemap-vacatures.xml"
+  ]
+ },
+ {
+  "slug": "bundesagentur",
+  "name": "Bundesagentur fuer Arbeit (Germany)",
+  "kind": "service",
+  "blocked": "The Jobsuche API answers 403 without an access key header; the key is one constant value printed in its documentation, which counts as a credential, so it is not used. Ask the agency for terms that allow reading without one.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "nav",
+  "name": "NAV (Norway)",
+  "kind": "service",
+  "blocked": "The Arbeidsplassen job feed answers 401 without a bearer token that has to be requested from NAV, so it needs a credential and is not built. Norwegian vacancies are partly covered through EURES.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "himalayas",
+  "name": "Himalayas",
+  "kind": "service",
+  "blocked": "Its API needs no key, but its API terms allow showing jobs only on sites you operate and forbid passing them on to other job boards, aggregators or job search engines, including through feeds; ERIO's public API and assistant tools would pass them on. Needs a decision, or a written permission from the service.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "mycareersfuture",
+  "name": "MyCareersFuture (Singapore)",
+  "kind": "service",
+  "blocked": "Its terms of use reserve all rights in the site content and forbid reproducing, publicly displaying or otherwise using it except as the terms or the employer allow; nothing allows listing the jobs elsewhere. Ask the Singapore Workforce Development Agency for permission.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "cryptocurrencyjobs",
+  "name": "Cryptocurrency Jobs",
+  "kind": "service",
+  "blocked": "Its terms reserve all rights in the content and forbid commercial use without a licence; the feed it serves carries only a one-line excerpt anyway.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "remotive",
+  "name": "Remotive",
+  "kind": "service",
+  "blocked": "Its robots.txt disallows /api/ and the job pages, where its public API and feeds live, so there is no path ERIO may read.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "gemeentebanen",
+  "name": "Gemeentebanen (Netherlands)",
+  "kind": "service",
+  "blocked": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission.",
+  "notes": "",
+  "examples": []
  }
 ]
