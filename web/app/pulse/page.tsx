@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { ApiUnavailable, getPulse, type Pulse } from "@/lib/api";
+import { ApiUnavailable, getCountries, getPulse, type Pulse } from "@/lib/api";
 import { ageLabel, formatCount } from "@/lib/format";
+import { countryHref, countrySlugs } from "@/lib/seo";
 
 import { BarList, FlowChart, PayRanges, Stat, percent } from "./charts";
 import styles from "./insights.module.css";
@@ -28,6 +29,9 @@ const WORK_TYPES = new Set(["remote", "hybrid", "onsite"]);
 
 export default async function PulsePage() {
   const pulse = await load();
+  const slugs = await getCountries()
+    .then((list) => countrySlugs(list.data))
+    .catch(() => new Map<string, string>());
   return (
     <>
       <div className="page-header">
@@ -120,7 +124,7 @@ export default async function PulsePage() {
                     {pulse.countries.map((c) => (
                       <tr key={c.code}>
                         <td>
-                          <Link href={`/countries/${c.code}`}>{c.name}</Link>
+                          <Link href={countryHref(c.code, slugs)}>{c.name}</Link>
                         </td>
                         <td className={styles.num}>{formatCount(c.roles)}</td>
                         <td className={styles.num}>{percent(c.remote_pct)}</td>

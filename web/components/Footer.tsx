@@ -24,7 +24,10 @@ export function Footer() {
             <div className="foot-col-title">Product</div>
             <Link href="/search">Search</Link>
             <Link href="/coverage">Coverage</Link>
-            <Link href="/countries/ng">Jobs by country</Link>
+            <Link href="/new">What&apos;s new</Link>
+            <Link href="/salary">Pay explorer</Link>
+            <Link href="/paths">Role explorer</Link>
+            <Link href="/guides">Guides</Link>
           </div>
           <div className="foot-col">
             <div className="foot-col-title">Developers</div>

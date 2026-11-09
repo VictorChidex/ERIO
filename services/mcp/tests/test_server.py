@@ -151,6 +151,19 @@ class Api:
             return httpx.Response(200, json={"data": COMPANY})
         if path == "/v1/insights/pulse":
             return httpx.Response(200, json={"data": PULSE})
+        if path == "/v1/insights/salary":
+            cell = {"role": "healthcare", "country": "NG", "currency": "NGN", "roles": 14}
+            cell |= {"lower": 1.0, "median": 2.0, "upper": 3.0}
+            data = {
+                "role": request.url.params.get("role"),
+                "country": request.url.params.get("country"),
+                "min_sample": 10,
+                "cells": [cell],
+                "by_role": [cell],
+                "by_country": [cell],
+                "hidden_cells": 2,
+            }
+            return httpx.Response(200, json={"data": data})
         if path == "/v1/coverage":
             return httpx.Response(200, json={"data": COVERAGE})
         error = {"error": {"code": "not_found", "message": f"no job {path.rsplit('/', 1)[-1]}"}}
@@ -327,6 +340,29 @@ async def test_salary_stats(api: Api) -> None:
     company = await call("salary_stats", {"company": "paystack"})
     assert company["scope"] == "company:paystack"
     assert api.requests[1].url.path == "/v1/companies/paystack"
+
+
+async def test_salary_stats_for_a_role_and_country(api: Api) -> None:
+    stats = await call("salary_stats", {"role": "healthcare", "country": "ng"})
+    assert dict(api.requests[0].url.params) == {"role": "healthcare", "country": "NG"}
+    assert stats["scope"] == "market:role=healthcare:country=NG"
+    assert stats["minimum_jobs_per_group"] == 10
+    assert stats["by_role_and_country"][0]["roles"] == 14
+    assert stats["groups_hidden_for_small_samples"] == 2
+    only_role = await call("salary_stats", {"role": "healthcare"})
+    assert only_role["scope"] == "market:role=healthcare"
+    assert "country" not in dict(api.requests[1].url.params)
+
+
+async def test_salary_stats_rejects_bad_or_mixed_filters(api: Api) -> None:
+    for arguments in [
+        {"role": "astronaut"},
+        {"country": "nigeria"},
+        {"company": "paystack", "role": "healthcare"},
+    ]:
+        with pytest.raises(ToolError):
+            await server.call_tool("salary_stats", arguments)
+    assert api.requests == []
 
 
 async def test_get_coverage(api: Api) -> None:

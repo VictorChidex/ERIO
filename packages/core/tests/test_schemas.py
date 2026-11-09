@@ -84,7 +84,12 @@ def test_job_record_serializes_to_the_spec_field_list() -> None:
     data = _record().model_dump(mode="json")
 
     assert list(data) == SPEC_FIELDS
-    assert data["company"] == {"name": "Paystack", "domain": "paystack.com", "logo_url": None}
+    assert data["company"] == {
+        "name": "Paystack",
+        "slug": None,
+        "domain": "paystack.com",
+        "logo_url": None,
+    }
     assert data["posted_at"] == "2026-11-04T09:30:00Z"
     assert data["salary_currency"] == "NGN"
 

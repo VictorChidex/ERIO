@@ -109,6 +109,8 @@ class PartialJob(BaseModel):
 
 class Company(BaseModel):
     name: str
+    # Company page address (/company/{slug}); null for jobs indexed before the slug existed.
+    slug: str | None = None
     domain: str | None = None
     logo_url: str | None = None
 

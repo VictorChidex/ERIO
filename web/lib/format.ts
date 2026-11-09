@@ -80,6 +80,21 @@ export function ageLabel(iso: string | null, now: Date = new Date()): string {
   return `${Math.round(days / 30)}mo ago`;
 }
 
+/**
+ * Freshness at a glance: whether the job was posted in the last day, and how
+ * long ago its source was last read. Both come straight from the record.
+ */
+export function freshness(
+  job: Pick<JobRecord, "posted_at" | "last_verified_at">,
+  now: Date = new Date(),
+): { isNew: boolean; checked: string | null } {
+  const hours = job.posted_at ? (now.getTime() - new Date(job.posted_at).getTime()) / 3_600_000 : null;
+  return {
+    isNew: hours !== null && hours < 24,
+    checked: job.last_verified_at ? `Checked ${ageLabel(job.last_verified_at, now)}` : null,
+  };
+}
+
 export function sourceLabel(sources: string[]): string {
   return sources.map((s) => SOURCE_LABELS[s] ?? s).join(", ") || "source";
 }

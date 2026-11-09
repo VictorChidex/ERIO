@@ -8,7 +8,8 @@ export type ApiHealth = { status: string; version: string };
 export type JobRecord = {
   canonical_id: string;
   title: string;
-  company: { name: string; domain: string | null; logo_url: string | null };
+  /** `slug` is null for records indexed before the slug was added to the index. */
+  company: { name: string; slug?: string | null; domain: string | null; logo_url: string | null };
   role_category: string;
   location_text: string | null;
   city: string | null;
@@ -167,6 +168,53 @@ export type CompanyRow = {
   logo_url: string | null;
   country_code: string | null;
   open_roles: number;
+  /** Only with `trend: true`: roles added in 30 days, and per day (oldest first). */
+  added_30d?: number | null;
+  trend?: number[] | null;
+};
+
+/** Quartiles of yearly advertised pay for one role, country and currency (never converted). */
+export type PayCell = {
+  role: string | null;
+  country: string | null;
+  currency: string;
+  roles: number;
+  lower: number;
+  median: number;
+  upper: number;
+};
+
+export type SalaryExplorer = {
+  generated_at: string;
+  role: string | null;
+  country: string | null;
+  /** Groups with fewer jobs than this are left out by the API. */
+  min_sample: number;
+  cells: PayCell[];
+  by_role: PayCell[];
+  by_country: PayCell[];
+  hidden_cells: number;
+};
+
+export type RoleInsight = {
+  generated_at: string;
+  slug: string;
+  q: string | null;
+  open_roles: number;
+  remote_roles: number;
+  remote_pct: number | null;
+  pay_stated_roles: number;
+  pay_stated_pct: number | null;
+  added_30d: number;
+  removed_30d: number;
+  net_30d: number;
+  flow: Flow;
+  countries: { code: string; name: string; roles: number }[];
+  cities: { city: string; country_code: string | null; country: string | null; roles: number }[];
+  employers: { name: string; slug: string | null; roles: number }[];
+  roles: Bucket[];
+  pay: PayQuartiles[];
+  pay_sampled: boolean;
 };
 
 export type Companies = { data: CompanyRow[]; meta: { total: number; page: number; per_page: number } };
@@ -280,6 +328,9 @@ export const getPlatforms = () => get<{ data: Platform[] }>("/v1/platforms", {},
 export const getCoverage = () => get<{ data: CoverageRow[] }>("/v1/coverage", {}, 300);
 export const getStats = () => get<Stats>("/v1/stats", {}, 30);
 export const getPulse = () => get<{ data: Pulse }>("/v1/insights/pulse", {}, 60);
+export const getSalary = (params: Params) => get<{ data: SalaryExplorer }>("/v1/insights/salary", params, 600);
+export const getRoleInsight = (slug: string, q?: string) =>
+  get<{ data: RoleInsight }>(`/v1/insights/role/${encodeURIComponent(slug)}`, { q }, 600);
 export const getCompanies = (params: Params) => get<Companies>("/v1/companies", params);
 export const getCompany = (slug: string) =>
   get<{ data: CompanyProfile }>(`/v1/companies/${encodeURIComponent(slug)}`, {}, 60);

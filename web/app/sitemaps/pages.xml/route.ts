@@ -1,6 +1,6 @@
 import { ApiUnavailable } from "@/lib/api";
-import { absoluteUrl, urlsetXml } from "@/lib/seo";
-import { landingSitemapUrls } from "@/lib/seo-data";
+import { urlsetXml } from "@/lib/seo";
+import { fixedSitemapUrls, landingSitemapUrls } from "@/lib/seo-data";
 
 export const dynamic = "force-dynamic";
 
@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 export async function GET(): Promise<Response> {
   try {
     const landings = await landingSitemapUrls();
-    return new Response(urlsetXml([{ loc: absoluteUrl("/") }, ...landings]), {
+    return new Response(urlsetXml([...fixedSitemapUrls(), ...landings]), {
       headers: {
         "content-type": "application/xml; charset=utf-8",
         "cache-control": "public, s-maxage=3600, stale-while-revalidate=86400",

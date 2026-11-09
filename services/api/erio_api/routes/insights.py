@@ -11,9 +11,11 @@ comes from Postgres, which keeps closed jobs and the stored salary fields.
 
 import hashlib
 import json
-from collections.abc import Callable
+import statistics
+from collections import defaultdict
+from collections.abc import Callable, Sequence
 from datetime import UTC, date, datetime, timedelta
-from typing import Annotated, Any
+from typing import Annotated, Any, get_args
 
 from fastapi import APIRouter, Depends, Path, Query
 from opensearchpy import OpenSearch
@@ -26,13 +28,22 @@ from sqlalchemy.orm import Session
 from erio_api.access import rate_limit, redis_client
 from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_api.errors import ApiError
+from erio_api.search import JobQuery, build_search
 from erio_core.db.models import Company, CompanyBoard, Country, Job, JobSource, RawPosting, Source
+from erio_core.schemas import RoleCategory
 
 router = APIRouter(prefix="/v1", tags=["insights"], dependencies=[Depends(rate_limit)])
 
 PULSE_CACHE_SECONDS = 300
+INSIGHT_CACHE_SECONDS = 600
 FLOW_DAYS = 30
 TOP_COUNTRIES = 10
+# A pay figure rests on at least this many jobs, or it is not shown.
+MIN_PAY_SAMPLE = 10
+PAY_CELL_LIMIT = 500
+# Most pay documents read for one role page; beyond it the figures use the most recent.
+ROLE_PAY_DOCS = 10_000
+ROLE_SLUGS = (*get_args(RoleCategory), "all")
 SLUG_PATTERN = r"^[a-z0-9]+(-[a-z0-9]+)*$"
 
 # Buckets are fixed lists, so an empty bucket is still shown (as 0).
@@ -139,6 +150,9 @@ class CompanyRow(BaseModel):
     logo_url: str | None
     country_code: str | None
     open_roles: int
+    # Only with ``trend=true``: roles added over the last 30 days, and per day (oldest first).
+    added_30d: int | None = None
+    trend: list[int] | None = None
 
 
 class CompaniesOut(BaseModel):
@@ -217,13 +231,19 @@ def _day(value: Any) -> ColumnElement[date]:
     return func.date(func.timezone("UTC", value))
 
 
-def _flow(session: Session, now: datetime, company_id: int | None = None) -> Flow:
+def _flow(
+    session: Session,
+    now: datetime,
+    company_id: int | None = None,
+    extra: Sequence[ColumnElement[bool]] = (),
+) -> Flow:
     today = now.astimezone(UTC).date()
     first = today - timedelta(days=FLOW_DAYS - 1)
     start = datetime.combine(first, datetime.min.time(), tzinfo=UTC)
     scope: list[ColumnElement[bool]] = [Job.merged_into.is_(None), Job.review_reason.is_(None)]
     if company_id is not None:
         scope.append(Job.company_id == company_id)
+    scope.extend(extra)
     added_day = _day(_added_at())
     added = dict(
         session.execute(
@@ -532,6 +552,9 @@ def companies(
     sort: Annotated[str, Query(pattern="^(roles|name)$")] = "roles",
     page: Annotated[int, Query(ge=1, le=10_000)] = 1,
     per_page: Annotated[int, Query(ge=1, le=100)] = 24,
+    trend: Annotated[
+        bool, Query(description="Add each company's roles added per day over the last 30 days")
+    ] = False,
 ) -> dict[str, Any]:
     open_counts = (
         select(Job.company_id, func.count().label("open_roles"))
@@ -558,7 +581,11 @@ def companies(
     )
     with Session(db) as session:
         total = session.scalar(select(func.count()).select_from(base.subquery())) or 0
-        rows = session.execute(base.order_by(*order).limit(per_page).offset((page - 1) * per_page))
+        rows = (
+            session.execute(base.order_by(*order).limit(per_page).offset((page - 1) * per_page))
+            .tuples()
+            .all()
+        )
         data = [
             {
                 "slug": company.slug,
@@ -568,9 +595,38 @@ def companies(
                 "country_code": company.country_code,
                 "open_roles": open_roles,
             }
-            for company, open_roles in rows.tuples()
+            for company, open_roles in rows
         ]
+        if trend:
+            series = _added_per_day(session, [company.id for company, _ in rows], datetime.now(UTC))
+            for row, (company, _) in zip(data, rows, strict=True):
+                days = series.get(company.id, [0] * FLOW_DAYS)
+                row["added_30d"] = sum(days)
+                row["trend"] = days
     return {"data": data, "meta": {"total": total, "page": page, "per_page": per_page}}
+
+
+def _added_per_day(session: Session, company_ids: list[int], now: datetime) -> dict[int, list[int]]:
+    """Roles added each of the last 30 days (oldest first), for each of ``company_ids``."""
+    first = now.astimezone(UTC).date() - timedelta(days=FLOW_DAYS - 1)
+    start = datetime.combine(first, datetime.min.time(), tzinfo=UTC)
+    added_day = _day(_added_at())
+    found = session.execute(
+        select(Job.company_id, added_day, func.count())
+        .where(
+            Job.company_id.in_(company_ids),
+            Job.merged_into.is_(None),
+            Job.review_reason.is_(None),
+            _added_at() >= start,
+            _added_at() < start + timedelta(days=FLOW_DAYS),
+        )
+        .group_by(Job.company_id, added_day)
+    ).tuples()
+    series: dict[int, list[int]] = {}
+    for company_id, day, n in found:
+        days = series.setdefault(company_id, [0] * FLOW_DAYS)
+        days[(day - first).days] = n
+    return series
 
 
 def _counted(
@@ -705,3 +761,346 @@ def company_profile(
         if company is None:
             raise ApiError(404, "not_found", f"no company {slug}")
         return {"data": _company_profile(session, company, datetime.now(UTC))}
+
+
+class PayCell(BaseModel):
+    """Quartiles of yearly advertised pay for one role, country and currency."""
+
+    role: str | None
+    country: str | None
+    currency: str
+    roles: int
+    lower: float
+    median: float
+    upper: float
+
+
+class SalaryExplorer(BaseModel):
+    generated_at: datetime
+    role: str | None
+    country: str | None
+    # Groups with fewer jobs than this are left out, never shown.
+    min_sample: int
+    cells: list[PayCell]
+    by_role: list[PayCell]
+    by_country: list[PayCell]
+    hidden_cells: int
+
+
+class SalaryOut(BaseModel):
+    data: SalaryExplorer
+
+
+def _pay_cells(
+    session: Session,
+    role: str | None,
+    country: str | None,
+    by_role: bool,
+    by_country: bool,
+) -> tuple[list[PayCell], int]:
+    """Yearly pay quartiles grouped by the chosen dimensions and currency.
+
+    Returns the groups with at least MIN_PAY_SAMPLE jobs (biggest first) and how
+    many smaller ones were left out.
+    """
+    low = func.coalesce(Job.salary_min, Job.salary_max)
+    high = func.coalesce(Job.salary_max, Job.salary_min)
+    middle = (low + high) / 2.0
+    columns: list[Any] = []
+    if by_role:
+        columns.append(Job.role_category)
+    if by_country:
+        columns.append(Job.country_code)
+    columns.append(Job.salary_currency)
+    statement = (
+        select(
+            *columns,
+            func.count(),
+            func.percentile_cont(0.25).within_group(middle),
+            func.percentile_cont(0.5).within_group(middle),
+            func.percentile_cont(0.75).within_group(middle),
+        )
+        .where(
+            *_open(),
+            Job.salary_currency.is_not(None),
+            Job.salary_period == "year",
+            or_(Job.salary_min.is_not(None), Job.salary_max.is_not(None)),
+        )
+        .group_by(*columns)
+    )
+    if role:
+        statement = statement.where(Job.role_category == role)
+    if country:
+        statement = statement.where(Job.country_code == country)
+    if by_country:
+        statement = statement.where(Job.country_code.is_not(None))
+    cells: list[PayCell] = []
+    hidden = 0
+    for row in session.execute(statement).tuples():
+        *keys, currency, roles, q1, q2, q3 = row
+        if roles < MIN_PAY_SAMPLE:
+            hidden += 1
+            continue
+        cells.append(
+            PayCell(
+                role=str(keys[0]) if by_role else role,
+                country=str(keys[-1]) if by_country else country,
+                currency=str(currency),
+                roles=roles,
+                lower=round(float(q1), 2),
+                median=round(float(q2), 2),
+                upper=round(float(q3), 2),
+            )
+        )
+    cells.sort(key=lambda c: (-c.roles, c.role or "", c.country or "", c.currency))
+    return cells[:PAY_CELL_LIMIT], hidden
+
+
+def _compute_salary(
+    db: Engine, role: str | None, country: str | None, now: datetime
+) -> dict[str, Any]:
+    with Session(db) as session:
+        cells, hidden = _pay_cells(session, role, country, True, True)
+        by_role, _ = _pay_cells(session, role, country, True, False)
+        by_country, _ = _pay_cells(session, role, country, False, True)
+    explorer = SalaryExplorer(
+        generated_at=now,
+        role=role,
+        country=country,
+        min_sample=MIN_PAY_SAMPLE,
+        cells=cells,
+        by_role=by_role,
+        by_country=by_country,
+        hidden_cells=hidden,
+    )
+    return explorer.model_dump(mode="json")
+
+
+@router.get(
+    "/insights/salary",
+    response_model=SalaryOut,
+    summary="Advertised yearly pay by role and country, per currency",
+)
+def salary(
+    db: Annotated[Engine, Depends(engine)],
+    redis: Annotated[Redis, Depends(redis_client)],
+    role: Annotated[RoleCategory | None, Query(description="One role category")] = None,
+    country: Annotated[
+        str | None, Query(pattern=r"^[A-Za-z]{2}$", description="ISO country code")
+    ] = None,
+) -> dict[str, Any]:
+    """Quartiles (lower, median, upper) of each yearly pay range's midpoint, in the
+    currency it was posted in; currencies are never converted. A group with fewer
+    than 10 jobs is left out. Cached for ten minutes."""
+    code = country.upper() if country else None
+    scope = hashlib.sha256(f"{db.url}|{role}|{code}".encode()).hexdigest()[:16]
+    data = _remembered(
+        redis,
+        f"erio:insights:salary:{scope}",
+        INSIGHT_CACHE_SECONDS,
+        lambda: _compute_salary(db, role, code, datetime.now(UTC)),
+    )
+    return {"data": data}
+
+
+class RolePlace(BaseModel):
+    code: str
+    name: str
+    roles: int
+
+
+class RoleCity(BaseModel):
+    city: str
+    country_code: str | None
+    country: str | None
+    roles: int
+
+
+class RoleEmployer(BaseModel):
+    name: str
+    slug: str | None
+    roles: int
+
+
+class RoleInsight(BaseModel):
+    generated_at: datetime
+    slug: str
+    q: str | None
+    open_roles: int
+    remote_roles: int
+    remote_pct: float | None
+    pay_stated_roles: int
+    pay_stated_pct: float | None
+    added_30d: int
+    removed_30d: int
+    net_30d: int
+    flow: Flow
+    countries: list[RolePlace]
+    cities: list[RoleCity]
+    employers: list[RoleEmployer]
+    roles: list[Bucket]
+    # Yearly pay per currency, only where at least MIN_PAY_SAMPLE jobs state it.
+    pay: list[Quartiles]
+    pay_sampled: bool
+
+
+class RoleOut(BaseModel):
+    data: RoleInsight
+
+
+def _title_scope(q: str | None) -> list[ColumnElement[bool]]:
+    """Postgres side of a title page: every word of ``q`` appears in the job's title."""
+    return [Job.title.ilike(_like(word), escape="\\") for word in (q or "").split()[:6]]
+
+
+def _yearly_quartiles(documents: list[dict[str, Any]]) -> list[Quartiles]:
+    by_currency: dict[str, list[float]] = defaultdict(list)
+    for doc in documents:
+        low = doc.get("salary_min") if doc.get("salary_min") is not None else doc.get("salary_max")
+        high = doc.get("salary_max") if doc.get("salary_max") is not None else low
+        if doc.get("salary_currency") and low is not None and high is not None:
+            by_currency[doc["salary_currency"]].append((low + high) / 2.0)
+    rows: list[Quartiles] = []
+    for currency, midpoints in by_currency.items():
+        if len(midpoints) < MIN_PAY_SAMPLE:
+            continue
+        q1, q2, q3 = statistics.quantiles(midpoints, n=4, method="inclusive")
+        rows.append(
+            Quartiles(
+                currency=currency,
+                period="year",
+                roles=len(midpoints),
+                lower=round(q1, 2),
+                median=round(q2, 2),
+                upper=round(q3, 2),
+            )
+        )
+    return sorted(rows, key=lambda r: (-r.roles, r.currency))
+
+
+def _compute_role(
+    db: Engine, search: OpenSearch, alias: str, slug: str, q: str | None, now: datetime
+) -> dict[str, Any]:
+    # The role is a facet dimension in a search (a post filter), so it joins the query here.
+    base = build_search(JobQuery(q=q, per_page=0))["query"]
+    match = (
+        base if slug == "all" else {"bool": {"filter": [base, {"term": {"role_category": slug}}]}}
+    )
+    body: dict[str, Any] = {
+        "size": 0,
+        "track_total_hits": True,
+        "query": match,
+        "aggs": {
+            "remote": {"filter": {"term": {"remote_status": "remote"}}},
+            "pay": {"filter": _open_pay()},
+            "countries": {"terms": {"field": "country_code", "size": TOP_COUNTRIES}},
+            "cities": {
+                "terms": {"field": "city", "size": TOP_COUNTRIES},
+                "aggs": {"country": {"terms": {"field": "country_code", "size": 1}}},
+            },
+            "employers": {"terms": {"field": "company_name.kw", "size": TOP_COUNTRIES}},
+            "roles": {"terms": {"field": "role_category", "size": 20}},
+        },
+    }
+    result = run_search(search, alias, body)
+    aggs = result["aggregations"]
+    open_roles = int(result["hits"]["total"]["value"])
+    pay_query = {
+        "size": ROLE_PAY_DOCS,
+        "track_total_hits": True,
+        "_source": ["salary_min", "salary_max", "salary_currency"],
+        "sort": [{"posted_at": {"order": "desc", "missing": "_last"}}],
+        "query": {"bool": {"filter": [match, {"term": {"salary_period": "year"}}, _open_pay()]}},
+    }
+    pay_hits = run_search(search, alias, pay_query)["hits"]
+    documents = [hit["_source"] for hit in pay_hits["hits"]]
+    employer_names = [b["key"] for b in aggs["employers"]["buckets"]]
+    with Session(db) as session:
+        names = dict(session.execute(select(Country.code, Country.name)).tuples().all())
+        slugs: dict[str, str] = {}
+        for name, company_slug in session.execute(
+            select(Company.name, Company.slug).where(Company.name.in_(employer_names))
+        ).tuples():
+            slugs.setdefault(name, company_slug)
+        scope = [Job.role_category == slug] if slug != "all" else []
+        flow = _flow(session, now, None, [*scope, *_title_scope(q)])
+    stating_pay = aggs["pay"]["doc_count"]
+    remote = aggs["remote"]["doc_count"]
+    insight = RoleInsight(
+        generated_at=now,
+        slug=slug,
+        q=q,
+        open_roles=open_roles,
+        remote_roles=remote,
+        remote_pct=_pct(remote, open_roles),
+        pay_stated_roles=stating_pay,
+        pay_stated_pct=_pct(stating_pay, open_roles),
+        added_30d=flow.added,
+        removed_30d=flow.removed,
+        net_30d=flow.added - flow.removed,
+        flow=flow,
+        countries=[
+            RolePlace(code=b["key"], name=names.get(b["key"], b["key"]), roles=b["doc_count"])
+            for b in aggs["countries"]["buckets"]
+        ],
+        cities=[
+            RoleCity(
+                city=b["key"],
+                country_code=(code := (b["country"]["buckets"] or [{"key": None}])[0]["key"]),
+                country=names.get(code, code) if code else None,
+                roles=b["doc_count"],
+            )
+            for b in aggs["cities"]["buckets"]
+        ],
+        employers=[
+            RoleEmployer(name=b["key"], slug=slugs.get(b["key"]), roles=b["doc_count"])
+            for b in aggs["employers"]["buckets"]
+        ],
+        roles=[
+            Bucket(key=b["key"], label=_titled(b["key"]), count=b["doc_count"])
+            for b in aggs["roles"]["buckets"]
+        ],
+        pay=_yearly_quartiles(documents),
+        pay_sampled=int(pay_hits["total"]["value"]) > len(documents),
+    )
+    return insight.model_dump(mode="json")
+
+
+@router.get(
+    "/insights/role/{slug}",
+    response_model=RoleOut,
+    summary="One kind of work: where it is, who hires for it, what it pays, how fast",
+)
+def role_insight(
+    slug: Annotated[
+        str,
+        Path(
+            pattern=SLUG_PATTERN,
+            max_length=40,
+            description="A role category, or `all` together with `q` for a job title",
+        ),
+    ],
+    db: Annotated[Engine, Depends(engine)],
+    search: Annotated[OpenSearch, Depends(search_client)],
+    alias: Annotated[str, Depends(search_alias)],
+    redis: Annotated[Redis, Depends(redis_client)],
+    q: Annotated[
+        str | None,
+        Query(min_length=2, max_length=100, description="Title words, as in a job search"),
+    ] = None,
+) -> dict[str, Any]:
+    """Open roles of a category (or matching ``q``), their top countries, cities and
+    employers, remote share, yearly pay quartiles per currency (shown only where at
+    least 10 jobs state pay) and how many roles were added and closed in 30 days.
+    Counts follow the job search, so a count here equals the search's. Cached ten minutes."""
+    if slug not in ROLE_SLUGS:
+        raise ApiError(404, "not_found", f"no role {slug}")
+    words = " ".join((q or "").split()) or None
+    scope = hashlib.sha256(f"{db.url}|{alias}|{slug}|{words}".encode()).hexdigest()[:16]
+    data = _remembered(
+        redis,
+        f"erio:insights:role:{scope}",
+        INSIGHT_CACHE_SECONDS,
+        lambda: _compute_role(db, search, alias, slug, words, datetime.now(UTC)),
+    )
+    return {"data": data}

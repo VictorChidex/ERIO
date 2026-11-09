@@ -77,6 +77,7 @@ def _job_rows() -> Select[Any]:
     return select(
         *[column for column in Job.__table__.columns],
         Company.name.label("company_name"),
+        Company.slug.label("company_slug"),
         Company.domain.label("company_domain"),
         Company.logo_url.label("company_logo_url"),
         sources.label("sources"),

@@ -5,6 +5,8 @@ import styles from "@/app/pulse/insights.module.css";
 import { ApiUnavailable, getCompanies, type Companies } from "@/lib/api";
 import { formatCount } from "@/lib/format";
 
+import { Sparkline } from "../pulse/charts";
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -23,6 +25,7 @@ async function load(search: Search): Promise<Companies | null> {
       sort: search.sort === "name" ? "name" : "roles",
       page,
       per_page: 24,
+      trend: true,
     });
   } catch (error) {
     if (error instanceof ApiUnavailable) return null;
@@ -88,7 +91,20 @@ export default async function CompaniesPage({ searchParams }: { searchParams: Pr
                           {c.domain ?? "No website listed"}
                         </span>
                       </span>
-                      <span className={styles.coNum}>{formatCount(c.open_roles)} open</span>
+                      <span className={styles.coRight}>
+                        <span className={styles.coNum}>{formatCount(c.open_roles)} open</span>
+                        {c.trend && (
+                          <>
+                            <Sparkline
+                              values={c.trend}
+                              label={`${c.added_30d ?? 0} roles added in the last 30 days, per day`}
+                            />
+                            <span className={styles.coSub}>
+                              {c.added_30d ? `+${formatCount(c.added_30d)} in 30 days` : "none added in 30 days"}
+                            </span>
+                          </>
+                        )}
+                      </span>
                     </Link>
                   ))}
                 </div>

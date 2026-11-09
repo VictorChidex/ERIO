@@ -432,11 +432,41 @@ async def salary_stats(
             description="A company slug; leave out for the whole market",
         ),
     ] = None,
+    role: Annotated[
+        RoleCategory | None, Field(description="One role category, e.g. healthcare")
+    ] = None,
+    country: Annotated[
+        str | None,
+        Field(pattern=r"^[A-Za-z]{2}$", description="ISO 3166-1 alpha-2 code, e.g. NG"),
+    ] = None,
     ctx: Context | None = None,
 ) -> dict[str, Any]:
     """Advertised pay quartiles (lower, median, upper of each posted range's midpoint) per
-    currency. Market-wide: yearly pay only. For one company: every period it advertises.
-    Amounts stay in the currency they were posted in; nothing is converted."""
+    currency. Market-wide: yearly pay only. With role and/or country: yearly pay for that
+    role and country, per currency, with groups under 10 jobs left out. For one company
+    (not combinable with role or country): every period it advertises. Amounts stay in the
+    currency they were posted in; nothing is converted."""
+    if company and (role or country):
+        raise ApiError("salary_stats: company cannot be combined with role or country")
+    if role or country:
+        data = (
+            await _get(
+                "/v1/insights/salary",
+                {"role": role, "country": country.upper() if country else None},
+                ctx,
+            )
+        )["data"]
+        scope = "market" + "".join(
+            f":{k}={v}" for k, v in (("role", data["role"]), ("country", data["country"])) if v
+        )
+        return {
+            "scope": scope,
+            "minimum_jobs_per_group": data["min_sample"],
+            "by_role_and_country": data["cells"],
+            "by_role": data["by_role"],
+            "by_country": data["by_country"],
+            "groups_hidden_for_small_samples": data["hidden_cells"],
+        }
     if company:
         pay = (await _get(f"/v1/companies/{company}", {}, ctx))["data"]["pay"]
         scope = f"company:{company}"

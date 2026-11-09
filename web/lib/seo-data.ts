@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 
 import { ApiUnavailable, apiUrl, type Country, getCountries, type JobRecord, type JobsPage, NotFound } from "./api";
 import { ROLE_LABELS } from "./format";
+import { GUIDES } from "./guides";
+import { allPathSlugs } from "./paths";
+import type { HistoryEvent } from "./history";
 import {
   absoluteUrl,
   countryBySlug,
@@ -22,6 +25,7 @@ import {
   robotsFor,
   SITEMAP_MIN,
   type SitemapUrl,
+  STATIC_PAGE_PATHS,
   titleBySlug,
   TITLE_COUNTRY_LIMIT,
 } from "./seo";
@@ -125,7 +129,8 @@ export type SourceDetail = {
   status: "open" | "missing" | "closed";
 };
 
-export type JobDetail = JobRecord & { source_details: SourceDetail[] };
+/** `history` arrives only from API versions that record it; the page shows it when present. */
+export type JobDetail = JobRecord & { source_details: SourceDetail[]; history?: HistoryEvent[] };
 
 export const getJobDetail = (id: string) =>
   fetchJson<{ data: JobDetail }>(`/v1/jobs/${encodeURIComponent(id)}`, {}, 0);
@@ -249,6 +254,17 @@ export async function sitemapLandings(): Promise<{ landing: Landing; total: numb
     }
   });
   return found;
+}
+
+/** Home, the explorers, the guides and every role page: addresses that never need the API. */
+export function fixedSitemapUrls(): SitemapUrl[] {
+  const paths = [
+    "/",
+    ...STATIC_PAGE_PATHS,
+    ...GUIDES.map((g) => `/guides/${g.slug}`),
+    ...allPathSlugs().map((slug) => `/paths/${slug}`),
+  ];
+  return paths.map((path) => ({ loc: absoluteUrl(path) }));
 }
 
 let memo: { at: number; urls: SitemapUrl[] } | null = null;

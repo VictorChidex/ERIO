@@ -52,6 +52,25 @@ export function BarList({ rows, href }: { rows: Bucket[]; href?: (row: Bucket) =
   );
 }
 
+/** Bar heights (0 to 1) for a series, tallest day full height; an all-zero series is flat. */
+export function sparkBars(values: number[]): number[] {
+  const peak = Math.max(...values, 0);
+  return values.map((v) => (peak === 0 ? 0 : v / peak));
+}
+
+/** A small bar chart of roles added per day. The figure beside it carries the same information. */
+export function Sparkline({ values, label }: { values: number[]; label: string }) {
+  const bars = sparkBars(values);
+  const step = 3;
+  return (
+    <svg className={styles.spark} viewBox={`0 0 ${values.length * step} 18`} role="img" aria-label={label}>
+      {bars.map((h, i) => (
+        <rect key={i} x={i * step} y={18 - Math.max(h * 16, values[i] ? 2 : 0.6)} width={step - 1} height={Math.max(h * 16, values[i] ? 2 : 0.6)} rx="0.5" fill={values[i] ? "var(--grn)" : "var(--brdhi)"} />
+      ))}
+    </svg>
+  );
+}
+
 const W = 720;
 const H = 200;
 const MID = 100;
@@ -112,7 +131,7 @@ export function FlowChart({ flow }: { flow: Flow }) {
 
 const SYMBOL_CODES = new Set(["USD", "EUR", "GBP", "NGN", "INR", "JPY", "CAD", "AUD", "BRL", "ZAR", "KES"]);
 
-function money(amount: number, currency: string): string {
+export function money(amount: number, currency: string): string {
   const options: Intl.NumberFormatOptions = SYMBOL_CODES.has(currency)
     ? { style: "currency", currency, notation: "compact", maximumFractionDigits: 1 }
     : { notation: "compact", maximumFractionDigits: 1 };

@@ -16,6 +16,7 @@ from erio_api.deps import engine as engine_dependency
 from erio_api.deps import search_alias as alias_dependency
 from erio_api.main import app
 from erio_api.routes.live import get_enqueue
+from erio_api.search import record_from_source
 from erio_core import live
 from erio_core.db.models import (
     Company,
@@ -217,7 +218,12 @@ def test_cursor_pagination_visits_every_job_once(api: TestClient) -> None:
 
 def test_list_items_follow_the_job_record_shape(api: TestClient) -> None:
     job = api.get("/v1/jobs?country=NG&include_worldwide=false&q=backend").json()["data"][0]
-    assert job["company"] == {"name": "Paystack", "domain": "paystack.com", "logo_url": None}
+    assert job["company"] == {
+        "name": "Paystack",
+        "slug": "paystack",
+        "domain": "paystack.com",
+        "logo_url": None,
+    }
     assert (job["country_code"], job["city"], job["remote_status"]) == ("NG", "Lagos", "onsite")
     assert job["sources"] == ["greenhouse"]
     assert job["description_html"] is None  # full text comes from /v1/jobs/{id}
@@ -540,3 +546,18 @@ def test_a_busy_queue_turns_a_refresh_away(
 def test_an_unknown_refresh_is_not_found(api: TestClient, refreshes: Any) -> None:
     assert api.get("/v1/search/refresh/" + "0" * 32).status_code == 404
     assert api.get("/v1/search/refresh/not-an-id").status_code == 400
+
+
+def test_documents_indexed_before_the_slug_existed_still_make_records() -> None:
+    old = {
+        "canonical_id": "j_old",
+        "title": "Backend Engineer",
+        "company_name": "Paystack",
+        "role_category": "engineering",
+        "remote_status": "onsite",
+        "status": "open",
+        "indexed_at": "2026-11-05T12:00:00Z",
+        "apply_url": "https://example.com/j_old",
+    }
+    assert record_from_source(old).company.slug is None
+    assert record_from_source({**old, "company_slug": "paystack"}).company.slug == "paystack"

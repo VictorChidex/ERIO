@@ -210,8 +210,18 @@ export function scriptJson(value: unknown): string {
   return JSON.stringify(value).replace(/</g, "\\u003c");
 }
 
-/** Where a company's jobs are listed. Switch to the /company/{slug} page when that route ships. */
-export const companyHref = (name: string): string => `/search?q=${encodeURIComponent(name)}`;
+/** A country's landing page, or a search when the country has no slug yet. */
+export const countryHref = (code: string, slugs: Map<string, string>): string => {
+  const slug = slugs.get(code);
+  return slug ? `/jobs/in/${slug}` : `/search?country=${encodeURIComponent(code)}`;
+};
+
+/**
+ * Where a company's jobs are listed: its page when the slug is known, else a
+ * search for its name (records indexed before the slug existed carry none).
+ */
+export const companyHref = (name: string, slug?: string | null): string =>
+  slug ? `/company/${encodeURIComponent(slug)}` : `/search?q=${encodeURIComponent(name)}`;
 
 /** Job page title: "<Job title> at <Company> in <City, Country>". */
 export function jobPageTitle(
@@ -263,6 +273,8 @@ export function robotsTxt(siteUrl: string = SITE_URL): string {
     "Disallow: /search",
     "Disallow: /jobs?",
     "Allow: /jobs?page=",
+    "# Feeds of filtered searches are for feed readers, not crawlers.",
+    "Disallow: /feed.xml?",
     "Disallow: /api/",
     "Content-Signal: search=yes, ai-input=yes, ai-train=no",
     "",
@@ -276,7 +288,10 @@ export function robotsTxt(siteUrl: string = SITE_URL): string {
 
 export type SitemapUrl = { loc: string; lastmod?: string };
 
-const xmlEscape = (text: string): string =>
+/** Pages with fixed addresses that belong in the sitemap, besides the home page. */
+export const STATIC_PAGE_PATHS: string[] = ["/pulse", "/salary", "/new", "/paths", "/guides"];
+
+export const xmlEscape = (text: string): string =>
   text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 export function urlsetXml(urls: SitemapUrl[]): string {

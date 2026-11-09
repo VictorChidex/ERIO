@@ -177,6 +177,7 @@ def record_from_source(source: dict[str, Any]) -> JobRecord:
             "title": source["title"],
             "company": {
                 "name": source["company_name"],
+                "slug": source.get("company_slug"),
                 "domain": source.get("company_domain"),
                 "logo_url": source.get("company_logo_url"),
             },

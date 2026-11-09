@@ -363,8 +363,11 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .gf-empty{color:var(--fg2);font-size:13px;margin-bottom:12px}
 .gf-all{font-size:13px;font-weight:600}
 /* Job cards link to the job page */
-.jct-link{color:inherit;text-decoration:none} .jct-link:hover{color:var(--acc)}
+.jct-link,.jco-link{color:inherit;text-decoration:none} .jct-link:hover,.jco-link:hover{color:var(--acc)}
 .jcsrc-unknown{color:var(--amb)}
+.rfeed{font-size:12px;color:var(--fg2);text-decoration:underline;white-space:nowrap}.rfeed:hover{color:var(--acc)}
+.jcstate{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px}
+.jcchk{font-size:11px;color:var(--fg3)}
 @media(max-width:620px){.nav-cta{display:none}}
 /* Job page */
 .jd-crumbs{font-size:13px;color:var(--fg3);margin-bottom:14px} .jd-crumbs a{color:var(--fg2)}
