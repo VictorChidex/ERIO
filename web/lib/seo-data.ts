@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 
 import { ApiUnavailable, apiUrl, type Country, getCountries, type JobRecord, type JobsPage, NotFound } from "./api";
 import { ROLE_LABELS } from "./format";
+import type { HistoryEvent } from "./history";
 import {
   absoluteUrl,
   countryBySlug,
@@ -125,7 +126,8 @@ export type SourceDetail = {
   status: "open" | "missing" | "closed";
 };
 
-export type JobDetail = JobRecord & { source_details: SourceDetail[] };
+/** `history` arrives only from API versions that record it; the page shows it when present. */
+export type JobDetail = JobRecord & { source_details: SourceDetail[]; history?: HistoryEvent[] };
 
 export const getJobDetail = (id: string) =>
   fetchJson<{ data: JobDetail }>(`/v1/jobs/${encodeURIComponent(id)}`, {}, 0);

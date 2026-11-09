@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { ApiUnavailable, getOpenApi, getToolDefinitions, MCP_PUBLIC_URL } from "@/lib/api";
+import { countWord, toolList } from "@/lib/tools";
 
 export const dynamic = "force-dynamic";
 
@@ -53,6 +54,7 @@ export default async function ApiPage() {
     getToolDefinitions("openai"),
     getToolDefinitions("gemini"),
   ]);
+  const tools = toolList(openai);
   const endpoints = spec
     ? Object.entries(spec.paths)
         .filter(([path]) => PUBLIC(path))
@@ -147,8 +149,15 @@ export default async function ApiPage() {
               Use ERIO from AI assistants
             </h2>
             <p className="api-prose">
-              ERIO runs a read-only MCP server with four tools: <code>search_jobs</code>,{" "}
-              <code>get_job</code>, <code>list_countries</code> and <code>list_platforms</code>.
+              ERIO runs a read-only MCP server
+              {tools.length > 0 ? ` with ${countWord(tools.length)} tools` : ""}
+              {tools.length > 0 ? ": " : ". "}
+              {tools.map((tool, index) => (
+                <span key={tool.name}>
+                  <code>{tool.name}</code>
+                  {index < tools.length - 2 ? ", " : index === tools.length - 2 ? " and " : ". "}
+                </span>
+              ))}
               It calls this API, so the same tokens and rate limits apply. Add it to Claude Code
               with:
             </p>

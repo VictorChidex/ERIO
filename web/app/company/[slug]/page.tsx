@@ -6,6 +6,7 @@ import { BarList, FlowChart, PayRanges, Stat, percent } from "@/app/pulse/charts
 import styles from "@/app/pulse/insights.module.css";
 import { ApiUnavailable, NotFound, getCompany, getCountries, type CompanyProfile } from "@/lib/api";
 import { ageLabel, formatCount, ROLE_LABELS, TYPE_LABELS } from "@/lib/format";
+import { countryHref, countrySlugs } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
@@ -48,8 +49,11 @@ export default async function CompanyPage({ params }: Props) {
     );
   }
   let countryNames: Record<string, string> = {};
+  let slugs = new Map<string, string>();
   try {
-    countryNames = Object.fromEntries((await getCountries()).data.map((c) => [c.code, c.name]));
+    const list = (await getCountries()).data;
+    countryNames = Object.fromEntries(list.map((c) => [c.code, c.name]));
+    slugs = countrySlugs(list);
   } catch {
     // Codes are shown as they are.
   }
@@ -100,7 +104,7 @@ export default async function CompanyPage({ params }: Props) {
             </div>
             <div className={styles.card}>
               <h2 className={styles.h2}>Where the roles are</h2>
-              <BarList rows={company.countries.map((c) => ({ ...c, label: countryNames[c.key] ?? c.label }))} href={(r) => `/countries/${r.key}`} />
+              <BarList rows={company.countries.map((c) => ({ ...c, label: countryNames[c.key] ?? c.label }))} href={(r) => countryHref(r.key, slugs)} />
               {company.locations.length > 0 && (
                 <>
                   <p className={styles.small}>Busiest locations</p>

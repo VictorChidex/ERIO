@@ -94,7 +94,7 @@ export async function LandingPage({ resolved }: { resolved: ResolvedLanding }) {
           href: landingPath({ kind: "country-title", country: landing.country, title }, slugs),
         }))
       : [];
-  const employers = [...new Map(page.data.map((j) => [j.company.name, j.company.name])).values()].slice(0, 12);
+  const employers = [...new Map(page.data.map((j) => [j.company.name, j.company])).values()].slice(0, 12);
 
   return (
     <>
@@ -156,7 +156,7 @@ export async function LandingPage({ resolved }: { resolved: ResolvedLanding }) {
               )}
             </>
           )}
-          <LinkGroup title="Employers hiring" links={employers.map((name) => ({ label: name, href: companyHref(name) }))} />
+          <LinkGroup title="Employers hiring" links={employers.map((c) => ({ label: c.name, href: companyHref(c.name, c.slug) }))} />
           {landing.kind !== "role-title" && (
             <LinkGroup title={`By role in ${landing.country.name}`} links={roleLinks} hide={here} />
           )}

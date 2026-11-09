@@ -1,0 +1,66 @@
+.h2 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 20px;
+  margin: 36px 0 14px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 18px;
+  max-width: 720px;
+  border-left: 2px solid var(--brd);
+}
+
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--fg3);
+  border: 2px solid var(--bg);
+}
+
+.timeline time {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  color: var(--fg3);
+  padding-top: 2px;
+}
+
+.line {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.added::before,
+.reopened::before {
+  background: var(--grn);
+}
+
+.changed::before {
+  background: var(--amb);
+}
+
+.closed::before {
+  background: var(--red, var(--fg3));
+}
+
+@media (max-width: 560px) {
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

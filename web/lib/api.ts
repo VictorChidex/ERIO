@@ -8,7 +8,8 @@ export type ApiHealth = { status: string; version: string };
 export type JobRecord = {
   canonical_id: string;
   title: string;
-  company: { name: string; domain: string | null; logo_url: string | null };
+  /** `slug` is null for records indexed before the slug was added to the index. */
+  company: { name: string; slug?: string | null; domain: string | null; logo_url: string | null };
   role_category: string;
   location_text: string | null;
   city: string | null;

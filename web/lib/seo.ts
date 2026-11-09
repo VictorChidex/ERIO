@@ -210,8 +210,18 @@ export function scriptJson(value: unknown): string {
   return JSON.stringify(value).replace(/</g, "\\u003c");
 }
 
-/** Where a company's jobs are listed. Switch to the /company/{slug} page when that route ships. */
-export const companyHref = (name: string): string => `/search?q=${encodeURIComponent(name)}`;
+/** A country's landing page, or a search when the country has no slug yet. */
+export const countryHref = (code: string, slugs: Map<string, string>): string => {
+  const slug = slugs.get(code);
+  return slug ? `/jobs/in/${slug}` : `/search?country=${encodeURIComponent(code)}`;
+};
+
+/**
+ * Where a company's jobs are listed: its page when the slug is known, else a
+ * search for its name (records indexed before the slug existed carry none).
+ */
+export const companyHref = (name: string, slug?: string | null): string =>
+  slug ? `/company/${encodeURIComponent(slug)}` : `/search?q=${encodeURIComponent(name)}`;
 
 /** Job page title: "<Job title> at <Company> in <City, Country>". */
 export function jobPageTitle(

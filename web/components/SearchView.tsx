@@ -12,7 +12,8 @@ import { type Filters, toApiParams, toQuery } from "@/lib/filters";
 import { formatCount, ROLE_LABELS, TYPE_LABELS } from "@/lib/format";
 import { globeData } from "@/lib/globe";
 
-const SALARY_OPTIONS = [0, 40_000, 80_000, 150_000];
+// 1 means "any stated pay": the API keeps jobs whose pay converts to at least $1 a year.
+const SALARY_OPTIONS = [0, 1, 40_000, 80_000, 150_000];
 const POPULAR = 8;
 
 async function load(filters: Filters): Promise<{ page: JobsPage; countries: Countries } | null> {
@@ -163,7 +164,7 @@ export async function SearchView({
                         value={value}
                         defaultChecked={(filters.salary ?? 0) === value}
                       />{" "}
-                      {value ? `$${value / 1000}k+` : "Any"}
+                      {value === 0 ? "Any" : value === 1 ? "Pay stated" : `$${value / 1000}k+`}
                     </label>
                   ))}
                 </div>

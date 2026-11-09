@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import { cache } from "react";
 
+import { JobHistory } from "@/components/JobHistory";
 import styles from "@/components/LandingPage.module.css";
 import { getCountries, NotFound, searchJobs } from "@/lib/api";
+import { usableHistory } from "@/lib/history";
 import { ageLabel, locationLabel, ROLE_LABELS, salaryLabel, SOURCE_LABELS, sourceLabel, TYPE_LABELS } from "@/lib/format";
 import {
   absoluteUrl,
@@ -83,9 +85,13 @@ export default async function JobPage({ params }: Props) {
     { name: job.title, path: `/jobs/${job.canonical_id}` },
   ];
 
-  const more = await searchJobs({ company: job.company.name, per_page: 7, sort: "recent" })
-    .then((page) => page.data.filter((other) => other.canonical_id !== job.canonical_id).slice(0, 6))
+  const sameCompany = await searchJobs({ company: job.company.name, per_page: 7, sort: "recent" })
+    .then((page) => page.data)
     .catch(() => []);
+  const more = sameCompany.filter((other) => other.canonical_id !== job.canonical_id).slice(0, 6);
+  // The single-job answer may not name the company page; the search hits do once the index carries the slug.
+  const companySlug = job.company.slug ?? sameCompany.find((other) => other.company.name === job.company.name && other.company.slug)?.company.slug ?? null;
+  const companyLink = companyHref(job.company.name, companySlug);
 
   return (
     <>
@@ -101,7 +107,11 @@ export default async function JobPage({ params }: Props) {
               </>
             )}
           </nav>
-          <div className="jco jd-company">{job.company.name}</div>
+          <div className="jco jd-company">
+            <Link href={companyLink} className="jco-link">
+              {job.company.name}
+            </Link>
+          </div>
           <h1 className="page-title jd-title">{job.title}</h1>
           <div className="jd-badges">
             <span className={`b ${job.remote_status === "remote" ? "b-grn" : job.remote_status === "hybrid" ? "b-amb" : "b-fg"}`}>
@@ -146,7 +156,7 @@ export default async function JobPage({ params }: Props) {
             <a className="btn-acc" href={job.apply_url} rel="noopener noreferrer nofollow" target="_blank">
               Apply on original site ↗
             </a>
-            <Link className="btn-ghost" href={companyHref(job.company.name)}>
+            <Link className="btn-ghost" href={companyLink}>
               More at {job.company.name}
             </Link>
           </div>
@@ -203,6 +213,8 @@ export default async function JobPage({ params }: Props) {
               </div>
             </>
           )}
+
+          <JobHistory events={usableHistory(job.history)} job={job} />
 
           {more.length > 0 && (
             <>
