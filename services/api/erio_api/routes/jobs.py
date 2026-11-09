@@ -216,6 +216,7 @@ def get_job(
             | {
                 "company": {
                     "name": company.name,
+                    "slug": company.slug,
                     "domain": company.domain,
                     "logo_url": company.logo_url,
                 },

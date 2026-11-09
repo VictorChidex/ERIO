@@ -45,7 +45,7 @@ NAMING_CONVENTION = {
     "pk": "pk_%(table_name)s",
 }
 
-SOURCE_KINDS = ("ats", "board")
+SOURCE_KINDS = ("ats", "board", "service")
 SOURCE_STATUSES = ("live", "indexing", "scheduled", "paused")
 CRAWL_OUTCOMES = ("ok", "http_error", "timeout", "parse_error", "rate_limited")
 ROLE_CATEGORIES = (

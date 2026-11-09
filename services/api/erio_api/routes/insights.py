@@ -824,6 +824,7 @@ def _pay_cells(
             *_open(),
             Job.salary_currency.is_not(None),
             Job.salary_period == "year",
+            Job.salary_unreliable.is_(False),
             or_(Job.salary_min.is_not(None), Job.salary_max.is_not(None)),
         )
         .group_by(*columns)
