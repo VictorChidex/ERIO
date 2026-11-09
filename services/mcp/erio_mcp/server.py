@@ -1,9 +1,11 @@
 """ERIO's read-only MCP server (spec section 13: inbound).
 
 AI assistants that speak the Model Context Protocol (Claude, and a growing
-number of other assistants and agent tools) can search ERIO's jobs with
-four tools: ``search_jobs``, ``get_job``, ``list_countries`` and
-``list_platforms``. Every tool calls the public ``/v1`` API, so the same
+number of other assistants and agent tools) can search ERIO's jobs and
+read its market figures with ten tools: ``search_jobs``, ``get_job``,
+``search_companies``, ``get_company_profile``, ``list_filter_values``,
+``job_market_stats``, ``salary_stats``, ``get_coverage``, ``list_countries``
+and ``list_platforms``. Every tool calls the public ``/v1`` API, so the same
 tokens, rate limits and logging apply: a caller's ``Authorization`` header
 is passed on as it is. Nothing here writes anything.
 
@@ -39,8 +41,13 @@ server = MCPServer(
         "ERIO indexes open jobs from employers' own job boards in every country. Use "
         "search_jobs to find jobs (filter by ISO country codes, remote work, role and "
         "salary), get_job for one job's full description, list_countries for country codes "
-        "and job counts, and list_platforms for the sources ERIO reads. Only mention jobs "
-        "these tools return, and link each one with its url."
+        "and job counts, and list_platforms for the sources ERIO reads. search_companies and "
+        "get_company_profile describe employers (roles in and out, teams, places, pay); "
+        "list_filter_values gives the real countries, platforms, employers and roles to filter "
+        "by; job_market_stats counts what a search matches and splits it; salary_stats gives "
+        "advertised yearly pay quartiles per currency (never converted); get_coverage says which "
+        "platforms ERIO covers and how healthy each is. Only mention jobs these tools return, "
+        "and link each one with its url."
     ),
     version="0.1.0",
 )
@@ -169,7 +176,13 @@ async def search_jobs(
 
 @server.tool(annotations=READ_ONLY)
 async def get_job(
-    job_id: Annotated[str, Field(description="A job id from search_jobs, e.g. j_9f2c...")],
+    job_id: Annotated[
+        str,
+        Field(
+            pattern=r"^[A-Za-z0-9_-]{1,40}$",
+            description="A job id from search_jobs, e.g. j_9f2c...",
+        ),
+    ],
     ctx: Context | None = None,
 ) -> dict[str, Any]:
     """One job with its full description."""
@@ -227,6 +240,245 @@ async def list_platforms(ctx: Context | None = None) -> dict[str, Any]:
             }
             for row in rows
         ]
+    }
+
+
+def _site(path: str) -> str:
+    return f"{get_settings().site_url.rstrip('/')}{path}"
+
+
+Slug = Annotated[
+    str,
+    Field(
+        pattern=r"^[a-z0-9]+(-[a-z0-9]+)*$",
+        max_length=100,
+        description="A company slug from search_companies, e.g. 'paystack'",
+    ),
+]
+
+
+@server.tool(annotations=READ_ONLY)
+async def search_companies(
+    query: Annotated[str | None, Field(description="Part of a company name")] = None,
+    country: Annotated[
+        str | None,
+        Field(
+            pattern=r"^[A-Za-z]{2}$",
+            description="ISO 3166-1 alpha-2 code: companies with open roles located there",
+        ),
+    ] = None,
+    sort: Annotated[Literal["roles", "name"], Field(description="Most open roles first")] = "roles",
+    limit: Annotated[int, Field(ge=1, le=25, description="Companies to return")] = 10,
+    page: Annotated[int, Field(ge=1, le=1000)] = 1,
+    ctx: Context | None = None,
+) -> dict[str, Any]:
+    """Employers with open roles, by name or country. Use the slug with get_company_profile."""
+    data = await _get(
+        "/v1/companies",
+        {"q": query, "country": country, "sort": sort, "per_page": limit, "page": page},
+        ctx,
+    )
+    return {
+        "total": data["meta"]["total"],
+        "page": data["meta"]["page"],
+        "companies": [
+            {
+                "slug": c["slug"],
+                "name": c["name"],
+                "domain": c["domain"],
+                "home_country": c["country_code"],
+                "open_roles": c["open_roles"],
+                "url": _site(f"/company/{c['slug']}"),
+            }
+            for c in data["data"]
+        ],
+    }
+
+
+def _top(rows: list[dict[str, Any]], limit: int = 10) -> list[dict[str, Any]]:
+    return [{"name": r["label"], "roles": r["count"]} for r in rows[:limit]]
+
+
+@server.tool(annotations=READ_ONLY)
+async def get_company_profile(slug: Slug, ctx: Context | None = None) -> dict[str, Any]:
+    """One employer's hiring picture: open roles, roles added and removed over 30 days, what
+    it hires for, where, work mode, contract mix, advertised pay quartiles per currency and
+    period (never converted), the platforms its roles are found on, and its latest openings."""
+    company = (await _get(f"/v1/companies/{slug}", {}, ctx))["data"]
+    return {
+        "slug": company["slug"],
+        "name": company["name"],
+        "domain": company["domain"],
+        "home_country": company["country_code"],
+        "url": _site(f"/company/{company['slug']}"),
+        "tracked_since": company["tracked_since"],
+        "last_checked_at": company["last_checked_at"],
+        "open_roles": company["open_roles"],
+        "added_30d": company["added_30d"],
+        "removed_30d": company["removed_30d"],
+        "remote_pct": company["remote_pct"],
+        "pay_stated_pct": company["pay_stated_pct"],
+        "teams": [{"role": r["key"], "roles": r["count"]} for r in company["roles"]],
+        "countries": [
+            {"code": p["key"], "name": p["label"], "roles": p["count"]}
+            for p in company["countries"]
+        ],
+        "places": _top(company["locations"]),
+        "work_mode": {b["key"]: b["count"] for b in company["work_mode"]},
+        "contracts": {b["key"]: b["count"] for b in company["contracts"]},
+        "pay": company["pay"],
+        "platforms": [
+            {"slug": p["slug"], "name": p["name"], "roles": p["roles"]}
+            for p in company["platforms"]
+        ],
+        "latest": [
+            {
+                "id": j["canonical_id"],
+                "title": j["title"],
+                "location": j["location_text"],
+                "remote_status": j["remote_status"],
+                "posted_at": j["posted_at"],
+                "url": _site(f"/jobs/{j['canonical_id']}"),
+            }
+            for j in company["latest"]
+        ],
+    }
+
+
+@server.tool(annotations=READ_ONLY)
+async def list_filter_values(
+    kind: Annotated[
+        Literal["countries", "platforms", "employers", "roles", "work_modes"],
+        Field(description="Which filter's real values to list"),
+    ],
+    limit: Annotated[int, Field(ge=1, le=100, description="Values to return")] = 25,
+    ctx: Context | None = None,
+) -> dict[str, Any]:
+    """The values a filter can take right now, each with how many open roles it has: countries
+    (ISO codes), platforms (slugs), employers (company slugs), roles or work modes."""
+    values: list[dict[str, Any]]
+    if kind == "countries":
+        rows = (await _get("/v1/countries", {}, ctx))["data"]
+        values = [
+            {"value": r["code"], "name": r["name"], "roles": r["job_count"]}
+            for r in sorted(rows, key=lambda r: -r["job_count"])
+            if r["job_count"]
+        ]
+    elif kind == "platforms":
+        rows = (await _get("/v1/platforms", {}, ctx))["data"]
+        values = [
+            {"value": r["slug"], "name": r["name"], "roles": r["job_count"]}
+            for r in sorted(rows, key=lambda r: -r["job_count"])
+            if r["job_count"]
+        ]
+    elif kind == "employers":
+        rows = (await _get("/v1/companies", {"per_page": min(limit, 100)}, ctx))["data"]
+        values = [{"value": r["slug"], "name": r["name"], "roles": r["open_roles"]} for r in rows]
+    else:
+        pulse = (await _get("/v1/insights/pulse", {}, ctx))["data"]
+        rows = pulse["roles" if kind == "roles" else "work_mode"]
+        values = [{"value": r["key"], "name": r["label"], "roles": r["count"]} for r in rows]
+    return {"kind": kind, "values": values[:limit]}
+
+
+@server.tool(annotations=READ_ONLY)
+async def job_market_stats(
+    query: Annotated[str | None, Field(description="Words to find in titles")] = None,
+    countries: Annotated[
+        list[str] | None, Field(description="ISO 3166-1 alpha-2 codes, as in search_jobs")
+    ] = None,
+    include_worldwide: Annotated[
+        bool, Field(description="Also count remote jobs open to any country")
+    ] = True,
+    remote_status: Annotated[list[RemoteStatus] | None, Field(description="Work types")] = None,
+    roles: Annotated[list[RoleCategory] | None, Field(description="Role categories")] = None,
+    min_salary_usd: Annotated[
+        int | None, Field(ge=0, description="Minimum yearly salary in US dollars")
+    ] = None,
+    ctx: Context | None = None,
+) -> dict[str, Any]:
+    """How many open jobs match, and how they split by country, work mode and role. Each split
+    ignores its own filter, so it shows the alternatives to what was asked."""
+    data = await _get(
+        "/v1/jobs",
+        {
+            "q": query,
+            "country": _codes(countries),
+            "include_worldwide": str(include_worldwide).lower(),
+            "remote_status": _codes(remote_status),  # type: ignore[arg-type]
+            "role": _codes(roles),  # type: ignore[arg-type]
+            "salary_min_usd": min_salary_usd,
+            "per_page": 1,
+        },
+        ctx,
+    )
+    facets = data["meta"]["facets"]
+    by_country = sorted(facets["country"].items(), key=lambda item: (-item[1], item[0]))
+    return {
+        "matching_jobs": data["meta"]["total"],
+        "by_country": [{"code": code, "jobs": n} for code, n in by_country[:15]],
+        "by_work_mode": facets["remote_status"],
+        "by_role": facets["role"],
+    }
+
+
+@server.tool(annotations=READ_ONLY)
+async def salary_stats(
+    company: Annotated[
+        str | None,
+        Field(
+            pattern=r"^[a-z0-9]+(-[a-z0-9]+)*$",
+            max_length=100,
+            description="A company slug; leave out for the whole market",
+        ),
+    ] = None,
+    ctx: Context | None = None,
+) -> dict[str, Any]:
+    """Advertised pay quartiles (lower, median, upper of each posted range's midpoint) per
+    currency. Market-wide: yearly pay only. For one company: every period it advertises.
+    Amounts stay in the currency they were posted in; nothing is converted."""
+    if company:
+        pay = (await _get(f"/v1/companies/{company}", {}, ctx))["data"]["pay"]
+        scope = f"company:{company}"
+    else:
+        pay = (await _get("/v1/insights/pulse", {}, ctx))["data"]["pay"]
+        scope = "market"
+    return {"scope": scope, "quartiles": pay}
+
+
+@server.tool(annotations=READ_ONLY)
+async def get_coverage(
+    status: Annotated[
+        str | None,
+        Field(description="Only platforms with this status, e.g. Verified, Partial, Blocked"),
+    ] = None,
+    ctx: Context | None = None,
+) -> dict[str, Any]:
+    """Which of the 78 platforms ERIO covers and how healthy each is: status, boards verified
+    and jobs read in the last live check."""
+    rows = (await _get("/v1/coverage", {}, ctx))["data"]
+    wanted = (status or "").casefold()
+    chosen = [r for r in rows if not wanted or r["status"].casefold() == wanted]
+    summary: dict[str, int] = {}
+    for row in rows:
+        summary[row["status"]] = summary.get(row["status"], 0) + 1
+    return {
+        "platforms_total": len(rows),
+        "by_status": summary,
+        "platforms": [
+            {
+                "slug": r["slug"],
+                "name": r["name"],
+                "kind": r["kind"],
+                "status": r["status"],
+                "boards_verified": r["boards_verified"],
+                "jobs_read": r["jobs_read"],
+                "partial_read": r["partial_read"],
+                "checked_at": r["checked_at"],
+                "note": r["note"],
+            }
+            for r in chosen
+        ],
     }
 
 
