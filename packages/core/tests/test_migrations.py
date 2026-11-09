@@ -76,7 +76,9 @@ def test_spec_indexes_exist(migrated_engine: Engine) -> None:
 
 def test_check_constraints_reject_unknown_values(migrated_engine: Engine) -> None:
     with migrated_engine.begin() as connection:
-        connection.execute(text("INSERT INTO companies (id, name) VALUES (1, 'Acme')"))
+        connection.execute(
+            text("INSERT INTO companies (id, name, slug) VALUES (1, 'Acme', 'acme')")
+        )
     with pytest.raises(IntegrityError), migrated_engine.begin() as connection:
         connection.execute(
             text(
@@ -86,3 +88,31 @@ def test_check_constraints_reject_unknown_values(migrated_engine: Engine) -> Non
             ),
             {"now": datetime.now(UTC)},
         )
+
+
+def test_company_slugs_are_backfilled_unique_and_ascii(database_url: str) -> None:
+    config = alembic_config(database_url)
+    command.upgrade(config, "0013")
+    engine = create_engine(database_url)
+    try:
+        with engine.begin() as connection:
+            connection.execute(
+                text(
+                    "INSERT INTO companies (id, name) VALUES "
+                    "(1, 'Café Müller & Co.'), (2, 'Acme'), (3, 'ACME'), (4, '!!!')"
+                )
+            )
+        command.upgrade(config, "0014")
+        with engine.connect() as connection:
+            slugs = dict(connection.execute(text("SELECT id, slug FROM companies")).tuples().all())
+        assert slugs == {1: "cafe-muller-co", 2: "acme", 3: "acme-2", 4: "company"}
+
+        with pytest.raises(IntegrityError), engine.begin() as connection:
+            connection.execute(
+                text("INSERT INTO companies (id, name, slug) VALUES (5, 'Other', 'acme')")
+            )
+
+        command.downgrade(config, "0013")
+        assert "slug" not in {c["name"] for c in inspect(engine).get_columns("companies")}
+    finally:
+        engine.dispose()

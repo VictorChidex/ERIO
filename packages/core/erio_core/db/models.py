@@ -25,9 +25,15 @@ from sqlalchemy import (
     String,
     Text,
     UniqueConstraint,
+    event,
     func,
+    select,
+    text,
 )
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy.engine.default import DefaultExecutionContext
+from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
+
+from erio_core.slugs import slugify, unique_slug
 
 # Stable constraint names, so migrations can always refer to them.
 NAMING_CONVENTION = {
@@ -113,6 +119,22 @@ class Source(Base):
     created_at: Mapped[datetime] = created_at()
 
 
+def _new_company_slug(context: DefaultExecutionContext) -> str:
+    """A slug for a company inserted without one, unique among those stored.
+
+    Covers every single-row insert; bulk inserts assign slugs themselves
+    (see ``erio_core.db.seed``), since rows of one statement cannot see each other.
+    """
+    name = str(context.get_current_parameters()["name"])  # type: ignore[no-untyped-call]
+    taken = set(
+        context.connection.execute(
+            text("SELECT slug FROM companies WHERE slug LIKE :prefix"),
+            {"prefix": slugify(name) + "%"},
+        ).scalars()
+    )
+    return unique_slug(name, taken)
+
+
 class Company(Base):
     """An employer ERIO tracks."""
 
@@ -120,12 +142,27 @@ class Company(Base):
 
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(String(200))
+    # The company's page address, /company/{slug}: lowercase ASCII and hyphens.
+    slug: Mapped[str] = mapped_column(String(100), unique=True, default=_new_company_slug)
     domain: Mapped[str | None] = mapped_column(String(253), unique=True)
     logo_url: Mapped[str | None] = mapped_column(Text)
     # Where the company is based, from the seed list (decision D-07); its
     # jobs may be anywhere.
     country_code: Mapped[str | None] = mapped_column(CHAR(2), ForeignKey("countries.code"))
     created_at: Mapped[datetime] = created_at()
+
+
+@event.listens_for(Session, "before_flush")
+def _slug_new_companies(session: Session, flush_context: Any, instances: Any) -> None:
+    """Give companies added through the session their slugs together, so two new
+    companies with the same name in one flush still get different slugs."""
+    fresh = [c for c in session.new if isinstance(c, Company) and not c.slug]
+    if not fresh:
+        return
+    taken = set(session.scalars(select(Company.slug)))
+    for company in fresh:
+        company.slug = unique_slug(company.name, taken)
+        taken.add(company.slug)
 
 
 class BoardDiscovery(Base):

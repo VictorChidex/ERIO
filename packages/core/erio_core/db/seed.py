@@ -11,11 +11,12 @@ import json
 from importlib.resources import files
 from typing import Any
 
-from sqlalchemy import Engine, create_engine, func, select
+from sqlalchemy import Engine, create_engine, func, select, update
 from sqlalchemy.dialects.postgresql import insert
 
 from erio_core.db.models import Company, CompanyBoard, Country, Source
 from erio_core.settings import Settings
+from erio_core.slugs import unique_slug
 
 
 def platform_sources() -> list[dict[str, str]]:
@@ -118,18 +119,38 @@ def load_companies() -> list[dict[str, str]]:
 
 def sync_companies(engine: Engine) -> int:
     """Add any listed company that is missing and fill in its home country."""
-    rows = [
-        {"name": row["name"], "domain": row["domain"], "country_code": row["country_code"] or None}
-        for row in load_companies()
-    ]
-    statement = insert(Company).values(rows)
-    statement = statement.on_conflict_do_update(
-        index_elements=[Company.domain],
-        set_={"country_code": func.coalesce(Company.country_code, statement.excluded.country_code)},
-    )
+    listed = load_companies()
     with engine.begin() as connection:
-        connection.execute(statement)
-    return len(rows)
+        # The rows of one statement cannot see each other, so slugs are chosen here.
+        taken = set(connection.scalars(select(Company.slug)))
+        known = set(connection.scalars(select(Company.domain)))
+        new = []
+        for row in listed:
+            if row["domain"] in known:
+                connection.execute(
+                    update(Company)
+                    .where(Company.domain == row["domain"])
+                    .values(
+                        country_code=func.coalesce(
+                            Company.country_code, row["country_code"] or None
+                        )
+                    )
+                )
+                continue
+            known.add(row["domain"])
+            slug = unique_slug(row["name"], taken)
+            taken.add(slug)
+            new.append(
+                {
+                    "name": row["name"],
+                    "slug": slug,
+                    "domain": row["domain"],
+                    "country_code": row["country_code"] or None,
+                }
+            )
+        if new:
+            connection.execute(insert(Company).values(new))
+    return len(listed)
 
 
 def seed(engine: Engine) -> dict[str, int]:
