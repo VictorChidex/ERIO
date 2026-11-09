@@ -240,6 +240,7 @@ class WerkenVoorNederlandConnector(JsonLdConnector):
             r"^/vacatures/[^/]+$",
             frozenset({"www.werkenvoornederland.nl"}),
             max_pages=200,
+            multi_employer=True,
         )
 
     def board_url(self, board_token: str) -> str:
