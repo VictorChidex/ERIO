@@ -222,6 +222,34 @@ def test_single_job_has_its_full_description(api: TestClient) -> None:
     assert api.get("/v1/jobs/j_review").status_code == 404
 
 
+def test_single_job_lists_where_each_posting_was_found(
+    api: TestClient, migrated_engine: Engine
+) -> None:
+    [detail] = api.get("/v1/jobs/j_ng_lagos").json()["data"]["source_details"]
+    assert detail == {
+        "platform": "greenhouse",
+        "board_token": "paystack",
+        "listing_id": "0",
+        "is_primary": True,
+        "first_seen_at": "2026-11-05T12:00:00Z",
+        "last_checked_at": "2026-11-05T12:00:00Z",
+        "status": "open",
+    }
+    # A posting the source stopped listing shows as missing, then closed.
+    with Session(migrated_engine) as session, session.begin():
+        session.execute(
+            update(RawPosting).where(RawPosting.external_id == "0").values(missing_since=NOW)
+        )
+    states = [d["status"] for d in api.get("/v1/jobs/j_ng_lagos").json()["data"]["source_details"]]
+    assert states == ["missing"]
+    with Session(migrated_engine) as session, session.begin():
+        session.execute(
+            update(RawPosting).where(RawPosting.external_id == "0").values(closed_at=NOW)
+        )
+    states = [d["status"] for d in api.get("/v1/jobs/j_ng_lagos").json()["data"]["source_details"]]
+    assert states == ["closed"]
+
+
 @pytest.mark.parametrize(
     ("url", "code"),
     [

@@ -2,7 +2,7 @@
 
 import re
 from datetime import datetime
-from typing import Annotated, Any, get_args
+from typing import Annotated, Any, Literal, get_args
 
 from fastapi import APIRouter, Depends, Path, Query
 from fastapi.responses import RedirectResponse
@@ -15,7 +15,7 @@ from erio_api.access import rate_limit
 from erio_api.deps import engine, run_search, search_alias, search_client
 from erio_api.errors import ApiError
 from erio_api.search import BadCursor, JobQuery, Sort, build_search, read_results
-from erio_core.db.models import Company, Job, JobSource, RawPosting
+from erio_core.db.models import Company, CompanyBoard, Job, JobSource, RawPosting
 from erio_core.normalize.text import sanitize_html
 from erio_core.schemas import EmploymentType, JobRecord, JobStatus, RemoteStatus, RoleCategory
 
@@ -41,8 +41,24 @@ class JobsPage(BaseModel):
     meta: JobsMeta
 
 
+class SourceDetail(BaseModel):
+    """One posting a job was built from: where it was listed and how fresh it is."""
+
+    platform: str
+    board_token: str
+    listing_id: str
+    is_primary: bool
+    first_seen_at: datetime
+    last_checked_at: datetime
+    status: Literal["open", "missing", "closed"]
+
+
+class JobDetailRecord(JobRecord):
+    source_details: list[SourceDetail]
+
+
 class JobDetail(BaseModel):
-    data: JobRecord
+    data: JobDetailRecord
 
 
 def _codes(raw: str | None) -> list[str]:
@@ -144,12 +160,33 @@ def get_job(
             raise ApiError(404, "not_found", f"no job {canonical_id}")
         job, company = row
         # The primary posting's source first: it is where apply_url leads.
-        sources = session.scalars(
-            select(RawPosting.source_slug)
+        postings = session.execute(
+            select(RawPosting, CompanyBoard.board_token, JobSource.is_primary)
             .join(JobSource, JobSource.raw_posting_id == RawPosting.id)
+            .join(CompanyBoard, CompanyBoard.id == RawPosting.board_id)
             .where(JobSource.job_id == canonical_id)
-            .order_by(JobSource.is_primary.desc(), RawPosting.source_slug)
+            .order_by(JobSource.is_primary.desc(), RawPosting.source_slug, RawPosting.id)
         ).all()
+        sources = [posting.source_slug for posting, _, _ in postings]
+        source_details = [
+            {
+                "platform": posting.source_slug,
+                "board_token": token,
+                "listing_id": posting.external_id,
+                "is_primary": primary,
+                "first_seen_at": posting.first_seen_at,
+                "last_checked_at": posting.last_seen_at,
+                # closed: confirmed gone twice; missing: absent from the latest fetch.
+                "status": (
+                    "closed"
+                    if posting.closed_at is not None
+                    else "missing"
+                    if posting.missing_since is not None
+                    else "open"
+                ),
+            }
+            for posting, token, primary in postings
+        ]
         # The jobs row holds every JobRecord field except company and sources.
         columns = {
             name: getattr(job, name) for name in JobRecord.model_fields if hasattr(job, name)
@@ -158,7 +195,7 @@ def get_job(
         # row written by any other path can never carry script to a client.
         if job.description_html:
             columns["description_html"] = sanitize_html(job.description_html)
-        record = JobRecord.model_validate(
+        record = JobDetailRecord.model_validate(
             columns
             | {
                 "company": {
@@ -167,6 +204,7 @@ def get_job(
                     "logo_url": company.logo_url,
                 },
                 "sources": list(dict.fromkeys(sources)),
+                "source_details": source_details,
             }
         )
     return {"data": record}
