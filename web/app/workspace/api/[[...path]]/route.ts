@@ -8,15 +8,17 @@ import { apiUrl } from "@/lib/api";
 
 export const dynamic = "force-dynamic";
 
-const WORKSPACE_PARTS = new Set(["applications", "saved-ids", "searches", "export", "import"]);
+const WORKSPACE_PARTS = new Set(["applications", "saved-ids", "searches", "export", "import", "profile", "mail"]);
 const MAX_BODY = 2.2 * 1024 * 1024;
+// A CV file is sent as raw bytes: the API caps it at 2 MB.
+const MAX_FILE = 2.2 * 1024 * 1024;
 
 type Context = { params: Promise<{ path?: string[] }> };
 
 /** Map /workspace/api/<path> to the API path, or null when the path is not one we forward. */
 function target(path: string[]): string | null {
   if (path.some((part) => !/^[A-Za-z0-9_.-]{1,80}$/.test(part) || part === "." || part === "..")) return null;
-  if (path[0] === "match") return `/v1/${path.join("/")}`;
+  if (path[0] === "match" || path[0] === "alerts") return `/v1/${path.join("/")}`;
   if (path.length === 0) return "/v1/workspace";
   if (WORKSPACE_PARTS.has(path[0] ?? "")) return `/v1/workspace/${path.join("/")}`;
   return null;
@@ -31,8 +33,13 @@ async function forward(request: NextRequest, context: Context): Promise<NextResp
   const token = request.headers.get("x-workspace-token");
   if (token) headers["X-Workspace-Token"] = token;
   const hasBody = request.method !== "GET" && request.method !== "DELETE";
-  let body: string | undefined;
-  if (hasBody) {
+  let body: string | ArrayBuffer | undefined;
+  if (hasBody && path.join("/") === "profile/resume") {
+    body = await request.arrayBuffer();
+    if (body.byteLength > MAX_FILE) return NextResponse.json({ error: "too large" }, { status: 413 });
+    headers["Content-Type"] = "application/octet-stream";
+    headers["X-Filename"] = (request.headers.get("x-filename") ?? "cv.txt").replace(/[^ -~]/g, "_").slice(0, 200);
+  } else if (hasBody) {
     body = await request.text();
     if (body.length > MAX_BODY) return NextResponse.json({ error: "too large" }, { status: 413 });
     headers["Content-Type"] = "application/json";
@@ -61,5 +68,6 @@ async function forward(request: NextRequest, context: Context): Promise<NextResp
 
 export const GET = forward;
 export const POST = forward;
+export const PUT = forward;
 export const PATCH = forward;
 export const DELETE = forward;

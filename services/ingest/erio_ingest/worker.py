@@ -35,7 +35,7 @@ from erio_ingest.indexer import rebuild, sync_changed
 from erio_ingest.normalizer import latest_rates, normalize_pending
 from erio_ingest.pipeline import crawl_board, utcnow
 from erio_ingest.ratelimit import HostRateLimiter
-from erio_ingest.saved_searches import cleanup_workspaces, evaluate_saved_searches
+from erio_ingest.saved_searches import cleanup_workspaces, email_digests, evaluate_saved_searches
 from erio_ingest.scheduler import schedule_due_boards
 from erio_ingest.smoke import smoke_test_sources
 from erio_ingest.status import mark_unverified
@@ -81,6 +81,7 @@ app.conf.update(
         "erio.index_changed": {"queue": "pipeline"},
         "erio.evaluate_saved_searches": {"queue": "pipeline"},
         "erio.cleanup_workspaces": {"queue": "pipeline"},
+        "erio.email_digests": {"queue": "pipeline"},
     },
     result_expires=3600,
     timezone="UTC",
@@ -100,6 +101,7 @@ app.conf.update(
         "ai-eval": {"task": "erio.ai_eval", "schedule": 24 * 3600.0},
         "evaluate-saved-searches": {"task": "erio.evaluate_saved_searches", "schedule": 600.0},
         "cleanup-workspaces": {"task": "erio.cleanup_workspaces", "schedule": 24 * 3600.0},
+        "email-digests": {"task": "erio.email_digests", "schedule": 3600.0},
     },
 )
 
@@ -265,6 +267,20 @@ def evaluate_saved_searches_task() -> dict[str, int]:
         "webhooks_sent": result.webhooks_sent,
         "webhooks_failed": result.webhooks_failed,
         "errors": result.errors,
+    }
+
+
+@app.task(name="erio.email_digests", ignore_result=True)
+def email_digests_task() -> dict[str, int]:
+    """Hourly: email the new CV-matched jobs to each confirmed address that is due."""
+    result = email_digests(
+        engine(), search_client(), settings.search_alias, settings.site_url, utcnow()
+    )
+    return {
+        "checked": result.checked,
+        "sent": result.sent,
+        "jobs": result.jobs,
+        "failed": result.failed,
     }
 
 

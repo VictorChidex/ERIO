@@ -33,6 +33,8 @@ EXPECTED_TABLES = {
     "source_checks",
     "sources",
     "workspace_applications",
+    "workspace_mail",
+    "workspace_profiles",
     "workspaces",
 }
 

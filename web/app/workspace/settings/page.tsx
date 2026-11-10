@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 
 import { Gate, useWorkspaceData } from "@/components/workspace/Gate";
 import styles from "@/components/workspace/workspace.module.css";
+import { ACCENTS, CARDS, type Accent, type Card, type Density, type Prefs, type Profile, saveProfile, START_TABS, type StartTab } from "@/lib/profile";
 import { call, copyText, getToken, setToken, type Summary, workspaceLink } from "@/lib/workspace";
 
 type ImportResult = {
@@ -19,6 +20,18 @@ function Settings() {
   const { data } = useWorkspaceData<Summary>("");
   const [message, setMessage] = useState<string | null>(null);
   const [reveal, setReveal] = useState(false);
+  const profile = useWorkspaceData<Profile>("profile");
+  const prefs: Prefs = profile.data?.prefs ?? { accent: "default", density: "comfortable", start_tab: "overview", hidden_cards: [] };
+
+  async function look(change: Partial<Prefs>) {
+    try {
+      await saveProfile({ prefs: { ...prefs, ...change } });
+      profile.reload();
+      setMessage("Saved. The look applies to this workspace on every device you open it on.");
+    } catch (problem) {
+      setMessage(problem instanceof Error ? problem.message : "Could not save");
+    }
+  }
   const file = useRef<HTMLInputElement>(null);
   const link = typeof window !== "undefined" && getToken() ? workspaceLink(getToken() ?? "") : "";
 
@@ -83,6 +96,65 @@ function Settings() {
       </div>
 
       <div className={styles.card}>
+        <h2>Make it yours</h2>
+        <div className={styles.grid} style={{ marginTop: 8 }}>
+          <div className={styles.field}>
+            Colour
+            <div className={styles.row}>
+              {(Object.keys(ACCENTS) as Accent[]).map((key) => (
+                <button
+                  key={key}
+                  type="button"
+                  className={key === prefs.accent ? styles.btn : styles.ghost}
+                  style={ACCENTS[key].color ? { borderColor: ACCENTS[key].color ?? undefined } : undefined}
+                  aria-pressed={key === prefs.accent}
+                  onClick={() => void look({ accent: key })}
+                >
+                  {ACCENTS[key].label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <label className={styles.field}>
+            Spacing
+            <select className={styles.select} value={prefs.density} onChange={(e) => void look({ density: e.target.value as Density })}>
+              <option value="comfortable">Comfortable</option>
+              <option value="compact">Compact</option>
+            </select>
+          </label>
+          <label className={styles.field}>
+            Open on
+            <select className={styles.select} value={prefs.start_tab} onChange={(e) => void look({ start_tab: e.target.value as StartTab })}>
+              {START_TABS.map((tab) => (
+                <option key={tab.id} value={tab.id}>
+                  {tab.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <fieldset className={styles.field} style={{ border: 0, padding: 0 }}>
+            <legend>Cards on the overview</legend>
+            {CARDS.map((card) => (
+              <label key={card.id} className={styles.row}>
+                <input
+                  type="checkbox"
+                  checked={!prefs.hidden_cards.includes(card.id)}
+                  onChange={(e) =>
+                    void look({
+                      hidden_cards: e.target.checked
+                        ? prefs.hidden_cards.filter((c) => c !== card.id)
+                        : ([...prefs.hidden_cards, card.id] as Card[]),
+                    })
+                  }
+                />{" "}
+                {card.label}
+              </label>
+            ))}
+          </fieldset>
+        </div>
+      </div>
+
+      <div className={styles.card}>
         <h2>Export and import</h2>
         <div className={styles.row}>
           <button type="button" className={styles.btn} onClick={() => void exportJson()}>
@@ -111,7 +183,7 @@ function Settings() {
       <div className={styles.card}>
         <h2>Delete everything</h2>
         <p className={styles.muted}>
-          Removes this workspace, its saved jobs, notes, timelines, saved searches, feeds and webhooks from ERIO, for good.
+          Removes this workspace, its saved jobs, notes, timelines, saved searches, feeds, webhooks, CV skills and alert email address from ERIO, for good.
           Your CV text, if you kept it in this browser, is removed on the{" "}
           <Link href="/workspace/cv">CV match page</Link> with “Forget my CV”.
         </p>

@@ -1,9 +1,10 @@
 """The anonymous workspace: saved roles, application tracking and saved searches.
 
 There is no account. A workspace is a row holding only the SHA-256 of a random 256-bit token
-that lives in its owner's browser. Nothing here names a person: no email, no address, no
-device. Every child table cascades from ``workspaces``, so deleting the workspace deletes
-everything. CVs are never stored.
+that lives in its owner's browser. Nothing here names a person unless they choose to give an
+email for job alerts (``WorkspaceMail``, confirmed by link, one click to stop). Every child
+table cascades from ``workspaces``, so deleting the workspace deletes everything. CV files
+are never stored: only the skills read from one (``WorkspaceProfile``).
 """
 
 from datetime import date, datetime
@@ -54,6 +55,59 @@ class Workspace(Base):
     last_used_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), index=True
     )
+
+
+PROFILE_SKILLS_MAX = 150
+PROFILE_TITLES_MAX = 5
+MAIL_FREQUENCIES = ("daily", "weekly")
+MAIL_SENT_IDS_KEPT = 500
+
+
+class WorkspaceProfile(Base):
+    """What a person wants, read from their CV: skills, titles and where, plus how their
+    workspace looks. The CV itself is thrown away after reading."""
+
+    __tablename__ = "workspace_profiles"
+
+    workspace_id: Mapped[int] = mapped_column(
+        ForeignKey("workspaces.id", ondelete="CASCADE"), primary_key=True
+    )
+    skills: Mapped[list[str]] = mapped_column(JSONB, server_default="[]")
+    titles: Mapped[list[str]] = mapped_column(JSONB, server_default="[]")
+    countries: Mapped[list[str]] = mapped_column(JSONB, server_default="[]")
+    remote_only: Mapped[bool] = mapped_column(Boolean, server_default="false")
+    min_score: Mapped[int] = mapped_column(SmallInteger, server_default="40")
+    # Look and layout (theme accent, density, which overview cards show and in what order).
+    prefs: Mapped[dict[str, Any]] = mapped_column(JSONB, server_default="{}")
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
+class WorkspaceMail(Base):
+    """An email that asked for job alerts. Nothing is sent until the link in the first
+    message is opened; every message carries a link that stops them or deletes the address."""
+
+    __tablename__ = "workspace_mail"
+
+    workspace_id: Mapped[int] = mapped_column(
+        ForeignKey("workspaces.id", ondelete="CASCADE"), primary_key=True
+    )
+    email: Mapped[str] = mapped_column(String(254))
+    frequency: Mapped[str] = mapped_column(
+        text_enum("mail_frequency", MAIL_FREQUENCIES), server_default="daily"
+    )
+    confirm_token_hash: Mapped[str | None] = mapped_column(CHAR(64), unique=True)
+    confirm_sent_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    confirmed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    # Opens the stop/delete page from any email; it can do nothing else.
+    manage_token: Mapped[str] = mapped_column(String(48), unique=True)
+    paused: Mapped[bool] = mapped_column(Boolean, server_default="false")
+    last_sent_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_checked_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now()
+    )
+    sent_job_ids: Mapped[list[str]] = mapped_column(JSONB, server_default="[]")
+    bounces: Mapped[int] = mapped_column(SmallInteger, server_default="0")
+    created_at: Mapped[datetime] = created_at()
 
 
 class Application(Base):

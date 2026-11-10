@@ -74,6 +74,10 @@ class Settings(BaseSettings):
     # links point to, and the Host headers it answers to.
     api_url: str = "http://127.0.0.1:8000"
     site_url: str = "http://localhost:3000"
+    # Job-alert email (erio_core.mail): path to a file holding the Resend API key, and the
+    # sender (a Resend-verified domain once one exists). With no key file, mail is only logged.
+    resend_api_key_file: str | None = None
+    mail_from: str = "ERIO <onboarding@resend.dev>"
     mcp_allowed_hosts: list[str] = ["127.0.0.1:*", "localhost:*", "[::1]:*"]
 
     @property

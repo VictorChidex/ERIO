@@ -8,8 +8,8 @@ export default function WorkspacePrivacyPage() {
       <div className={styles.card}>
         <h2>The short version</h2>
         <p className={styles.muted}>
-          Your workspace has no account. There is no email, no sign-in details to leak, no profile, no tracking of who you
-          are, and nothing in it is sold or shared.
+          Your workspace has no account and no password. You can give an email address, but only if you want job alerts;
+          without one, ERIO holds nothing that says who you are. Nothing in a workspace is sold or shared.
         </p>
       </div>
       <div className={styles.card}>
@@ -27,16 +27,25 @@ export default function WorkspacePrivacyPage() {
             The jobs each saved search found (the latest 100) and, if you add one, your webhook address. A feed address
             is public to whoever you give it to and shows only public job data.
           </li>
+          <li>
+            If you upload a CV: the list of skills, tools, licences and languages read from it, plus the job titles,
+            places and match level you choose. Not the file, not its text.
+          </li>
+          <li>
+            If you ask for email alerts: your address, how often you want them, and the ids of jobs already sent to you
+            (so you never get one twice). Nothing is sent until you open the confirmation link; every email has a link
+            to pause or delete the address, and deleting the workspace deletes it too. Emails go out through Resend.
+          </li>
         </ul>
       </div>
       <div className={styles.card}>
         <h3>What ERIO never keeps</h3>
         <ul className={styles.list}>
           <li>
-            Your CV. When you ask for a match, the text is read for that one request and discarded; it is not saved or
-            logged. If you tick “keep my CV”, it stays in this browser only.
+            Your CV file or its text. An uploaded or pasted CV is read for skills in that one request and discarded; it is
+            not saved or logged. If you tick “keep my CV” on the paste page, the text stays in this browser only.
           </li>
-          <li>Your name, email, address, device or location. ERIO sets no tracking cookie for the workspace.</li>
+          <li>Your name, home address, device or location. ERIO sets no tracking cookie for the workspace.</li>
           <li>
             Applications are never sent for you. ERIO has no way to apply on your behalf; the apply kit is text you copy.
           </li>

@@ -47,7 +47,7 @@
 .timeline { list-style: none; display: grid; gap: 6px; font-size: 13px; color: var(--fg2); border-left: 2px solid var(--brd); padding-left: 12px; }
 .timeline time { color: var(--fg3); font-family: var(--font-mono), monospace; font-size: 11.5px; margin-right: 6px; }
 
-.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; list-style: none; padding: 0; }
 .chip { font-size: 12px; padding: 3px 10px; border-radius: 20px; border: 1px solid var(--brd); color: var(--fg2); background: var(--sf2); }
 .chipOk { border-color: rgba(16, 185, 129, 0.5); color: var(--grn); }
 .chipGap { border-color: rgba(245, 158, 11, 0.5); color: var(--amb); }
@@ -62,3 +62,7 @@
 @media (max-width: 640px) {
   .page { padding: 24px 0 56px; }
 }
+
+:global([data-density="compact"]) .card { padding: 12px 14px; }
+:global([data-density="compact"]) .stack { gap: 8px; }
+:global([data-density="compact"]) .page { padding: 20px 0 48px; }

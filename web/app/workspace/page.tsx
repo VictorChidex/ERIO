@@ -1,15 +1,34 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 import { Gate, useWorkspaceData } from "@/components/workspace/Gate";
 import styles from "@/components/workspace/workspace.module.css";
+import { type Profile, START_TABS } from "@/lib/profile";
 import { type Application, type SavedSearch, STAGE_LABELS, STAGES, type Summary } from "@/lib/workspace";
 
 function Overview() {
   const summary = useWorkspaceData<Summary>("");
   const apps = useWorkspaceData<{ data: Application[] }>("applications");
   const searches = useWorkspaceData<SavedSearch[]>("searches");
+  const profile = useWorkspaceData<Profile>("profile");
+  const router = useRouter();
+  const hidden = profile.data?.prefs.hidden_cards ?? [];
+  const start = profile.data?.prefs.start_tab ?? "overview";
+  useEffect(() => {
+    // Open on the tab the person chose, once per visit.
+    if (start === "overview") return;
+    try {
+      if (window.sessionStorage.getItem("erio-start")) return;
+      window.sessionStorage.setItem("erio-start", "1");
+    } catch {
+      return;
+    }
+    const target = START_TABS.find((tab) => tab.id === start);
+    if (target) router.replace(target.href);
+  }, [start, router]);
   const attention = (apps.data?.data ?? []).filter((a) => a.nudge || (a.job && a.job.changes.length > 0));
   const withNew = (searches.data ?? []).filter((s) => s.new_count > 0);
   const error = summary.error ?? apps.error ?? searches.error;
@@ -17,7 +36,7 @@ function Overview() {
   return (
     <div className={styles.stack}>
       {error && <p className={`${styles.notice} ${styles.bad}`}>{error}</p>}
-      <div className={styles.card}>
+      <div className={styles.card} hidden={hidden.includes("stats")}>
         <h2>Where things stand</h2>
         <div className={styles.stats}>
           {STAGES.map((stage) => (
@@ -34,7 +53,7 @@ function Overview() {
       </div>
 
       <div className={styles.grid}>
-        <div className={styles.card}>
+        <div className={styles.card} hidden={hidden.includes("next")}>
           <h3>Needs your attention</h3>
           {attention.length === 0 ? (
             <p className={styles.muted}>Nothing waiting. Saved jobs that close or change, stalled applications and due follow-ups appear here.</p>
@@ -60,7 +79,7 @@ function Overview() {
           </p>
         </div>
 
-        <div className={styles.card}>
+        <div className={styles.card} hidden={hidden.includes("matches")}>
           <h3>New since you last looked</h3>
           {withNew.length === 0 ? (
             <p className={styles.muted}>No new matches. Save a search to follow it by feed reader or webhook, with no email.</p>
@@ -78,7 +97,7 @@ function Overview() {
           </p>
         </div>
 
-        <div className={styles.card}>
+        <div className={styles.card} hidden={hidden.includes("searches")}>
           <h3>Compare your CV</h3>
           <p className={styles.muted}>
             Paste your CV to see which open jobs overlap with it and why. It is read once, never stored on ERIO&apos;s
