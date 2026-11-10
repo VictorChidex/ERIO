@@ -561,3 +561,69 @@ def test_documents_indexed_before_the_slug_existed_still_make_records() -> None:
     }
     assert record_from_source(old).company.slug is None
     assert record_from_source({**old, "company_slug": "paystack"}).company.slug == "paystack"
+
+
+def test_the_change_feed_goes_forward_by_cursor_and_never_repeats(
+    api: TestClient, migrated_engine: Engine
+) -> None:
+    assert api.get("/v1/changes").json()["items"] == []
+    with Session(migrated_engine) as session, session.begin():
+        session.add(JobEvent(job_id="j_ng_lagos", at=NOW, kind="added", changes={}))
+        session.add(
+            JobEvent(
+                job_id="j_ng_lagos",
+                at=NOW + timedelta(hours=1),
+                kind="changed",
+                changes={"title": ["Backend Engineer", "Senior Backend Engineer"]},
+            )
+        )
+        session.add(JobEvent(job_id="j_gb_london", at=NOW + timedelta(hours=2), kind="closed"))
+
+    first = api.get("/v1/changes?limit=2").json()
+    assert [i["kind"] for i in first["items"]] == ["added", "changed"] and first["has_more"]
+    assert first["items"][1]["changes"] == {
+        "title": ["Backend Engineer", "Senior Backend Engineer"]
+    }
+    assert first["items"][0]["job"]["title"] == "Backend Engineer"
+
+    second = api.get(f"/v1/changes?cursor={first['next_cursor']}&limit=2").json()
+    assert [i["kind"] for i in second["items"]] == ["closed"] and not second["has_more"]
+    assert second["items"][0]["job"]["canonical_id"] == "j_gb_london"
+
+    nothing = api.get(f"/v1/changes?cursor={second['next_cursor']}").json()
+    assert nothing["items"] == [] and nothing["next_cursor"] == second["next_cursor"]
+
+
+def test_the_change_feed_can_start_at_a_time_and_filter_by_kind(
+    api: TestClient, migrated_engine: Engine
+) -> None:
+    with Session(migrated_engine) as session, session.begin():
+        session.add(JobEvent(job_id="j_ng_lagos", at=NOW, kind="added", changes={}))
+        session.add(JobEvent(job_id="j_gb_london", at=NOW + timedelta(days=1), kind="closed"))
+
+    since = api.get("/v1/changes", params={"since": (NOW + timedelta(hours=1)).isoformat()})
+    assert [i["kind"] for i in since.json()["items"]] == ["closed"]
+    only = api.get("/v1/changes?kind=added&kind=bogus").json()["items"]
+    assert [i["job"]["canonical_id"] for i in only] == ["j_ng_lagos"]
+
+
+def test_the_export_is_every_open_job_as_gzipped_lines_and_can_resume(api: TestClient) -> None:
+    import gzip
+    import json
+
+    def read(url: str) -> list[dict[str, Any]]:
+        response = api.get(url)
+        assert response.status_code == 200
+        assert response.headers["content-type"] == "application/gzip"
+        return [json.loads(line) for line in gzip.decompress(response.content).splitlines()]
+
+    rows = read("/v1/export/jobs")
+    ids = [r["canonical_id"] for r in rows]
+    assert ids == sorted(ids)
+    assert "j_closed" not in ids and "j_unknown" not in ids and "j_ng_lagos" in ids
+    lagos = next(r for r in rows if r["canonical_id"] == "j_ng_lagos")
+    assert lagos["city"] == "Lagos" and "description_html" not in lagos
+
+    assert [r["canonical_id"] for r in read(f"/v1/export/jobs?after={ids[0]}")] == ids[1:]
+    assert {r["country_code"] for r in read("/v1/export/jobs?country=ng")} == {"NG"}
+    assert len(read("/v1/export/jobs?limit=2")) == 2

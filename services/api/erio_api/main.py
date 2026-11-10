@@ -11,7 +11,7 @@ from opensearchpy.exceptions import OpenSearchException
 
 from erio_api import errors, telemetry
 from erio_api.health import Check, default_checks, run_checks
-from erio_api.routes import insights, jobs, live, meta
+from erio_api.routes import changes, insights, jobs, live, meta
 from erio_core import __version__
 from erio_core.observability import configure_logging
 from erio_core.search.index import client, ensure_alias
@@ -43,6 +43,7 @@ app = FastAPI(
 # Telemetry first: middleware added later wraps it, so the request ID exists by then.
 telemetry.install(app)
 errors.install(app)
+app.include_router(changes.router)
 app.include_router(insights.router)
 app.include_router(jobs.router)
 app.include_router(live.router)
