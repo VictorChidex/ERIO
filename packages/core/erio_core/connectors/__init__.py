@@ -41,6 +41,7 @@ from erio_core.connectors.public_feeds import PUBLIC_FEED_CONNECTORS
 from erio_core.connectors.public_services import PUBLIC_SERVICE_CONNECTORS
 from erio_core.connectors.recruitee import RecruiteeConnector
 from erio_core.connectors.reference_platforms import REFERENCE_CONNECTORS
+from erio_core.connectors.regional import REGIONAL_CONNECTORS
 from erio_core.connectors.rippling import RipplingConnector
 from erio_core.connectors.smartrecruiters import SmartRecruitersConnector
 from erio_core.connectors.teamtailor import TeamtailorConnector
@@ -97,6 +98,7 @@ ALL_CONNECTORS: list[Connector] = [
     *PUBLIC_FEED_CONNECTORS,
     *PUBLIC_SERVICE_CONNECTORS,
     *REFERENCE_CONNECTORS,
+    *REGIONAL_CONNECTORS,
 ]
 
 CONNECTORS: dict[str, Connector] = {connector.slug: connector for connector in ALL_CONNECTORS}

@@ -1,0 +1,130 @@
+[
+ {
+  "source_slug": "thehub",
+  "board_token": "https://thehub.io/sitemap-jobs.xml",
+  "external_id": "c4755eb7ed14c98e85c8937b",
+  "payload": {
+   "page_url": "https://thehub.io/jobs/6af31307de7a1ef007160519",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Brand Designer",
+    "datePosted": "2026-11-10T12:50:15.919Z",
+    "description": "<h3><strong>About Zero</strong></h3><p>Zero is the AI-native platform that replaces your CRM and all the tools bolted on around it, built for startups from seed to Series B. We were founded by the team that scaled Smartly.io to $100M+ ARR and have raised $13M so far: a $2.7M pre-seed led by 20VC and a $10.3M seed led by Primary VC.</p><p>We launched in September 2026 and are 14 people in Helsinki, growing to around 20 by the end of the year. People get Zero the moment they see it. Our problem is that not enough people have seen it yet.</p><p>That's where you come in. We're looking for a designer who lives in the newest AI tools and wants to own everything Zero looks like.</p><p><br /></p><h3>Why this role exists</h3><p>Design is our bottleneck. We ship product faster than we can show it off, and we have more campaign ideas than people to make them.</p><p>We have a fresh brand foundation in place. Now we need someone to take it and run: make it move, and push it somewhere new every week.</p><p><br /></p><h3>What you'll do</h3><ul><li><p><strong>Web:</strong> Design and ship landing pages, launch pages and comparison pages.</p></li><li><p><strong>Brand:</strong> Take the foundation and bring it to life across everything we put out.</p></li><li><p><strong>Launches:</strong> Turn new features into launch assets, animations and short videos people actually want to watch.</p></li><li><p><strong>Motion:</strong> Product walkthroughs, launch videos, UI animation and social cuts.</p></li><li><p><strong>Social and campaigns:</strong> LinkedIn, X, Reddit, events, email and one-pagers.</p></li><li><p><strong>Your AI setup:</strong> Build the workflow that lets one designer ship like a small studio, and keep rebuilding it as the tools change.</p></li><li><p><strong>Everything not on this list:</strong> Billboards, stunts, events and ideas we haven't had yet. When someone asks whether we should take over the Sphere in Vegas, you work out what that would look like and then make a version we can actually pull off.</p></li></ul><p><br /></p><h3>Who we're looking for</h3><ul><li><p><strong>Your work matters more than your years.</strong> Being early in your career is fine.</p></li><li><p><strong>You're AI-pilled.</strong> You try every new image, video and design tool the week it comes out. You've shipped real things with tools like Claude Code, Cursor, Midjourney or Runway, and you have strong opinions about what's actually good.</p></li><li><p><strong>You do a bit of everything.</strong> Brand, web, visual and motion. Great at some, curious about the rest.</p></li><li><p><strong>You have taste.</strong> You can tell modern from a 2019 SaaS template.</p></li><li><p><strong>You ship and share.</strong> Side projects, experiments, things you made at 1am just to see if they'd work. We want to see them.</p></li><li><p><strong>You're fast and hungry.</strong> A landing page in days, a launch video in a week. You'd rather ship and iterate than polish in private.</p></li><li><p><strong>You bring ideas as well as execution.</strong> You come up with concepts, or take a half-formed idea and make it much better. For you, a brief is a starting point.</p></li><li><p><strong>You're based in Helsinki,</strong> or ready to move here.</p></li></ul><p><br /></p><h3>How we work</h3><ul><li><p><strong>Ownership from day one.</strong> You'll make calls most designers wait years to make.</p></li><li><p><strong>End to end.</strong> You own the whole problem, never just one step in someone else's process.</p></li><li><p><strong>Visible impact.</strong> Your work shows up in pipeline, and we'll share the numbers with you.</p></li></ul><p><br /></p><h3>Hiring process</h3><ol><li><p>Intro call(s) and portfolio walkthrough</p></li><li><p>Assignment</p></li><li><p>Meet the team</p></li><li><p>Offer</p></li></ol>",
+    "validThrough": "2027-02-02",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Zero",
+     "sameAs": "https://zero.inc/",
+     "logo": "https://thehub-io.imgix.net/files/s3/20261110120849-ce7a60369b48811bd4a68a71f3df07fb.png?fit=crop&w=300&h=300&auto=format&q=60"
+    },
+    "directApply": "true",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Zero",
+     "value": "6af31307de7a1ef007160519"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Finland",
+      "addressLocality": "Helsinki",
+      "addressRegion": "Helsinki",
+      "postalCode": "",
+      "streetAddress": ""
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:34.772011Z",
+  "content_hash": "d91ea154f70610c9de73cc44d40ad159a8f067815d5cb2ecd178eeb3b75c0aab"
+ },
+ {
+  "source_slug": "thehub",
+  "board_token": "https://thehub.io/sitemap-jobs.xml",
+  "external_id": "29c48f313df800ee69ca2614",
+  "payload": {
+   "page_url": "https://thehub.io/jobs/6aedaba97ce6afb9d90e042b",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Drifts- og projektleder – Få ansvaret for Festlastbiler og udvikling af vores andre virksomheder",
+    "datePosted": "2026-11-06T10:27:53.026Z",
+    "description": "<p>Har du lyst til at f&aring; ansvaret for at drive en virksomhed og samtidig v&aelig;re med til at udvikle flere?</p>\r\n<p>Vi s&oslash;ger en ambiti&oslash;s og selvst&aelig;ndig drifts- og projektleder, der kan skabe struktur, tage ansvar og oms&aelig;tte id&eacute;er til konkrete resultater.</p>\r\n<p>Du f&aring;r det fulde operationelle og kommercielle ansvar for <strong>Festlastbiler.dk</strong>, som er en af Sj&aelig;llands st&oslash;rste leverand&oslash;rer af studentervogne. Uden for studenters&aelig;sonen kommer du til at drive udviklingsprojekter p&aring; Sor&oslash; S&oslash; Camping og i de virksomheder, vi forventer at k&oslash;be i de kommende &aring;r.</p>\r\n<h3><strong>Hvem er vi?</strong></h3>\r\n<p>Vi er to br&oslash;dre, Mads og Bj&oslash;rn J&oslash;rgensen, der har en ambition om at opbygge en portef&oslash;lje af veldrevne og profitable virksomheder.</p>\r\n<p>I 2024 k&oslash;bte vi Festlastbiler, og i 2026 k&oslash;bte vi Sor&oslash; S&oslash; Camping. Vi er allerede i dialog om at k&oslash;be vores tredje virksomhed og forventer at k&oslash;be flere i de kommende &aring;r.</p>\r\n<p><strong>Festlastbiler</strong> har 22 veteranlastbiler og k&oslash;rer hvert &aring;r med omkring 2.500-3.000 studenter. I studenters&aelig;sonen (ca. 10 dage) besk&aelig;ftiger virksomheden cirka 30 chauff&oslash;rer samt vaskehold og studentermedhj&aelig;lpere. Resten af &aring;ret har vi to deltidsmedarbejdere.</p>\r\n<p><strong>Sor&oslash; S&oslash; Camping</strong> er en hel&aring;rs&aring;ben campingplads med hytter, camping, caf&eacute; og iskiosk. Vi arbejder p&aring; en r&aelig;kke projekter, der skal forbedre g&aelig;steoplevelsen, effektivisere driften og &oslash;ge indtjeningen.</p>\r\n<p>Vores ambition er at opbygge en portef&oslash;lje af veldrevne virksomheder, hvor dygtige ledere st&aring;r for den daglige drift, mens vi fokuserer p&aring; opk&oslash;b og udviklingsmuligheder. Nu leder vi efter en person, der kan tage ansvaret for Festlastbiler, skabe struktur og f&oslash;re udviklingsprojekter ud i livet p&aring; tv&aelig;rs af vores virksomheder.</p>\r\n<h3><strong>Dit ansvar for Festlastbiler</strong></h3>\r\n<p>Du f&aring;r det samlede ansvar for, at Festlastbiler gennemf&oslash;rer en vellykket og profitabel studenterk&oslash;rsels&aelig;son.</p>\r\n<p>Du skal have overblik over virksomhedens &oslash;konomi, salg, medarbejdere og drift. Du skal b&aring;de kunne planl&aelig;gge, lede andre og selv tage fat, n&aring;r noget skal l&oslash;ses.</p>\r\n<p>Dine vigtigste ansvarsomr&aring;der bliver:</p>\r\n<ul>\r\n<li>\r\n<p><strong>Drift og planl&aelig;gning:</strong> Planl&aelig;gge og koordinere studenters&aelig;sonen, s&aring; chauff&oslash;rer, lastbiler og studenter er klar p&aring; de rigtige tidspunkter.</p>\r\n</li>\r\n<li>\r\n<p><strong>Ledelse og rekruttering:</strong> Rekruttere og lede cirka 30 chauff&oslash;rer samt koordinere vaskehold og deltidsmedarbejdere hvert &aring;r.</p>\r\n</li>\r\n<li>\r\n<p><strong>Salg og kunder:</strong> Sikre en god salgsproces, kundekommunikation, kontrakter og betalingsopf&oslash;lgning i samarbejde med vores deltidsmedarbejder og marketingpartnere.</p>\r\n</li>\r\n<li>\r\n<p><strong>&Oslash;konomi og resultater:</strong> F&oslash;lge oms&aelig;tning, omkostninger og indtjening samt arbejde aktivt med at forbedre virksomhedens overskud.</p>\r\n</li>\r\n<li>\r\n<p><strong>Systemer og automatisering: </strong>St&aring; i spidsen for implementeringen af et nyt CRM-system og udvikle automatiserede arbejdsgange, der effektiviserer driften.</p>\r\n</li>\r\n<li>\r\n<p><strong>Opk&oslash;b og v&aelig;kst: </strong>Aktivt ops&oslash;ge muligheder for at k&oslash;be flere studentervogne, vurdere potentielle opk&oslash;b og hj&aelig;lpe med at gennemf&oslash;re dem.</p>\r\n</li>\r\n<li>\r\n<p><strong>Teknisk koordinering:</strong> Sikre, at lastbilerne bliver synet, repareret og klargjort til s&aelig;sonen. Du skal ikke selv udf&oslash;re reparationerne, men har ansvaret for at koordinere arbejdet med vores mekaniker og tekniske deltidsmedarbejder.&nbsp;</p>\r\n</li>\r\n</ul>\r\n<p>Festlastbiler er en s&aelig;sonbetonet virksomhed. Fra marts til juni fylder virksomheden det meste af din arbejdstid. Selve studenterk&oslash;rslen foreg&aring;r over cirka 10 intensive dage i slutningen af juni, hvor du skal forvente l&aelig;ngere arbejdsdage og weekendarbejde. Det er en periode med mange bev&aelig;gelige dele, hvor det kr&aelig;ver overblik, hurtige beslutninger og god koordinering at f&aring; det hele til at g&aring; op.&nbsp;</p>\r\n<p>Resten af &aring;ret forventer vi, at Festlastbiler kun kr&aelig;ver cirka 20 % af din arbejdstid. Her kommer du prim&aelig;rt til at arbejde med udviklingsprojekter i vores andre virksomheder eller opk&oslash;b af flere lastbiler.</p>\r\n<h3><strong>Udviklingsprojekter p&aring; tv&aelig;rs af vores virksomheder</strong></h3>\r\n<p>N&aring;r du ikke arbejder med Festlastbiler, kommer du til at drive udviklingsprojekter p&aring; Sor&oslash; S&oslash; Camping og i andre virksomheder, vi k&oslash;ber. Vi har mange id&eacute;er, og du skal hj&aelig;lpe os med at prioritere dem og f&oslash;re dem ud i livet.</p>\r\n<p>Her er fire eksempler p&aring; projekter, du kunne have v&aelig;ret involveret i, hvis du arbejdede hos os i dag:</p>\r\n<ul>\r\n<li>\r\n<p><strong>Renovering af campinghytter:</strong> Vi samarbejder med IKEA om at forny indretningen af vores eksisterende hytter og g&oslash;re dem mere attraktive for g&aelig;sterne.</p>\r\n</li>\r\n<li>\r\n<p><strong>Opf&oslash;relse af nye hytter:</strong> Vi planl&aelig;gger at bygge flere udlejningshytter, hvilket kr&aelig;ver budgettering, projektering, myndighedsgodkendelser og koordinering med leverand&oslash;rer.</p>\r\n</li>\r\n<li>\r\n<p><strong>Digitalisering og automatisering:</strong> Vi implementerer et nyt bookingsystem p&aring; campingpladsen samt nye adgangssystemer, kodel&aring;se og arbejdsgange.</p>\r\n</li>\r\n<li>\r\n<p><strong>Opk&oslash;b af en tredje virksomhed:</strong> Vi er i dialog om et nyt opk&oslash;b. Hvis handlen gennemf&oslash;res, skal du hj&aelig;lpe med at dokumentere driften og identificere forbedringsmuligheder sammen med virksomhedens daglige leder.</p>\r\n</li>\r\n</ul>\r\n<p>Du f&aring;r ikke ansvaret for den daglige drift af Sor&oslash; S&oslash; Camping. Det ligger hos vores lejrchef, og den stilling kan s&oslash;ges her: https://www.jobindex.dk/vis-job/h1713959</p>\r\n<p>Vi ved ikke pr&aelig;cist, hvilke projekter du kommer til at arbejde med i fremtiden. Det afh&aelig;nger af vores kommende opk&oslash;b, og hvor vi ser de st&oslash;rste muligheder. F&aelig;lles for projekterne er, at du f&aring;r ansvaret for at skabe struktur, finde l&oslash;sninger og drives af at f&oslash;re id&eacute;er til d&oslash;rs.</p>\r\n<h3><strong>Hvem er du?</strong></h3>\r\n<p>Vi h&aring;ber, at du kan genkende dig selv i f&oslash;lgende:</p>\r\n<ul>\r\n<li>\r\n<p>Du <strong>tager naturligt ansvar</strong> og handler selvst&aelig;ndigt uden at vente p&aring; instruktioner.</p>\r\n</li>\r\n<li>\r\n<p>Du er <strong>struktureret</strong> og god til at prioritere, skabe overblik og f&oslash;re projekter helt i m&aring;l.</p>\r\n</li>\r\n<li>\r\n<p>Du har <strong>kommerciel forst&aring;else</strong> og motiveres af at udvikle virksomheder og forbedre deres resultater.</p>\r\n</li>\r\n<li>\r\n<p>Du kan <strong>lede og motivere mennesker</strong>, uddelegere opgaver og skabe fremdrift gennem andre.</p>\r\n</li>\r\n<li>\r\n<p>Du er <strong>l&oslash;sningsorienteret</strong> og bevarer overblikket under pres. Du tr&aelig;ffer beslutninger og kommunikerer &aring;bent og &aelig;rligt.</p>\r\n</li>\r\n<li>\r\n<p>Du er <strong>ambiti&oslash;s</strong> og har lyst til at udvikle dig som leder og p&aring; sigt f&aring; st&oslash;rre ansvar p&aring; tv&aelig;rs af vores virksomheder.</p>\r\n</li>\r\n</ul>\r\n<p>Du beh&oslash;ver ikke have erfaring med studenterk&oslash;rsel eller camping. Vi forestiller os, at du har nogle &aring;rs erfaring som projektleder, driftsleder, Operations Manager eller med forretningsudvikling og nu er klar til at tage et st&oslash;rre ansvar. Det vigtigste er, at du l&aelig;rer hurtigt, tager ejerskab og f&aring;r tingene til at ske.</p>\r\n<h3><strong>Hvad tilbyder vi?</strong></h3>\r\n<p>Vi tilbyder en mulighed for at f&aring; stort ansvar og v&aelig;re med til at udvikle en gruppe af virksomheder i v&aelig;kst.</p>\r\n<p>Du f&aring;r:</p>\r\n<ul>\r\n<li>\r\n<p><strong>Et stort ansvar:</strong> Du f&aring;r det operationelle og kommercielle ansvar for Festlastbiler.</p>\r\n</li>\r\n<li>\r\n<p><strong>Frihed og indflydelse:</strong> Du bliver en del af vores ledelsesteam med stor selvst&aelig;ndighed og korte beslutningsveje.</p>\r\n</li>\r\n<li>\r\n<p><strong>Varierede opgaver:</strong> Du arbejder med b&aring;de ledelse, drift, &oslash;konomi og udviklingsprojekter p&aring; tv&aelig;rs af virksomheder.</p>\r\n</li>\r\n<li>\r\n<p><strong>Mulighed for at vokse med os: </strong>Vi har store v&aelig;kstambitioner, og for den rette person kan der p&aring; sigt &aring;bne sig muligheder for en rolle som Group COO p&aring; tv&aelig;rs af vores virksomheder eller CEO for en af virksomhederne.&nbsp;</p>\r\n</li>\r\n<li>\r\n<p><strong>Resultatbaseret bonus:</strong> Ud over din faste l&oslash;n f&aring;r du mulighed for at f&aring; del i det overskud, du er med til at skabe i Festlastbiler.</p>\r\n</li>\r\n</ul>\r\n<h3><strong>Arbejdssted</strong></h3>\r\n<p>Stillingen er p&aring; fuld tid. Vi har kontor i Vanl&oslash;se og campingplads i Sor&oslash;. Du kommer til at arbejde begge steder, men har stor fleksibilitet til selv at tilrettel&aelig;gge din arbejdsdag afh&aelig;ngigt af dine opgaver og projekter. K&oslash;rekort er n&oslash;dvendigt, og det er en fordel, hvis du har egen bil.</p>\r\n<h3><strong>Lyder det som noget for dig?</strong></h3>\r\n<p>Hvis du kan se dig selv i en rolle med stort ansvar, selvst&aelig;ndighed og mulighed for at udvikle b&aring;de virksomheder og din egen karriere, vil vi meget gerne h&oslash;re fra dig.</p>\r\n<p><strong>S&oslash;g stillingen her: https://tally.so/r/aOexLX</strong></p>",
+    "validThrough": "2026-12-21",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "DNCK ApS",
+     "sameAs": "https://festlastbiler.dk/",
+     "logo": "https://thehub-io.imgix.net/files/s3/20261106104533-c91510db0e39b78d87fdbb2a8937b3ec.png?fit=crop&w=300&h=300&auto=format&q=60"
+    },
+    "directApply": "true",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "DNCK ApS",
+     "value": "6aedaba97ce6afb9d90e042b"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Denmark",
+      "addressLocality": "Copenhagen",
+      "addressRegion": "Copenhagen",
+      "postalCode": "2720",
+      "streetAddress": ""
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:35.816545Z",
+  "content_hash": "671dcb02bf606bdb42fe8fbc8fb27a4831b5ad94733c3a07fbf765e3b0e3f57e"
+ },
+ {
+  "source_slug": "thehub",
+  "board_token": "https://thehub.io/sitemap-jobs.xml",
+  "external_id": "f0f6e526add98794953f7518",
+  "payload": {
+   "page_url": "https://thehub.io/jobs/6aeced19acffe4ba02144664",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Computer Vision Engineer",
+    "datePosted": "2026-11-05T20:54:49.084Z",
+    "description": "<p>We are looking for a Computer Vision Engineer to develop and improve our image-analysis models on an existing platform that is already in production.</p><p>You will train, evaluate, and optimize deep learning models for real-world waste imagery, not research in isolation.</p><p><strong>What you'll do</strong></p><ul><li><p>Develop, train, and optimize deep learning models for image analysis</p></li><li><p>Evaluate and extend existing model architectures</p></li><li><p>Improve accuracy, performance, and robustness</p></li><li><p>Work with image datasets: processing, augmentation, and evaluation</p></li><li><p>Experiment with architectures and training approaches</p></li><li><p>Solve hard technical problems and iterate on production CV systems</p></li></ul><p><strong>What we're looking for</strong></p><ul><li><p>At least 3 years of hands-on computer vision and model development, or equivalent documented experience (professional work, open source, or serious personal projects)</p></li><li><p>Experience building, training, evaluating, and optimizing DL models for images</p></li><li><p>Solid understanding of CV architectures (e.g. CNNs, Vision Transformers)</p></li><li><p>Strong Python</p></li><li><p>PyTorch or TensorFlow in practice</p></li><li><p>Real-world image datasets: preprocessing, augmentation, evaluation</p></li><li><p>Ability to adapt and extend existing models against clear technical requirements</p></li></ul><p>We care about what you've built, not only job titles. Show projects, repos, or results you can point to.</p><p><strong>Nice to have</strong></p><ul><li><p>Edge AI and running models on edge or embedded devices</p></li><li><p>Optimization for limited compute (quantization, inference performance)</p></li><li><p>Real-time image or video analysis</p></li></ul><p><strong>Who you are</strong></p><p>Curious, solution-oriented, and happy to go deep on technical problems. You keep up with CV and DL, turn ideas into improvements, work independently and in a structured way, and collaborate well on technical decisions.</p><p><strong>What we offer</strong></p><ul><li><p>Production computer vision with real impact</p></li><li><p>A platform that already runs. You improve what ships.</p></li><li><p>Room to influence architecture and methods</p></li><li><p>Hard problems where precision, robustness, and performance matter</p></li></ul>",
+    "validThrough": "2026-12-06",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Sortrace AB",
+     "sameAs": "https://www.sortrace.com",
+     "logo": "https://thehub-io.imgix.net/files/s3/20261105204202-6b5b580e727881131ff544255a49c856.png?fit=crop&w=300&h=300&auto=format&q=60"
+    },
+    "directApply": "true",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Sortrace AB",
+     "value": "6aeced19acffe4ba02144664"
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+     {
+      "@type": "Country",
+      "name": "Sweden"
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:36.732801Z",
+  "content_hash": "99970820dfeee00e58a9de1e69c2071ba93d77d2768ece70a5ab8aaa88512286"
+ }
+]

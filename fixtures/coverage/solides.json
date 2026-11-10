@@ -1,0 +1,730 @@
+[
+ {
+  "source_slug": "solides",
+  "board_token": "https://vagas.solides.com.br",
+  "external_id": "951012",
+  "payload": {
+   "killerQuestions": [],
+   "id": 951012,
+   "title": "Auxiliar de Monitoramento - (Cópia)",
+   "description": "<p>🚀 <strong>Auxiliar de Monitoramento</strong> 🚀</p>\n<p> </p>\n<p><strong>Made4it</strong> é uma empresa líder em soluções tecnológicas, dedicada a fornecer softwares e serviços de alta qualidade para clientes em toda a América Latina. Estamos buscando um <strong>Auxiliar de Monitoramento</strong> para fazer parte do nosso time. Se você é apaixonado por tecnologia, tem habilidade para solucionar problemas e deseja atuar em um ambiente desafiador e colaborativo, esta é a sua oportunidade!</p>\n<p> </p>\n<p>📍 <strong>Localização:</strong> Apucarana - PR - Presencial</p>\n<p>💼 <strong>Cargo:</strong> Auxiliar de Monitoramento</p>\n<p>📅 <strong>Data de Início:</strong> Imediata</p>\n<p>🕖<strong> Horário:</strong> 18h as 6h (escala 12x36)</p>\n<p> </p>\n<p>🔧 <strong>Principais Atividades:</strong></p>\n<ul>\n<li>Executar tickets de suporte técnico e troubleshooting na área de infraestrutura;</li>\n<li>Configurar e gerenciar máquinas virtuais (VMs);</li>\n<li>Monitorar sistemas e realizar manutenções preventivas e corretivas;</li>\n<li>Realizar deploy de novas aplicações e máquinas virtuais;</li>\n<li>Resolver problemas em servidores e aplicações utilizadas pelos clientes.</li>\n</ul>\n<p> </p>\n<p>🎓 <strong>Requisitos Técnicos (Hard Skills):</strong></p>\n<ul>\n<li>Experiência prática em troubleshooting e configuração de máquinas virtuais (1 ano será um diferencial);</li>\n<li>Conhecimento em serviços como DNS, RADIUS, Zabbix, MySQL, Speedtest, Backup (PBS/VEEAM) e NFTables;</li>\n<li>Familiaridade com protocolos como FTP, SSH, SNMP e iSCSI;</li>\n<li>Conhecimento em Linux (especialmente sistemas baseados em Debian);</li>\n<li>Experiência com ambientes virtualizados como ProxMox e VMware (diferencial);</li>\n<li>Habilidades em Shell Script e armazenamento (storage);</li>\n<li>Certificações como Linux Essentials, ZCU ou similares serão valorizadas;</li>\n<li>Boa comunicação e capacidade de trabalho em equipe.</li>\n</ul>\n<p> </p>\n<p>💡 <strong>Habilidades e Atitudes (Soft Skills):</strong></p>\n<ul>\n<li>Proatividade e capacidade para resolver problemas;</li>\n<li>Organização e atenção aos detalhes;</li>\n<li>Comprometimento com prazos e entregas;</li>\n<li>Respeito à diversidade e trabalho com foco inclusivo.</li>\n</ul>\n<p> </p>\n<p>✨ <strong>O que Oferecemos:</strong></p>\n<ul>\n<li>Ambiente inovador e colaborativo;</li>\n<li>Oportunidades de crescimento e desenvolvimento profissional;</li>\n<li>Participação em projetos desafiadores;</li>\n<li>Salário competitivo e benefícios atrativos.</li>\n</ul>\n<p> </p>\n<p>Venha fazer parte da <strong>Made4it</strong> e contribua para nossa missão de transformar a tecnologia em toda a América Latina.</p>",
+   "currentState": "em_andamento",
+   "referenceId": 185436,
+   "companyName": "MADE4NOC SOLUCOES EM TI LTDA",
+   "companyLogo": "https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/dados_processo_seletivo/logo_empresa/193334/Made4it Variante.png",
+   "state": {
+    "id": 21,
+    "name": "Paraná",
+    "code": "PR"
+   },
+   "city": {
+    "id": 3929,
+    "name": "Apucarana",
+    "stateId": 21
+   },
+   "address": {
+    "id": 112314315,
+    "neighborhood": "Barra Funda",
+    "number": "800",
+    "latitude": null,
+    "longitude": null,
+    "city": {
+     "id": 3929,
+     "name": "Apucarana",
+     "stateId": 21
+    },
+    "state": {
+     "id": 21,
+     "name": "Paraná",
+     "code": "PR"
+    },
+    "country": {
+     "id": 30,
+     "name": "Brasil",
+     "code": "BR"
+    },
+    "zipCode": "86800-605",
+    "streetAddress": "Avenida Curitiba",
+    "foreignCity": null,
+    "foreignState": null,
+    "additionalInformation": null
+   },
+   "slug": "made4it",
+   "redirectLink": "https://made4it./vacancies/951012?origem=portal",
+   "type": "externa",
+   "isHiddenJob": false,
+   "homeOffice": false,
+   "jobType": "presencial",
+   "openPositions": 1,
+   "salary": {
+    "type": "simple",
+    "showRangeToApplicant": true,
+    "initialRange": 0,
+    "finalRange": 0,
+    "negotiable": false
+   },
+   "phases": [
+    {
+     "id": 4434302,
+     "name": "ANÁLISE DE CURRÍCULO",
+     "type": "fase_1",
+     "index": 0,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434303,
+     "name": "ANÁLISE COMPORTAMENTAL",
+     "type": "fase_2",
+     "index": 1,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434304,
+     "name": "PRÉ-ADMISSÃO",
+     "type": "pre_admissao",
+     "index": 2,
+     "show": true,
+     "description": null
+    }
+   ],
+   "hasSpecialNeeds": false,
+   "peopleWithDisabilities": false,
+   "disabilityType": null,
+   "pcdOnly": false,
+   "videoUrl": null,
+   "seniority": [],
+   "recruitmentContractType": [],
+   "benefits": [],
+   "language": [],
+   "hardSkills": [],
+   "education": [],
+   "createdAt": "2026-11-10",
+   "availablePositions": 1,
+   "affirmative": [],
+   "occupationAreas": [
+    {
+     "id": 349584,
+     "name": "Tecnologia",
+     "level": null
+    }
+   ],
+   "isGoogleForJobsEnabled": false,
+   "requiredFields": [],
+   "receivingResume": true,
+   "showSkillsLevel": true,
+   "showModality": true,
+   "shift": [
+    {
+     "id": 41,
+     "name": "Noite",
+     "level": null
+    }
+   ],
+   "date": {
+    "due": "2026-11-10",
+    "show": false
+   },
+   "preApplyEnabled": false,
+   "startSolidesEnabled": false,
+   "publishers": null,
+   "isDisabled": false
+  },
+  "fetched_at": "2026-11-10T19:54:25.010169Z",
+  "content_hash": "605d47970ee10d8d8832af1efbb8de6553b5015be3821b28816ac15e2e6c8fda"
+ },
+ {
+  "source_slug": "solides",
+  "board_token": "https://vagas.solides.com.br",
+  "external_id": "950945",
+  "payload": {
+   "killerQuestions": [
+    {
+     "_id": "6af3747caffa3b03bf029edf",
+     "id": 103308,
+     "question": "Possui alguma deficiência? Se sim, especifique.",
+     "type": "text",
+     "eliminatory": false,
+     "order": 0,
+     "alternatives": []
+    },
+    {
+     "_id": "6af3747caffa3b03bf029ee0",
+     "id": 103309,
+     "question": "Possui algum parentesco na empresa? Se sim, especifique o nome do colaborador.",
+     "type": "text",
+     "eliminatory": false,
+     "order": 1,
+     "alternatives": []
+    },
+    {
+     "_id": "6af3747caffa3b03bf029ee1",
+     "id": 103310,
+     "question": "Já participou de processo seletivo em nossa organização? Se sim para qual cargo?",
+     "type": "text",
+     "eliminatory": false,
+     "order": 2,
+     "alternatives": []
+    },
+    {
+     "_id": "6af3747caffa3b03bf029ee2",
+     "id": 103311,
+     "question": "Você já trabalhou em ambientes da área da saúde, como hospitais, clínicas ou laboratórios?",
+     "type": "text",
+     "eliminatory": false,
+     "order": 3,
+     "alternatives": []
+    }
+   ],
+   "id": 950945,
+   "title": "FLEBOTOMISTA LABCRUZ - Linhares - ES ",
+   "description": "<p>Responsável pela realização de coletas de amostras biológicas, principalmente sangue, garantindo a correta identificação do paciente, a qualidade e a segurança dos procedimentos, de acordo com as normas de biossegurança e os padrões de atendimento humanizado do laboratório.</p>\n<p> </p>\n<p>Realizar coleta de amostras biológicas; identificar, acondicionar e encaminhar corretamente as amostras para análise; conferir dados e solicitações de exames; preparar materiais e equipamentos para coleta; orientar os pacientes quanto aos procedimentos; registrar as informações no sistema; manter a organização e higienização do local de trabalho; seguir os protocolos de biossegurança, qualidade e segurança do paciente.</p>",
+   "currentState": "em_andamento",
+   "referenceId": 211711,
+   "companyName": "LABMAIA LABORATORIO LTDA",
+   "companyLogo": "https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/empresa/logo/211711/WhatsApp_Image_2026-06-22_at_10.57.20.jpeg",
+   "state": {
+    "id": 18,
+    "name": "Espírito Santo",
+    "code": "ES"
+   },
+   "city": {
+    "id": 3140,
+    "name": "Linhares",
+    "stateId": 18
+   },
+   "address": {
+    "id": 112308480,
+    "neighborhood": "Centro",
+    "number": "650",
+    "latitude": null,
+    "longitude": null,
+    "city": {
+     "id": 3140,
+     "name": "Linhares",
+     "stateId": 18
+    },
+    "state": {
+     "id": 18,
+     "name": "Espírito Santo",
+     "code": "ES"
+    },
+    "country": {
+     "id": 30,
+     "name": "Brasil",
+     "code": "BR"
+    },
+    "zipCode": "29900-206",
+    "streetAddress": "Av. Nicola Biancardi",
+    "foreignCity": null,
+    "foreignState": null,
+    "additionalInformation": null
+   },
+   "slug": "laboratoriomaia",
+   "redirectLink": "https://laboratoriomaia./vacancies/950945?origem=portal",
+   "type": "externa",
+   "isHiddenJob": false,
+   "homeOffice": false,
+   "jobType": "presencial",
+   "openPositions": 1,
+   "salary": {
+    "type": "simple",
+    "showRangeToApplicant": true,
+    "initialRange": 0,
+    "finalRange": 0,
+    "negotiable": false
+   },
+   "phases": [
+    {
+     "id": 4434037,
+     "name": "ANÁLISE DE CURRÍCULO",
+     "type": "fase_1",
+     "index": 0,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434039,
+     "name": "ANÁLISE COMPORTAMENTAL",
+     "type": "fase_2",
+     "index": 1,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434038,
+     "name": "PERGUNTAS CUSTOMIZADAS",
+     "type": "fase_3",
+     "index": 2,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434041,
+     "name": "ENTREVISTA COM O RH E SUPERVISOR",
+     "type": "customizado",
+     "index": 3,
+     "show": false,
+     "description": ""
+    },
+    {
+     "id": 4434040,
+     "name": "PRÉ-ADMISSÃO",
+     "type": "pre_admissao",
+     "index": 4,
+     "show": true,
+     "description": null
+    }
+   ],
+   "hasSpecialNeeds": false,
+   "peopleWithDisabilities": false,
+   "disabilityType": null,
+   "pcdOnly": false,
+   "videoUrl": null,
+   "seniority": [
+    {
+     "id": 4,
+     "name": "Junior",
+     "level": null
+    }
+   ],
+   "recruitmentContractType": [
+    {
+     "id": 10,
+     "name": "CLT",
+     "level": null
+    }
+   ],
+   "benefits": [
+    {
+     "id": 301333,
+     "name": "Seguro de vida",
+     "level": null
+    },
+    {
+     "id": 301334,
+     "name": "Vale alimentação",
+     "level": null
+    },
+    {
+     "id": 301338,
+     "name": "Vale transporte",
+     "level": null
+    },
+    {
+     "id": 301308,
+     "name": "Assistência médica",
+     "level": null
+    }
+   ],
+   "language": [],
+   "hardSkills": [
+    {
+     "id": 1961271,
+     "name": "Compromisso com resultados",
+     "level": 2
+    },
+    {
+     "id": 2040900,
+     "name": "Pacote Office",
+     "level": 3
+    },
+    {
+     "id": 1961275,
+     "name": "Capacidade de trabalho em equipe",
+     "level": 3
+    }
+   ],
+   "education": [
+    {
+     "id": 44,
+     "name": "Ensino Médio",
+     "level": null
+    },
+    {
+     "id": 429327,
+     "name": "Ensino Técnico",
+     "level": null
+    }
+   ],
+   "createdAt": "2026-11-10",
+   "availablePositions": 1,
+   "affirmative": [],
+   "occupationAreas": [
+    {
+     "id": 349587,
+     "name": "Saúde",
+     "level": null
+    }
+   ],
+   "isGoogleForJobsEnabled": true,
+   "requiredFields": [
+    "killerQuestions"
+   ],
+   "receivingResume": true,
+   "showSkillsLevel": true,
+   "showModality": true,
+   "shift": [
+    {
+     "id": 39,
+     "name": "Manhã",
+     "level": null
+    }
+   ],
+   "date": {
+    "due": "2027-03-31",
+    "show": false
+   },
+   "preApplyEnabled": false,
+   "startSolidesEnabled": false,
+   "publishers": null,
+   "isDisabled": false
+  },
+  "fetched_at": "2026-11-10T19:54:25.010169Z",
+  "content_hash": "202487e79936974a3b2e1bb85c3fc400f4bd16c1f3074452846c06ae474c74a5"
+ },
+ {
+  "source_slug": "solides",
+  "board_token": "https://vagas.solides.com.br",
+  "external_id": "950948",
+  "payload": {
+   "killerQuestions": [
+    {
+     "_id": "6af3747caffa3b03bf029efe",
+     "id": 103313,
+     "question": "Possui disponibilidade para trabalhar presencialmente no Centro de Distribuição no turno noturno?",
+     "type": "single",
+     "eliminatory": true,
+     "order": 0,
+     "alternatives": [
+      {
+       "_id": "6af3747caffa3b03bf029eff",
+       "id": 112263,
+       "text": "Sim"
+      },
+      {
+       "_id": "6af3747caffa3b03bf029f00",
+       "id": 112264,
+       "text": "Não"
+      }
+     ]
+    },
+    {
+     "_id": "6af3747caffa3b03bf029f01",
+     "id": 103314,
+     "question": "Você possui conhecimento ou experiência em conferência de cargas, notas fiscais e processos de recebimento e expedição?",
+     "type": "single",
+     "eliminatory": false,
+     "order": 1,
+     "alternatives": [
+      {
+       "_id": "6af3747caffa3b03bf029f02",
+       "id": 112265,
+       "text": "Sim"
+      },
+      {
+       "_id": "6af3747caffa3b03bf029f03",
+       "id": 112266,
+       "text": "Não"
+      }
+     ]
+    },
+    {
+     "_id": "6af3747caffa3b03bf029f04",
+     "id": 103315,
+     "question": "Você já realizou inventários ou auditorias de mercadorias?",
+     "type": "single",
+     "eliminatory": false,
+     "order": 2,
+     "alternatives": [
+      {
+       "_id": "6af3747caffa3b03bf029f05",
+       "id": 112267,
+       "text": "Sim"
+      },
+      {
+       "_id": "6af3747caffa3b03bf029f06",
+       "id": 112268,
+       "text": "Não possuo experiência"
+      }
+     ]
+    },
+    {
+     "_id": "6af3747caffa3b03bf029f07",
+     "id": 103316,
+     "question": "Possui conhecimento em controle de acesso e segurança patrimonial?",
+     "type": "single",
+     "eliminatory": true,
+     "order": 3,
+     "alternatives": [
+      {
+       "_id": "6af3747caffa3b03bf029f08",
+       "id": 112269,
+       "text": "Sim"
+      },
+      {
+       "_id": "6af3747caffa3b03bf029f09",
+       "id": 112270,
+       "text": "Não"
+      },
+      {
+       "_id": "6af3747caffa3b03bf029f0a",
+       "id": 112271,
+       "text": "Não possuo conhecimento."
+      }
+     ]
+    },
+    {
+     "_id": "6af3747caffa3b03bf029f0b",
+     "id": 103317,
+     "question": "Possui conhecimento em Excel e utilização de sistemas para registro de informações e elaboração de relatórios?",
+     "type": "single",
+     "eliminatory": true,
+     "order": 4,
+     "alternatives": [
+      {
+       "_id": "6af3747caffa3b03bf029f0c",
+       "id": 112272,
+       "text": "Sim"
+      },
+      {
+       "_id": "6af3747caffa3b03bf029f0d",
+       "id": 112273,
+       "text": "Não"
+      }
+     ]
+    }
+   ],
+   "id": 950948,
+   "title": "ASSISTENTE DE PREVENÇÃO DE PERDAS",
+   "description": "<h2>Principais atividades</h2>\n<ul>\n<li>\n<p>Realizar abertura e fechamento de docas;</p>\n</li>\n<li>\n<p>Realizar auditorias de recebimento e expedição;</p>\n</li>\n<li>\n<p>Inserir informações em planilhas e sistemas;</p>\n</li>\n<li>\n<p>Realizar vistorias manuais e visuais;</p>\n</li>\n<li>\n<p>Realizar rondas internas no Centro de Distribuição;</p>\n</li>\n<li>\n<p>Reportar divergências nos processos;</p>\n</li>\n<li>\n<p>Conferir cargas e notas fiscais;</p>\n</li>\n<li>\n<p>Realizar auditorias em caminhões e inventários de mercadorias;</p>\n</li>\n<li>\n<p>Disseminar a cultura de segurança na área estabelecida;</p>\n</li>\n<li>\n<p>Realizar os processos de segurança dentro da área;</p>\n</li>\n<li>\n<p>Acompanhar as rotinas operacionais da empresa;</p>\n</li>\n<li>\n<p>Controlar, checar e validar os acessos à unidade;</p>\n</li>\n<li>\n<p>Manusear os sistemas de segurança pertinentes ao local;</p>\n</li>\n<li>\n<p>Realizar cadastros e liberações de pessoas;</p>\n</li>\n<li>\n<p>Fiscalizar a entrada e saída de clientes, colaboradores e produtos no Centro de Distribuição;</p>\n</li>\n<li>\n<p>Elaborar planilhas e relatórios de ocorrências para manutenção de histórico e reporte ao superior imediato;</p>\n</li>\n<li>\n<p>Executar checklists de Segurança Patrimonial, identificando e registrando o descumprimento das normas;</p>\n</li>\n<li>\n<p>Cumprir as normas de segurança e os procedimentos administrativos do Centro de Distribuição, zelando pelo patrimônio físico e pessoal;</p>\n</li>\n<li>\n<p>Propagar boas práticas de Prevenção de Perdas junto à equipe.</p>\n</li>\n</ul>\n<h2>Requisitos</h2>\n<ul>\n<li>\n<p>Ensino médio completo;</p>\n</li>\n<li>\n<p>Experiência mínima de 6 meses, sendo desejável 1 ano de vivência na área de segurança e vigilância, processos e controles ambientais e patrimoniais.</p>\n</li>\n</ul>\n<p><strong>Conhecimentos:</strong></p>\n<ul>\n<li>\n<p>Administração de Inventários;</p>\n</li>\n<li>\n<p>Conferência de Carga e Descarga;</p>\n</li>\n<li>\n<p>Métodos de Auditoria;</p>\n</li>\n<li>\n<p>Normas de Segurança do Trabalho (Portaria 3.214/78);</p>\n</li>\n<li>\n<p>Rotinas Administrativas.</p>\n</li>\n</ul>",
+   "currentState": "em_andamento",
+   "referenceId": 182875,
+   "companyName": "NOVA CASA DISTRIBUIDORA DE MATERIAIS PARA CONSTRUCAO – MA",
+   "companyLogo": "https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/dados_processo_seletivo/logo_empresa/190791/Logo 250x250.jpg",
+   "state": {
+    "id": 8,
+    "name": "Maranhão",
+    "code": "MA"
+   },
+   "city": {
+    "id": 636,
+    "name": "São Luís",
+    "stateId": 8
+   },
+   "address": {
+    "id": 112308650,
+    "neighborhood": "Maracanã",
+    "number": "",
+    "latitude": null,
+    "longitude": null,
+    "city": {
+     "id": 636,
+     "name": "São Luís",
+     "stateId": 8
+    },
+    "state": {
+     "id": 8,
+     "name": "Maranhão",
+     "code": "MA"
+    },
+    "country": {
+     "id": 30,
+     "name": "Brasil",
+     "code": "BR"
+    },
+    "zipCode": "65095-602",
+    "streetAddress": "Avenida Engenheiro Emiliano Macieira",
+    "foreignCity": null,
+    "foreignState": null,
+    "additionalInformation": ""
+   },
+   "slug": "novacasadistribuidoramaranhao",
+   "redirectLink": "https://novacasadistribuidoramaranhao./vacancies/950948?origem=portal",
+   "type": "externa",
+   "isHiddenJob": false,
+   "homeOffice": false,
+   "jobType": "presencial",
+   "openPositions": 1,
+   "salary": {
+    "type": "simple",
+    "showRangeToApplicant": true,
+    "initialRange": 0,
+    "finalRange": 2175.07,
+    "negotiable": false
+   },
+   "phases": [
+    {
+     "id": 4434050,
+     "name": "ANÁLISE DE CURRÍCULO",
+     "type": "fase_1",
+     "index": 0,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434051,
+     "name": "ANÁLISE COMPORTAMENTAL",
+     "type": "fase_2",
+     "index": 1,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434053,
+     "name": "PROVAS",
+     "type": "fase_4",
+     "index": 2,
+     "show": true,
+     "description": null
+    },
+    {
+     "id": 4434054,
+     "name": "AVALIAÇÃO TÉCNICA",
+     "type": "customizado",
+     "index": 3,
+     "show": false,
+     "description": ""
+    },
+    {
+     "id": 4434055,
+     "name": "ENTREVISTA COM O GESTOR",
+     "type": "customizado",
+     "index": 4,
+     "show": true,
+     "description": ""
+    },
+    {
+     "id": 4434052,
+     "name": "PRÉ-ADMISSÃO",
+     "type": "pre_admissao",
+     "index": 5,
+     "show": true,
+     "description": null
+    }
+   ],
+   "hasSpecialNeeds": false,
+   "peopleWithDisabilities": true,
+   "disabilityType": null,
+   "pcdOnly": false,
+   "videoUrl": null,
+   "seniority": [],
+   "recruitmentContractType": [
+    {
+     "id": 10,
+     "name": "CLT",
+     "level": null
+    }
+   ],
+   "benefits": [
+    {
+     "id": 301184,
+     "name": "Adiantamento de salário",
+     "level": null
+    },
+    {
+     "id": 301308,
+     "name": "Assistência médica",
+     "level": null
+    },
+    {
+     "id": 301309,
+     "name": "Assistência odontológica",
+     "level": null
+    },
+    {
+     "id": 301317,
+     "name": "Cafe da manhã",
+     "level": null
+    },
+    {
+     "id": 301320,
+     "name": "Cesta de natal",
+     "level": null
+    },
+    {
+     "id": 301332,
+     "name": "Refeitório",
+     "level": null
+    }
+   ],
+   "language": [],
+   "hardSkills": [],
+   "education": [
+    {
+     "id": 44,
+     "name": "Ensino Médio",
+     "level": null
+    }
+   ],
+   "createdAt": "2026-11-10",
+   "availablePositions": 1,
+   "affirmative": [
+    {
+     "id": 351200,
+     "name": "Vaga afirmativa para Pessoas LGBTQIAP+",
+     "level": null
+    },
+    {
+     "id": 351201,
+     "name": "Vaga afirmativa para Pessoas Pretas",
+     "level": null
+    },
+    {
+     "id": 351203,
+     "name": "Vaga afirmativa para Indígenas",
+     "level": null
+    },
+    {
+     "id": 402110,
+     "name": "Vaga afirmativa para Pessoas com +40 anos",
+     "level": null
+    },
+    {
+     "id": 351202,
+     "name": "Vaga afirmativa para Mulheres",
+     "level": null
+    }
+   ],
+   "occupationAreas": [
+    {
+     "id": 349586,
+     "name": "Logística",
+     "level": null
+    }
+   ],
+   "isGoogleForJobsEnabled": true,
+   "requiredFields": [
+    "address",
+    "street",
+    "district",
+    "city",
+    "professionalExperiences",
+    "academicEducations",
+    "indentify",
+    "killerQuestions"
+   ],
+   "receivingResume": true,
+   "showSkillsLevel": true,
+   "showModality": true,
+   "shift": [
+    {
+     "id": 41,
+     "name": "Noite",
+     "level": null
+    }
+   ],
+   "date": {
+    "due": "2026-12-10",
+    "show": false
+   },
+   "preApplyEnabled": false,
+   "startSolidesEnabled": false,
+   "publishers": null,
+   "isDisabled": false
+  },
+  "fetched_at": "2026-11-10T19:54:25.010169Z",
+  "content_hash": "bf9cf362894bd53cc0b367e2420f2f6c0c4a45990ee8cabb2a09369d63d43c21"
+ }
+]

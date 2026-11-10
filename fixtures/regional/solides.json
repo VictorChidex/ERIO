@@ -1,0 +1,275 @@
+{
+ "totalPages": 23598,
+ "currentPage": 1,
+ "count": 70792,
+ "data": [
+  {
+   "killerQuestions": [],
+   "id": 951012,
+   "title": "Auxiliar de Monitoramento - (Cópia)",
+   "description": "<p>🚀 <strong>Auxiliar de Monitoramento</strong> 🚀</p>\n<p> </p>\n<p><strong>Made4it</strong> é uma empresa líder em soluções tecnológicas, dedicada a fornecer softwares e serviços de alta qualidade para clientes em toda a América Latina. Estamos buscando um <strong>Auxiliar de Monitoramento</strong> para fazer parte do nosso time. Se você é apaixonado por tecnologia, tem habilidade para solucionar problemas e deseja atuar em um ambiente desafiador e colaborativo, esta é a sua oportunidade!</p>\n<p> </p>\n<p>📍 <strong>Localização:</strong> Apucarana - PR - Presencial</p>\n<p>💼 <strong>Cargo:</strong> Auxiliar de Monitoramento</p>\n<p>📅 <strong>Data de Início:</strong> Imediata</p>\n<p>🕖<strong> Horá",
+   "currentState": "em_andamento",
+   "referenceId": 185436,
+   "companyName": "MADE4NOC SOLUCOES EM TI LTDA",
+   "companyLogo": "https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/dados_processo_seletivo/logo_empresa/193334/Made4it Variante.png",
+   "state": {
+    "id": 21,
+    "name": "Paraná",
+    "code": "PR"
+   },
+   "city": {
+    "id": 3929,
+    "name": "Apucarana",
+    "stateId": 21
+   },
+   "address": {
+    "id": 112314315,
+    "neighborhood": "Barra Funda",
+    "number": "800",
+    "latitude": null,
+    "longitude": null,
+    "city": {
+     "id": 3929,
+     "name": "Apucarana",
+     "stateId": 21
+    },
+    "state": {
+     "id": 21,
+     "name": "Paraná",
+     "code": "PR"
+    },
+    "country": {
+     "id": 30,
+     "name": "Brasil",
+     "code": "BR"
+    },
+    "zipCode": "86800-605",
+    "streetAddress": "Avenida Curitiba",
+    "foreignCity": null,
+    "foreignState": null,
+    "additionalInformation": null
+   },
+   "slug": "made4it",
+   "redirectLink": "https://made4it./vacancies/951012?origem=portal",
+   "type": "externa",
+   "isHiddenJob": false,
+   "homeOffice": false,
+   "jobType": "presencial",
+   "openPositions": 1,
+   "salary": {
+    "type": "simple",
+    "showRangeToApplicant": true,
+    "initialRange": 0,
+    "finalRange": 0,
+    "negotiable": false
+   },
+   "phases": [],
+   "hasSpecialNeeds": false,
+   "peopleWithDisabilities": false,
+   "disabilityType": null,
+   "pcdOnly": false,
+   "videoUrl": null,
+   "seniority": [],
+   "recruitmentContractType": [],
+   "benefits": [],
+   "language": [],
+   "hardSkills": [],
+   "education": [],
+   "createdAt": "2026-11-10",
+   "availablePositions": 1,
+   "affirmative": [],
+   "occupationAreas": [
+    {
+     "id": 349584,
+     "name": "Tecnologia",
+     "level": null
+    }
+   ],
+   "isGoogleForJobsEnabled": false,
+   "requiredFields": [],
+   "receivingResume": true,
+   "showSkillsLevel": true,
+   "showModality": true,
+   "shift": [
+    {
+     "id": 41,
+     "name": "Noite",
+     "level": null
+    }
+   ],
+   "date": {
+    "due": "2026-11-10",
+    "show": false
+   },
+   "preApplyEnabled": false,
+   "startSolidesEnabled": false,
+   "publishers": null,
+   "isDisabled": false
+  },
+  {
+   "killerQuestions": [],
+   "id": 950945,
+   "title": "FLEBOTOMISTA LABCRUZ - Linhares - ES ",
+   "description": "<p>Responsável pela realização de coletas de amostras biológicas, principalmente sangue, garantindo a correta identificação do paciente, a qualidade e a segurança dos procedimentos, de acordo com as normas de biossegurança e os padrões de atendimento humanizado do laboratório.</p>\n<p> </p>\n<p>Realizar coleta de amostras biológicas; identificar, acondicionar e encaminhar corretamente as amostras para análise; conferir dados e solicitações de exames; preparar materiais e equipamentos para coleta; orientar os pacientes quanto aos procedimentos; registrar as informações no sistema; manter a organização e higienização do local de trabalho; seguir os protocolos de biossegurança, qualidade e segura",
+   "currentState": "em_andamento",
+   "referenceId": 211711,
+   "companyName": "LABMAIA LABORATORIO LTDA",
+   "companyLogo": "https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/empresa/logo/211711/WhatsApp_Image_2026-06-22_at_10.57.20.jpeg",
+   "state": {
+    "id": 18,
+    "name": "Espírito Santo",
+    "code": "ES"
+   },
+   "city": {
+    "id": 3140,
+    "name": "Linhares",
+    "stateId": 18
+   },
+   "address": {
+    "id": 112308480,
+    "neighborhood": "Centro",
+    "number": "650",
+    "latitude": null,
+    "longitude": null,
+    "city": {
+     "id": 3140,
+     "name": "Linhares",
+     "stateId": 18
+    },
+    "state": {
+     "id": 18,
+     "name": "Espírito Santo",
+     "code": "ES"
+    },
+    "country": {
+     "id": 30,
+     "name": "Brasil",
+     "code": "BR"
+    },
+    "zipCode": "29900-206",
+    "streetAddress": "Av. Nicola Biancardi",
+    "foreignCity": null,
+    "foreignState": null,
+    "additionalInformation": null
+   },
+   "slug": "laboratoriomaia",
+   "redirectLink": "https://laboratoriomaia./vacancies/950945?origem=portal",
+   "type": "externa",
+   "isHiddenJob": false,
+   "homeOffice": false,
+   "jobType": "presencial",
+   "openPositions": 1,
+   "salary": {
+    "type": "simple",
+    "showRangeToApplicant": true,
+    "initialRange": 0,
+    "finalRange": 0,
+    "negotiable": false
+   },
+   "phases": [],
+   "hasSpecialNeeds": false,
+   "peopleWithDisabilities": false,
+   "disabilityType": null,
+   "pcdOnly": false,
+   "videoUrl": null,
+   "seniority": [
+    {
+     "id": 4,
+     "name": "Junior",
+     "level": null
+    }
+   ],
+   "recruitmentContractType": [
+    {
+     "id": 10,
+     "name": "CLT",
+     "level": null
+    }
+   ],
+   "benefits": [
+    {
+     "id": 301333,
+     "name": "Seguro de vida",
+     "level": null
+    },
+    {
+     "id": 301334,
+     "name": "Vale alimentação",
+     "level": null
+    },
+    {
+     "id": 301338,
+     "name": "Vale transporte",
+     "level": null
+    },
+    {
+     "id": 301308,
+     "name": "Assistência médica",
+     "level": null
+    }
+   ],
+   "language": [],
+   "hardSkills": [
+    {
+     "id": 1961271,
+     "name": "Compromisso com resultados",
+     "level": 2
+    },
+    {
+     "id": 2040900,
+     "name": "Pacote Office",
+     "level": 3
+    },
+    {
+     "id": 1961275,
+     "name": "Capacidade de trabalho em equipe",
+     "level": 3
+    }
+   ],
+   "education": [
+    {
+     "id": 44,
+     "name": "Ensino Médio",
+     "level": null
+    },
+    {
+     "id": 429327,
+     "name": "Ensino Técnico",
+     "level": null
+    }
+   ],
+   "createdAt": "2026-11-10",
+   "availablePositions": 1,
+   "affirmative": [],
+   "occupationAreas": [
+    {
+     "id": 349587,
+     "name": "Saúde",
+     "level": null
+    }
+   ],
+   "isGoogleForJobsEnabled": true,
+   "requiredFields": [
+    "killerQuestions"
+   ],
+   "receivingResume": true,
+   "showSkillsLevel": true,
+   "showModality": true,
+   "shift": [
+    {
+     "id": 39,
+     "name": "Manhã",
+     "level": null
+    }
+   ],
+   "date": {
+    "due": "2027-03-31",
+    "show": false
+   },
+   "preApplyEnabled": false,
+   "startSolidesEnabled": false,
+   "publishers": null,
+   "isDisabled": false
+  }
+ ]
+}

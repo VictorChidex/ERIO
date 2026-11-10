@@ -1,0 +1,71 @@
+[
+ {
+  "source_slug": "applitrack",
+  "board_token": "aldineisd",
+  "external_id": "3533",
+  "payload": {
+   "title": "General Maintenance-Nights",
+   "organisation": "Aldine ISD",
+   "fields": {
+    "Position Type": [
+     "Buildings/Properties/Trades/",
+     "General Maintenance"
+    ],
+    "Date Posted": [
+     "9/4/2026"
+    ],
+    "Location": [
+     "Bamberg Professional Development And Resource Ctr"
+    ]
+   },
+   "description": "<span class=\"normal\"><p>Please click the link to view the job description.&nbsp;</p></span><br />"
+  },
+  "fetched_at": "2026-11-10T19:54:50.076169Z",
+  "content_hash": "d9f03541e05dbead0be59e313d9dd5c2c768ebcb3e9f5129d177d8bcb7495b15"
+ },
+ {
+  "source_slug": "applitrack",
+  "board_token": "aldineisd",
+  "external_id": "3536",
+  "payload": {
+   "title": "High School Maintenance",
+   "organisation": "Aldine ISD",
+   "fields": {
+    "Position Type": [
+     "Buildings/Properties/Trades/",
+     "High School Maintenance"
+    ],
+    "Date Posted": [
+     "9/4/2026"
+    ]
+   },
+   "description": "<span class=\"normal\"><p>Please click the link to view the job description.&nbsp;</p><p>&nbsp;</p></span><br />"
+  },
+  "fetched_at": "2026-11-10T19:54:50.076169Z",
+  "content_hash": "20698d2dc4761758484449011e34e34637200d6bb5cbf2561ee603347b68709a"
+ },
+ {
+  "source_slug": "applitrack",
+  "board_token": "aldineisd",
+  "external_id": "3534",
+  "payload": {
+   "title": "HVAC Technician",
+   "organisation": "Aldine ISD",
+   "fields": {
+    "Position Type": [
+     "Buildings/Properties/Trades/",
+     "HVAC Technician"
+    ],
+    "Date Posted": [
+     "9/4/2026"
+    ],
+    "Location": [
+     "Bamberg Professional Development And Resource Ctr"
+    ]
+   },
+   "description": "<span class=\"normal\"><p>Please click the link to view the job description.</p></span><br />"
+  },
+  "fetched_at": "2026-11-10T19:54:50.076169Z",
+  "content_hash": "f317202277fdc61ca80546136e5b82cb1898a58bc62e6c4d035ca16dfda88014"
+ }
+]
