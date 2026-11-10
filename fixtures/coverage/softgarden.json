@@ -1,0 +1,137 @@
+[
+ {
+  "source_slug": "softgarden",
+  "board_token": "softgarden",
+  "external_id": "62349294",
+  "payload": {
+   "@type": "JobPosting",
+   "title": "Senior Account Executive (m/w/d) - SaaS Enterprise",
+   "url": "https://softgarden.career.softgarden.de/jobs/62349294/Senior-Account-Executive-m-w-d---SaaS-Enterprise/",
+   "datePosted": "2026-09-23T10:37:06.121+02:00",
+   "identifier": {
+    "name": "softgarden e-recruiting GmbH",
+    "@type": "PropertyValue",
+    "value": 62349294
+   },
+   "description": "<b>Deine Rolle</b>\n<ul><li>Du verantwortest den gesamten Sales Cycle für unsere Enterprise-Kunden, von der Discovery über Live-Demos bis zum erfolgreichen Vertragsabschluss.</li><li>Dein Fokus liegt auf Unternehmen mit mehr als 1.000 Mitarbeitenden, bei denen du komplexe Entscheidungsprozesse und mehrere Stakeholder erfolgreich steuerst.</li><li>Für deine Accounts entwickelst du individuelle Go-to-Market- und Account-Strategien, identifizierst Geschäftspotenziale und baust belastbare Beziehungen zu relevanten Entscheider:innen auf.</li><li>Du führst Discovery-Workshops, Produktpräsentationen und Verhandlungen auf Management- und Executive-Ebene und positionierst softgarden als strategischen Partner.</li><li>Gemeinsam mit BDRs, Pre-Sales, Customer Success und Media Sales orchestrierst du dein Account Team und sorgst für eine erfolgreiche Entwicklung deiner Opportunities.</li><li>Du verantwortest den Aufbau und die Weiterentwicklung deiner Pipeline durch gezielte Outbound-Aktivitäten sowie ein konsequentes Opportunity Management in Salesforce.</li><li>Forecasts, Pipeline-Hygiene und eine saubere CRM-Dokumentation gehören für dich ebenso zum professionellen Enterprise-Vertrieb wie eine strukturierte Übergabe an das Account Management nach Vertragsabschluss.</li></ul>\n\n<b>Das bringst du mit</b>\n<ul><li>Du verfügst über mindestens vier Jahre Erfahrung im SaaS-Vertrieb oder in einer vergleichbaren B2B-Sales-Rolle mit Verantwortung für komplexe Verkaufsprozesse.</li><li>Idealerweise hast du bereits Enterprise-Kunden mit 1.000+ Mitarbeitenden betreut und dabei mit unterschiedlichen Stakeholdern bis auf Management- oder C-Level-Ebene zusammengearbeitet.</li><li>Discovery, Value Selling, Stakeholder Mapping und die Führung komplexer Sales Cycles gehören zu deinem vertrieblichen Handwerkszeug.</li><li>Du verstehst es, neue Geschäftsmöglichkeiten zu identifizieren, Beziehungen aufzubauen und Opportunities erfolgreich bis zum Abschluss zu entwickeln.</li><li>Erfahrung mit Salesforce oder vergleichbaren CRM-Systemen sowie ein datengetriebener Umgang mit Pipeline, Forecasts und Vertriebskennzahlen runden dein Profil ab.</li><li>Verhandlungssichere Deutsch- und Englischkenntnisse ermöglichen dir den professionellen Austausch mit nationalen und internationalen Ansprechpartner:innen.</li></ul>\n\n<b>Damit können wir dich überzeugen</b>\n<p>Kaffee und kostenloses Obst im Büro sind toll, und ja, auch das haben wir.&nbsp;<strong>Aber seien wir mal ehrlich, darauf kommt es nicht wirklich an.</strong>&nbsp;Bei softgarden leben wir eine offene Unternehmenskultur, in der ...</p><ul><li>die Arbeit sich nach dem Privatleben richtet und nicht umgekehrt</li><li>faire Kommunikation und Feedback nicht nur irgendwelche Buzzwords sind</li><li>flexible Arbeitszeiten und Home-Office selbstverständlich sind</li></ul><p>Aber, das Andere haben wir natürlich auch ...</p><ul><li>Ticket für öffentliche Verkehrsmittel oder ein Job Fahrrad</li><li>Betriebliche Altersvorsorge</li><li>Zugang zu Corporate Benefits</li><li>30 Tage Urlaub bei einer 5 Tage Woche</li><li>Vergünstigte Wellpass-Mitgliedschaft</li><li>Ein Geschenk zu deinem Geburtstag und Firmenjubiläum</li><li>Moderne Hardware (Mac oder Windows – deine Wahl)&nbsp;</li><li>Teamevents, wie unsere Weihnachtsfeier, unsere organisierten Mittagessen und After-Work Drinks&nbsp;an unseren Standorten in Berlin und Saarbrücken</li><li>Ein tolles, zentrales Büro in Berlin</li></ul><p>Klingt das nach dir? Dann freuen wir uns von dir über das Online-Bewerbungsformular zu hören.<br><br><strong>Dein Kontakt</strong><br>Tom Kleinschmidt<br>Talent Acquisition Manager</p>\n\n",
+   "employmentType": "FULL_TIME",
+   "hiringOrganization": {
+    "@id": "https://softgarden.career.softgarden.de",
+    "url": "https://softgarden.career.softgarden.de",
+    "logo": "https://pcw-cdn.softgarden.de/uploads/softgarden/de/widget/header/design/image_bnz25638mpoergdj?timestamp=1779907152298",
+    "name": "softgarden e-recruiting GmbH",
+    "@type": "Organization",
+    "sameAs": "https://softgarden.career.softgarden.de",
+    "aggregateRating": {
+     "bestRating": 5,
+     "ratingCount": 448,
+     "ratingValue": 4.68,
+     "worstRating": 1
+    }
+   },
+   "jobLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "postalCode": "10789",
+     "addressRegion": "Berlin",
+     "streetAddress": "Tauentzienstraße",
+     "addressCountry": "DE",
+     "addressLocality": "Berlin"
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:38:31.265760Z",
+  "content_hash": "f4bb92a8056da2b0c316c548132037d3fa3c0db351b11df89757860b2e00a041"
+ },
+ {
+  "source_slug": "softgarden",
+  "board_token": "softgarden",
+  "external_id": "63710444",
+  "payload": {
+   "@type": "JobPosting",
+   "title": "Senior Key Account Manager (m/w/d) – Media & Job Ad Sales",
+   "url": "https://softgarden.career.softgarden.de/jobs/63710444/Senior-Key-Account-Manager-m-w-d-%E2%80%93-Media-Job-Ad-Sales/",
+   "datePosted": "2026-08-24T13:19:17.966+02:00",
+   "identifier": {
+    "name": "softgarden e-recruiting GmbH",
+    "@type": "PropertyValue",
+    "value": 63710444
+   },
+   "description": "<b>Deine Rolle</b>\n<p>Als erfahrene:r Key Account Manager:in übernimmst du die strategische Verantwortung für unsere wichtigsten Bestandskunden und entwickelst gezielt neue, langfristige Geschäftsbeziehungen auf Entscheider-Ebene. Du agierst als zentrale Ansprechperson für komplexe Kundenanforderungen und steuerst maßgeschneiderte Recruiting- und Employer-Branding-Lösungen von der Konzeption bis zur Umsetzung.</p><ul><li>Du betreust und baust dein eigenes Key Account Portfolio aus und berätst Entscheider:innen auf HR‑Leitungs‑, und C‑Level-Ebene.</li><li>Du erstellst individuelle Angebote und führst Vertragsverhandlungen bis zum erfolgreichen Abschluss.</li><li>Du identifizierst und erschließt neue Umsatzpotenziale innerhalb deiner Key Accounts und entwickelst bestehende Kund:innen kontinuierlich weiter.</li><li>Die Entwicklung strategischer Recruiting‑Konzepte (Jobbörsen, Social Media, Performance Recruiting) sowie die Planung und Steuerung von Stellenanzeigen‑Kampagnen über relevante Kanäle gehört ebenfalls zu deinem Aufgabenbereich.</li><li>Auch das Einbringen eigener Ideen zur Weiterentwicklung unserer Vertriebsstrategie ist ein wichtiger Bestandteil deiner Rolle.</li></ul>\n\n<b>Das bringst du mit</b>\n<ul><li>Du hast eine abgeschlossene kaufmännische Ausbildung oder ein Hochschulstudium mit betriebswirtschaftlichem Fokus.&nbsp;</li><li>Du hast mindestens 4 Jahre&nbsp;im Media‑ oder Jobbörsen‑Vertrieb (z. B. Job Ads, Performance Recruiting, Media Sales, HR‑Tech) gearbeitet.&nbsp;</li><li>Ein nachweisbarer Track Record im strategischen B2B-Key Account Management sowie eine ausgeprägte Abschlussstärke zeichnen dich aus.</li><li>Du überzeugst mit exzellenter Kommunikations- und Verhandlungskompetenz, verfügst über Deutschkenntnisse auf muttersprachlichem Niveau und gutes Englisch.</li><li>Der sichere Umgang mit CRM-Tools, idealerweise Salesforce, ist gegeben.</li><li>Du bist bereit, 3‑mal pro Woche im Co‑Working‑Space in Düsseldorf zu arbeiten und deine Kund:innen regional zu betreuen.</li></ul>\n\n<b>Damit können wir dich überzeugen</b>\n<p>Kaffee und kostenloses Obst im Büro sind toll, und ja, auch das haben wir.&nbsp;<strong>Aber seien wir mal ehrlich, darauf kommt es nicht wirklich an.</strong>&nbsp;Bei softgarden leben wir eine offene Unternehmenskultur, in der ...</p><ul><li>die Arbeit sich nach dem Privatleben richtet und nicht umgekehrt</li><li>faire Kommunikation und Feedback nicht nur irgendwelche Buzzwords sind</li><li>flexible Arbeitszeiten und Home-Office selbstverständlich sind</li></ul><p>Aber, das Andere haben wir natürlich auch ...</p><ul><li>Ticket für öffentliche Verkehrsmittel oder ein Job Fahrrad</li><li>Betriebliche Altersvorsorge</li><li>Zugang zu Corporate Benefits</li><li>30 Tage Urlaub bei einer 5 Tage Woche</li><li>Vergünstigte Wellpass-Mitgliedschaft</li><li>Ein Geschenk zu deinem Geburtstag und Firmenjubiläum</li><li>Moderne Hardware</li><li>Teamevents sowie organisierten Mittagessen und After-Work Drinks an unseren Standorten in Berlin und Saarbrücken</li></ul><p>Klingt das nach dir? Dann freuen wir uns von dir über das Online-Bewerbungsformular zu hören.&nbsp;</p><p><strong>Dein Kontakt<br></strong>Tom Kleinschmidt<br>Talent Acquisition Manager</p>\n\n",
+   "employmentType": "FULL_TIME",
+   "hiringOrganization": {
+    "@id": "https://softgarden.career.softgarden.de",
+    "url": "https://softgarden.career.softgarden.de",
+    "logo": "https://pcw-cdn.softgarden.de/uploads/softgarden/de/widget/header/design/image_bnz25638mpoergdj?timestamp=1779907152298",
+    "name": "softgarden e-recruiting GmbH",
+    "@type": "Organization",
+    "sameAs": "https://softgarden.career.softgarden.de",
+    "aggregateRating": {
+     "bestRating": 5,
+     "ratingCount": 444,
+     "ratingValue": 4.68,
+     "worstRating": 1
+    }
+   },
+   "jobLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "postalCode": "40",
+     "addressRegion": "Nordrhein-Westfalen",
+     "streetAddress": "-",
+     "addressCountry": "Deutschland",
+     "addressLocality": "Düsseldorf"
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:38:31.265760Z",
+  "content_hash": "351732749e445ec7456c7fbd2343aad2a932a58a51d8c776488236920d879c9c"
+ },
+ {
+  "source_slug": "softgarden",
+  "board_token": "softgarden",
+  "external_id": "64882191",
+  "payload": {
+   "@type": "JobPosting",
+   "title": "Product Partnerships Manager (m/w/d)",
+   "url": "https://softgarden.career.softgarden.de/jobs/64882191/Product-Partnerships-Manager-m-w-d-/",
+   "datePosted": "2026-07-22T08:29:28.175+02:00",
+   "identifier": {
+    "name": "softgarden e-recruiting GmbH",
+    "@type": "PropertyValue",
+    "value": 64882191
+   },
+   "description": "<b>Deine Rolle</b>\n<p><span style=\"color: black;\">Wir sind einer der wenigen Anbieter im DACH-Markt, die ein Bewerbermanagementsystem mit einer hauseigenen Media-Agentur vereinen. Dadurch entsteht ein besonders spannendes Partnerökosystem: auf der einen Seite unser ATS Marketplace mit digitalen Partnerangeboten, auf der anderen Seite strategische Media- und Jobbörsenpartnerschaften.</span></p><p><span style=\"color: black;\">In dieser Rolle hast du die Chance, beide Partnermanagement-Felder miteinander zu verbinden und weiterzuentwickeln. Du optimierst bestehende Partnerprofile und Listings im Marketplace, identifizierst Potenziale für Leadgenerierung und unterstützt die kommerzielle Aktivierung ausgewählter Media-Partner.</span></p><p><span style=\"color: black;\">Dabei geht es nicht um reine Partnerverwaltung, sondern darum, bestehende Partnerschaften sichtbarer, messbarer und kommerziell wirksamer zu machen - gemeinsam mit Sales, Marketing und externen Partnern.&nbsp;</span><br><strong><br>Zu deinen Aufgaben gehören:</strong></p><ul><li>Weiterentwicklung unserer bestehenden Partnerlandschaft im Marketplace und im Media‑Umfeld.</li><li>Identifikation und Ausbau von Leadpotenzialen über Affiliate-, Referral-, Reselling- und Marketplace‑Modelle.</li><li>Mitbetreuung ausgewählter Media- und Jobbörsenpartner im DACH-Markt.</li><li>Prüfung von kommerziellen Rahmenbedingungen, Konditionen und Vertragslogiken sowie eigenständige Führung von (Nach-)Verhandlungen.</li><li>Regelmäßiger Austausch mit Partnern zur Verbesserung der Zusammenarbeit und stärkeren kommerziellen Nutzung.</li><li>KPI-basierte Partner-Check-ins und Ableitung konkreter Optimierungsmaßnahmen.</li><li>Erstellung von Analysen und Entscheidungsvorlagen zu Partnerperformance, Marktpotenzialen, Konditionen und kommerziellen Wachstumschancen.</li></ul>\n\n<b>Das bringst du mit</b>\n<ul><li>2-3 Jahre Erfahrung im Partner-, Marketplace Management oder Commercial Partnerships, idealerweise im HR-Tech-, Recruiting- oder Stellenanzeigen-Umfeld.</li><li>Gutes Marktverständnis und die Fähigkeit, relevante Partner und Integrationen für unsere Kunden zu identifizieren.</li><li>Interesse oder erste Erfahrung am Media‑ und Stellenanzeigenumfeld sowie daran, wie Reichweite und Performance zusammenhängen.</li><li>Kommerzielles Gespür und ein gutes Verständnis für Konditionen, Partnerpotenziale und gemeinsame Wachstumsansätze.</li><li>Erfahrung in der KPI‑basierten Partnersteuerung und darin, aus Performance‑Daten konkrete Maßnahmen abzuleiten.</li><li>Interesse oder erste Erfahrung darin, mithilfe von AI‑Tools Prozesse zu optimieren und neue Automatisierungsmöglichkeiten zu erschließen.</li><li>Fähigkeit, unterschiedliche Stakeholder zu koordinieren und Themen voranzubringen.</li><li>Sehr gute Deutsch- und gute Englischkenntnissee.&nbsp;</li></ul>\n\n<b>Damit können wir dich überzeugen</b>\n<p>Kaffee und kostenloses Obst im Büro sind toll, und ja, auch das haben wir.&nbsp;<strong>Aber seien wir mal ehrlich, darauf kommt es nicht wirklich an.</strong>&nbsp;Bei softgarden leben wir eine offene Unternehmenskultur, in der ...</p><ul><li>die Arbeit sich nach dem Privatleben richtet und nicht umgekehrt</li><li>faire Kommunikation und Feedback nicht nur irgendwelche Buzzwords sind</li><li>flexible Arbeitszeiten und Home-Office selbstverständlich sind</li></ul><p>Aber, das Andere haben wir natürlich auch ...</p><ul><li>Ticket für öffentliche Verkehrsmittel oder ein Job Fahrrad</li><li>Betriebliche Altersvorsorge</li><li>Zugang zu Corporate Benefits</li><li>30 Tage Urlaub bei einer 5 Tage Woche</li><li>Vergünstigte Wellpass-Mitgliedschaft</li><li>Ein Geschenk zu deinem Geburtstag und Firmenjubiläum</li><li>Moderne Hardware (Mac oder Windows – deine Wahl)&nbsp;</li><li>Teamevents, wie unsere Sommerfeier, unsere organisierten Mittagessen und After-Work Drinks</li><li>Ein tolles, zentrales Büro in Berlin am Zoo</li></ul><p><strong>Dein Kontakt</strong><br>Tom Kleinschmidt<br>Talent Acquisition Manager</p><p>Aus Gründen der besseren Lesbarkeit wird auf die gleichzeitige Verwendung der Sprachformen männlich, weiblich und divers (m/w/d) in der Stellenanzeige verzichtet. Sämtliche Personenbezeichnungen gelten gleichermaßen für alle Geschlechter.</p>\n\n",
+   "employmentType": "FULL_TIME",
+   "hiringOrganization": {
+    "@id": "https://softgarden.career.softgarden.de",
+    "url": "https://softgarden.career.softgarden.de",
+    "logo": "https://pcw-cdn.softgarden.de/uploads/softgarden/de/widget/header/design/image_bnz25638mpoergdj?timestamp=1779907152298",
+    "name": "softgarden e-recruiting GmbH",
+    "@type": "Organization",
+    "sameAs": "https://softgarden.career.softgarden.de",
+    "aggregateRating": {
+     "bestRating": 5,
+     "ratingCount": 440,
+     "ratingValue": 4.68,
+     "worstRating": 1
+    }
+   },
+   "jobLocation": {
+    "@type": "Place",
+    "address": {
+     "@type": "PostalAddress",
+     "postalCode": "10789",
+     "addressRegion": "Berlin",
+     "streetAddress": "Tauentzienstraße",
+     "addressCountry": "DE",
+     "addressLocality": "Berlin"
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:38:31.265760Z",
+  "content_hash": "13e219fc4d05e55f8bec0333d153739d330d8f573e5c1cdc7871fc93f98918c9"
+ }
+]

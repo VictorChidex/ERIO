@@ -218,6 +218,7 @@ class JsonLdConnector(Connector):
         rewrite: Callable[[str], str] | None = None,
         country_from_host: bool = False,
         multi_employer: bool = False,
+        newest_first: bool = False,
     ):
         self.slug = slug
         #: A job board listing many employers: each posting names its own.
@@ -225,6 +226,8 @@ class JsonLdConnector(Connector):
         #: Boards of recruiters in one country (a ".co.uk" site) often print only a town:
         #: their domain names the country when the page does not.
         self.country_from_host = country_from_host
+        #: A sitemap that lists its oldest offers first: read the newest ones within the page cap.
+        self.newest_first = newest_first
         self.hosts = hosts
         self.job_path = re.compile(job_path, re.IGNORECASE)
         #: Query added to every job page request (iCIMS serves its data with in_iframe=1).
@@ -275,6 +278,8 @@ class JsonLdConnector(Connector):
             except ElementTree.ParseError as error:
                 raise FetchError("parse_error", f"malformed sitemap: {error}", 200) from error
             wanted = [p for p in dict.fromkeys(pages) if self.job_path.search(urlsplit(p).path)]
+            if self.newest_first:
+                wanted.reverse()
             return self._rewritten(wanted)
         links = page_links(response.body.decode("utf-8", "replace"), board_token, self.job_path)
         for number in range(2, self.listing_pages + 1 if self.page_param else 1):

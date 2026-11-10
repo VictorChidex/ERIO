@@ -77,4 +77,11 @@ JSONLD_CONNECTORS: list[Connector] = [
     JsonLdConnector("niceboard", r"^/job/\d+", hosts("*.niceboard.co"), multi_employer=True),
     JsonLdConnector("nodex", r"^/job/", country_from_host=True, multi_employer=True),
     JsonLdConnector("paradox", r"/job/[0-9a-f]{32}"),
+    JsonLdConnector(
+        "solidjobs",
+        r"^/offer/\d+/",
+        hosts("solid.jobs"),
+        multi_employer=True,
+        newest_first=True,
+    ),
 ]
