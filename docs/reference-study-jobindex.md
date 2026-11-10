@@ -70,10 +70,17 @@ ERIO today: about 30,000 jobs, 172 boards, 78 platforms tracked, 68 verified.
 - `GET /v1/coverage` live fields and the coverage page columns (live now, boards ok/total,
   open jobs, 7-day runs, data completeness, last success).
 
+- `GET /v1/changes` (a cursor-paged feed of added, changed, closed, reopened and merged jobs)
+  and `GET /v1/export/jobs` (every open job as gzipped NDJSON, resumable with `after=`).
+- Nine public job services as connectors, a real employer per job on multi-employer boards, a
+  history per job, pay sanity checks, `/salary`, `/paths`, `/guides`, `/new`, search feeds and a
+  no-account workspace (saved jobs, tracker, saved searches, CV match).
+- Archive discovery now covers 23 address shapes and shares its probe budget evenly between
+  platforms.
+
 ## Not yet done
 
 - Run the archive discovery live once the Internet Archive answers, and watch the crawl
   load that thousands of new boards bring.
-- Public job service connectors (first candidates: open feeds without an access key).
-- A change feed and bulk download in the API.
-- A "history" of changes on each job.
+- The platforms the reference lists as covered but ERIO keeps blocked (decision D-24), and
+  Himalayas (its terms forbid passing jobs on to other feeds).
