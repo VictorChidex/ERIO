@@ -92,9 +92,16 @@ def adopt_source_name(session: Session, company_id: int, name: str | None) -> bo
     clean = clean_company_name(name)
     if clean is None:
         return False
+    values: dict[str, str] = {"name": clean, "name_source": "source"}
+    # A placeholder's slug was made from the board token ("talentreef-board-22144"), and no
+    # page has been indexed under it that anyone relies on: it follows the real name, unless
+    # another company already has that slug.
+    slug = company_key(clean)
+    if not session.scalar(select(Company.id).where(Company.slug == slug)):
+        values["slug"] = slug
     result = session.execute(
         update(Company)
         .where(Company.id == company_id, Company.name_source == "placeholder")
-        .values(name=clean, name_source="source")
+        .values(**values)
     )
     return bool(getattr(result, "rowcount", 0))

@@ -18,7 +18,12 @@ from erio_core.connectors import FetchResponse, get_connector
 from erio_core.db.models import Company, CompanyBoard, Job, JobEvent, JobSource, RawPosting
 from erio_core.db.seed import sync_countries, sync_sources
 from erio_ingest.dedup import dedup_all
-from erio_ingest.employers import clean_company_name, company_key, resolve_company
+from erio_ingest.employers import (
+    adopt_source_name,
+    clean_company_name,
+    company_key,
+    resolve_company,
+)
 from erio_ingest.normalizer import normalize_pending
 from erio_ingest.pipeline import crawl_board
 from erio_ingest.status import apply_successful_fetch
@@ -323,3 +328,23 @@ def test_closing_and_reopening_are_recorded_once_each(engine: Engine) -> None:
     with Session(engine) as session, session.begin():  # a fetch that changes nothing
         apply_successful_fetch(session, board_id, ["1"], now + timedelta(minutes=15))
     assert len(events(engine)) == 3
+
+
+def test_a_placeholder_slug_follows_the_real_name_unless_it_is_taken(engine: Engine) -> None:
+    with Session(engine) as session, session.begin():
+        board_made = Company(name="Talentreef Board 22144", name_source="placeholder")
+        clash = Company(name="Zachry Holdings", name_source="seed")
+        other = Company(name="Globex Board 7", name_source="placeholder")
+        session.add_all([board_made, clash, other])
+        session.flush()
+        ids = (board_made.id, other.id)
+        clash_slug = clash.slug
+
+    with Session(engine) as session, session.begin():
+        assert adopt_source_name(session, ids[0], "Zachry")
+        assert adopt_source_name(session, ids[1], "Zachry Holdings") is True
+
+    by_id = {c.id: c for c in companies(engine).values()}
+    assert (by_id[ids[0]].name, by_id[ids[0]].slug) == ("Zachry", "zachry")
+    # "zachry-holdings" belongs to another company: the placeholder keeps the slug it had.
+    assert by_id[ids[1]].name == "Zachry Holdings" and by_id[ids[1]].slug != clash_slug
