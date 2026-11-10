@@ -154,9 +154,11 @@ test.describe("pages", () => {
 
   test("a country landing page shows that country's jobs", async ({ page }) => {
     const country = await busiestCountry(page);
+    // The first country page lives on as a permanent redirect to the landing page.
     await page.goto(`/countries/${country.code.toLowerCase()}`);
+    await expect(page).toHaveURL(/\/jobs\/in\/[a-z-]+$/);
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(`Jobs in ${country.name}`);
-    await expect(page.locator(".af").first()).toContainText(country.name);
+    await expect(page.getByRole("heading", { name: "Latest openings" })).toBeVisible();
   });
 
   test("an unknown job or country is a 404", async ({ page }) => {
