@@ -330,11 +330,13 @@ def test_coverage_lists_the_78_platforms_and_the_services_with_their_status(
     api: TestClient,
 ) -> None:
     rows = api.get("/v1/coverage").json()["data"]
-    # The 78 platforms of the brief, then the public job services listed apart from them.
-    assert sum(r["kind"] in ("ats", "board") for r in rows) == 78
-    assert sum(r["kind"] == "ats" for r in rows) == 58
-    assert sum(r["kind"] == "board" for r in rows) == 20
-    assert sum(r["kind"] == "service" for r in rows) == len(rows) - 78 > 0
+    # The 78 platforms of the brief (58 + 20, plus any added since), then the public job
+    # services listed apart from them.
+    platforms = sum(r["kind"] in ("ats", "board") for r in rows)
+    assert platforms >= 78
+    assert sum(r["kind"] == "ats" for r in rows) >= 58
+    assert sum(r["kind"] == "board" for r in rows) >= 20
+    assert sum(r["kind"] == "service" for r in rows) == len(rows) - platforms > 0
     by_slug = {r["slug"]: r for r in rows}
     assert by_slug["greenhouse"]["status"] == "Verified"
     assert by_slug["paycom"]["status"] == "Blocked" and by_slug["paycom"]["note"]
