@@ -1,0 +1,60 @@
+{
+ "tenantName": "Riachuelo",
+ "background": [],
+ "logo": "https://files.inhire.app/tenant-public-files/riachuelo/riachuelo-logo-png_seeklogo-649281*7daf4cc1-b679-4838-9b61-b40bde21a804.png",
+ "bannerTitle": "",
+ "bannerTitleColor": "#ffffff",
+ "visibility": "external",
+ "about": "",
+ "openGraph": {
+  "description": "Confira as possibilidades de carreira na Riachuelo",
+  "title": "Portal de Vagas | Riachuelo",
+  "image": "https://files.inhire.app/og-images/riachuelo.png"
+ },
+ "jobsPage": [
+  {
+   "careerPageId": "default",
+   "careerPageIds": [
+    "default"
+   ],
+   "displayName": " Analista de Planejamento Comercial Pleno",
+   "jobId": "ad3e4c83-e350-4a0d-87c7-52dfea7952f7",
+   "status": "published",
+   "workplaceType": "Hybrid",
+   "location": "São Paulo, SP, BR"
+  },
+  {
+   "careerPageId": "default",
+   "careerPageIds": [
+    "default"
+   ],
+   "displayName": " Assistente de Vendas - CAPTADOR DE CARTÃO TEMPORÁRIO | LOJA 247",
+   "jobId": "4db1371b-137d-4ff9-ae2c-bf77da99f2fd",
+   "status": "published",
+   "workplaceType": "On-site",
+   "location": "São Luís, MA, BR"
+  },
+  {
+   "careerPageId": "default",
+   "careerPageIds": [
+    "default"
+   ],
+   "displayName": " Assistente de Vendas e Merchandising",
+   "jobId": "799a1a78-d4f2-4c78-8e89-0aaef29ed38d",
+   "status": "published",
+   "workplaceType": "On-site",
+   "location": "Jaraguá do Sul, SC, BR"
+  },
+  {
+   "careerPageIds": [
+    "default"
+   ],
+   "careerPageId": "default",
+   "displayName": " Atendente de Vendas I (Financeiro) ",
+   "jobId": "f40534ef-acdb-4b9a-b2ca-c5c1eb4e7196",
+   "status": "published",
+   "workplaceType": "On-site",
+   "location": "Fortaleza, CE, BR"
+  }
+ ]
+}
