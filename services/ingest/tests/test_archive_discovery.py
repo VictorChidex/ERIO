@@ -300,3 +300,31 @@ def test_a_pass_through_the_archive_is_only_done_when_it_reached_the_end(engine:
 
     run(engine, archive, Boards(set()), state)
     assert state.resume_key(GREENHOUSE.key)[1] is not None  # read to the end
+
+
+def test_one_platform_with_endless_candidates_cannot_use_the_whole_budget(engine: Engine) -> None:
+    many = [f"https://boards.greenhouse.io/company{n}" for n in range(40)]
+    archive = Archive({None: cdx(*many)})
+    seen: list[str] = []
+
+    class Both:
+        """Answers 404 for every probe and records which platform was asked."""
+
+        def get(self, url: str, etag: str | None = None) -> FetchResponse:
+            seen.append("greenhouse" if "greenhouse" in url else "other")
+            return FetchResponse(404, b"{}")
+
+    result = discover_from_archive(
+        engine,
+        archive,
+        Both(),
+        MemoryState(),
+        lambda: NOW,
+        patterns=[GREENHOUSE, RECRUITEE],
+        validate=10,
+    )
+
+    # Greenhouse had 40 candidates but only half of the 10 probes; the rest stay for the
+    # next run (the page is read again), and the second platform got its turn.
+    assert result.probed <= 10
+    assert seen.count("greenhouse") == 5

@@ -103,6 +103,12 @@ PATTERNS: list[Pattern] = [
     subdomain_pattern("pinpointhq.com", "pinpoint"),
     subdomain_pattern("hirehive.com", "hirehive"),
     subdomain_pattern("applytojob.com", "jazzhr"),
+    path_pattern("jobs.gem.com", "gem"),
+    path_pattern("careers.hireology.com", "hireology"),
+    path_pattern("www.careers-page.com", "manatal"),
+    subdomain_pattern("careers.hibob.com", "hibob"),
+    subdomain_pattern("hiringthing.com", "hiringthing"),
+    subdomain_pattern("zohorecruit.com", "zohorecruit"),
 ]
 
 
@@ -295,13 +301,18 @@ def discover_from_archive(
                 )
             )
         )
-    for pattern in patterns if patterns is not None else PATTERNS:
-        if pattern.source not in live or budget <= 0:
-            continue
+    eligible = [p for p in (patterns if patterns is not None else PATTERNS) if p.source in live]
+    for position, pattern in enumerate(eligible):
+        if budget <= 0:
+            break
         stamp = int(now().timestamp())
         resume, finished = state.resume_key(pattern.key)
         if finished is not None and stamp - finished < RESTART_AFTER_S:
             continue  # read to the end lately
+        # An even share of what is left, so one platform with endless candidates (Greenhouse
+        # alone has tens of thousands) cannot starve the others; what a pattern leaves unused
+        # rolls on to the ones after it.
+        start = quota = max(1, budget // (len(eligible) - position))
         for _ in range(pages):
             page_key = resume
             try:
@@ -323,10 +334,10 @@ def discover_from_archive(
             waiting = [t for t in tokens if t.lower() not in skip]
             exhausted = False
             for token in waiting:
-                if budget <= 0:
+                if quota <= 0:
                     exhausted = True
                     break
-                budget -= 1
+                quota -= 1
                 result.probed += 1
                 confirmed = connectors[pattern.source].discover(boards, [token])
                 if confirmed is None:
@@ -341,8 +352,9 @@ def discover_from_archive(
                 state.save_resume(pattern.key, page_key, stamp, done=False)
                 break
             state.save_resume(pattern.key, resume, stamp, done=resume is None)
-            if resume is None or budget <= 0:
+            if resume is None or quota <= 0:
                 break
+        budget -= start - quota
     return result
 
 
