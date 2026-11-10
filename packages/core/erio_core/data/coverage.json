@@ -1032,5 +1032,126 @@
   "partial_read": false,
   "checked_at": null,
   "note": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission."
+ },
+ {
+  "slug": "jibe",
+  "name": "Jibe",
+  "kind": "ats",
+  "status": "Built, not run live",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Reads the JSON the career site's own job search calls (/api/jobs), on the employer's own domain; no login. Sites ask for a crawl delay of 5 seconds, which the fetcher honours."
+ },
+ {
+  "slug": "jobscore",
+  "name": "JobScore",
+  "kind": "ats",
+  "status": "Built, not run live",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Reads the company's public XML job feed on careers.jobscore.com; its robots.txt only disallows the apply flow."
+ },
+ {
+  "slug": "softgarden",
+  "name": "softgarden",
+  "kind": "ats",
+  "status": "Built, not run live",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Reads the schema.org job feed (jobs.feed.json) that each career page publishes for machines."
+ },
+ {
+  "slug": "getonbrd",
+  "name": "Get on Board",
+  "kind": "service",
+  "status": "Built, not run live",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Public API v0 of Get on Board (Latin America tech jobs), read per category. Its robots.txt allows search indexing and reserves AI training, so ERIO only indexes and links back; credit Get on Board and send candidates to the job's page there."
+ },
+ {
+  "slug": "solidjobs",
+  "name": "SOLID.Jobs",
+  "kind": "service",
+  "status": "Built, not run live",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Polish IT job board, read from each offer page's structured data via its sitemap (newest offers first); its robots.txt allows crawling outside /management/ and /admin/. A crawl reads at most 200 offers and is reported as partial. Credit SOLID.Jobs and link back."
+ },
+ {
+  "slug": "betterteam",
+  "name": "Betterteam",
+  "kind": "board",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Every request, even to its sitemap.xml, /jobs and /api/jobs, answers 403 with a 'Quick security check' bot-challenge page, so nothing can be read without passing it."
+ },
+ {
+  "slug": "workstream",
+  "name": "Workstream",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Its documented API needs a bearer token; its public job pages (www.workstream.us/j/{id}/{company}) carry no feed or structured data, and the only company page found had no open jobs, so no way to read jobs was verified."
+ },
+ {
+  "slug": "beesite",
+  "name": "beesite",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Career sites are built per customer on their own domains (the vendor says the career site is made together with the provider); no shared host, public feed or documented API was found, and none of the customer sites checked had structured job data."
+ },
+ {
+  "slug": "helix",
+  "name": "Helix by perbility",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "perbility publishes only marketing pages (mein-helix.de); customer career sites are built per customer on their own domains and no public job feed or documented API was found."
+ },
+ {
+  "slug": "compleo",
+  "name": "Compleo",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "No vendor site, career-page host, feed or API for a platform of this name could be found (compleo.de refuses connections; compleet.com is a different company), so there is nothing to read."
+ },
+ {
+  "slug": "inploi",
+  "name": "inploi",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Career sites are built per employer; inploi's own (careers.inploi.com) lists no jobs and has an empty sitemap, and no employer site with jobs, feed or API was found."
  }
 ]
