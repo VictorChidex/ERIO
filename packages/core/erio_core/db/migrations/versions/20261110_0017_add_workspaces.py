@@ -1,7 +1,7 @@
 """add anonymous workspaces: applications, timelines, saved searches
 
-Revision ID: 0016
-Revises: 0013
+Revision ID: 0017
+Revises: 0016
 Create date: 2026-11-07 09:00:00+00:00
 """
 
@@ -11,9 +11,8 @@ import sqlalchemy as sa
 from alembic import op
 from sqlalchemy.dialects import postgresql
 
-revision: str = "0016"
-# The lead re-chains this to follow 0015 (this branch started from 0013).
-down_revision: str | None = "0013"
+revision: str = "0017"
+down_revision: str | None = "0016"
 branch_labels: str | Sequence[str] | None = None
 depends_on: str | Sequence[str] | None = None
 
