@@ -1,7 +1,7 @@
 # CV upload and email job alerts
 
 A person opens **Workspace, Profile & alerts**, uploads a CV, and ERIO emails them the new jobs that fit it.
-Still no account and no password: the workspace key stays in the browser.
+Still no account and no sign-in: the workspace key stays in the browser.
 
 ## What happens
 
@@ -28,7 +28,7 @@ Credentials never go in settings or the image (decision D-08). Put the Resend AP
 
 | Variable | Meaning |
 | --- | --- |
-| `ERIO_RESEND_API_KEY_FILE` | Path of the mounted file holding the API key |
+| `ERIO_MAIL_KEY_FILE` | Path of the mounted file holding the Resend key |
 | `ERIO_MAIL_FROM` | Sender, for example `ERIO <alerts@your-domain>`; needs a domain verified in Resend (the default `onboarding@resend.dev` only delivers to the account owner) |
 | `ERIO_SITE_URL` | Public address of the website; the links in the emails use it |
 

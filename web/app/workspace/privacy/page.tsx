@@ -8,7 +8,7 @@ export default function WorkspacePrivacyPage() {
       <div className={styles.card}>
         <h2>The short version</h2>
         <p className={styles.muted}>
-          Your workspace has no account and no password. You can give an email address, but only if you want job alerts;
+          Your workspace has no account and no sign-in. You can give an email address, but only if you want job alerts;
           without one, ERIO holds nothing that says who you are. Nothing in a workspace is sold or shared.
         </p>
       </div>

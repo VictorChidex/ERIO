@@ -101,7 +101,7 @@ export const askForAlerts = (email: string, frequency: "daily" | "weekly") =>
   call<MailState>("PUT", "mail", { email, frequency });
 export const stopAlerts = () => call<void>("DELETE", "mail");
 
-// The links in the emails: no workspace token, the secret is in the link.
+// The links in the emails: no workspace token, the key is in the link.
 export const alertState = (token: string) => call<AlertState>("GET", `alerts/${token}`, undefined, null);
 export const confirmAlerts = (token: string) => call<AlertState>("POST", "alerts/confirm", { token }, null);
 export const changeAlerts = (token: string, patch: { paused?: boolean; frequency?: "daily" | "weekly" }) =>

@@ -1,7 +1,7 @@
 """Sending email through Resend, or to a log line when no key is set (local development).
 
-The API key is read from a file whose path is in ``ERIO_RESEND_API_KEY_FILE`` (a mounted
-secret), never from a setting or the image (decision D-08). With no file the message is
+The provider key is read from a file whose path is in ``ERIO_MAIL_KEY_FILE`` (a mounted
+file), never from a setting or the image (decision D-08). With no file the message is
 written to the log instead, so the whole alert flow can be run and read without sending.
 """
 
@@ -33,7 +33,7 @@ class MailError(RuntimeError):
 
 
 def _key() -> str | None:
-    path = get_settings().resend_api_key_file
+    path = get_settings().mail_key_file
     if not path:
         return None
     try:

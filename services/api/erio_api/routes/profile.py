@@ -324,7 +324,7 @@ def delete_mail(workspace_id: WorkspaceId, db: Db) -> Response:
     return Response(status_code=204)
 
 
-# The links in the emails open the website, which calls these. No workspace token: the secret
+# The links in the emails open the website, which calls these. No workspace token: the key
 # is in the link, and it can only confirm, pause, change the rhythm of, or delete the address.
 
 

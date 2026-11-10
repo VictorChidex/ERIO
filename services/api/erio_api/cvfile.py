@@ -29,7 +29,7 @@ def _pdf(data: bytes) -> str:
     try:
         reader = PdfReader(io.BytesIO(data))
         if reader.is_encrypted:
-            raise _unreadable("that PDF is password-protected")
+            raise _unreadable("that PDF is protected by a lock")
         pages = reader.pages[:MAX_PDF_PAGES]
         return "\n".join(page.extract_text() or "" for page in pages)
     except ApiError:
