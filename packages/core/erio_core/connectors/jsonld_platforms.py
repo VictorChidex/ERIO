@@ -77,6 +77,7 @@ JSONLD_CONNECTORS: list[Connector] = [
     JsonLdConnector("niceboard", r"^/job/\d+", hosts("*.niceboard.co"), multi_employer=True),
     JsonLdConnector("nodex", r"^/job/", country_from_host=True, multi_employer=True),
     JsonLdConnector("paradox", r"/job/[0-9a-f]{32}"),
+<<<<<<< HEAD
     # Found by comparing with the reference index (docs/reference-study-jobindex.md).
     JsonLdConnector(
         "pandape",
@@ -105,4 +106,13 @@ JSONLD_CONNECTORS: list[Connector] = [
         multi_employer=True,
     ),
     JsonLdConnector("torre", r"^/post/", hosts("torre.ai"), max_pages=100, multi_employer=True),
+=======
+    JsonLdConnector(
+        "solidjobs",
+        r"^/offer/\d+/",
+        hosts("solid.jobs"),
+        multi_employer=True,
+        newest_first=True,
+    ),
+>>>>>>> worktree-agent-ab71d95071035f588
 ]

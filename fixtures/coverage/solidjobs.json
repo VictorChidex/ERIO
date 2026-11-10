@@ -1,0 +1,178 @@
+[
+ {
+  "source_slug": "solidjobs",
+  "board_token": "https://solid.jobs/sitemap-offers.xml",
+  "external_id": "cfa4697eeb4155e72831f5b5",
+  "payload": {
+   "page_url": "https://solid.jobs/offer/39832/verita-hr-data-and-reporting-senior-developer",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Data and Reporting Senior Developer",
+    "description": "<p>You will work on building and maintaining high quality data solutions used across the bank. Your work will focus on developing data repositories and reusable data assets that support reporting and analytics at scale and help teams turn complex data into clear and reliable insights. All solutions are delivered in line with the bank’s data standards, with strong attention to quality, consistency and long term usability.</p><h2>What you will do</h2><ul><li>Deliver data projects end-to-end, from requirements to final solution (KPIs, data models, metrics)</li><li>Combine and validate data from multiple sources, ensuring consistency and accuracy</li><li>Build and maintain data pipelines covering extraction, transformation, aggregation and validation</li><li>Ensure secure and reliable data flow between systems</li><li>Develop reporting solutions in Google Cloud and/or Microsoft SQL Server using SQL, Python and related tools</li><li>Work with business and tech stakeholders to translate requirements into clear technical solutions</li><li>Identify and suggest improvements in data processes</li><li>Track risks and blockers and address them early</li><li>Document data flows, logic and technical designs</li><li>Drive assigned initiatives and ensure timely delivery</li></ul><br/><br/><strong>Kogo poszukujemy?</strong><br/><ul><li><strong>Client: </strong>lead international bank</li><li><strong>Recruitment process: </strong>2 meetings with hiring managers, followed by a phone screen with our recruiter</li><li><strong>Hybrid work:</strong> 2 days per week from the office in Cracow</li></ul><h2>Skills:</h2><ul><li><strong>Proven experience of working in a data-related role (at least 3 years): </strong>SQL development, data analysis, data engineering, data architecture, data management and / or modelling with hands-on technical experience of using associated technologies</li><li>Exceptional understanding of <strong>SQL programming</strong> and relational database system </li><li>Experience with <strong>Google Cloud Platform Products</strong>, especially <strong>BigQuery</strong> and <strong>Looker Studio</strong></li><li>Experience in preparation of <strong>business reporting</strong> and <strong>front-end dashboards</strong></li><li>Knowledge of <strong>Python</strong></li></ul><h2>Nice to have:</h2><ul><li>Understand <strong>ETL</strong> and <strong>data warehousing </strong>principles</li></ul><h2>What&#39;s in it for you?</h2><ul><li>Prestigious position at one of the world&#39;s largest banks</li><li>Stable, long-term projects</li><li>Hybrid work (2 days per week from the office in Cracow)</li><li>Working with modern IT technologies</li><li>Growth and development opportunities with the possibility to move between projects</li><li>Private healthcare and multisport card</li><li>Referral program, free parking and company events</li></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "SOLID.Jobs",
+     "value": "39832"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Verita HR",
+     "sameAs": "https://veritahr.com",
+     "logo": "https://cdn.solid.jobs/companies/logos/278b320f59f8a035849fe8c3a26652d8e7d7813ffc4892f14cc10e71216cab74.png"
+    },
+    "directApply": true,
+    "url": "https://solid.jobs/offer/39832/verita-hr-data-and-reporting-senior-developer",
+    "datePosted": "2026-11-10",
+    "dateModified": "2026-11-10T16:40:35+01:00",
+    "validThrough": "2026-12-11T16:40:35+01:00",
+    "employmentType": "CONTRACTOR",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kraków",
+      "addressCountry": "PL",
+      "streetAddress": "Centrum"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "PLN",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 26000.0,
+      "maxValue": 29000.0,
+      "unitText": "MONTH"
+     }
+    },
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 36
+    },
+    "skills": "SQL, BigQuery, Looker Studio, Raportowanie, Analiza danych, Python, GCP, Creating Dashboards"
+   }
+  },
+  "fetched_at": "2026-11-10T19:39:28.628766Z",
+  "content_hash": "5e4d527d12a8eca20328be0251997d4215422ad37b13ef49b2d9b3300bc46788"
+ },
+ {
+  "source_slug": "solidjobs",
+  "board_token": "https://solid.jobs/sitemap-offers.xml",
+  "external_id": "5fdd3a178b8980f3ee9984a4",
+  "payload": {
+   "page_url": "https://solid.jobs/offer/39831/dcg-automation-qa",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Automation QA",
+    "description": "<h2>Automation QA</h2><h2>Responsibilities:</h2><ul><li>Driving QA and the test approach with the team</li><li>Involvement in requirements, user story and acceptance criteria creation and review</li><li>Participating in Sprint Planning and driving the quality aspect for every change</li><li>Test preparation, including, creating and reviewing test cases and the creation of automation scripts</li><li>Test execution, including exploratory, manual and automated tests (with test automation as main focus)</li><li>Leading the defect management within your team</li><li>Reporting on QA progress and highlighting any issues that need escalation</li><li>Working with other QA Engineers, Solutions Architects, Engineers, Business Analysts, Product owners and various other areas to ensure our quality approach is consistent</li></ul><h2>Offer:</h2><ul><li>Constant support of dedicated consultant</li><li>Employee referral program</li></ul><br/><br/><strong>Kogo poszukujemy?</strong><br/><h2>Requirements:</h2><ul><li>At least 3 years of experience in functional and regression testing of content management system (CMS)-driven web applications</li><li>Knowledge of Playwright automation with Typescript or C#</li><li>Knowledge of Behaviour-Driven Development (BDD)</li><li>Working confidently and collaboratively with developers and product leads</li><li>Fluent English</li></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "SOLID.Jobs",
+     "value": "39831"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "DCG",
+     "sameAs": "https://www.dcg.pl",
+     "logo": "https://cdn.solid.jobs/companies/logos/eab6a3169f974c89aebe723c4f6c901f.jpeg"
+    },
+    "directApply": false,
+    "url": "https://solid.jobs/offer/39831/dcg-automation-qa",
+    "datePosted": "2026-11-10",
+    "dateModified": "2026-11-10T15:48:56+01:00",
+    "validThrough": "2026-12-11T15:48:56+01:00",
+    "employmentType": "CONTRACTOR",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Warszawa",
+      "addressCountry": "PL",
+      "streetAddress": "Daimlera"
+     }
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": {
+     "@type": "Country",
+     "name": "PL"
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "PLN",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 16800.0,
+      "maxValue": 20200.0,
+      "unitText": "MONTH"
+     }
+    },
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 18
+    },
+    "skills": "Functional testing, Integration testing, CMS, Playwright, TypeScript, BDD"
+   }
+  },
+  "fetched_at": "2026-11-10T19:39:30.501211Z",
+  "content_hash": "9cfedb714bb03ab825f007f1cc03c1cca2676b215a426388280424c7095092ce"
+ },
+ {
+  "source_slug": "solidjobs",
+  "board_token": "https://solid.jobs/sitemap-offers.xml",
+  "external_id": "8a5ed987a0b19833f8738d57",
+  "payload": {
+   "page_url": "https://solid.jobs/offer/39830/scalo-system-analyst",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "System Analyst",
+    "description": "<p>Projekt dotyczy rozwoju i analizy funkcjonalności bankowości internetowej dla klientów biznesowych. Osoba na tym stanowisku będzie odpowiadać za analizę systemową, modelowanie procesów i danych oraz projektowanie integracji pomiędzy systemami bankowymi i centralnymi.</p><br/><br/><strong>Kogo poszukujemy?</strong><br/><h2>Wymagania:</h2><ul><li>min. 4 lata doświadczenia jako Analityk Systemowy</li><li>doświadczenie w sektorze bankowym lub finansowym</li><li>praktyczna znajomość analizy i modelowania systemów IT</li><li>doświadczenie w tworzeniu wymagań systemowych, user stories, przypadków użycia i dokumentacji analitycznej</li><li>bardzo dobra znajomość UML oraz BPMN 2.0</li><li>doświadczenie z Enterprise Architect lub podobnymi narzędziami</li><li>umiejętność projektowania i analizy API REST/JSON</li><li>znajomość integracji systemowych (REST, SOAP, komunikacja synchroniczna i asynchroniczna)</li><li>znajomość SQL oraz modelowania danych</li><li>doświadczenie z Jira i Confluence</li><li>znajomość Agile/Scrum</li><li>umiejętność współpracy z biznesem, programistami i architektami</li><li>samodzielność, proaktywność i bardzo dobre umiejętności komunikacyjne</li></ul><p>Dodatkowym atutem będzie:</p><ul><li>znajomość architektury mikroserwisowej</li><li>doświadczenie z Event-Driven Architecture</li><li>znajomość bankowości internetowej dla klientów biznesowych</li><li>doświadczenie w obszarach zarządzania użytkownikami i uprawnieniami, onboardingu klientów, samoobsługi, dokumentów elektronicznych oraz bezpieczeństwa bankowości elektronicznej</li></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "SOLID.Jobs",
+     "value": "39830"
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Scalo",
+     "sameAs": "https://www.scalosoft.com",
+     "logo": "https://cdn.solid.jobs/companies/logos/ca67392697664d519b64350d9a7c7d31"
+    },
+    "directApply": true,
+    "url": "https://solid.jobs/offer/39830/scalo-system-analyst",
+    "datePosted": "2026-11-10",
+    "dateModified": "2026-11-10T15:49:00+01:00",
+    "validThrough": "2026-12-11T15:49:00+01:00",
+    "employmentType": "CONTRACTOR",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Warszawa",
+      "addressCountry": "PL",
+      "streetAddress": "Centrum"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "PLN",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 16800.0,
+      "maxValue": 22700.0,
+      "unitText": "MONTH"
+     }
+    },
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 36
+    },
+    "skills": "UML, BPMN, Myślenie analityczne, REST"
+   }
+  },
+  "fetched_at": "2026-11-10T19:39:32.190888Z",
+  "content_hash": "475301b83d53435a39da314ff394f0a01f15a5b0a9c39d490b12d949d7cdd6f9"
+ }
+]

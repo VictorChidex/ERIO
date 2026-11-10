@@ -1,0 +1,432 @@
+[
+ {
+  "source_slug": "jibe",
+  "board_token": "https://jobs.sheetz.com",
+  "external_id": "82604",
+  "payload": {
+   "slug": "82604",
+   "language": "en-us",
+   "languages": [
+    "en-us"
+   ],
+   "client_code": "sheetz",
+   "req_id": "82604",
+   "title": "Store Supervisor - #773",
+   "description": "<p style=\"margin: 0px;\"><span style=\"color: #ff0000;\"><strong>Additional $3.00/hour for shifts worked between 4 p.m.–6 a.m. and all Saturday and Sunday hours.</strong></span></p> <p style=\"margin: 0px;\">Ready for a career with limitless growth opportunities at a company that PROVES they value you, every single day? If you are a self-motivated, dependable and efficient employee with a positive attitude and the ability to prioritize tasks and delegate effectively, check out our available Supervisor position and LET’S MAKE SHEETZ HAPPEN!</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">Be a leader by example to our store team members with high-energy hustle and a strong team mentality. You’ll all work together to engage customers with hospitality in all aspects of their experience at a Sheetz. If our customers are happy, then you will be, too. Why?</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">Because one of the MANY work perkz at Sheetz is quarterly employee bonuses based on company performance! And there’s more – A LOT more… like competitive salaries, PTO and parental leave, 401k match and employee stock ownership, limitless professional development and growth opportunities, tuition reimbursement, full medical, vision and dental coverage, and snack discounts!</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">So if you’re still out there looking for your place, your people, or your passion? Maybe it’s here, with us!</p> <ul><li>Welcome customers to our stores with greetings and top-tier customer service</li><li>Make magic happen by serving up quality food and beverages made to exact customer specifications in a safe, fast and friendly manner</li><li>Mentor and coach your work fam to prioritize tasks and rock it as a Team Member</li><li>Keep an eye on the goodz in-store to make sure that products are ordered, merchandised, rotated and readily-available for our customers</li><li>Keep thingz clean in the store, kitchen, and dining areas</li></ul> <ul><li>The ability to multi-task, perform repeated bending, standing, and reaching, and occasionally lifting up to 20 pounds and the ability to assist another person in lifting 40 pounds.</li><li>Must be 18 years of age or older (VA state law requires Supervisor’s to be 21 years of age or older for certain tasks).</li></ul> <p>Sheetz is committed to the full inclusion of all qualified individuals. Sheetz is committed to considering all applicants regardless of disability who can perform all essential job duties with or without accommodations.</p>",
+   "location_name": "Sheetz #773",
+   "street_address": "2901 Lehigh St",
+   "city": "ALLENTOWN",
+   "state": "Pennsylvania",
+   "country": "United States",
+   "country_code": "US",
+   "postal_code": "18103",
+   "location_type": "LAT_LNG",
+   "latitude": 40.5891,
+   "longitude": -75.4645,
+   "categories": [
+    {
+     "name": "Food Service"
+    }
+   ],
+   "tags1": [
+    "Full-Time"
+   ],
+   "tags2": [
+    "Overnight"
+   ],
+   "tags3": [
+    "On-Site"
+   ],
+   "tags4": [
+    "USD $18.50/Hr."
+   ],
+   "tags5": [
+    "Store Jobs"
+   ],
+   "tags7": [
+    "2901 Lehigh St"
+   ],
+   "tags8": [
+    "Careers - Store"
+   ],
+   "tags9": [
+    "Alexander Whiteleather"
+   ],
+   "department": "",
+   "salary_value": 0,
+   "salary_min_value": 0,
+   "salary_max_value": 0,
+   "employment_type": "FULL_TIME",
+   "qualifications": "<ul><li>The ability to multi-task, perform repeated bending, standing, and reaching, and occasionally lifting up to 20 pounds and the ability to assist another person in lifting 40 pounds.</li><li>Must be 18 years of age or older (VA state law requires Supervisor&rsquo;s to be 21 years of age or older for certain tasks).</li></ul>",
+   "hiring_organization": "Sheetz, Inc",
+   "hiring_organization_logo": "https://cms.jibecdn.com/prod/sheetz/assets/GOOGLEFORJOBS-en-us-1695751005080.png",
+   "responsibilities": "<ul><li>Welcome customers to our stores with greetings and top-tier customer service</li><li>Make magic happen by serving up quality food and beverages made to exact customer specifications in a safe, fast and friendly manner</li><li>Mentor and coach your work fam to prioritize tasks and rock it as a Team Member</li><li>Keep an eye on the goodz in-store to make sure that products are ordered, merchandised, rotated and readily-available for our customers</li><li>Keep thingz clean in the store, kitchen, and dining areas</li></ul>",
+   "posted_date": "2026-11-10T19:25:00+0000",
+   "apply_url": "https://storecareers-sheetz.icims.com/jobs/82604/login",
+   "internal": false,
+   "external": false,
+   "searchable": true,
+   "applyable": true,
+   "li_easy_applyable": true,
+   "ats_code": "icims",
+   "hiring_flow_name": "iCIMS ATS Hiring Flow",
+   "isFrontLineAIJob": false,
+   "isApplyFlowJob": false,
+   "meta_data": {
+    "mongo": {
+     "mongo_created": true
+    },
+    "openingjobs": {
+     "openingJobId": "0000bcd7925c1e56044da7b82be32b24a176"
+    },
+    "icims": {
+     "jps_is_public": true,
+     "primary_posted_site_object": {
+      "site": "storecareers-sheetz",
+      "siteId": "082df02c-7983-4092-8dce-33dc936feb64",
+      "datePosted": "2026-11-10T19:25:00+0000"
+     },
+     "date_updated": "2026-11-10T19:21:36Z",
+     "config_keys": {
+      "jobposting.external.company.name": "Sheetz, Inc",
+      "jobposting.external.company.url": "www.sheetz.com",
+      "icims.external.xml.feeds": "icims.adzuna.xml.enabled,icims.appcast.xml.enabled,icims.careerbuilder.xml.enabled,icims.craigslist.xml.enabled,icims.cv-library.xml.enabled,icims.direct-employers.xml.enabled,icims.inhersight.xml.enabled,icims.itjobscafe.xml.enabled,icims.jobbio.xml.enabled,icims.jobboardio.xml.enabled,icims.linkedin.xml.enabled,icims.mogul.xml.enabled,icims.monster.xml.enabled,icims.pallet-labs.xml.enabled,icims.propellum.xml.enabled,icims.qkly.xml.enabled,icims.recruitnet.xml.enabled,icims.resume-library.xml.enabled,icims.snagajob.xml.enabled,icims.upward.xml.enabled,icims.ziprecruiter.xml.enabled,icims.zippia.xml.enabled,icims.nexxt.xml.enabled",
+      "portal.id": "163",
+      "ccc.attract.portal.url": "https://jobs.sheetz.com",
+      "icims.config.web.indeed.easy.apply": "0"
+     },
+     "revision_int": 3,
+     "uuid": "4e8f20af-1b95-4382-9aac-c93d32ffdf5b"
+    },
+    "ats_job_hash": "43dff7bc28eb761618964ba1ef4a4818",
+    "googlejobs": {
+     "jobName": "projects/helpful-passage-853/tenants/cb22eb5b-7e00-0000-0000-007edad744d3/jobs/98737263336137414"
+    },
+    "import_id": "40fbee95-4143-4edd-926a-4a4fdd689559",
+    "redirectOnApply": true,
+    "questionservice": {
+     "id": "46850194"
+    },
+    "canonical_url": "https://jobs.sheetz.com/jobs/82604?lang=en-us",
+    "gdpr": false,
+    "last_mod": "2026-11-10T19:25:40+0000",
+    "elasticsearch": {
+     "es_created": true
+    },
+    "opensearch": {
+     "hit_score": "NaN",
+     "hit_explanation": null,
+     "hit_matched_queries": [
+      "internal",
+      "applyable",
+      "term-language",
+      "searchable",
+      "term-client_code"
+     ],
+     "hit_index": "jobs",
+     "hit_shard": null
+    },
+    "import_source": "ImporterService",
+    "client_code": "sheetz"
+   },
+   "update_date": "2026-11-10T19:25:40+0000",
+   "create_date": "2026-11-10T19:25:40+0000",
+   "category": [
+    " Food Service"
+   ],
+   "full_location": "ALLENTOWN, Pennsylvania",
+   "short_location": "ALLENTOWN, Pennsylvania",
+   "multipleLocations": false
+  },
+  "fetched_at": "2026-11-10T19:40:10.805321Z",
+  "content_hash": "3adf125a4e55d805f06ce80602a07336d5a3f3de064bfc96ad20107686f9d9a1"
+ },
+ {
+  "source_slug": "jibe",
+  "board_token": "https://jobs.sheetz.com",
+  "external_id": "81838",
+  "payload": {
+   "slug": "81838",
+   "language": "en-us",
+   "languages": [
+    "en-us"
+   ],
+   "client_code": "sheetz",
+   "req_id": "81838",
+   "title": "Cleaning Team Member - #916",
+   "description": "<p style=\"color:red;\"><b>Additional $1.50/hr. for working 10pm-6am</b></p> <p>If you’re a neat freak who gets satisfaction from making something shine, a Cleaning Team Member is the perfect role for you! Keeping our stores in tip-top shape for customers is important to us, making you a VERY valuable member of our work fam!</p>\r\n<p> </p>\r\n<p>Made-to-Order isn’t just our approach to food—it’s how we approach careers too! Part-time team members are based at one store, offering stability and focus, while full-time team members enjoy the opportunity to work across two locations, creating a dynamic, engaging, and fulfilling work experience. No matter the role, every position is designed to be as rewarding as it is impactful. A clean, welcoming store keeps our customers happy, and we reward your hard work with quarterly employee bonuses tied to the company’s success.</p>\r\n<p> </p>\r\n<p>That’s not all: we offer PTO and 100% paid parental leave for moms and dads, 401k match and employee stock ownership, limitless professional development and growth opportunities, $5,250 annual tuition reimbursement, full medical, vision and dental coverage, uniforms and snack discounts!</p>\r\n<p> </p>\r\n<p>Ready to make Sheetz happen with us? Hit that apply button below!</p> <ul type=\"disc\">\r\n<li>Making Sheetz SPARKLE by maintaining clean internal and external windows, service areas, vehicle parking spaces, extending parking areas, curbs and dumpster areas, floors, restrooms, food and beverage areas, coolers and freezers, and overall store grounds</li>\r\n<li>Taking the lead on inspecting and cleaning service areas, maintaining fuel dispensing units, cleaning and stocking car washes (at stores where we have them!) and snow removal when necessary</li>\r\n<li>Supporting the store team however they need to make spotless store dreams a reality</li>\r\n<li>Full-time team members must be willing to travel between two store locations (mileage and drive time exceeding 15 minutes reimbursed).</li>\r\n</ul> <p style=\"margin: 0px;\">Education</p>\r\n<ul>\r\n<li>High school degree or equivalent preferred</li>\r\n</ul>\r\n<p style=\"margin: 0px;\">Experience</p>\r\n<ul>\r\n<li>Prior experience in janitorial or cleaning roles is a plus.</li>\r\n<li>Light equipment maintenance skills are preferred.</li>\r\n</ul> <p>Sheetz is committed to the full inclusion of all qualified individuals. Sheetz is committed to considering all applicants regardless of disability who can perform all essential job duties with or without accommodations. </p>",
+   "location_name": "Sheetz #916",
+   "street_address": "2103 W Michigan Ave",
+   "city": "YPSILANTI",
+   "state": "Michigan",
+   "country": "United States",
+   "country_code": "US",
+   "postal_code": "48197",
+   "location_type": "LAT_LNG",
+   "latitude": 42.2325,
+   "longitude": -83.6336,
+   "categories": [
+    {
+     "name": "Food Service"
+    }
+   ],
+   "tags1": [
+    "Full-Time"
+   ],
+   "tags2": [
+    "Days"
+   ],
+   "tags3": [
+    "On-Site"
+   ],
+   "tags4": [
+    "USD $17.00/Hr."
+   ],
+   "tags5": [
+    "Store Jobs"
+   ],
+   "tags7": [
+    "2103 W Michigan Ave"
+   ],
+   "tags8": [
+    "Careers - Store"
+   ],
+   "tags9": [
+    "Robert Wade"
+   ],
+   "department": "",
+   "salary_value": 0,
+   "salary_min_value": 0,
+   "salary_max_value": 0,
+   "employment_type": "FULL_TIME",
+   "qualifications": "<p style=\"margin: 0px;\">Education</p>\r\n<ul>\r\n<li>High school degree or equivalent preferred</li>\r\n</ul>\r\n<p style=\"margin: 0px;\">Experience</p>\r\n<ul>\r\n<li>Prior experience in janitorial or cleaning roles is a plus.</li>\r\n<li>Light equipment maintenance skills are preferred.</li>\r\n</ul>",
+   "hiring_organization": "Sheetz, Inc",
+   "hiring_organization_logo": "https://cms.jibecdn.com/prod/sheetz/assets/GOOGLEFORJOBS-en-us-1695751005080.png",
+   "responsibilities": "<ul type=\"disc\">\r\n<li>Making Sheetz SPARKLE by maintaining clean internal and external windows, service areas, vehicle parking spaces, extending parking areas, curbs and dumpster areas, floors, restrooms, food and beverage areas, coolers and freezers, and overall store grounds</li>\r\n<li>Taking the lead on inspecting and cleaning service areas, maintaining fuel dispensing units, cleaning and stocking car washes (at stores where we have them!) and snow removal when necessary</li>\r\n<li>Supporting the store team however they need to make spotless store dreams a reality</li>\r\n<li>Full-time team members must be willing to travel between two store locations (mileage and drive time exceeding 15 minutes reimbursed).</li>\r\n</ul>",
+   "posted_date": "2026-11-10T19:23:00+0000",
+   "apply_url": "https://storecareers-sheetz.icims.com/jobs/81838/login",
+   "internal": false,
+   "external": false,
+   "searchable": true,
+   "applyable": true,
+   "li_easy_applyable": true,
+   "ats_code": "icims",
+   "hiring_flow_name": "iCIMS ATS Hiring Flow",
+   "isFrontLineAIJob": false,
+   "isApplyFlowJob": false,
+   "meta_data": {
+    "mongo": {
+     "mongo_created": true
+    },
+    "openingjobs": {
+     "openingJobId": "000014e1b5e3a7b82828d6c0c05a1afa0d63"
+    },
+    "icims": {
+     "jps_is_public": true,
+     "primary_posted_site_object": {
+      "site": "storecareers-sheetz",
+      "tenantId": "12964",
+      "siteId": "082df02c-7983-4092-8dce-33dc936feb64",
+      "datePosted": "2026-11-10T19:23:00+0000",
+      "siteType": "ATTRACT"
+     },
+     "date_updated": "2026-11-10T19:23:34Z",
+     "config_keys": {
+      "jobposting.external.company.name": "Sheetz, Inc",
+      "jobposting.external.company.url": "www.sheetz.com",
+      "icims.external.xml.feeds": "icims.adzuna.xml.enabled,icims.appcast.xml.enabled,icims.careerbuilder.xml.enabled,icims.craigslist.xml.enabled,icims.cv-library.xml.enabled,icims.direct-employers.xml.enabled,icims.inhersight.xml.enabled,icims.itjobscafe.xml.enabled,icims.jobbio.xml.enabled,icims.jobboardio.xml.enabled,icims.linkedin.xml.enabled,icims.mogul.xml.enabled,icims.monster.xml.enabled,icims.pallet-labs.xml.enabled,icims.propellum.xml.enabled,icims.qkly.xml.enabled,icims.recruitnet.xml.enabled,icims.resume-library.xml.enabled,icims.snagajob.xml.enabled,icims.upward.xml.enabled,icims.ziprecruiter.xml.enabled,icims.zippia.xml.enabled,icims.nexxt.xml.enabled",
+      "portal.id": "163",
+      "ccc.attract.portal.url": "https://jobs.sheetz.com",
+      "icims.config.web.indeed.easy.apply": "0"
+     },
+     "revision_int": 12,
+     "uuid": "9767f58d-e37d-4962-8267-70803da50fe6"
+    },
+    "ats_job_hash": "5a076b9c2974f1939527dfdc7cf6b541",
+    "googlejobs": {
+     "jobName": "projects/helpful-passage-853/tenants/cb22eb5b-7e00-0000-0000-007edad744d3/jobs/97558586871161542"
+    },
+    "import_id": "1669260d-c0a3-42c2-b555-8ba7d4a8c23d",
+    "redirectOnApply": true,
+    "questionservice": {
+     "id": "46743151"
+    },
+    "canonical_url": "https://jobs.sheetz.com/jobs/81838?lang=en-us",
+    "gdpr": false,
+    "last_mod": "2026-11-10T19:24:29+0000",
+    "elasticsearch": {
+     "es_created": false
+    },
+    "opensearch": {
+     "hit_score": "NaN",
+     "hit_explanation": null,
+     "hit_matched_queries": [
+      "internal",
+      "applyable",
+      "term-language",
+      "searchable",
+      "term-client_code"
+     ],
+     "hit_index": "jobs",
+     "hit_shard": null
+    },
+    "import_source": "ImporterService",
+    "client_code": "sheetz"
+   },
+   "update_date": "2026-11-10T19:24:29+0000",
+   "create_date": "2026-11-10T19:23:37+0000",
+   "category": [
+    " Food Service"
+   ],
+   "full_location": "YPSILANTI, Michigan",
+   "short_location": "YPSILANTI, Michigan",
+   "multipleLocations": false
+  },
+  "fetched_at": "2026-11-10T19:40:10.805823Z",
+  "content_hash": "97057fdc5449a8881781e779f7122343139e7f3cedd014f22a818d4554cdb5fc"
+ },
+ {
+  "source_slug": "jibe",
+  "board_token": "https://jobs.sheetz.com",
+  "external_id": "84931",
+  "payload": {
+   "slug": "84931",
+   "language": "en-us",
+   "languages": [
+    "en-us"
+   ],
+   "client_code": "sheetz",
+   "req_id": "84931",
+   "title": "Store Team Member - #488",
+   "description": "<p style=\"color:red;\"><b>Additional $1.50/hr. for working 10pm-6am</b></p> <p style=\"margin: 0px;\">Got high-energy and love to hustle? Come join the fast-paced, FUN work atmosphere as a Store Team Member and MAKE SHEETZ HAPPEN!</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">We call this role a ‘team member’ because that’s what you’re in for: a team culture where you’ll find your people and have each other’s backs.</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">Your day-to-day will be busy, but super rewarding, because you’re in the business of making customers smile! Working together with the team, you’ll engage customers with hospitality in all aspects of their Sheetz experience. With excellent communication skills and the ability to adapt to change, you’ll thrive in this position.</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">And that’s great newz, because this isn’t just a ‘job.’ It can become a career as you grow your skillset by engaging in many facets of the store through sales, food preparation & customer service. The sky is the limit for your potential to grow within Sheetz.</p><p style=\"margin: 0px;\"> </p><p style=\"margin: 0px;\">You’ll feel your value, every day because you’ll be receiving competitive benefits & perkz for days. We are proud to offer our employees competitive salaries and PTO, 100% paid maternity and paternity leave, food & drink discounts, up to $5250 a year in tuition reimbursement, employee bonuses and more! So, you in?</p> <ul><li>Welcome customers to our stores with top-tier customer service</li><li>Make magic happen by serving up quality food and beverages made to exact customer specifications in a safe, fast and friendly manner</li><li>Manage transactions at check-out, while keeping an eye on appropriate sales of restricted products</li><li>Keep thingz clean in the store, kitchen, and dining areas</li><li>Keep the goodz stocked throughout the store</li></ul> <ul><li>The ability to multi-task, perform repeated bending, standing, and reaching, and occasionally lifting up to 20 pounds and the ability to assist another person in lifting 40 pounds.</li><li>Must be 16 years of age or older</li></ul> <p>Sheetz is committed to the full inclusion of all qualified individuals. Sheetz is committed to considering all applicants regardless of disability who can perform all essential job duties with or without accommodations.</p>",
+   "location_name": "Sheetz #488",
+   "street_address": "2521 NORTH MEMORIAL DR",
+   "city": "GREENVILLE",
+   "state": "North Carolina",
+   "country": "United States",
+   "country_code": "US",
+   "postal_code": "27834",
+   "location_type": "LAT_LNG",
+   "latitude": 35.6192,
+   "longitude": -77.3975,
+   "categories": [
+    {
+     "name": "Food Service"
+    }
+   ],
+   "tags1": [
+    "Part-Time"
+   ],
+   "tags2": [
+    "Evenings"
+   ],
+   "tags3": [
+    "On-Site"
+   ],
+   "tags4": [
+    "USD $15.00/Hr."
+   ],
+   "tags5": [
+    "Store Jobs"
+   ],
+   "tags7": [
+    "2521 NORTH MEMORIAL DR"
+   ],
+   "tags8": [
+    "Careers - Store"
+   ],
+   "tags9": [
+    "Sarah Sweezy"
+   ],
+   "department": "",
+   "salary_value": 0,
+   "salary_min_value": 0,
+   "salary_max_value": 0,
+   "employment_type": "PART_TIME",
+   "qualifications": "<ul><li>The ability to multi-task, perform repeated bending, standing, and reaching, and occasionally lifting up to 20 pounds and the ability to assist another person in lifting 40 pounds.</li><li>Must be 16 years of age or older</li></ul>",
+   "hiring_organization": "Sheetz, Inc",
+   "hiring_organization_logo": "https://cms.jibecdn.com/prod/sheetz/assets/GOOGLEFORJOBS-en-us-1695751005080.png",
+   "responsibilities": "<ul><li>Welcome customers to our stores with top-tier customer service</li><li>Make magic happen by serving up quality food and beverages made to exact customer specifications in a safe, fast and friendly manner</li><li>Manage transactions at check-out, while keeping an eye on appropriate sales of restricted products</li><li>Keep thingz clean in the store, kitchen, and dining areas</li><li>Keep the goodz stocked throughout the store</li></ul>",
+   "posted_date": "2026-11-10T19:17:00+0000",
+   "apply_url": "https://storecareers-sheetz.icims.com/jobs/84931/login",
+   "internal": false,
+   "external": false,
+   "searchable": true,
+   "applyable": true,
+   "li_easy_applyable": true,
+   "ats_code": "icims",
+   "hiring_flow_name": "iCIMS ATS Hiring Flow",
+   "isFrontLineAIJob": false,
+   "isApplyFlowJob": false,
+   "meta_data": {
+    "mongo": {
+     "mongo_created": true
+    },
+    "openingjobs": {
+     "openingJobId": "0000e101c04fe413eee47959c105f3ec544f"
+    },
+    "icims": {
+     "jps_is_public": true,
+     "primary_posted_site_object": {
+      "site": "storecareers-sheetz",
+      "tenantId": "12964",
+      "siteId": "082df02c-7983-4092-8dce-33dc936feb64",
+      "datePosted": "2026-11-10T19:17:00+0000",
+      "siteType": "ATTRACT"
+     },
+     "date_updated": "2026-11-10T19:17:16Z",
+     "config_keys": {
+      "jobposting.external.company.name": "Sheetz, Inc",
+      "jobposting.external.company.url": "www.sheetz.com",
+      "icims.external.xml.feeds": "icims.adzuna.xml.enabled,icims.appcast.xml.enabled,icims.careerbuilder.xml.enabled,icims.craigslist.xml.enabled,icims.cv-library.xml.enabled,icims.direct-employers.xml.enabled,icims.inhersight.xml.enabled,icims.itjobscafe.xml.enabled,icims.jobbio.xml.enabled,icims.jobboardio.xml.enabled,icims.linkedin.xml.enabled,icims.mogul.xml.enabled,icims.monster.xml.enabled,icims.pallet-labs.xml.enabled,icims.propellum.xml.enabled,icims.qkly.xml.enabled,icims.recruitnet.xml.enabled,icims.resume-library.xml.enabled,icims.snagajob.xml.enabled,icims.upward.xml.enabled,icims.ziprecruiter.xml.enabled,icims.zippia.xml.enabled,icims.nexxt.xml.enabled",
+      "portal.id": "163",
+      "ccc.attract.portal.url": "https://jobs.sheetz.com",
+      "icims.config.web.indeed.easy.apply": "0"
+     },
+     "revision_int": 1,
+     "uuid": "838d5fee-2683-47a6-a46c-0aee125badc3"
+    },
+    "ats_job_hash": "e20bc91c45640f6624298d2c90e5715e",
+    "googlejobs": {
+     "jobName": "projects/helpful-passage-853/tenants/cb22eb5b-7e00-0000-0000-007edad744d3/jobs/143298270586643142"
+    },
+    "import_id": "1669260d-c0a3-42c2-b555-8ba7d4a8c23d",
+    "redirectOnApply": true,
+    "questionservice": {
+     "id": "47115702"
+    },
+    "canonical_url": "https://jobs.sheetz.com/jobs/84931?lang=en-us",
+    "gdpr": false,
+    "last_mod": "2026-11-10T19:24:31+0000",
+    "elasticsearch": {
+     "es_created": false
+    },
+    "opensearch": {
+     "hit_score": "NaN",
+     "hit_explanation": null,
+     "hit_matched_queries": [
+      "internal",
+      "applyable",
+      "term-language",
+      "searchable",
+      "term-client_code"
+     ],
+     "hit_index": "jobs",
+     "hit_shard": null
+    },
+    "import_source": "ImporterService",
+    "client_code": "sheetz"
+   },
+   "update_date": "2026-11-10T19:24:31+0000",
+   "create_date": "2026-11-10T19:17:51+0000",
+   "category": [
+    " Food Service"
+   ],
+   "full_location": "GREENVILLE, North Carolina",
+   "short_location": "GREENVILLE, North Carolina",
+   "multipleLocations": false
+  },
+  "fetched_at": "2026-11-10T19:40:10.805823Z",
+  "content_hash": "7e713e69df33ec5e41328e75b6c7c972f2fa17c455666e436f69fc133e98b185"
+ }
+]

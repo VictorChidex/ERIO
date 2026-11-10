@@ -1,6 +1,7 @@
 """Source connectors: one small adapter per ATS behind one interface (spec section 5)."""
 
 from erio_core.connectors.ashby import AshbyConnector
+from erio_core.connectors.ats_extra import ATS_EXTRA_CONNECTORS
 from erio_core.connectors.bamboohr import BambooHRConnector
 from erio_core.connectors.base import (
     BoardFetch,
@@ -99,6 +100,7 @@ ALL_CONNECTORS: list[Connector] = [
     *PUBLIC_SERVICE_CONNECTORS,
     *REFERENCE_CONNECTORS,
     *REGIONAL_CONNECTORS,
+    *ATS_EXTRA_CONNECTORS,
 ]
 
 CONNECTORS: dict[str, Connector] = {connector.slug: connector for connector in ALL_CONNECTORS}
