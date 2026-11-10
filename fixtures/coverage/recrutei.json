@@ -1,0 +1,125 @@
+[
+ {
+  "source_slug": "recrutei",
+  "board_token": "https://empregos.recrutei.com.br/sitemap-vagas-1.xml",
+  "external_id": "3bf7830d6828fa334d140099",
+  "payload": {
+   "page_url": "https://empregos.recrutei.com.br/vaga/singularis-rh/165111-cd-full-stack-senior-low-codeno-code-ingles-fluente",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "CD Full Stack | Low-Code/No-Code | Inglês Fluente",
+    "description": "Local: São Paulo, SPModelo de trabalho: Híbrido, 1 dia por semana no escritórioRegime de contratação: PJRemuneração: R$ 10.000 mensaisIdioma: Inglês fluente obrigatórioA Contratação Acelerada está apoiando na busca de um(a) CD Full Stack | Low-Code/No-Code, para uma empresa de tecnologia que desenvolve soluções de software voltadas à transformação digital e automação de processos empresariais.A empresa atua no mercado latino-americano, desenvolvendo soluções que permitem modelar, automatizar, integrar e otimizar processos de negócio por meio de tecnologia e plataformas low-code.O desafio da posiçãoBuscamos uma pessoa com senioridade em Citizen Development, experiência com plataformas low-code/no-code e conhecimentos de desenvolvimento Full Stack em nível, no mínimo, pleno.O(a) profissional será responsável por compreender problemas de negócio, conversar com usuários e stakeholders, analisar processos e transformar necessidades em soluções digitais funcionais.A atuação acompanha todo o ciclo da solução, desde o levantamento de requisitos e construção de protótipos até desenvolvimento, testes, publicação e suporte à adoção.É uma posição que exige autonomia para analisar cenários, propor alternativas e conduzir problemas técnicos e funcionais até sua resolução.Principais responsabilidadesConversar com usuários e stakeholders para compreender necessidades e oportunidades de melhoria;Levantar, analisar e documentar requisitos funcionais e técnicos;Mapear e modelar processos empresariais;Identificar oportunidades de automação;Desenvolver soluções em plataformas low-code/no-code;Construir aplicações web e mobile;Criar protótipos e validar soluções com usuários;Desenvolver regras de negócio e customizações;Trabalhar com JavaScript e Java;Atuar em front-end e back-end;Trabalhar com bancos de dados;Desenvolver e consumir APIs e integrações;Planejar e executar testes;Acompanhar as soluções até sua publicação;Realizar apresentações e demonstrações;Treinar e apoiar usuários finais;Trabalhar em conjunto com engenheiros de software e liderança técnica;Identificar falhas e conduzir a resolução de problemas técnicos e funcionais.RequisitosFormação superior completa ou em andamento em Sistemas de Informação, Engenharia de Sistemas, Engenharia de Software, Ciência da Computação ou áreas correlatas;Experiência com análise, desenho e implementação de sistemas corporativos;Experiência com levantamento de requisitos e análise funcional;Experiência consistente com plataformas low-code/no-code;Conhecimentos de desenvolvimento Full Stack em nível, no mínimo, pleno;Conhecimento de JavaScript, Java e CSS;Experiência com bancos de dados SQL e NoSQL;Conhecimento de modelagem de dados;Experiência com APIs e integrações;Conhecimento de testes funcionais e técnicos;Familiaridade com ERP e CRM;Conhecimento de metodologias ágeis, como Scrum e Kanban;Familiaridade com Jira, Trello, Azure DevOps ou ferramentas semelhantes;Inglês fluente para comunicação profissional em ambiente internacional;Disponibilidade para atuação híbrida em São Paulo, com presença no escritório 1 vez por semana.DiferenciaisExperiência com Deyel, OutSystems ou plataformas semelhantes;Vivência em automação empresarial e transformação digital;Conhecimento de Inteligência Artificial aplicada a plataformas low-code/no-code;Experiência com implantação de sistemas;Vivência com treinamento de usuários;Atuação anterior em projetos ou equipes internacionais;Conhecimento avançado de espanhol.Perfil esperadoBuscamos uma pessoa que apresente:Autonomia para assumir problemas e conduzi-los até a solução;Pensamento analítico;Visão sistêmica;Comunicação clara;Escuta ativa;Orientação para negócio e experiência do usuário;Organização;Proatividade;Facilidade para trabalhar em equipes multidisciplinares;Adaptabilidade;Compromisso com qualidade, prazos e resultados.Remuneração e estruturaContratação PJ;Remuneração fixa de R$ 10.000 mensais;Modelo híbrido;Presença no escritório em São Paulo 1 vez por semana;Atuação em ambiente internacional e multidisciplinar.",
+    "datePosted": "2026-11-10T15:34:29.000000Z",
+    "validThrough": "2027-01-10T15:34:29+00:00",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "jobBenefits": "",
+    "industry": "",
+    "skills": "",
+    "workHours": "0",
+    "salaryCurrency": "BRL",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Singularis RH",
+     "sameAs": "",
+     "logo": "https://d2bxzineatl84k.cloudfront.net/storage/files/logos/YGoeUmB693MGdvSfKyubUGK2wpCcXEFQ6Jj3eUaS.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "Brasil"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:42.474395Z",
+  "content_hash": "3793872336d57b39f7e779295d7f64d6aece81a1a47b6c44bc30c120cf2bd402"
+ },
+ {
+  "source_slug": "recrutei",
+  "board_token": "https://empregos.recrutei.com.br/sitemap-vagas-1.xml",
+  "external_id": "ccfef3062d9258fb2ff1af30",
+  "payload": {
+   "page_url": "https://empregos.recrutei.com.br/vaga/grupo-decio/165110-cozinheira-vaga-tambem-disponivel-para-pessoa-com-deficiencia",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Cozinheira (Vaga também disponível para pessoa com deficiência)",
+    "description": "SEJA PARTE DESTA JORNADA DE SUCESSO!Nascemos de um único posto com a premissa de abastecer e cuidar das pessoas. Ao longo do tempo, essa premissa fez com que criássemos uma parceria única com os caminhoneiros e os viajantes. Hoje, mesmo com nossa expansão nacional, enraizamos o cuidado e é isso que nos faz ser reconhecidos e referência.Somos o Decio Estação de Serviços, uma estrutura completa de serviços que vão desde acessórios para caminhões, combustível de qualidade, utilidades, até uma comida especial que nos faz sentir em casa. Um ecossistema que permite que as pessoas possam cuidar de si, de seus veículos e da família. Tudo em um lugar só.Aqui propagamos a energia que impulsiona a diversidade e a inclusão, criando um ambiente vibrante e dinâmico. Todas as nossas oportunidades são afirmativas para pessoas com deficiência. Requisitos/Formação: Ensino fundamental completo (desejável ensino médio).Experiência comprovada na função de cozinheira.Conhecimento em preparo de refeições em grande escala.Conhecimento em cortes, temperos, cocção e manipulação de alimentos.Conhecimento das Boas Práticas de Manipulação de Alimentos.Noções de higiene, organização e segurança alimentar.Capacidade de trabalhar em equipe e sob pressão.Agilidade, responsabilidade e comprometimento.Organização e atenção aos detalhes.Disponibilidade de horário.Facilidade para seguir cardápios, fichas técnicas e orientações da liderança.Comprometimento com redução de desperdícios e qualidade da produção.Diferencial: Experiência em restaurante self-service, buffet livre ou cozinha industrial.Atividades a serem desempenhadas: Realizar o preparo de carnes, aves, peixes, guarnições, molhos e demais alimentos.Executar o pré-preparo dos alimentos, incluindo higienização, cortes, temperos e porcionamento.Seguir fichas técnicas, receitas e padrões de produção estabelecidos.Manter a organização e limpeza do ambiente de trabalho, utensílios e equipamentos.Cumprir as normas de Boas Práticas de Manipulação de Alimentos.Controlar o tempo e a temperatura de preparo e conservação dos alimentos.Evitar desperdícios e utilizar corretamente as matérias-primas.Acompanhar a qualidade, quantidade e apresentação das preparações.Organizar e armazenar corretamente os alimentos, respeitando identificação e validade.Trabalhar em equipe, cumprindo orientações da liderança e horários de produção.Zelar pelo cumprimento dos procedimentos operacionais e normas internas do restaurante.Objetivo do cargo: Garantir uma produção de refeições com qualidade, segurança alimentar, padronização, organização e eficiência, contribuindo para a satisfação dos clientes e os resultados do restaurante.Horário de trabalho: 12x36 - 06:00 às 18:00.Local de trabalho: Decio Cezarina - BR 060 KM 72 Obs: Deixe suas informações de cadastro atualizadas (currículo, e-mail, telefone, etc.)Não perca a oportunidade de fazer parte de algo extraordinário! Junte-se ao Grupo Decio e faça a diferença. Seu futuro começa aqui!Visite nosso site https://www.grupodecio.com.br para conhecer mais sobre o Grupo Decio.",
+    "datePosted": "2026-11-10T15:28:02.000000Z",
+    "validThrough": "2026-12-10T18:00:00-03:00",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "jobBenefits": "Vale Alimentação, Refeição na Empresa, Vale Transporte, Plano Odontológico, Plano de Saude, Seguro de Vida, GymPass",
+    "industry": "",
+    "skills": "",
+    "workHours": "44",
+    "salaryCurrency": "BRL",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Grupo Decio",
+     "sameAs": "",
+     "logo": "https://d2bxzineatl84k.cloudfront.net/storage/files/logos/XKrYcd33yRbS2HlTduA4NZedZMZ6FkAB20urJsfW.jpg"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cezarina",
+      "addressRegion": "GO",
+      "addressCountry": "Brasil"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:43.226092Z",
+  "content_hash": "0e8a22911eff8062d9313d8c6f0abc78719ee4e875243b125870d9c0e696cc40"
+ },
+ {
+  "source_slug": "recrutei",
+  "board_token": "https://empregos.recrutei.com.br/sitemap-vagas-1.xml",
+  "external_id": "d09be2af2b1d403a27da9921",
+  "payload": {
+   "page_url": "https://empregos.recrutei.com.br/vaga/recovery/165109-estagiarioa-administrativo-afirmativa-para-pessoas-pretaspardas",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Estagiário(a) Administrativo | Afirmativa para pessoas pretas/pardas",
+    "description": "Na Recovery, o(a) Estagiário(a) Administrativo tem a missão de apoiar a equipe de Compras na condução de negociações com fornecedores, garantindo organização, controle de prazos e rastreabilidade dos processos. É uma posição voltada ao aprendizado prático do ciclo completo de compras, desenvolvendo visão de processo, organização e comunicação com áreas internas e fornecedores.Todas as vagas publicadas são abertas para pessoas com deficiência. A Recovery é uma empresa que valoriza a diversidade e está em busca da construção de um ambiente mais inclusivo. Aqui todos os candidatos são bem-vindos! O que seria bacana você ter e conhecer:Cursando Graduação em: Administração, Economia, Engenharia de Produção ou áreas correlatas.Organizado(a), com senso de urgência e de dono: trata os prazos e as pendências como responsabilidade própria;Perfil comunicativo, com boa desenvoltura em diálogos, curiosidade e energia para transitar entre diferentes públicos (internos e externos);Atenção aos detalhes para manter registros e controles sempre atualizados: entende que documentar cada etapa é parte do trabalho;Capacidade de gerenciar múltiplas frentes ao mesmo tempo;Conhecimento de MS Excel intermediário;Interesse em usar IA para facilitar, automatizar e trazer inteligência para as rotinas da área;Bom relacionamento interpessoal. O que você terá que fazer:Acompanhar e conduzir negociações e compras simples de ponta a ponta, controlando os prazos;Fazer a interlocução com pessoas internas e externas envolvidas nas compras e negociações;Registrar as etapas das atividades nos controles internos, assegurando rastreabilidade e acompanhamento;Auxiliar a equipe na gestão de cronogramas e no controle do dia a dia da área;Participar do processo de recebimento das solicitações de compras e contratações, apoiando sua conclusão;Auxiliar no planejamento da área e na elaboração de controles e apresentações relacionadas a Compras; e Apoiar a gestão de prazos contratuais, fazendo a interface com as áreas sobre a necessidade de renovação e apoiando as negociações com fornecedores.Utilização de sistemas internos para registros relacionados às atividades da área. O que oferecemos de principais benefícios para os nossos RecLovers:Vale Alimentação ou refeição no valor de R$1.260 por mês, inclusive no mês das suas férias;Assistência médica e odontológica estendida aos dependentes;Participação nos Lucros e Resultados;Seguro de vida;Acesso à plataforma Udemy para seu desenvolvimento! Quer saber o que mais temos de legal por aqui? Dá uma olhada!Estimulamos que o nosso time esteja sempre em movimento, para isso temos por aqui o Well Hub para Reclovers e, para Reclovers e dependentes, também temos a opção do Totalpass;Day off no mês do seu aniversário e sorteio de vale presente para os aniversariantes do mês;Nas sextas-feiras o nosso o expediente se encerra as 16h;Vestimenta Casual (todos os dias): aqui você pode ser quem é! ;)Disponibilizamos frutas no escritório;Auxílio Internet de R$ 100,00 – Disponibilizado mensalmente;Somos uma empresa cidadã! Licença maternidade e paternidade estendida para nossos Reclovers: 6 meses para mamães e 20 dias para os papais;Auxílio-creche para as mamães;Fique OK – Programa de apoio social para orientações através de profissionais como: psicólogo, assistente social, advogado, nutricionista, consultor financeiro, consultor pet, fisioterapeuta e personal trainer;Estamos trabalhando em modelo híbrido e nosso escritório fica no coração de São Paulo, a Avenida Paulista! Quer ser parte do nosso time? Vem, todos juntos fazemos a diferença!",
+    "datePosted": "2026-11-10T15:27:40.000000Z",
+    "validThrough": "2027-01-10T15:27:40+00:00",
+    "employmentType": [
+     "INTERN"
+    ],
+    "jobBenefits": "",
+    "industry": "",
+    "skills": "",
+    "workHours": "30",
+    "salaryCurrency": "BRL",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Recovery",
+     "sameAs": "",
+     "logo": "https://d2bxzineatl84k.cloudfront.net/storage/files/logos/4rV61EA7F8sH8KD5oqGoQTgps5kkM2iZqIJNzdN3.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "Brasil"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:44.215901Z",
+  "content_hash": "0d9fd926bb28caca8de5a87dea328570539cf61e97e60518871ced60afdf1ced"
+ }
+]

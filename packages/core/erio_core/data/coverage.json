@@ -1032,5 +1032,137 @@
   "partial_read": false,
   "checked_at": null,
   "note": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission."
+ },
+ {
+  "slug": "apploi",
+  "name": "Apploi",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 10,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:07:21+00:00",
+  "note": "Reads the server-rendered company page on apply-jobs.apploi.com (robots.txt allows it) and the schema.org JobPosting on each job page; 15 jobs a page, up to 10 pages. The jobs.apploi.com app is not read: its job search calls an API with an Authorization bearer header."
+ },
+ {
+  "slug": "solides",
+  "name": "Sólides",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 97,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:07:27+00:00",
+  "note": "Reads the portal's own public list, vagas.solides.com.br/api/vacancies (robots.txt allows all), the newest 500 jobs a crawl out of tens of thousands, so it is reported as a partial read. Jobs link to vagas.solides.com.br."
+ },
+ {
+  "slug": "inhire",
+  "name": "InHire",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 3,
+  "jobs_read": 580,
+  "partial_read": false,
+  "checked_at": "2026-11-10T20:07:31+00:00",
+  "note": "Reads the public career-page API documented at docs.inhire.com.br (GET api.inhire.app/job-posts/public/pages with the X-Tenant header, the start of the tenant's {tenant}.inhire.app address). The list has no descriptions."
+ },
+ {
+  "slug": "recrutei",
+  "name": "Recrutei",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 5,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:07:37+00:00",
+  "note": "Reads Recrutei Empregos, the job board of Recrutei customers: the sitemap of job pages and the schema.org JobPosting on each (robots.txt allows both). 200 pages a crawl, so large boards are partial. Companies' own jobs.recrutei.com.br pages list jobs through a POST API and are not read."
+ },
+ {
+  "slug": "senior_talentos",
+  "name": "Senior Portal de Talentos",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 484,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:07:44+00:00",
+  "note": "Reads the anonymous searchVacancies query the portal's own pages call (no sign-in, no robots.txt on the host): every employer's jobs, 100 a page, up to 10 pages a crawl (partial). The list has no descriptions. Jobs link to {tenant}.portaldetalentos.senior.com.br."
+ },
+ {
+  "slug": "earcu",
+  "name": "eArcu",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "robots.txt disallows */action/* and */ajaxaction/*, which the career sites' job search and paging use (only the first result page renders without them), and there is no sitemap or feed."
+ },
+ {
+  "slug": "erecruiter",
+  "name": "eRecruiter",
+  "kind": "ats",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "no public way to list a customer's jobs was found: eRecruiter's own board (jobs.erecruiter.net) shows no open jobs and no JSON-LD, there is no shared host, sitemap or feed, and customers' career sites run on their own domains."
+ },
+ {
+  "slug": "intervieweb",
+  "name": "Intervieweb / Inrecruiting",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 3,
+  "jobs_read": 15,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:08:06+00:00",
+  "note": "Reads the first page (15 jobs) of a company's /{company}/it/career page and the schema.org JobPosting on each job page; a board with more pages is a partial read, because later pages need a script-issued CSRF POST. Some companies' job pages carry no JobPosting data (colombinispa, colorobbia) and fail. App.php?LAC= addresses are not used (robots.txt disallows them)."
+ },
+ {
+  "slug": "thehub",
+  "name": "The Hub",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 5,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:08:12+00:00",
+  "note": "Reads thehub.io's sitemap of job pages and the schema.org JobPosting on each (robots.txt allows both); 200 pages a crawl, of about 1,200 Nordic start-up jobs (partial)."
+ },
+ {
+  "slug": "applitrack",
+  "name": "AppliTrack / Frontline",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 200,
+  "partial_read": false,
+  "checked_at": "2026-11-10T20:08:15+00:00",
+  "note": "Reads the embeddable posting list districts put on their own sites, www.applitrack.com/{district}/onlineapp/JobPostings/view.asp?embed=1&all=1 (robots.txt only closes the admin area). Descriptions are the posting text; some say only to open the attachment."
+ },
+ {
+  "slug": "checkin",
+  "name": "CHECK-IN by perbility",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 3,
+  "jobs_read": 15,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:08:49+00:00",
+  "note": "Reads a portal's /list (10 a page, up to 5 pages, partial beyond) and the schema.org microdata on each job page at {portal}.mein-check-in.de (robots.txt allows it). Portals on www.mein-check-in.de/{customer}/ and jobs.perbility.de are other products and are not read."
+ },
+ {
+  "slug": "cegid",
+  "name": "Cegid DigitalRecruiters",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 10,
+  "partial_read": true,
+  "checked_at": "2026-11-10T20:11:13+00:00",
+  "note": "Career sites sit on the employer's own domain; the board is the site's sitemap and each /annonce/ page carries a schema.org JobPosting. These sites ask for a 10 second delay between requests, so reading 200 job pages takes over half an hour (partial)."
  }
 ]

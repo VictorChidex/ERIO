@@ -1,0 +1,107 @@
+[
+ {
+  "source_slug": "intervieweb",
+  "board_token": "https://inrecruiting.intervieweb.it/romeogestioni/it/career",
+  "external_id": "1eeddeb4cc1332c35acf9ebe",
+  "payload": {
+   "page_url": "https://inrecruiting.intervieweb.it/romeogestioni/jobs/addetti-alla-reception-milano-part-time-735150/it/",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-10-21",
+    "description": "<p><span style=\"color: rgb(19, 29, 42);\">Si ricercano profili da inserire in qualità di addetto/a alla reception, servizio di accoglienza e supporto alla clientela.</span></p><p><span style=\"color: rgb(19, 29, 42);\"><br /></span></p><h3><span style=\"color: rgb(19, 29, 42);\">Gli orari sono part-time, dal lunedì al venerdì </span></h3><p><span style=\"color: rgb(19, 29, 42);\">36h: </span></p><ul><li><span style=\"color: rgb(19, 29, 42);\">lun-gio dalle 8:30 alle 17:30</span></li><li>ven dalle 8:30 alle 12:30</li></ul><p></p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Romeo Gestioni S.p.A.",
+     "sameAs": "www.romeogestioni.com",
+     "logo": "https://inrecruiting.intervieweb.it/uploads/36582/loghi/googlejob/Progettosenzatitolo-2020-09-25T100650.311.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Milano",
+      "addressRegion": "MI",
+      "postalCode": "20121",
+      "addressCountry": "IT"
+     }
+    },
+    "title": "ADDETTI ALLA RECEPTION MILANO PART TIME",
+    "validThrough": "2026-11-20"
+   }
+  },
+  "fetched_at": "2026-11-10T19:56:21.327706Z",
+  "content_hash": "984d94c125b531f33e15b3150509bda6561bf8645bb2a1d69772f64ab78a7023"
+ },
+ {
+  "source_slug": "intervieweb",
+  "board_token": "https://inrecruiting.intervieweb.it/romeogestioni/it/career",
+  "external_id": "6e2b8fa7b4b58ef177091e0b",
+  "payload": {
+   "page_url": "https://inrecruiting.intervieweb.it/romeogestioni/jobs/addetto-alla-manutenzione-edile-serramentista-rai-732351/it/",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-10-06",
+    "description": "<p><span style=\"color: rgb(13, 13, 13);\">Siamo alla ricerca di una figura professionale da inserire nel nostro team come </span><strong style=\"color: rgb(13, 13, 13);\">Manutentore Edile / Serramentista</strong><span style=\"color: rgb(13, 13, 13);\">.</span></p><p><span style=\"color: rgb(13, 13, 13);\">La risorsa si occuperà principalmente di interventi di </span><strong style=\"color: rgb(13, 13, 13);\">manutenzione ordinaria e straordinaria</strong><span style=\"color: rgb(13, 13, 13);\">, lavorazioni edili e attività di riparazione e manutenzione di serramenti.</span></p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Romeo Gestioni S.p.A.",
+     "sameAs": "www.romeogestioni.com",
+     "logo": "https://inrecruiting.intervieweb.it/uploads/36582/loghi/googlejob/Progettosenzatitolo-2020-09-25T100650.311.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Roma",
+      "addressRegion": null,
+      "postalCode": "00118",
+      "addressCountry": "IT"
+     }
+    },
+    "title": "ADDETTO ALLA MANUTENZIONE EDILE / SERRAMENTISTA",
+    "validThrough": "2026-11-16"
+   }
+  },
+  "fetched_at": "2026-11-10T19:56:22.249838Z",
+  "content_hash": "a043f41943670b45239c1e99b8a96a024222509448f15f31f9800aa439a7a10a"
+ },
+ {
+  "source_slug": "intervieweb",
+  "board_token": "https://inrecruiting.intervieweb.it/romeogestioni/it/career",
+  "external_id": "d257cca148c51ff890e9a7e2",
+  "payload": {
+   "page_url": "https://inrecruiting.intervieweb.it/romeogestioni/jobs/assistente-tecnico-di-commessa-abbiategrasso-732708/it/",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-10-08",
+    "description": "<p>Per commesse in ambito Facility Management zona Abbiategrasso, siamo alla ricerca di un profilo da inserire all’interno della nostra organizzazione in qualità di <strong>Assistente tecnico di commessa.</strong></p><p><br /></p><p><strong>Principali Responsabilità</strong></p><p><span style=\"color: black;\">La risorsa affiancherà il Responsabile di cantiere occupandosi principalmente di:</span></p><ul><li><span style=\"color: black;\">Supporto alla gestione amministrativa e operativa della commessa: ordini, rapporti di intervento, consuntivazione, rendicontazione al cliente;</span></li><li><span style=\"color: black;\">Supporto alla gestione della documentazione tecnica e di sicurezza (DUVRI, POS, certificazioni, scadenze);</span></li><li><span style=\"color: black;\">Rapporti con clienti, fornitori e subappaltatori;</span></li><li><span style=\"color: black;\">Utilizzo e aggiornamento del gestionale interno;</span></li><li><span style=\"color: black;\">Supporto trasversale alle attività di gestione del cantiere.</span></li></ul>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Romeo Gestioni S.p.A.",
+     "sameAs": "www.romeogestioni.com",
+     "logo": "https://inrecruiting.intervieweb.it/uploads/36582/loghi/googlejob/Progettosenzatitolo-2020-09-25T100650.311.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": null,
+      "addressLocality": "Abbiategrasso",
+      "addressRegion": "MI",
+      "postalCode": "20081",
+      "addressCountry": "IT"
+     }
+    },
+    "title": "ASSISTENTE TECNICO DI COMMESSA JUNIOR - ABBIATEGRASSO",
+    "validThrough": "2026-12-07"
+   }
+  },
+  "fetched_at": "2026-11-10T19:56:23.231236Z",
+  "content_hash": "4e46f21de0ccc1c3062afca19269167c1d2866dcc4ae7bb2dcd411fcc6ccf615"
+ }
+]

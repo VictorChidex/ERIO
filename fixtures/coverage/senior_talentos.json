@@ -1,0 +1,142 @@
+[
+ {
+  "source_slug": "senior_talentos",
+  "board_token": "https://platform.senior.com.br",
+  "external_id": "5123874d-42c8-4738-9c3c-a6c010cf2a10",
+  "payload": {
+   "vacancy": {
+    "id": "5123874d-42c8-4738-9c3c-a6c010cf2a10",
+    "title": "Assistente de Estoque Noturno",
+    "jobModel": [
+     "IN_PERSON"
+    ],
+    "localization": {
+     "id": "6af77dea-7937-4dde-af6b-c08156473eee",
+     "city": "Pomerode",
+     "province": "SC",
+     "country": "Brasil"
+    },
+    "publication": {
+     "id": "929951ca-3395-4607-a735-ad92e257ab22",
+     "startDate": "2026-11-10",
+     "endDate": "2026-11-30"
+    }
+   },
+   "company": {
+    "id": "1d3e9867-241b-4fb2-a11e-8217e5a29b49",
+    "picture": {
+     "name": "profile_picture_2026-09-21T18:01:59.599626543",
+     "extension": ".jpg",
+     "size": 73840,
+     "version": "1.0",
+     "url": "https://vagas.portaldetalentos.senior.com.br/files/cooper/82647165000114/profile_picture_2026-09-21T18:01:59.599626543.jpg"
+    },
+    "name": "Rede Cooper",
+    "sector": "hcm.careerscorporate.sector_comercio_varejista",
+    "address": {
+     "id": "92eec335-42f1-4e4b-b3db-1dae7b7a33ab",
+     "city": "Blumenau, Ibirama, Indaial, Gaspar, Guaramirim, Jaraguá do Sul, Joinville, Rodeio e Timbó",
+     "province": "SC",
+     "country": "Brasil"
+    },
+    "publicationDate": "2025-06-30",
+    "tenant": "cooper"
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:26.950872Z",
+  "content_hash": "98482256df51a603699f7a22f0a7ad86cd39682682705b3cff5e5eddd714d508"
+ },
+ {
+  "source_slug": "senior_talentos",
+  "board_token": "https://platform.senior.com.br",
+  "external_id": "fa9dced6-fb12-4063-b33d-0ec1a77210de",
+  "payload": {
+   "vacancy": {
+    "id": "fa9dced6-fb12-4063-b33d-0ec1a77210de",
+    "title": "Operador Empilhadeira PP - 2°turno",
+    "jobModel": [
+     "IN_PERSON"
+    ],
+    "localization": {
+     "id": "892662b4-05fb-46b5-a78d-e59ff97022eb",
+     "city": "Itajaí",
+     "province": "SC",
+     "country": "Brasil"
+    },
+    "publication": {
+     "id": "3bc87807-1cea-4364-b3b2-66ff7afd603c",
+     "startDate": "2026-11-10",
+     "endDate": "2027-01-31"
+    }
+   },
+   "company": {
+    "id": "c084bc9d-3565-4efc-8f33-fa17cdabe129",
+    "picture": {
+     "name": "profile_picture_2026-06-19T14:27:30.249779608",
+     "extension": ".png",
+     "size": 59873,
+     "version": "1.0",
+     "url": "https://vagas.portaldetalentos.senior.com.br/files/multilog/78614229000103/profile_picture_2026-06-19T14:27:30.249779608.png"
+    },
+    "name": "MULTILOG S/A",
+    "sector": "hcm.careerscorporate.sector_transporte_armazenagem_e_correio",
+    "address": {
+     "id": "64a51c48-bcdf-4116-bc6a-45504d194159",
+     "city": "Itajai",
+     "province": "SC",
+     "country": "Brasil"
+    },
+    "publicationDate": "2026-02-16",
+    "tenant": "multilog"
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:26.950872Z",
+  "content_hash": "641f247649d6160a7d981018bd5f9ca90a51698f83119f413075a751a2d9028f"
+ },
+ {
+  "source_slug": "senior_talentos",
+  "board_token": "https://platform.senior.com.br",
+  "external_id": "4dd6511f-3cbc-49f3-a90c-871b5db17570",
+  "payload": {
+   "vacancy": {
+    "id": "4dd6511f-3cbc-49f3-a90c-871b5db17570",
+    "title": "MOTORISTA III",
+    "jobModel": [
+     "IN_PERSON"
+    ],
+    "localization": {
+     "id": "3cd5dc2e-6430-4444-a516-86292f8b530f",
+     "city": "Chapadão do Céu",
+     "country": "Brasil"
+    },
+    "publication": {
+     "id": "1ea73fb5-e0d5-4a17-a15f-3584d3109e94",
+     "startDate": "2026-11-10",
+     "endDate": "2026-12-09"
+    }
+   },
+   "company": {
+    "id": "1d7b2e57-a90d-4ee2-a94d-0b6b4f4371f4",
+    "picture": {
+     "name": "profile_picture_2025-08-26T13:38:26.662230575",
+     "extension": ".png",
+     "size": 72859,
+     "version": "1.0",
+     "url": "https://vagas.portaldetalentos.senior.com.br/files/cerradinho/08322396000103/profile_picture_2025-08-26T13:38:26.662230575.png"
+    },
+    "name": "CERRADINHO BIOENERGIA SA",
+    "sector": "hcm.careerscorporate.sector_fabricacao_de_coque_de_produtos_derivados_do_petroleo_e_de_biocombustiveis",
+    "address": {
+     "id": "68e7ff95-9c0d-41c2-8af1-a5ebe85dfc55",
+     "city": "Chapadao do Ceu",
+     "province": "GO",
+     "country": "Brasil"
+    },
+    "publicationDate": "2025-03-20",
+    "tenant": "cerradinho"
+   }
+  },
+  "fetched_at": "2026-11-10T19:54:26.950872Z",
+  "content_hash": "8d736a0c86627ea2599f145ad6fdb8da870106cf3603fa3cbb975686c371198c"
+ }
+]

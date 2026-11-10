@@ -1,0 +1,156 @@
+[
+ {
+  "source_slug": "cegid",
+  "board_token": "https://recrutement.transavia.com/sitemap.xml",
+  "external_id": "3627105cb3a5d5f1aa022360",
+  "payload": {
+   "page_url": "https://recrutement.transavia.com/fr/annonce/4687123-ingenieur-methodes-etudes-production-pn-hf-94390-orly",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-10",
+    "description": "<p style=\"text-align: justify;\">Rattaché(e) au Responsable de la Production PN, l’Ingénieur\r\nEtudes &amp; Méthodes Production PN (H/F) aura pour missions de&nbsp;:</p><ul><li>Participer\r\n     au pilotage et la conduite des projets de développement de la Production\r\n     PN.</li>\r\n <li style=\"text-align: justify;\">Créer\r\n     avec le Responsable Production PN les plans de dimensionnement\r\n     d’effectifs, ainsi que les plans de formation (intégrations PN) et plans\r\n     de congés qui en découlent.</li>\r\n <li style=\"text-align: justify;\">Réaliser\r\n     les études demandées par le Responsable Production PN, le Directeur des\r\n     Opérations Aériennes ou le Directeur Général Adjoint Exploitation.</li>\r\n <li style=\"text-align: justify;\">Produire\r\n     les indicateurs mensuels de Production et d’exploitation définis avec le\r\n     Responsable Prod PN et effectuer des analyses communes avec le contrôle de\r\n     gestion.</li>\r\n <li style=\"text-align: justify;\">Créer\r\n     et tenir à jour en continu le référentiel documentaire et qualité de la\r\n     Production PN</li>\r\n <li style=\"text-align: justify;\">Pouvoir\r\n     créer des outils bureautiques le cas échéant</li>\r\n</ul>",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "value": "4687123-60699185",
+     "name": "Transavia"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 Av. de l'Union",
+      "addressLocality": "Orly",
+      "addressRegion": "Île-de-France",
+      "postalCode": "94390",
+      "addressCountry": "France"
+     }
+    },
+    "title": "Ingénieur Méthodes & Etudes Production PN H/F",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": null,
+      "maxValue": null,
+      "unitText": "HOUR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Transavia",
+     "logo": "https://recrutement.transavia.com/generated_contents/images/company_logo_career/9dEyznma-logo740x140px.png"
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:59:01.710375Z",
+  "content_hash": "66e6240200a59848e057e7f9d29fd81bd1a12120dac9256111a84835b71864a9"
+ },
+ {
+  "source_slug": "cegid",
+  "board_token": "https://recrutement.transavia.com/sitemap.xml",
+  "external_id": "b0aaaa73676863389993f258",
+  "payload": {
+   "page_url": "https://recrutement.transavia.com/fr/annonce/4684835-responsable-production-planning-control-hf-94310-orly",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-09",
+    "description": "<p style=\"text-align: justify;\">Au sein de\r\nla Direction Flotte Engineering &amp; Maintenance (DFEM), le Responsable\r\nProduction Planning &amp; Control (PPC) assure le pilotage global de la\r\nplanification, de la préparation, de l'ordonnancement et du suivi des\r\nopérations de maintenance de la flotte Transavia France.</p>\r\n\r\n<p style=\"text-align: justify;\">Il veille\r\nà la bonne exécution du programme d'entretien, à l'optimisation des\r\nimmobilisations avions et à la disponibilité de la flotte, dans le respect des\r\nexigences réglementaires, des contraintes du programme des vols et des\r\nobjectifs de performance économique de la compagnie.</p>\r\n\r\n<p style=\"text-align: justify;\">Il encadre les équipes en charge de la\r\nprogrammation de la maintenance, de la production technique à Orly et sur les\r\nescales extérieures, ainsi que du pilotage des chantiers externalisés et des\r\nreprésentants techniques.</p>\r\n\r\n<p style=\"text-align: justify;\">À ce titre, ses principales missions\r\nsont les suivantes :    </p>\r\n\r\n<p style=\"text-align: justify;\"><b>Management\r\net organisation du département :</b></p>\r\n\r\n<p style=\"text-align: justify;\"><ul><li>Encadrer, animer et\r\ncoordonner les équipes du département PPC, réparties entre les activités\r\nProgramme, Orly &amp; escales extérieures et Chantiers externalisés &amp;\r\nReprésentants techniques.</li><li>Définir l'organisation, les\r\npriorités et les objectifs du département en cohérence avec la stratégie de la\r\nDirection Flotte Engineering &amp; Maintenance.</li><li>Adapter les ressources et\r\nles compétences aux évolutions de la flotte, du programme de maintenance et des\r\nbesoins opérationnels.</li><li>Accompagner les\r\nresponsables d'activité dans le pilotage de leurs équipes et le développement\r\ndes compétences.</li><li>Garantir la cohérence des\r\nméthodes de travail, des processus et des interfaces entre les différentes\r\nactivités du PPC.</li></ul></p>\r\n\r\n<p style=\"text-align: justify;\"><b>Planification\r\net optimisation du programme de maintenance :</b></p>\r\n\r\n<p style=\"text-align: justify;\"><ul><li>Superviser la construction\r\net le suivi du programme de maintenance à court, moyen et long terme, en\r\ncoordination avec les opérations aériennes et le Programme des Vols.</li><li>Garantir la cohérence entre\r\nles échéances du programme d'entretien, les immobilisations avions, les\r\ncapacités de production et les contraintes d'exploitation.</li><li>Optimiser le positionnement\r\net le regroupement des travaux de maintenance afin de limiter les\r\nimmobilisations et de maximiser la disponibilité de la flotte.</li><li>Piloter les arbitrages\r\nentre besoins de maintenance, capacité industrielle, contraintes\r\nopérationnelles et enjeux économiques.</li><li>Anticiper les évolutions de\r\ncharge et de capacité liées à la croissance de la flotte, à la saisonnalité et\r\naux évolutions du programme d'entretien.</li></ul></p>\r\n\r\n<p style=\"text-align: justify;\"><b>Pilotage\r\nde la production maintenance :</b></p>\r\n\r\n<p style=\"text-align: justify;\"><ul><li>Superviser les activités de\r\npréparation, de lancement, de suivi et de clôture des travaux de maintenance\r\nréalisés à Orly et sur les escales extérieures.</li><li>Garantir la cohérence et la\r\nqualité des dossiers de travaux (workpackages) transmis aux organismes de\r\nmaintenance.</li><li>Veiller à l'adéquation\r\nentre la charge de maintenance programmée et les ressources industrielles\r\ndisponibles.</li><li>Coordonner avec les\r\norganismes de maintenance Part-145 et les services internes les ajustements\r\nnécessaires face aux aléas techniques et opérationnels.</li><li>Veiller à la bonne\r\nréalisation des travaux programmés, au respect des échéances et à la fiabilité\r\ndes informations enregistrées dans les systèmes de maintenance.</li><li>Définir et suivre les\r\nactions d'amélioration visant à optimiser l'efficacité des processus de\r\npréparation et de réalisation des travaux.</li></ul></p>\r\n\r\n<p style=\"text-align: justify;\"><b>Supervision\r\ndes chantiers externalisés et des représentants techniques :</b></p>\r\n\r\n<p style=\"text-align: justify;\"><ul><li>Superviser la préparation,\r\nla coordination et le suivi des visites de maintenance lourde réalisées auprès\r\ndes MRO partenaires.</li><li>S'assurer de la bonne\r\nadéquation entre les travaux prévus, les délais d'immobilisation et les\r\ncapacités des prestataires.</li><li>Encadrer le pilotage des\r\nchantiers externalisés et l'organisation des équipes de représentants\r\ntechniques.</li><li>Veiller à la maîtrise des\r\ndélais, des coûts, de la qualité des prestations et des risques associés aux\r\nchantiers.</li><li>Superviser le suivi des\r\nperformances des MRO et contribuer à leur évaluation, en coordination avec les\r\nAchats et les autres services de la DFEM.</li><li>Veiller à la bonne clôture\r\ntechnique et administrative des visites et à l'exploitation des retours\r\nd'expérience.</li></ul></p>\r\n\r\n<p style=\"text-align: justify;\"><b>Performance\r\nopérationnelle et économique :</b></p>\r\n\r\n<p style=\"text-align: justify;\"><ul><li>Définir et piloter les\r\nindicateurs de performance du département PPC : respect des plannings,\r\ndisponibilité flotte, temps d'immobilisation (TAT), charge de maintenance,\r\nperformance fournisseurs et maîtrise des coûts.</li><li>Analyser les écarts entre\r\nles prévisions et la réalisation afin d'identifier les axes d'optimisation.</li><li>Contribuer à la maîtrise\r\ndes budgets et des coûts de maintenance, notamment par l'optimisation des\r\nimmobilisations, des travaux programmés et de l'utilisation des capacités\r\nindustrielles.</li><li>Développer les outils de\r\nreporting et d'analyse permettant de mesurer la performance des activités et\r\nd'éclairer les décisions du management.</li><li>Piloter les actions\r\nd'amélioration continue visant à renforcer la productivité, la fiabilité et la\r\nperformance globale du département.</li></ul></p>\r\n\r\n<p style=\"text-align: justify;\"><b>Coordination\r\ntransverse et conformité :</b></p>\r\n\r\n<p style=\"text-align: justify;\"><ul><li>Assurer une coordination\r\nétroite avec les différents services de la DFEM, notamment Engineering, MCC,\r\nSupply Chain, Qualité et Achats, ainsi qu'avec les Opérations aériennes.</li><li>Être l'interlocuteur\r\nprivilégié des organismes de maintenance et des partenaires internes sur les\r\nsujets relevant du périmètre PPC.</li><li>Contribuer à la définition\r\net à l'évolution de la stratégie industrielle de maintenance de la compagnie.</li><li>Veiller au respect des\r\nexigences réglementaires applicables aux activités de planification et de suivi\r\nde la maintenance, notamment Part-CAMO et Part-145, en coordination avec les\r\nresponsables réglementaires concernés.</li><li>Accompagner les évolutions\r\ndes outils, des processus et de l'organisation nécessaires au développement des\r\nactivités de la compagnie.</li></ul></p>\r\n\r\n<p style=\"text-align: justify;\"><i>Toute activité en dehors de\r\ncelles énumérées au titre des fonctions principales pourra être confiée au\r\ncollaborateur dans le cadre de son activité, en fonction de son évolution au\r\nsein du service et des besoins de l'entreprise.</i></p>",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "value": "4684835-125362833",
+     "name": "Transavia"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 Avenue de l'Union",
+      "addressLocality": "Orly",
+      "addressRegion": "Île-de-France",
+      "postalCode": "94310",
+      "addressCountry": "France"
+     }
+    },
+    "title": "Responsable Production Planning Control H/F",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": null,
+      "maxValue": null,
+      "unitText": "HOUR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Transavia",
+     "logo": "https://recrutement.transavia.com/generated_contents/images/company_logo_career/9dEyznma-logo740x140px.png"
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:59:11.530705Z",
+  "content_hash": "b5b5fb6f973db947673e5230f4746012b715504e958b140e93b1b2b435f59f83"
+ },
+ {
+  "source_slug": "cegid",
+  "board_token": "https://recrutement.transavia.com/sitemap.xml",
+  "external_id": "b611434a339f423efcbf6612",
+  "payload": {
+   "page_url": "https://recrutement.transavia.com/fr/annonce/4521211-stage-ingenieur-conformite-securite-maintenance-hf-94390-orly",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-07-28",
+    "description": "<p class=\"MsoNormal\">Transavia France, compagnie aérienne dont le centre\r\nopérationnel est basé à Orly, continue sa croissance : une flotte de 90\r\naéronefs dont 20 A320neo intégrés depuis janvier 2024, opérant un nombre\r\ncroissant d’escales (140 actuellement).</p>\r\n\r\n<p class=\"MsoNormal\">Dans ce contexte, la DSVC reçoit de plus en plus de retours\r\nd’expérience Sécurité des Vols concernant les activités de maintenance et de\r\nsuivi de navigabilité. Un des enjeux est alors d’apporter de la visibilité aux\r\nacteurs du Système de Gestion de la Sécurité sur les problématiques actuelles\r\nde la compagnie.</p>\r\n\r\n<p class=\"MsoNormal\">La Direction Sécurité des Vols et Conformité recherche un\r\nStagiaire Ingénieur Conformité Sécurité Maintenance afin de maintenir la\r\nculture Sécurité des Vols de la compagnie et assurer un volume de reporting\r\npermettant de faire fonctionner le SGS.</p>\r\n\r\n<p class=\"MsoNormal\"><b>Missions :</b></p>\r\n\r\n<p class=\"MsoNormal\">Sous la responsabilité du Responsable Conformité Sécurité\r\nMaintenance, le Stagiaire CSM a comme principales missions :</p>\r\n\r\n<p class=\"MsoNormal\"><ul><li><b>Renforcer la communication SV en interne à la Direction\r\nFlotte Engineering and Maintenance (DFEM)</b></li></ul></p>\r\n\r\n<p class=\"MsoNormal\">De nombreux métiers de la DFEM sont chaque jour au contact\r\ndes opérations et de la maintenance de la flotte de Transavia. Nous leur\r\ncommuniquons les enjeux de Sécurité des Vols via des formations annuelles dans\r\nle but d’éveiller leur conscience des risques liés à leur activité. Nous\r\nsouhaitons diversifier cette offre grâce à des communications mail régulières.</p>\r\n\r\n<p class=\"MsoNormal\"><ul><li><b>Pérenniser les retours aux reporters DFEM</b></li></ul></p>\r\n\r\n<p class=\"MsoNormal\">La culture du reporting est primordiale pour identifier les\r\nfaiblesses du fonctionnement de Transavia. Elle se base entre autres sur la\r\nconfiance qu’ont les acteurs de la DFEM dans notre SGS. Industrialiser les\r\nretours aux reporters permettra d’encourager ces derniers à poursuivre leur\r\ndémarche de remontée d’événéments SV.</p>\r\n\r\n<p class=\"MsoNormal\"></p><ul><li><b>Participer à la saisie et à la validation des rapports\r\nMaintenance dans notre outil SGS</b></li></ul><p></p>\r\n\r\n<p class=\"MsoNormal\">Pour atteindre les deux premiers objectifs, le stagiaire\r\nIngénieur CSM devra participer au traitement d’événements de Sécurité des Vols\r\ndans le domaine de la maintenance. </p>\r\n\r\n<p class=\"MsoNormal\"><b><i>Toute activité en dehors de celles énumérées au titre\r\ndes fonctions principales pourra être confiée au collaborateur dans le cadre de\r\nson activité en fonction de son évolution au sein du service et des besoins de\r\nl’entreprise.</i></b></p>",
+    "employmentType": [
+     "FULL_TIME",
+     "INTERN"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "value": "4521211-52369277",
+     "name": "Transavia"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7 Av. de l'Union - Bâtiment BELAIA",
+      "addressLocality": "Orly",
+      "addressRegion": "Île-de-France",
+      "postalCode": "94390",
+      "addressCountry": "France"
+     }
+    },
+    "title": "Stage - Ingénieur Conformité Sécurité Maintenance H/F",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": null,
+      "maxValue": null,
+      "unitText": "HOUR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Transavia",
+     "logo": "https://recrutement.transavia.com/generated_contents/images/company_logo_career/9dEyznma-logo740x140px.png"
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:59:21.541648Z",
+  "content_hash": "0fbc60ecf2997fd916ecce7c16508dddd0a896a4c27b001abd66873a9be23cdf"
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "source_slug": "inhire",
+  "board_token": "via",
+  "external_id": "764e4a9e-2149-46e7-8746-287327cc7852",
+  "payload": {
+   "displayName": "PESSOA DESENVOLVEDORA JAVA (BACK END)",
+   "jobId": "764e4a9e-2149-46e7-8746-287327cc7852",
+   "status": "published",
+   "workplaceType": "Remote",
+   "location": "",
+   "tenantName": "Via"
+  },
+  "fetched_at": "2026-11-10T19:54:18.431884Z",
+  "content_hash": "42a226cb7f1bb14611140d6a9c899971b483d5aca40e7353883deffcb45c325d"
+ },
+ {
+  "source_slug": "inhire",
+  "board_token": "via",
+  "external_id": "810640d4-8e51-4da9-bdb7-c2513cf45e3e",
+  "payload": {
+   "displayName": "PESSOA DESENVOLVEDORA SENIOR .NET CORE ",
+   "jobId": "810640d4-8e51-4da9-bdb7-c2513cf45e3e",
+   "status": "published",
+   "workplaceType": "Remote",
+   "location": "",
+   "tenantName": "Via"
+  },
+  "fetched_at": "2026-11-10T19:54:18.431884Z",
+  "content_hash": "ddaf383cf7c1c02127562496eb7a341a4a2cae7a4081219b85cf107bb63f9a51"
+ }
+]
