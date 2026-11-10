@@ -1,0 +1,233 @@
+[
+ {
+  "source_slug": "traffit",
+  "board_token": "soflab",
+  "external_id": "420",
+  "payload": {
+   "url": "https://soflab.traffit.com/public/an/110b5bb5327d9c9c4eb10ebb0ea9037b49746b6d?source=career_page",
+   "id": 420,
+   "advert": {
+    "values": [
+     {
+      "field_id": "description",
+      "value": "<p><span style=\"color: #34495e;\">Jesteśmy prawdziwymi entuzjastami tematyki związanej z obszarem jakości i testów oprogramowania. Nasz Soflab Technology jest największą polską firmą specjalizującą się w testach oprogramowania, która od 2008 roku zapewnia szeroki zakres usług IT w obszarze jakości (Quality Assurance), Business Intelligence i cyberbezpieczeństwa. Jako liderzy rynku doradzamy w zakresie rozwiązań IT we wszystkich branżach i korzystamy z najlepszych technologii oraz narzędzi. Od początku działalności główną uwagę koncentrowaliśmy na procesie testowym, ponieważ chcemy dostarczać naszym Klientom bezbłędne rozwiązania. </span></p>\n<p><span style=\"color: #34495e;\">Liczymy, że nam w tym pomożesz i razem z nami rozwiniesz własne umiejętności oraz karierę zawodową.</span></p>\n<p><span style=\"color: #34495e;\">Aktualnie poszukujemy Kandydatów i Kandydatek na stanowisko Tester oprogramowania.</span></p>"
+     },
+     {
+      "field_id": "geolocation",
+      "value": "{\"country\":\"Polska\",\"iso\":\"pl\",\"locality\":\"Lublin\",\"region1\":\"Lubelskie\",\"latitude\":\"51.247711\",\"longitude\":\"22.562880\",\"region2\":\"Lublin\",\"region3\":\"Lublin\"}"
+     },
+     {
+      "field_id": "requirements",
+      "name": "Co tu jest do zrobienia?",
+      "value": "<p>Przeprowadzanie testów serwisów bankowości elektronicznej - aplikacji mobilnej oraz webowej.</p>"
+     },
+     {
+      "field_id": "benefits",
+      "name": "Co oferujemy?",
+      "value": "<ul>\n<li><strong>Współpraca na podstawie B2B</strong></li>\n<li><strong>Wynagrodzenie w przedziale 85 - 100 zł/h + VAT </strong></li>\n<li>Opieka medyczna Luxmed</li>\n<li>Karta MultiSport</li>\n</ul>"
+     },
+     {
+      "field_id": "5fe426074a7bdab5ded0eece763d557a",
+      "name": "Czego oczekujemy?",
+      "value": "<ul>\n<li class=\"x_elementToProof\" data-olk-copy-source=\"MessageBody\">Min. 2 lata doświadczenia w obszarze testów manualnych (testach funkcjonalnych, regresywnych, layoutu/warstwy wizualnej i graficznej) aplikacji mobilnych i serwisów internetowych skierowanych do Klienta komercyjnego</li>\n<li class=\"x_elementToProof\">Doświadczenie w realizacji projektów w zwinnym trybie wytwarzania oprogramowania</li>\n<li class=\"x_elementToProof\">Wiedza w obszarze ogólnie rozumianej bankowości, znajomość produktów i usług bankowych (np. kont, kart, kredytów, płatności)</li>\n<li class=\"x_elementToProof\">Bardzo dobra znajomość JIRA, Confluence</li>\n<li class=\"x_elementToProof\">Umiejętność tworzenia scenariuszy testowych, dokumentacji projektowej, rejestrowania wyników i raportowania błędów za pomocą narzędzi Jira i Confluence</li>\n<li class=\"x_elementToProof\">Gotowość do pracy hybrydowej w biurze w Lublinie</li>\n<li class=\"x_elementToProof\">Komunikatywność na wysokim poziomie</li>\n<li class=\"x_elementToProof\">Dokładność, skrupulatność</li>\n<li class=\"x_elementToProof\">Dobra organizacja pracy indywidualnej oraz zespołowej</li>\n<li class=\"x_elementToProof\">Otwartość na zmiany</li>\n</ul>"
+     },
+     {
+      "field_id": "00a312300ea27294989da0dd403c07bb",
+      "name": "Mile widziane:",
+      "value": "<ul>\n<li>Doświadczenie w realizacji projektów z obszaru bankowości internetowej i mobilnej,</li>\n<li>Doświadczenie w realizacji projektów w zwinnym trybie wytwarzania oprogramowania,</li>\n<li>Doświadczenie w wykonywaniu testów manualnych z obszaru dostępności cyfrowej z wykorzystaniem czytnika NVDA,</li>\n<li>Znajomość zagadnień z obszaru WCAG oraz czytnika NVDA i rozszerzenia WAVE,</li>\n<li>Znajomość narzędzi VoiceOver (iOS), TalkBack (Android) oraz przeglądarkowych narzędzi developerskich,</li>\n<li>Umiejętność posługiwania się biblioteką Adobe oraz aplikacją Figma</li>\n<li>Znajomość technologii i nowoczesnych rozwiązań rynkowych w bankowości internetowej i mobilnej</li>\n</ul>"
+     },
+     {
+      "field_id": "5c0e70a7e7123403b539ff17fa23ce49",
+      "name": "Jeśli to wszystko jest w zasięgu Twoich możliwości, zaaplikuj już teraz!"
+     }
+    ],
+    "locations": [
+     {
+      "latitude": "51.247711",
+      "longitude": "22.562880",
+      "iso": "pl",
+      "locality": "Lublin",
+      "region1": "Lubelskie",
+      "region2": "Lublin",
+      "region3": "Lublin",
+      "country": "Polska"
+     }
+    ],
+    "id": 212,
+    "name": "Tester/ka w branży bankowej (praca hybrydowa)",
+    "recruitment": {
+     "client_id": 25,
+     "workflow_id": 5,
+     "id": 253,
+     "nr_ref": "2/8/2026/AP/253"
+    },
+    "language": "pl"
+   },
+   "valid_start": "2026-08-06 13:46:43",
+   "awarded": false,
+   "options": {
+    "job_location": "{\"country\":\"Polska\",\"iso\":\"pl\",\"locality\":\"Lublin\",\"region1\":\"Lubelskie\",\"region2\":\"Lublin\",\"region3\":\"Lublin\",\"latitude\":\"51.247711\",\"longitude\":\"22.562880\"}",
+    "remote": "0",
+    "joboffer_career_id": "1015383",
+    "joboffer_indeed_id": "1015385",
+    "joboffer_jooble_id": "1015384",
+    "job_location.translation": "Lokalizacja",
+    "remote.translation": "Praca zdalna"
+   },
+   "huntoo_link": null,
+   "application_form": "https://soflab.traffit.com/public/form/a/24f6bdeaee7b327483dc8f974c96193e534b2f53?source=career_page"
+  },
+  "fetched_at": "2026-11-10T19:48:04.073928Z",
+  "content_hash": "10c3cf80e22390a2aeeb5acf5ed4439ceb9ca13c8245282f8de65d185c84ad90"
+ },
+ {
+  "source_slug": "traffit",
+  "board_token": "soflab",
+  "external_id": "419",
+  "payload": {
+   "url": "https://soflab.traffit.com/public/an/4d938039473168e74944fe0a41f81f8a616f7933?source=career_page",
+   "id": 419,
+   "advert": {
+    "values": [
+     {
+      "field_id": "description",
+      "value": "<div class=\"OutlineElement Ltr SCXW18444263 BCX0\">\n<p class=\"Paragraph SCXW18444263 BCX0\"><span class=\"TextRun SCXW18444263 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW18444263 BCX0\">Soflab</span><span class=\"NormalTextRun SCXW18444263 BCX0\"> Technology to jedna z największych polskich firm specjalizujących się w jakości i testowaniu oprogramowania. Od 2008 roku wspieramy klientów w obszarach </span><span class=\"NormalTextRun SCXW18444263 BCX0\">Quality</span><span class=\"NormalTextRun SCXW18444263 BCX0\"> Assurance, bezpieczeństwa i </span><span class=\"NormalTextRun SCXW18444263 BCX0\">anonimizacji</span><span class=\"NormalTextRun SCXW18444263 BCX0\"> danych. Realizujemy kompleksowe projekty oraz wzmacniamy zespoły klientów doświadczonymi specjalistami – przede wszystkim ekspertami QA i testowania oprogramowania.</span></span><span class=\"EOP Selected SCXW18444263 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></p>\n</div>\n<div class=\"OutlineElement Ltr SCXW18444263 BCX0\">\n<p class=\"Paragraph SCXW18444263 BCX0\"><span class=\"TextRun SCXW18444263 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW18444263 BCX0\">Szukamy osoby, która pomoże nam rozwijać sprzedaż obu tych obszarów.</span></span><span class=\"EOP Selected SCXW18444263 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></p>\n</div>"
+     },
+     {
+      "field_id": "geolocation",
+      "value": "{\"country\":\"Polska\",\"iso\":\"pl\",\"locality\":\"Warszawa\",\"region1\":\"Mazowieckie\",\"latitude\":\"52.235840\",\"longitude\":\"21.011959\",\"region2\":\"Warszawa\",\"region3\":\"Warszawa\"}"
+     },
+     {
+      "field_id": "requirements",
+      "name": "Co będziesz robić?",
+      "value": "<div class=\"OutlineElement Ltr SCXW226458726 BCX0\">\n<ul>\n<li><span class=\"TextRun SCXW226458726 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW226458726 BCX0\">Prowadzić pełny proces sprzedaży usług </span><span class=\"NormalTextRun SCXW226458726 BCX0\">Soflab</span><span class=\"NormalTextRun SCXW226458726 BCX0\">: od </span><span class=\"NormalTextRun SCXW226458726 BCX0\">prospectingu</span><span class=\"NormalTextRun SCXW226458726 BCX0\"> i </span><span class=\"NormalTextRun SCXW226458726 BCX0\">discovery</span><span class=\"NormalTextRun SCXW226458726 BCX0\">, przez przygotowanie rozwiązania i oferty, po negocjacje, podpisanie umowy i przekazanie projektu do realizacji.</span></span></li>\n<li><span class=\"NormalTextRun SCXW226458726 BCX0\">Rozwijać sprzedaż usług związanych ze wzmacnianiem zespołów klientów specjalistami QA: pozyskiwać zapotrzebowania, rozpoznawać wymagane kompetencje, prezentować ekspertów i negocjować warunki współpracy.</span></li>\n<li>Docierać do decydentów po stronie IT, biznesu, bezpieczeństwa i zakupów oraz budować <span class=\"NormalTextRun SCXW226458726 BCX0\">pipeline</span><span class=\"NormalTextRun SCXW226458726 BCX0\"> sprzedażowy w segmencie Enterprise.</span></li>\n<li><span class=\"NormalTextRun SCXW226458726 BCX0\">Przygotowywać – wspólnie z zespołami </span><span class=\"NormalTextRun SCXW226458726 BCX0\">presales</span><span class=\"NormalTextRun SCXW226458726 BCX0\">, rekrutacji i </span><span class=\"NormalTextRun SCXW226458726 BCX0\">delivery</span><span class=\"NormalTextRun SCXW226458726 BCX0\"> – oferty, prezentacje wartości biznesowej, odpowiedzi na RFP/RFI, estymacje i koncepcje rozwiązań dla usług QA/QE, automatyzacji testów, testów wydajnościowych, bezpieczeństwa, doradztwa procesowego, rozwiązań związanych z jakością danych oraz wsparcia zespołów klientów specjalistami QA.</span></li>\n<li><span class=\"NormalTextRun SCXW226458726 BCX0\">Rozwijać obecnych klientów poprzez </span><span class=\"NormalTextRun SCXW226458726 BCX0\">upselling</span><span class=\"NormalTextRun SCXW226458726 BCX0\"> i cross-</span><span class=\"NormalTextRun SCXW226458726 BCX0\">selling</span><span class=\"NormalTextRun SCXW226458726 BCX0\">, tworzyć </span><span class=\"NormalTextRun SCXW226458726 BCX0\">account</span><span class=\"NormalTextRun SCXW226458726 BCX0\"> plany oraz identyfikować nowe możliwości biznesowe.</span></li>\n<li><span class=\"NormalTextRun SCXW226458726 BCX0\">Prowadzić </span><span class=\"NormalTextRun SCXW226458726 BCX0\">forecast</span><span class=\"NormalTextRun SCXW226458726 BCX0\">, dbać o aktualność danych w CRM oraz reprezentować </span><span class=\"NormalTextRun SCXW226458726 BCX0\">Soflab</span><span class=\"NormalTextRun SCXW226458726 BCX0\"> podczas spotkań i wydarzeń branżowych.</span><span class=\"EOP Selected SCXW226458726 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></li>\n</ul>\n</div>"
+     },
+     {
+      "field_id": "benefits",
+      "name": "Czego oczekujemy?",
+      "value": "<ul>\n<li>Minimum 2 lat doświadczenia w sprzedaży doradczej usług IT dla klientów B2B Enterprise.</li>\n<li><span class=\"TextRun SCXW26587596 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW26587596 BCX0\">Doświadczenia w sprzedaży usług polegających na wzmacnianiu zespołów klientów specjalistami IT – najlepiej z obszaru QA i testowania.</span></span><span class=\"EOP Selected SCXW26587596 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></li>\n<li><span class=\"EOP Selected SCXW26587596 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"TextRun SCXW201043983 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW201043983 BCX0\">Znajomości cyklu wytwarzania oprogramowania oraz podstawowych zagadnień związanych z QA/QE.</span></span></span></li>\n<li><span class=\"EOP Selected SCXW26587596 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"TextRun SCXW201043983 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"TextRun SCXW47962239 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW47962239 BCX0\">Umiejętności prowadzenia procesów sprzedażowych z udziałem wielu interesariuszy – od </span><span class=\"NormalTextRun SCXW47962239 BCX0\">dis</span><span class=\"NormalTextRun SCXW47962239 BCX0\">covery</span><span class=\"NormalTextRun SCXW47962239 BCX0\"> i prezentacji po ofertę i negocjacje.</span></span><span class=\"EOP Selected SCXW47962239 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></span></span></li>\n<li><span class=\"EOP Selected SCXW26587596 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"TextRun SCXW201043983 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"EOP Selected SCXW47962239 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"TextRun SCXW224994191 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW224994191 BCX0\">Nastawienia na wynik, rozwiniętych umiejętności komunikacyjnych oraz swobodnego korzystania z CRM i prowadzenia </span><span class=\"NormalTextRun SCXW224994191 BCX0\">forecastu</span><span class=\"NormalTextRun SCXW224994191 BCX0\">.</span></span><span class=\"EOP Selected SCXW224994191 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></span></span></span></li>\n<li><span class=\"EOP Selected SCXW26587596 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"TextRun SCXW201043983 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"EOP Selected SCXW47962239 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"EOP Selected SCXW224994191 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"><span class=\"TextRun SCXW100105206 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW100105206 BCX0\">Dobra znajomość języka angielskiego będzie dodatkowym atutem.</span></span></span></span></span></span></li>\n</ul>"
+     },
+     {
+      "field_id": "8b6721a1ece382a07fbbd1edc7f9f20d",
+      "name": "Co oferujemy?",
+      "value": "<div class=\"SCXW166094292 BCX0\">\n<div class=\"ListContainerWrapper SCXW166094292 BCX0\">\n<ul>\n<li class=\"Paragraph SCXW166094292 BCX0\"><span class=\"TextRun SCXW166094292 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW166094292 BCX0\">Kontrakt B2B: 1</span><span class=\"NormalTextRun SCXW166094292 BCX0\">0</span><span class=\"NormalTextRun SCXW166094292 BCX0\"> 000–1</span><span class=\"NormalTextRun SCXW166094292 BCX0\">3</span><span class=\"NormalTextRun SCXW166094292 BCX0\"> 000 PLN netto + VAT miesięcznie oraz premię powiązaną z wynikami i marżą projektów.</span></span></li>\n<li class=\"Paragraph SCXW166094292 BCX0\"><span class=\"NormalTextRun SCXW166094292 BCX0\">Pracę z rozpoznawalnymi klientami Enterprise i doświadczonymi ekspertami technicznymi.</span></li>\n<li class=\"Paragraph SCXW166094292 BCX0\"><span class=\"NormalTextRun SCXW166094292 BCX0\">Wsparcie zespołów </span><span class=\"NormalTextRun SCXW166094292 BCX0\">presales</span><span class=\"NormalTextRun SCXW166094292 BCX0\">, marketingu, rekrutacji i </span><span class=\"NormalTextRun SCXW166094292 BCX0\">delivery</span><span class=\"NormalTextRun SCXW166094292 BCX0\"> oraz dostęp do narzędzi i materiałów sprzedażowych.</span></li>\n<li class=\"Paragraph SCXW166094292 BCX0\"><span class=\"NormalTextRun SCXW166094292 BCX0\">Hybrydowy model pracy (minimum 2 dni w biurze w centrum Warszawy)</span></li>\n<li class=\"Paragraph SCXW166094292 BCX0\"><span class=\"NormalTextRun SCXW166094292 BCX0\">Prywatną opiekę medyczną</span><span class=\"NormalTextRun SCXW166094292 BCX0\">,</span><span class=\"NormalTextRun SCXW166094292 BCX0\"> wsparcie aktywności sportowej</span><span class=\"NormalTextRun SCXW166094292 BCX0\"> i ubezpieczenie grupowe.</span><span class=\"EOP Selected SCXW166094292 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></li>\n</ul>\n</div>\n</div>"
+     },
+     {
+      "field_id": "920a4c7a0a647015a03390b1ee4f3ebc",
+      "name": "Dlaczego Soflab?",
+      "value": "<p><span class=\"TextRun SCXW140117760 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW140117760 BCX0\">Będziesz mieć realny wpływ na ofertę, procesy sprzedażowe i dalszy rozwój firmy. Pracujemy w dynamicznym środowisku, otwarcie rozmawiamy o problemach i wspólnie szukamy rozwiązań. Cenimy samodzielność, współpracę i dobrą atmosferę.</span></span><span class=\"EOP Selected SCXW140117760 BCX0\" data-ccp-props=\"{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559740&quot;:240}\"> </span></p>"
+     },
+     {
+      "field_id": "7536d2bd3f4e02f6f3e216091937826f",
+      "name": "Jak wygląda proces rekrutacyjny?",
+      "value": "<div class=\"OutlineElement Ltr SCXW257746654 BCX0\">\n<p class=\"Paragraph SCXW257746654 BCX0\"><span class=\"TextRun SCXW257746654 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW257746654 BCX0\">Proces obejmuje dwa spotkania:</span></span><span class=\"EOP Selected SCXW257746654 BCX0\" data-ccp-props=\"{&quot;335559685&quot;:360}\"> </span></p>\n</div>\n<div class=\"ListContainerWrapper SCXW257746654 BCX0\">\n<ul class=\"BulletListStyle1 SCXW257746654 BCX0\" role=\"list\">\n<li class=\"OutlineElement Ltr SCXW257746654 BCX0\" role=\"listitem\" aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"9\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\">\n<p class=\"Paragraph SCXW257746654 BCX0\"><span class=\"TextRun SCXW257746654 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW257746654 BCX0\">Pierwsze to ogólna rozmowa zapoznawcza, podczas której porozmawiamy o Twoim doświadczeniu, oczekiwaniach i specyfice stanowiska.</span></span><span class=\"EOP Selected SCXW257746654 BCX0\" data-ccp-props=\"{}\"> </span></p>\n</li>\n<li class=\"OutlineElement Ltr SCXW257746654 BCX0\" role=\"listitem\" aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"9\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\">\n<p class=\"Paragraph SCXW257746654 BCX0\"><span class=\"TextRun SCXW257746654 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW257746654 BCX0\">Drugie spotkanie odbywa się z udziałem członka </span><span class=\"NormalTextRun SCXW257746654 BCX0\">z</span><span class=\"NormalTextRun SCXW257746654 BCX0\">arządu i pozwala szerzej omówić wzajemne oczekiwania, Twoje doświadczenie sprzedażowe oraz wiedzę merytoryczną.</span></span><span class=\"EOP Selected SCXW257746654 BCX0\" data-ccp-props=\"{}\"> </span></p>\n</li>\n</ul>\n</div>\n<div class=\"ListContainerWrapper SCXW257746654 BCX0\"> </div>\n<div class=\"OutlineElement Ltr SCXW257746654 BCX0\">\n<p class=\"Paragraph SCXW257746654 BCX0\"><span class=\"TextRun SCXW257746654 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW257746654 BCX0\">Informację zwrotną przekazujemy każdemu kandydatowi w ciągu 14 dni.</span></span><span class=\"EOP Selected SCXW257746654 BCX0\" data-ccp-props=\"{&quot;335559685&quot;:360}\"> </span></p>\n</div>\n<div class=\"OutlineElement Ltr SCXW257746654 BCX0\">\n<p class=\"Paragraph SCXW257746654 BCX0\"><span class=\"TextRun SCXW257746654 BCX0\" lang=\"PL-PL\" xml:lang=\"PL-PL\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW257746654 BCX0\">Brzmi interesująco? Prześlij nam swoją aplikację i porozmawiajmy.</span></span><span class=\"EOP Selected SCXW257746654 BCX0\" data-ccp-props=\"{&quot;335559685&quot;:360}\"> </span></p>\n</div>\n<p> </p>"
+     }
+    ],
+    "locations": [
+     {
+      "latitude": "52.235840",
+      "longitude": "21.011959",
+      "iso": "pl",
+      "locality": "Warszawa",
+      "region1": "Mazowieckie",
+      "region2": "Warszawa",
+      "region3": "Warszawa",
+      "country": "Polska"
+     }
+    ],
+    "id": 211,
+    "name": "Business Development Manager",
+    "recruitment": {
+     "client_id": 25,
+     "workflow_id": 5,
+     "id": 252,
+     "nr_ref": "1/8/2026/AP/252"
+    },
+    "language": "pl"
+   },
+   "valid_start": "2026-08-05 11:08:48",
+   "awarded": false,
+   "options": {
+    "job_location": "{\"country\":\"Polska\",\"iso\":\"pl\",\"locality\":\"Warszawa\",\"region1\":\"Mazowieckie\",\"region2\":\"Warszawa\",\"region3\":\"Warszawa\",\"latitude\":\"52.235840\",\"longitude\":\"21.011959\"}",
+    "remote": "0",
+    "branches": "IT",
+    "joboffer_career_id": "1014881",
+    "joboffer_indeed_id": "1014883",
+    "joboffer_jooble_id": "1014882",
+    "job_location.translation": "Lokalizacja",
+    "remote.translation": "Praca zdalna",
+    "branches.translation": "Branża"
+   },
+   "huntoo_link": null,
+   "application_form": "https://soflab.traffit.com/public/form/a/24f6bdeaee7b327483dc8f974c96193e534b2f52?source=career_page"
+  },
+  "fetched_at": "2026-11-10T19:48:04.073928Z",
+  "content_hash": "8b94b14ac37ec8adaa0c3fd2e7ae7444b71d11b878fe7ab2f15913900bf6bbf2"
+ },
+ {
+  "source_slug": "traffit",
+  "board_token": "soflab",
+  "external_id": "418",
+  "payload": {
+   "url": "https://soflab.traffit.com/public/an/70365baebde06e6383d559e2ce70558f7678773d?source=career_page",
+   "id": 418,
+   "advert": {
+    "values": [
+     {
+      "field_id": "benefits",
+      "value": "<p><strong>Informacje dla Kandydata dotyczące przetwarzania danych osobowych:</strong></p>\n<p>Informujemy, iż administratorem danych osobowych jest Soflab Technology Sp. z o.o. z siedzibą w Katowicach (40-568) przy ul. Ligockiej 103. Dane osobowe są przetwarzane na potrzeby obecnych oraz przyszłych procesów rekrutacyjnych prowadzonych przez Spółkę Soflab Technology. Dane nie są udostępniane innym odbiorcom. Każdy/a Kandydat/ka, który aplikował na ofertę pracy w Soflab Technology Sp. z o.o. posiada prawo dostępu do treści swoich danych, do ich sprostowania oraz ich poprawiania, usuwania, ograniczenia przetwarzania i przenoszenia danych, do sprzeciwu wobec przetwarzania oraz złożenie skargi do organu nadzorczego (Prezesa Urzędu Ochrony Danych Osobowych).</p>\n<p>Dane osobowe będą przechowywane przez okres 12 miesięcy od dnia złożenia aplikacji lub do momentu wycofania zgody na przetwarzanie danych osobowych.<em> Jeśli chcesz usunąć swoje dane osobowe z naszej bazy rekrutacyjnej i nie otrzymywać powiadomień o nowych ofertach pracy napisz do nas na: </em><em style=\"color: inherit;\">wycofanie.zgody.rodo@soflab.pl</em><em> używając adres email, który wskazałeś podczas rejestracji/składania aplikacji.</em></p>\n<p>Zastrzegamy sobie prawo do odpowiedzi tylko na wybrane zgłoszenia.</p>"
+     },
+     {
+      "field_id": "description",
+      "value": "<h3>Przejrzałeś/łaś nasze aktualne ogłoszenia i nie znalazłeś/łaś nic dla siebie?</h3>\n<p>Nie wszystko stracone!</p>\n<p>Prześlij nam Twoje CV i zostaw kontakt do siebie, a my skontaktujemy się z Tobą, gdy tylko pojawi się możliwość nawiązania współpracy w ramach roli odpowiadającej Twoim kwalifikacjom.</p>\n<p>Jeśli masz jakieś pytania, pisz śmiało na adres <a href=\"mailto:kariera@soflab.pl\" target=\"_blank\" rel=\"noopener\">kariera@soflab.pl</a>.</p>"
+     },
+     {
+      "field_id": "geolocation",
+      "value": "{\"latitude\":\"52.235840\",\"longitude\":\"21.011959\",\"locality\":\"Warszawa\",\"iso\":\"pl\",\"region1\":\"Mazowieckie\",\"region2\":\"Warszawa\",\"region3\":\"Warszawa\",\"postcode\":\"00-002\",\"country\":\"Polska\"}"
+     }
+    ],
+    "locations": [
+     {
+      "latitude": "52.235840",
+      "longitude": "21.011959",
+      "iso": "pl",
+      "locality": "Warszawa",
+      "region1": "Mazowieckie",
+      "region2": "Warszawa",
+      "region3": "Warszawa",
+      "postcode": "00-002",
+      "country": "Polska"
+     }
+    ],
+    "id": 23,
+    "name": "Nie znalazł_ś oferty dla Ciebie? Zostaw nam swoje CV",
+    "recruitment": {
+     "client_id": 25,
+     "workflow_id": 5,
+     "id": 54,
+     "nr_ref": "/9/04/2021/AP"
+    },
+    "language": "pl"
+   },
+   "valid_start": "2026-07-29 16:28:46",
+   "awarded": false,
+   "options": {
+    "_x_work_time": "Pełny etat",
+    "job_location": "{\"country\":\"Polska\",\"iso\":\"pl\",\"locality\":\"Warszawa\",\"region1\":\"Mazowieckie\",\"region2\":\"Warszawa\",\"region3\":\"Warszawa\",\"latitude\":\"52.235840\",\"longitude\":\"21.011959\"}",
+    "remote": "0",
+    "branches": "IT",
+    "joboffer_career_id": "1012730",
+    "joboffer_indeed_id": "1012732",
+    "joboffer_jooble_id": "1012731",
+    "_x_work_time.translation": "Czas pracy",
+    "job_location.translation": "Lokalizacja",
+    "remote.translation": "Praca zdalna",
+    "branches.translation": "Branża"
+   },
+   "huntoo_link": null,
+   "application_form": "https://soflab.traffit.com/public/form/a/24f6bdeaee7b327483dc8f974c96193e534b303d?source=career_page"
+  },
+  "fetched_at": "2026-11-10T19:48:04.073928Z",
+  "content_hash": "03c6bb17211ec412fc1881cf30f490b09bf51233d339eadb1cf880e1e3894e39"
+ }
+]

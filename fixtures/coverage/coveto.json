@@ -1,0 +1,160 @@
+[
+ {
+  "source_slug": "coveto",
+  "board_token": "https://k21840.coveto.de/sitemap.xml",
+  "external_id": "2d95a9e2299b37680b39347b",
+  "payload": {
+   "page_url": "https://k21840.coveto.de/job-anlagenmechaniker-m-w-d-lufhansa-technik-hamburg-14596.html",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-09-15 16:59:24",
+    "description": "<h1>Anlagenmechaniker (m/w/d) Lufhansa Technik in Hamburg</h1>\n<p>Willkommen bei Aviation Industry Personnel SERVICES GmbH, dem Experten für Service- und Personaldienstleistungen in der Luftfahrt. Wir führen Menschen zusammen, um hohe Ziele zu erreichen. Ein Weg, den wir nicht alleine verfolgen, sondern den auch unsere Partnerfirmen mit Erfolg gehen. Steigen Sie mit uns als Unternehmen zu neuen Höhen auf. Rechnen Sie mit umfassender Personalbetreuung, die speziell auf Ihre Bedürfnisse abgestimmt sind. Checken Sie als Bewerber bei uns ein. Wir freuen uns, Sie an Bord zu haben.</p>\n<h1>Ihre Aufgaben</h1>\n<ul>\n<li>Bearbeitung von Bauteilen, u.a. Maskieren und Abdecken von Triebwerksbauteilen</li>\n<li>Robotergesteuerter (ABB) Strahl- und Beschichtungsanlagen bedienen und programmieren</li>\n<li>Aluminiumoxidstrahlen von Triebwerksteilen und Flugzeugteilen als Vorbereitung zum Plasmaspritzen</li>\n<li>Überwachung des gesamten Prozesses</li>\n</ul>\n<h1>Ihr Profil</h1>\n<ul>\n<li>Abgeschlossene Berufsausbildung als Anlagenmechaniker, Konstruktionsmechaniker, Werkzeugmechaniker, Metallbauer oder vergleichbar</li>\n<li>Berufserfahrung wünschenswert</li>\n<li>Grundlegende Englischkentnisse</li>\n<li>Bereitschaft zu Schichtarbeit</li>\n</ul>\n<h1>Was erwartet Sie</h1>\n<ul>\n<li>Unbefristeter Arbeitsvertrag</li>\n<li>Equal-Pay-Modell und übertarifliche Zuschläge (gemäß iGZ) und Zulagen</li>\n<li>Persönliche Betreuung</li>\n<li>Weihnachts- und Urlaubsgeld (gemäß iGZ)</li>\n<li>Betriebliche Altersvorsorge</li>\n<li>Arbeitgeberzuschuss für vermögenswirksame Leistungen optional</li>\n<li>Schulungs- und Weiterbildungsmöglichkeiten</li>\n<li>Option auf Übernahme</li>\n<li>Arbeitskleidung (gemäß Tätigkeiten)</li>\n</ul>\n<p>Bewerben Sie sich jetzt und nutzen Ihre Chance. Die Bewerbung dauert nur ein paar Minuten. Sie werden schnellst möglichst von unserem HR-Bereich durch Herrn Benjamin Kranich kontaktiert.</p>\n<h1>STELLENDETAILS:</h1>\n<p>Einsatzort:\n22335 Hamburg</p>\n<p>Branche:\nLuft-/Raumfahrttechnik</p>\n<p>Beruf:\nAnlagenmechaniker, Konstruktionsmechaniker, Werkzeugmechaniker, Metallbauer</p>\n<p>Tätigkeitsbereich:\nWartung/Instandhaltung</p>\n<p>Art der Anstellung:\nArbeitnehmerüberlassung</p>\n<p>Befristung:\nunbefristet</p>\n",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Aviation Industry Personnel SERVICES GmbH",
+     "logo": "https://k21840.coveto.de/v1567578615/public_data/logo-icon.png"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Aviation Industry Personnel SERVICES GmbH",
+     "value": "14596"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Hamburg",
+      "addressRegion": "Hamburg",
+      "postalCode": "22335",
+      "addressCountry": "DE"
+     },
+     "geo": {
+      "type": "GeoCoordinates",
+      "latitude": "53.554423",
+      "longitude": "9.994583"
+     }
+    },
+    "url": "https://k21840.coveto.de/job-anlagenmechaniker-m-w-d-lufhansa-technik-hamburg-14596.html",
+    "title": "Anlagenmechaniker (m/w/d) Lufhansa Technik",
+    "occupationalCategory": [
+     "99101100: Unclassified Occupations"
+    ],
+    "salaryCurrency": "EUR",
+    "validThrough": "2027-03-10",
+    "employmentType": "FULL_TIME",
+    "directApply": true,
+    "workHours": "37.50"
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:44.140335Z",
+  "content_hash": "b229f70da989f1fdc4692351206cc901fb9abac7c89a2d8d26d73757aacab9e3"
+ },
+ {
+  "source_slug": "coveto",
+  "board_token": "https://k21840.coveto.de/sitemap.xml",
+  "external_id": "0d7bcda971fe2ee0229257c7",
+  "payload": {
+   "page_url": "https://k21840.coveto.de/job-arbeitsplaner-m-w-d-lufthansa-technik-hamburg-hamburg-14629.html",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-10-09 11:17:09",
+    "description": "<h1>Arbeitsplaner (m/w/d) Lufthansa Technik Hamburg in Hamburg</h1>\n<p>Willkommen bei Aviation Industry Personnel SERVICES GmbH, dem Experten für Service- und Personaldienstleistungen in der Luftfahrt. Wir führen Menschen zusammen, um hohe Ziele zu erreichen. Ein Weg, den wir nicht alleine verfolgen, sondern den auch unsere Partnerfirmen mit Erfolg gehen. Steigen Sie mit uns als Unternehmen zu neuen Höhen auf. Rechnen Sie mit umfassender Personalbetreuung, die speziell auf Ihre Bedürfnisse abgestimmt sind. Checken Sie als Bewerber bei uns ein. Wir freuen uns, Sie an Bord zu haben.</p>\n<h1>Ihre Aufgaben</h1>\n<ul>\n<li>Arbeitsunterlagen werkstattgerecht inklusive Material- und Betriebsmittel­anforderungen erstellen sowie Instandhaltungsumfänge technisch, wirtschaftlich und qualitativ prüfen, inkl. kontinuierlicher Prozessoptimierung der Instandhaltungsabläufe</li>\n<li>Instandhaltungsvorgaben in technische Zeichnungen für die Interior Parts umsetzen</li>\n<li>EDV-Stammdaten pflegen</li>\n<li>Analysen zu technischen und betriebswirtschaftlichen Themen durchführen, auswerten und Vorschläge für Maßnahmen daraus ableiten</li>\n<li>Bearbeitung von Reklamationen, Maßnahmen zur Qualitätssicherung des Instandhaltungsprozesses vorschlagen.</li>\n<li>Engineering bei der Bearbeitung und Umsetzung von Herstellervorgaben und Behördenforderungen sowie bei der Erstellung technischer Dokumentation unterstützen</li>\n<li>Sonderaufgaben wahrnehmen, Projektmitarbeitet, Dispo Support</li>\n</ul>\n<h1>Ihr Profil</h1>\n<ul>\n<li>Abgeschlossene technische Berufsausbildung, vorzugsweise Fluggerätebauer</li>\n<li>Anspruchsvolle Zusatzqualifikation (bspw. Meister/-in/Techniker/-in) wünschenswert</li>\n<li>Mehrjährige Berufserfahrung als Arbeitsplaner oder als SF2 INT</li>\n<li>Gute Kenntnisse der Aircraft Interior Parts</li>\n<li>Gute Englischkenntnisse in Wort und Schrift</li>\n<li>Gute EDV-Kenntnisse (SAP R/3, MS Office)</li>\n<li>Fähigkeit zur Teamarbeit</li>\n<li>Hohe Servicebereitschaft und Kundenorientierung</li>\n<li>Klare mündliche und schriftliche (technische) Ausdrucksweise</li>\n<li>Gutes Durchsetzungsvermögen und hohe Überzeugungskraft</li>\n<li>Sicheres und gewandtes Auftreten / Kontaktverhalten</li>\n<li>Hohes Organisationsgeschick,</li>\n<li>Hohe Flexibilität</li>\n<li>Ausgeprägte Eigeninitiative</li>\n<li>Sorgfältige Arbeitsweise</li>\n<li>Ausgeprägte Fähigkeit zur Strukturierung und Planung von komplexen Arbeitsabläufen</li>\n<li>Hohes Verantwortungsbewusstsein</li>\n<li>Bildschirmtauglichkeit</li>\n<li>Bereitschaft zu Einsätzen im In- und Ausland</li>\n<li>Bereitschaft zu berufsbezogener Weiterbildung</li>\n<li>psychologische Eignungsuntersuchung</li>\n</ul>\n<h1>Was erwartet Sie</h1>\n<ul>\n<li>Unbefristeter Arbeitsvertrag</li>\n<li>Equal-Pay-Modell und übertarifliche Zuschläge (gemäß iGZ) und Zulagen</li>\n<li>Persönliche Betreuung</li>\n<li>Weihnachts- und Urlaubsgeld (gemäß iGZ)</li>\n<li>Betriebliche Altersvorsorge</li>\n<li>Unfallversicherung</li>\n<li>Arbeitgeberzuschuss für vermögenswirksame Leistungen optional</li>\n<li>Schulungs- und Weiterbildungsmöglichkeiten</li>\n<li>Option auf Übernahme</li>\n<li>Arbeitskleidung (gemäß Tätigkeiten)</li>\n</ul>\n<p>Bewerben Sie sich jetzt und nutzen Ihre Chance. Die Bewerbung dauert nur ein paar Minuten. Sie werden schnellst möglichst von unserem HR-Bereich durch Herrn Benjamin Kranich kontaktiert.</p>\n<h1>STELLENDETAILS:</h1>\n<p>Einsatzort:\n22335 Hamburg</p>\n<p>Branche:\nLuft-/Raumfahrttechnik</p>\n<p>Beruf:\nAbgeschlossene technische Berufsausbildung, vorzugsweise Fluggerätebauer</p>\n<p>Tätigkeitsbereich:\nWartung und Instandhaltung</p>\n<p>Art der Anstellung:\nArbeitnehmerüberlassung</p>\n<p>Befristung:\nunbefristet</p>\n",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Aviation Industry Personnel SERVICES GmbH",
+     "logo": "https://k21840.coveto.de/v1567578615/public_data/logo-icon.png"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Aviation Industry Personnel SERVICES GmbH",
+     "value": "14629"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Hamburg",
+      "addressRegion": "Hamburg",
+      "postalCode": "22335",
+      "addressCountry": "DE"
+     },
+     "geo": {
+      "type": "GeoCoordinates",
+      "latitude": "53.554423",
+      "longitude": "9.994583"
+     }
+    },
+    "url": "https://k21840.coveto.de/job-arbeitsplaner-m-w-d-lufthansa-technik-hamburg-hamburg-14629.html",
+    "title": "Arbeitsplaner (m/w/d) Lufthansa Technik Hamburg",
+    "occupationalCategory": [
+     "99101100: Unclassified Occupations"
+    ],
+    "salaryCurrency": "EUR",
+    "validThrough": "2027-03-10",
+    "employmentType": "FULL_TIME",
+    "directApply": true,
+    "workHours": "37.50",
+    "skills": "Flugzeugausrüstung, Kleben, Löten, Blechschweißen, Blechbearbeitung, Nieten, Messen, Avionik (Fluggeräteelektronik, Fluggeräteelektrik), Faserverbundwerkstoffe, Elektro-Anlagenschweißer-Prüfung, Elektro-Blechschweißer-Prüfung, Elektro-Rohrschweißer-Prüfung, Elektro-Schweißen Basisqualifikation, Gas-Anlagenschweißer-Prüfung, Gas-Blechschweißer-Prüfung, Gas-Rohrschweißer-Prüfung"
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:44.643590Z",
+  "content_hash": "e37d483f58e9d42b4cf60fe5f5e14203e6a39891327128a88d59596f5e4538e5"
+ },
+ {
+  "source_slug": "coveto",
+  "board_token": "https://k21840.coveto.de/sitemap.xml",
+  "external_id": "e1d5c72cd9258f3ef28c40f2",
+  "payload": {
+   "page_url": "https://k21840.coveto.de/job-arbeitsvorbereiter-aviation-m-w-d-direktvermittlung-schkeuditz-14612.html",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-09-15 16:59:24",
+    "description": "<h1>Arbeitsvorbereiter Aviation (m/w/d) Direktvermittlung in Schkeuditz</h1>\n<p>Willkommen bei Aviation Industry Personnel SERVICES GmbH, dem Experten für Service- und Personaldienstleistungen in der Luftfahrt. Wir führen Menschen zusammen, um hohe Ziele zu erreichen. Ein Weg, den wir nicht alleine verfolgen, sondern den auch unsere Partnerfirmen mit Erfolg gehen. Steigen Sie mit uns als Unternehmen zu neuen Höhen auf. Rechnen Sie mit umfassender Personalbetreuung, die speziell auf Ihre Bedürfnisse abgestimmt sind. Checken Sie als Bewerber bei uns ein. Wir freuen uns, Sie an Bord zu haben.</p>\n<h1>Ihre Aufgaben</h1>\n<ul>\n<li>Erstellung und Pflege von Arbeitsplänen auf Basis von Inspektionsberichten</li>\n<li>Arbeitsvorbereitung im Bereich Wartung und Reparatur von Luftfahrtkomponenten</li>\n<li>Kapazitäts- und Ressourcenplanung für laufende Aufträge</li>\n<li>Shopfloor-Management sowie Koordination der Arbeitsabläufe</li>\n<li>Abstimmung mit Produktion, Engineering und Einkauf</li>\n<li>Überwachung von Terminen, Materialverfügbarkeiten und Auftragsstatus</li>\n<li>Stammdatenpflege im ERP-/MRO-System</li>\n<li>Sicherstellung der Einhaltung luftfahrtspezifischer Vorgaben sowie relevanter Qualitätsstandards</li>\n</ul>\n<h1>Ihr Profil</h1>\n<ul>\n<li>Abgeschlossene technische Ausbildung oder vergleichbare Qualifikation im Bereich Luftfahrt, Maschinenbau oder Industrie</li>\n<li>Erfahrung in der Arbeitsvorbereitung innerhalb des Aviation-/MRO-Umfelds</li>\n<li>Kenntnisse in der Wartung und Reparatur von Luftfahrtkomponenten</li>\n<li>Sicherer Umgang mit ERP- oder MRO-Systemen</li>\n<li>Kenntnisse im Umgang mit LTB400 wünschenswert</li>\n<li>Strukturierte und selbstständige Arbeitsweise</li>\n<li>Teamfähigkeit sowie Kommunikationsstärke in der Zusammenarbeit mit verschiedenen Fachbereichen</li>\n</ul>\n<h1>Was erwartet Sie</h1>\n<ul>\n<li>Unbefristeter Arbeitsvertrag</li>\n<li>Equal-Pay-Modell und übertarifliche Zuschläge (gemäß GVP) und Zulagen</li>\n<li>Persönliche Betreuung</li>\n<li>Weihnachts- und Urlaubsgeld (gemäß iGZ)</li>\n<li>Betriebliche Altersvorsorge</li>\n<li>Unfallversicherung</li>\n<li>Arbeitgeberzuschuss für vermögenswirksame Leistungen optional</li>\n<li>Schulungs- und Weiterbildungsmöglichkeiten</li>\n<li>Option auf Übernahme</li>\n<li>Arbeitskleidung (gemäß Tätigkeiten)</li>\n</ul>\n<p>Bewerben Sie sich jetzt und nutzen Ihre Chance. Die Bewerbung dauert nur ein paar Minuten. Sie werden schnellst möglichst von unserem HR-Bereich durch Herrn Benjamin Kranich kontaktiert.</p>\n<h1>STELLENDETAILS:</h1>\n<p>Einsatzort:\n04435 Schkeuditz</p>\n<p>Branche:\nLuft-/Raumfahrttechnik</p>\n<p>Beruf:\nAbgeschlossene technische Ausbildung oder vergleichbare Qualifikation im Bereich Luftfahrt</p>\n<p>Tätigkeitsbereich:\nWartung und Instandhaltung</p>\n<p>Art der Anstellung:\nDirektvermittlung</p>\n<p>Befristung:\nnach Absprache</p>\n",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Aviation Industry Personnel SERVICES GmbH",
+     "logo": "https://k21840.coveto.de/v1567578615/public_data/logo-icon.png"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Aviation Industry Personnel SERVICES GmbH",
+     "value": "14612"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Schkeuditz",
+      "addressRegion": "Sachsen",
+      "postalCode": "04435",
+      "addressCountry": "DE"
+     },
+     "geo": {
+      "type": "GeoCoordinates",
+      "latitude": "51.3945595453453",
+      "longitude": "12.2241874920654"
+     }
+    },
+    "url": "https://k21840.coveto.de/job-arbeitsvorbereiter-aviation-m-w-d-direktvermittlung-schkeuditz-14612.html",
+    "title": "Arbeitsvorbereiter Aviation (m/w/d) Direktvermittlung",
+    "occupationalCategory": [
+     "99101100: Unclassified Occupations"
+    ],
+    "salaryCurrency": "EUR",
+    "validThrough": "2027-03-10",
+    "employmentType": "FULL_TIME",
+    "directApply": true,
+    "workHours": "40.00",
+    "skills": "Personalplanung, Qualitätsmanagement, Industrial Engineering, Projektmanagement, Qualitätsprüfung, Qualitätssicherung, Fertigungs-, Auftragssteuerung, Arbeitsplatzgestaltung, Zeitstudien, Fertigungstechnik, Betriebsmitteleinsatz planen, Arbeitsplatzanalyse, Kosten- und Leistungsrechnung, Rationalisierung, Demand-Side-Management, Arbeitsvorbereitung, Ergonomie"
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:45.139456Z",
+  "content_hash": "21ef3ed98a868c2231e5a5df7f873c1299086ff6052aa4efcc4078032831a130"
+ }
+]

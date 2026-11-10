@@ -1,0 +1,192 @@
+[
+ {
+  "source_slug": "jobberman",
+  "board_token": "https://www.jobberman.com/sitemap-listings-index-en.xml",
+  "external_id": "0b1ecaa642fdaabcd100bfdf",
+  "payload": {
+   "page_url": "https://www.jobberman.com/listings/acccountant-5pzme6",
+   "posting": {
+    "@type": "JobPosting",
+    "@id": "https://www.jobberman.com/#/schema/JobPosting/listing-1266563",
+    "title": "Accountant",
+    "jobImmediateStart": false,
+    "description": "<div><div><div><div><div><div><div><div><div><div><div><b>Responsibilities:</b><ul><li>Maintain accurate and up-to-date financial records and accounting entries.</li><li>Prepare monthly, quarterly and annual financial reports.</li><li>Monitor accounts payable, receivable, expenses and cash flow.</li><li>Prepare invoices, payment schedules and bank reconciliations.</li><li>Monitor pharmaceutical inventory values, purchases, stock movements and variances.</li><li>Reconcile inventory records with accounting records and investigate discrepancies.</li><li>Prepare budgets, financial forecasts and management reports.</li><li>Ensure timely payment of suppliers, vendors and other obligations.</li><li>Monitor customer accounts and follow up on outstanding payments.</li><li>Maintain proper documentation for all financial transactions.</li><li>Ensure compliance with applicable tax, accounting and regulatory requirements.</li><li>Assist with payroll preparation and statutory deductions where required.</li><li>Support internal and external audits by providing accurate financial records and documentation.</li><li>Establish and maintain effective financial controls to minimize errors, fraud and financial losses.</li><li>Provide management with financial analysis and recommendations for better cost control and profitability.</li><li>Maintain confidentiality of company financial information.</li></ul><p><br></p><b>Requirements:</b><ul><li>HND in Accounting, Finance or related discipline.</li><li>ICAN qualification or part-qualification is an advantage.</li><li>3–5 years’ relevant accounting experience, preferably in pharmaceuticals, healthcare, FMCG or distribution.</li><li>Good knowledge of accounting software and Microsoft Excel.</li><li>Strong knowledge of inventory and financial accounting.</li><li>Excellent attention to detail, analytical and problem-solving skills.</li><li>High level of integrity, accuracy and confidentiality.</li></ul></div></div></div></div></div></div></div></div></div></div></div>\n\n<div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><p><br></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>",
+    "datePosted": "2026-10-05T00:00:00.000000Z",
+    "directApply": true,
+    "industry": "Retail, Fashion & FMCG",
+    "occupationalCategory": "Accounting, Auditing & Finance",
+    "employmentType": "FULL_TIME",
+    "validThrough": "2026-12-04T00:00:00.000000Z",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "NGN",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": 150000,
+      "minValue": 150000,
+      "maxValue": 250000,
+      "unitText": "MONTH"
+     }
+    },
+    "educationRequirements": {
+     "@type": "EducationalOccupationalCredential",
+     "@id": "https://www.jobberman.com/#/schema/EducationalOccupationalCredential/HND"
+    },
+    "qualifications": "Mid level",
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 36
+    },
+    "jobLocation": {
+     "@id": "https://www.jobberman.com/#/schema/Place/location-1266563",
+     "address": {
+      "addressCountry": "NG",
+      "addressRegion": "Nigeria",
+      "postalCode": "101245"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "@id": "https://www.jobberman.com/#/schema/Organization/agency-1266563",
+     "name": "PC Recruit Nigeria",
+     "legalName": "PC Recruit Nigeria",
+     "description": "<div><div><div><div><div><div><div><div><div><div><div><b>Responsibilities:</b><ul><li>Maintain accurate and up-to-date financial records and accounting entries.</li><li>Prepare monthly, quarterly and annual financial reports.</li><li>Monitor accounts payable, receivable, expenses and cash flow.</li><li>Prepare invoices, payment schedules and bank reconciliations.</li><li>Monitor pharmaceutical inventory values, purchases, stock movements and variances.</li><li>Reconcile inventory records with accounting records and investigate discrepancies.</li><li>Prepare budgets, financial forecasts and management reports.</li><li>Ensure timely payment of suppliers, vendors and other obligations.</li><li>Monitor customer accounts and follow up on outstanding payments.</li><li>Maintain proper documentation for all financial transactions.</li><li>Ensure compliance with applicable tax, accounting and regulatory requirements.</li><li>Assist with payroll preparation and statutory deductions where required.</li><li>Support internal and external audits by providing accurate financial records and documentation.</li><li>Establish and maintain effective financial controls to minimize errors, fraud and financial losses.</li><li>Provide management with financial analysis and recommendations for better cost control and profitability.</li><li>Maintain confidentiality of company financial information.</li></ul><p><br></p><b>Requirements:</b><ul><li>HND in Accounting, Finance or related discipline.</li><li>ICAN qualification or part-qualification is an advantage.</li><li>3–5 years’ relevant accounting experience, preferably in pharmaceuticals, healthcare, FMCG or distribution.</li><li>Good knowledge of accounting software and Microsoft Excel.</li><li>Strong knowledge of inventory and financial accounting.</li><li>Excellent attention to detail, analytical and problem-solving skills.</li><li>High level of integrity, accuracy and confidentiality.</li></ul></div></div></div></div></div></div></div></div></div></div></div>\n\n<div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><p><br></p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>",
+     "address": {
+      "@id": "https://www.jobberman.com/#/schema/Address/agency-1266563"
+     },
+     "image": {
+      "@id": "https://i.roamcdn.net/kazi/ng/hq/mVi7y-R3gUkPsa88PXXZ5g/-/_1Q6tq89LxV7VGlkbmhgA/adv29271_1592675949.jpg"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:51:13.309980Z",
+  "content_hash": "6771b81be2c5eeef390b9d62434011c3d255ae0e41668758fa186ce72b166a3a"
+ },
+ {
+  "source_slug": "jobberman",
+  "board_token": "https://www.jobberman.com/sitemap-listings-index-en.xml",
+  "external_id": "638d247058c68eb6c2dddd2f",
+  "payload": {
+   "page_url": "https://www.jobberman.com/listings/accontant-officer-gm8dz8",
+   "posting": {
+    "@type": "JobPosting",
+    "@id": "https://www.jobberman.com/#/schema/JobPosting/listing-1271213",
+    "title": "Accontant Officer",
+    "jobImmediateStart": false,
+    "description": "<p><b>Responsibilities:</b></p>\n\n<p></p>\n\n<ul>\n <li>Maintain\n     accurate financial records, ledgers, journals, and accounting\n     documentation.</li>\n <li>Prepare\n     payment vouchers, invoices, receipts, and other financial documents.</li>\n <li>Monitor\n     daily financial transactions, accounts payable, accounts receivable, and\n     cash flow.</li>\n <li>Perform\n     bank reconciliations and assist with monthly financial reporting.</li>\n <li>Prepare\n     payroll calculations, salary schedules, and statutory deductions.</li>\n <li>Ensure\n     proper filing of financial records and compliance with applicable\n     accounting and tax regulations.</li>\n <li>Support\n     budgeting, expense monitoring, and audit preparation.</li>\n <li>Reconcile\n     financial discrepancies and ensure the accuracy of accounting entries.</li>\n <li>Assist\n     with financial analysis, expenditure tracking, and other accounting duties\n     as required.</li>\n <li>Carry\n     out HR-related tasks as assigned by management, in addition to the responsibilities\n     of the role.</li>\n <li>Perform\n     other duties relevant to the position as may be assigned.</li></ul>\n\n<p><br></p>\n\n<p><b>Requirements:</b></p>\n\n<ul><li>Minimum of a BSC degree</li><li>Minimum of 2 years of experience in similar roles </li>\n</ul>",
+    "datePosted": "2026-10-22T00:00:00.000000Z",
+    "directApply": true,
+    "industry": "Manufacturing & Warehousing",
+    "occupationalCategory": "Accounting, Auditing & Finance",
+    "employmentType": "FULL_TIME",
+    "validThrough": "2026-12-21T00:00:00.000000Z",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "NGN",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": 150000,
+      "minValue": 150000,
+      "maxValue": 250000,
+      "unitText": "MONTH"
+     }
+    },
+    "educationRequirements": {
+     "@type": "EducationalOccupationalCredential",
+     "@id": "https://www.jobberman.com/#/schema/EducationalOccupationalCredential/Degree"
+    },
+    "qualifications": "Entry level",
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 24
+    },
+    "jobLocation": {
+     "@id": "https://www.jobberman.com/#/schema/Place/location-1271213",
+     "address": {
+      "addressCountry": "NG",
+      "addressRegion": "Nigeria"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "@id": "https://www.jobberman.com/#/schema/Organization/agency-1271213",
+     "name": "Odixcity Consulting",
+     "legalName": "Odixcity Consulting",
+     "description": "<p><b>Responsibilities:</b></p>\n\n<p></p>\n\n<ul>\n <li>Maintain\n     accurate financial records, ledgers, journals, and accounting\n     documentation.</li>\n <li>Prepare\n     payment vouchers, invoices, receipts, and other financial documents.</li>\n <li>Monitor\n     daily financial transactions, accounts payable, accounts receivable, and\n     cash flow.</li>\n <li>Perform\n     bank reconciliations and assist with monthly financial reporting.</li>\n <li>Prepare\n     payroll calculations, salary schedules, and statutory deductions.</li>\n <li>Ensure\n     proper filing of financial records and compliance with applicable\n     accounting and tax regulations.</li>\n <li>Support\n     budgeting, expense monitoring, and audit preparation.</li>\n <li>Reconcile\n     financial discrepancies and ensure the accuracy of accounting entries.</li>\n <li>Assist\n     with financial analysis, expenditure tracking, and other accounting duties\n     as required.</li>\n <li>Carry\n     out HR-related tasks as assigned by management, in addition to the responsibilities\n     of the role.</li>\n <li>Perform\n     other duties relevant to the position as may be assigned.</li></ul>\n\n<p><br></p>\n\n<p><b>Requirements:</b></p>\n\n<ul><li>Minimum of a BSC degree</li><li>Minimum of 2 years of experience in similar roles </li>\n</ul>",
+     "address": {
+      "@id": "https://www.jobberman.com/#/schema/Address/agency-1271213"
+     },
+     "image": {
+      "@id": "https://www.jobberman.com/static-assets/img/dashboard-default.svg"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:51:14.014382Z",
+  "content_hash": "3a1401776913704215a854360e9198521bf91a1cbd4ffb2dede4afb78e07dd26"
+ },
+ {
+  "source_slug": "jobberman",
+  "board_token": "https://www.jobberman.com/sitemap-listings-index-en.xml",
+  "external_id": "871af35c6110d8ba7b6ff5b5",
+  "payload": {
+   "page_url": "https://www.jobberman.com/listings/acconutant-wrwxkz",
+   "posting": {
+    "@type": "JobPosting",
+    "@id": "https://www.jobberman.com/#/schema/JobPosting/listing-1274550",
+    "title": "Accountant",
+    "jobImmediateStart": false,
+    "description": "<p><b>Responsibilities:</b></p>\n\n<p><b>Daily Sales &amp; Cash Management:</b></p>\n\n<ul><li>Collect and reconcile daily sales reports with POS transactions, cash, and transfer receipts.</li><li>Verify customer bills and ensure there are no payment discrepancies or outstanding bills.</li><li>Monitor all payment channels, including cash, POS, bank transfers, and credit transactions.</li><li>Verify daily cash lodgments and ensure proper documentation of transactions.</li></ul>\n\n<p><br></p>\n\n<p><b>Bookkeeping &amp; Financial Reporting:</b></p>\n\n<ul><li>Maintain accurate records of all income and expenditure.</li><li>Prepare daily, weekly, and monthly profit and loss reports.</li><li>Prepare monthly financial statements and balance sheets for management.</li><li>Record supplier payments, staff salaries, purchases, and other financial transactions.</li></ul>\n\n<p><br></p>\n\n<p><b>Inventory &amp; Cost Control:</b></p>\n\n<ul><li>Work with the storekeeper to monitor stock movement and conduct regular stock counts.</li><li>Calculate food and beverage costs and report wastage or discrepancies.</li><li>Monitor product pricing and ensure accurate costing.</li><li>Identify and prevent theft, pilferage, over-pouring, and fraudulent practices.</li></ul>\n\n<p><br></p>\n\n<p><b>Payroll &amp; Compliance:</b></p>\n\n<ul><li>Prepare staff payroll, including deductions, advances, and overtime.</li><li>Maintain proper records of staff payments and statutory obligations.</li><li>Ensure receipts and supporting documents are available for all expenses.</li></ul>\n\n<p><br></p>\n\n<p><b>Budgeting &amp; Financial Advisory:</b></p>\n\n<ul><li>Prepare monthly budgets and expenditure forecasts.</li><li>Advise management on cost reduction, profit improvement, and financial risks.</li><li>Monitor and audit sales from the bar, kitchen, snooker, and BBQ sections.</li><li>Maintain the confidentiality and security of all financial records.</li></ul>\n\n<p><br></p>\n\n<p><b>Requirements:</b></p>\n\n<ul><li>B.Sc. or HND in Accounting, Banking and Finance, Economics, or a related field.</li><li>3–6 years of relevant work experience as an Accountant, Cashier, or Finance Officer.</li><li>Previous experience in a lounge, bar, restaurant, hotel, or club is compulsory.</li><li>Professional certification such as ICAN or ANAN, or currently in view, is a strong advantage.</li><li>Proficiency in accounting software such as QuickBooks, Sage, Microsoft Excel, and POS systems.</li><li>Strong knowledge of financial reporting, cash management, inventory auditing, and cost control.</li><li>Must be highly honest, trustworthy, discreet, and professional.</li><li>Excellent analytical, numerical, and problem-solving skills.</li><li>Must be comfortable working late nights, weekends, and participating in stock counts after closing hours.</li><li>Must be based in Port Harcourt or willing to relocate.</li><li>Age Requirement: 28–40 years.</li></ul>\n\n<p><br></p>\n\n<p><b>Location: </b>Trans Woji, Port Harcourt</p>\n\n<p><b>Remuneration: NGN </b>150,000 monthly</p>",
+    "datePosted": "2026-11-04T00:00:00.000000Z",
+    "directApply": true,
+    "industry": "Banking, Finance & Insurance",
+    "occupationalCategory": "Accounting, Auditing & Finance",
+    "employmentType": "FULL_TIME",
+    "validThrough": "2027-01-03T00:00:00.000000Z",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "NGN",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": 70000,
+      "minValue": 70000,
+      "maxValue": 150000,
+      "unitText": "MONTH"
+     }
+    },
+    "educationRequirements": {
+     "@type": "EducationalOccupationalCredential",
+     "@id": "https://www.jobberman.com/#/schema/EducationalOccupationalCredential/HND"
+    },
+    "qualifications": "Mid level",
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 36
+    },
+    "jobLocation": {
+     "@id": "https://www.jobberman.com/#/schema/Place/location-1274550",
+     "address": {
+      "addressCountry": "NG",
+      "addressRegion": "Nigeria"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "@id": "https://www.jobberman.com/#/schema/Organization/agency-1274550",
+     "name": "Capinta Consult Limited",
+     "legalName": "Capinta Consult Limited",
+     "description": "<p><b>Responsibilities:</b></p>\n\n<p><b>Daily Sales &amp; Cash Management:</b></p>\n\n<ul><li>Collect and reconcile daily sales reports with POS transactions, cash, and transfer receipts.</li><li>Verify customer bills and ensure there are no payment discrepancies or outstanding bills.</li><li>Monitor all payment channels, including cash, POS, bank transfers, and credit transactions.</li><li>Verify daily cash lodgments and ensure proper documentation of transactions.</li></ul>\n\n<p><br></p>\n\n<p><b>Bookkeeping &amp; Financial Reporting:</b></p>\n\n<ul><li>Maintain accurate records of all income and expenditure.</li><li>Prepare daily, weekly, and monthly profit and loss reports.</li><li>Prepare monthly financial statements and balance sheets for management.</li><li>Record supplier payments, staff salaries, purchases, and other financial transactions.</li></ul>\n\n<p><br></p>\n\n<p><b>Inventory &amp; Cost Control:</b></p>\n\n<ul><li>Work with the storekeeper to monitor stock movement and conduct regular stock counts.</li><li>Calculate food and beverage costs and report wastage or discrepancies.</li><li>Monitor product pricing and ensure accurate costing.</li><li>Identify and prevent theft, pilferage, over-pouring, and fraudulent practices.</li></ul>\n\n<p><br></p>\n\n<p><b>Payroll &amp; Compliance:</b></p>\n\n<ul><li>Prepare staff payroll, including deductions, advances, and overtime.</li><li>Maintain proper records of staff payments and statutory obligations.</li><li>Ensure receipts and supporting documents are available for all expenses.</li></ul>\n\n<p><br></p>\n\n<p><b>Budgeting &amp; Financial Advisory:</b></p>\n\n<ul><li>Prepare monthly budgets and expenditure forecasts.</li><li>Advise management on cost reduction, profit improvement, and financial risks.</li><li>Monitor and audit sales from the bar, kitchen, snooker, and BBQ sections.</li><li>Maintain the confidentiality and security of all financial records.</li></ul>\n\n<p><br></p>\n\n<p><b>Requirements:</b></p>\n\n<ul><li>B.Sc. or HND in Accounting, Banking and Finance, Economics, or a related field.</li><li>3–6 years of relevant work experience as an Accountant, Cashier, or Finance Officer.</li><li>Previous experience in a lounge, bar, restaurant, hotel, or club is compulsory.</li><li>Professional certification such as ICAN or ANAN, or currently in view, is a strong advantage.</li><li>Proficiency in accounting software such as QuickBooks, Sage, Microsoft Excel, and POS systems.</li><li>Strong knowledge of financial reporting, cash management, inventory auditing, and cost control.</li><li>Must be highly honest, trustworthy, discreet, and professional.</li><li>Excellent analytical, numerical, and problem-solving skills.</li><li>Must be comfortable working late nights, weekends, and participating in stock counts after closing hours.</li><li>Must be based in Port Harcourt or willing to relocate.</li><li>Age Requirement: 28–40 years.</li></ul>\n\n<p><br></p>\n\n<p><b>Location: </b>Trans Woji, Port Harcourt</p>\n\n<p><b>Remuneration: NGN </b>150,000 monthly</p>",
+     "address": {
+      "@id": "https://www.jobberman.com/#/schema/Address/agency-1274550"
+     },
+     "image": {
+      "@id": "https://www.jobberman.com/static-assets/img/dashboard-default.svg"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:51:14.317294Z",
+  "content_hash": "5b8afc62aaa06f8c7b868f9690e9dd97f3fafa356c602e1da02d9651a5f665dc"
+ }
+]

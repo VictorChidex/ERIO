@@ -77,4 +77,32 @@ JSONLD_CONNECTORS: list[Connector] = [
     JsonLdConnector("niceboard", r"^/job/\d+", hosts("*.niceboard.co"), multi_employer=True),
     JsonLdConnector("nodex", r"^/job/", country_from_host=True, multi_employer=True),
     JsonLdConnector("paradox", r"/job/[0-9a-f]{32}"),
+    # Found by comparing with the reference index (docs/reference-study-jobindex.md).
+    JsonLdConnector(
+        "pandape",
+        r"^/Detail/\d+",
+        hosts("*.pandape.infojobs.com.br"),
+        page_param="PageNumber",
+        listing_pages=5,
+    ),
+    JsonLdConnector("factorial", r"^/job_posting/", hosts("*.factorialhr.com", "*.factorial.com")),
+    JsonLdConnector("coveto", r"^/job-.+\.html$", hosts("*.coveto.de")),
+    JsonLdConnector(
+        "instaffo",
+        r"^/en/job/",
+        hosts("jobs.instaffo.com"),
+        max_pages=100,
+        multi_employer=True,
+    ),
+    JsonLdConnector(
+        "jobberman", r"^/listings/", hosts("www.jobberman.com"), max_pages=100, multi_employer=True
+    ),
+    JsonLdConnector(
+        "brightermonday",
+        r"^/listings/",
+        hosts("www.brightermonday.co.ke", "www.brightermonday.co.ug"),
+        max_pages=100,
+        multi_employer=True,
+    ),
+    JsonLdConnector("torre", r"^/post/", hosts("torre.ai"), max_pages=100, multi_employer=True),
 ]
