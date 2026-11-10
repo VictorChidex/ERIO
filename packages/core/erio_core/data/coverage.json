@@ -638,6 +638,105 @@
   "note": ""
  },
  {
+  "slug": "cats",
+  "name": "CATS",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 12,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:55:17+00:00",
+  "note": "Career portals on {account}.catsone.com are rendered on the server and read page by page; CATS's own API needs a key and is not used. Token is account/portalId."
+ },
+ {
+  "slug": "clearcompany",
+  "name": "HRM Direct / ClearCompany",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 11,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:55:27+00:00",
+  "note": "Old {tenant}.hrmdirect.com addresses redirect to apply.clearcompany.com/{tenant}; jobs come from the public job widget's feed, which the career page names by its site id."
+ },
+ {
+  "slug": "concludis",
+  "name": "concludis",
+  "kind": "ats",
+  "status": "Partial",
+  "boards_verified": 1,
+  "jobs_read": 8,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:58:28+00:00",
+  "note": "Reads the job list of a *.concludis.de career page and the JobPosting data on each job page. Boards that redirect to a customer's own domain are not read; only one live list board was found, so a second is still needed."
+ },
+ {
+  "slug": "feishu",
+  "name": "Feishu Hire",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 452,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:55:36+00:00",
+  "note": "Reads the anonymous CSRF token the site issues to every visitor, then the search the career site itself calls; no login. Token is tenant/path. A big board (ByteDance, Li Auto) is read in part and reported incomplete."
+ },
+ {
+  "slug": "herp",
+  "name": "HERP",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 16,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:58:05+00:00",
+  "note": "Reads the schema.org JobPosting data on each job page linked from a herp.careers/v1/{company} list."
+ },
+ {
+  "slug": "pyjamahr",
+  "name": "PyjamaHR",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 3,
+  "jobs_read": 18,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:56:13+00:00",
+  "note": "Reads the career-page API of jobs.pyjamahr.com; PyjamaHR's account API needs a token and is not used. Token is company slug/company uuid from the career page's data."
+ },
+ {
+  "slug": "recruitify",
+  "name": "Recruitify",
+  "kind": "ats",
+  "status": "Partial",
+  "boards_verified": 1,
+  "jobs_read": 1,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:56:40+00:00",
+  "note": "The portal's API picks the company by the portal address (Origin header). Only Recruitify's own portal was found, and its single job is a sample, so a second live board is still needed."
+ },
+ {
+  "slug": "rexx",
+  "name": "rexx systems",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 16,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:57:29+00:00",
+  "note": "Reads schema.org JobPosting data on each job page of a {customer}-portal.rexx-systems.com career portal."
+ },
+ {
+  "slug": "velora",
+  "name": "Velora HR",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 215,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:56:42+00:00",
+  "note": "Reads the anonymous career-site API (api.velorahr.com/api/public/career-site/{id}/offers). Token is subdomain/id from the career-site address."
+ },
+ {
   "slug": "niceboard",
   "name": "Niceboard",
   "kind": "board",
@@ -1032,5 +1131,38 @@
   "partial_read": false,
   "checked_at": null,
   "note": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission."
+ },
+ {
+  "slug": "jobylon",
+  "name": "Jobylon",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 8,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:57:18+00:00",
+  "note": "Public job pages of emp.jobylon.com from its sitemap (schema.org JobPosting); robots.txt allows crawlers. Credit: link each job back to its Jobylon page."
+ },
+ {
+  "slug": "schoolspring",
+  "name": "SchoolSpring",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 16,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:56:57+00:00",
+  "note": "The anonymous API behind schoolspring.com (api.schoolspring.com); the token is an employer name used as the site's own search keyword. Credit: link each job back to its SchoolSpring page."
+ },
+ {
+  "slug": "airswift",
+  "name": "Airswift Jobs",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 8,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:57:54+00:00",
+  "note": "The staffing firm's own job pages (schema.org JobPosting), listed on airswift.com/jobs; robots.txt allows them. Credit: link each job back to its Airswift page."
  }
 ]
