@@ -1,1251 +1,1251 @@
 [
-  {
-    "slug": "adp",
-    "name": "ADP",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "a40f480a-47ae-461b-bf11-ceedb843d226",
-      "a4c08bd3-eedf-419a-9fb6-5d2ac8a3bafa",
-      "2de708e1-c847-43b1-bf0d-0bad30aca014"
-    ]
-  },
-  {
-    "slug": "applicantpro",
-    "name": "ApplicantPro",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "northwesternenergy/3465",
-      "agtexas/5091"
-    ]
-  },
-  {
-    "slug": "ashby",
-    "name": "Ashby",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "linear",
-      "andela"
-    ]
-  },
-  {
-    "slug": "avature",
-    "name": "Avature",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://bloomberg.avature.net/careers/sitemap.xml",
-      "https://jobs.ea.com/en_US/careers/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "bamboohr",
-    "name": "BambooHR",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "lxt",
-      "instabug"
-    ]
-  },
-  {
-    "slug": "brassring",
-    "name": "BrassRing",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "26336/5014",
-      "25526/5032",
-      "25332/5414"
-    ]
-  },
-  {
-    "slug": "breezy",
-    "name": "Breezy HR",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "german-american-chambers-of-commerce",
-      "elite-amenity-management"
-    ]
-  },
-  {
-    "slug": "careerplug",
-    "name": "CareerPlug",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://midas-careers.careerplug.com/jobs",
-      "https://ufc-gym-careers.careerplug.com/jobs"
-    ]
-  },
-  {
-    "slug": "comeet",
-    "name": "Comeet",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "coralogix/06.004",
-      "vastdata/43.001"
-    ]
-  },
-  {
-    "slug": "csod",
-    "name": "CSOD",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "The anonymous visitor token comes from the career page itself and is sent only to the platform's own API; no login.",
-    "examples": [
-      "kohler/16",
-      "gmv/4"
-    ]
-  },
-  {
-    "slug": "dayforce",
-    "name": "Dayforce",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the anonymous CSRF token the site issues to every visitor; no challenge is served. Descriptions from the list are cut short on long postings.",
-    "examples": [
-      "prometric/CANDIDATEPORTAL",
-      "woodmenlife/candidateportal",
-      "copart/CANDIDATEPORTAL"
-    ]
-  },
-  {
-    "slug": "deel",
-    "name": "Deel",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.deel.com/deel/sitemap.xml",
-      "https://jobs.deel.com/klarna/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "dover",
-    "name": "Dover",
-    "kind": "ats",
-    "blocked": "the job data endpoints are disallowed by robots.txt; only job URLs are allowed",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "eightfold",
-    "name": "Eightfold AI",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "paypal/paypal.com",
-      "vodafone/vodafone.com",
-      "qualcomm/qualcomm.com"
-    ]
-  },
-  {
-    "slug": "firststage",
-    "name": "FirstStage",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://reflexivity.firststage.co/jobs",
-      "https://softwire.firststage.co/jobs"
-    ]
-  },
-  {
-    "slug": "freshteam",
-    "name": "Freshteam",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Some boards' schema.org data may swap region and city.",
-    "examples": [
-      "https://giaspace.freshteam.com/jobs",
-      "https://mhubenterprise.freshteam.com/jobs",
-      "https://gjirafa.freshteam.com/jobs",
-      "https://framemediaexcel.freshteam.com/jobs"
-    ]
-  },
-  {
-    "slug": "gem",
-    "name": "Gem.com",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "retool",
-      "gem"
-    ]
-  },
-  {
-    "slug": "gohire",
-    "name": "GoHire",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Board ids are case-sensitive.",
-    "examples": [
-      "6oK69dA8",
-      "b0mqN9Dn",
-      "t1DMB5ET",
-      "2YFKBlAY"
-    ]
-  },
-  {
-    "slug": "greenhouse",
-    "name": "Greenhouse",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "truelayer",
-      "stripe"
-    ]
-  },
-  {
-    "slug": "hibob",
-    "name": "HiBob",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "gresham",
-      "liquidia"
-    ]
-  },
-  {
-    "slug": "hirebridge",
-    "name": "HireBridge",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=5535",
-      "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=6766"
-    ]
-  },
-  {
-    "slug": "hirehive",
-    "name": "HireHive",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "focus-ireland",
-      "catalyx"
-    ]
-  },
-  {
-    "slug": "hireology",
-    "name": "Hireology",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "nextpoint",
-      "hireology2"
-    ]
-  },
-  {
-    "slug": "hiringthing",
-    "name": "HiringThing",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "structuresinc",
-      "tic"
-    ]
-  },
-  {
-    "slug": "icims",
-    "name": "iCIMS",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://careers-primehealthcare.icims.com/sitemap.xml",
-      "https://careers-gdms.icims.com/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "isolvedhire",
-    "name": "iSolvedHire",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "isolved/424",
-      "shieldsbusinesssolutions/435"
-    ]
-  },
-  {
-    "slug": "jazzhr",
-    "name": "JazzHR",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "A feed over the 10 MB response cap (Crunch Fitness, 843 jobs) cannot be read; boards are listed in app.jazz.co's public sitemaps",
-    "examples": [
-      "brennancenter",
-      "mobomo",
-      "techsoup"
-    ]
-  },
-  {
-    "slug": "jobvite",
-    "name": "Jobvite",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "nutanix",
-      "egnyte"
-    ]
-  },
-  {
-    "slug": "join",
-    "name": "JOIN.com",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "54/join",
-      "36/bring"
-    ]
-  },
-  {
-    "slug": "kula",
-    "name": "Kula.ai",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://careers.kula.ai/rocketlane",
-      "https://careers.kula.ai/deepscribe"
-    ]
-  },
-  {
-    "slug": "lever",
-    "name": "Lever.co",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "kavak",
-      "spotify"
-    ]
-  },
-  {
-    "slug": "manatal",
-    "name": "Manatal",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "talentrecruit",
-      "job-expert-thailand-co-ltd"
-    ]
-  },
-  {
-    "slug": "oracle_recruiting",
-    "name": "Oracle Recruiting",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "eeho.fa.us2.oraclecloud.com/CX_45001",
-      "jpmc.fa.oraclecloud.com/CX_1001"
-    ]
-  },
-  {
-    "slug": "pageup",
-    "name": "PageUp",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "782/en-us",
-      "513/en"
-    ]
-  },
-  {
-    "slug": "paradox",
-    "name": "Paradox",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://www.essentiacareers.org/sitemap-fc5ff90e-en.xml",
-      "https://careers.marriott.com/sitemap-3a392567-en.xml"
-    ]
-  },
-  {
-    "slug": "paycom",
-    "name": "Paycom",
-    "kind": "ats",
-    "blocked": "robots.txt disallows the search endpoint that lists jobs (only single known postings are allowed) and there is no sitemap, so jobs cannot be enumerated without ignoring it.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "paycor",
-    "name": "Paycor",
-    "kind": "ats",
-    "blocked": "robots.txt on recruitingbypaycor.com disallows everything",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "paylocity",
-    "name": "Paylocity",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "ff517f63-c379-48fb-acc8-8d66e8d5b076",
-      "c47e27a2-5dd2-408a-9ef0-c799cbdd5796"
-    ]
-  },
-  {
-    "slug": "personio",
-    "name": "Personio",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "1komma5grad",
-      "join"
-    ]
-  },
-  {
-    "slug": "phenom",
-    "name": "Phenom People",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://careers.tranetechnologies.com/global/en",
-      "https://jobs.thermofisher.com/global/en"
-    ]
-  },
-  {
-    "slug": "pinpoint",
-    "name": "Pinpoint",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "workwithus",
-      "made-tech"
-    ]
-  },
-  {
-    "slug": "polymer",
-    "name": "Polymer",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "invicta-software",
-      "bladework-games"
-    ]
-  },
-  {
-    "slug": "recooty",
-    "name": "Recooty",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.recooty.com/gibbons-group",
-      "https://jobs.recooty.com/davis-cartage-company"
-    ]
-  },
-  {
-    "slug": "recruitee",
-    "name": "Recruitee",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "bunq",
-      "channable"
-    ]
-  },
-  {
-    "slug": "rippling",
-    "name": "Rippling",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "skillable-careers",
-      "rts"
-    ]
-  },
-  {
-    "slug": "rival",
-    "name": "Rival",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "robots.txt asks for a 10-second crawl delay, so a full crawl is slow",
-    "examples": [
-      "https://jobs.silkroad.com/SOCCo/Careers",
-      "https://jobs.silkroad.com/tvcca/Careers"
-    ]
-  },
-  {
-    "slug": "successfactors",
-    "name": "SAP SuccessFactors",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.ball.com",
-      "https://jobs.zf.com",
-      "https://jobs.mcdonalds.com"
-    ]
-  },
-  {
-    "slug": "smartrecruiters",
-    "name": "SmartRecruiters",
-    "kind": "ats",
-    "blocked": "robots.txt turns away every crawler except LinkedIn's",
-    "notes": "",
-    "examples": [
-      "Visa"
-    ]
-  },
-  {
-    "slug": "talentreef",
-    "name": "talentReef",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the public search host that talentReef's own career page calls for every visitor (its name says internal, but it is the production address, answers anonymous requests and has no robots.txt rules).",
-    "examples": [
-      "14637",
-      "17170",
-      "22144",
-      "21207"
-    ]
-  },
-  {
-    "slug": "taleo",
-    "name": "Taleo",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "massanf/ex/101430233",
-      "tgh/ex/101430233"
-    ]
-  },
-  {
-    "slug": "teamtailor",
-    "name": "Teamtailor",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "career",
-      "polestar"
-    ]
-  },
-  {
-    "slug": "trakstar",
-    "name": "Trakstar",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "rideco",
-      "registrarcorp"
-    ]
-  },
-  {
-    "slug": "trinet",
-    "name": "TriNet",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Robots.txt signals ai-train=no: ERIO indexes these jobs for search only and never trains a model on them.",
-    "examples": [
-      "31905-adaptation",
-      "203100-precor-incorporated"
-    ]
-  },
-  {
-    "slug": "ultipro",
-    "name": "UltiPro",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "robots.txt disallows the search API, so only the featured jobs on each board page (2 to 20) are read.",
-    "examples": [
-      "COM1019CTDI1/ab728dae-48cf-43af-8869-6b591e5d9495",
-      "recruiting2.ultipro.com/ARU1000ARUP/62cc791d-612e-42e6-909f-0de27efe2038",
-      "recruiting.ultipro.com/APP1010ARAI/07442cec-d18e-4589-ab15-8342edc29af7"
-    ]
-  },
-  {
-    "slug": "werecruit",
-    "name": "WeRecruit",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "happy-job",
-      "ge16-emploi"
-    ]
-  },
-  {
-    "slug": "workable",
-    "name": "Workable",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "huggingface",
-      "icarda",
-      "getresponse"
-    ]
-  },
-  {
-    "slug": "workday",
-    "name": "Workday",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "salesforce.wd12/External_Career_Site",
-      "nvidia.wd5/NVIDIAExternalCareerSite"
-    ]
-  },
-  {
-    "slug": "zohorecruit",
-    "name": "Zoho Recruit",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "unrl",
-      "shortlist",
-      "coorb",
-      "https://careers.zohocorp.com"
-    ]
-  },
-  {
-    "slug": "pandape",
-    "name": "Pandapé",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the career site's job list and each job page's schema.org JobPosting; robots.txt asks only that /Apply/ is left alone.",
-    "examples": [
-      "https://callink.pandape.infojobs.com.br/Vacancies",
-      "https://carrefour.pandape.infojobs.com.br/Vacancies",
-      "https://grupopereira.pandape.infojobs.com.br/Vacancies"
-    ]
-  },
-  {
-    "slug": "factorial",
-    "name": "Factorial",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the tenant sitemap and each job page's schema.org JobPosting. Only Factorial's own career site was found live; other customers' career pages were not located.",
-    "examples": [
-      "https://careers.factorialhr.com/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "traffit",
-    "name": "TRAFFIT",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the public JSON list every TRAFFIT career site serves; the employer is not named in it, so the board's company is used.",
-    "examples": [
-      "hrhub",
-      "soflab"
-    ]
-  },
-  {
-    "slug": "emply",
-    "name": "Emply",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the career site's own vacancy search call; the page names the list to read. Open-application (talent pool) entries are skipped. The sitemap lists no jobs.",
-    "examples": [
-      "template",
-      "ohly"
-    ]
-  },
-  {
-    "slug": "hiringroom",
-    "name": "HiringRoom",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "No feed or structured data: reads the server-rendered job list and job pages. The page gives no posting date.",
-    "examples": [
-      "pampatalents",
-      "tbo"
-    ]
-  },
-  {
-    "slug": "coveto",
-    "name": "coveto",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the tenant sitemap and each job page's schema.org JobPosting; customers on their own domain are added by sitemap address.",
-    "examples": [
-      "https://k62053.coveto.de/sitemap.xml",
-      "https://k21840.coveto.de/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "niceboard",
-    "name": "Niceboard",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://unitedwayjobbank.niceboard.co/sitemap-jobs.xml",
-      "https://jobs.forcebrands.com/sitemap-jobs.xml"
-    ]
-  },
-  {
-    "slug": "wp_job_manager",
-    "name": "WP Job Manager",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://radioinsight.com",
-      "https://sportyjob.com"
-    ]
-  },
-  {
-    "slug": "jobkit",
-    "name": "JobKit",
-    "kind": "board",
-    "blocked": "",
-    "notes": "Only one populated board exists (jobs.rubyonrails.org); about 20 other JobKit boards are empty.",
-    "examples": [
-      "https://jobs.rubyonrails.org"
-    ]
-  },
-  {
-    "slug": "jobboardly",
-    "name": "Jobboardly",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://medicalcourierjobs.com",
-      "https://apnejob.com"
-    ]
-  },
-  {
-    "slug": "jobiqo",
-    "name": "Jobiqo",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.aerosociety.com/sitemap.xml",
-      "https://www.miamijobs.com/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "jboard",
-    "name": "JBoard.io",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://nuclearjobscanada.ca/sitemap-jobs-1.xml",
-      "https://jobs.vpppa.org/sitemap-jobs-1.xml"
-    ]
-  },
-  {
-    "slug": "jobboardfire",
-    "name": "JobBoardFire",
-    "kind": "board",
-    "blocked": "",
-    "notes": "Cloudflare answers some job pages with HTTP 429, so a fast crawl can read part of a board.",
-    "examples": [
-      "https://jobs.girlboss.com/sitemap-jobs.xml",
-      "https://greenbiz.jobboardfire.com/sitemap-jobs.xml"
-    ]
-  },
-  {
-    "slug": "smartjobboard",
-    "name": "SmartJobBoard",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.psychologicalscience.org",
-      "https://academiccareers.com"
-    ]
-  },
-  {
-    "slug": "jobboard_io",
-    "name": "JobBoard.io",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.cityandstateny.com",
-      "https://jobs.motionographer.com"
-    ]
-  },
-  {
-    "slug": "madgex",
-    "name": "Wiley Madgex",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://jobs.sciencecareers.org",
-      "https://jobs.chronicle.com"
-    ]
-  },
-  {
-    "slug": "talenetic",
-    "name": "Talenetic",
-    "kind": "board",
-    "blocked": "hosted boards disallow everything in robots.txt and require sign-in",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "jobmount",
-    "name": "JobMount",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://www.fleetjobs.com/sitemap.xml",
-      "https://jobnet.wacities.org/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "careersitecloud",
-    "name": "CareerSiteCloud",
-    "kind": "board",
-    "blocked": "",
-    "notes": "Only wpp.careersitecloud.com allows crawlers; every other tenant checked disallows everything or refuses requests.",
-    "examples": [
-      "https://wpp.careersitecloud.com/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "jobboard_com",
-    "name": "JobBoard.com",
-    "kind": "board",
-    "blocked": "",
-    "notes": "Only one live board found: the vendor lists no customers, and every showcase site is dead or off the platform.",
-    "examples": [
-      "https://www.gradsouthwest.com/xml-sitemaps/1.xml"
-    ]
-  },
-  {
-    "slug": "artha",
-    "name": "Artha",
-    "kind": "board",
-    "blocked": "Job pages sit behind a Cloudflare challenge (HTTP 403) and the lists render client-side; reading them would mean working around bot protection.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "exenzo",
-    "name": "jobboardsoftware.com",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://greenjobs.api.exenzo.com/1",
-      "https://api.vacatures.co/1"
-    ]
-  },
-  {
-    "slug": "jobboardhq",
-    "name": "jobBoardHQ",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://www.jobsindoorcounty.com/search",
-      "https://www.greaterroccareers.com/search"
-    ]
-  },
-  {
-    "slug": "nodex",
-    "name": "Nodex",
-    "kind": "board",
-    "blocked": "",
-    "notes": "",
-    "examples": [
-      "https://www.mytraveljobs.co.uk/sitemap.xml",
-      "https://www.antellarecruitment.co.uk/sitemap.xml",
-      "https://www.bigantgroup.co.uk/sitemap.xml"
-    ]
-  },
-  {
-    "slug": "ejobboard",
-    "name": "eJobBoard",
-    "kind": "board",
-    "blocked": "No live job board running the software could be found: the vendor's sites are dead or parked, so there is nothing to read.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "ejobsite",
-    "name": "ejobsitesoftware.com",
-    "kind": "board",
-    "blocked": "",
-    "notes": "connectagri.com was dropped as an example: its jobs link to a private address, which ERIO rejects.",
-    "examples": [
-      "https://eyetasticjobs.com/industry_rss.php",
-      "https://www.beveiligingsvacature.nl/industry_rss.php"
-    ]
-  },
-  {
-    "slug": "arbeitnow",
-    "name": "Arbeitnow",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Free public API, no access key. Credit: link back to Arbeitnow.com (its terms, section 11); every job links to its Arbeitnow page.",
-    "examples": [
-      "https://www.arbeitnow.com"
-    ]
-  },
-  {
-    "slug": "remoteok",
-    "name": "Remote OK",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Public JSON feed, no access key. Credit: a followed link back to the job on Remote OK and a mention of Remote OK as the source (its API terms); the Remote OK logo is not used.",
-    "examples": [
-      "https://remoteok.com"
-    ]
-  },
-  {
-    "slug": "weworkremotely",
-    "name": "We Work Remotely",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Public RSS feed. Credit: attribute the links back to We Work Remotely (its feed page); every job links to its We Work Remotely page.",
-    "examples": [
-      "https://weworkremotely.com"
-    ]
-  },
-  {
-    "slug": "jobicy",
-    "name": "Jobicy",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Public Jobs API, no access key; lists the last 7 days. Credit: Jobicy is named as the original source and the job links to its Jobicy listing (its fair-use rules).",
-    "examples": [
-      "https://jobicy.com"
-    ]
-  },
-  {
-    "slug": "workingnomads",
-    "name": "Working Nomads",
-    "kind": "service",
-    "blocked": "",
-    "notes": "The public JSON feed its site links as API, no access key; it states no attribution rule, so Working Nomads is credited anyway and every job links to its Working Nomads page. Its terms say nothing about reading the feed; worth a written yes before launch.",
-    "examples": [
-      "https://www.workingnomads.com"
-    ]
-  },
-  {
-    "slug": "pythonjobs",
-    "name": "Python.org Jobs",
-    "kind": "service",
-    "blocked": "",
-    "notes": "The Python Job Board's public RSS feed (20 newest jobs, no posted date). Credit: Python Job Board (Python Software Foundation) and a link to the job on python.org. It publishes no reuse terms for the feed beyond offering it for subscription; worth a written yes before launch.",
-    "examples": [
-      "https://www.python.org"
-    ]
-  },
-  {
-    "slug": "arbetsformedlingen",
-    "name": "Arbetsformedlingen (Sweden)",
-    "kind": "service",
-    "blocked": "",
-    "notes": "The Swedish Public Employment Service's JobSearch API: no access key, ads licensed CC0. Credit given anyway: Arbetsformedlingen / JobTech. The API pages at most 2,100 ads, so a crawl reads the newest ones and is reported as partial.",
-    "examples": [
-      "https://jobsearch.api.jobtechdev.se"
-    ]
-  },
-  {
-    "slug": "eures",
-    "name": "EURES (European Job Mobility Portal)",
-    "kind": "service",
-    "blocked": "",
-    "notes": "The portal's public vacancy search, no access key. Credit: re-use is authorised when the European Labour Authority (EURES) is acknowledged as the source; the EURES logo is not used. Its robots.txt asks for 10 seconds between requests, so a crawl reads the newest 250 jobs and is reported as partial.",
-    "examples": [
-      "https://europa.eu"
-    ]
-  },
-  {
-    "slug": "werkenvoornederland",
-    "name": "Werken voor Nederland",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Dutch central government vacancies, read from each vacancy page's structured data and text. Its copyright page puts the content under CC0 (no credit required); photos excluded, and the Rijksoverheid must not appear to endorse a derived work. A crawl reads the first 200 vacancies of its sitemap and is reported as partial.",
-    "examples": [
-      "https://www.werkenvoornederland.nl/sitemap-vacatures.xml"
-    ]
-  },
-  {
-    "slug": "bundesagentur",
-    "name": "Bundesagentur fuer Arbeit (Germany)",
-    "kind": "service",
-    "blocked": "The Jobsuche API answers 403 without an access key header; the key is one constant value printed in its documentation, which counts as a credential, so it is not used. Ask the agency for terms that allow reading without one.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "nav",
-    "name": "NAV (Norway)",
-    "kind": "service",
-    "blocked": "The Arbeidsplassen job feed answers 401 without a bearer token that has to be requested from NAV, so it needs a credential and is not built. Norwegian vacancies are partly covered through EURES.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "himalayas",
-    "name": "Himalayas",
-    "kind": "service",
-    "blocked": "Its API needs no key, but its API terms allow showing jobs only on sites you operate and forbid passing them on to other job boards, aggregators or job search engines, including through feeds; ERIO's public API and assistant tools would pass them on. Needs a decision, or a written permission from the service.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "mycareersfuture",
-    "name": "MyCareersFuture (Singapore)",
-    "kind": "service",
-    "blocked": "Its terms of use reserve all rights in the site content and forbid reproducing, publicly displaying or otherwise using it except as the terms or the employer allow; nothing allows listing the jobs elsewhere. Ask the Singapore Workforce Development Agency for permission.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "cryptocurrencyjobs",
-    "name": "Cryptocurrency Jobs",
-    "kind": "service",
-    "blocked": "Its terms reserve all rights in the content and forbid commercial use without a licence; the feed it serves carries only a one-line excerpt anyway.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "remotive",
-    "name": "Remotive",
-    "kind": "service",
-    "blocked": "Its robots.txt disallows /api/ and the job pages, where its public API and feeds live, so there is no path ERIO may read.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "gemeentebanen",
-    "name": "Gemeentebanen (Netherlands)",
-    "kind": "service",
-    "blocked": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "instaffo",
-    "name": "Instaffo",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Jobs from Instaffo (jobs.instaffo.com); each links back to its Instaffo page. Reads the English job pages' schema.org JobPosting from the jobs sitemap; its robots.txt allows them.",
-    "examples": [
-      "https://jobs.instaffo.com/sitemap-jobs.xml"
-    ]
-  },
-  {
-    "slug": "jobberman",
-    "name": "Jobberman",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Jobs from Jobberman (Nigeria); each links back to its Jobberman listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting.",
-    "examples": [
-      "https://www.jobberman.com/sitemap-listings-index-en.xml"
-    ]
-  },
-  {
-    "slug": "brightermonday",
-    "name": "BrighterMonday",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Jobs from BrighterMonday (Kenya, Uganda), the same platform as Jobberman; each links back to its listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting.",
-    "examples": [
-      "https://www.brightermonday.co.ke/sitemap-listings-index-en.xml"
-    ]
-  },
-  {
-    "slug": "torre",
-    "name": "Torre",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Jobs from Torre (torre.ai); each links back to its Torre post. Reads the sitemap and each /post/ page's schema.org JobPosting; the /api/ paths robots.txt disallows are not used.",
-    "examples": [
-      "https://torre.ai/sitemap-index.xml"
-    ]
-  },
-  {
-    "slug": "myjobmag",
-    "name": "MyJobMag Africa",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Jobs from MyJobMag (Nigeria, Kenya, South Africa); each links back to MyJobMag. Reads the aggregate feed the site publishes for job aggregators.",
-    "examples": [
-      "https://www.myjobmag.com",
-      "https://www.myjobmag.co.ke"
-    ]
-  },
-  {
-    "slug": "jobnet",
-    "name": "Jobnet (Denmark)",
-    "kind": "service",
-    "blocked": "Jobnet (the Danish state job portal) serves no robots.txt or sitemap to crawlers (they redirect to an error page), publishes no feed or documented API, and its job search runs on a back end made for its own app; ask the Danish Agency for Labour Market and Recruitment (STAR) for access.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "apploi",
-    "name": "Apploi",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the server-rendered company page on apply-jobs.apploi.com (robots.txt allows it) and the schema.org JobPosting on each job page; 15 jobs a page, up to 10 pages. The jobs.apploi.com app is not read: its job search calls an API with an Authorization bearer header.",
-    "examples": [
-      "https://apply-jobs.apploi.com/jobs/elcor",
-      "https://apply-jobs.apploi.com/jobs/the-riverside"
-    ]
-  },
-  {
-    "slug": "solides",
-    "name": "Sólides",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Reads the portal's own public list, vagas.solides.com.br/api/vacancies (robots.txt allows all), the newest 500 jobs a crawl out of tens of thousands, so it is reported as a partial read. Jobs link to vagas.solides.com.br.",
-    "examples": [
-      "https://vagas.solides.com.br"
-    ]
-  },
-  {
-    "slug": "inhire",
-    "name": "InHire",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the public career-page API documented at docs.inhire.com.br (GET api.inhire.app/job-posts/public/pages with the X-Tenant header, the start of the tenant's {tenant}.inhire.app address). The list has no descriptions.",
-    "examples": [
-      "riachuelo",
-      "via",
-      "sales"
-    ]
-  },
-  {
-    "slug": "recrutei",
-    "name": "Recrutei",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Reads Recrutei Empregos, the job board of Recrutei customers: the sitemap of job pages and the schema.org JobPosting on each (robots.txt allows both). 200 pages a crawl, so large boards are partial. Companies' own jobs.recrutei.com.br pages list jobs through a POST API and are not read.",
-    "examples": [
-      "https://empregos.recrutei.com.br/sitemap-vagas-1.xml"
-    ]
-  },
-  {
-    "slug": "senior_talentos",
-    "name": "Senior Portal de Talentos",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Reads the anonymous searchVacancies query the portal's own pages call (no sign-in, no robots.txt on the host): every employer's jobs, 100 a page, up to 10 pages a crawl (partial). The list has no descriptions. Jobs link to {tenant}.portaldetalentos.senior.com.br.",
-    "examples": [
-      "https://platform.senior.com.br"
-    ]
-  },
-  {
-    "slug": "earcu",
-    "name": "eArcu",
-    "kind": "ats",
-    "blocked": "robots.txt disallows */action/* and */ajaxaction/*, which the career sites' job search and paging use (only the first result page renders without them), and there is no sitemap or feed.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "erecruiter",
-    "name": "eRecruiter",
-    "kind": "ats",
-    "blocked": "no public way to list a customer's jobs was found: eRecruiter's own board (jobs.erecruiter.net) shows no open jobs and no JSON-LD, there is no shared host, sitemap or feed, and customers' career sites run on their own domains.",
-    "notes": "",
-    "examples": []
-  },
-  {
-    "slug": "intervieweb",
-    "name": "Intervieweb / Inrecruiting",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the first page (15 jobs) of a company's /{company}/it/career page and the schema.org JobPosting on each job page; a board with more pages is a partial read, because later pages need a script-issued CSRF POST. Some companies' job pages carry no JobPosting data (colombinispa, colorobbia) and fail. App.php?LAC= addresses are not used (robots.txt disallows them).",
-    "examples": [
-      "https://inrecruiting.intervieweb.it/orbyta/it/career",
-      "https://inrecruiting.intervieweb.it/futurenergy/it/career",
-      "https://inrecruiting.intervieweb.it/romeogestioni/it/career"
-    ]
-  },
-  {
-    "slug": "thehub",
-    "name": "The Hub",
-    "kind": "service",
-    "blocked": "",
-    "notes": "Reads thehub.io's sitemap of job pages and the schema.org JobPosting on each (robots.txt allows both); 200 pages a crawl, of about 1,200 Nordic start-up jobs (partial).",
-    "examples": [
-      "https://thehub.io/sitemap-jobs.xml"
-    ]
-  },
-  {
-    "slug": "applitrack",
-    "name": "AppliTrack / Frontline",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads the embeddable posting list districts put on their own sites, www.applitrack.com/{district}/onlineapp/JobPostings/view.asp?embed=1&all=1 (robots.txt only closes the admin area). Descriptions are the posting text; some say only to open the attachment.",
-    "examples": [
-      "keyport",
-      "aldineisd"
-    ]
-  },
-  {
-    "slug": "checkin",
-    "name": "CHECK-IN by perbility",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Reads a portal's /list (10 a page, up to 5 pages, partial beyond) and the schema.org microdata on each job page at {portal}.mein-check-in.de (robots.txt allows it). Portals on www.mein-check-in.de/{customer}/ and jobs.perbility.de are other products and are not read.",
-    "examples": [
-      "provinzial-karriereportal",
-      "sparkassenversicherung-karriereportal",
-      "lgl-bayern-karriereportal"
-    ]
-  },
-  {
-    "slug": "cegid",
-    "name": "Cegid DigitalRecruiters",
-    "kind": "ats",
-    "blocked": "",
-    "notes": "Career sites sit on the employer's own domain; the board is the site's sitemap and each /annonce/ page carries a schema.org JobPosting. These sites ask for a 10 second delay between requests, so reading 200 job pages takes over half an hour (partial).",
-    "examples": [
-      "https://recrutement.adapei-aria.com/sitemap.xml",
-      "https://recrutement.transavia.com/sitemap.xml"
-    ]
-  }
+ {
+  "slug": "adp",
+  "name": "ADP",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "a40f480a-47ae-461b-bf11-ceedb843d226",
+   "a4c08bd3-eedf-419a-9fb6-5d2ac8a3bafa",
+   "2de708e1-c847-43b1-bf0d-0bad30aca014"
+  ]
+ },
+ {
+  "slug": "applicantpro",
+  "name": "ApplicantPro",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "northwesternenergy/3465",
+   "agtexas/5091"
+  ]
+ },
+ {
+  "slug": "ashby",
+  "name": "Ashby",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "linear",
+   "andela"
+  ]
+ },
+ {
+  "slug": "avature",
+  "name": "Avature",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://bloomberg.avature.net/careers/sitemap.xml",
+   "https://jobs.ea.com/en_US/careers/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "bamboohr",
+  "name": "BambooHR",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "lxt",
+   "instabug"
+  ]
+ },
+ {
+  "slug": "brassring",
+  "name": "BrassRing",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "26336/5014",
+   "25526/5032",
+   "25332/5414"
+  ]
+ },
+ {
+  "slug": "breezy",
+  "name": "Breezy HR",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "german-american-chambers-of-commerce",
+   "elite-amenity-management"
+  ]
+ },
+ {
+  "slug": "careerplug",
+  "name": "CareerPlug",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://midas-careers.careerplug.com/jobs",
+   "https://ufc-gym-careers.careerplug.com/jobs"
+  ]
+ },
+ {
+  "slug": "comeet",
+  "name": "Comeet",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "coralogix/06.004",
+   "vastdata/43.001"
+  ]
+ },
+ {
+  "slug": "csod",
+  "name": "CSOD",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The anonymous visitor token comes from the career page itself and is sent only to the platform's own API; no login.",
+  "examples": [
+   "kohler/16",
+   "gmv/4"
+  ]
+ },
+ {
+  "slug": "dayforce",
+  "name": "Dayforce",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the anonymous CSRF token the site issues to every visitor; no challenge is served. Descriptions from the list are cut short on long postings.",
+  "examples": [
+   "prometric/CANDIDATEPORTAL",
+   "woodmenlife/candidateportal",
+   "copart/CANDIDATEPORTAL"
+  ]
+ },
+ {
+  "slug": "deel",
+  "name": "Deel",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.deel.com/deel/sitemap.xml",
+   "https://jobs.deel.com/klarna/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "dover",
+  "name": "Dover",
+  "kind": "ats",
+  "blocked": "the job data endpoints are disallowed by robots.txt; only job URLs are allowed",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "eightfold",
+  "name": "Eightfold AI",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "paypal/paypal.com",
+   "vodafone/vodafone.com",
+   "qualcomm/qualcomm.com"
+  ]
+ },
+ {
+  "slug": "firststage",
+  "name": "FirstStage",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://reflexivity.firststage.co/jobs",
+   "https://softwire.firststage.co/jobs"
+  ]
+ },
+ {
+  "slug": "freshteam",
+  "name": "Freshteam",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Some boards' schema.org data may swap region and city.",
+  "examples": [
+   "https://giaspace.freshteam.com/jobs",
+   "https://mhubenterprise.freshteam.com/jobs",
+   "https://gjirafa.freshteam.com/jobs",
+   "https://framemediaexcel.freshteam.com/jobs"
+  ]
+ },
+ {
+  "slug": "gem",
+  "name": "Gem.com",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "retool",
+   "gem"
+  ]
+ },
+ {
+  "slug": "gohire",
+  "name": "GoHire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Board ids are case-sensitive.",
+  "examples": [
+   "6oK69dA8",
+   "b0mqN9Dn",
+   "t1DMB5ET",
+   "2YFKBlAY"
+  ]
+ },
+ {
+  "slug": "greenhouse",
+  "name": "Greenhouse",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "truelayer",
+   "stripe"
+  ]
+ },
+ {
+  "slug": "hibob",
+  "name": "HiBob",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "gresham",
+   "liquidia"
+  ]
+ },
+ {
+  "slug": "hirebridge",
+  "name": "HireBridge",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=5535",
+   "https://recruit.hirebridge.com/v3/jobs/list.aspx?cid=6766"
+  ]
+ },
+ {
+  "slug": "hirehive",
+  "name": "HireHive",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "focus-ireland",
+   "catalyx"
+  ]
+ },
+ {
+  "slug": "hireology",
+  "name": "Hireology",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "nextpoint",
+   "hireology2"
+  ]
+ },
+ {
+  "slug": "hiringthing",
+  "name": "HiringThing",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "structuresinc",
+   "tic"
+  ]
+ },
+ {
+  "slug": "icims",
+  "name": "iCIMS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://careers-primehealthcare.icims.com/sitemap.xml",
+   "https://careers-gdms.icims.com/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "isolvedhire",
+  "name": "iSolvedHire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "isolved/424",
+   "shieldsbusinesssolutions/435"
+  ]
+ },
+ {
+  "slug": "jazzhr",
+  "name": "JazzHR",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "A feed over the 10 MB response cap (Crunch Fitness, 843 jobs) cannot be read; boards are listed in app.jazz.co's public sitemaps",
+  "examples": [
+   "brennancenter",
+   "mobomo",
+   "techsoup"
+  ]
+ },
+ {
+  "slug": "jobvite",
+  "name": "Jobvite",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "nutanix",
+   "egnyte"
+  ]
+ },
+ {
+  "slug": "join",
+  "name": "JOIN.com",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "54/join",
+   "36/bring"
+  ]
+ },
+ {
+  "slug": "kula",
+  "name": "Kula.ai",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://careers.kula.ai/rocketlane",
+   "https://careers.kula.ai/deepscribe"
+  ]
+ },
+ {
+  "slug": "lever",
+  "name": "Lever.co",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "kavak",
+   "spotify"
+  ]
+ },
+ {
+  "slug": "manatal",
+  "name": "Manatal",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "talentrecruit",
+   "job-expert-thailand-co-ltd"
+  ]
+ },
+ {
+  "slug": "oracle_recruiting",
+  "name": "Oracle Recruiting",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "eeho.fa.us2.oraclecloud.com/CX_45001",
+   "jpmc.fa.oraclecloud.com/CX_1001"
+  ]
+ },
+ {
+  "slug": "pageup",
+  "name": "PageUp",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "782/en-us",
+   "513/en"
+  ]
+ },
+ {
+  "slug": "paradox",
+  "name": "Paradox",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://www.essentiacareers.org/sitemap-fc5ff90e-en.xml",
+   "https://careers.marriott.com/sitemap-3a392567-en.xml"
+  ]
+ },
+ {
+  "slug": "paycom",
+  "name": "Paycom",
+  "kind": "ats",
+  "blocked": "robots.txt disallows the search endpoint that lists jobs (only single known postings are allowed) and there is no sitemap, so jobs cannot be enumerated without ignoring it.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "paycor",
+  "name": "Paycor",
+  "kind": "ats",
+  "blocked": "robots.txt on recruitingbypaycor.com disallows everything",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "paylocity",
+  "name": "Paylocity",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "ff517f63-c379-48fb-acc8-8d66e8d5b076",
+   "c47e27a2-5dd2-408a-9ef0-c799cbdd5796"
+  ]
+ },
+ {
+  "slug": "personio",
+  "name": "Personio",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "1komma5grad",
+   "join"
+  ]
+ },
+ {
+  "slug": "phenom",
+  "name": "Phenom People",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://careers.tranetechnologies.com/global/en",
+   "https://jobs.thermofisher.com/global/en"
+  ]
+ },
+ {
+  "slug": "pinpoint",
+  "name": "Pinpoint",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "workwithus",
+   "made-tech"
+  ]
+ },
+ {
+  "slug": "polymer",
+  "name": "Polymer",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "invicta-software",
+   "bladework-games"
+  ]
+ },
+ {
+  "slug": "recooty",
+  "name": "Recooty",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.recooty.com/gibbons-group",
+   "https://jobs.recooty.com/davis-cartage-company"
+  ]
+ },
+ {
+  "slug": "recruitee",
+  "name": "Recruitee",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "bunq",
+   "channable"
+  ]
+ },
+ {
+  "slug": "rippling",
+  "name": "Rippling",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "skillable-careers",
+   "rts"
+  ]
+ },
+ {
+  "slug": "rival",
+  "name": "Rival",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "robots.txt asks for a 10-second crawl delay, so a full crawl is slow",
+  "examples": [
+   "https://jobs.silkroad.com/SOCCo/Careers",
+   "https://jobs.silkroad.com/tvcca/Careers"
+  ]
+ },
+ {
+  "slug": "successfactors",
+  "name": "SAP SuccessFactors",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.ball.com",
+   "https://jobs.zf.com",
+   "https://jobs.mcdonalds.com"
+  ]
+ },
+ {
+  "slug": "smartrecruiters",
+  "name": "SmartRecruiters",
+  "kind": "ats",
+  "blocked": "robots.txt turns away every crawler except LinkedIn's",
+  "notes": "",
+  "examples": [
+   "Visa"
+  ]
+ },
+ {
+  "slug": "talentreef",
+  "name": "talentReef",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the public search host that talentReef's own career page calls for every visitor (its name says internal, but it is the production address, answers anonymous requests and has no robots.txt rules).",
+  "examples": [
+   "14637",
+   "17170",
+   "22144",
+   "21207"
+  ]
+ },
+ {
+  "slug": "taleo",
+  "name": "Taleo",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "massanf/ex/101430233",
+   "tgh/ex/101430233"
+  ]
+ },
+ {
+  "slug": "teamtailor",
+  "name": "Teamtailor",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "career",
+   "polestar"
+  ]
+ },
+ {
+  "slug": "trakstar",
+  "name": "Trakstar",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "rideco",
+   "registrarcorp"
+  ]
+ },
+ {
+  "slug": "trinet",
+  "name": "TriNet",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Robots.txt signals ai-train=no: ERIO indexes these jobs for search only and never trains a model on them.",
+  "examples": [
+   "31905-adaptation",
+   "203100-precor-incorporated"
+  ]
+ },
+ {
+  "slug": "ultipro",
+  "name": "UltiPro",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "robots.txt disallows the search API, so only the featured jobs on each board page (2 to 20) are read.",
+  "examples": [
+   "COM1019CTDI1/ab728dae-48cf-43af-8869-6b591e5d9495",
+   "recruiting2.ultipro.com/ARU1000ARUP/62cc791d-612e-42e6-909f-0de27efe2038",
+   "recruiting.ultipro.com/APP1010ARAI/07442cec-d18e-4589-ab15-8342edc29af7"
+  ]
+ },
+ {
+  "slug": "werecruit",
+  "name": "WeRecruit",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "happy-job",
+   "ge16-emploi"
+  ]
+ },
+ {
+  "slug": "workable",
+  "name": "Workable",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "huggingface",
+   "icarda",
+   "getresponse"
+  ]
+ },
+ {
+  "slug": "workday",
+  "name": "Workday",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "salesforce.wd12/External_Career_Site",
+   "nvidia.wd5/NVIDIAExternalCareerSite"
+  ]
+ },
+ {
+  "slug": "zohorecruit",
+  "name": "Zoho Recruit",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "unrl",
+   "shortlist",
+   "coorb",
+   "https://careers.zohocorp.com"
+  ]
+ },
+ {
+  "slug": "pandape",
+  "name": "Pandapé",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career site's job list and each job page's schema.org JobPosting; robots.txt asks only that /Apply/ is left alone.",
+  "examples": [
+   "https://callink.pandape.infojobs.com.br/Vacancies",
+   "https://carrefour.pandape.infojobs.com.br/Vacancies",
+   "https://grupopereira.pandape.infojobs.com.br/Vacancies"
+  ]
+ },
+ {
+  "slug": "factorial",
+  "name": "Factorial",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the tenant sitemap and each job page's schema.org JobPosting. Only Factorial's own career site was found live; other customers' career pages were not located.",
+  "examples": [
+   "https://careers.factorialhr.com/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "traffit",
+  "name": "TRAFFIT",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the public JSON list every TRAFFIT career site serves; the employer is not named in it, so the board's company is used.",
+  "examples": [
+   "hrhub",
+   "soflab"
+  ]
+ },
+ {
+  "slug": "emply",
+  "name": "Emply",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career site's own vacancy search call; the page names the list to read. Open-application (talent pool) entries are skipped. The sitemap lists no jobs.",
+  "examples": [
+   "template",
+   "ohly"
+  ]
+ },
+ {
+  "slug": "hiringroom",
+  "name": "HiringRoom",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "No feed or structured data: reads the server-rendered job list and job pages. The page gives no posting date.",
+  "examples": [
+   "pampatalents",
+   "tbo"
+  ]
+ },
+ {
+  "slug": "coveto",
+  "name": "coveto",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the tenant sitemap and each job page's schema.org JobPosting; customers on their own domain are added by sitemap address.",
+  "examples": [
+   "https://k62053.coveto.de/sitemap.xml",
+   "https://k21840.coveto.de/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "niceboard",
+  "name": "Niceboard",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://unitedwayjobbank.niceboard.co/sitemap-jobs.xml",
+   "https://jobs.forcebrands.com/sitemap-jobs.xml"
+  ]
+ },
+ {
+  "slug": "wp_job_manager",
+  "name": "WP Job Manager",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://radioinsight.com",
+   "https://sportyjob.com"
+  ]
+ },
+ {
+  "slug": "jobkit",
+  "name": "JobKit",
+  "kind": "board",
+  "blocked": "",
+  "notes": "Only one populated board exists (jobs.rubyonrails.org); about 20 other JobKit boards are empty.",
+  "examples": [
+   "https://jobs.rubyonrails.org"
+  ]
+ },
+ {
+  "slug": "jobboardly",
+  "name": "Jobboardly",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://medicalcourierjobs.com",
+   "https://apnejob.com"
+  ]
+ },
+ {
+  "slug": "jobiqo",
+  "name": "Jobiqo",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.aerosociety.com/sitemap.xml",
+   "https://www.miamijobs.com/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "jboard",
+  "name": "JBoard.io",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://nuclearjobscanada.ca/sitemap-jobs-1.xml",
+   "https://jobs.vpppa.org/sitemap-jobs-1.xml"
+  ]
+ },
+ {
+  "slug": "jobboardfire",
+  "name": "JobBoardFire",
+  "kind": "board",
+  "blocked": "",
+  "notes": "Cloudflare answers some job pages with HTTP 429, so a fast crawl can read part of a board.",
+  "examples": [
+   "https://jobs.girlboss.com/sitemap-jobs.xml",
+   "https://greenbiz.jobboardfire.com/sitemap-jobs.xml"
+  ]
+ },
+ {
+  "slug": "smartjobboard",
+  "name": "SmartJobBoard",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.psychologicalscience.org",
+   "https://academiccareers.com"
+  ]
+ },
+ {
+  "slug": "jobboard_io",
+  "name": "JobBoard.io",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.cityandstateny.com",
+   "https://jobs.motionographer.com"
+  ]
+ },
+ {
+  "slug": "madgex",
+  "name": "Wiley Madgex",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://jobs.sciencecareers.org",
+   "https://jobs.chronicle.com"
+  ]
+ },
+ {
+  "slug": "talenetic",
+  "name": "Talenetic",
+  "kind": "board",
+  "blocked": "hosted boards disallow everything in robots.txt and require sign-in",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "jobmount",
+  "name": "JobMount",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://www.fleetjobs.com/sitemap.xml",
+   "https://jobnet.wacities.org/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "careersitecloud",
+  "name": "CareerSiteCloud",
+  "kind": "board",
+  "blocked": "",
+  "notes": "Only wpp.careersitecloud.com allows crawlers; every other tenant checked disallows everything or refuses requests.",
+  "examples": [
+   "https://wpp.careersitecloud.com/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "jobboard_com",
+  "name": "JobBoard.com",
+  "kind": "board",
+  "blocked": "",
+  "notes": "Only one live board found: the vendor lists no customers, and every showcase site is dead or off the platform.",
+  "examples": [
+   "https://www.gradsouthwest.com/xml-sitemaps/1.xml"
+  ]
+ },
+ {
+  "slug": "artha",
+  "name": "Artha",
+  "kind": "board",
+  "blocked": "Job pages sit behind a Cloudflare challenge (HTTP 403) and the lists render client-side; reading them would mean working around bot protection.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "exenzo",
+  "name": "jobboardsoftware.com",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://greenjobs.api.exenzo.com/1",
+   "https://api.vacatures.co/1"
+  ]
+ },
+ {
+  "slug": "jobboardhq",
+  "name": "jobBoardHQ",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://www.jobsindoorcounty.com/search",
+   "https://www.greaterroccareers.com/search"
+  ]
+ },
+ {
+  "slug": "nodex",
+  "name": "Nodex",
+  "kind": "board",
+  "blocked": "",
+  "notes": "",
+  "examples": [
+   "https://www.mytraveljobs.co.uk/sitemap.xml",
+   "https://www.antellarecruitment.co.uk/sitemap.xml",
+   "https://www.bigantgroup.co.uk/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "ejobboard",
+  "name": "eJobBoard",
+  "kind": "board",
+  "blocked": "No live job board running the software could be found: the vendor's sites are dead or parked, so there is nothing to read.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "ejobsite",
+  "name": "ejobsitesoftware.com",
+  "kind": "board",
+  "blocked": "",
+  "notes": "connectagri.com was dropped as an example: its jobs link to a private address, which ERIO rejects.",
+  "examples": [
+   "https://eyetasticjobs.com/industry_rss.php",
+   "https://www.beveiligingsvacature.nl/industry_rss.php"
+  ]
+ },
+ {
+  "slug": "arbeitnow",
+  "name": "Arbeitnow",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Free public API, no access key. Credit: link back to Arbeitnow.com (its terms, section 11); every job links to its Arbeitnow page.",
+  "examples": [
+   "https://www.arbeitnow.com"
+  ]
+ },
+ {
+  "slug": "remoteok",
+  "name": "Remote OK",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public JSON feed, no access key. Credit: a followed link back to the job on Remote OK and a mention of Remote OK as the source (its API terms); the Remote OK logo is not used.",
+  "examples": [
+   "https://remoteok.com"
+  ]
+ },
+ {
+  "slug": "weworkremotely",
+  "name": "We Work Remotely",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public RSS feed. Credit: attribute the links back to We Work Remotely (its feed page); every job links to its We Work Remotely page.",
+  "examples": [
+   "https://weworkremotely.com"
+  ]
+ },
+ {
+  "slug": "jobicy",
+  "name": "Jobicy",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public Jobs API, no access key; lists the last 7 days. Credit: Jobicy is named as the original source and the job links to its Jobicy listing (its fair-use rules).",
+  "examples": [
+   "https://jobicy.com"
+  ]
+ },
+ {
+  "slug": "workingnomads",
+  "name": "Working Nomads",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The public JSON feed its site links as API, no access key; it states no attribution rule, so Working Nomads is credited anyway and every job links to its Working Nomads page. Its terms say nothing about reading the feed; worth a written yes before launch.",
+  "examples": [
+   "https://www.workingnomads.com"
+  ]
+ },
+ {
+  "slug": "pythonjobs",
+  "name": "Python.org Jobs",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The Python Job Board's public RSS feed (20 newest jobs, no posted date). Credit: Python Job Board (Python Software Foundation) and a link to the job on python.org. It publishes no reuse terms for the feed beyond offering it for subscription; worth a written yes before launch.",
+  "examples": [
+   "https://www.python.org"
+  ]
+ },
+ {
+  "slug": "arbetsformedlingen",
+  "name": "Arbetsformedlingen (Sweden)",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The Swedish Public Employment Service's JobSearch API: no access key, ads licensed CC0. Credit given anyway: Arbetsformedlingen / JobTech. The API pages at most 2,100 ads, so a crawl reads the newest ones and is reported as partial.",
+  "examples": [
+   "https://jobsearch.api.jobtechdev.se"
+  ]
+ },
+ {
+  "slug": "eures",
+  "name": "EURES (European Job Mobility Portal)",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The portal's public vacancy search, no access key. Credit: re-use is authorised when the European Labour Authority (EURES) is acknowledged as the source; the EURES logo is not used. Its robots.txt asks for 10 seconds between requests, so a crawl reads the newest 250 jobs and is reported as partial.",
+  "examples": [
+   "https://europa.eu"
+  ]
+ },
+ {
+  "slug": "werkenvoornederland",
+  "name": "Werken voor Nederland",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Dutch central government vacancies, read from each vacancy page's structured data and text. Its copyright page puts the content under CC0 (no credit required); photos excluded, and the Rijksoverheid must not appear to endorse a derived work. A crawl reads the first 200 vacancies of its sitemap and is reported as partial.",
+  "examples": [
+   "https://www.werkenvoornederland.nl/sitemap-vacatures.xml"
+  ]
+ },
+ {
+  "slug": "bundesagentur",
+  "name": "Bundesagentur fuer Arbeit (Germany)",
+  "kind": "service",
+  "blocked": "The Jobsuche API answers 403 without an access key header; the key is one constant value printed in its documentation, which counts as a credential, so it is not used. Ask the agency for terms that allow reading without one.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "nav",
+  "name": "NAV (Norway)",
+  "kind": "service",
+  "blocked": "The Arbeidsplassen job feed answers 401 without a bearer token that has to be requested from NAV, so it needs a credential and is not built. Norwegian vacancies are partly covered through EURES.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "himalayas",
+  "name": "Himalayas",
+  "kind": "service",
+  "blocked": "Its API needs no key, but its API terms allow showing jobs only on sites you operate and forbid passing them on to other job boards, aggregators or job search engines, including through feeds; ERIO's public API and assistant tools would pass them on. Needs a decision, or a written permission from the service.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "mycareersfuture",
+  "name": "MyCareersFuture (Singapore)",
+  "kind": "service",
+  "blocked": "Its terms of use reserve all rights in the site content and forbid reproducing, publicly displaying or otherwise using it except as the terms or the employer allow; nothing allows listing the jobs elsewhere. Ask the Singapore Workforce Development Agency for permission.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "cryptocurrencyjobs",
+  "name": "Cryptocurrency Jobs",
+  "kind": "service",
+  "blocked": "Its terms reserve all rights in the content and forbid commercial use without a licence; the feed it serves carries only a one-line excerpt anyway.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "remotive",
+  "name": "Remotive",
+  "kind": "service",
+  "blocked": "Its robots.txt disallows /api/ and the job pages, where its public API and feeds live, so there is no path ERIO may read.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "gemeentebanen",
+  "name": "Gemeentebanen (Netherlands)",
+  "kind": "service",
+  "blocked": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "instaffo",
+  "name": "Instaffo",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Instaffo (jobs.instaffo.com); each links back to its Instaffo page. Reads the English job pages' schema.org JobPosting from the jobs sitemap; its robots.txt allows them.",
+  "examples": [
+   "https://jobs.instaffo.com/sitemap-jobs.xml"
+  ]
+ },
+ {
+  "slug": "jobberman",
+  "name": "Jobberman",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Jobberman (Nigeria); each links back to its Jobberman listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting.",
+  "examples": [
+   "https://www.jobberman.com/sitemap-listings-index-en.xml"
+  ]
+ },
+ {
+  "slug": "brightermonday",
+  "name": "BrighterMonday",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from BrighterMonday (Kenya, Uganda), the same platform as Jobberman; each links back to its listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting.",
+  "examples": [
+   "https://www.brightermonday.co.ke/sitemap-listings-index-en.xml"
+  ]
+ },
+ {
+  "slug": "torre",
+  "name": "Torre",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Torre (torre.ai); each links back to its Torre post. Reads the sitemap and each /post/ page's schema.org JobPosting; the /api/ paths robots.txt disallows are not used.",
+  "examples": [
+   "https://torre.ai/sitemap-index.xml"
+  ]
+ },
+ {
+  "slug": "myjobmag",
+  "name": "MyJobMag Africa",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from MyJobMag (Nigeria, Kenya, South Africa); each links back to MyJobMag. Reads the aggregate feed the site publishes for job aggregators.",
+  "examples": [
+   "https://www.myjobmag.com",
+   "https://www.myjobmag.co.ke"
+  ]
+ },
+ {
+  "slug": "jobnet",
+  "name": "Jobnet (Denmark)",
+  "kind": "service",
+  "blocked": "Jobnet (the Danish state job portal) serves no robots.txt or sitemap to crawlers (they redirect to an error page), publishes no feed or documented API, and its job search runs on a back end made for its own app; ask the Danish Agency for Labour Market and Recruitment (STAR) for access.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "apploi",
+  "name": "Apploi",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the server-rendered company page on apply-jobs.apploi.com (robots.txt allows it) and the schema.org JobPosting on each job page; 15 jobs a page, up to 10 pages. The jobs.apploi.com app is not read: its job search calls an API with an Authorization bearer header.",
+  "examples": [
+   "https://apply-jobs.apploi.com/jobs/elcor",
+   "https://apply-jobs.apploi.com/jobs/the-riverside"
+  ]
+ },
+ {
+  "slug": "solides",
+  "name": "Sólides",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads the portal's own public list, vagas.solides.com.br/api/vacancies (robots.txt allows all), the newest 500 jobs a crawl out of tens of thousands, so it is reported as a partial read. Jobs link to vagas.solides.com.br.",
+  "examples": [
+   "https://vagas.solides.com.br"
+  ]
+ },
+ {
+  "slug": "inhire",
+  "name": "InHire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the public career-page API documented at docs.inhire.com.br (GET api.inhire.app/job-posts/public/pages with the X-Tenant header, the start of the tenant's {tenant}.inhire.app address). The list has no descriptions.",
+  "examples": [
+   "riachuelo",
+   "via",
+   "sales"
+  ]
+ },
+ {
+  "slug": "recrutei",
+  "name": "Recrutei",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads Recrutei Empregos, the job board of Recrutei customers: the sitemap of job pages and the schema.org JobPosting on each (robots.txt allows both). 200 pages a crawl, so large boards are partial. Companies' own jobs.recrutei.com.br pages list jobs through a POST API and are not read.",
+  "examples": [
+   "https://empregos.recrutei.com.br/sitemap-vagas-1.xml"
+  ]
+ },
+ {
+  "slug": "senior_talentos",
+  "name": "Senior Portal de Talentos",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads the anonymous searchVacancies query the portal's own pages call (no sign-in, no robots.txt on the host): every employer's jobs, 100 a page, up to 10 pages a crawl (partial). The list has no descriptions. Jobs link to {tenant}.portaldetalentos.senior.com.br.",
+  "examples": [
+   "https://platform.senior.com.br"
+  ]
+ },
+ {
+  "slug": "earcu",
+  "name": "eArcu",
+  "kind": "ats",
+  "blocked": "robots.txt disallows */action/* and */ajaxaction/*, which the career sites' job search and paging use (only the first result page renders without them), and there is no sitemap or feed.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "erecruiter",
+  "name": "eRecruiter",
+  "kind": "ats",
+  "blocked": "no public way to list a customer's jobs was found: eRecruiter's own board (jobs.erecruiter.net) shows no open jobs and no JSON-LD, there is no shared host, sitemap or feed, and customers' career sites run on their own domains.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "intervieweb",
+  "name": "Intervieweb / Inrecruiting",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the first page (15 jobs) of a company's /{company}/it/career page and the schema.org JobPosting on each job page; a board with more pages is a partial read, because later pages need a script-issued CSRF POST. Some companies' job pages carry no JobPosting data (colombinispa, colorobbia) and fail. App.php?LAC= addresses are not used (robots.txt disallows them).",
+  "examples": [
+   "https://inrecruiting.intervieweb.it/orbyta/it/career",
+   "https://inrecruiting.intervieweb.it/futurenergy/it/career",
+   "https://inrecruiting.intervieweb.it/romeogestioni/it/career"
+  ]
+ },
+ {
+  "slug": "thehub",
+  "name": "The Hub",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads thehub.io's sitemap of job pages and the schema.org JobPosting on each (robots.txt allows both); 200 pages a crawl, of about 1,200 Nordic start-up jobs (partial).",
+  "examples": [
+   "https://thehub.io/sitemap-jobs.xml"
+  ]
+ },
+ {
+  "slug": "applitrack",
+  "name": "AppliTrack / Frontline",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the embeddable posting list districts put on their own sites, www.applitrack.com/{district}/onlineapp/JobPostings/view.asp?embed=1&all=1 (robots.txt only closes the admin area). Descriptions are the posting text; some say only to open the attachment.",
+  "examples": [
+   "keyport",
+   "aldineisd"
+  ]
+ },
+ {
+  "slug": "checkin",
+  "name": "CHECK-IN by perbility",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads a portal's /list (10 a page, up to 5 pages, partial beyond) and the schema.org microdata on each job page at {portal}.mein-check-in.de (robots.txt allows it). Portals on www.mein-check-in.de/{customer}/ and jobs.perbility.de are other products and are not read.",
+  "examples": [
+   "provinzial-karriereportal",
+   "sparkassenversicherung-karriereportal",
+   "lgl-bayern-karriereportal"
+  ]
+ },
+ {
+  "slug": "cegid",
+  "name": "Cegid DigitalRecruiters",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career sites sit on the employer's own domain; the board is the site's sitemap and each /annonce/ page carries a schema.org JobPosting. These sites ask for a 10 second delay between requests, so reading 200 job pages takes over half an hour (partial).",
+  "examples": [
+   "https://recrutement.adapei-aria.com/sitemap.xml",
+   "https://recrutement.transavia.com/sitemap.xml"
+  ]
+ }
 ]
