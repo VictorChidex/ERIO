@@ -13,6 +13,7 @@ const LINKS = [
   { href: "/salary", label: "Pay" },
   { href: "/paths", label: "Roles" },
   { href: "/companies", label: "Companies" },
+  { href: "/workspace", label: "Workspace" },
   { href: "/coverage", label: "Coverage" },
   { href: "/api", label: "API" },
 ];

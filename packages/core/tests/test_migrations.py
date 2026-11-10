@@ -17,6 +17,7 @@ EXPECTED_TABLES = {
     "ai_evals",
     "ai_calls",
     "api_tokens",
+    "application_events",
     "board_discovery",
     "companies",
     "company_boards",
@@ -27,8 +28,12 @@ EXPECTED_TABLES = {
     "job_sources",
     "jobs",
     "raw_postings",
+    "saved_search_matches",
+    "saved_searches",
     "source_checks",
     "sources",
+    "workspace_applications",
+    "workspaces",
 }
 
 

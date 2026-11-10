@@ -4,6 +4,7 @@ import { notFound, permanentRedirect } from "next/navigation";
 import { cache } from "react";
 
 import { JobHistory } from "@/components/JobHistory";
+import { SaveButton } from "@/components/SaveButton";
 import styles from "@/components/LandingPage.module.css";
 import { getCountries, NotFound, searchJobs } from "@/lib/api";
 import { usableHistory } from "@/lib/history";
@@ -17,6 +18,7 @@ import {
   scriptJson,
   snippet,
 } from "@/lib/seo";
+import { CvPanel } from "@/components/workspace/CvPanel";
 import { getJobDetail, type JobDetail } from "@/lib/seo-data";
 
 export const dynamic = "force-dynamic";
@@ -156,6 +158,7 @@ export default async function JobPage({ params }: Props) {
             <a className="btn-acc" href={job.apply_url} rel="noopener noreferrer nofollow" target="_blank">
               Apply on original site ↗
             </a>
+            <SaveButton jobId={job.canonical_id} title={job.title} />
             <Link className="btn-ghost" href={companyLink}>
               More at {job.company.name}
             </Link>
@@ -231,6 +234,7 @@ export default async function JobPage({ params }: Props) {
           )}
         </div>
       </section>
+      <CvPanel jobId={job.canonical_id} />
     </>
   );
 }
