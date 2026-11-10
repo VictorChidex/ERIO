@@ -29,6 +29,11 @@ TOKEN = re.compile(r"([a-z0-9][a-z0-9-]{0,62})/(\d{1,6})")
 CLOUD = re.compile(r"https://[a-z0-9-]{1,30}\.api\.csod\.com/")
 CONTEXT = re.compile(r"csod\.context\s*=\s*(\{.*?\});?\s*</script>", re.S)
 PAGE = 100
+# Many descriptions open with the career site's own page chrome: a heading and the CSS of its
+# loading spinner, repeated. Neither is part of the job.
+STYLE_BLOCK = re.compile(r"<style\b.*?</style>", re.S | re.I)
+CSS_RULE = re.compile(r"[.#@][^{}<>]{0,200}\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}")
+CHROME_HEADING = re.compile(r"^\s*Employment Opportunities\s*", re.I)
 
 
 def _parts(board_token: str) -> tuple[str, str]:
@@ -43,6 +48,13 @@ def _apply_url(tenant: str, site: str, requisition: str) -> str:
         f"https://{tenant}.csod.com/ux/ats/careersite/{site}/home/requisition/{requisition}"
         f"?c={tenant}"
     )
+
+
+def clean_description(text: str) -> str:
+    """The description without the career page's style blocks, CSS rules and heading."""
+    text = STYLE_BLOCK.sub("", text)
+    text = CSS_RULE.sub("", text)
+    return CHROME_HEADING.sub("", text).strip()
 
 
 class CsodConnector(Connector):
@@ -128,7 +140,7 @@ class CsodConnector(Connector):
             for loc in item.get("locations") or []
         ]
         first = (item.get("locations") or [{}])[0]
-        text = str(item.get("externalDescription") or "").strip()
+        text = clean_description(str(item.get("externalDescription") or ""))
         try:
             posted = datetime.strptime(str(item.get("postingEffectiveDate")), "%m/%d/%Y")
         except ValueError:
