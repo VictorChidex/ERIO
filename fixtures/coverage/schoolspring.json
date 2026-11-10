@@ -1,0 +1,326 @@
+[
+ {
+  "source_slug": "schoolspring",
+  "board_token": "Indian River",
+  "external_id": "5988681",
+  "payload": {
+   "listed": {
+    "jobId": 5988681,
+    "employer": "School District of Indian River County",
+    "title": "Custodian (2026-2027)",
+    "location": "Vero Beach, Florida",
+    "displayDate": "2026-11-10T19:07:39"
+   },
+   "detail": {
+    "jobInfo": {
+     "jobId": 5988681,
+     "jobTitle": "Custodian (2026-2027)",
+     "infoURL": "http://www.applitrack.com/indianriver/OnlineApp/JobPostings/view.asp?AppliTrackJobId=10167",
+     "externalJobCode": "10167",
+     "applicationDeadline": null,
+     "displayDate": "2026-11-10T19:07:39",
+     "internalDisplayDate": null,
+     "postDate": "2026-11-10T19:07:39",
+     "startDateShowDay": 99,
+     "startDate": null,
+     "jobStatusID": 30,
+     "unionID": 0,
+     "unionName": null,
+     "jobDescription": "<p><strong>Description:</strong><br>Knowledge of Occupational Safety and Health Administration (OSHA) and Environmental<br>Protection Agency (EPA) requirements related to assignment. Knowledge of custodial<br>procedures and equipment. Ability to communicate orally and in writing. Ability to read and<br>follow instructions. Ability to work harmoniously with custodial staff. Ability to organize and<br>establish priorities. Ability to perform minor repairs to equipment, building and grounds.<br>Ability to stand for long periods of time.<br><br><strong>Job Summary:</strong><br>To provide care, maintenance, cleanliness and safety of the school plant and grounds<br>for the students and staff.<br><br><strong>Qualifications:</strong><br>1. High school diploma or equivalent.<br>2. Custodial experience preferred.<br>3. Satisfactory criminal background check and drug screening.<br><br><strong>Application Procedure:</strong><br>Apply online<br><br><strong>Salary Information:&nbsp; Support Personnel.&nbsp; Pay Grade 5.&nbsp; Days Worked Varies: Two hundred fifty days worked per year (12 months),</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FLSA Non-Exempt.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Two hundred twenty days worked per year (11 months),</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;One hundred ninety-six&nbsp;days worked per year (10 months).</strong></p><p>&nbsp;</p><p><span style=\"background-color:rgb(247,247,247);color:rgb(102,102,102);font-family:Arial;font-size:13.3333px;\">Please visit the </span><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://ahca.myflorida.com/health-quality-assurance/bureau-of-central-services/background-screening\">Agency for Heath Care Administration</a><span style=\"background-color:rgb(247,247,247);color:rgb(102,102,102);font-family:Arial;font-size:13.3333px;\"> for education and awareness on background screening.</span></p>",
+     "jobTypeName": "Full-time",
+     "positions": 0,
+     "payDisplay": 0,
+     "payMin": null,
+     "payMax": null,
+     "payTypeName": "Per Year",
+     "employerID": 109681,
+     "employerTypeID": 20,
+     "employerName": "Indian River School District",
+     "employerDescription": null,
+     "employerShowImage": 0,
+     "eoeStatement": "x",
+     "requirements": null,
+     "experienceRequired": null,
+     "degreePreferred": 0,
+     "eligibleRequired": 0,
+     "degreeTypeName": "Not Provided",
+     "instructions": null,
+     "internalQuestionsRequired": 0,
+     "employerAccountTypeID": 21,
+     "contactFirstName": "Takeisha",
+     "contactLastName": "Harris",
+     "contactTitle": null,
+     "contactAddress1": "6500 57th Street",
+     "contactAddress2": "",
+     "contactCity": "Vero Beach",
+     "contactCountryID": 1,
+     "stateName": "Florida",
+     "countryName": "United States",
+     "contactPostalCode": "32967",
+     "contactPhone": "772-564-3137",
+     "contactFax": null,
+     "contactEmail": "hr@indianriverschools.org",
+     "shiftType": null,
+     "salaryCode": null,
+     "contactUserID": 592254,
+     "displayEmployer": "School District of Indian River County",
+     "closeDate": "2050-12-31T23:59:00",
+     "timeZone": null,
+     "internalCloseDate": null,
+     "employmentStartDateTBD": false,
+     "activeEmployer": true
+    },
+    "jobCategories": [
+     {
+      "category": "Support Staff",
+      "subCategory": "Custodian"
+     }
+    ],
+    "applicationQuestions": null,
+    "jobBoards": [
+     {
+      "jobBoardName": "Florida Department of Education",
+      "jobBoardUrl": "https://fldoe.schoolspring.com"
+     }
+    ],
+    "jobLocations": [
+     {
+      "locationID": 235719,
+      "locationName": "Beachland Elementary School",
+      "displayLocation": "Vero Beach, Florida",
+      "latitude": 27.6543,
+      "longitude": -80.3674,
+      "locationDescription": null,
+      "locationShowImage": 0
+     }
+    ],
+    "baseDomainURL": null,
+    "jobApplicationId": null,
+    "jobApplicationStatusId": null,
+    "jobBoardDistrict": false,
+    "formattedExternalCloseDate": "Posted until filled",
+    "formattedInternalCloseDate": null,
+    "isAtsJob": false,
+    "jobApplicationDate": null
+   }
+  },
+  "fetched_at": "2026-11-10T19:56:59.099731Z",
+  "content_hash": "e5ac5d99ca7b6eb583cb006cc8a81515d608968ba81ff832d6755b64b265646e"
+ },
+ {
+  "source_slug": "schoolspring",
+  "board_token": "Indian River",
+  "external_id": "5987632",
+  "payload": {
+   "listed": {
+    "jobId": 5987632,
+    "employer": "School District of Indian River County",
+    "title": "Self-Care Aide, ESE (2026-2027)",
+    "location": "Vero Beach, Florida",
+    "displayDate": "2026-11-10T02:07:26"
+   },
+   "detail": {
+    "jobInfo": {
+     "jobId": 5987632,
+     "jobTitle": "Self-Care Aide, ESE (2026-2027)",
+     "infoURL": "http://www.applitrack.com/indianriver/OnlineApp/JobPostings/view.asp?AppliTrackJobId=10164",
+     "externalJobCode": "10164",
+     "applicationDeadline": null,
+     "displayDate": "2026-11-10T02:07:26",
+     "internalDisplayDate": null,
+     "postDate": "2026-11-10T02:07:26",
+     "startDateShowDay": 99,
+     "startDate": null,
+     "jobStatusID": 30,
+     "unionID": 0,
+     "unionName": null,
+     "jobDescription": "<p><strong>Description:</strong><br>Knowledge of the techniques and procedures used in working with targeted student population.<br>Ability to relate and communicate effectively with students, teachers, and parents. Ability to<br>communicate orally and in writing. Ability to plan and/or implement instructional activities.<br>Ability to operate or learn to operate a variety of technology and equipment. Ability to perform<br>clerical responsibilities. Ability to cooperate and work as a member of a team. Physical ability to<br>lift student and render physical assistance if required by job assignment. &nbsp;&nbsp;<br><br><strong>Job Summary:</strong><br>To assist students with disabilities with classroom activities, transportation,<br>modifications and personal needs.<br><br><strong>Qualifications:</strong><br>1. High school diploma or equivalent.<br>2. College training preferred.<br>3. Satisfactory criminal background check and drug screening.&nbsp;<br><br><strong>Application Procedure:</strong><br>Apply online<br><br><strong>Salary Information: &nbsp;Support Personnel.&nbsp; Pay Grade 5.&nbsp; One hundred eighty-six days worked per year (9 months).&nbsp; FLSA Non-Exempt.</strong></p><p>&nbsp;</p><p><span style=\"background-color:rgb(247,247,247);color:rgb(102,102,102);font-family:Arial;font-size:13.3333px;\">Please visit the </span><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://ahca.myflorida.com/health-quality-assurance/bureau-of-central-services/background-screening\">Agency for Heath Care Administration</a><span style=\"background-color:rgb(247,247,247);color:rgb(102,102,102);font-family:Arial;font-size:13.3333px;\"> for education and awareness on background screening.</span></p>",
+     "jobTypeName": "Full-time",
+     "positions": 0,
+     "payDisplay": 0,
+     "payMin": null,
+     "payMax": null,
+     "payTypeName": "Per Year",
+     "employerID": 109681,
+     "employerTypeID": 20,
+     "employerName": "Indian River School District",
+     "employerDescription": null,
+     "employerShowImage": 0,
+     "eoeStatement": "x",
+     "requirements": null,
+     "experienceRequired": null,
+     "degreePreferred": 0,
+     "eligibleRequired": 0,
+     "degreeTypeName": "Not Provided",
+     "instructions": null,
+     "internalQuestionsRequired": 0,
+     "employerAccountTypeID": 21,
+     "contactFirstName": "Takeisha",
+     "contactLastName": "Harris",
+     "contactTitle": null,
+     "contactAddress1": "6500 57th Street",
+     "contactAddress2": "",
+     "contactCity": "Vero Beach",
+     "contactCountryID": 1,
+     "stateName": "Florida",
+     "countryName": "United States",
+     "contactPostalCode": "32967",
+     "contactPhone": "772-564-3137",
+     "contactFax": null,
+     "contactEmail": "hr@indianriverschools.org",
+     "shiftType": null,
+     "salaryCode": null,
+     "contactUserID": 592254,
+     "displayEmployer": "School District of Indian River County",
+     "closeDate": "2050-12-31T23:59:00",
+     "timeZone": null,
+     "internalCloseDate": null,
+     "employmentStartDateTBD": false,
+     "activeEmployer": true
+    },
+    "jobCategories": [
+     {
+      "category": "Instructional Support",
+      "subCategory": "Paraprofessional / IA"
+     }
+    ],
+    "applicationQuestions": null,
+    "jobBoards": [
+     {
+      "jobBoardName": "Florida Department of Education",
+      "jobBoardUrl": "https://fldoe.schoolspring.com"
+     }
+    ],
+    "jobLocations": [
+     {
+      "locationID": 235712,
+      "locationName": "Vero Beach Elementary School",
+      "displayLocation": "Vero Beach, Florida",
+      "latitude": 27.6245,
+      "longitude": -80.4036,
+      "locationDescription": null,
+      "locationShowImage": 0
+     }
+    ],
+    "baseDomainURL": null,
+    "jobApplicationId": null,
+    "jobApplicationStatusId": null,
+    "jobBoardDistrict": false,
+    "formattedExternalCloseDate": "Posted until filled",
+    "formattedInternalCloseDate": null,
+    "isAtsJob": false,
+    "jobApplicationDate": null
+   }
+  },
+  "fetched_at": "2026-11-10T19:56:59.099731Z",
+  "content_hash": "156c7cf763f089a866b1b00c4373ca0693d4371bea68c4fd9dd73397f5284a68"
+ },
+ {
+  "source_slug": "schoolspring",
+  "board_token": "Indian River",
+  "external_id": "5986832",
+  "payload": {
+   "listed": {
+    "jobId": 5986832,
+    "employer": "School District of Indian River County",
+    "title": "Custodian (2026-2027)",
+    "location": "Vero Beach, Florida",
+    "displayDate": "2026-11-09T17:08:17"
+   },
+   "detail": {
+    "jobInfo": {
+     "jobId": 5986832,
+     "jobTitle": "Custodian (2026-2027)",
+     "infoURL": "http://www.applitrack.com/indianriver/OnlineApp/JobPostings/view.asp?AppliTrackJobId=10159",
+     "externalJobCode": "10159",
+     "applicationDeadline": null,
+     "displayDate": "2026-11-09T17:08:17",
+     "internalDisplayDate": null,
+     "postDate": "2026-11-09T17:08:17",
+     "startDateShowDay": 99,
+     "startDate": null,
+     "jobStatusID": 30,
+     "unionID": 0,
+     "unionName": null,
+     "jobDescription": "<p><strong>Description:</strong><br>Knowledge of Occupational Safety and Health Administration (OSHA) and Environmental<br>Protection Agency (EPA) requirements related to assignment. Knowledge of custodial<br>procedures and equipment. Ability to communicate orally and in writing. Ability to read and<br>follow instructions. Ability to work harmoniously with custodial staff. Ability to organize and<br>establish priorities. Ability to perform minor repairs to equipment, building and grounds.<br>Ability to stand for long periods of time.<br><br><strong>Job Summary:</strong><br>To provide care, maintenance, cleanliness and safety of the school plant and grounds<br>for the students and staff.<br><br><strong>Qualifications:</strong><br>1. High school diploma or equivalent.<br>2. Custodial experience preferred.<br>3. Satisfactory criminal background check and drug screening.<br><br><strong>Application Procedure:</strong><br>Apply online<br><br><strong>Salary Information:&nbsp; Support Personnel.&nbsp; Pay Grade 5.&nbsp; Days Worked Varies: Two hundred fifty days worked per year (12 months),</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FLSA Non-Exempt.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Two hundred twenty days worked per year (11 months),</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;One hundred ninety-six&nbsp;days worked per year (10 months).</strong></p><p>&nbsp;</p><p><span style=\"background-color:rgb(247,247,247);color:rgb(102,102,102);font-family:Arial;font-size:13.3333px;\">Please visit the </span><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://ahca.myflorida.com/health-quality-assurance/bureau-of-central-services/background-screening\">Agency for Heath Care Administration</a><span style=\"background-color:rgb(247,247,247);color:rgb(102,102,102);font-family:Arial;font-size:13.3333px;\"> for education and awareness on background screening.</span></p>",
+     "jobTypeName": "Full-time",
+     "positions": 0,
+     "payDisplay": 0,
+     "payMin": null,
+     "payMax": null,
+     "payTypeName": "Per Year",
+     "employerID": 109681,
+     "employerTypeID": 20,
+     "employerName": "Indian River School District",
+     "employerDescription": null,
+     "employerShowImage": 0,
+     "eoeStatement": "x",
+     "requirements": null,
+     "experienceRequired": null,
+     "degreePreferred": 0,
+     "eligibleRequired": 0,
+     "degreeTypeName": "Not Provided",
+     "instructions": null,
+     "internalQuestionsRequired": 0,
+     "employerAccountTypeID": 21,
+     "contactFirstName": "Takeisha",
+     "contactLastName": "Harris",
+     "contactTitle": null,
+     "contactAddress1": "6500 57th Street",
+     "contactAddress2": "",
+     "contactCity": "Vero Beach",
+     "contactCountryID": 1,
+     "stateName": "Florida",
+     "countryName": "United States",
+     "contactPostalCode": "32967",
+     "contactPhone": "772-564-3137",
+     "contactFax": null,
+     "contactEmail": "hr@indianriverschools.org",
+     "shiftType": null,
+     "salaryCode": null,
+     "contactUserID": 592254,
+     "displayEmployer": "School District of Indian River County",
+     "closeDate": "2050-12-31T23:59:00",
+     "timeZone": null,
+     "internalCloseDate": null,
+     "employmentStartDateTBD": false,
+     "activeEmployer": true
+    },
+    "jobCategories": [
+     {
+      "category": "Support Staff",
+      "subCategory": "Custodian"
+     }
+    ],
+    "applicationQuestions": null,
+    "jobBoards": [
+     {
+      "jobBoardName": "Florida Department of Education",
+      "jobBoardUrl": "https://fldoe.schoolspring.com"
+     }
+    ],
+    "jobLocations": [
+     {
+      "locationID": 235632,
+      "locationName": "Indian River School District",
+      "displayLocation": "Vero Beach, Florida",
+      "latitude": 27.6985,
+      "longitude": -80.4594,
+      "locationDescription": null,
+      "locationShowImage": 0
+     }
+    ],
+    "baseDomainURL": null,
+    "jobApplicationId": null,
+    "jobApplicationStatusId": null,
+    "jobBoardDistrict": false,
+    "formattedExternalCloseDate": "Posted until filled",
+    "formattedInternalCloseDate": null,
+    "isAtsJob": false,
+    "jobApplicationDate": null
+   }
+  },
+  "fetched_at": "2026-11-10T19:56:59.099731Z",
+  "content_hash": "6502078c9fcd34e034047295da0ec5455f3629052ecb61bcffb34f7f058638d5"
+ }
+]

@@ -22,6 +22,7 @@ from erio_core.connectors.group_b import GROUP_B_CONNECTORS
 from erio_core.connectors.group_c import GROUP_C_CONNECTORS
 from erio_core.connectors.group_d import GROUP_D_CONNECTORS
 from erio_core.connectors.group_e import GROUP_E_CONNECTORS
+from erio_core.connectors.group_f import GROUP_F_CONNECTORS
 from erio_core.connectors.hibob import HiBobConnector
 from erio_core.connectors.hirehive import HireHiveConnector
 from erio_core.connectors.hireology import HireologyConnector
@@ -93,6 +94,7 @@ ALL_CONNECTORS: list[Connector] = [
     *GROUP_C_CONNECTORS,
     *GROUP_D_CONNECTORS,
     *GROUP_E_CONNECTORS,
+    *GROUP_F_CONNECTORS,
     *PUBLIC_FEED_CONNECTORS,
     *PUBLIC_SERVICE_CONNECTORS,
 ]
