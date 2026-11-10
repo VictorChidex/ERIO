@@ -1,0 +1,35 @@
+{
+ "count": 2,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": 315177,
+   "slug": "marketing-manager",
+   "title": "Marketing Manager",
+   "max_experience": 6.0,
+   "min_experience": 4.0,
+   "country": "India",
+   "location": "Bangalore, Karnataka, India",
+   "other_locations": [],
+   "department_name": null,
+   "published_internally": false,
+   "workplace_type": "ON_SITE",
+   "product": null
+  },
+  {
+   "id": 312876,
+   "slug": "business-development-executive",
+   "title": "Business Development Executive",
+   "max_experience": 3.0,
+   "min_experience": 1.0,
+   "country": "India",
+   "location": "Bangalore, Karnataka, India",
+   "other_locations": [],
+   "department_name": null,
+   "published_internally": false,
+   "workplace_type": "ON_SITE",
+   "product": null
+  }
+ ]
+}

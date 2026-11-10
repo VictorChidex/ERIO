@@ -1,0 +1,17 @@
+[
+ {
+  "guid": "d0e29593-9189-4e0c-83f3-94dc95dc306b",
+  "name": "Sample",
+  "published": "2026-09-01T13:00:49.273Z",
+  "isPromoted": false,
+  "dateFrom": "2026-09-01T00:00:00Z",
+  "dateTo": "2026-10-01T00:00:00Z",
+  "description": "",
+  "location": [],
+  "country": [],
+  "referenceId": "100083963",
+  "remoteInterview": false,
+  "tradeId": 34,
+  "allowApply": true
+ }
+]

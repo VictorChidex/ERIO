@@ -1,0 +1,63 @@
+{
+ "id": 315177,
+ "uuid": "E8E706F46B",
+ "title": "Marketing Manager",
+ "job_type": "FULLTIME",
+ "description": "<h2>About the Opportunity</h2>\n<p>A fast-growing HR SaaS player operating in the Talent Management and HR Technology sector, focused on simplifying hiring, onboarding, and people operations for mid-market and enterprise customers. We build product-led solutions that drive measurable business outcomes through better recruitment and employee life-cycle management.</p>\n<p>We are hiring an on-site Marketing Manager based in India to own demand generation, performance marketing, and brand growth initiatives that accelerate revenue and customer acquisition.</p>\n<h2>Role &amp; Responsibilities</h2>\n<",
+ "max_salary": null,
+ "min_salary": null,
+ "max_experience": 6.0,
+ "skill": [
+  "sem",
+  "hubspot",
+  "marketing automation",
+  "seo",
+  "google analytics",
+  "a/b testing",
+  "content marketing",
+  "semrush",
+  "digital marketing",
+  "google ads",
+  "facebook ads manager"
+ ],
+ "education": [],
+ "seniority": [
+  "associate"
+ ],
+ "min_experience": 4.0,
+ "industry": null,
+ "country": "India",
+ "location": "Bangalore, Karnataka, India",
+ "other_locations": [],
+ "department": null,
+ "department_name": null,
+ "remote": false,
+ "created_at": "2026-01-29T13:23:40.886081+05:30",
+ "salary_type": "MONTHLY",
+ "is_salary_visible": false,
+ "published_internally": false,
+ "job_screening_questions": [
+  {
+   "uuid": "A36E715477",
+   "name": "yes_no_option",
+   "label": "Yes/No",
+   "question": "Do you have a sponsorship for the US in terms of visa?",
+   "choices": [],
+   "mandatory": true,
+   "maximum_range": null,
+   "minimum_range": null,
+   "open_range": null
+  }
+ ],
+ "workplace_type": "ON_SITE",
+ "currency": "INR",
+ "company_country": "US because have to dogfood",
+ "is_hr_job": false,
+ "referral_email": "refer@fullthrottlelabs.pyjamahr.com",
+ "email_domain": "fullthrottlelabs.com",
+ "email_provider": null,
+ "is_employee_referral_flow_enabled": true,
+ "company_career_page_url": null,
+ "is_seo_indexable": false,
+ "valid_through": "2026-03-30T13:23:40.886081+05:30"
+}

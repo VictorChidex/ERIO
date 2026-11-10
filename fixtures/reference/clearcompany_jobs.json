@@ -1,0 +1,81 @@
+{
+ "results": [
+  {
+   "id": "e7d97a12-9883-294c-b5d6-0720d5a58728",
+   "userDefinedId": "174",
+   "positionTitle": "BIM Modeler",
+   "description": "<p style=\"margin-left: 0\"><span style=\"font-size: 11px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><var><strong>Job Summary</strong></var></span></span></p>\n\n<p><span style=\"font-size: 11px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><var>The BIM Modeler is responsible for producing accurate, constructible electrical BIM models under the direction of the BIM Coordinator. This role focuses on model quality, data accuracy, and adherence to company and industry standards.</var></span></span></p>\n\n<p><span style=\"font-size: 11px\"><span style=\"font-family: Arial, Helvetica",
+   "openDate": "2026-03-10T00:00:00",
+   "postedDate": "2026-03-10T00:00:00",
+   "departmentId": "F5584136-C064-99C5-2CB9-926FCA46094F",
+   "departmentName": "Building Information Modeling (BIM)",
+   "officeId": "FD7D7478-D746-9928-AD51-C23D6A1A7EBB",
+   "officeName": "Corporate HQ",
+   "jobFunctionId": "E383F023-DB3F-9706-0787-556F43FE70D2",
+   "jobFunctionName": "Design",
+   "location": "Greensboro NC",
+   "locations": [
+    {
+     "city": "Greensboro",
+     "subdivision": "NC",
+     "subdivisionFullName": "North Carolina",
+     "country": "US",
+     "postalCode": "27405",
+     "addressLine1": null,
+     "addressLine2": null,
+     "isRemote": false,
+     "isNationwide": false,
+     "isStatewide": false,
+     "latitude": null,
+     "longitude": null
+    }
+   ],
+   "brandName": "Cooper Electrical Construction Company",
+   "applyLink": "https://coopereic.clearcompany.com/careers/jobs/e7d97a12-9883-294c-b5d6-0720d5a58728/apply",
+   "canSelfSchedule": false,
+   "salaryRangeLow": "0",
+   "salaryRangeHigh": "0",
+   "salaryType": null
+  },
+  {
+   "id": "77045046-889d-6a45-933c-6f32cb5f0eee",
+   "userDefinedId": "172",
+   "positionTitle": "Electrician ",
+   "description": "<p><span style=\"font-family: Arial, Helvetica, sans-serif\">Cooper Electrical Construction Co. is looking for <strong>Industrial Electricians</strong> to join our team. Work will consist of plan layout, alterations, additions and /or repairs of electrical systems, light fixtures, conductors and associated materials and equipment within the commercial, industrial electrical industry. This position reports to the Superintendent. </span></p>\n\n<p><strong>***Must have minimum five (5) years of experience to be consider an Electrician*** </strong></p>\n\n<p><span style=\"font-family: Arial, Helvetica, s",
+   "openDate": "2026-02-26T00:00:00",
+   "postedDate": "2026-02-26T00:00:00",
+   "departmentId": "45D39097-2026-BD49-DA48-A85E2C8F4012",
+   "departmentName": "Field Operations",
+   "officeId": "C2025D1A-EA51-2D5D-4D6D-5B65D98AAB12",
+   "officeName": "The Bunker",
+   "jobFunctionId": "0106DBFA-0B45-57A4-3572-33B1517E5488",
+   "jobFunctionName": "Skilled Labor",
+   "location": "Clayton NC",
+   "locations": [
+    {
+     "city": "Clayton",
+     "subdivision": "NC",
+     "subdivisionFullName": "North Carolina",
+     "country": "US",
+     "postalCode": "27527",
+     "addressLine1": null,
+     "addressLine2": null,
+     "isRemote": false,
+     "isNationwide": false,
+     "isStatewide": false,
+     "latitude": null,
+     "longitude": null
+    }
+   ],
+   "brandName": "Cooper Electrical Construction Company",
+   "applyLink": "https://coopereic.clearcompany.com/careers/jobs/77045046-889d-6a45-933c-6f32cb5f0eee/apply",
+   "canSelfSchedule": false,
+   "salaryRangeLow": "0",
+   "salaryRangeHigh": "0",
+   "salaryType": null
+  }
+ ],
+ "currentPageIndex": 0,
+ "totalCount": 2,
+ "currentPageCount": 2
+}
