@@ -168,6 +168,16 @@ def test_the_longest_matching_robots_rule_wins() -> None:
         fetcher.get(URL)  # the longer Disallow wins over the shorter Allow
 
 
+def test_a_rule_closing_with_a_question_mark_means_urls_with_a_query() -> None:
+    robots = (200, "User-agent: *\nDisallow: /*?\nDisallow: /profile\n")
+    fetcher, _, _ = make_fetcher(site(robots=robots))
+    assert fetcher.get(URL).status == 200  # not "Disallow: /*", which would refuse everything
+    with pytest.raises(FetchError, match=r"robots\.txt disallows"):
+        fetcher.get(f"{URL}?page=2")
+    with pytest.raises(FetchError, match=r"robots\.txt disallows"):
+        fetcher.get(f"https://{HOST}/profile")
+
+
 def throttled(answers: list[httpx.Response]):
     """A site that answers the page with each response in turn, then keeps the last."""
 
