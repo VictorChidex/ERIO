@@ -3063,5 +3063,335 @@
    }
   ],
   "checked_at": "2026-11-10T20:08:12+00:00"
+ },
+ "airswift": {
+  "boards": [
+   {
+    "board": "https://www.airswift.com/jobs",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Maintenance Planner / Scheduler I",
+     "Inventory Analyst I",
+     "Staff Electrical Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:57:54+00:00"
+ },
+ "cats": {
+  "boards": [
+   {
+    "board": "warnerpacific/1611",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Graduate Assistantship Opportunities - Spring 2027",
+     "Social Work Director of Field Education Faculty Position",
+     "Executive Assistant to the President"
+    ]
+   },
+   {
+    "board": "gmcc/45645",
+    "complete": true,
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Project Manager - Civil Construction",
+     "Certified Welder",
+     "Project Coordinator - Civil Construction"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:55:17+00:00"
+ },
+ "clearcompany": {
+  "boards": [
+   {
+    "board": "pmic",
+    "complete": true,
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "Data & Statistical Reporting Analyst",
+     "2027 Summer Internship - Hybrid, New Berlin, NY",
+     "Cloud Infrastructure Architect - Remote"
+    ]
+   },
+   {
+    "board": "coopereic",
+    "complete": true,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "BIM Modeler",
+     "Electrician",
+     "Sr. Estimator"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:55:27+00:00"
+ },
+ "concludis": {
+  "boards": [
+   {
+    "board": "https://saarstahl.concludis.de/prj/lst/a181a603769c1f98ad927e7367c7aa51/Alle.htm",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "[DH] Mitarbeiter Werksicherheit (m/w/d)",
+     "Elektroniker für Betriebstechnik (m/w/d)",
+     "Initiativbewerbung im gewerblichen Bereich (m/w/d)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:58:28+00:00"
+ },
+ "feishu": {
+  "boards": [
+   {
+    "board": "tigertech/index",
+    "complete": true,
+    "error": "",
+    "jobs": 52,
+    "ok": true,
+    "parsed": 52,
+    "sample_titles": [
+     "CRM资深开发工程师",
+     "Compliance Officer",
+     "基础设施平台开发工程师（Infra Platform）"
+    ]
+   },
+   {
+    "board": "li/index",
+    "complete": false,
+    "error": "",
+    "jobs": 400,
+    "ok": true,
+    "parsed": 400,
+    "sample_titles": [
+     "海外HRBP",
+     "衍生品销售运营（新车交付端）",
+     "高级工商管理专员"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:55:36+00:00"
+ },
+ "herp": {
+  "boards": [
+   {
+    "board": "https://herp.careers/v1/csentrydemo",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "（AIR）【未経験可】カスタマーサクセス",
+     "【AIR英語】カスタマーサクセス",
+     "11.01_新卒ビジネス総合職種"
+    ]
+   },
+   {
+    "board": "https://herp.careers/v1/herpinc",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "AA00_カジュアル面談",
+     "AA01_カジュアル面談（note記事経由）",
+     "AA10_オープンポジション_Business"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:58:05+00:00"
+ },
+ "jobylon": {
+  "boards": [
+   {
+    "board": "https://emp.jobylon.com/sitemap-jobs.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "VP of Sales, Base Business Development",
+     "Cloud Engineer, Healthcare IT PACS",
+     "Vikarie  i ekonomi och juridikämnen på  Grillska Gymnasiet Västerås"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:57:18+00:00"
+ },
+ "pyjamahr": {
+  "boards": [
+   {
+    "board": "ff-inc/8AB8242C34",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Marketing Assistant",
+     "Client Services Associate",
+     "Marketing Communications Associate"
+    ]
+   },
+   {
+    "board": "office-performance/3D8DA6D669",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Inventory Associate",
+     "Services Associate",
+     "Management Trainee"
+    ]
+   },
+   {
+    "board": "pyjamahr/C9047F0152",
+    "complete": true,
+    "error": "",
+    "jobs": 2,
+    "ok": true,
+    "parsed": 2,
+    "sample_titles": [
+     "Marketing Manager",
+     "Business Development Executive"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:13+00:00"
+ },
+ "recruitify": {
+  "boards": [
+   {
+    "board": "jobs.recruitify.ai",
+    "complete": true,
+    "error": "",
+    "jobs": 1,
+    "ok": true,
+    "parsed": 1,
+    "sample_titles": [
+     "Sample"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:40+00:00"
+ },
+ "rexx": {
+  "boards": [
+   {
+    "board": "https://probat-portal.rexx-systems.com/",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Zerspanungsmechaniker (m/w/d) / Rundschleifer (m/w/d)",
+     "Facility Manager / Building Administrator (32-40 hours per week)",
+     "Key Account Manager"
+    ]
+   },
+   {
+    "board": "https://nobix-portal.rexx-systems.com/stellenangebote.html",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Account Manager (m/w/d) Region Nord",
+     "Group Controller / Senior Controller (m/w/d) bei der NOBIX Group GmbH",
+     "Regional Sales Manager (m/w/d) bei der KKS-Kemmler-Kopiersysteme GmbH"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:57:29+00:00"
+ },
+ "schoolspring": {
+  "boards": [
+   {
+    "board": "Butts County Schools",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Transportation Support Coordinator",
+     "Social Studies Teaching Position for School Year 2026-2027 - Jackson High School",
+     "Volunteer"
+    ]
+   },
+   {
+    "board": "Indian River",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Custodian (2026-2027)",
+     "Self-Care Aide, ESE (2026-2027)",
+     "Custodian (2026-2027)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:57+00:00"
+ },
+ "velora": {
+  "boards": [
+   {
+    "board": "axactor/109",
+    "complete": true,
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Asset Manager GGCC",
+     "Portfolio Analyst - Unsecured",
+     "Letrado/a Ejecuciones"
+    ]
+   },
+   {
+    "board": "grupo-batta/233",
+    "complete": true,
+    "error": "",
+    "jobs": 211,
+    "ok": true,
+    "parsed": 211,
+    "sample_titles": [
+     "Subgerente Saltillo",
+     "Cobrador en Motocicleta - COATZACOALCOS",
+     "PROMOTOR DE CREDITO"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:42+00:00"
  }
 }

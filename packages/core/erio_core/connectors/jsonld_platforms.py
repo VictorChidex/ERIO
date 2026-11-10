@@ -10,9 +10,9 @@ How each platform was found to work, and its limits, is in docs/sources.md.
 """
 
 import re
-from urllib.parse import parse_qs, urlsplit
+from urllib.parse import parse_qs, urljoin, urlsplit
 
-from erio_core.connectors.base import Connector
+from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.jsonld import JsonLdConnector
 
 
@@ -30,6 +30,22 @@ def hirebridge_details(url: str) -> str:
             f"https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid={job}&cid={client}"
         )
     return url
+
+
+class ConcludisConnector(JsonLdConnector):
+    """concludis career pages: the job list opens each job with a script call
+    (``cJobboard.openJob('...')``), not a link, and every job page carries a JobPosting."""
+
+    OPEN_JOB = re.compile(r"openJob\('([^']+)'")
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        response = fetcher.get(self.board_url(board_token))
+        if response.status != 200:
+            raise FetchError("http_error", f"HTTP {response.status}", response.status)
+        found = self.OPEN_JOB.findall(response.body.decode("utf-8", "replace"))
+        host = urlsplit(board_token).hostname
+        pages = [urljoin(board_token, url.replace("&amp;", "&")) for url in found]
+        return list(dict.fromkeys(u for u in pages if urlsplit(u).hostname == host))
 
 
 JSONLD_CONNECTORS: list[Connector] = [
@@ -60,6 +76,17 @@ JSONLD_CONNECTORS: list[Connector] = [
         page_param="page",
         listing_pages=6,
     ),
+    JsonLdConnector(
+        "airswift",
+        r"^/jobs/[a-z0-9-]+-\d+$",
+        hosts("www.airswift.com", "airswift.com"),
+        multi_employer=True,
+        page_param="page_num",
+        listing_pages=5,
+    ),
+    JsonLdConnector("herp", r"^/v1/[^/]+/[A-Za-z0-9_-]{12}$", hosts("herp.careers")),
+    JsonLdConnector("rexx", r"-j\d+\.html$", hosts("*.rexx-systems.com")),
+    ConcludisConnector("concludis", r"^/prj/shw/", hosts("*.concludis.de")),
     # Sitemaps of job URLs.
     JsonLdConnector(
         "careersitecloud",
@@ -69,6 +96,7 @@ JSONLD_CONNECTORS: list[Connector] = [
     ),
     JsonLdConnector("deel", r"/job-details/", hosts("jobs.deel.com")),
     JsonLdConnector("icims", r"^/jobs/\d+/", hosts("*.icims.com"), page_query="in_iframe=1"),
+    JsonLdConnector("jobylon", r"^/jobs/\d+-", hosts("emp.jobylon.com"), multi_employer=True),
     JsonLdConnector("jboard", r"^/jobs/\d+", multi_employer=True),
     JsonLdConnector("jobboard_com", r"^/jobs/[^/]+/\d+-", multi_employer=True),
     JsonLdConnector("jobboardfire", r"^/j/", multi_employer=True),
@@ -77,7 +105,6 @@ JSONLD_CONNECTORS: list[Connector] = [
     JsonLdConnector("niceboard", r"^/job/\d+", hosts("*.niceboard.co"), multi_employer=True),
     JsonLdConnector("nodex", r"^/job/", country_from_host=True, multi_employer=True),
     JsonLdConnector("paradox", r"/job/[0-9a-f]{32}"),
-<<<<<<< HEAD
     # Found by comparing with the reference index (docs/reference-study-jobindex.md).
     JsonLdConnector(
         "pandape",
@@ -106,7 +133,6 @@ JSONLD_CONNECTORS: list[Connector] = [
         multi_employer=True,
     ),
     JsonLdConnector("torre", r"^/post/", hosts("torre.ai"), max_pages=100, multi_employer=True),
-=======
     JsonLdConnector(
         "solidjobs",
         r"^/offer/\d+/",
@@ -114,5 +140,4 @@ JSONLD_CONNECTORS: list[Connector] = [
         multi_employer=True,
         newest_first=True,
     ),
->>>>>>> worktree-agent-ab71d95071035f588
 ]

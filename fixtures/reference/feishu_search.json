@@ -1,0 +1,229 @@
+{
+ "code": 0,
+ "data": {
+  "job_post_list": [
+   {
+    "id": "7704980319896799493",
+    "title": "音乐宣推运营经理 - 抖音音乐",
+    "sub_title": null,
+    "description": "团队介绍：团队负责字节跳动中国音乐业务，包括流媒体汽水音乐，抖音音乐、版权内容等相关业务，我们致力于成为具有影响力的音乐平台，成为让用户最容易发现音乐、了解音乐、进行音乐表达和创作、围绕音乐交流的社区。\n\n1、负责音乐类机构（厂牌方、宣传推广公司、版权机构）的宣传推广合作拓展、洽谈与签约，搭建并完善对外合作体系，与行业版权方建立长期、稳定、深度的宣传推广框架合作，并持续挖掘机构重点项目、新歌及艺人合作机会；\n2、负责音乐内容热点及潜力内容发掘，持续跟踪站内音乐趋势、艺人动态、短视频热点、用户消费变化及行业事件，识别具备增长潜力的歌曲、艺人和内容项目，并形成可执行的宣传推广及站内承接方案；\n3、",
+    "requirement": "1、本科及以上学历，1年以上音乐内容推广、音乐平台运营或内容平台运营经验，对抖音音乐内容生态、流媒体站内运营及行业营销趋势有较深入理解，能够快速识别热点和潜力内容，并沉淀为可复用方法，有爆款歌曲营销或重点音乐项目运营案例者优先；\n2、具备较强的音乐内容判断力和热点敏感度，能够结合用户数据、平台趋势、艺人及歌曲特征判断内容潜力，对新歌、艺人、音乐热点有持续关注和独立判断；\n3、掌握较丰富的音乐机构资源，包括厂牌方、宣传推广公司、版权机构等，具备突出的商务谈判、客户沟通及复杂项目推动能力；\n4、熟悉平台内容运营及流量分发逻辑，了解推荐、搜索、榜单、歌单、活动、资源位等常见站内运营机制，有音乐流媒体",
+    "job_category": {
+     "id": "6704215882479962371",
+     "name": "运营",
+     "en_name": "Operations",
+     "i18n_name": "运营",
+     "depth": 1,
+     "parent": null,
+     "children": null
+    },
+    "city_info": {
+     "code": "CT_11",
+     "name": "北京",
+     "en_name": "Beijing",
+     "location_type": null,
+     "i18n_name": "北京",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    },
+    "recruit_type": {
+     "id": "101",
+     "name": "正式",
+     "en_name": "Regular",
+     "i18n_name": "正式",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1793955702233,
+    "job_hot_flag": null,
+    "job_subject": null,
+    "code": "A256438A",
+    "department_id": null,
+    "job_function": null,
+    "job_process_id": "6694104661676411150",
+    "recommend_id": null,
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_125",
+      "name": "上海",
+      "en_name": "Shanghai",
+      "location_type": null,
+      "i18n_name": "上海",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "job_post_info": {
+     "address_list": [
+      {
+       "country": {
+        "country_code": "CN_1",
+        "name": "中国大陆",
+        "en_name": "Chinese Mainland",
+        "i18n_name": "中国大陆"
+       }
+      },
+      {
+       "country": {
+        "country_code": "CN_1",
+        "name": "中国大陆",
+        "en_name": "Chinese Mainland",
+        "i18n_name": "中国大陆"
+       }
+      }
+     ]
+    },
+    "storefront_mode": 1,
+    "storefront_list": null,
+    "process_type": 1
+   },
+   {
+    "id": "7703912320143476997",
+    "title": "豆包大模型产品解决方案架构师（行业线） - 火山方舟",
+    "sub_title": null,
+    "description": "团队介绍：火山方舟是火山引擎推出的一站式大模型服务平台，是中国大模型市场产品和份额领跑者。平台提供模型推理、评测、精调等全流程服务。方舟搭载了豆包及业界主流大模型，提供丰富的插件生态和AI应用开发服务，并通过稳定可靠的安全互信方案、专业的算法技术服务，全方位保障企业级AI应用落地。\n\n1、在各领域、各场景制定火山方舟的解决方案，并进行商业化落地；\n2、对外负责与业务拓展部门紧密合作，共同推进产品及解决方案拓展/销售过程，包括方案交流、需求分析、解决方案设计、商务合同签订、项目交付、项目验收等；\n3、对内负责与产品及研发部门沟通协调，促进解决方案落地及产品迭代，包括商务模式、项目进度、产品及服务",
+    "requirement": "1、本科及以上学历，计算机、通信、人工智能等相关专业优先；\n2、5年以上AI To B解决方案或项目管理工作经验，独立运作过项目解决方案；\n3、具备行业客户AI项目工作经验，在金融、汽车、消费零售、医疗、教育、政企、制造等至少一个行业，主导或深度参与过AI项目的全流程落地，熟悉该行业的业务流程与核心痛点；有大模型/生成式AI行业项目落地经验者优先；\n4、具备良好的项目管理能力及组织协调能力，数字导向；\n5、了解生成式人工智能的最新行业动态、应用方向，对生成式人工智能短、中、长期在各领域落地的路径和可行性有自己的判断。",
+    "job_category": {
+     "id": "6704215864629004552",
+     "name": "产品",
+     "en_name": "Product",
+     "i18n_name": "产品",
+     "depth": 1,
+     "parent": null,
+     "children": null
+    },
+    "city_info": {
+     "code": "CT_11",
+     "name": "北京",
+     "en_name": "Beijing",
+     "location_type": null,
+     "i18n_name": "北京",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    },
+    "recruit_type": {
+     "id": "101",
+     "name": "正式",
+     "en_name": "Regular",
+     "i18n_name": "正式",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1793707128844,
+    "job_hot_flag": null,
+    "job_subject": null,
+    "code": "A46947",
+    "department_id": null,
+    "job_function": null,
+    "job_process_id": "6694104661676411150",
+    "recommend_id": null,
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_125",
+      "name": "上海",
+      "en_name": "Shanghai",
+      "location_type": null,
+      "i18n_name": "上海",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_128",
+      "name": "深圳",
+      "en_name": "Shenzhen",
+      "location_type": null,
+      "i18n_name": "深圳",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "job_post_info": {
+     "address_list": [
+      {
+       "country": {
+        "country_code": "CN_1",
+        "name": "中国大陆",
+        "en_name": "Chinese Mainland",
+        "i18n_name": "中国大陆"
+       }
+      },
+      {
+       "country": {
+        "country_code": "CN_1",
+        "name": "中国大陆",
+        "en_name": "Chinese Mainland",
+        "i18n_name": "中国大陆"
+       }
+      },
+      {
+       "country": {
+        "country_code": "CN_1",
+        "name": "中国大陆",
+        "en_name": "Chinese Mainland",
+        "i18n_name": "中国大陆"
+       }
+      }
+     ]
+    },
+    "storefront_mode": 1,
+    "storefront_list": null,
+    "process_type": 1
+   }
+  ],
+  "count": 10000,
+  "extra": "{\"fe_tracking\":{\"log_id\":\"202611110326234254BB6714B5B06FBE9B\",\"query_length\":0,\"total\":10000}}"
+ },
+ "message": "ok",
+ "error": null
+}

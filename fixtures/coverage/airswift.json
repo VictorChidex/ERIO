@@ -1,0 +1,116 @@
+[
+ {
+  "source_slug": "airswift",
+  "board_token": "https://www.airswift.com/jobs",
+  "external_id": "1f28fe5c40d510d28b3eb5b8",
+  "payload": {
+   "page_url": "https://www.airswift.com/jobs/maintenance-planner-scheduler-i-1282720",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Maintenance Planner / Scheduler I",
+    "description": "Vacancy Overview Airswift is an international workforce solutions provider within the energy, process and infrastructure industries. Airswift serves as a strategic partner to our clients, offering a turnkey workforce solution to capture and deliver the top talent needed to complete successful projects by aligning with the unique needs of our clients. With over 800 employees and 6,000 contractors operating in over 50 countries, our geographical reach and pool of talent available is unmatched in the industry and the level of experience, exposure, and expertise that the organization has is unparalleled. Job Title: Maintenance Planner &amp; Scheduler I Duration: 1 year Schedule: 06:30 - 16:30 EST, overtime beyond 40 hours per week (5x40) Location: New Jersey (Paulsboro), United States This opportunity supports maintenance operations within a lubricants manufacturing plant, focused on planning and scheduling work execution, maintaining CMMS data in SAP, and helping drive safe and efficient department performance. The role sits within a technical plant environment and offers the chance to contribute to maintenance planning, preventive maintenance coordination, work order control, and operational support across the site. This position will suit professionals with experience in SAP, maintenance work environments, and planning and scheduling activities within industrial operations. Required Experience: Experience using SAP and relevant CMMS systems within a maintenance environment Experience in maintenance planning, scheduling, and work execution Experience working within plant operations and understanding business goals in an industrial setting Experience maintaining notifications and work order data Experience supporting preventive maintenance planning and work order prioritization Required Skills: Strong SAP knowledge and CMMS capability Knowledge of maintenance work environments and associated tasks Planning, scheduling, and work execution skills Ability to monitor and manage work order submission and prioritisation Ability to generate monthly maintenance metrics Ability to coordinate with internal stakeholders to support materials, parts, and equipment availability Administrative support capability within a maintenance function Awareness of safety, health, environmental, and regulatory compliance requirements #LI-AG3",
+    "datePosted": "2026-10-31",
+    "validThrough": "2027-01-09",
+    "employmentType": "Contract",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Airswift",
+     "sameAs": "https://www.airswift.com/",
+     "logo": "https://www.airswift.com/hubfs/mj-assets/images/airswift-logo%202.svg"
+    },
+    "industry": {
+     "name": "Oil & Gas - Midstream"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Paulsboro",
+      "addressRegion": "New Jersey",
+      "postalCode": "1",
+      "addressCountry": "United States"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:57:46.349766Z",
+  "content_hash": "0a3b5a1a14331ac2dea8e5dc64ba81b441c734ef7b150850b13e84faf89c39e6"
+ },
+ {
+  "source_slug": "airswift",
+  "board_token": "https://www.airswift.com/jobs",
+  "external_id": "9b5cb69ce6ea1b6d4d6a7c9b",
+  "payload": {
+   "page_url": "https://www.airswift.com/jobs/inventory-analyst-i-1283198",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Inventory Analyst I",
+    "description": "Job Title: Inventory Analyst I Duration: 1-year Schedule: 5/40 Location: Bartlesville, Oklahoma This opportunity offers the chance to support materials management and inventory optimisation activities within a technical office-based environment. The role focuses on inventory analysis, SAP MM processes, material master support, and stakeholder collaboration to help maintain efficient stock control and materials performance. This position will contribute to daily operational continuity while supporting process improvement and effective materials management across site and business functions. Required Education: High school diploma or GED equivalent Required Experience: Relevant experience using analytical tools and techniques Background in materials management and inventory-related processes Experience supporting inventory optimisation, stock control, or materials data activities Required Skills: Strong understanding of materials management tools, concepts and methods Working knowledge of SAP Materials Management Ability to manage material creation and change requests within structured systems and workflows Strong communication skills, both verbal and written, with the ability to present ideas in an organised manner Strong interpersonal skills with the ability to influence across multiple disciplines Strong project management skills with the ability to manage multiple priorities and deliver planned outcomes Ability to collaborate effectively with warehouse personnel, category managers and business stakeholders Basic Excel capability Ability to learn new tools quickly and work with minimal supervision after onboarding Preferred Qualifications: Associate’s degree from an accredited college or university Inventory management experience Knowledge of refinery, chemical plant, midstream, industrial, or similar operational environments Experience with master data governance systems Experience using ServiceNow Experience with inventory management tools and systems such as Oniqua Proficient computer skills with experience formulating reports and extracting data from systems including SAP, Microsoft Access and Microsoft Excel Familiarity with AI tools or openness to learning AI solutions About Airswift: Airswift is an international workforce solutions provider within the energy, process and infrastructure industries. Airswift serves as a strategic partner to clients, offering a turnkey workforce solution to capture and deliver the top talent needed to complete successful projects by aligning with unique project needs. With over 1000 employees and 9,000 contractors operating in over 60 countries, Airswift's geographical reach and pool of talent available is unmatched in the industry. #LI-BF2",
+    "datePosted": "2026-11-10",
+    "validThrough": "2027-01-09",
+    "employmentType": "Contract",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Airswift",
+     "sameAs": "https://www.airswift.com/",
+     "logo": "https://www.airswift.com/hubfs/mj-assets/images/airswift-logo%202.svg"
+    },
+    "industry": {
+     "name": "Oil & Gas - Downstream"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bartlesville",
+      "addressRegion": "Oklahoma",
+      "postalCode": "1",
+      "addressCountry": "United States"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:57:47.515492Z",
+  "content_hash": "f4aad4ad66a8892f98c9a35a4162d7cff2b6ff0678d142a5062e7250e8a77eb6"
+ },
+ {
+  "source_slug": "airswift",
+  "board_token": "https://www.airswift.com/jobs",
+  "external_id": "ce0dab2f1680999a391e7c63",
+  "payload": {
+   "page_url": "https://www.airswift.com/jobs/staff-electrical-engineer-1283191",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Staff Electrical Engineer ",
+    "description": "Job Title: Staff Electrical Engineer Duration: 6-month assignment with possibility of extension Schedule: 8am - 5pm EST or 9am - 6pm EST; Hybrid - 4 days in office (Mon-Thu), Friday remote Location: Chesapeake, Virginia, United States (Hybrid) This opportunity sits within an advanced engineering environment focused on complex power and control systems for underwater robotic and electromechanical applications. The role offers involvement across concept development, analysis, simulation, design, integration, troubleshooting, and testing, with close collaboration across electrical, mechanical, software, and systems engineering teams. This position is well suited to candidates seeking hands-on technical ownership in a project setting where DC power systems, embedded control systems, industrial communications, and detailed electrical design are central to delivery. Required Education: Bachelor of Science or advanced degree from an accredited university in Electrical or Electronic Engineering, or a related discipline with an electrical concentration such as Computer Engineering or Robotics Engineering Required Experience: Minimum 10+ years of practical technical experience across concept, analysis, simulation, design, drawing, assembly, integration, troubleshooting, and testing of complex electrical, electromechanical, and automated or robotic systems Experience producing significant portions of electrical and control system designs for complex systems or subsystems Experience leading, supervising, or mentoring small to medium engineering teams in support of project objectives Experience working from high-level or incomplete requirements to develop robust engineering solutions with sound technical judgement and attention to system-level performance Required Skills: Strong capability in electrical and control system design for complex engineered systems Experience selecting and integrating commercial off-the-shelf equipment and designing required interfaces Knowledge of current electrical and electronic components and wiring devices including signal conditioning, power supplies, control devices, switching devices, SSRs, safety devices, terminal blocks, connectors, DIN rail, wiring, cabling, and marshalling Experience with embedded microprocessor and single-board computer based control systems, including I/O definition, sensors, actuators, and custom electrical design where needed Experience designing and integrating communications interfaces including Ethernet, USB, RS-232, RS-422, RS-485, SPI, I2C, and CAN in potentially high-noise environments Experience with DC power systems design, including estimating system power and energy requirements Knowledge of wiring, cabling, and grounding practices to minimise electrical noise and EMI Strong electrical drafting capability, including schematics, wiring diagrams, cable drawings, system cabling, and block diagrams Proficiency with electronic test equipment such as multimeters, oscilloscopes, power analyzers, communications analyzers, insulation testers, spectrum analyzers, CTDR, OTDR, and optical power meters Proficiency with engineering and analysis tools such as Altium Designer, SPICE, AutoCAD, SolidWorks, SolidWorks Electrical, MathCAD, and MATLAB Strong written and verbal communication skills with the ability to document and present technical concepts clearly Ability to work effectively in collaboration with multidisciplinary engineering teams Required Certifications: Ability to obtain and maintain a United States Government Department of Defense Security Clearance Preferred Qualifications: Experience in marine or underwater technology environments, including ROVs, AUVs, sonar systems, and related robotic or electromechanical systems Working knowledge of applicable professional, technical, and military standards including IEEE, ANSI, IEC, ISO, NEMA, NEC, and MIL standards Practical technician skills including assembly, wiring, soldering, and cabling Experience with fiber-optics Experience with printed circuit board design Experience with brushless motor drives, robotics, and automation Experience designing, analysing, and tuning closed-loop feedback control systems Experience with low- to medium-voltage single-phase and three-phase power systems Experience applying machine safety systems and standards Experience with programming languages or script writing Flexibility to travel on occasion for up to one to two weeks at a time, including domestic, international, or offshore travel About Airswift: Airswift is an international workforce solutions provider within the energy, process and infrastructure industries. Airswift serves as a strategic partner to clients, offering a turnkey workforce solution to capture and deliver the top talent needed to complete successful projects by aligning with unique project needs. With over 1000 employees and 9,000 contractors operating in over 60 countries, Airswift's geographical reach and pool of talent available is unmatched in the industry. #LI-MG1",
+    "datePosted": "2026-11-10",
+    "validThrough": "2027-01-09",
+    "employmentType": "Contract",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Airswift",
+     "sameAs": "https://www.airswift.com/",
+     "logo": "https://www.airswift.com/hubfs/mj-assets/images/airswift-logo%202.svg"
+    },
+    "industry": {
+     "name": "Oil & Gas - Onshore Oil"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chesapeake",
+      "addressRegion": "Virginia",
+      "postalCode": "1",
+      "addressCountry": "United States"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:57:48.532995Z",
+  "content_hash": "308fb47451df05f3153e3b4ccd1741a882ecdbd9cf4b8bdfbd973c94ead4e49e"
+ }
+]

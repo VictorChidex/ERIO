@@ -1,0 +1,45 @@
+[
+ {
+  "source_slug": "recruitify",
+  "board_token": "jobs.recruitify.ai",
+  "external_id": "d0e29593-9189-4e0c-83f3-94dc95dc306b",
+  "payload": {
+   "listed": {
+    "guid": "d0e29593-9189-4e0c-83f3-94dc95dc306b",
+    "name": "Sample",
+    "published": "2026-09-01T13:00:49.273Z",
+    "isPromoted": false,
+    "dateFrom": "2026-09-01T00:00:00Z",
+    "dateTo": "2026-10-01T00:00:00Z",
+    "description": "",
+    "location": [],
+    "country": [],
+    "referenceId": "100083963",
+    "remoteInterview": false,
+    "tradeId": 34,
+    "allowApply": true
+   },
+   "detail": {
+    "guid": "d0e29593-9189-4e0c-83f3-94dc95dc306b",
+    "name": "Sample",
+    "published": "2026-09-01T13:00:49.273",
+    "isPromoted": false,
+    "dateFrom": "2026-09-01T00:00:00Z",
+    "dateTo": "2026-10-01T00:00:00Z",
+    "description": "<p><strong>Marketing Manager</strong></p><p>We are looking for an experienced <strong>Marketing Manager</strong> to lead our marketing activities, build brand awareness, and support business growth.</p><p><strong>Key responsibilities:</strong></p><ul><li><ul><li>Develop and execute the annual marketing strategy.</li><li>Plan and manage digital campaigns across Google Ads, LinkedIn, Meta, and other channels.</li><li>Monitor key KPIs, including:</li><li>website traffic,</li><li>MQLs and SQLs,</li><li>conversion rates,</li><li>CPL / CAC,</li><li>marketing ROI.</li><li>Work closely with Sales to improve lead generation and pipeline development.</li><li>Coordinate content creation, webinars, events, and social media activities.</li><li>Manage external agencies, freelancers, and technology partners.</li><li>Analyze campaign performance and recommend improvements.</li></ul></li></ul><p><strong>Requirements:</strong></p><ul><li><ul><li>4+ years of experience in marketing.</li><li>Experience with B2B marketing and lead generation.</li><li>Strong knowledge of digital marketing tools.</li><li>Hands-on experience with Google Analytics, CRM, and marketing automation.</li><li>Excellent communication and project-management skills.</li><li>English: <strong>B2/C1</strong>.</li></ul></li></ul><p><strong>Nice to have:</strong></p><ul><li><ul><li>SaaS or technology-sector experience;</li><li>experience with HubSpot or Salesforce;</li><li>knowledge of SEO/SEM;</li><li>experience managing a marketing budget of €100k+ per year.</li></ul></li></ul><p><strong>What we offer:</strong></p><ul><li><ul><li>Competitive salary + performance bonus.</li><li>Hybrid work: 2–3 days remotely per week.</li><li>Private healthcare &amp; training budget.</li><li>Flexible working hours.</li><li>Real influence on marketing strategy and company growth.</li></ul></li></ul><p><strong>Location:</strong> Warsaw / Hybrid</p><p> <strong>Employment:</strong> Full-time</p><p> <strong>Start date:</strong> ASAP</p><p><br></p>",
+    "location": [],
+    "country": [],
+    "referenceId": "100083963",
+    "remoteInterview": false,
+    "tradeId": 34,
+    "ogTitle": "https://www.recruitify.ai/en",
+    "ogDescription": "https://www.recruitify.ai/en",
+    "ogImageUrl": "https://rgcimagestore.azureedge.net/f3da4d1ab8c41cc2a5b0fdf1e2bc4ee4/881318f0-24a4-4d03-bce6-3da3a626c519.png",
+    "allowApply": true
+   },
+   "company": "Recruitify"
+  },
+  "fetched_at": "2026-11-10T19:56:38.938354Z",
+  "content_hash": "adcd8fb5780da4d75c1f22deb443d318171478dd3917ba86e9a3ceac62428290"
+ }
+]

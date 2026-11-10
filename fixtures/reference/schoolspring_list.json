@@ -1,0 +1,25 @@
+{
+ "success": true,
+ "message": "",
+ "validationErrors": [],
+ "value": {
+  "page": 1,
+  "size": 2,
+  "jobsList": [
+   {
+    "jobId": 5988682,
+    "employer": "Butts County Schools",
+    "title": "Transportation Support Coordinator",
+    "location": "Jackson, Georgia",
+    "displayDate": "2026-11-10T19:07:58"
+   },
+   {
+    "jobId": 5988412,
+    "employer": "Butts County Schools",
+    "title": "Social Studies Teaching Position for School Year 2026-2027 - Jackson High School",
+    "location": "Jackson, Georgia",
+    "displayDate": "2026-11-10T17:08:24"
+   }
+  ]
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "success": true,
+ "message": "",
+ "validationErrors": [],
+ "value": {
+  "jobInfo": {
+   "jobId": 5988682,
+   "jobTitle": "Transportation Support Coordinator",
+   "infoURL": "http://www.applitrack.com/butts/OnlineApp/JobPostings/view.asp?AppliTrackJobId=1704",
+   "externalJobCode": "1704",
+   "applicationDeadline": null,
+   "displayDate": "2026-11-10T19:07:58",
+   "internalDisplayDate": null,
+   "postDate": "2026-11-10T19:07:58",
+   "startDateShowDay": 99,
+   "startDate": null,
+   "jobStatusID": 30,
+   "unionID": 0,
+   "unionName": null,
+   "jobDescription": "<p><span style=\"font-family:'Times New Roman', Times, serif;font-size:12px;\"><i><strong>The Butts County School System is seeking applicants for a Transportation Support Coordinator in the Butts County School System's Transportation Department.</strong></i></span><br>&nbsp;</p><p><span style=\"color:hsl(0,0%,0%);font-family:'Times New Roman', Times, serif;font-size:12px;\"><strong>Position Type:</strong></span><br><span style=\"background-color:transparent;color:hsl(0,0%,0%);font-family:'Times New Roman', Times, serif;font-size:12px;\"><strong>Transportation Support Coordinator</strong></span><br>",
+   "jobTypeName": "Full-time",
+   "positions": 0,
+   "payDisplay": 0,
+   "payMin": null,
+   "payMax": null,
+   "payTypeName": "Per Year",
+   "employerID": 110024,
+   "employerTypeID": 20,
+   "employerName": "Butts County Schools",
+   "employerDescription": null,
+   "employerShowImage": 0,
+   "eoeStatement": "x",
+   "requirements": null,
+   "experienceRequired": null,
+   "degreePreferred": 0,
+   "eligibleRequired": 0,
+   "degreeTypeName": "Not Provided",
+   "instructions": null,
+   "internalQuestionsRequired": 0,
+   "employerAccountTypeID": 21,
+   "stateName": "Georgia",
+   "countryName": "United States",
+   "shiftType": null,
+   "salaryCode": null,
+   "displayEmployer": "Butts County Schools",
+   "closeDate": "2050-12-31T23:59:00",
+   "timeZone": null,
+   "internalCloseDate": null,
+   "employmentStartDateTBD": false,
+   "activeEmployer": true
+  },
+  "jobCategories": [
+   {
+    "category": "Administration",
+    "subCategory": "Director/Coordinator/Manager"
+   },
+   {
+    "category": "Administration",
+    "subCategory": "Transportation"
+   }
+  ],
+  "applicationQuestions": null,
+  "jobBoards": [
+   {
+    "jobBoardName": "Georgia Department of Education",
+    "jobBoardUrl": "https://teachgeorgia.schoolspring.com"
+   }
+  ],
+  "jobLocations": [
+   {
+    "locationID": 238720,
+    "locationName": "Butts County Schools",
+    "displayLocation": "Jackson, Georgia",
+    "latitude": 33.2964,
+    "longitude": -83.9669,
+    "locationDescription": null,
+    "locationShowImage": 0
+   }
+  ],
+  "baseDomainURL": null,
+  "jobApplicationId": null,
+  "jobApplicationStatusId": null,
+  "jobBoardDistrict": false,
+  "formattedExternalCloseDate": "Posted until filled",
+  "formattedInternalCloseDate": null,
+  "isAtsJob": false,
+  "jobApplicationDate": null
+ }
+}

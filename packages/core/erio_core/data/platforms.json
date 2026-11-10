@@ -1348,5 +1348,134 @@
   "blocked": "Career sites are built per employer; inploi's own (careers.inploi.com) lists no jobs and has an empty sitemap, and no employer site with jobs, feed or API was found.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "cats",
+  "name": "CATS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career portals on {account}.catsone.com are rendered on the server and read page by page; CATS's own API needs a key and is not used. Token is account/portalId.",
+  "examples": [
+   "warnerpacific/1611",
+   "gmcc/45645"
+  ]
+ },
+ {
+  "slug": "clearcompany",
+  "name": "HRM Direct / ClearCompany",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Old {tenant}.hrmdirect.com addresses redirect to apply.clearcompany.com/{tenant}; jobs come from the public job widget's feed, which the career page names by its site id.",
+  "examples": [
+   "coopereic",
+   "pmic"
+  ]
+ },
+ {
+  "slug": "concludis",
+  "name": "concludis",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the job list of a *.concludis.de career page and the JobPosting data on each job page. Boards that redirect to a customer's own domain are not read; only one live list board was found, so a second is still needed.",
+  "examples": [
+   "https://saarstahl.concludis.de/prj/lst/a181a603769c1f98ad927e7367c7aa51/Alle.htm"
+  ]
+ },
+ {
+  "slug": "feishu",
+  "name": "Feishu Hire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the anonymous CSRF token the site issues to every visitor, then the search the career site itself calls; no login. Token is tenant/path. A big board (ByteDance, Li Auto) is read in part and reported incomplete.",
+  "examples": [
+   "tigertech/index",
+   "li/index"
+  ]
+ },
+ {
+  "slug": "herp",
+  "name": "HERP",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the schema.org JobPosting data on each job page linked from a herp.careers/v1/{company} list.",
+  "examples": [
+   "https://herp.careers/v1/csentrydemo",
+   "https://herp.careers/v1/herpinc"
+  ]
+ },
+ {
+  "slug": "pyjamahr",
+  "name": "PyjamaHR",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career-page API of jobs.pyjamahr.com; PyjamaHR's account API needs a token and is not used. Token is company slug/company uuid from the career page's data.",
+  "examples": [
+   "ff-inc/8AB8242C34",
+   "office-performance/3D8DA6D669",
+   "pyjamahr/C9047F0152"
+  ]
+ },
+ {
+  "slug": "recruitify",
+  "name": "Recruitify",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The portal's API picks the company by the portal address (Origin header). Only Recruitify's own portal was found, and its single job is a sample, so a second live board is still needed.",
+  "examples": [
+   "jobs.recruitify.ai"
+  ]
+ },
+ {
+  "slug": "rexx",
+  "name": "rexx systems",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads schema.org JobPosting data on each job page of a {customer}-portal.rexx-systems.com career portal.",
+  "examples": [
+   "https://nobix-portal.rexx-systems.com/stellenangebote.html",
+   "https://probat-portal.rexx-systems.com/"
+  ]
+ },
+ {
+  "slug": "velora",
+  "name": "Velora HR",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the anonymous career-site API (api.velorahr.com/api/public/career-site/{id}/offers). Token is subdomain/id from the career-site address.",
+  "examples": [
+   "axactor/109",
+   "grupo-batta/233"
+  ]
+ },
+ {
+  "slug": "jobylon",
+  "name": "Jobylon",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public job pages of emp.jobylon.com from its sitemap (schema.org JobPosting); robots.txt allows crawlers. Credit: link each job back to its Jobylon page.",
+  "examples": [
+   "https://emp.jobylon.com/sitemap-jobs.xml"
+  ]
+ },
+ {
+  "slug": "schoolspring",
+  "name": "SchoolSpring",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The anonymous API behind schoolspring.com (api.schoolspring.com); the token is an employer name used as the site's own search keyword. Credit: link each job back to its SchoolSpring page.",
+  "examples": [
+   "Butts County Schools",
+   "Indian River"
+  ]
+ },
+ {
+  "slug": "airswift",
+  "name": "Airswift Jobs",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The staffing firm's own job pages (schema.org JobPosting), listed on airswift.com/jobs; robots.txt allows them. Credit: link each job back to its Airswift page.",
+  "examples": [
+   "https://www.airswift.com/jobs"
+  ]
  }
 ]
