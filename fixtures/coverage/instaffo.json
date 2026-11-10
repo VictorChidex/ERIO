@@ -1,0 +1,134 @@
+[
+ {
+  "source_slug": "instaffo",
+  "board_token": "https://jobs.instaffo.com/sitemap-jobs.xml",
+  "external_id": "e73ebb8dd77eeb5e101eaf77",
+  "payload": {
+   "page_url": "https://jobs.instaffo.com/en/job/junior-it-consultant-m-f-d-5b3d78bc1bd5",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Junior IT Consultant (m/f/d)",
+    "description": "<h1>Junior IT Consultant (m/f/d)</h1><p>As a Junior Consultant, you'll work right alongside our experts on challenging, varied projects from day one. You'll learn on the job, supported by hands-on mentoring from experienced branch veterans who help you grow your skills in modern technologies like Python, Java, Rust, and Go.Expect flat hierarchies, flexible working hours and a motivated, talented team where a self-reliant working style is encouraged - and rewarded., In collaboration with our Senior Consultants, you will design complex IT architectures and implement them as part of our team.\nYou support our teams on projects in risk management, trading, infrastructure, and frontend and backend software development.\nYou get to know a wide range of clients and diverse subject areas, such as digitalization, big data, data science, and global data traffic - applied to finance-related topics., You are studying computer science, electrical engineering or a comparable course of study.\nYou have basic knowledge in the areas of statistics, stochastics or machine learning.\nYou have first experiences with a modern programming language such as Python, Java, Rust or Go., Initial Meeting\nOnline Interview\nMeeting in Person</p><br/><h1>Fähigkeiten</h1><p>Java, C++, C#, IT Architektur, Software Architecture, Machine Learning, Statistics, Go, Golang, Python, IT Consulting, IT Projektmanagement, OOP</p>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Instaffo",
+     "value": "junior-it-consultant-m-f-d-5b3d78bc1bd5"
+    },
+    "datePosted": "2026-08-26",
+    "validThrough": "2027-11-10",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "UCG United Consulting Group GmbH",
+     "logo": "https://app.instaffo.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDAzMTQsInB1ciI6ImJsb2JfaWQifX0=--60e3313efa8353e93af215951bf756f223d5d91a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemUiOiIyMjV4MjI1IiwiY3JvcCI6IjIyNXgyMjUrMCswIiwiZ3Jhdml0eSI6IkNlbnRlciJ9LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1dd2bea4875220557fd17d44d9ee73778bc4a708/blob",
+     "sameAs": "https://ucg.de/"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frankfurt am Main",
+      "postalCode": "65929",
+      "addressCountry": "DE"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.1109221",
+      "longitude": "8.6821267"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:51.440149Z",
+  "content_hash": "2fcb1a6abead3032dcd8a2ace665a3d83baacee16a0b903d1f320b628bf55cb5"
+ },
+ {
+  "source_slug": "instaffo",
+  "board_token": "https://jobs.instaffo.com/sitemap-jobs.xml",
+  "external_id": "e51024b36d8c88c03548be7b",
+  "payload": {
+   "page_url": "https://jobs.instaffo.com/en/job/java-softwareentwickler-full-stack-m-w-d-08d2c6930c58",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Softwareentwickler - Schwerpunkt Angular (m/w/d)",
+    "description": "<h1>Softwareentwickler - Schwerpunkt Angular (m/w/d)</h1><p>In Rekordzeit von Präsenz-Büroalltag in einen komplett virtuellen Arbeitsmodus zu wechseln, war eine gesamtgesellschaftliche Herausforderung – am Ende des Tages für ein IT-Unternehmen wie uns aber kein Problem. Auch neue Leute einzustellen und im Homeoffice zu onboarden, ließ sich dank extrem engagierter Teams recht locker bewerkstelligen.Von daher gilt auch für dich: Arbeite, von wo auch immer du dich gerade befindest; solange du eine funktionierende Internetverbindung hast, überlassen wir die Wahl des Arbeitsplatzes allein dir!, Du entwickelst smarte Softwareprodukte mit End-to-End Verantwortung, überblickst den gesamten Entwicklungsprozess und arbeitest u.a. mit Pair-Programming, Code Reviews und Testautomatisierung an Lösungen auf höchstem Qualitäts-Niveau.Tech-Stack (priorisiert): Angular, TypeScript, Java Spring Boot, HTML/JS, JPA, SQL, Microservices, Git, Gradle, Jenkins, CI/CD, Docker, REST, SOAP, Angular und Java sprichst Du fast so gut wie Deine Muttersprache.Du machst lieber Deinen Code Clean als Deine Küche.„Ein Team ist mehr als die Summe Seiner Teile“ ist Dein alltägliches Mantra.Ein Tag, an dem Du nichts Neues lernst ist für Dich wie ein verlorener Tag.Du findest, dass ohne stetige Veränderung das Leben recht langweilig wäre., Wir sind crossfunktionale schnelle Eingreiftruppe für unterschiedlichste Projekte anspruchsvoller Kunden. Mal bauen wir ein MVP, eine App, eine ganze Applikation oder spezielle Features. Oder wir bekommen einen Lehrauftrag für ein neue...</p><br/><h1>Fähigkeiten</h1><p>HTML, SQL, Git, Jenkins, Docker, Rest, SOAP, TypeScript, Angular, Java</p>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Instaffo",
+     "value": "java-softwareentwickler-full-stack-m-w-d-08d2c6930c58"
+    },
+    "datePosted": "2020-10-14",
+    "validThrough": "2027-11-10",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "BRANDAD Group AG",
+     "logo": "https://app.instaffo.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NjY2NTUzLCJwdXIiOiJibG9iX2lkIn19--b2d0fe668d75af1cf2e968d7da7bcffe95164c30/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemUiOiIyMjV4MjI1IiwiY3JvcCI6IjIyNXgyMjUrMCswIiwiZ3Jhdml0eSI6IkNlbnRlciJ9LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1dd2bea4875220557fd17d44d9ee73778bc4a708/blob",
+     "sameAs": "https://brandad.dev/"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fürth",
+      "postalCode": "90762",
+      "addressCountry": "DE"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "49.4771169",
+      "longitude": "10.988667"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:51.655697Z",
+  "content_hash": "1808d48f6509d6e61a4fdd1b6f7a82825a909f6629ef3a8e9f2f7ee1030da1b8"
+ },
+ {
+  "source_slug": "instaffo",
+  "board_token": "https://jobs.instaffo.com/sitemap-jobs.xml",
+  "external_id": "e9aed7bf39f08f3714c1eee0",
+  "payload": {
+   "page_url": "https://jobs.instaffo.com/en/job/product-owner-m-w-d-9e5b1694cbe0",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Product Manager Automation & Growth (m/w/d)",
+    "description": "<h1>Product Manager Automation & Growth (m/w/d)</h1><p>HEY DU! Wir suchen Dich als Product Manager Automation & Growth (m/w/d) in Voll- oder Teilzeit an unserem Standort im Herzen von München. Du siehst einen manuellen Prozess und denkst sofort, dass man das automatisieren kann? Du willst mit smartem KI-Einsatz Stunden im Team sparen und echten Umsatz bewegen? Du gibst Dich nicht damit zufrieden, ein Problem zu beschreiben, sondern willst es gelöst sehen? Dann bist Du bei uns goldrichtig!, Durch smarte Automatisierung machst Du unsere Prozesse effizienter und holst gleichzeitig Conversion aus unserem Shop, um Kartenliebe schneller und profitabler zu machen als den Wettbewerb\nDu sprichst mit den Menschen, die täglich in den Prozessen stecken, also Kundenservice, Grafik, Produktion und Marketing, und findest heraus, wo Zeit, Geld und Nerven verloren gehen\nVibe Coding ist für Dich kein Buzzword sondern Mittel zum Zweck, um mit Claude Code, ChatGPT, n8n etc. das Maximum an Effizienz rauszuholen\nDu findest gemeinsam mit unserem Entwicklerteam die größten Conversion Treiber entlang der Customer Journey, formulierst Hypothesen, bringst A/B Tests live und iterierst auf Basis der Ergebnisse\nDu gräbst Dich so tief in die Zahlen, bis Du die Zusammenhänge wirklich verstehst, und leitest daraus Deine Roadmap und Deine Prioritäten ab\nDu bringst Deine Themen bis zur Ziellinie, inklusive Rollout, Einführung im Team und Nachmessen, ob der versprochene Effekt wirklich eintritt, Du bringst mindestens 3 Jahre Erfahrung als Product Manager, Produc...</p><br/><h1>Fähigkeiten</h1><p>Produktmanagement, Agile Methoden, Roadmapping, Agiles Projektmanagement, Product Management, Product Owner, Confluence, Jira</p>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Instaffo",
+     "value": "product-owner-m-w-d-9e5b1694cbe0"
+    },
+    "datePosted": "2025-03-31",
+    "validThrough": "2027-11-10",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "ALL IN Group GmbH (myposter)",
+     "logo": "https://app.instaffo.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIwMDM2MTgsInB1ciI6ImJsb2JfaWQifX0=--d2241ede7361c32458a5c91ecb72fed90bd511ee/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemUiOiIyMjV4MjI1IiwiY3JvcCI6IjIyNXgyMjUrMCswIiwiZ3Jhdml0eSI6IkNlbnRlciJ9LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1dd2bea4875220557fd17d44d9ee73778bc4a708/filename.jpg",
+     "sameAs": "https://www.all-in-group.com/"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "München",
+      "postalCode": "80335",
+      "addressCountry": "DE"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "48.1481446",
+      "longitude": "11.556786"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:52.691938Z",
+  "content_hash": "4e839046e612c43309498eb76d8a9acdb0e94533ae88b6b3176111cc8e5e0ee4"
+ }
+]

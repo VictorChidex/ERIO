@@ -1,0 +1,571 @@
+[
+ {
+  "source_slug": "torre",
+  "board_token": "https://torre.ai/sitemap-index.xml",
+  "external_id": "9d4d915848dc879708e78605",
+  "payload": {
+   "page_url": "https://torre.ai/post/6WaM6nRW-fab-international-recruiter",
+   "posting": {
+    "@type": "JobPosting",
+    "@context": "https://schema.org/",
+    "title": "International Recruiter",
+    "employmentType": [
+     "CONTRACTOR",
+     "PART_TIME"
+    ],
+    "description": "<p>International Recruiter &mdash; Commission-Based<br/>Remote | Freelance \\/ Flexible Arrangement<br/>Company: Fab <br/>Location: Remote<br/>Compensation: US$450 for every 150 verified successful hires, equivalent to US$3 per qualifying hire, under the agreed commission terms.<br/><br/>About the opportunity<br/>Fab is looking to hire international recruiters for a multinational client who can help identify and attract qualified candidates for remote Graduate Sales Executive positions and Marketers.<br/><br/>This opportunity is suitable for individuals with strong online research and candidate outreach skills.<br/><br/>You will help us connect suitable candidates with an international sales career opportunity while working remotely and managing your own sourcing activities.<br/><br/>Key responsibilities<br/>Identify potential candidates in your assigned countries and professional communities.<br/>Source applicants through LinkedIn, job boards, graduate networks, online communities and referrals.<br/>Share accurate job descriptions and compensation information with prospective applicants.<br/>Review CVs and LinkedIn profiles against agreed selection criteria.<br/>Conduct initial screening and confirm English proficiency, interest and availability.<br/>Explain the distinction between the part-time sales and full-time sales\\/project management roles.<br/>Submit complete, relevant candidate profiles through the designated recruitment process.<br/>Coordinate interviews and follow up with candidates throughout the hiring process.<br/>Maintain accurate records of candidate sources, applications, interviews and outcomes.<br/>Protect candidate information and comply with applicable privacy requirements.<br/><br/>What we offer<br/>A remote, flexible recruitment opportunity.<br/>Commission-based earnings linked to qualifying successful hires.<br/>The opportunity to source candidates across multiple international markets.<br/>Clear job descriptions, candidate criteria and recruitment procedures.<br/><br/>Ideal Candidate<br/>Experience in recruitment, talent sourcing, HR, sales or candidate outreach is an advantage.<br/>Able to find and communicate with candidates through online platforms.<br/>Strong written communication and organizational skills.<br/>Comfortable screening CVs and assessing basic role suitability.<br/>Reliable follow-up and accurate record keeping.<br/>Professional approach to candidate privacy and honest representation of the opportunity.<br/>Access to relevant professional, graduate or recruitment networks.<br/>Previous recruitment experience is preferred but not essential if you can demonstrate effective sourcing and communication skills.<br/><br/>Commission structure<br/>The proposed commission is US$450 for each completed block of 150 qualifying hires.<br/>What we&rsquo;re looking for<br/>Experience in recruitment, talent sourcing, HR, sales or candidate outreach is an advantage.<br/>Perks and benefits<br/>Incentive Bonus</p><p><b>Location:</b> Remote - Anywhere</p><p><b>Skills required for this job:</b><br/></p><ul><li>Candidate communication</li><li>Candidate screening</li><li>Data privacy</li><li>Online research</li><li>Record Maintenance</li><li>Recruitment</li><li>Talent sourcing</li></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Fab",
+     "value": "6WaM6nRW"
+    },
+    "datePosted": "2026-11-07T13:46:44Z",
+    "validThrough": "2026-11-14T13:46:44Z",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": 450,
+      "minValue": 450,
+      "maxValue": 2000,
+      "unitText": "MONTH"
+     }
+    },
+    "directApply": true,
+    "experienceRequirements": "no requirements",
+    "educationRequirements": [
+     {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "bachelor degree"
+     }
+    ],
+    "experienceInPlaceOfEducation": false,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Fab",
+     "logo": "https://res.cloudinary.com/torre-technologies-co/image/upload/v1794197757/origin/bio/crawled-organizations/Fab1794197756487_cx50xg_jawnei.jpg"
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+     {
+      "@type": "Country",
+      "name": "United States"
+     },
+     {
+      "@type": "Country",
+      "name": "United Kingdom"
+     },
+     {
+      "@type": "Country",
+      "name": "Argentina"
+     },
+     {
+      "@type": "Country",
+      "name": "Armenia"
+     },
+     {
+      "@type": "Country",
+      "name": "Australia"
+     },
+     {
+      "@type": "Country",
+      "name": "Austria"
+     },
+     {
+      "@type": "Country",
+      "name": "Belgium"
+     },
+     {
+      "@type": "Country",
+      "name": "Bermuda"
+     },
+     {
+      "@type": "Country",
+      "name": "Bolivia"
+     },
+     {
+      "@type": "Country",
+      "name": "Brazil"
+     },
+     {
+      "@type": "Country",
+      "name": "Bulgaria"
+     },
+     {
+      "@type": "Country",
+      "name": "Canada"
+     },
+     {
+      "@type": "Country",
+      "name": "Chile"
+     },
+     {
+      "@type": "Country",
+      "name": "Colombia"
+     },
+     {
+      "@type": "Country",
+      "name": "Costa Rica"
+     },
+     {
+      "@type": "Country",
+      "name": "Croatia"
+     },
+     {
+      "@type": "Country",
+      "name": "Denmark"
+     },
+     {
+      "@type": "Country",
+      "name": "Dominican Republic"
+     },
+     {
+      "@type": "Country",
+      "name": "Ecuador"
+     },
+     {
+      "@type": "Country",
+      "name": "Egypt"
+     },
+     {
+      "@type": "Country",
+      "name": "El Salvador"
+     },
+     {
+      "@type": "Country",
+      "name": "Estonia"
+     },
+     {
+      "@type": "Country",
+      "name": "Finland"
+     },
+     {
+      "@type": "Country",
+      "name": "France"
+     },
+     {
+      "@type": "Country",
+      "name": "Georgia"
+     },
+     {
+      "@type": "Country",
+      "name": "Germany"
+     },
+     {
+      "@type": "Country",
+      "name": "Greece"
+     },
+     {
+      "@type": "Country",
+      "name": "Guatemala"
+     },
+     {
+      "@type": "Country",
+      "name": "Honduras"
+     },
+     {
+      "@type": "Country",
+      "name": "Iceland"
+     },
+     {
+      "@type": "Country",
+      "name": "India"
+     },
+     {
+      "@type": "Country",
+      "name": "Ireland"
+     },
+     {
+      "@type": "Country",
+      "name": "Israel"
+     },
+     {
+      "@type": "Country",
+      "name": "Italy"
+     },
+     {
+      "@type": "Country",
+      "name": "Luxembourg"
+     },
+     {
+      "@type": "Country",
+      "name": "Mexico"
+     },
+     {
+      "@type": "Country",
+      "name": "Netherlands"
+     },
+     {
+      "@type": "Country",
+      "name": "New Zealand"
+     },
+     {
+      "@type": "Country",
+      "name": "Nicaragua"
+     },
+     {
+      "@type": "Country",
+      "name": "Panama"
+     },
+     {
+      "@type": "Country",
+      "name": "Paraguay"
+     },
+     {
+      "@type": "Country",
+      "name": "Peru"
+     },
+     {
+      "@type": "Country",
+      "name": "Puerto Rico"
+     },
+     {
+      "@type": "Country",
+      "name": "Serbia"
+     },
+     {
+      "@type": "Country",
+      "name": "South Africa"
+     },
+     {
+      "@type": "Country",
+      "name": "Spain"
+     },
+     {
+      "@type": "Country",
+      "name": "Switzerland"
+     },
+     {
+      "@type": "Country",
+      "name": "Uruguay"
+     },
+     {
+      "@type": "Country",
+      "name": "Venezuela"
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-10T19:49:15.541674Z",
+  "content_hash": "c5d1c055725e0f537a5ddfad9008ee0708828cbe7eddd953e85ccd6dfd68b069"
+ },
+ {
+  "source_slug": "torre",
+  "board_token": "https://torre.ai/sitemap-index.xml",
+  "external_id": "fcb6260cefa823c1e09730df",
+  "payload": {
+   "page_url": "https://torre.ai/post/JdmMpEqd-esc-cabling-finance-clerk-bookkeeping-assistant",
+   "posting": {
+    "@type": "JobPosting",
+    "@context": "https://schema.org/",
+    "title": "Finance Clerk / Bookkeeping Assistant",
+    "employmentType": [
+     "CONTRACTOR",
+     "PART_TIME"
+    ],
+    "description": "<p>Role: Part-Time Finance Clerk \\/ Bookkeeping Assistant.<br/>Company: Eastern Standard Consultants Inc. (DBA ESC Cabling).<br/><br/>Key Responsibilities:<br/><br/>Accounts Payable (AP):<br/>- Receive, review, and enter vendor invoices into QuickBooks Online.<br/>- Categorize expenses accurately, including project costs and cost of goods sold.<br/>- Track outstanding bills and payment deadlines.<br/>- Maintain vendor records and reconcile vendor statements.<br/>- Prepare weekly accounts payable reports.<br/>- Organize and maintain digital financial records.<br/>- Prepare payments for management approval.<br/><br/>Accounts Receivable (AR):<br/>- Prepare and send customer invoices.<br/>- Generate progress billing and time-and-material invoices.<br/>- Record customer payments in QuickBooks Online.<br/>- Monitor outstanding customer balances.<br/>- Follow up on overdue invoices.<br/>- Maintain accurate accounts receivable records.<br/>- Prepare weekly aging reports.<br/><br/>Bookkeeping:<br/>- Maintain accurate financial transactions in QuickBooks Online.<br/>- Assist with bank and credit card reconciliations.<br/>- Review expense classifications.<br/>- Identify missing transactions and discrepancies.<br/>- Assist the external bookkeeper with monthly closing procedures.<br/>- Maintain organized financial documentation.<br/><br/>Payroll Support:<br/>- Review employee timesheets for completeness.<br/>- Assist with payroll preparation.<br/>- Maintain payroll documentation.<br/>- Coordinate payroll information with management and the payroll processor.<br/><br/>Financial Reporting:<br/>- Prepare weekly AP and AR summaries.<br/>- Assist with monthly financial reports.<br/>- Track outstanding invoices and upcoming payments.<br/>- Provide financial updates to management.<br/>- Identify discrepancies requiring management attention.<br/><br/>Qualifications:<br/>- Minimum 2 years of bookkeeping or accounting support experience.<br/>- Experience with QuickBooks Online.<br/>- Strong understanding of accounts payable and accounts receivable.<br/>- Proficiency in Microsoft Excel and Google Sheets.<br/>- Strong organizational and communication skills.<br/>- Ability to maintain confidentiality.<br/>- Reliable computer and internet connection.<br/>- Ability to work 20 hours weekly during New York business hours.<br/>- Experience working with U.S.-based companies.<br/>- Experience supporting construction or contracting businesses.<br/>- Familiarity with job costing and project-based invoicing.<br/>- Experience coordinating with external accountants or bookkeepers.</p><p><b>Location:</b> Remote - GMT-06:00 to GMT-04:00</p><p><b>Skills required for this job:</b><br/></p><ul><li>Accounts payable</li><li>Accounts receivable</li><li>Bookkeeping</li><li>Construction accounting</li><li>Google Sheets</li><li>Invoicing</li><li>Job costing</li><li>Microsoft Excel</li><li>QuickBooks Online</li></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "ESC Cabling",
+     "value": "JdmMpEqd"
+    },
+    "datePosted": "2026-11-07T14:28:22Z",
+    "validThrough": "2026-12-07T14:28:22Z",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": 5,
+      "minValue": 5,
+      "maxValue": 8,
+      "unitText": "HOUR"
+     }
+    },
+    "directApply": true,
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 24
+    },
+    "educationRequirements": "no requirements",
+    "experienceInPlaceOfEducation": true,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "ESC Cabling",
+     "logo": "https://res.cloudinary.com/torre-technologies-co/image/upload/v1793404093/origin/bio/crawled-organizations/ESCCabling1793404092587_jr81yo_hdi8b8.jpg",
+     "sameAs": "https://esccabling.com/"
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "applicantLocationRequirements": [
+     {
+      "@type": "Country",
+      "name": "United States"
+     },
+     {
+      "@type": "Country",
+      "name": "United Kingdom"
+     },
+     {
+      "@type": "Country",
+      "name": "Argentina"
+     },
+     {
+      "@type": "Country",
+      "name": "Armenia"
+     },
+     {
+      "@type": "Country",
+      "name": "Australia"
+     },
+     {
+      "@type": "Country",
+      "name": "Austria"
+     },
+     {
+      "@type": "Country",
+      "name": "Belgium"
+     },
+     {
+      "@type": "Country",
+      "name": "Bermuda"
+     },
+     {
+      "@type": "Country",
+      "name": "Bolivia"
+     },
+     {
+      "@type": "Country",
+      "name": "Brazil"
+     },
+     {
+      "@type": "Country",
+      "name": "Bulgaria"
+     },
+     {
+      "@type": "Country",
+      "name": "Canada"
+     },
+     {
+      "@type": "Country",
+      "name": "Chile"
+     },
+     {
+      "@type": "Country",
+      "name": "Colombia"
+     },
+     {
+      "@type": "Country",
+      "name": "Costa Rica"
+     },
+     {
+      "@type": "Country",
+      "name": "Croatia"
+     },
+     {
+      "@type": "Country",
+      "name": "Denmark"
+     },
+     {
+      "@type": "Country",
+      "name": "Dominican Republic"
+     },
+     {
+      "@type": "Country",
+      "name": "Ecuador"
+     },
+     {
+      "@type": "Country",
+      "name": "Egypt"
+     },
+     {
+      "@type": "Country",
+      "name": "El Salvador"
+     },
+     {
+      "@type": "Country",
+      "name": "Estonia"
+     },
+     {
+      "@type": "Country",
+      "name": "Finland"
+     },
+     {
+      "@type": "Country",
+      "name": "France"
+     },
+     {
+      "@type": "Country",
+      "name": "Georgia"
+     },
+     {
+      "@type": "Country",
+      "name": "Germany"
+     },
+     {
+      "@type": "Country",
+      "name": "Greece"
+     },
+     {
+      "@type": "Country",
+      "name": "Guatemala"
+     },
+     {
+      "@type": "Country",
+      "name": "Honduras"
+     },
+     {
+      "@type": "Country",
+      "name": "Iceland"
+     },
+     {
+      "@type": "Country",
+      "name": "India"
+     },
+     {
+      "@type": "Country",
+      "name": "Ireland"
+     },
+     {
+      "@type": "Country",
+      "name": "Israel"
+     },
+     {
+      "@type": "Country",
+      "name": "Italy"
+     },
+     {
+      "@type": "Country",
+      "name": "Luxembourg"
+     },
+     {
+      "@type": "Country",
+      "name": "Mexico"
+     },
+     {
+      "@type": "Country",
+      "name": "Netherlands"
+     },
+     {
+      "@type": "Country",
+      "name": "New Zealand"
+     },
+     {
+      "@type": "Country",
+      "name": "Nicaragua"
+     },
+     {
+      "@type": "Country",
+      "name": "Panama"
+     },
+     {
+      "@type": "Country",
+      "name": "Paraguay"
+     },
+     {
+      "@type": "Country",
+      "name": "Peru"
+     },
+     {
+      "@type": "Country",
+      "name": "Puerto Rico"
+     },
+     {
+      "@type": "Country",
+      "name": "Serbia"
+     },
+     {
+      "@type": "Country",
+      "name": "South Africa"
+     },
+     {
+      "@type": "Country",
+      "name": "Spain"
+     },
+     {
+      "@type": "Country",
+      "name": "Switzerland"
+     },
+     {
+      "@type": "Country",
+      "name": "Uruguay"
+     },
+     {
+      "@type": "Country",
+      "name": "Venezuela"
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-10T19:49:15.888543Z",
+  "content_hash": "c560c9409ebf7a620421f9f82957a664a95fbd001ba020d8862bceb629b3f67f"
+ },
+ {
+  "source_slug": "torre",
+  "board_token": "https://torre.ai/sitemap-index.xml",
+  "external_id": "d9ae7282fb2cd32c97f6352c",
+  "payload": {
+   "page_url": "https://torre.ai/post/ZW5qZA4W-proxena-health-group-travel-registered-nurse-rn-medical-surgical",
+   "posting": {
+    "@type": "JobPosting",
+    "@context": "https://schema.org/",
+    "title": "Travel Registered Nurse (RN) – Medical-Surgical",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "description": "<p>Travel Registered Nurse (RN) &ndash; Medical-Surgical | Day Shift<br/><br/>Location: Keene, New Hampshire <br/>Pay: $66.57 per hour<br/>Schedule: 7:00 AM &ndash; 7:30 PM | 12-hour day shifts<br/>Hours: 36 hours per week<br/>Start Date: December 7, 2026<br/>Assignment Type: Temporary Travel Assignment<br/><br/> Position Overview<br/><br/>Proxena Health Group is recruiting an experienced Medical-Surgical Registered Nurse (RN) for a temporary travel assignment at a prominent medical center in Keene, New Hampshire.<br/><br/>This opportunity offers an attractive hourly rate, a consistent day-shift schedule, and the opportunity to provide care to an adult and geriatric patient population in a hospital setting.<br/><br/>Qualified travel nurses with strong Medical-Surgical experience and the ability to adapt to changing patient-care needs are encouraged to apply.<br/><br/> Compensation and Benefits<br/><br/>- $66.57 per hour<br/>- 36 hours per week<br/>- Estimated gross base pay of $2,396.52 per week, before applicable deductions<br/>- Medical, dental, and vision insurance options<br/>- Travel and housing stipends, where applicable<br/>- 24\\/7 dedicated recruiter support<br/>- Licensure and certification reimbursement opportunities<br/><br/> Key Responsibilities<br/><br/>- Provide safe, high-quality nursing care to adult and geriatric patients.<br/>- Assess, monitor, and document patients' conditions and responses to treatment.<br/>- Administer medications and carry out prescribed nursing interventions.<br/>- Collaborate with physicians and multidisciplinary healthcare teams.<br/>- Monitor patient progress and communicate changes in clinical condition.<br/>- Adapt to floating assignments as required by the facility.<br/>- Maintain accurate and timely patient documentation using Epic.<br/><br/> Required Qualifications<br/><br/>- Active Registered Nurse (RN) license in New Hampshire or an eligible multistate compact license.<br/>- Minimum of 2 years of Medical-Surgical nursing experience.<br/>- Previous experience using the Epic electronic medical record system.<br/>- Willingness and ability to float to other units as required.<br/>- Current American Heart Association BLS certification.<br/>- Current American Heart Association ACLS certification.<br/>- Active NIH Stroke Scale (NIHSS) certification.<br/><br/> Assignment Details<br/><br/>Patient Population: Adult&ndash;Geriatric<br/>Shift: Day shift, 7:00 AM &ndash; 7:30 PM<br/>EMR: Epic<br/>Start Date: December 7, 2026<br/>Location: Keene, New Hampshire<br/><br/>## Apply Today<br/><br/>Interested and qualified Medical-Surgical Registered Nurses are encouraged to apply.<br/><br/>**Proxena Health Group LLC**<br/>Connecting qualified healthcare professionals with rewarding opportunities.</p><p><b>Location:</b> Keene, New Hampshire, United States</p><p><b>Skills required for this job:</b><br/></p><ul><li>Advanced cardiac life support (ACLS)</li><li>Basic life support (BLS)</li><li>Epic</li><li>Nursing techniques</li><li>Registered nurses</li></ul>",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Proxena Health Group",
+     "value": "ZW5qZA4W"
+    },
+    "datePosted": "2026-11-07T16:13:50Z",
+    "validThrough": "2026-12-07T16:16:45Z",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "value": 66,
+      "minValue": 66,
+      "maxValue": 0,
+      "unitText": "HOUR"
+     }
+    },
+    "directApply": true,
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 24
+    },
+    "educationRequirements": [
+     {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "professional certificate"
+     }
+    ],
+    "experienceInPlaceOfEducation": true,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Proxena Health Group",
+     "logo": "https://res.cloudinary.com/torre-technologies-co/image/upload/v1791471306/origin/bio/crawled-organizations/ProxenaHealth_Group1791471302261_kmnayv_a8jxiz.jpg"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Keene",
+       "addressLocality": "",
+       "addressRegion": "New Hampshire",
+       "addressCountry": "United States"
+      },
+      "latitude": "42.9336920000",
+      "longitude": "-72.2781409000"
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-10T19:49:16.426183Z",
+  "content_hash": "30833e987778a1b471f6c1ae6b53b4a2a92a0b9ac14c2838711602cc892b5d2e"
+ }
+]

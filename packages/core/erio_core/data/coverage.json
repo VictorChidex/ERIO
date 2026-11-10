@@ -104,9 +104,9 @@
   "kind": "ats",
   "status": "Verified",
   "boards_verified": 2,
-  "jobs_read": 481,
+  "jobs_read": 476,
   "partial_read": false,
-  "checked_at": "2026-11-06T02:48:18+00:00",
+  "checked_at": "2026-11-10T19:51:30+00:00",
   "note": "The anonymous visitor token comes from the career page itself and is sent only to the platform's own API; no login."
  },
  {
@@ -638,6 +638,72 @@
   "note": ""
  },
  {
+  "slug": "pandape",
+  "name": "Pandapé",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 3,
+  "jobs_read": 17,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:48:34+00:00",
+  "note": "Reads the career site's job list and each job page's schema.org JobPosting; robots.txt asks only that /Apply/ is left alone."
+ },
+ {
+  "slug": "factorial",
+  "name": "Factorial",
+  "kind": "ats",
+  "status": "Partial",
+  "boards_verified": 1,
+  "jobs_read": 6,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:48:39+00:00",
+  "note": "Reads the tenant sitemap and each job page's schema.org JobPosting. Only Factorial's own career site was found live; other customers' career pages were not located."
+ },
+ {
+  "slug": "traffit",
+  "name": "TRAFFIT",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 20,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:48:04+00:00",
+  "note": "Reads the public JSON list every TRAFFIT career site serves; the employer is not named in it, so the board's company is used."
+ },
+ {
+  "slug": "emply",
+  "name": "Emply",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 14,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:51:02+00:00",
+  "note": "Reads the career site's own vacancy search call; the page names the list to read. Open-application (talent pool) entries are skipped. The sitemap lists no jobs."
+ },
+ {
+  "slug": "hiringroom",
+  "name": "HiringRoom",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 6,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:52:59+00:00",
+  "note": "No feed or structured data: reads the server-rendered job list and job pages. The page gives no posting date."
+ },
+ {
+  "slug": "coveto",
+  "name": "coveto",
+  "kind": "ats",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 11,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:48:46+00:00",
+  "note": "Reads the tenant sitemap and each job page's schema.org JobPosting; customers on their own domain are added by sitemap address."
+ },
+ {
   "slug": "niceboard",
   "name": "Niceboard",
   "kind": "board",
@@ -1032,5 +1098,71 @@
   "partial_read": false,
   "checked_at": null,
   "note": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission."
+ },
+ {
+  "slug": "instaffo",
+  "name": "Instaffo",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 6,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:48:53+00:00",
+  "note": "Jobs from Instaffo (jobs.instaffo.com); each links back to its Instaffo page. Reads the English job pages' schema.org JobPosting from the jobs sitemap; its robots.txt allows them."
+ },
+ {
+  "slug": "jobberman",
+  "name": "Jobberman",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 6,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:51:15+00:00",
+  "note": "Jobs from Jobberman (Nigeria); each links back to its Jobberman listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting."
+ },
+ {
+  "slug": "brightermonday",
+  "name": "BrighterMonday",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 6,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:51:22+00:00",
+  "note": "Jobs from BrighterMonday (Kenya, Uganda), the same platform as Jobberman; each links back to its listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting."
+ },
+ {
+  "slug": "torre",
+  "name": "Torre",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 1,
+  "jobs_read": 6,
+  "partial_read": true,
+  "checked_at": "2026-11-10T19:49:17+00:00",
+  "note": "Jobs from Torre (torre.ai); each links back to its Torre post. Reads the sitemap and each /post/ page's schema.org JobPosting; the /api/ paths robots.txt disallows are not used."
+ },
+ {
+  "slug": "myjobmag",
+  "name": "MyJobMag Africa",
+  "kind": "service",
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 200,
+  "partial_read": false,
+  "checked_at": "2026-11-10T19:49:21+00:00",
+  "note": "Jobs from MyJobMag (Nigeria, Kenya, South Africa); each links back to MyJobMag. Reads the aggregate feed the site publishes for job aggregators."
+ },
+ {
+  "slug": "jobnet",
+  "name": "Jobnet (Denmark)",
+  "kind": "service",
+  "status": "Blocked",
+  "boards_verified": 0,
+  "jobs_read": 0,
+  "partial_read": false,
+  "checked_at": null,
+  "note": "Jobnet (the Danish state job portal) serves no robots.txt or sitemap to crawlers (they redirect to an error page), publishes no feed or documented API, and its job search runs on a back end made for its own app; ask the Danish Agency for Labour Market and Recruitment (STAR) for access."
  }
 ]

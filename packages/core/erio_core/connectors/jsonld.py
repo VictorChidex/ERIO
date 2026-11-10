@@ -68,14 +68,37 @@ def _load(block: str) -> Any:
     return json.loads(text, strict=False)
 
 
+def _named(node: Any, known: dict[str, dict[str, Any]]) -> None:
+    """Every object with an @id and a name, at any depth, by its @id."""
+    if isinstance(node, list):
+        for item in node:
+            _named(item, known)
+    elif isinstance(node, dict):
+        if isinstance(node.get("@id"), str) and node.get("name"):
+            known.setdefault(node["@id"], node)
+        for value in node.values():
+            _named(value, known)
+
+
 def job_postings(html: str) -> list[dict[str, Any]]:
-    """The JobPosting objects in a page's JSON-LD blocks (malformed blocks skipped)."""
+    """The JobPosting objects in a page's JSON-LD blocks (malformed blocks skipped).
+
+    A posting may name its employer by reference (``{"@id": ...}``, the object being
+    elsewhere on the page): the reference is replaced by that object.
+    """
     postings: list[dict[str, Any]] = []
+    known: dict[str, dict[str, Any]] = {}
     for block in SCRIPT.findall(html):
         try:
-            postings += _walk(_load(block))
+            data = _load(block)
         except json.JSONDecodeError:
             continue
+        postings += _walk(data)
+        _named(data, known)
+    for posting in postings:
+        employer = posting.get("hiringOrganization")
+        if isinstance(employer, dict) and not employer.get("name") and employer.get("@id") in known:
+            posting["hiringOrganization"] = known[employer["@id"]]
     return postings
 
 

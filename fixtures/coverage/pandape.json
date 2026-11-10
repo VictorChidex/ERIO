@@ -1,0 +1,95 @@
+[
+ {
+  "source_slug": "pandape",
+  "board_token": "https://grupopereira.pandape.infojobs.com.br/Vacancies",
+  "external_id": "4be6c20186a457001adbbd48",
+  "payload": {
+   "page_url": "https://grupopereira.pandape.infojobs.com.br/Detail/3918449",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "employmentType": "full-time",
+    "title": "GERENCIADOR | FORT ATACADISTA PORTO ALEGRE",
+    "description": "MISSÃO DO CARGO\nResponsável pelos departamentos de FLV da loja de alocação e suas seções, contribuindo para o\ncumprimento das metas de vendas estabelecidas e para a reposição adequada de produtos, por meio da\norganização das atividades operacionais e do apoio à equipe, com foco no atendimento ao cliente e na oferta de\nprodutos e serviços conforme os padrões definidos.\nREQUISITOS\nEnsino Médio Completo\nDesejável experiência com gestão de pessoas, vendas, atendimento de clientes;\nConhecimento Básico Pacote Office;\nAtendimento ao Cliente;\nGestão de Pessoas;\nBenefícios\nREFEIÇÃO NO LOCAL DE TRABALHO\nPLANO DE CARREIRA\nDESCONTO EM COMPRAS\nPLANO ODONTOLOGICO\nSEGURO DE VIDA\n\nEndereço: \nFort Atacadista Porto Alegre, Av. Manoel Elias, 745 - Passo das Pedras, Porto Alegre - RS, 91240-261\nENTREVISTAS SOMENTE PELO WHATSAPP (51) 3512-1118",
+    "datePosted": "2026-11-10T16:03:27.5679288",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Grupo Pereira"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR",
+      "addressLocality": "Porto Alegre",
+      "addressRegion": "RS"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:32.374438Z",
+  "content_hash": "177fb4c4ff45e2d134b20f6953b635f515645a2131026a40b97639b47ad31a92"
+ },
+ {
+  "source_slug": "pandape",
+  "board_token": "https://grupopereira.pandape.infojobs.com.br/Vacancies",
+  "external_id": "bd278178fd255e113fb4b6c2",
+  "payload": {
+   "page_url": "https://grupopereira.pandape.infojobs.com.br/Detail/3918120",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "employmentType": "full-time",
+    "title": "VAGAS DE BASE - LOJA 135",
+    "description": "Responsável por contribuir nas rotinas operacionais de todos os setores da filial de atuação, visando a excelência\nno atendimento aos clientes, assim como auxiliar os segmentos da loja para cumprimento de metas pré estabelecidos pelo Grupo.\nJornada de Trabalho: Segunda à Sábado, Escala aos domingos. Horário: 15:00 às 23:30.",
+    "datePosted": "2026-11-10T15:18:23.4377250",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Grupo Pereira"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR",
+      "addressLocality": "Blumenau",
+      "addressRegion": "SC"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:33.434005Z",
+  "content_hash": "5da7f83dacdc201f48abfa06edb09abcb05828f2deec12dc3397fdf8f4c0777c"
+ },
+ {
+  "source_slug": "pandape",
+  "board_token": "https://grupopereira.pandape.infojobs.com.br/Vacancies",
+  "external_id": "926e5076657db5734b312917",
+  "payload": {
+   "page_url": "https://grupopereira.pandape.infojobs.com.br/Detail/3561788",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "employmentType": "full-time",
+    "title": "PADEIRO - FORT ATACADISTA - AVENTUREIRO",
+    "description": "?? VAGA: PADEIRO(A) ??\n?? Local: Rua Tuiuti, 4157 – Zona Industrial 1, Joinville/SC\nPrincipais responsabilidades:\nExecutar os procedimentos técnicos de produção de alimentos na área de Padaria;\nPreparar pães, massas e demais produtos de acordo com as receitas e padrões estabelecidos;\nGarantir a qualidade, sabor, aparência e apresentação dos produtos;\nManter a organização e higiene do ambiente e dos equipamentos de trabalho;\nContribuir para uma experiência de compra positiva aos clientes, oferecendo produtos frescos e de qualidade;\nSeguir as normas e procedimentos de segurança alimentar da empresa.\nRequisitos:\nExperiência na função será um diferencial;\nConhecimento em produção de pães e produtos de padaria;\nOrganização, comprometimento e trabalho em equipe.\n?? Venha fazer parte do nosso time!\n?? Interessados: Maria Eduarda\nTelefone/WhatsApp: (47) 3204-4308",
+    "datePosted": "2026-11-10T14:35:26.8103227",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Grupo Pereira"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR",
+      "addressLocality": "Joinville",
+      "addressRegion": "SC"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-10T19:48:33.851563Z",
+  "content_hash": "d7eea50067c5881d9964ecccc137e4651e177e85da0e8e17426bac182dc167b5"
+ }
+]

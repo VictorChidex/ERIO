@@ -644,6 +644,72 @@
   ]
  },
  {
+  "slug": "pandape",
+  "name": "Pandapé",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career site's job list and each job page's schema.org JobPosting; robots.txt asks only that /Apply/ is left alone.",
+  "examples": [
+   "https://callink.pandape.infojobs.com.br/Vacancies",
+   "https://carrefour.pandape.infojobs.com.br/Vacancies",
+   "https://grupopereira.pandape.infojobs.com.br/Vacancies"
+  ]
+ },
+ {
+  "slug": "factorial",
+  "name": "Factorial",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the tenant sitemap and each job page's schema.org JobPosting. Only Factorial's own career site was found live; other customers' career pages were not located.",
+  "examples": [
+   "https://careers.factorialhr.com/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "traffit",
+  "name": "TRAFFIT",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the public JSON list every TRAFFIT career site serves; the employer is not named in it, so the board's company is used.",
+  "examples": [
+   "hrhub",
+   "soflab"
+  ]
+ },
+ {
+  "slug": "emply",
+  "name": "Emply",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career site's own vacancy search call; the page names the list to read. Open-application (talent pool) entries are skipped. The sitemap lists no jobs.",
+  "examples": [
+   "template",
+   "ohly"
+  ]
+ },
+ {
+  "slug": "hiringroom",
+  "name": "HiringRoom",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "No feed or structured data: reads the server-rendered job list and job pages. The page gives no posting date.",
+  "examples": [
+   "pampatalents",
+   "tbo"
+  ]
+ },
+ {
+  "slug": "coveto",
+  "name": "coveto",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the tenant sitemap and each job page's schema.org JobPosting; customers on their own domain are added by sitemap address.",
+  "examples": [
+   "https://k62053.coveto.de/sitemap.xml",
+   "https://k21840.coveto.de/sitemap.xml"
+  ]
+ },
+ {
   "slug": "niceboard",
   "name": "Niceboard",
   "kind": "board",
@@ -995,6 +1061,65 @@
   "name": "Gemeentebanen (Netherlands)",
   "kind": "service",
   "blocked": "Its only published terms are supplier terms for the municipalities that buy its career sites; nothing lets third parties read and show the listings, and no feed is offered. Ask Jobsrepublic.nl for permission.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "instaffo",
+  "name": "Instaffo",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Instaffo (jobs.instaffo.com); each links back to its Instaffo page. Reads the English job pages' schema.org JobPosting from the jobs sitemap; its robots.txt allows them.",
+  "examples": [
+   "https://jobs.instaffo.com/sitemap-jobs.xml"
+  ]
+ },
+ {
+  "slug": "jobberman",
+  "name": "Jobberman",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Jobberman (Nigeria); each links back to its Jobberman listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting.",
+  "examples": [
+   "https://www.jobberman.com/sitemap-listings-index-en.xml"
+  ]
+ },
+ {
+  "slug": "brightermonday",
+  "name": "BrighterMonday",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from BrighterMonday (Kenya, Uganda), the same platform as Jobberman; each links back to its listing. Reads the listings sitemaps its robots.txt names and each listing's schema.org JobPosting.",
+  "examples": [
+   "https://www.brightermonday.co.ke/sitemap-listings-index-en.xml"
+  ]
+ },
+ {
+  "slug": "torre",
+  "name": "Torre",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Torre (torre.ai); each links back to its Torre post. Reads the sitemap and each /post/ page's schema.org JobPosting; the /api/ paths robots.txt disallows are not used.",
+  "examples": [
+   "https://torre.ai/sitemap-index.xml"
+  ]
+ },
+ {
+  "slug": "myjobmag",
+  "name": "MyJobMag Africa",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from MyJobMag (Nigeria, Kenya, South Africa); each links back to MyJobMag. Reads the aggregate feed the site publishes for job aggregators.",
+  "examples": [
+   "https://www.myjobmag.com",
+   "https://www.myjobmag.co.ke"
+  ]
+ },
+ {
+  "slug": "jobnet",
+  "name": "Jobnet (Denmark)",
+  "kind": "service",
+  "blocked": "Jobnet (the Danish state job portal) serves no robots.txt or sitemap to crawlers (they redirect to an error page), publishes no feed or documented API, and its job search runs on a back end made for its own app; ask the Danish Agency for Labour Market and Recruitment (STAR) for access.",
   "notes": "",
   "examples": []
  }

@@ -210,6 +210,23 @@ class PoliteFetcher:
             raise FetchError("http_error", f"{host} does not resolve to a public address")
         return host
 
+    @staticmethod
+    def _rule_lines(text: str) -> list[str]:
+        """robots.txt lines, with a rule's closing ``?`` ("Disallow: /*?": any URL with a
+        query string) kept: the standard library parses the path as a URL and drops a bare
+        ``?``, which would turn that rule into "Disallow: /*" and refuse the whole site."""
+        lines = []
+        for line in text.splitlines():
+            field, colon, value = line.partition(":")
+            if (
+                colon
+                and field.strip().lower() in ("allow", "disallow")
+                and value.rstrip().endswith("?")
+            ):
+                line = line.rstrip() + "*"
+            lines.append(line)
+        return lines
+
     def _robots_for(self, host: str) -> urllib.robotparser.RobotFileParser:
         cached = self._robots.get(host)
         if cached is None or time.monotonic() - cached[0] > ROBOTS_TTL_S:
@@ -220,7 +237,7 @@ class PoliteFetcher:
                 raise FetchError("http_error", f"robots.txt answered {response.status}")
             # A missing robots.txt (4xx) allows everything: parse it as empty.
             ok = response.status < 400
-            parser.parse(response.body.decode("utf-8", "replace").splitlines() if ok else [])
+            parser.parse(self._rule_lines(response.body.decode("utf-8", "replace")) if ok else [])
             cached = (time.monotonic(), parser)
             self._robots[host] = cached
         return cached[1]

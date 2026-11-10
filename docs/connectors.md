@@ -982,3 +982,21 @@ header, one constant printed in its docs: a credential), NAV (bearer token on re
 (terms forbid passing jobs on to other aggregators; ERIO's API would), MyCareersFuture (terms reserve
 all rights), Cryptocurrency Jobs (no commercial use), Remotive (robots.txt disallows its API),
 Gemeentebanen (no terms that allow reuse).
+
+## Platforms added from the reference index (2026-11-10)
+
+Found by reading each platform's live sites request by request (ERIO user agent, robots.txt
+honoured, a handful of requests each). No login, key or bot-protection workaround is used.
+
+- **Pandapé** (`pandape`): `https://{tenant}.pandape.infojobs.com.br/Vacancies?PageNumber=n` lists 20 jobs a page; each `/Detail/{id}` page has a schema.org JobPosting. robots.txt only disallows `/Apply/`. Live: callink, carrefour, grupopereira.
+- **Factorial** (`factorial`): `https://careers.factorialhr.com/sitemap.xml` plus JobPosting on each `/job_posting/...` page (the site redirects to careers.factorial.com). Only Factorial's own career site was found; customers' pages were not located, so the platform stays partial.
+- **TRAFFIT** (`traffit`): `GET https://{tenant}.traffit.com/public/job_posts/published` returns every published job as JSON with HTML description, place and apply link; no employer name. Live: hrhub, soflab. robots.txt: none (404).
+- **Emply** (`emply`): the career page's own script posts `/api/integration/vacancy/get-page` with the list section id printed in the page. Open applications (`talentPool`) are skipped. Live: ohly (13 jobs), template (demo). The sitemap lists no jobs.
+- **HiringRoom** (`hiringroom`): no feed and no structured data; the server-rendered `/jobs` list and `/jobs/get_vacancy/{id}` pages are read. The general-application link and the relative posting date are not used. Live: pampatalents, tbo.
+- **coveto** (`coveto`): `https://{kNNNNN}.coveto.de/sitemap.xml` lists the job pages (`/job-...html`), each with JobPosting. Live: k62053 (ROOT), k21840. Customers on their own domain are registered by sitemap address.
+- **Instaffo** (`instaffo`, service): `https://jobs.instaffo.com/sitemap-jobs.xml` (German and English URLs; the English ones are read) and JobPosting on each page. robots.txt disallows `/api/`, `/apply` and `?q=` only.
+- **Jobberman** and **BrighterMonday** (`jobberman`, `brightermonday`, services; one platform): the listings sitemaps named in robots.txt, JobPosting on each `/listings/` page (the employer is a reference inside the page's graph, which the reader resolves). robots.txt disallows `/job/`, `/api/` and filtered queries, none of which are used.
+- **Torre** (`torre`, service): `https://torre.ai/sitemap-index.xml` and JobPosting on each `/post/` page. robots.txt disallows `/api/`, which is not used.
+- **MyJobMag Africa** (`myjobmag`, service): the aggregate RSS feed `/aggregate_feed.xml` that the site publishes for job aggregators (Nigeria, Kenya, South Africa). Its robots.txt line `Disallow: /*?` means "URLs with a query string"; the fetcher now reads a closing `?` that way (the standard library dropped it and refused the whole site).
+- **Cornerstone OnDemand** (`csod`): already built and verified (kohler/16, gmv/4). Extended: descriptions began with the career page's loading-spinner CSS; that chrome is now removed.
+- **Jobnet** (Denmark): blocked. `jobnet.dk/robots.txt`, its sitemap and `job.jobnet.dk` answer with a redirect to an error page of the NemLog-in login service; the job search sits on an undocumented back end (`/bff`) of its own app, and no feed or API is published.
