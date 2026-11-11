@@ -1520,5 +1520,15 @@
    "pennanttech",
    "spyneai"
   ]
+ },
+ {
+  "slug": "connectoor",
+  "name": "Connectoor",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Connectoor.jobs, the public job board of the Connectoor recruiting software (Germany); each links back to its Connectoor job page. Reads the board's own embedded search (api.connectoor.de/find, newest first, a capped number per crawl) and each job's schema.org JobPosting on app.connectoor.de; neither host publishes a robots.txt restriction. Credit: link each job back to Connectoor.",
+  "examples": [
+   "https://www.connectoor.jobs"
+  ]
  }
 ]

@@ -6,9 +6,11 @@ docs/connectors.md.
 - Crelate: the RSS feed behind every candidate portal (``/portal/{org}/rss``).
 - GeekJob: server-rendered ``/vacancies/{n}`` lists; every vacancy page carries JobPosting data.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
+- Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Keka: the JSON behind every Keka Hire career site (``/careers/api/jobs/default/active``).
 """
 
+import html
 import json
 import re
 from typing import Any
@@ -304,8 +306,73 @@ class KekaConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- Connectoor
+
+CONNECTOOR_BOARD = "https://www.connectoor.jobs"
+#: The container id of the job board embedded on connectoor.jobs (printed in that page's
+#: HTML for every visitor): it selects which jobs the widget search returns.
+CONNECTOOR_CONTAINER = "595d038eddb233ab728b4568"
+CONNECTOOR_PAGE_SIZE = 10
+
+
+class ConnectoorConnector(JsonLdConnector):
+    """Connectoor.jobs, the public job board of the German recruiting software Connectoor.
+    Its embedded search (``api.connectoor.de/find``) lists the newest jobs ten at a time; each
+    job's public page (``app.connectoor.de/jobview?jobid=``) carries a JobPosting. The board
+    token is ``https://www.connectoor.jobs``."""
+
+    def board_url(self, board_token: str) -> str:
+        if board_token.rstrip("/") != CONNECTOOR_BOARD:
+            raise ValueError(f"not the Connectoor board ({CONNECTOOR_BOARD}): {board_token!r}")
+        return CONNECTOOR_BOARD
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        self.board_url(board_token)
+        urls: list[str] = []
+        for number in range(self.listing_pages):
+            response = fetcher.get(
+                "https://api.connectoor.de/find"
+                f"?s={CONNECTOOR_CONTAINER}&o={number * CONNECTOOR_PAGE_SIZE}&q="
+            )
+            if response.status != 200:
+                if number == 0:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            try:
+                results = json.loads(response.body)["results"]
+            except (ValueError, KeyError, TypeError) as error:
+                raise FetchError("parse_error", f"malformed search: {error}", 200) from error
+            ids = [r["id"] for r in results if isinstance(r, dict) and r.get("id")]
+            if not all(re.fullmatch(r"[0-9a-f]{24}", str(i)) for i in ids):
+                raise FetchError("parse_error", "unexpected job id in the search", 200)
+            fresh = [f"https://app.connectoor.de/jobview?jobid={i}" for i in ids]
+            fresh = [u for u in fresh if u not in urls]
+            if not fresh:
+                break
+            urls += fresh
+        return urls
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = super().parse(raw)
+        # The pages write names with HTML entities ("Th&uuml;mmel &amp; Partner").
+        return job.model_copy(
+            update={
+                "company_name": html.unescape(job.company_name) if job.company_name else None,
+                "title": html.unescape(job.title),
+            }
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    ConnectoorConnector(
+        "connectoor",
+        r"^/jobview$",
+        frozenset({"www.connectoor.jobs", "api.connectoor.de", "app.connectoor.de"}),
+        multi_employer=True,
+        listing_pages=12,
+        max_pages=120,
+    ),
     BeehireConnector(),
     KekaConnector(),
     PathPagedJsonLdConnector(

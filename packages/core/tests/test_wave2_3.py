@@ -124,9 +124,30 @@ def test_keka_reads_the_career_site_json_and_names_the_company() -> None:
     assert job.description_html and "Role Overview" in job.description_html
 
 
+def test_connectoor_reads_the_board_search_then_each_job_page() -> None:
+    fetcher = FakeFetcher(
+        {
+            "https://api.connectoor.de/find": body("connectoor_find.json"),
+            "https://app.connectoor.de/jobview": body("connectoor_job.html"),
+        }
+    )
+    connector = CONNECTORS["connectoor"]
+    fetched = connector.list_postings(fetcher, "https://www.connectoor.jobs")
+    jobs = [connector.parse(raw) for raw in fetched.postings]
+    assert len(jobs) == 2 and fetched.complete
+    assert fetcher.requested[0].startswith("https://api.connectoor.de/find?s=")
+    job = jobs[0]
+    assert job.title.startswith("Ausbildung zur Pflegefachkraft")
+    assert job.company_name == "Eilenriedestift e. V." and job.city == "Hannover"
+    assert str(job.apply_url).startswith("https://app.connectoor.de/jobview?jobid=")
+    assert job.description_html
+    normalize(job, {})
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("connectoor", "https://evil.example.org"),
         ("keka", "a/b/c"),
         ("keka", "evil.example.org"),
         ("crelate", "bad token"),

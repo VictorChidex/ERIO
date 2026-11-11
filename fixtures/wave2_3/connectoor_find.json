@@ -1,0 +1,37 @@
+{
+ "hits": 2356,
+ "pageSize": 10,
+ "offset": 0,
+ "results": [
+  {
+   "experience": 0,
+   "kindValue": "Ausbildung",
+   "title": "Ausbildung zur Pflegefachkraft im Eilenriedestift e.V. (m/w/d)",
+   "zipcode": "30625",
+   "city_name": "Hannover",
+   "updated_at": 1794406298,
+   "id": "6a29870a45b909ca008b9dac",
+   "place": "Hannover",
+   "region": "Raum Hannover",
+   "begin": 1796079600,
+   "branche_name": "Altenpflege, Betreuungsberufe",
+   "placeCode": "O",
+   "plz": "30625"
+  },
+  {
+   "experience": 0,
+   "kindValue": "Vollzeit",
+   "title": "Schreiner / Tischler mit einer 4 Tage Woche (m/w/d)",
+   "zipcode": null,
+   "city_name": "Rockenberg",
+   "updated_at": 1794404134,
+   "id": "6af46e51664a14001f8b4be0",
+   "place": "Rockenberg",
+   "region": null,
+   "begin": 1793487600,
+   "branche_name": "Handwerk, Dienstleistung und Fertigung",
+   "placeCode": "LOC",
+   "plz": null
+  }
+ ]
+}
