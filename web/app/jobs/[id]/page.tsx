@@ -235,6 +235,15 @@ export default async function JobPage({ params }: Props) {
         </div>
       </section>
       <CvPanel jobId={job.canonical_id} />
+      {job.status !== "closed" && (
+        // On a phone the top buttons scroll away; this bar keeps Apply one tap away.
+        <div className="apply-bar">
+          <a className="btn-acc" href={job.apply_url} rel="noopener noreferrer nofollow" target="_blank">
+            Apply on original site ↗
+          </a>
+          <SaveButton jobId={job.canonical_id} title={job.title} />
+        </div>
+      )}
     </>
   );
 }

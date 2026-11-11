@@ -457,3 +457,10 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .qf-more>summary::-webkit-details-marker{display:none}
 .qf-more[open]>summary{display:none}
 .qf-more .qf-row{margin-top:8px}
+
+/* Job page: Apply stays in reach on a phone */
+.apply-bar{display:none}
+@media(max-width:700px){
+.apply-bar{display:flex;align-items:center;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--nav-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--brd)}
+.apply-bar .btn-acc{flex:1;justify-content:center;text-align:center;padding:13px 16px;font-size:16px}
+body:has(.apply-bar){padding-bottom:76px}}

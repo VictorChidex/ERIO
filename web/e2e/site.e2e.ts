@@ -157,7 +157,7 @@ test.describe("pages", () => {
     await expect(page.getByRole("heading", { level: 1 })).not.toBeEmpty();
     await expect(page.getByRole("heading", { name: "Sources" })).toBeVisible();
     await expect(page.getByRole("columnheader", { name: "Last checked" })).toBeVisible();
-    await expect(page.getByRole("link", { name: /Apply on/ })).toHaveAttribute("href", /^https:\/\//);
+    await expect(page.getByRole("link", { name: /Apply on/ }).first()).toHaveAttribute("href", /^https:\/\//);
     await expect(page.locator(".jd-desc script")).toHaveCount(0);
   });
 
