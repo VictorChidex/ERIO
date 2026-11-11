@@ -17,8 +17,6 @@ from typing import Any
 from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url, iso_datetime
 from erio_core.connectors.applicantpro import ApplicantProConnector
-from erio_core.connectors.jsonld import JsonLdConnector
-from erio_core.connectors.jsonld_platforms import hosts
 from erio_core.connectors.base import (
     BoardFetch,
     Connector,
@@ -26,6 +24,8 @@ from erio_core.connectors.base import (
     FetchError,
     poster,
 )
+from erio_core.connectors.jsonld import JsonLdConnector
+from erio_core.connectors.jsonld_platforms import hosts
 from erio_core.schemas import PartialJob, RawPosting, RemoteStatus, SalaryHint
 
 TOKEN = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
@@ -103,7 +103,9 @@ class GreytHRHireConnector(Connector):
             if lookup.status == 200:
                 places = self._places(_json(lookup.body))
         enriched = [
-            raw.model_copy(update={"payload": {**raw.payload, "_company": company, "_places": places}})
+            raw.model_copy(
+                update={"payload": {**raw.payload, "_company": company, "_places": places}}
+            )
             for raw in postings
         ]
         return BoardFetch(postings=enriched, http_status=200, body=listed.body)
@@ -139,7 +141,16 @@ class GreytHRHireConnector(Connector):
 
 # ---------------------------------------------------------------- Friend.work
 
-FRIENDWORK_CURRENCIES = {0: "RUB", 1: "USD", 2: "EUR", 3: "UAH", 4: "KZT", 5: "BYN", 6: "AED", 7: "UZS"}
+FRIENDWORK_CURRENCIES = {
+    0: "RUB",
+    1: "USD",
+    2: "EUR",
+    3: "UAH",
+    4: "KZT",
+    5: "BYN",
+    6: "AED",
+    7: "UZS",
+}
 FRIENDWORK_PLACES: dict[str, RemoteStatus] = {
     "office": "onsite", "remote": "remote", "hybrid": "hybrid"
 }  # fmt: skip

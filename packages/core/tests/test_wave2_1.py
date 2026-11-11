@@ -83,7 +83,9 @@ def test_greythr_reads_the_career_page_calls_and_resolves_place_names() -> None:
 
 def test_greythr_without_a_jobs_list_is_a_parse_error() -> None:
     with pytest.raises(FetchError) as error:
-        read("greythr", "nobody", {"https://nobody.greythr.com/hire/api/career/published_jobs/": {}})
+        read(
+            "greythr", "nobody", {"https://nobody.greythr.com/hire/api/career/published_jobs/": {}}
+        )
     assert error.value.outcome == "parse_error"
 
 
@@ -92,7 +94,7 @@ def test_greythr_without_a_jobs_list_is_a_parse_error() -> None:
 
 def test_applicantpool_reads_the_applicantpro_list_and_job_page_posting() -> None:
     site = "https://scientificdrilling.applicantpool.com"
-    fetched, jobs = read(
+    _fetched, jobs = read(
         "applicantpool",
         "scientificdrilling/313",
         {
@@ -135,7 +137,11 @@ def test_friendwork_reads_the_portal_call_and_links_to_the_portal_page() -> None
     fetched, jobs = read(
         "friendwork",
         "test",
-        {"https://api.friend.work/Publication/CareerPortal?token=test": body("friendwork_portal.json")},
+        {
+            "https://api.friend.work/Publication/CareerPortal?token=test": body(
+                "friendwork_portal.json"
+            )
+        },
     )
     assert fetched.complete and len(jobs) == 2
     first = jobs[0]
