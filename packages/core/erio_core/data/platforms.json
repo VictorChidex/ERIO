@@ -1488,5 +1488,16 @@
    "home",
    "jobs"
   ]
+ },
+ {
+  "slug": "hroffice",
+  "name": "HR Office",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career sites HR Office builds on employers' own domains: /sitemap.xml lists /vacatures/{id}-{slug} pages, each with a schema.org JobPosting. Only sites that publish that structured data are read (a bespoke site such as werkenbij.adver-online.nl has none). Token is the sitemap address.",
+  "examples": [
+   "https://www.werkenbijsantepartners.nl/sitemap.xml",
+   "https://www.werkenbijomring.nl/sitemap.xml"
+  ]
  }
 ]

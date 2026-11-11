@@ -5,6 +5,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
 
 - Homerun: the Atom feed every career site advertises in its page head
   (``https://feed.homerun.co/{tenant}``), descriptions inline.
+- HR Office: career sites on the employer's own domain; ``/sitemap.xml`` lists the
+  ``/vacatures/{id}-{slug}`` job pages, which carry a schema.org JobPosting.
 """
 
 import re
@@ -16,6 +18,7 @@ from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url
 from erio_core.connectors.base import Connector
 from erio_core.connectors.feed import stable_id
+from erio_core.connectors.jsonld import JsonLdConnector
 from erio_core.schemas import PartialJob, RawPosting
 
 TOKEN = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
@@ -85,4 +88,8 @@ class HomerunConnector(Connector):
         )
 
 
-WAVE2_4_CONNECTORS: list[Connector] = [HomerunConnector()]
+WAVE2_4_CONNECTORS: list[Connector] = [
+    HomerunConnector(),
+    # "/vacatures/{id}-{slug}/solliciteren" is the application form, not the job.
+    JsonLdConnector("hroffice", r"^/vacatures/\d+-[^/]+$"),
+]

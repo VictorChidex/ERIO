@@ -72,6 +72,21 @@ def test_homerun_reads_the_atom_feed_of_a_career_site() -> None:
     assert jobs[0].description_html
 
 
+def test_hroffice_reads_job_pages_listed_in_a_career_site_sitemap() -> None:
+    site = "https://www.werkenbijsantepartners.nl"
+    job = f"{site}/vacatures/337109-leefondersteuner-verpleegkundige---de-bilt"
+    fetched, jobs = read(
+        "hroffice",
+        f"{site}/sitemap.xml",
+        {f"{site}/sitemap.xml": body("hroffice_sitemap.xml"), job: body("hroffice_job.html")},
+    )
+    # The sitemap also lists the application form and other pages: only the job page is read.
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title == "Leefondersteuner Verpleegkundige - De Bilt"
+    assert jobs[0].company_name == "Santé Partners"
+    assert jobs[0].location_text == "De Bilt" and jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
