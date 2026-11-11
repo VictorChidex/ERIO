@@ -1546,5 +1546,13 @@
   "examples": [
    "https://djinni.co/jobs/"
   ]
+ },
+ {
+  "slug": "hurma",
+  "name": "Hurma",
+  "kind": "ats",
+  "blocked": "no public job list found: {company}.hurma.work answers with the tenant login page, the help center does not name the career site address, and no customer career page could be found by search",
+  "notes": "",
+  "examples": []
  }
 ]
