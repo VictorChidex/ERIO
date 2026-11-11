@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- Jobspage: each careers page's sitemap, then the JobPosting on every job page.
 - Flatchr: the page data of each career site (careers.flatchr.io/fr/company/{company}).
 - MCi Direct Hire: the job cards of the Job Central board (jobs.mcidirecthire.com).
 - Prevue APS: each career site's job sitemap, then the JobPosting on every job page.
@@ -810,6 +811,14 @@ class FlatchrConnector(Connector):
 
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    # Jobspage: each customer's careers page ({company}.jobspage.co) serves a sitemap
+    # (token) of its job pages (an 8-character code and a slug, or a UUID), and every job
+    # page carries a JobPosting.
+    JsonLdConnector(
+        "jobspage",
+        r"^/(?:[A-Za-z0-9_-]{8}-[^/]+|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$",
+        frozenset({"*.jobspage.co"}),
+    ),
     FlatchrConnector(),
     MciDirectHireConnector(),
     # Prevue APS: each customer's career site ({tenant}.prevueaps.com) serves a sitemap

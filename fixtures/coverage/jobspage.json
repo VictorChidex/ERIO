@@ -1,0 +1,112 @@
+[
+ {
+  "source_slug": "jobspage",
+  "board_token": "https://demo.jobspage.co/sitemap.xml",
+  "external_id": "b3f58cf30974417bdef12a2b",
+  "payload": {
+   "page_url": "https://demo.jobspage.co/NVcWIk5a-quality-assurance-tester",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "🧑🏻‍🏫 Quality Assurance Tester",
+    "description": "<p><strong>Job Brief:</strong></p>\n<p>We are searching for an experienced, dynamic Quality Assurance (QA) Tester to be responsible for designing and executing test plans in order to improve the usability of our products. The QA Tester will work with the development team to troubleshoot, debug code, and correct errors or any issues with software code.</p>\n<p>As a successful QA Tester, you should have a strong knowledge of software code and testing methodologies and be a team player.</p>\n<p><br></p>\n<p><strong>Key Responsibilities:</strong></p>\n<ol>\n  <li>Responsible for creating test cases for automated tests and manuals.</li>\n  <li>Work with the project manager, developers, and account managers in order to understand business requirements and perform test effort estimation.</li>\n  <li>Review requirements, technical design documents, and specifications to provide meaningful feedback.</li>\n  <li>Create comprehensive, well-structured, and detailed test plans and test cases.</li>\n  <li>Implement test procedures and oversee the QA process.</li>\n  <li>Troubleshoot quality issues and modify test procedures.</li>\n  <li>Work closely and take direction from other QAs.</li>\n  <li>Identify test data requirements and generate required test data.</li>\n  <li>Execute Software Functional, Regression, and Smoke testing.</li>\n  <li>Responsible for prioritizing test cases considering account business priorities &amp; risk analysis.</li>\n  <li>Responsible for analyzing test results and providing ",
+    "datePosted": "2022-07-07T10:23:34.000Z",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Acme",
+     "sameAs": "https://jobspage.co"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Acme",
+     "value": "NVcWIk5a-quality-assurance-tester"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Portland",
+      "addressCountry": "US"
+     }
+    },
+    "employmentType": "FULL_TIME",
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:58:52.281779Z",
+  "content_hash": "27cc4400a5c9f704e5483457859b51c1c94b3dbf3144e01dfd6d91bbc7f91d61"
+ },
+ {
+  "source_slug": "jobspage",
+  "board_token": "https://demo.jobspage.co/sitemap.xml",
+  "external_id": "6ecd171ed2eb8dde8df959c0",
+  "payload": {
+   "page_url": "https://demo.jobspage.co/DP3U_DLg-web-application-developer",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "👨🏻‍💻 Web Application Developer",
+    "description": "<p><strong>Job Brief:</strong></p>\n<p>We are looking for an experienced, skilled Web Applications Developer to design, develop, test, debug, implement, and maintain web-based applications using Java, Web Services, and assorted programming languages as needed. The Web Application Developer will build and maintain numerous sites, program custom modules, implement layouts, and work closely with various units and centers to implement and support enterprise branding and communications initiatives.</p>\n<p><br></p>\n<p><strong>Key Responsibilities:</strong></p>\n<ol>\n  <li>Design, develop, and support Drupal-based websites and other duties as assigned.</li>\n  <li>Implement responsive front-end layouts and UI with modern HTML, CSS, and JavaScript techniques.</li>\n  <li>Coordinate with a diverse group of colleagues in order to find solutions that solve complex problems with a focus on creativity, functionality, usability, and attention to detail.</li>\n  <li>Remain abreast of technology directions, initiatives, and trends within the scope of expertise.</li>\n  <li>Test functionality to ensure objectives are achieved while integrating user-developed content to identify and troubleshoot errors or problems with web-based applications.</li>\n  <li>Plan, track projects, and communicate with clients from start to end.</li>\n  <li>Explain and translate complex ideas and concepts to both technical and non-technical audiences.</li>\n</ol>\n<p><strong>Qualifications &amp; Experience:</strong></p>\n<p>· ",
+    "datePosted": "2022-07-07T10:21:44.000Z",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Acme",
+     "sameAs": "https://jobspage.co"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Acme",
+     "value": "DP3U_DLg-web-application-developer"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Portland",
+      "addressCountry": "US"
+     }
+    },
+    "employmentType": "FULL_TIME",
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:58:53.014304Z",
+  "content_hash": "846a947d98f86bf6c9c1c0f4e26e80db9bac58ba5facd87231df325638383dd5"
+ },
+ {
+  "source_slug": "jobspage",
+  "board_token": "https://company.jobspage.co/sitemap.xml",
+  "external_id": "024e726e9ac116955c0285ea",
+  "payload": {
+   "page_url": "https://company.jobspage.co/P9xD1Hyz-frontend-developer",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Frontend developer",
+    "description": "<h4>asdasdasdasd</h4>",
+    "datePosted": "2022-05-29T20:57:34.000Z",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Company A"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Company A",
+     "value": "P9xD1Hyz-frontend-developer"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Prague",
+      "addressCountry": "CZ"
+     }
+    },
+    "employmentType": "CONTRACTOR",
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:59:00.416166Z",
+  "content_hash": "ed7a3fed6621d6fd5563dc646bc095fbe520658a49be12f36deebc1d95937727"
+ }
+]

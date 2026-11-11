@@ -1606,5 +1606,16 @@
    "phidap",
    "defimat"
   ]
+ },
+ {
+  "slug": "jobspage",
+  "name": "Jobspage",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Careers pages on {company}.jobspage.co: each serves a sitemap of its job pages and every job page carries a schema.org JobPosting; robots.txt allows them (only the vendor's own /jobs/ and /account/ paths are disallowed). Token is the sitemap address, https://{company}.jobspage.co/sitemap.xml. Only the vendor's demo and test careers pages could be found, so the examples are demo data, not a real employer; real customer pages are on the same pattern.",
+  "examples": [
+   "https://demo.jobspage.co/sitemap.xml",
+   "https://company.jobspage.co/sitemap.xml"
+  ]
  }
 ]

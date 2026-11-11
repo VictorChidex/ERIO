@@ -270,6 +270,23 @@ def test_flatchr_reads_the_vacancies_embedded_in_the_company_page() -> None:
     assert job.description_html
 
 
+def test_jobspage_reads_the_careers_site_sitemap_and_job_pages() -> None:
+    fetched, jobs = read(
+        "jobspage",
+        "https://demo.jobspage.co/sitemap.xml",
+        {
+            "https://demo.jobspage.co/sitemap.xml": body("jobspage_sitemap.xml"),
+            "https://demo.jobspage.co/": body("jobspage_job.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 3  # the home page is not a job page
+    job = jobs[0]
+    assert job.company_name == "Acme" and job.city == "Portland" and job.country_hint == "US"
+    assert "Web Application Developer" in job.title
+    assert job.employment_type == "FULL_TIME" and job.description_html
+    assert str(job.apply_url).startswith("https://demo.jobspage.co/")
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
