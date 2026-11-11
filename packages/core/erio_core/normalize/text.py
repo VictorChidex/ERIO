@@ -44,14 +44,17 @@ def clean_title(title: str) -> str:
 
 
 def sanitize_html(content: str) -> str:
-    """Description HTML reduced to an allow-list of tags; links get rel=noopener."""
-    return nh3.clean(
+    """Description HTML reduced to an allow-list of tags; links open in a new tab, rel=noopener."""
+    cleaned = nh3.clean(
         content,
         tags=ALLOWED_TAGS,
         attributes=ALLOWED_ATTRIBUTES,
         url_schemes={"https", "http", "mailto"},
         link_rel="noopener noreferrer nofollow",
+        set_tag_attribute_values={"a": {"target": "_blank"}},
     )
+    # A mail link opens the mail program, not a tab.
+    return re.sub(r'(<a href="mailto:[^"]*") target="_blank"', r"\1", cleaned)
 
 
 BLOCK_TAG = re.compile(r"<(/?)(p|br|li|div|h\d|tr|td|th|ul|ol|blockquote)\b", re.IGNORECASE)

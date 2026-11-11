@@ -124,7 +124,7 @@ export default async function CoveragePage({
           <p className="cov-note">
             Job boards whose terms forbid automated collection (LinkedIn, Indeed, Glassdoor and
             similar) are never crawled. They can join later only through licensed feeds.{" "}
-            <Link href="https://github.com/VictorChidex/ERIO/blob/main/docs/sources.md">How sources are reviewed</Link>
+            <Link href="https://github.com/VictorChidex/ERIO/blob/main/docs/sources.md" target="_blank" rel="noopener noreferrer">How sources are reviewed</Link>
           </p>
         </div>
       </section>

@@ -37,13 +37,13 @@ export function Footer() {
           </div>
           <div className="foot-col">
             <div className="foot-col-title">Project</div>
-            <a href={REPO} rel="noopener noreferrer">
+            <a href={REPO} target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
-            <a href={`${REPO}/blob/main/docs/sources.md`} rel="noopener noreferrer">
+            <a href={`${REPO}/blob/main/docs/sources.md`} target="_blank" rel="noopener noreferrer">
               Data sources
             </a>
-            <a href="https://www.exchangerate-api.com" rel="noopener noreferrer">
+            <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">
               Rates by Exchange Rate API
             </a>
           </div>

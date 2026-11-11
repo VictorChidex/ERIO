@@ -54,3 +54,15 @@ def test_trade_words_match_whole_words_only() -> None:
     assert classify_role("Registered Nurse") == "healthcare"
     assert classify_role("Healthcare Platform Engineer") == "engineering"
     assert classify_role("Device Driver Engineer") == "engineering"
+
+
+def test_links_in_a_description_open_in_a_new_tab() -> None:
+    clean = sanitize_html(
+        '<p>Apply <a href="https://example.com/jobs/1" onclick="x()">here</a>'
+        ' or write to <a href="mailto:jobs@example.com">us</a></p>'
+    )
+    assert '<a href="https://example.com/jobs/1" target="_blank"' in clean
+    assert 'rel="noopener noreferrer nofollow"' in clean
+    assert "onclick" not in clean
+    assert 'href="mailto:jobs@example.com" rel=' in clean  # a mail link has no target
+    assert 'mailto:jobs@example.com" target' not in clean
