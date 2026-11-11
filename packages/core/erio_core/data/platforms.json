@@ -1537,5 +1537,15 @@
   "blocked": "not verifiable: ats.jobcan.jp is the sign-in app (redirects to id.jobcan.jp login) and the vendor documents no public career-page host; no public tenant job page could be found to read.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "dvinci",
+  "name": "d.vinci",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads each career site sitemap and the schema.org JobPosting on every /{lang}/jobs/{id}/ page. Sites differ in robots.txt: some (impulse.dvinci-hr.com) disallow everything but widget paths and must not be registered. Token is the sitemap URL.",
+  "examples": [
+   "https://dein-weg-zu.dvinci.de/sitemap.xml"
+  ]
  }
 ]

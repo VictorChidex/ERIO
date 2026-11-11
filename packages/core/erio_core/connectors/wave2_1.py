@@ -4,6 +4,7 @@ Each reads a public, unauthenticated surface that the platform's own career site
 every visitor; how each was found, and its limits, is in docs/connectors.md.
 
 - greytHR Hire: the career page's own JSON calls on ``{tenant}.greythr.com/hire``.
+- d.vinci: the career site sitemap plus the JobPosting each job page carries.
 """
 
 import json
@@ -12,6 +13,8 @@ from typing import Any
 
 from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url, iso_datetime
+from erio_core.connectors.jsonld import JsonLdConnector
+from erio_core.connectors.jsonld_platforms import hosts
 from erio_core.connectors.base import (
     BoardFetch,
     Connector,
@@ -132,4 +135,6 @@ class GreytHRHireConnector(Connector):
 
 WAVE2_1_CONNECTORS: list[Connector] = [
     GreytHRHireConnector(),
+    # d.vinci career sites: a sitemap of /{lang}/jobs/{id}/{slug} pages, each with a JobPosting.
+    JsonLdConnector("dvinci", r"^/[a-z]{2}/jobs/\d+/", hosts("*.dvinci-hr.com", "*.dvinci.de")),
 ]

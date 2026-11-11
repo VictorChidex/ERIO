@@ -85,3 +85,24 @@ def test_greythr_without_a_jobs_list_is_a_parse_error() -> None:
     with pytest.raises(FetchError) as error:
         read("greythr", "nobody", {"https://nobody.greythr.com/hire/api/career/published_jobs/": {}})
     assert error.value.outcome == "parse_error"
+
+
+# ----------------------------------------------------------------- d.vinci
+
+
+def test_dvinci_reads_the_sitemap_and_each_job_page_posting() -> None:
+    site = "https://dein-weg-zu.dvinci.de"
+    fetched, jobs = read(
+        "dvinci",
+        f"{site}/sitemap.xml",
+        {
+            f"{site}/sitemap.xml": body("dvinci_sitemap.xml"),
+            f"{site}/de/jobs/": body("dvinci_job.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2
+    first = jobs[0]
+    assert first.title.startswith("System Owner")
+    assert first.location_text and "Hamburg" in first.location_text
+    assert str(first.apply_url).startswith(f"{site}/de/jobs/")
+    assert first.description_html
