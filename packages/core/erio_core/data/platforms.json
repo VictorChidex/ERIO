@@ -1485,5 +1485,13 @@
   "blocked": "no public job list: candidate.cvwarehouse.com has no job index or sitemap (jobs open only by numeric id), the job search sits behind its login page, and the customer job feed is given to each customer rather than published.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "nicoka",
+  "name": "Nicoka CABS",
+  "kind": "ats",
+  "blocked": "no shared public job surface: tenant hosts ({name}.nicoka.com) serve the login app (robots.txt answers 403), and customers publish jobs on their own bespoke sites (for example externatic.fr), so there is nothing platform-wide to read.",
+  "notes": "",
+  "examples": []
  }
 ]
