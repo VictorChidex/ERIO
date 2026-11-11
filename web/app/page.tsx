@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { CountrySelect } from "@/components/CountrySelect";
 import { HomeGlobe } from "@/components/GlobeLazy";
 import { PopularSearches } from "@/components/PopularSearches";
+import { WelcomeBack } from "@/components/WelcomeBack";
 import {
   ApiUnavailable,
   type Countries,
@@ -68,6 +69,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <WelcomeBack />
       <section id="hero">
         <div className="hero-glow" aria-hidden="true" />
         <div className="hero-in">
