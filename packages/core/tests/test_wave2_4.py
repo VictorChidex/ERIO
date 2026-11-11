@@ -255,10 +255,29 @@ def test_hrworks_reads_job_pages_linked_from_a_portal() -> None:
     assert jobs[0].description_html
 
 
+def test_recruiterflow_reads_the_job_pages_a_career_page_lists() -> None:
+    board = "https://recruiterflow.com/believeresourcing/jobs"
+    fetched, jobs = read(
+        "recruiterflow",
+        board,
+        {
+            board: body("recruiterflow_list.html"),
+            f"{board}/2314": body("recruiterflow_job.html"),
+        },
+    )
+    # The second job page in the list is not served by the fake: it is skipped.
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title.startswith("Call Centre Agent")
+    assert jobs[0].company_name == "Believe Resourcing"
+    assert jobs[0].location_text and "Cape Town" in jobs[0].location_text
+    assert jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
+        ("recruiterflow", "https://example.com/x/jobs"),
         ("tecla", "https://example.com"),
         ("huntflow", "bad/token"),
         ("recrutor", "bad token"),

@@ -1604,5 +1604,16 @@
    "https://jobapplication.hrworks.de/de?companyId=jf9bb77",
    "https://jobapplication.hrworks.de/de?companyId=ga8ffff"
   ]
+ },
+ {
+  "slug": "recruiterflow",
+  "name": "RecruiterFlow",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Recruiterflow career pages (recruiterflow.com/{tenant}/jobs): the page embeds the list of its jobs (window.jobsList) and each job page carries a schema.org JobPosting. Token is the career page address.",
+  "examples": [
+   "https://recruiterflow.com/rfcareers/jobs",
+   "https://recruiterflow.com/believeresourcing/jobs"
+  ]
  }
 ]

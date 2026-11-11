@@ -28,6 +28,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   not read.
 - HRworks: job portals ``jobapplication.hrworks.de/de?companyId={id}`` (and ``jobs.hrworks.de``);
   the list page links each job as ``?...id={id}``, and each job page carries a JobPosting.
+- Recruiterflow: ``https://recruiterflow.com/{tenant}/jobs`` names every job page in the list
+  its script embeds (``window.jobsList``); each job page carries a JobPosting.
 """
 
 import html as htmllib
@@ -388,6 +390,30 @@ class HrworksConnector(JsonLdConnector):
         return list(dict.fromkeys(pages))
 
 
+RECRUITERFLOW_BOARD = re.compile(r"https://recruiterflow\.com/[A-Za-z0-9_-]+/jobs/?")
+RECRUITERFLOW_JOB = re.compile(r'"apply_link":\s*"([A-Za-z0-9_-]+/jobs/\d+)"')
+
+
+class RecruiterflowConnector(JsonLdConnector):
+    """Recruiterflow career pages. The board token is the page's address,
+    ``https://recruiterflow.com/{tenant}/jobs``."""
+
+    def __init__(self) -> None:
+        super().__init__("recruiterflow", r"^/", frozenset({"recruiterflow.com"}))
+
+    def board_url(self, board_token: str) -> str:
+        if not RECRUITERFLOW_BOARD.fullmatch(board_token):
+            raise ValueError(f"not a Recruiterflow career page address: {board_token!r}")
+        return board_token
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        response = fetcher.get(self.board_url(board_token))
+        if response.status != 200:
+            raise FetchError("http_error", f"HTTP {response.status}", response.status)
+        found = RECRUITERFLOW_JOB.findall(response.body.decode("utf-8", "replace"))
+        return [f"https://recruiterflow.com/{path}" for path in dict.fromkeys(found)]
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -424,6 +450,7 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     HuntflowConnector(),
     OdooConnector(),
     TeclaConnector(),
+    RecruiterflowConnector(),
     HrworksConnector(),
     JsonLdConnector("hr4you", r"^/job/view/\d+/", frozenset({"*.hr4you.org"})),
     JsonLdConnector(
