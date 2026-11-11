@@ -1626,5 +1626,16 @@
    "https://open.talentio.com/r/1/c/doublebz/homes/4401",
    "https://open.talentio.com/r/1/c/binc/homes/4380"
   ]
+ },
+ {
+  "slug": "jobsoid",
+  "name": "Jobsoid",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the JSON job list every Jobsoid career portal loads ({tenant}.jobsoid.com/api/v1/jobs): title, place, type, date and description inline; apply links use the portal's own or custom domain. Token is the portal subdomain. An unknown subdomain answers an empty list.",
+  "examples": [
+   "co-impact",
+   "vibvzw"
+  ]
  }
 ]

@@ -288,10 +288,25 @@ def test_talentio_reads_the_job_pages_a_career_page_lists() -> None:
     assert str(jobs[0].apply_url) == page
 
 
+def test_jobsoid_reads_the_job_list_a_career_portal_loads() -> None:
+    fetched, jobs = read(
+        "jobsoid",
+        "co-impact",
+        {"https://co-impact.jobsoid.com/api/v1/jobs": body("jobsoid_jobs.json")},
+    )
+    assert fetched.complete and len(jobs) == 2
+    first = jobs[0]
+    assert first.title == "Regional Director, Asia"
+    assert str(first.apply_url) == "https://co-impact.jobsoid.com/j/136792/regional-director-asia"
+    assert first.location_text == "Bengaluru, Delhi, or Mumbai (Remote), India"
+    assert first.workplace_type == "remote" and first.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
+        ("jobsoid", "bad/token"),
         ("talentio", "https://example.com/x"),
         ("recruiterflow", "https://example.com/x/jobs"),
         ("tecla", "https://example.com"),

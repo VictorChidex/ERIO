@@ -32,6 +32,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   its script embeds (``window.jobsList``); each job page carries a JobPosting.
 - Talentio: ``https://open.talentio.com/r/1/c/{company}/homes/{id}`` names its job pages in the
   data it hands its page script; each job page carries a JobPosting.
+- Jobsoid: ``https://{tenant}.jobsoid.com/api/v1/jobs``, the JSON list every career portal
+  loads, descriptions inline.
 """
 
 import html as htmllib
@@ -442,6 +444,55 @@ class TalentioConnector(JsonLdConnector):
         return list(dict.fromkeys(TALENTIO_JOB.findall(html)))
 
 
+class JobsoidConnector(Connector):
+    """Jobsoid career portals. The board token is the portal's subdomain."""
+
+    slug = "jobsoid"
+    hosts = frozenset({"*.jobsoid.com"})
+
+    def board_url(self, board_token: str) -> str:
+        if not TOKEN.fullmatch(board_token):
+            raise ValueError(f"not a Jobsoid portal name: {board_token!r}")
+        return f"https://{board_token}.jobsoid.com/api/v1/jobs"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        jobs = json.loads(body)
+        if not isinstance(jobs, list):
+            raise ValueError("Jobsoid answers with a JSON array")
+        return [
+            RawPosting(
+                source_slug=self.slug,
+                board_token=board_token,
+                external_id=str(job["id"]),
+                payload=job,
+            )
+            for job in jobs
+            if isinstance(job, dict) and job.get("id") and job.get("title") and job.get("hostedUrl")
+        ]
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        place = job.get("location") or {}
+        text = ", ".join(
+            p for p in (plain(place.get(k)) for k in ("city", "state", "country")) if p
+        ) or plain(place.get("title"))
+        remote = "remote" in f"{text} {job.get('title')}".lower()
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]).strip(),
+            apply_url=as_url(str(job["hostedUrl"])),
+            posted_at=iso_datetime(job.get("postedDate")),
+            location_text=text,
+            city=plain(place.get("city")),
+            region=plain(place.get("state")),
+            country_hint=plain(place.get("country")),
+            workplace_type="remote" if remote else None,
+            employment_type=plain(job.get("type")),
+            description_html=job.get("description") or None,
+        )
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -478,6 +529,7 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     HuntflowConnector(),
     OdooConnector(),
     TeclaConnector(),
+    JobsoidConnector(),
     TalentioConnector(),
     RecruiterflowConnector(),
     HrworksConnector(),
