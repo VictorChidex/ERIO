@@ -1532,5 +1532,16 @@
    "cryptopay.global",
    "prisma"
   ]
+ },
+ {
+  "slug": "enlizt",
+  "name": "Enlizt / Plooral",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Plooral (Enlizt) career sites at {tenant}.enlizt.me: the server-rendered job list links /vagas/{slug} pages, each with a schema.org JobPosting. Token is the career-site address, e.g. https://dr.enlizt.me/. Sites with no open jobs list none.",
+  "examples": [
+   "https://dr.enlizt.me/",
+   "https://page.enlizt.me/"
+  ]
  }
 ]

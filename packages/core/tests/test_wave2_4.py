@@ -135,6 +135,22 @@ def test_huntflow_reads_vacancy_pages_listed_in_a_career_site_sitemap() -> None:
     assert str(jobs[0].apply_url) == f"{site}/vacancy/account-manager-b2b"
 
 
+def test_enlizt_reads_job_pages_linked_from_a_career_site() -> None:
+    site = "https://dr.enlizt.me"
+    job = f"{site}/vagas/chefe_de_bar_-_chica_parrilla_y_bar_-_porto_alegre-060826"
+    fetched, jobs = read(
+        "enlizt",
+        f"{site}/",
+        {f"{site}/": body("enlizt_list.html"), job: body("enlizt_job.html")},
+    )
+    # The talent-bank link is not a job page.
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title.startswith("Chefe de Bar")
+    assert jobs[0].company_name == "Fermenta Pessoas"
+    assert jobs[0].location_text and "Porto Alegre" in jobs[0].location_text
+    assert jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [

@@ -14,6 +14,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
 - Huntflow: career sites ``{tenant}.huntflow.io`` (or ``{tenant}.global.huntflow.io``): the
   sitemap lists ``/vacancy/{slug}`` pages, which are server-rendered with their data in the
   Nuxt payload.
+- Enlizt (Plooral): career sites ``https://{tenant}.enlizt.me/`` list ``/vagas/{slug}`` job
+  pages, each with a schema.org JobPosting.
 """
 
 import json
@@ -269,4 +271,5 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     RecrutorConnector(),
     TalentAdoreConnector(),
     HuntflowConnector(),
+    JsonLdConnector("enlizt", r"^/vagas/[^/]+$", frozenset({"*.enlizt.me"})),
 ]
