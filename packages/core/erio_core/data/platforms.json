@@ -1583,5 +1583,13 @@
   "blocked": "every {tenant}.easycruit.com request (ntnu, visma, easycruit tested) is answered by an AWS WAF bot challenge (HTTP 202, empty body, x-amzn-waf-action: challenge), which must not be bypassed.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "gethired",
+  "name": "GetHired / EasyApply",
+  "kind": "ats",
+  "blocked": "not verifiable: {tenant}.easyapply.co career pages serve an /rss feed that robots.txt allows, but every tenant found (gethired, jobs, acme, hiring, restaurant, dental and others) returned an empty feed, so no job item could be read; no customer tenant with openings could be found.",
+  "notes": "",
+  "examples": []
  }
 ]
