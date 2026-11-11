@@ -21,6 +21,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   that do not are not read.
 - BITE Bewerbermanager: the job portal ``jobs.b-ite.com`` all BITE customers publish to; its
   sitemap lists ``/jobposting/{id}`` pages, each with a schema.org JobPosting.
+- Tecla: the public jobs page of ``app.tecla.io`` reads ``api.tecla.io/api/jobs/getPublicJobs/``
+  without any sign-in; descriptions in that list are the platform's own short excerpts.
 """
 
 import html as htmllib
@@ -32,8 +34,9 @@ from urllib.parse import urlsplit, urlunsplit
 from defusedxml import ElementTree
 
 from erio_core.connectors._htmlpages import PageCrawler, element_with, listing, meta, text_of
-from erio_core.connectors._service import plain
-from erio_core.connectors._util import as_url, iso_datetime, join_html
+from erio_core.connectors._paged import PagedJsonConnector
+from erio_core.connectors._service import plain, service_host
+from erio_core.connectors._util import as_url, iso_datetime, join_html, salary
 from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.feed import parse_feed, stable_id
 from erio_core.connectors.jsonld import JsonLdConnector, page_links, sitemap_locations
@@ -301,6 +304,58 @@ class OdooConnector(JsonLdConnector):
         ]
 
 
+TECLA_PERIODS = {"mon": "month", "yea": "year", "ann": "year", "hou": "hour"}
+
+
+class TeclaConnector(PagedJsonConnector):
+    """The Tecla job list. The board token is ``https://api.tecla.io``."""
+
+    slug = "tecla"
+    hosts = frozenset({"api.tecla.io"})
+    multi_employer = True
+    max_pages = 30
+
+    def list_url(self, board_token: str, page: int) -> str:
+        host = service_host(board_token, self.hosts, "Tecla")
+        return f"https://{host}/api/jobs/getPublicJobs/?page={page}"
+
+    def items(self, data: Any) -> list[dict[str, Any]]:
+        if not data.get("success"):
+            raise ValueError("Tecla answered without success")
+        return [j for j in data["data"]["jobs"] if isinstance(j, dict) and j.get("id")]
+
+    def has_more(self, data: Any, items: list[dict[str, Any]], page: int) -> bool:
+        return page < int(data["data"]["pagination"]["countPages"])
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        # Every Tecla role is remote and paid in US dollars (the platform says so on its pages).
+        place = [plain(job.get(k)) for k in ("city", "state")]
+        low, high = job.get("minSalary"), job.get("maxSalary")
+        period = next(
+            (v for k, v in TECLA_PERIODS.items() if str(job.get("salaryType") or "").startswith(k)),
+            None,
+        )
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job.get("seniorityName") or job["name"]).strip(),
+            company_name=plain((job.get("company") or {}).get("name")),
+            apply_url=as_url(f"https://app.tecla.io/job?id={job['id']}"),
+            posted_at=iso_datetime(job.get("createdAt")),
+            location_text=", ".join(p for p in place if p)
+            or plain(job.get("subtitle"))
+            or "Remote",
+            workplace_type="remote",
+            employment_type=plain((job.get("commitment") or {}).get("name")),
+            salary=salary(low, high if job.get("includeMaxSalary") else None, "USD", period),
+            description_html=join_html(
+                f"<p>{plain(job.get('description'))}</p>" if job.get("description") else None,
+                job.get("benefits"),
+            ),
+        )
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -336,6 +391,7 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     TalentAdoreConnector(),
     HuntflowConnector(),
     OdooConnector(),
+    TeclaConnector(),
     JsonLdConnector(
         "bite",
         r"^/jobposting/[0-9a-f]{40}$",

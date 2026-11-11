@@ -207,10 +207,27 @@ def test_bite_reads_job_pages_listed_in_the_portal_sitemap() -> None:
     assert jobs[0].description_html
 
 
+def test_tecla_reads_the_public_job_list() -> None:
+    fetched, jobs = read(
+        "tecla",
+        "https://api.tecla.io",
+        {"https://api.tecla.io/api/jobs/getPublicJobs/": body("tecla_jobs.json")},
+    )
+    assert fetched.complete and len(jobs) == 2
+    first = jobs[0]
+    assert first.title == "Applied AI Engineer"
+    assert first.company_name == "Crux Analytics"
+    assert first.workplace_type == "remote" and first.location_text == "Remote"
+    assert str(first.apply_url) == "https://app.tecla.io/job?id=3419"
+    assert first.salary and first.salary.currency == "USD" and first.salary.period == "month"
+    assert first.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
+        ("tecla", "https://example.com"),
         ("huntflow", "bad/token"),
         ("recrutor", "bad token"),
         ("talentadore", "bad/token"),

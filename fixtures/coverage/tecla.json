@@ -1,0 +1,259 @@
+[
+ {
+  "source_slug": "tecla",
+  "board_token": "https://api.tecla.io",
+  "external_id": "3419",
+  "payload": {
+   "id": 3419,
+   "name": "Applied AI Engineer",
+   "commitment": {
+    "id": 1,
+    "name": "Full-Time",
+    "createdAt": "2022-03-18T20:19:10"
+   },
+   "seniority": "ml",
+   "seniorityName": "Applied AI Engineer",
+   "company": {
+    "name": "Crux Analytics",
+    "photo": "/media/users/6b7870_4ed473ff08b343179b93771d3277bb7emv2.png",
+    "id": 362,
+    "country": "United States of America",
+    "size": "1-10",
+    "boostStudentsLogo": null
+   },
+   "category": "Engineering",
+   "requiredSkills": [
+    {
+     "id": 96,
+     "minLevel": 1,
+     "level": 2,
+     "createdAt": "2022-05-09T17:16:13.389906",
+     "skill": {
+      "id": 3,
+      "name": "Python",
+      "createdAt": "2022-03-18T20:19:11.068017"
+     }
+    },
+    {
+     "id": 8422,
+     "minLevel": 1,
+     "level": 2,
+     "createdAt": "2025-04-09T18:15:10.120767",
+     "skill": {
+      "id": 1238,
+      "name": "AI",
+      "createdAt": "2024-01-08T14:43:40.263010"
+     }
+    },
+    {
+     "id": 10362,
+     "minLevel": 1,
+     "level": 2,
+     "createdAt": "2026-11-03T15:44:38.116159",
+     "skill": {
+      "id": 1610,
+      "name": "Software Engineering",
+      "createdAt": "2026-02-27T16:32:22"
+     }
+    },
+    {
+     "id": 2338,
+     "minLevel": 1,
+     "level": 1,
+     "createdAt": "2022-08-03T02:27:49.212076",
+     "skill": {
+      "id": 966,
+      "name": "Machine Learning",
+      "createdAt": "2022-08-01T18:22:00"
+     }
+    }
+   ],
+   "createdAt": "2026-11-03T15:44:38.105017",
+   "description": "Along with our partner, we are seeking a phenomenal Applied AI Engineer to join their R&D team, working closely with their senior Applied AI Engineer, software engineers and data scientists to build the AI-powered capabilities their customers rely on every day.This role is ideal for someone who is already building real AI applications and is ready for the next step: developing the technical judgment, problem-solving skills and ownership needed to build entire systems. If you’re excited about ta…",
+   "city": "",
+   "state": "",
+   "minSalary": 4000,
+   "maxSalary": 5000,
+   "salaryType": "montly",
+   "annualSalary": 0,
+   "annualMaxSalary": 0,
+   "usaOnly": false,
+   "subtitle": "",
+   "isHot": true,
+   "autoSourcing": true,
+   "salaryBasedOnExperience": false,
+   "benefits": "<ul><li><span style=\"background-color: transparent;\">A fully remote position with a structured schedule that supports work-life balance.</span></li><li>The opportunity to join an innovative company building cutting-edge AI solutions with real-world impact.</li></ul>",
+   "includeMaxSalary": true,
+   "fixedSalary": false,
+   "equity": false,
+   "audioSampleLevel": 8,
+   "videoSampleLevel": 0
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "55e609eefa2cbaf6b8f79b518f85a4ab7b14dee7f56b6523f6d4189798b51c7f"
+ },
+ {
+  "source_slug": "tecla",
+  "board_token": "https://api.tecla.io",
+  "external_id": "3418",
+  "payload": {
+   "id": 3418,
+   "name": "UX/UI Product Designer",
+   "commitment": {
+    "id": 1,
+    "name": "Full-Time",
+    "createdAt": "2022-03-18T20:19:10"
+   },
+   "seniority": "sr",
+   "seniorityName": "Sr. UX/UI Product Designer",
+   "company": {
+    "name": "ProMazo",
+    "photo": "/media/users/promazo_logo.jpeg",
+    "id": 503,
+    "country": "United States of America",
+    "size": "51-100",
+    "boostStudentsLogo": null
+   },
+   "category": "Design",
+   "requiredSkills": [
+    {
+     "id": 10360,
+     "minLevel": 1,
+     "level": 5,
+     "createdAt": "2026-11-02T17:06:47.458530",
+     "skill": {
+      "id": 1213,
+      "name": "Wireframing",
+      "createdAt": "2023-11-10T19:14:16.355460"
+     }
+    },
+    {
+     "id": 10361,
+     "minLevel": 1,
+     "level": 5,
+     "createdAt": "2026-11-02T17:06:47.462085",
+     "skill": {
+      "id": 1633,
+      "name": "Prototyping",
+      "createdAt": "2026-04-07T16:12:12"
+     }
+    },
+    {
+     "id": 258,
+     "minLevel": 1,
+     "level": 2,
+     "createdAt": "2022-06-14T00:57:27.976522",
+     "skill": {
+      "id": 174,
+      "name": "CSS",
+      "createdAt": "2022-03-23T21:59:38.163210"
+     }
+    },
+    {
+     "id": 534,
+     "minLevel": 1,
+     "level": 2,
+     "createdAt": "2022-06-14T01:36:10.836651",
+     "skill": {
+      "id": 320,
+      "name": "Html",
+      "createdAt": "2022-03-23T21:59:38.486592"
+     }
+    }
+   ],
+   "createdAt": "2026-11-02T17:06:47.451879",
+   "description": "Along with our partner, we're looking for a Senior UX/UI Product Designer to lead the evolution of an established enterprise platform, improving usability, simplifying complex workflows, and designing intuitive experiences for multiple user groups.This role is heavily focused on user experience, product thinking, and functional design, rather than purely visual aesthetics. You'll take ownership of redesigning key areas of the platform, particularly its administrative dashboards and user-facing …",
+   "city": "",
+   "state": "",
+   "minSalary": 3000,
+   "maxSalary": 3500,
+   "salaryType": "montly",
+   "annualSalary": 0,
+   "annualMaxSalary": 0,
+   "usaOnly": false,
+   "subtitle": "",
+   "isHot": true,
+   "autoSourcing": false,
+   "salaryBasedOnExperience": false,
+   "benefits": "<ul><li><span style=\"background-color: transparent;\">A fully remote position with a structured schedule that supports work-life balance.</span></li><li>The opportunity to join an innovative technology company shaping the future of mentorship and professional development.</li><li><span style=\"background-color: transparent;\">Two weeks of paid vacation per year.</span></li><li><span style=\"background-color: transparent;\">10 paid days for local holidays.</span></li></ul>",
+   "includeMaxSalary": true,
+   "fixedSalary": false,
+   "equity": false,
+   "audioSampleLevel": 8,
+   "videoSampleLevel": 0
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "c61afe040274ab5974624a15e40d4c3aea48a5c57d5ebecd9614c14d4bfcf8b7"
+ },
+ {
+  "source_slug": "tecla",
+  "board_token": "https://api.tecla.io",
+  "external_id": "3416",
+  "payload": {
+   "id": 3416,
+   "name": "Director of Licensing and Credentialing",
+   "commitment": {
+    "id": 1,
+    "name": "Full-Time",
+    "createdAt": "2022-03-18T20:19:10"
+   },
+   "seniority": "ml",
+   "seniorityName": "Director of Licensing and Credentialing",
+   "company": {
+    "name": "Sliiip",
+    "photo": "/media/users/sliiip_logo.jpeg",
+    "id": 468,
+    "country": "United States of America",
+    "size": "11-50",
+    "boostStudentsLogo": null
+   },
+   "category": "Operations",
+   "requiredSkills": [
+    {
+     "id": 10356,
+     "minLevel": 1,
+     "level": 5,
+     "createdAt": "2026-10-30T17:48:42.101063",
+     "skill": {
+      "id": 1376,
+      "name": "Healthcare Industry",
+      "createdAt": "2024-08-27T17:06:34.578169"
+     }
+    },
+    {
+     "id": 10358,
+     "minLevel": 1,
+     "level": 4,
+     "createdAt": "2026-10-30T20:35:58.264636",
+     "skill": {
+      "id": 1691,
+      "name": "Healthcare Licensing & Credentialing",
+      "createdAt": "2026-10-30T17:47:54"
+     }
+    }
+   ],
+   "createdAt": "2026-10-30T17:48:42.092591",
+   "description": "Along with our partner, we are looking for a Director of Licensing and Credentialing. Our partner is a physician-founded, fully virtual sleep specialty practice delivering evidence-based sleep care nationwide. They expect roughly 5x growth, and every new provider must be licensed, credentialed, and enrolled with payers before they can see patients and generate revenue. Faster provider onboarding drives revenue and improves provider and patient satisfaction. Today, licensing, credentialing, and …",
+   "city": "",
+   "state": "",
+   "minSalary": 4000,
+   "maxSalary": 5000,
+   "salaryType": "montly",
+   "annualSalary": 0,
+   "annualMaxSalary": 0,
+   "usaOnly": false,
+   "subtitle": "",
+   "isHot": true,
+   "autoSourcing": false,
+   "salaryBasedOnExperience": false,
+   "benefits": "<ul><li><span style=\"background-color: transparent;\">A fully remote position with a structured schedule that supports work-life balance.</span></li><li><span style=\"background-color: transparent;\">Two weeks of paid vacation per year.</span></li><li><span style=\"background-color: transparent;\">10 paid days for local holidays.</span></li></ul>",
+   "includeMaxSalary": true,
+   "fixedSalary": false,
+   "equity": false,
+   "audioSampleLevel": 9,
+   "videoSampleLevel": 0
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "f27f63e84fd97c9c1d5a8d911ca14b87a40e174027a610f82e0d758ccef520bf"
+ }
+]

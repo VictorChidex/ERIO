@@ -1572,5 +1572,15 @@
   "examples": [
    "https://jobs.b-ite.com/sitemap.xml.gz"
   ]
+ },
+ {
+  "slug": "tecla",
+  "name": "Tecla",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads the public job list the jobs page of app.tecla.io loads without sign-in (api.tecla.io/api/jobs/getPublicJobs/, paged): client company, remote role, USD pay range, short description and benefits. The list carries only a description excerpt. Token is https://api.tecla.io. Credit: link each job back to its Tecla page.",
+  "examples": [
+   "https://api.tecla.io"
+  ]
  }
 ]
