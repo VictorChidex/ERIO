@@ -4,13 +4,15 @@ platform's own sites serve to every visitor; how each was found, and its limits,
 docs/connectors.md.
 
 - Crelate: the RSS feed behind every candidate portal (``/portal/{org}/rss``).
+- GeekJob: server-rendered ``/vacancies/{n}`` lists; every vacancy page carries JobPosting data.
 """
 
 import re
 
 from erio_core.connectors._util import as_url
-from erio_core.connectors.base import Connector
+from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.feed import feed_date, stable_id, xml_items
+from erio_core.connectors.jsonld import JsonLdConnector, page_links
 from erio_core.schemas import PartialJob, RawPosting
 
 TOKEN = re.compile(r"[a-z0-9][a-z0-9_-]{0,62}")
@@ -71,6 +73,38 @@ class CrelateConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- GeekJob
+
+
+class PathPagedJsonLdConnector(JsonLdConnector):
+    """A JobPosting platform whose list is paged by path: the first page is the board
+    token and page n is ``{board token}/{n}`` (GeekJob's ``/vacancies/2``)."""
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        base = self.board_url(board_token).rstrip("/")
+        links: list[str] = []
+        for number in range(1, self.listing_pages + 1):
+            response = fetcher.get(base if number == 1 else f"{base}/{number}")
+            if response.status != 200:
+                if number == 1:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            found = page_links(response.body.decode("utf-8", "replace"), base, self.job_path)
+            fresh = [link for link in found if link not in links]
+            if not fresh:
+                break
+            links += fresh
+        return links
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    PathPagedJsonLdConnector(
+        "geekjob",
+        r"^/vacancy/[0-9a-f]{24}$",
+        frozenset({"geekjob.ru"}),
+        multi_employer=True,
+        listing_pages=6,
+        max_pages=120,
+    ),
 ]

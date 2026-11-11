@@ -1488,5 +1488,15 @@
    "10thstreettalent",
    "thetalentmine"
   ]
+ },
+ {
+  "slug": "geekjob",
+  "name": "GeekJob",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from GeekJob (geekjob.ru, Russian IT jobs); each links back to its GeekJob page. Reads the server-rendered /vacancies/{n} lists and each vacancy's schema.org JobPosting; its robots.txt allows them (it disallows only /json/ and /rest/). Credit: link each job back to GeekJob.",
+  "examples": [
+   "https://geekjob.ru/vacancies"
+  ]
  }
 ]

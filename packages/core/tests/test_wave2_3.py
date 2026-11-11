@@ -72,6 +72,23 @@ def test_crelate_reads_the_portal_rss_feed() -> None:
     assert job.description_html and "people team" in job.description_html
 
 
+def test_geekjob_reads_vacancy_pages_linked_from_its_list() -> None:
+    fetched, jobs = read(
+        "geekjob",
+        "https://geekjob.ru/vacancies",
+        {
+            "https://geekjob.ru/vacancies": body("geekjob_list.html"),
+            "https://geekjob.ru/vacancy/": body("geekjob_job.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2
+    job = jobs[0]
+    assert job.title == "Account manager" and job.company_name == "AdTech"
+    assert job.location_text and "Москва" in job.location_text
+    assert str(job.apply_url).startswith("https://geekjob.ru/vacancy/")
+    assert job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
