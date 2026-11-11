@@ -1498,5 +1498,16 @@
   "examples": [
    "https://geekjob.ru/vacancies"
   ]
+ },
+ {
+  "slug": "beehire",
+  "name": "Beehire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The JSON each Beehire career page (app.beehire.com/career/{name}) loads for visitors (/users/getPublicCampaigns/{name}); robots.txt allows it. Token is the career page name. Apply link is the job's public invitation page; standing spontaneous-application forms are skipped.",
+  "examples": [
+   "beehire",
+   "talentis"
+  ]
  }
 ]

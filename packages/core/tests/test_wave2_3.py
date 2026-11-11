@@ -89,11 +89,28 @@ def test_geekjob_reads_vacancy_pages_linked_from_its_list() -> None:
     assert job.description_html
 
 
+def test_beehire_reads_the_career_page_json_and_skips_the_standing_form() -> None:
+    fetched, jobs = read(
+        "beehire",
+        "beehire",
+        {"https://app.beehire.com/users/getPublicCampaigns/beehire": body("beehire.json")},
+    )
+    assert fetched.complete and len(jobs) == 1  # "Spontaneous Application" is not a job
+    job = jobs[0]
+    assert job.title == "Digital Marketing - Stage"  # the posting's own language (French)
+    assert job.company_name == "Beehire" and job.city == "Bruxelles"
+    assert job.employment_type == "Internship" and job.workplace_type == "onsite"
+    assert str(job.apply_url).startswith("https://app.beehire.com/invite/")
+    assert job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("crelate", "bad token"),
         ("crelate", "../x"),
+        ("beehire", "a/b"),
+        ("beehire", "x?y"),
     ],
 )
 def test_hostile_tokens_are_refused(slug: str, token: str) -> None:

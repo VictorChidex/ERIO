@@ -1,0 +1,97 @@
+{
+ "campaigns": [
+  {
+   "_id": "6aa15ee09adc49034bcc7e33",
+   "title": {
+    "0": "Digital Marketing - Internship",
+    "1": "Digital Marketing - Stage"
+   },
+   "description": {
+    "0": "<p>Looking for an internship that doesn't expect you to be a full-time barista? We're looking for promising interns to help support our digital marketing operations!</p><p>Beehire is a leading SAAS recruitment platform used by thousands of applicants and some of the largest and most promising companies in Europe (you're using it right now!). Join our growing team at an early stage and be part of our acceleration.</p><p>We're looking for marketing interns to help us with the following tasks:</p><",
+    "1": "<p>Envie d'apprendre, de mettre tes connaissances en pratique, de tester tes idées et de voir concrètement l’impact de ton travail ? On cherche des stagiaires en marketing digital pour rejoindre l’aventure Beehire !</p><p><strong>Beehire, c’est quoi ?</strong> Une plateforme SaaS de recrutement qui aide les entreprises à recruter plus simplement et plus efficacement. Utilisée par des milliers de candidats (tu l'utilises en ce moment !) et des entreprises partout en Europe, elle accompagne aujour"
+   },
+   "inviteExp": 60,
+   "language": 1,
+   "inviteLink": "https://app.beehire.com/invite/d3p78iJs5",
+   "location": {
+    "latitude": 50.8222435,
+    "longitude": 4.369706199999999,
+    "name": "Av. Louise 350, 1000 Bruxelles, Belgium",
+    "city": "Bruxelles",
+    "state": "Bruxelles",
+    "country": "Belgium",
+    "zip": "1000",
+    "street": "Avenue Louise",
+    "street_number": "350"
+   },
+   "customization": {
+    "employerBranding": {
+     "name": "Beehire"
+    }
+   },
+   "jobCategories": [
+    {
+     "_id": "62a89ab54f8fe32b2049d8cd",
+     "adminUserId": "5ce6c43cc364e597461d9350",
+     "label": "marketing",
+     "createdAt": "2022-06-14T14:27:01.275Z",
+     "updatedAt": "2022-06-14T14:27:01.275Z",
+     "__v": 0
+    },
+    {
+     "_id": "64784b8fdc839b73c0ccbdc7",
+     "adminUserId": "5ce6c43cc364e597461d9350",
+     "label": "internship",
+     "createdAt": "2023-06-01T07:41:03.993Z",
+     "updatedAt": "2023-06-01T07:41:03.993Z",
+     "__v": 0
+    }
+   ],
+   "details": {
+    "additionalInfo": {},
+    "contract": {
+     "duration": "contractDuration_fullTime",
+     "type": "contractType_internship",
+     "remote": "remoteWork_none"
+    },
+    "vacanciesNumber": 2
+   }
+  },
+  {
+   "_id": "651569a0a5c0170b5fb4c76e",
+   "title": {
+    "0": "Spontaneous Application"
+   },
+   "description": {
+    "0": "<p>At Beehire we are always eager to connect with talented individuals who believe in our mission and can bring fresh perspectives and expertise to our team. Even if you don’t see a role that fits your profile, we encourage you to send us your details and let us know how you believe you can make a difference.</p><p><strong>This is an open application</strong></p><p>We invite you to share your experiences, skills, and aspirations with us. Tell us about the role you envision for yourself, how you "
+   },
+   "inviteExp": 60,
+   "language": 0,
+   "inviteLink": "https://app.beehire.com/invite/1J0QKyv0q",
+   "location": {
+    "latitude": 50.82218,
+    "longitude": 4.369701,
+    "name": "Av. Louise 350, 1050 Bruxelles, Belgique",
+    "city": "Bruxelles",
+    "state": "Bruxelles",
+    "country": "Belgique",
+    "zip": "1050",
+    "street": "Avenue Louise",
+    "street_number": "350"
+   },
+   "customization": {
+    "employerBranding": {
+     "name": "Beehire"
+    }
+   },
+   "jobCategories": [],
+   "details": {
+    "additionalInfo": {},
+    "contract": {}
+   }
+  }
+ ],
+ "user": {
+  "company": "Beehire"
+ }
+}
