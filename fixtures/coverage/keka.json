@@ -1,0 +1,163 @@
+[
+ {
+  "source_slug": "keka",
+  "board_token": "pennanttech",
+  "external_id": "143320",
+  "payload": {
+   "id": 143320,
+   "title": "Chief Delivery Officer",
+   "description": "<div><strong>Role Overview</strong></div><div>The Chief Delivery Officer owns end-to-end delivery of Pennant’s lending platform implementations: Strategy → Planning → Mobilization → Build &amp; Test → Deploy → Hypercare → Run (governance only). You will revisit and scale the delivery organization and operating model, protect delivery margin, quality and customer satisfaction, orchestrate multi-vendor and system-integrator programs, and ensure RFP and POC commitments are deliverable and accurately costed.</div><div><br></div><div><strong>Deep lending systems expertise across the full lifecycle is essential.</strong></div><div><strong>What you will focus on</strong></div><ul style=\"list-style-type: disc; padding-left: 1.5em; margin-top: 0px; margin-bottom: 0px;\"><li style=\"margin-left: 1.5em;\">Revisit and enhance delivery and implementation framework across programs and geographies that is scalable.</li><li style=\"margin-left: 1.5em;\">Improving delivery predictability, margin and customer outcomes.</li><li style=\"margin-left: 1.5em;\">Growing and developing the delivery organization as Pennant expands.</li></ul><div><br></div><div><strong>Key Responsibilities</strong></div><div><strong>Implementation strategy &amp; leadership</strong></div><ul style=\"list-style-type: disc; padding-left: 1.5em; margin-top: 0px; margin-bottom: 0px;\"><li style=\"margin-left: 1.5em;\">Revisit and enhance the implementation operating model (phases, stage gates, roles, forums, cadence) and rollout strat",
+   "departmentIdentifier": "67702a03-56bf-4eb0-a6c0-3de029cb7b5d",
+   "departmentName": "Client Services",
+   "excerpt": "Role OverviewThe Chief Delivery Officer owns end-to-end delivery of Pennant’s lending platform implementations: Strategy → Planning → Mobilization → Build &amp; Test → Deploy → Hypercare → Run (governance only). You will revisit and scale the delivery organization and operating model, protect delivery margin, quality and customer satisfaction, orchestrate multi-vendor and system-integrator programs, and ensure RFP and POC commitments are deliverable and accurately costed.Deep lending systems expertise across the full lifecycle is essential.What you will focus onRevisit and enhance delivery and implementation framework across programs and geographies that is scalable.Improving delivery predictability, margin and customer outcomes.Growing and developing the delivery organization as Pennant expands.Key ResponsibilitiesImplementation strategy &amp; leadershipRevisit and enhance the implementation operating model (phases, stage gates, roles, forums, cadence) and rollout strategy, including pilot, phased and cutover approaches.Co-own SOWs and contracts with Sales: scope, deliverables, acceptance, milestones, service levels and change control.Own the integrated implementation plan: WBS, critical path, capacity and skills, partner plan, budget and revenue milestones.Lead business process mapping (fitment vs. gaps) to align customer lending processes with the product, feeding SOW scope, change requests and configuration.Ensure environment and data readiness, including migrations, rehe",
+   "jobLocations": [
+    {
+     "id": 3220,
+     "name": "Corporate Office",
+     "city": "Hyderabad",
+     "state": "TG",
+     "countryCode": "IN",
+     "countryName": "India"
+    }
+   ],
+   "jobType": 2,
+   "experience": "20+ years",
+   "jobNumber": "PT0199",
+   "salaryRange": {
+    "currency": "INR",
+    "salaryPeriod": 0,
+    "cultureInfo": "en-IN"
+   },
+   "salaryRangeFormat": "",
+   "publishedOn": "2026-10-16T09:54:29.917Z",
+   "publishedSinceDays": 26,
+   "ogImagePath": "documents/68040a7985314e67b4607f13d2b70838.png",
+   "skillNames": [],
+   "url": "https://pennanttech.keka.com/careers/jobdetails/143320",
+   "company": "Pennant Technologies"
+  },
+  "fetched_at": "2026-11-11T14:29:48.360942Z",
+  "content_hash": "971b9e0f03098dd75320728881eca76fc2cbbbc5644040915df5624b96974853"
+ },
+ {
+  "source_slug": "keka",
+  "board_token": "pennanttech",
+  "external_id": "142405",
+  "payload": {
+   "id": 142405,
+   "title": "Senior Software Engineer (AS400)",
+   "description": "<div><br></div><div><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Job Summary:</strong></div><ul style=\"list-style-type: disc; padding-left: 1.5em; margin-top: 0px; margin-bottom: 0px;\"><li style=\"margin-left: 1.5em;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Own end‑to‑end technical responsibility for AS400 applications, including country‑specific core banking systems.</span></li><li style=\"margin-left: 1.5em;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Strong experience in </span><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">I-Series/ AS400 programming,</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> application development and support.</span></li><li style=\"margin-left: 1.5em;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Hands-on expertise in </span><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">ILERPG, CLLE, DB2/400, SQL</strong></li><li style=\"margin-left: 1.5em;\"><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Experience in coding, debugging, enhancement, and maintenance of AS400 applications.</span></li><li style=\"margin-left: 1.5em;\"><strong style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Good-to-Have Skill:</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\"> Experience in </span><strong style=\"background-color: rgb(255, 255, 255); color",
+   "departmentIdentifier": "8be003f3-20c2-4dd0-b082-8fd79b3e9875",
+   "departmentName": "Engineering",
+   "excerpt": "Job Summary:Own end‑to‑end technical responsibility for AS400 applications, including country‑specific core banking systems.Strong experience in I-Series/ AS400 programming, application development and support.Hands-on expertise in ILERPG, CLLE, DB2/400, SQLExperience in coding, debugging, enhancement, and maintenance of AS400 applications.Good-to-Have Skill: Experience in Equation/Finestra core banking API development.Job Responsibilities:Collaborating with business analysts, QA teams, and other technical teams to understand requirements and deliver solutions within agreed timelines.Optimizing the existing programs and SQL queries to improve application performance and processing efficiency.Developing and maintaining the batch jobs, CL programs, and job schedules to support daily banking operations and batch processing.Creating &nbsp;and modifying DB2/400 physical files, logical files, and SQL-based objects to support application requirements.Performing application debugging, root-cause analysis, and defect resolution to ensure smooth functioning of banking applications.Developing and modifying RPGLE programs, CLLE programs, and SQL queries to support new features, regulatory changes, and existing application enhancements.Analysing business requirements and functional specifications to implement technical solutions aligned with banking processes.Work with ILERPG (ILE RPG), CLLE, DB2/400, and SQL for application development, customization, and maintenance.Develop enhance, and",
+   "jobLocations": [
+    {
+     "id": 3220,
+     "name": "Corporate Office",
+     "city": "Hyderabad",
+     "state": "TG",
+     "countryCode": "IN",
+     "countryName": "India"
+    }
+   ],
+   "jobType": 2,
+   "experience": "4 to 6",
+   "jobNumber": "PT0198",
+   "salaryRange": {
+    "currency": "INR",
+    "salaryPeriod": 0,
+    "cultureInfo": "en-IN"
+   },
+   "salaryRangeFormat": "",
+   "publishedOn": "2026-10-28T04:56:26.923Z",
+   "publishedSinceDays": 14,
+   "skillNames": [],
+   "url": "https://pennanttech.keka.com/careers/jobdetails/142405",
+   "company": "Pennant Technologies"
+  },
+  "fetched_at": "2026-11-11T14:29:48.360942Z",
+  "content_hash": "bf936f42fa53ee31428ab4f1784dbbec399bf7ddcbbe35478438fd6e4d0be80c"
+ },
+ {
+  "source_slug": "keka",
+  "board_token": "spyneai",
+  "external_id": "168914",
+  "payload": {
+   "id": 168914,
+   "title": "Manager - Payroll",
+   "description": "<div><strong style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\"><u>About Spyne</u></strong></div><div><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Spyne is building the AI operating system for automotive retail. We started with visual merchandising, expanded into conversational AI, and are now putting AI agents across the dealership so dealers move inventory faster, respond to buyers instantly and run more of their operation with AI. Founded by operators from Amazon, Cox and OYO, Spyne has grown 30x in under 3 years and powers 1,500+ dealerships across the US. We're backed by Accel, Vertex Ventures and Storm Ventures.</span></div><div><br></div><div><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">What we're building:</span></div><ul style=\"list-style-type: disc; padding-left: 1.5em; margin-top: 0px; margin-bottom: 0px;\"><li style=\"margin-left: 1.5em;\"><strong style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Studio AI (Visual Agents):</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\"> turns a smartphone capture into a complete, publish-ready listing, so cars reach the website faster.</span></li><li style=\"margin-left: 1.5em;\"><strong style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Vini AI (Conversational Agents): </strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">answers every call, chat and text across sales an",
+   "departmentIdentifier": "a28c7852-f2a8-4288-96c3-76a35da24ac9",
+   "departmentName": "HR",
+   "excerpt": "About SpyneSpyne is building the AI operating system for automotive retail. We started with visual merchandising, expanded into conversational AI, and are now putting AI agents across the dealership so dealers move inventory faster, respond to buyers instantly and run more of their operation with AI. Founded by operators from Amazon, Cox and OYO, Spyne has grown 30x in under 3 years and powers 1,500+ dealerships across the US. We're backed by Accel, Vertex Ventures and Storm Ventures.What we're building:Studio AI (Visual Agents): turns a smartphone capture into a complete, publish-ready listing, so cars reach the website faster.Vini AI (Conversational Agents): answers every call, chat and text across sales and service, and writes outcomes back into the dealer's DMS and CRM. We’re building a family of agents for recall, receptionist, reputation, acquisition, sales and service, built for dealers to try and turn on themselves.AI Contact Service: Vini at the core with a human BDC team around it, delivering the outcomes dealers expect from an in-house BDC.DealerOS: the layer that brings it all together. It sits above the dealer's existing software (DMS, CRM, inventory, website, service) and runs agents across the vehicle journey, from sourcing to sale to service.Spyne is emerging as one of the category leaders redefining how dealerships operate in the AI era. See DealerOS in action: https://www.youtube.com/watch?v=gjehUZhJi3kRole snapshotWe are looking for a hands-on and detail-or",
+   "jobLocations": [
+    {
+     "id": 10118,
+     "name": "Gurgaon, Haryana",
+     "city": "Gurgaon",
+     "state": "HR",
+     "countryCode": "IN",
+     "countryName": "India"
+    }
+   ],
+   "jobType": 2,
+   "experience": "5-8",
+   "jobNumber": "SPYNE/24-25/240",
+   "salaryRange": {
+    "minimum": 8.0,
+    "maximum": 12.0,
+    "currency": "INR",
+    "salaryPeriod": 0,
+    "cultureInfo": "en-IN"
+   },
+   "salaryRangeFormat": "INR 8.00 - 12.00",
+   "publishedOn": "2026-11-03T07:24:46.917Z",
+   "publishedSinceDays": 8,
+   "skillNames": [],
+   "url": "https://spyneai.keka.com/careers/jobdetails/168914",
+   "company": "SPYNE"
+  },
+  "fetched_at": "2026-11-11T14:29:59.049443Z",
+  "content_hash": "5190279a9d1bb54ca6fb9e3488c6ae63797663056b1d739d2ba4c1ea6279ca03"
+ },
+ {
+  "source_slug": "keka",
+  "board_token": "spyneai",
+  "external_id": "168551",
+  "payload": {
+   "id": 168551,
+   "title": "Principal Solution Engineer (Pre Sales)",
+   "description": "<div><strong><u>About Spyne</u></strong></div><div>Spyne is building the AI operating system for automotive retail. We started with visual merchandising, expanded into conversational AI, and are now putting AI agents across the dealership so dealers move inventory faster, respond to buyers instantly and run more of their operation with AI. Founded by operators from Amazon, Cox and OYO, Spyne has grown 30x in under 3 years and powers 1,500+ dealerships across the US. We're backed by Accel, Vertex Ventures and Storm Ventures.</div><div><br></div><div>What we're building:</div><ul style=\"list-style-type: disc; padding-left: 1.5em; margin-top: 0px; margin-bottom: 0px;\"><li style=\"margin-left: 1.5em;\"><strong>Studio AI (Visual Agents):</strong> turns a smartphone capture into a complete, publish-ready listing, so cars reach the website faster.</li><li style=\"margin-left: 1.5em;\"><strong>Vini AI (Conversational Agents): </strong>answers every call, chat and text across sales and service, and writes outcomes back into the dealer's DMS and CRM. We’re building a family of agents for recall, receptionist, reputation, acquisition, sales and service, built for dealers to try and turn on themselves.</li><li style=\"margin-left: 1.5em;\"><strong>AI Contact Service:</strong> Vini at the core with a human BDC team around it, delivering the outcomes dealers expect from an in-house BDC.</li><li style=\"margin-left: 1.5em;\"><strong>DealerOS: </strong>the layer that brings it all together. It sits ",
+   "departmentIdentifier": "07485e29-b6d8-467c-bc62-876818adc6bf",
+   "departmentName": "GTM",
+   "excerpt": "About SpyneSpyne is building the AI operating system for automotive retail. We started with visual merchandising, expanded into conversational AI, and are now putting AI agents across the dealership so dealers move inventory faster, respond to buyers instantly and run more of their operation with AI. Founded by operators from Amazon, Cox and OYO, Spyne has grown 30x in under 3 years and powers 1,500+ dealerships across the US. We're backed by Accel, Vertex Ventures and Storm Ventures.What we're building:Studio AI (Visual Agents): turns a smartphone capture into a complete, publish-ready listing, so cars reach the website faster.Vini AI (Conversational Agents): answers every call, chat and text across sales and service, and writes outcomes back into the dealer's DMS and CRM. We’re building a family of agents for recall, receptionist, reputation, acquisition, sales and service, built for dealers to try and turn on themselves.AI Contact Service: Vini at the core with a human BDC team around it, delivering the outcomes dealers expect from an in-house BDC.DealerOS: the layer that brings it all together. It sits above the dealer's existing software (DMS, CRM, inventory, website, service) and runs agents across the vehicle journey, from sourcing to sale to service.Spyne is emerging as one of the category leaders redefining how dealerships operate in the AI era. See DealerOS in action: https://www.youtube.com/watch?v=gjehUZhJi3kRole snapshotThe Principal Solution Engineer owns the te",
+   "jobLocations": [
+    {
+     "id": 10118,
+     "name": "Gurgaon, Haryana",
+     "city": "Gurgaon",
+     "state": "HR",
+     "countryCode": "IN",
+     "countryName": "India"
+    }
+   ],
+   "jobType": 2,
+   "experience": "8 - 12",
+   "jobNumber": "SPYNE/24-25/239",
+   "salaryRange": {
+    "minimum": 3500000.0,
+    "maximum": 4500000.0,
+    "currency": "INR",
+    "salaryPeriod": 0,
+    "cultureInfo": "en-IN"
+   },
+   "salaryRangeFormat": "INR 35,00,000.00 - 45,00,000.00",
+   "publishedOn": "2026-10-30T08:17:09.217Z",
+   "publishedSinceDays": 12,
+   "skillNames": [],
+   "url": "https://spyneai.keka.com/careers/jobdetails/168551",
+   "company": "SPYNE"
+  },
+  "fetched_at": "2026-11-11T14:29:59.049443Z",
+  "content_hash": "01b63cfe535d53425cc2adf78b70e4050a23ab93f7fbe1718d78a4913c92e7e2"
+ }
+]

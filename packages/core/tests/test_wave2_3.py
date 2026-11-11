@@ -104,9 +104,31 @@ def test_beehire_reads_the_career_page_json_and_skips_the_standing_form() -> Non
     assert job.description_html
 
 
+def test_keka_reads_the_career_site_json_and_names_the_company() -> None:
+    fetched, jobs = read(
+        "keka",
+        "pennanttech",
+        {
+            "https://pennanttech.keka.com/careers/api/jobs/default/active": body("keka_jobs.json"),
+            "https://pennanttech.keka.com/careers/api/organization/default/careerportalinfo": body(
+                "keka_info.json"
+            ),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2
+    job = jobs[0]
+    assert job.title == "Chief Delivery Officer" and job.company_name == "Pennant Technologies"
+    assert job.city == "Hyderabad" and job.country_hint == "IN"
+    assert job.departments == ["Client Services"] and job.posted_at is not None
+    assert str(job.apply_url) == "https://pennanttech.keka.com/careers/jobdetails/143320"
+    assert job.description_html and "Role Overview" in job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("keka", "a/b/c"),
+        ("keka", "evil.example.org"),
         ("crelate", "bad token"),
         ("crelate", "../x"),
         ("beehire", "a/b"),

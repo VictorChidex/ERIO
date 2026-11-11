@@ -6,14 +6,15 @@ docs/connectors.md.
 - Crelate: the RSS feed behind every candidate portal (``/portal/{org}/rss``).
 - GeekJob: server-rendered ``/vacancies/{n}`` lists; every vacancy page carries JobPosting data.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
+- Keka: the JSON behind every Keka Hire career site (``/careers/api/jobs/default/active``).
 """
 
 import json
 import re
 from typing import Any
 
-from erio_core.connectors._util import as_url
-from erio_core.connectors.base import Connector, Fetcher, FetchError
+from erio_core.connectors._util import as_url, iso_datetime
+from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import feed_date, stable_id, xml_items
 from erio_core.connectors.jsonld import JsonLdConnector, page_links
 from erio_core.schemas import PartialJob, RawPosting, RemoteStatus
@@ -207,9 +208,106 @@ class BeehireConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- Keka
+
+KEKA_TOKEN = re.compile(r"([a-z0-9][a-z0-9-]{0,62})(?:/([A-Za-z0-9_-]{1,40}))?")
+
+
+class KekaConnector(Connector):
+    """Keka Hire career sites (``{tenant}.keka.com/careers``). Keka's own embed code and
+    career page read ``/careers/api/jobs/{portal}/active``, a JSON list of every open job,
+    and ``/careers/api/organization/{portal}/careerportalinfo`` for the company's name.
+    robots.txt allows ``/careers``. The token is the tenant, or "tenant/portal" for a
+    company with several career portals."""
+
+    slug = "keka"
+    hosts = frozenset({"*.keka.com"})
+
+    def _parts(self, board_token: str) -> tuple[str, str]:
+        match = KEKA_TOKEN.fullmatch(board_token)
+        if not match:
+            raise ValueError(f"not a Keka tenant (tenant or tenant/portal): {board_token!r}")
+        return match[1], match[2] or "default"
+
+    def board_url(self, board_token: str) -> str:
+        tenant, portal = self._parts(board_token)
+        return f"https://{tenant}.keka.com/careers/api/jobs/{portal}/active"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        jobs = json.loads(body)
+        if not isinstance(jobs, list):
+            raise ValueError("Keka answers with a JSON array")
+        tenant, _ = self._parts(board_token)
+        return [
+            RawPosting(
+                source_slug=self.slug,
+                board_token=board_token,
+                external_id=str(job["id"]),
+                payload={**job, "url": f"https://{tenant}.keka.com/careers/jobdetails/{job['id']}"},
+            )
+            for job in jobs
+            if isinstance(job, dict) and job.get("id") is not None and job.get("title")
+        ]
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        fetched = super().list_postings(fetcher, board_token, etag)
+        if not fetched.postings:
+            return fetched
+        tenant, portal = self._parts(board_token)
+        company = None
+        try:  # the company's display name; a failure here only leaves it unnamed
+            info = fetcher.get(
+                f"https://{tenant}.keka.com/careers/api/organization/{portal}/careerportalinfo"
+            )
+            if info.status == 200:
+                company = json.loads(info.body).get("name")
+        except (FetchError, ValueError, AttributeError):
+            company = None
+        if company:
+            fetched = BoardFetch(
+                postings=[
+                    p.model_copy(update={"payload": {**p.payload, "company": company}})
+                    for p in fetched.postings
+                ],
+                http_status=fetched.http_status,
+                body=fetched.body,
+                etag=fetched.etag,
+                unchanged=fetched.unchanged,
+                complete=fetched.complete,
+            )
+        return fetched
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        places = [p for p in job.get("jobLocations") or [] if isinstance(p, dict)]
+        place = places[0] if places else {}
+        names = [
+            ", ".join(str(x) for x in (p.get("city"), p.get("state"), p.get("countryName")) if x)
+            for p in places
+        ]
+        department = job.get("departmentName")
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]).strip(),
+            company_name=job.get("company"),
+            apply_url=as_url(str(job["url"])),
+            posted_at=iso_datetime(job.get("publishedOn")),
+            location_text="; ".join(dict.fromkeys(n for n in names if n)) or None,
+            city=place.get("city"),
+            region=place.get("state"),
+            country_hint=place.get("countryCode"),
+            departments=[department] if department else [],
+            description_html=job.get("description"),
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
     BeehireConnector(),
+    KekaConnector(),
     PathPagedJsonLdConnector(
         "geekjob",
         r"^/vacancy/[0-9a-f]{24}$",

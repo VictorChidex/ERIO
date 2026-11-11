@@ -1,0 +1,62 @@
+[
+ {
+  "id": 143320,
+  "title": "Chief Delivery Officer",
+  "description": "<div><strong>Role Overview</strong></div><div>The Chief Delivery Officer owns end-to-end delivery of Pennant’s lending platform implementations: Strategy → Planning → Mobilization → Build &amp; Test → Deploy → Hypercare → Run (governance only). You will revisit and scale the delivery organization and operating model, protect delivery margin, quality and customer satisfaction, orchestrate multi-vendor and system-integrator programs, and ensure RFP and POC commitments are deliverable and accurately costed.</div><div><br></div><div><strong>Deep lending systems expertise across the full lifecycle is essential.</strong></div><div><strong>What you will focus on</strong></div><ul style=\"list-style-",
+  "departmentIdentifier": "67702a03-56bf-4eb0-a6c0-3de029cb7b5d",
+  "departmentName": "Client Services",
+  "excerpt": "Role OverviewThe Chief Delivery Officer owns end-to-end delivery of Pennant’s lending platform implementations: Strategy → Planning → Mobilization → Build &amp; Test → Deploy → Hypercare → Run (governance only). You will revisit and scale the delivery organization and operating model, protect delivery margin, quality and customer satisfaction, orchestrate multi-vendor and system-integrator programs, and ensure RFP and POC commitments are deliverable and accurately costed.Deep lending systems expertise across the full lifecycle is essential.What you will focus onRevisit and enhance delivery and implementation framework across programs and geographies that is scalable.Improving delivery predictability, margin and customer outcomes.Growing and developing the delivery organization as Pennant expands.Key ResponsibilitiesImplementation strategy &amp; leadershipRevisit and enhance the implementation operating model (phases, stage gates, roles, forums, cadence) and rollout strategy, including pilot, phased and cutover approaches.Co-own SOWs and contracts with Sales: scope, deliverables, acceptance, milestones, service levels and change control.Own the integrated implementation plan: WBS, critical path, capacity and skills, partner plan, budget and revenue milestones.Lead business process mapping (fitment vs. gaps) to align customer lending processes with the product, feeding SOW scope, change requests and configuration.Ensure environment and data readiness, including migrations, rehearsals, reconciliations, cutover runbook and rollback.Govern testing (system, integration, E2E, UAT), non-functional requirements and regulatory sign-offs.Execute cutover and hypercare with clear SLAs, then hand off cleanly to steady-state support.Lead customer governance (kick-off, design reviews, CABs, go/no-go) and executive communications.Delivery operations &amp; controlsMaintain the Delivery &amp; Implementation Playbook (templates, RACI, entry/exit criteria).Run a Control Tower with live status, risks, forecast, schedule and cost variance, and quality.Drive operational excellence: weekly operating rhythm, throughput and predictability, estimate variance and rework.Standardize QA, release and environments, data migration, UAT and cutover; enforce DR/BCP and change governance.Embed regulatory checkpoints, privacy controls and audit evidence in stage gates.Revenue, accounts &amp; partnersOwn delivery-linked revenue: milestone invoicing, revenue-recognition hygiene and forecast cadence with Finance.Drive the change-request and feature-build pipeline.With Sales and Customer Success, grow accounts through success plans, adoption playbooks and executive relationships.Orchestrate vendors and system integrators: onboarding, acceptance criteria, scorecards, and integrated planning, testing and cutover.People leadershipBuild and scale teams across Programs / Portfolio, Business Analysis, QA, Release &amp; Environments, Data Migration and Professional Services.Plan capacity and skills, drive performance management and coaching, and strengthen learning, certification and succession.Production support governanceSet policy, SLOs, risk gates and escalation frameworks, and review incident and reliability trends. Day-to-day L2/L3 support sits with the Head of Support / SRE; the CDO engages on major incidents and delivery-impacting risks.Pre-sales supportShape RFP responses and POCs (approach, estimates, assumptions, risks) and ensure a clean handover from award to mobilization.How Success Is MeasuredSuccess in this role is assessed across delivery predictability, implementation quality, revenue and margin, customer satisfaction, partner performance, team health and operational reliability.Must haveBachelor’s degree in Business, Computer Science or Engineering.20+ years of progressive leadership in delivery and operations, including [8]+ years managing large multi-program portfolios and multi-vendor / SI engagements.Deep lending systems expertise across the full lifecycle [origination, servicing, collections – specify], with hands-on leadership of core lending platform implementations.Experience in regulated BFSI environments: regulatory sign-offs, audit evidence, DR/BCP.Track record of owning delivery margin, forecasting and SOW / commercial constructs.Experience building and scaling multi-location delivery teams.Credibility with customer executives and the ability to lead SI and vendor partners.Nice to haveMBA.Certifications such as PMP / PRINCE2, PgMP, SAFe / Agile, Lean Six Sigma, ITIL.Experience in an IT product company serving banks and financial institutions.About Pennant :Pennant Technologies is a financial technology company that powers the lending operations of banks and financial institutions worldwide. Our lending platform offers composable features and scalable capabilities for loan origination, servicing and collections, and has managed more than 10 million loans while facilitating 100 million loan transactions a year.Headquartered in Hyderabad, Pennant hasoffices and operations in India, the Middle East (including Saudi Arabia),Australia, the Philippines and the UK, with a team of 450+ people that isgrowing as we expand across geographies. Learn more at www.pennanttech.com.",
+  "jobLocations": [
+   {
+    "id": 3220,
+    "name": "Corporate Office",
+    "city": "Hyderabad",
+    "state": "TG",
+    "countryCode": "IN",
+    "countryName": "India"
+   }
+  ],
+  "jobType": 2,
+  "experience": "20+ years",
+  "jobNumber": "PT0199",
+  "salaryRange": {
+   "currency": "INR",
+   "salaryPeriod": 0,
+   "cultureInfo": "en-IN"
+  },
+  "salaryRangeFormat": "",
+  "publishedOn": "2026-10-16T09:54:29.917Z",
+  "publishedSinceDays": 26,
+  "skillNames": []
+ },
+ {
+  "id": 142405,
+  "title": "Senior Software Engineer (AS400)",
+  "description": "<div><br></div><div><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Job Summary:</strong></div><ul style=\"list-style-type: disc; padding-left: 1.5em; margin-top: 0px; margin-bottom: 0px;\"><li style=\"margin-left: 1.5em;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Own end‑to‑end technical responsibility for AS400 applications, including country‑specific core banking systems.</span></li><li style=\"margin-left: 1.5em;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Strong experience in </span><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">I-Series/ AS400 programming,</strong><span style=\"background-color: transpar",
+  "departmentIdentifier": "8be003f3-20c2-4dd0-b082-8fd79b3e9875",
+  "departmentName": "Engineering",
+  "excerpt": "Job Summary:Own end‑to‑end technical responsibility for AS400 applications, including country‑specific core banking systems.Strong experience in I-Series/ AS400 programming, application development and support.Hands-on expertise in ILERPG, CLLE, DB2/400, SQLExperience in coding, debugging, enhancement, and maintenance of AS400 applications.Good-to-Have Skill: Experience in Equation/Finestra core banking API development.Job Responsibilities:Collaborating with business analysts, QA teams, and other technical teams to understand requirements and deliver solutions within agreed timelines.Optimizing the existing programs and SQL queries to improve application performance and processing efficiency.Developing and maintaining the batch jobs, CL programs, and job schedules to support daily banking operations and batch processing.Creating &nbsp;and modifying DB2/400 physical files, logical files, and SQL-based objects to support application requirements.Performing application debugging, root-cause analysis, and defect resolution to ensure smooth functioning of banking applications.Developing and modifying RPGLE programs, CLLE programs, and SQL queries to support new features, regulatory changes, and existing application enhancements.Analysing business requirements and functional specifications to implement technical solutions aligned with banking processes.Work with ILERPG (ILE RPG), CLLE, DB2/400, and SQL for application development, customization, and maintenance.Develop enhance, and maintain AS400 (IBM i-series) applications supporting core banking and lending systems, including country-specific business requirements.About Pennant: Pennant Technologies is an agile, innovative financial technology company that powers the lending operations of global banks and financial institutions - HDFC, Bajaj Finserve, LIC HFL, Godrej HFL, RAK Bank, QNB to name a few. Its suite of future ready lending products and solutions offer banks composable features and scalable capabilities to deliver differentiated loan origination, servicing, and collections experiences for their customers. Trusted by leading banks and financial institutions in Asia, Pennant’s award-winning lending platform has managed more than 10 million loans and facilitates 50 million loan transactions per year. Pennant is HQ in Hyderabad and have offices and/ business operations in India, ME, Saudi, Australia, Philippines and UK. We are aggressively expanding across the geographies and adding to our 450+ workforce, spread across multiple locations. Visit us at www.pennanttech.comGrowth Opportunity:Banking is the biggest consumer of technology, and the share is simply growing. Banks generate maximum profits out of Lending operations hence it’s imperative for them to ensure they use the right technologies right from the customer onboarding, servicing till retiring the end customers. In the past few years FI’s have not been able to refresh lending tech stack and that’s leading to challenges, higher operational cost, and customer dissatisfaction. Stupendous growth in lending activities across the segments, markets and LOB’s has created once in a decade business opportunity for Pennant.Do you want to be part of our growth story?Digital Lending Platform | Modern Lending Software for Banks &amp; Financial Institutions ",
+  "jobLocations": [
+   {
+    "id": 3220,
+    "name": "Corporate Office",
+    "city": "Hyderabad",
+    "state": "TG",
+    "countryCode": "IN",
+    "countryName": "India"
+   }
+  ],
+  "jobType": 2,
+  "experience": "4 to 6",
+  "jobNumber": "PT0198",
+  "salaryRange": {
+   "currency": "INR",
+   "salaryPeriod": 0,
+   "cultureInfo": "en-IN"
+  },
+  "salaryRangeFormat": "",
+  "publishedOn": "2026-10-28T04:56:26.923Z",
+  "publishedSinceDays": 14,
+  "skillNames": []
+ }
+]

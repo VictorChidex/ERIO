@@ -1509,5 +1509,16 @@
    "beehire",
    "talentis"
   ]
+ },
+ {
+  "slug": "keka",
+  "name": "Keka",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The JSON that Keka Hire career sites ({tenant}.keka.com/careers) and Keka's embed code load for visitors (/careers/api/jobs/default/active, plus careerportalinfo for the company name); robots.txt allows /careers. Token is the tenant, or tenant/portal for a non-default portal.",
+  "examples": [
+   "pennanttech",
+   "spyneai"
+  ]
  }
 ]
