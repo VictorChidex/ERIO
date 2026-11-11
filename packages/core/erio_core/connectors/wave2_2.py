@@ -20,6 +20,8 @@ limits, is in docs/connectors.md.
 - Simplify.hr: the aggregate list ``jobs.simplify.hr/?page=n`` (links to each employer's
   ``{name}.simplify.hr/vacancy/{id}`` page, which carries a JobPosting); robots.txt allows all
   but AI-training crawlers.
+- Gupy: the career page ``{company}.gupy.io`` (job list in the page's own data) and each
+  ``/jobs/{id}`` page's data for the description; robots.txt allows all.
 - Jobtrain: the client site's own job card list (``/{client}/Home/_JobCard``) and each job
   page's JobPosting; jobtrain.co.uk serves no robots.txt.
 - Quickin: the documented public career page API ``api.quickin.io/public/{account}/jobs``
@@ -545,6 +547,114 @@ class JobtrainConnector(JsonLdConnector):
         return found
 
 
+# -------------------------------------------------------------------- Gupy
+
+NEXT_DATA = re.compile(r'id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL)
+GUPY_KINDS = {
+    "vacancy_type_effective": "Permanent",
+    "vacancy_type_internship": "Internship",
+    "vacancy_type_apprentice": "Apprenticeship",
+    "vacancy_type_associate": "Contract",
+}
+
+
+def _next_props(body: bytes) -> dict[str, Any]:
+    found = NEXT_DATA.search(body.decode("utf-8", "replace"))
+    if not found:
+        raise ValueError("no page data")
+    props: dict[str, Any] = json.loads(found.group(1))["props"]["pageProps"]
+    return props
+
+
+class GupyConnector(Connector):
+    """Gupy career pages ``{company}.gupy.io``: the page's own data (``__NEXT_DATA__``) lists the
+    open jobs, and each ``/jobs/{id}`` page's data adds the description. Talent-pool entries
+    (future-interest registrations, not openings) are left out. The token is the subdomain."""
+
+    slug = "gupy"
+    hosts = frozenset({"*.gupy.io"})
+    max_details = 60
+
+    def board_url(self, board_token: str) -> str:
+        if not SLUG.fullmatch(board_token):
+            raise ValueError(f"not a Gupy career page name: {board_token!r}")
+        return f"https://{board_token}.gupy.io/"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        props = _next_props(body)
+        company = (props.get("careerPage") or {}).get("publicationName") or (
+            props.get("careerPage") or {}
+        ).get("name")
+        return [
+            RawPosting(
+                source_slug=self.slug,
+                board_token=board_token,
+                external_id=str(job["id"]),
+                payload={"company": company, "listed": job},
+            )
+            for job in props["jobs"]
+            if job.get("id") and job.get("title") and job.get("type") != "vacancy_type_talent_pool"
+        ]
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        listed = super().list_postings(fetcher, board_token, etag)
+        if listed.unchanged:
+            return listed
+        postings, unread = [], 0
+        for raw in listed.postings[: self.max_details]:
+            payload = dict(raw.payload)
+            try:
+                page = fetcher.get(f"{self.board_url(board_token)}jobs/{raw.external_id}")
+            except FetchError:
+                page = None
+            if page is not None and page.status == 200:
+                try:
+                    payload["detail"] = _next_props(page.body).get("job")
+                except (ValueError, KeyError):
+                    unread += 1
+            elif page is None or page.status not in (404, 410):
+                unread += 1
+            postings.append(raw.model_copy(update={"payload": payload}))
+        return BoardFetch(
+            postings=postings,
+            http_status=200,
+            body=listed.body,
+            etag=listed.etag,
+            complete=len(listed.postings) <= self.max_details and unread == 0,
+        )
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        listed = raw.payload["listed"]
+        detail = raw.payload.get("detail") or {}
+        place = (listed.get("workplace") or {}).get("address") or {}
+        kind = {"remote": "remote", "hybrid": "hybrid", "on-site": "onsite"}.get(
+            str((listed.get("workplace") or {}).get("workplaceType") or "")
+        )
+        city, state = plain(place.get("city")), plain(place.get("stateShortName"))
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(listed["title"]).strip(),
+            company_name=plain(raw.payload.get("company")),
+            apply_url=as_url(f"{self.board_url(raw.board_token)}jobs/{raw.external_id}"),
+            posted_at=iso_datetime(detail.get("publishedAt")),
+            location_text=", ".join(p for p in (city, state) if p) or None,
+            city=city,
+            region=state,
+            country_hint=plain(detail.get("addressCountryShortName") or place.get("country")),
+            workplace_type=kind,  # type: ignore[arg-type]
+            employment_type=GUPY_KINDS.get(str(listed.get("type"))),
+            description_html=join_html(
+                detail.get("description"),
+                detail.get("responsibilities"),
+                detail.get("prerequisites"),
+                detail.get("relevantExperiences"),
+            ),
+        )
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -569,6 +679,7 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         multi_employer=True,
         newest_first=True,
     ),
+    GupyConnector(),
     JobtrainConnector(),
     QuickinConnector(),
     SpeedrunConnector(),

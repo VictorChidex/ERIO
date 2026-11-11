@@ -256,4 +256,27 @@ def test_jobtrain_reads_the_job_card_list_and_job_pages() -> None:
     assert job.description_html
 
 
+def test_gupy_reads_the_career_page_data_and_skips_talent_pools() -> None:
+    site = "https://ambev.gupy.io"
+    fetched, jobs, fetcher = read(
+        "gupy",
+        "ambev",
+        {
+            f"{site}/jobs/12202203": body("gupy_job.html"),
+            f"{site}/": body("gupy_career.html"),
+        },
+    )
+    # The talent-pool entry is not a job; the second job's page is not recorded (404).
+    assert len(jobs) == 2 and fetched.complete
+    assert not any(u.endswith("/jobs/12682950") for u in fetcher.requested)
+    job = jobs[0]
+    assert job.title.startswith("Ambev | Aprendiz")
+    assert job.company_name == "Ambev"
+    assert job.city == "Juatuba" and job.region == "MG" and job.country_hint == "BR"
+    assert job.employment_type == "Apprenticeship"
+    assert job.description_html
+    assert jobs[1].description_html is None
+    assert str(job.apply_url) == f"{site}/jobs/12202203"
+
+
 # --- end of tests ---

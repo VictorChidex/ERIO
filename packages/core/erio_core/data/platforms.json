@@ -1614,5 +1614,16 @@
    "enwl",
    "citizensadvice"
   ]
+ },
+ {
+  "slug": "gupy",
+  "name": "Gupy",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public Gupy career pages at {company}.gupy.io: the page's own data lists the open jobs and each /jobs/{id} page's data adds the description; robots.txt allows all. Talent-pool entries are skipped. The token is the subdomain.",
+  "examples": [
+   "ambev",
+   "carreiras"
+  ]
  }
 ]
