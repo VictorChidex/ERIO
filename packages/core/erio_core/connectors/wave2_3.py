@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- MCi Direct Hire: the job cards of the Job Central board (jobs.mcidirecthire.com).
 - Prevue APS: each career site's job sitemap, then the JobPosting on every job page.
 - OpenCATS: the server-rendered careers module of self-hosted OpenCATS installations.
 - ApplicantStack: server-rendered ``/x/openings`` lists and ``/x/detail/{id}`` pages.
@@ -20,7 +21,15 @@ import json
 import re
 from typing import Any
 
-from erio_core.connectors._htmlpages import PageCrawler, element_with, listing, read_date, text_of
+from erio_core.connectors._htmlpages import (
+    DATE_FORMATS,
+    PageCrawler,
+    element_with,
+    listing,
+    read_date,
+    text_of,
+)
+from erio_core.connectors._service import service_host
 from erio_core.connectors._util import as_url, iso_datetime
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import feed_date, stable_id, xml_items
@@ -600,8 +609,117 @@ class OpenCATSConnector(PageCrawler):
         )
 
 
+# ---------------------------------------------------------------- MCi Direct Hire
+
+MCI_HOST = "jobs.mcidirecthire.com"
+MCI_PAGES = 5
+
+
+class MciDirectHireConnector(Connector):
+    """Job Central (jobs.mcidirecthire.com), the public job board of MCi Direct Hire's
+    recruitment software: many South African and international employers. Its job list
+    is loaded page by page from ``/AvailableVacancies/JobSearch?PageNum=n``: ten cards a page,
+    newest first, each with the job's title, employer, date, place, industry and the opening
+    of its description, and a link to its public vacancy page. A crawl reads a few pages, so
+    it is reported incomplete. The board token is ``https://jobs.mcidirecthire.com``."""
+
+    slug = "mcidirecthire"
+    hosts = frozenset({MCI_HOST})
+    multi_employer = True
+    max_pages = MCI_PAGES
+
+    def board_url(self, board_token: str) -> str:
+        service_host(board_token, self.hosts, "MCi Direct Hire")
+        return f"https://{MCI_HOST}/AvailableVacancies/JobSearch?PageNum=1"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        text = body.decode("utf-8", "replace")
+        postings = []
+        for card in text.split('<div class="card job-card">')[1:]:
+            link = re.search(r"data-url=\"(https://[^\"]*CompanyPublishingId=(\d+))\"", card)
+            title = re.search(r'<strong class="job-title">(.*?)</strong>', card, re.DOTALL)
+            if not (link and title and text_of(title.group(1))):
+                continue
+            employer = re.search(r'<small class="font-small job-location">(.*?)</small>', card, re.DOTALL)
+            meta = re.search(
+                r'<small class="text-muted">\s*<i class="fa fa-calendar"></i>\s*([\d/]+)'
+                r'(?:.*?<i class="fa fa-map-marker"></i>(.*?))?</small>',
+                card,
+                re.DOTALL,
+            )
+            industry = re.search(r"Industry:</b>(.*?)<br", card, re.DOTALL)
+            teaser = re.search(
+                r"Positions Available:</b>[^<]*<br />\s*<br />(.*?)</p>", card, re.DOTALL
+            )
+            postings.append(
+                RawPosting(
+                    source_slug=self.slug,
+                    board_token=board_token,
+                    external_id=link.group(2),
+                    payload={
+                        "url": link.group(1),
+                        "title": text_of(title.group(1)),
+                        "company": text_of(employer.group(1)) if employer else None,
+                        "date": meta.group(1) if meta else None,
+                        "place": text_of(meta.group(2) or "") if meta else None,
+                        "industry": text_of(industry.group(1)) if industry else None,
+                        "description": text_of(teaser.group(1)) if teaser else None,
+                    },
+                )
+            )
+        return postings
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        first = self.board_url(board_token)
+        postings: list[RawPosting] = []
+        pages = 1
+        for number in range(1, self.max_pages + 1):
+            response = fetcher.get(first.replace("PageNum=1", f"PageNum={number}"))
+            if response.status == 429:
+                raise FetchError("rate_limited", "source rate limit", 429)
+            if response.status != 200:
+                if number == 1:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            try:
+                found = self.extract(response.body, board_token)
+            except (ValueError, KeyError, TypeError) as error:
+                raise FetchError("parse_error", f"malformed page: {error}", 200) from error
+            if number == 1:
+                total = re.search(r"totalPages:\s*(\d+)", response.body.decode("utf-8", "replace"))
+                pages = int(total[1]) if total else 1
+            fresh = [p for p in found if p.external_id not in {q.external_id for q in postings}]
+            if not fresh:
+                break
+            postings += fresh
+            if number >= pages:
+                break
+        if not postings:
+            raise FetchError("parse_error", "the board lists no jobs", 200)
+        return BoardFetch(postings=postings, http_status=200, body=b"", complete=pages <= self.max_pages)
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        description = job.get("description")
+        place = job.get("place") or None
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]),
+            company_name=job.get("company") or None,
+            apply_url=as_url(str(job["url"])),
+            posted_at=read_date(job.get("date"), (*DATE_FORMATS, "%Y/%m/%d")),
+            location_text=place,
+            departments=[job["industry"]] if job.get("industry") else [],
+            description_html=f"<p>{html.escape(description)}</p>" if description else None,
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    MciDirectHireConnector(),
     # Prevue APS: each customer's career site ({tenant}.prevueaps.com) serves a sitemap
     # (token) of its job pages, and every job page carries a JobPosting.
     JsonLdConnector("prevueaps", r"^/jobs/\d+\.html$", frozenset({"*.prevueaps.com"})),

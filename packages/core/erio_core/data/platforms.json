@@ -1585,5 +1585,15 @@
    "https://bdr.prevueaps.com/job_site_map.xml",
    "https://oiaccounts.prevueaps.com/job_site_map.xml"
   ]
+ },
+ {
+  "slug": "mcidirecthire",
+  "name": "MCi Direct Hire",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Job Central (jobs.mcidirecthire.com), the public job board of MCi Direct Hire's recruitment software (mostly South African employers); each links back to its Job Central vacancy page. Reads the board's own paged job cards (/AvailableVacancies/JobSearch, newest first, five pages per crawl, so a crawl is partial) with the opening of each description; the host serves no robots.txt restriction. Credit: link each job back to Job Central.",
+  "examples": [
+   "https://jobs.mcidirecthire.com"
+  ]
  }
 ]

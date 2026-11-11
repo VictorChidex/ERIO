@@ -239,9 +239,25 @@ def test_prevueaps_reads_the_job_sitemap_and_job_pages() -> None:
     assert job.description_html
 
 
+def test_mcidirecthire_reads_job_cards_and_reports_a_partial_crawl() -> None:
+    fetched, jobs = read(
+        "mcidirecthire",
+        "https://jobs.mcidirecthire.com",
+        {"https://jobs.mcidirecthire.com/AvailableVacancies/JobSearch": body("mcidirecthire_list.html")},
+    )
+    assert len(jobs) == 2 and not fetched.complete  # the board has 262 pages; a crawl reads 5
+    job = jobs[0]
+    assert job.title == "Plant Coordinator"
+    assert job.company_name == "Red Rocket South Africa (Pty) Ltd" and job.location_text
+    assert job.posted_at is not None and job.departments == ["Renewable Energy"]
+    assert str(job.apply_url).endswith("CompanyPublishingId=94760")
+    assert job.description_html and "Plant Coordinator" in job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("mcidirecthire", "https://evil.example.org"),
         ("opencats", "http://vectaur.com/ats/careers/"),
         ("opencats", "https://user@evil.example.org/careers/"),
         ("opencats", "https://vectaur.com/not-careers"),
