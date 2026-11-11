@@ -1510,5 +1510,16 @@
    "advance-emploi",
    "mecanojob"
   ]
+ },
+ {
+  "slug": "talentadore",
+  "name": "TalentAdore",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the position list a TalentAdore customer's career site embeds (ats.talentadore.com/positions/{code}/json, also /rss): title, unit, place, type and description inline. Token is the list code taken from that address; the career site's page names it.",
+  "examples": [
+   "JNx",
+   "RQntQS9"
+  ]
  }
 ]

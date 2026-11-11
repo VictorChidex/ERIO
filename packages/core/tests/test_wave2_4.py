@@ -102,11 +102,27 @@ def test_recrutor_reads_the_job_pages_a_career_space_feed_lists() -> None:
     assert jobs[0].location_text and jobs[0].description_html
 
 
+def test_talentadore_reads_the_position_list_a_career_site_embeds() -> None:
+    fetched, jobs = read(
+        "talentadore",
+        "demo1",
+        {"https://ats.talentadore.com/positions/demo1/json": body("talentadore_list.json")},
+    )
+    assert fetched.complete and len(jobs) == 1
+    job = jobs[0]
+    assert job.external_id == "JOB001"
+    assert job.title.startswith("Määräaikainen lennonjohtaja")
+    assert job.company_name == "Fintraffic Lennonvarmistus"
+    assert job.location_text == "Vantaa"
+    assert str(job.apply_url).endswith("/JOB001") and job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
         ("recrutor", "bad token"),
+        ("talentadore", "bad/token"),
     ],
 )
 def test_wave2_4_refuse_a_token_that_is_not_theirs(slug: str, token: str) -> None:

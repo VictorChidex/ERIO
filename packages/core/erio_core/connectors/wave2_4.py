@@ -9,8 +9,11 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   ``/vacatures/{id}-{slug}`` job pages, which carry a schema.org JobPosting.
 - RecrutOr: ``https://www.recrutor.pro/{tenant}/rss/flux-rss.xml`` lists a tenant's job pages
   (the feed itself has no place or employer), each of which carries a JobPosting.
+- TalentAdore: ``https://ats.talentadore.com/positions/{code}/json``, the position list a
+  customer's career site embeds, descriptions inline.
 """
 
+import json
 import re
 from typing import Any
 from urllib.parse import urlsplit, urlunsplit
@@ -18,7 +21,7 @@ from urllib.parse import urlsplit, urlunsplit
 from defusedxml import ElementTree
 
 from erio_core.connectors._service import plain
-from erio_core.connectors._util import as_url
+from erio_core.connectors._util import as_url, iso_datetime
 from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.feed import parse_feed, stable_id
 from erio_core.connectors.jsonld import JsonLdConnector
@@ -91,6 +94,60 @@ class HomerunConnector(Connector):
         )
 
 
+CODE = re.compile(r"[A-Za-z0-9]{1,20}")
+
+
+class TalentAdoreConnector(Connector):
+    """TalentAdore position lists. The board token is the list's code, from the
+    ``/positions/{code}/json`` address a customer's career site loads."""
+
+    slug = "talentadore"
+    hosts = frozenset({"ats.talentadore.com"})
+
+    def board_url(self, board_token: str) -> str:
+        if not CODE.fullmatch(board_token):
+            raise ValueError(f"not a TalentAdore position list code: {board_token!r}")
+        return f"https://ats.talentadore.com/positions/{board_token}/json"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        data = json.loads(body)
+        postings = []
+        for job in data["jobs"]:
+            ref = job.get("job_token")
+            if not ref or not job.get("name") or not job.get("link"):
+                continue
+            payload = {k: v for k, v in job.items() if k not in ("id", "job_token")}
+            payload["ref"] = ref
+            payload["company"] = plain(data.get("company"))
+            postings.append(
+                RawPosting(
+                    source_slug=self.slug,
+                    board_token=board_token,
+                    external_id=str(ref),
+                    payload=payload,
+                )
+            )
+        return postings
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        # Customers fill "location" with a street address: the city or county names the place.
+        place = [plain(job.get(key)) for key in ("city", "county", "country")]
+        text = ", ".join(p for p in place if p) or plain(job.get("location"))
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["name"]).strip(),
+            company_name=plain(job.get("business_unit_name")) or job.get("company"),
+            apply_url=as_url(str(job["link"])),
+            posted_at=iso_datetime(job.get("start_date")),
+            location_text=text,
+            city=plain(job.get("city")) or plain(job.get("county")),
+            employment_type=plain(job.get("employment_type")),
+            description_html=job.get("description_html") or None,
+        )
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -123,4 +180,5 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     # "/vacatures/{id}-{slug}/solliciteren" is the application form, not the job.
     JsonLdConnector("hroffice", r"^/vacatures/\d+-[^/]+$"),
     RecrutorConnector(),
+    TalentAdoreConnector(),
 ]
