@@ -19,6 +19,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
 - Odoo Recruitment: the ``/jobs`` pages of any Odoo website. Current versions describe each
   job as a JobPosting (JSON-LD, or microdata on ``www.odoo.com``); themes and older versions
   that do not are not read.
+- BITE Bewerbermanager: the job portal ``jobs.b-ite.com`` all BITE customers publish to; its
+  sitemap lists ``/jobposting/{id}`` pages, each with a schema.org JobPosting.
 """
 
 import html as htmllib
@@ -334,5 +336,11 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     TalentAdoreConnector(),
     HuntflowConnector(),
     OdooConnector(),
+    JsonLdConnector(
+        "bite",
+        r"^/jobposting/[0-9a-f]{40}$",
+        frozenset({"jobs.b-ite.com"}),
+        multi_employer=True,
+    ),
     JsonLdConnector("enlizt", r"^/vagas/[^/]+$", frozenset({"*.enlizt.me"})),
 ]

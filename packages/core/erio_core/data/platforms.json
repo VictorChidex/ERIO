@@ -1562,5 +1562,15 @@
    "https://www.odoo.com/jobs",
    "https://www.odooexperts.nl/sitemap.xml"
   ]
+ },
+ {
+  "slug": "bite",
+  "name": "BITE Bewerbermanager",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads the public job portal jobs.b-ite.com that BITE customers publish to: its sitemap lists /jobposting/{id} pages, each with a schema.org JobPosting naming the employer. robots.txt allows crawlers except the apply form. BITE customers' own career pages are not read. Credit: link each job back to its BITE page.",
+  "examples": [
+   "https://jobs.b-ite.com/sitemap.xml.gz"
+  ]
  }
 ]

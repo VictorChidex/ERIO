@@ -190,6 +190,23 @@ def test_odoo_reads_json_ld_pages_listed_in_a_sitemap() -> None:
     assert jobs[0].company_name == "Odoo Experts B.V."
 
 
+def test_bite_reads_job_pages_listed_in_the_portal_sitemap() -> None:
+    page = "https://jobs.b-ite.com/jobposting/013a4943abd47fd20b4c87391ebd0b287ab7568f"
+    fetched, jobs = read(
+        "bite",
+        "https://jobs.b-ite.com/sitemap.xml.gz",
+        {
+            "https://jobs.b-ite.com/sitemap.xml.gz": body("bite_sitemap.xml"),
+            page: body("bite_job.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title.startswith("Ausbildung 2027")
+    assert jobs[0].company_name == "acadon AG"  # the portal lists many employers
+    assert jobs[0].location_text and "Krefeld" in jobs[0].location_text
+    assert jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
