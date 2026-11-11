@@ -1,0 +1,50 @@
+[
+ {
+  "source_slug": "mcidirecthire",
+  "board_token": "https://jobs.mcidirecthire.com",
+  "external_id": "94760",
+  "payload": {
+   "url": "https://jobs.mcidirecthire.com/AvailableVacancies/Vacancy?CompanyPublishingId=94760",
+   "title": "Plant Coordinator",
+   "company": "Red Rocket South Africa (Pty) Ltd",
+   "date": "2026/11/11",
+   "place": "Northern Cape",
+   "industry": "Renewable Energy",
+   "description": "The Plant Coordinator provides site-based operational assurance for the Facility by supervising, monitoring and coordinating the daily activities of the Facility and the services performed by the EPC and/or Operations and Maintenance (O&M) Contractors on site."
+  },
+  "fetched_at": "2026-11-11T14:50:07.076139Z",
+  "content_hash": "1fdbf2181d18c6dee1515c0f539d58179a58d4d64e1d8d561b47b266bc45a110"
+ },
+ {
+  "source_slug": "mcidirecthire",
+  "board_token": "https://jobs.mcidirecthire.com",
+  "external_id": "94759",
+  "payload": {
+   "url": "https://jobs.mcidirecthire.com/AvailableVacancies/Vacancy?CompanyPublishingId=94759",
+   "title": "Cash Processor Contractor",
+   "company": "SBV Services (Pty) Ltd.",
+   "date": "2026/11/11",
+   "place": "Polokwane",
+   "industry": "Banking/Finance And Investment",
+   "description": "Purpose of the Position Responsible for the efficient and accurate end to end processing of cash in compliance with policies and procedures (SOPs). A Cash Processor may perform any one and/or a combination of the functions below."
+  },
+  "fetched_at": "2026-11-11T14:50:07.076139Z",
+  "content_hash": "36cf0c18fc0a0502d9e5423daa245c9f6f857eec89e26d8de2bf73fb371cf6a6"
+ },
+ {
+  "source_slug": "mcidirecthire",
+  "board_token": "https://jobs.mcidirecthire.com",
+  "external_id": "94758",
+  "payload": {
+   "url": "https://jobs.mcidirecthire.com/AvailableVacancies/Vacancy?CompanyPublishingId=94758",
+   "title": "Trainer",
+   "company": "The Aurum Institute",
+   "date": "2026/11/11",
+   "place": "Isando",
+   "industry": "NGO",
+   "description": "The Aurum Institute is a proudly African organisation whose mission is to generate evidence for policy and translate policy into practice to positively impact the health of communities globally."
+  },
+  "fetched_at": "2026-11-11T14:50:07.076139Z",
+  "content_hash": "599259e5a5a2f63afb8fc8c70fe5c279891c5b4657f05185279b36f42a89ef76"
+ }
+]

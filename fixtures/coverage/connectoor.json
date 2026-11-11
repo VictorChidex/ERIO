@@ -1,0 +1,181 @@
+[
+ {
+  "source_slug": "connectoor",
+  "board_token": "https://www.connectoor.jobs",
+  "external_id": "62c390b96563b7803344fc63",
+  "payload": {
+   "page_url": "https://app.connectoor.de/jobview?jobid=6a29870a45b909ca008b9dac",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Ausbildung zur Pflegefachkraft im Eilenriedestift e.V. (m/w/d)",
+    "description": "&lt;p&gt;Sie suchen eine Ausbildung mit Sinn, Zukunft und echter N&auml;he zum Menschen? Dann starten Sie Ihre Ausbildung zur Pflegefachkraft (m/w/d) im Eilenriedestift zum 01.10.2027. Werden Sie Teil eines Teams, das sich mit Herz, Kompetenz und Verl&auml;sslichkeit f&uuml;r &auml;ltere Menschen einsetzt.&lt;br /&gt;&lt;br /&gt;W&auml;hrend Ihrer Ausbildung begleiten Sie unsere Bewohnerinnen und Bewohner im Alltag, lernen pflegerische Abl&auml;ufe praxisnah kennen und wachsen fachlich wie pers&ouml;nlich an Ihren Aufgaben.&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Das erwartet Sie bei uns&lt;/h3&gt;&lt;p&gt;Die praktische Ausbildung absolvieren Sie in unserer Seniorenresidenz und bei unseren Kooperationspartnern. Den theoretischen Teil Ihrer generalistischen Pflegeausbildung &uuml;bernimmt eine unserer Kooperationsschulen.&lt;br /&gt;W&auml;hrend Ihrer Ausbildung lernen Sie, pflegerische Ma&szlig;nahmen eigenverantwortlich zu planen, durchzuf&uuml;hren, zu dokumentieren und zu evaluieren. Sie erlernen fundierte Kenntnisse in der Grund- und Behandlungspflege, begleiten unsere Bewohnerinnen und Bewohner in ihrem Alltag und wirken aktiv am Pflegeprozess mit. Dar&uuml;ber hinaus lernen Sie professionell mit Angeh&ouml;rigen zu kommunizieren sowie mit verschiedenen Berufsgruppen im Gesundheitssystem interdisziplin&auml;r zusammenzuarbeiten.&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Ihr Profil&lt;/h3&gt;&lt;ul&gt;\t&lt;li&gt;Sie verf&uuml;gen &uuml;ber einen mittleren Bildungsabs",
+    "industry": "Pflege, Therapie und Assistenz",
+    "employmentType": [
+     "FULL_TIME",
+     "INTERN"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Eilenriedestift e. V.",
+     "value": [
+      "www.eilenriedestift.de",
+      "https://eilenriedestift.connectoor.de"
+     ]
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Eilenriedestift e. V.",
+     "sameAs": [
+      "www.eilenriedestift.de",
+      "https://eilenriedestift.connectoor.de"
+     ],
+     "logo": "https://app.connectoor.de/Microsite/loadImage?i=3d0fec7fe5c21e03df4323d2537d7241.png&amp;o=67d01c76b6364ce99f8b7514"
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 0,
+      "unitText": "MONTH"
+     }
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bevenser Weg 10",
+      "addressRegion": "Hannover",
+      "addressLocality": "Hannover",
+      "postalCode": "30625",
+      "addressCountry": "DE"
+     }
+    },
+    "datePosted": "2026-11-11",
+    "validThrough": "2027-06-30"
+   }
+  },
+  "fetched_at": "2026-11-11T14:34:24.888443Z",
+  "content_hash": "f8e1361c8bbaa7b0b8604a8adff69d95144bb78191c713432149457b6d776407"
+ },
+ {
+  "source_slug": "connectoor",
+  "board_token": "https://www.connectoor.jobs",
+  "external_id": "4d4f7f4374fa135d368ad6d7",
+  "payload": {
+   "page_url": "https://app.connectoor.de/jobview?jobid=6af46e51664a14001f8b4be0",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Schreiner / Tischler mit einer 4 Tage Woche (m/w/d)",
+    "description": "&lt;p&gt;Hast Du Lust mit uns die wahrscheinlich &lt;strong&gt;besten Schr&auml;nke Deutschlands&lt;/strong&gt; aufzubauen? Hast Du Lust bei einem stark wachsenden, jungen und modernen Unternehmen mitzumachen?&lt;/p&gt;&lt;p&gt;Dann werde auch Du ein &lt;strong&gt;Schrankheld &lt;/strong&gt;und bewirb dich bei unserer sympathischen Firma und sei dabei mit uns zusammen zu wachsen!&lt;/p&gt;&lt;p&gt;Du bist bei uns richtig, wenn du mit uns zusammen die wohl &lt;strong&gt;besten Schr&auml;nke in Deutschland&lt;/strong&gt; montieren m&ouml;chtest. Wir haben nur die beste &lt;strong&gt;Qualit&auml;t&lt;/strong&gt;. Jeder Schrank ist anders. Jeder Schrank ist &lt;strong&gt;individuell &lt;/strong&gt;auf den Kunden abgestimmt. Genau das suchen auch unsere Kunden, genau das wollen unsere Kunden und genau deswegen wissen unsere Kunden auch Qualit&auml;t und Handwerksarbeit zu Wertsch&auml;tzen. So macht das Arbeit gleich nochmal so viel Freude!&lt;/p&gt;&lt;p&gt;Wir sind kein Schreiner anno 1950. Wir sind die &lt;strong&gt;neue Generation Schreiner Digital 2.0.&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;\t&lt;li&gt;Komm zu uns wenn du keine Lust mehr auf verstaubte Schreinerstuben und melancholischen Schreinermeister hast.&lt;/li&gt;\t&lt;li&gt;Komm zu uns wenn du nur mit den&lt;strong&gt; besten Werkzeug&lt;/strong&gt; arbeiten m&ouml;chtest.&lt;/li&gt;\t&lt;li&gt;Komm zu uns wenn du zu einen &lt;strong&gt;dynamischen und frischen Team &lt;/strong&gt;wechseln willst.&lt;/li&gt;&lt;/ul&gt;&lt;p&g",
+    "industry": "Handwerk, Dienstleistung und Fertigung",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Schrankhelden GmbH",
+     "value": [
+      "www.dieschrankhelden.de",
+      "https://dieschrankhelden.connectoor.de"
+     ]
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Schrankhelden GmbH",
+     "sameAs": [
+      "www.dieschrankhelden.de",
+      "https://dieschrankhelden.connectoor.de"
+     ],
+     "logo": "https://app.connectoor.de/Microsite/loadImage?i=3045be6ab9e4f8f5997bc361ea92ba91.png&amp;o=60083cdeddb2331e688b45d2"
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 0,
+      "unitText": "MONTH"
+     }
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Rockenberg",
+      "addressLocality": "Rockenberg",
+      "addressCountry": "DE"
+     }
+    },
+    "datePosted": "2026-11-11",
+    "validThrough": "2027-01-31"
+   }
+  },
+  "fetched_at": "2026-11-11T14:34:25.774219Z",
+  "content_hash": "d0d133ea24fba0e709c0471d8492d4d59e4a3ff045bccb1bc044cbed8ba7368e"
+ },
+ {
+  "source_slug": "connectoor",
+  "board_token": "https://www.connectoor.jobs",
+  "external_id": "1c5deedca6b618c46bebf1ae",
+  "payload": {
+   "page_url": "https://app.connectoor.de/jobview?jobid=6a6a07b445b909bd4b8b856c",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Rechtsanwalt Arbeitsrecht (m/w/d)",
+    "description": "&lt;p&gt;&lt;strong&gt;KLARE POSITIONEN. GUTE L&Ouml;SUNGEN&lt;/strong&gt;.&lt;br /&gt;&lt;em&gt;Arbeitsrecht mit Verantwortung.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Sie m&ouml;chten Unternehmen in anspruchsvollen Fragen des Corporate-Arbeitsrechts beraten und sich&lt;br /&gt;fachlich weiterentwickeln? Dann sollten wir uns kennenlernen.&lt;/p&gt;&lt;p&gt;Wir suchen einen Rechtsanwalt {m/w/d} im Bereich Arbeitsrecht an unserem Standort Dresden.&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Was Sie bei uns wirklich machen:&lt;/h3&gt;&lt;ul&gt;\t&lt;li&gt;Mitarbeit in unserem spezialisierten Corporate-Arbeitsrechtsteam&lt;/li&gt;\t&lt;li&gt;Ganzheitliche und strategische Beratung unserer Mandanten&lt;/li&gt;\t&lt;li&gt;Eigenst&auml;ndige Bearbeitung arbeitsrechtlicher Mandate und Verfahren&lt;/li&gt;\t&lt;li&gt;Pers&ouml;nliche Wahrnehmung von Gerichtsterminen&lt;/li&gt;\t&lt;li&gt;Gestaltung von Arbeitsvertr&auml;gen, Verg&uuml;tungsmodellen und Compliance-Richtlinien&lt;/li&gt;\t&lt;li&gt;Bearbeitung komplexer aufsichtsrechtlicher und regulatorischer Fragestellungen im arbeitsrechtlichen Kontext&lt;/li&gt;\t&lt;li&gt;Begleitung von Umstrukturierungen und Restrukturierungsprozessen&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Was Sie daf&uuml;r mitbringen sollten:&lt;/h3&gt;&lt;ul&gt;\t&lt;li&gt;Zwei &uuml;berzeugende Staatsexamina&lt;/li&gt;\t&lt;li&gt;Interesse am Arbeitsrecht und an wirtschaftlichen Zusammenh&auml;ngen&lt;/li&gt;\t&lt;li&gt;Freude an pr&auml;ziser Argumentation und eig",
+    "industry": "Recht",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Th&uuml;mmel, Sch&uuml;tze &amp; Partner Rechtsanw&auml;lte Partnerschaftsgesellschaft mbB",
+     "value": [
+      "www.tsp-law.com",
+      "https://tsp-law.connectoor.de"
+     ]
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Th&uuml;mmel, Sch&uuml;tze &amp; Partner Rechtsanw&auml;lte Partnerschaftsgesellschaft mbB",
+     "sameAs": [
+      "www.tsp-law.com",
+      "https://tsp-law.connectoor.de"
+     ],
+     "logo": "https://app.connectoor.de/Microsite/loadImage?i=abfcf8f6a9cf4727e9a431a194163490.png&amp;o=69d8c49345b909fe008b4a9b"
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 0,
+      "unitText": "MONTH"
+     }
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Dresden",
+      "addressLocality": "Dresden",
+      "postalCode": "01309",
+      "addressCountry": "DE"
+     }
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "datePosted": "2026-11-11",
+    "validThrough": "2027-01-31"
+   }
+  },
+  "fetched_at": "2026-11-11T14:34:26.615127Z",
+  "content_hash": "50cf339a19bb6e9db9c4c213e5cad8225a2cf2e443afe05ead25fa89da429147"
+ }
+]

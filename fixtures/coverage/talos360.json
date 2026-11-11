@@ -1,0 +1,208 @@
+[
+ {
+  "source_slug": "talos360",
+  "board_token": "https://ukas.talosats-careers.com/sitemap.xml",
+  "external_id": "f99d2d609e6860c4f8e75018",
+  "payload": {
+   "page_url": "https://ukas.talosats-careers.com/job/955668",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "DNA Interpretation - Contract Assessor",
+    "description": "<p><strong>Forensic DNA Analysis and Interpretation &ndash; Contracted Technical Assessor</strong></p>\r\n\r\n<p><strong>Location:</strong> Remote (UK-based) with UK and potential international travel</p>\r\n\r\n<p><strong>Contract Type:</strong> Contractor / Independent</p>\r\n\r\n<p><strong>About the role</strong></p>\r\n\r\n<p>UKAS is the national accreditation body for the United Kingdom, responsible for evaluating and accrediting organisations that provide conformity assessment services, including certification, testing, inspection, and calibration.</p>\r\n\r\n<p>We are expanding our network of independent Forensic DNA Analysis and Interpretation Technical Assessors to support accreditation and surveillance activity across forensic DNA profiling, analysis and interpretation.</p>\r\n\r\n<p>As a contracted Technical Assessor, you will evaluate conformity assessment bodies to ensure forensic DNA activities are conducted competently, consistently, and in accordance with relevant forensic science technical requirements, validation expectations and quality assurance procedures. Assessments may include desk reviews, on-site inspections, witnessed assessments, and post-audit reviews.</p>\r\n\r\n<p>This is a flexible, remote role with some travel required.</p>\r\n\r\n<p><strong>What We&rsquo;re Looking For</strong></p>\r\n\r\n<p>We are seeking technically credible forensic DNA professionals with extensive hands-on experience who can confidently evaluate how organisations implement DNA profiling methods, interpretat",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "UKAS",
+     "value": "AG1689558StaDI"
+    },
+    "datePosted": "2026-10-19",
+    "validThrough": "2026-11-16T23:59:59+00:00",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "UKAS",
+     "sameAs": null,
+     "logo": "https://talosatscareerssites.blob.core.windows.net/cpb-site-assets/2435/images/UKAS%20Horizontal%20Logo_RGB_150ppi.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Staines, Surrey, United Kingdom",
+      "addressLocality": null,
+      "addressRegion": "Surrey",
+      "postalCode": "TW18 3HR",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:36:33.829906Z",
+  "content_hash": "f92aabaf34ee22b3aead0b976041e7fc087c137ca125fda3d42662334bb31337"
+ },
+ {
+  "source_slug": "talos360",
+  "board_token": "https://ukas.talosats-careers.com/sitemap.xml",
+  "external_id": "c4754cdb25d278566508b322",
+  "payload": {
+   "page_url": "https://ukas.talosats-careers.com/job/974762",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "External Affairs Intern",
+    "description": "<p>The United Kingdom Accreditation Service, UKAS, is seeking an External Affairs Intern. This is an exciting opportunity to build public affairs skills within a small, dynamic team working for a not-for-profit organisation with a public-interest mission.</p>\r\n\r\n<p>A placement year at UKAS offers a unique experience working with industry and political stakeholders across a wide range of policy areas, including international trade, AI and emerging technologies, net zero and sustainability and product safety.</p>\r\n\r\n<p>We are looking for a dedicated, positive and mission-driven undergraduate to support the External Affairs team by monitoring and analysing political developments, contributing to public policy work and organising events.</p>\r\n\r\n<p>The successful candidate will contribute to a diverse public affairs and external engagement portfolio that promotes the value of accreditation.</p>\r\n\r\n<p>They will play an active role in assisting a broad stakeholder engagement programme that has recently included political party conferences, an international AI Summit, World Trade Organisation fora, roundtables with senior government and shadow ministers and events at the House of Lords. The intern will also have opportunities to participate in selected external events.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>&nbsp;Key responsibilities:</strong></p>\r\n\r\n<ul>\r\n\t<li >Support the delivery of UKAS&rsquo;s political engagement programme to increase awareness of accreditation among government dep",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "UKAS",
+     "value": "NR1718214StaEAI"
+    },
+    "datePosted": "2026-10-21",
+    "validThrough": "2026-11-14T23:59:59+00:00",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "UKAS",
+     "sameAs": null,
+     "logo": "https://talosatscareerssites.blob.core.windows.net/cpb-site-assets/2435/images/UKAS%20Horizontal%20Logo_RGB_150ppi.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Staines, Surrey, United Kingdom",
+      "addressLocality": null,
+      "addressRegion": "Surrey",
+      "postalCode": "TW18 3HR",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 22000.0,
+      "maxValue": 22000.0,
+      "unitText": "YEAR"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:36:34.771466Z",
+  "content_hash": "43031949da99ad0c47c33f3e198f39a06077126efe4cb8b6a0173bcdccba4946"
+ },
+ {
+  "source_slug": "talos360",
+  "board_token": "https://siscareltd.talosats-careers.com/sitemap.xml",
+  "external_id": "b43d0d573846ffa8ffa99d50",
+  "payload": {
+   "page_url": "https://siscareltd.talosats-careers.com/job/984468",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Support Worker",
+    "description": "<p><strong>SIS Care</strong> have some exciting opportunities available for <strong>Support Workers </strong>to join our team in <strong>Runcorn</strong>. You will join us on a <strong>full time, permanent</strong> basis and in return, you will receive a <strong>competitive salary of &pound;13.45 per hour. </strong></p>\r\n\r\n<p><strong>As a support worker you will get in return </strong></p>\r\n\r\n<ul>\r\n\t<li >Competitive Salary- &pound;13.45&nbsp;per hour</li>\r\n\t<li >&pound;50 sleep rate</li>\r\n\t<li >Career development</li>\r\n\t<li >Skill enhancement&nbsp;</li>\r\n\t<li >Excellent Pension Scheme &amp; Healthcare Benefits</li>\r\n\t<li >Enhanced DBS paid for by SIS (T&amp;C&#39;s Apply)</li>\r\n\t<li >&pound;350 Refer a friend Bonus &ndash; Tell your friends about us and earn an extra &pound;350 when they join (T&amp;Cs apply)</li>\r\n</ul>\r\n\r\n<p><strong>An introduction to SIS</strong></p>\r\n\r\n<p>As a leading provider of complex mental health and social health services, we are dedicated to excellence. Our commitment drives us to constantly strive to be the best in our field, ensuring that those we serve receive the highest standard of care.</p>\r\n\r\n<p><strong>The</strong> <strong>Support Worker role</strong></p>\r\n\r\n<p>Our teams provide outstanding care and support, working with individuals to understand their needs and help them to achieve their goals and ambitions. The role of a support worker is extremely rewarding, but can also be challenging at times, so patience and compassion are key.</p>\r\n\r",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "SIS Care Ltd",
+     "value": "SBSWx1"
+    },
+    "datePosted": "2026-11-09",
+    "validThrough": "2026-12-07T23:59:59+00:00",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "SIS Care Ltd",
+     "sameAs": "www.sis.care",
+     "logo": "https://postingpanda.blob.core.windows.net/assetstore/0a47e641-813c-441c-9598-b8aaa04e54e7/aaad9c17-a655-4072-a480-3b57ee9cb50b"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Runcorn, Cheshire, United Kingdom",
+      "addressLocality": null,
+      "addressRegion": "Cheshire",
+      "postalCode": "WA7 1HF",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 13.45,
+      "maxValue": 13.45,
+      "unitText": "HOUR"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:36:44.704840Z",
+  "content_hash": "013683d51ee640504932034b1e80eb7573f5fac3d2c0e906fc96996912d40120"
+ },
+ {
+  "source_slug": "talos360",
+  "board_token": "https://siscareltd.talosats-careers.com/sitemap.xml",
+  "external_id": "4145bd6cd56c8046aee862a5",
+  "payload": {
+   "page_url": "https://siscareltd.talosats-careers.com/job/982238",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Support Worker",
+    "description": "<p>SIS have an exciting opportunity available for a <strong>Support Worker</strong> to join our team. You will join us on a <strong>full time</strong>, <strong>permanent basis</strong> and in return, you will receive a competitive salary of<strong> &pound;13.45 per hour.</strong>  &nbsp;</p>\r\n\r\n<p> &nbsp;</p>\r\n\r\n<p> <strong>As our Support Worker, we will reward you and your hard work with:  </strong>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Enhanced DBS paid for by SIS (T&amp;C&#39;s Apply)  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Excellent Pension Scheme  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Career progression  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Employee recognition schemes  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Employee benefits scheme  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>&pound;350 Refer a friend Bonus &ndash; Tell your friends about us and earn an extra &pound;350 when they join (T&amp;Cs apply)  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Free NVQ training (level 2&amp;3)  &nbsp;</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p> &nbsp;</p>\r\n\r\n<p><strong>The Support Worker role:  &nbsp;</strong></p>\r\n\r\n<p>SIS are currently looking to recruit experienced individuals who have experience working within a supported living service. As part of this role, you would be supporting individuals with complex mental health needs as well as providing support within their daily lives. You will play a crucial role in enhancing their quality of life through person centred suppo",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "SIS Care Ltd",
+     "value": "GSW1"
+    },
+    "datePosted": "2026-11-04",
+    "validThrough": "2026-12-02T23:59:59+00:00",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "SIS Care Ltd",
+     "sameAs": "www.sis.care",
+     "logo": "https://postingpanda.blob.core.windows.net/assetstore/0a47e641-813c-441c-9598-b8aaa04e54e7/aaad9c17-a655-4072-a480-3b57ee9cb50b"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Liverpool, Merseyside, United Kingdom",
+      "addressLocality": null,
+      "addressRegion": "Merseyside",
+      "postalCode": "L6 8PB",
+      "addressCountry": "United Kingdom"
+     }
+    },
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "GBP",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 13.45,
+      "maxValue": 13.45,
+      "unitText": "HOUR"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T14:36:45.422729Z",
+  "content_hash": "eb126e3fece11464837ec3850296def461071ff3e584865a0977fb49708b1d86"
+ }
+]

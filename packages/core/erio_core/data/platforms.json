@@ -1812,5 +1812,180 @@
   "blocked": "no public job list: career sites ({name}.talentstorm.de) are a client-rendered Angular app with no job links or structured data in the HTML, and its job offers endpoint (api.talentstorm.de/api/v1/joboffers/basic) answers 401 Authentication Required",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "crelate",
+  "name": "Crelate",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The RSS feed every Crelate candidate portal publishes (jobs.crelate.com/portal/{org}/rss); robots.txt allows it. Token is the portal name. Portals that are switched off answer with a disabled page.",
+  "examples": [
+   "10thstreettalent",
+   "thetalentmine"
+  ]
+ },
+ {
+  "slug": "geekjob",
+  "name": "GeekJob",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from GeekJob (geekjob.ru, Russian IT jobs); each links back to its GeekJob page. Reads the server-rendered /vacancies/{n} lists and each vacancy's schema.org JobPosting; its robots.txt allows them (it disallows only /json/ and /rest/). Credit: link each job back to GeekJob.",
+  "examples": [
+   "https://geekjob.ru/vacancies"
+  ]
+ },
+ {
+  "slug": "beehire",
+  "name": "Beehire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The JSON each Beehire career page (app.beehire.com/career/{name}) loads for visitors (/users/getPublicCampaigns/{name}); robots.txt allows it. Token is the career page name. Apply link is the job's public invitation page; standing spontaneous-application forms are skipped.",
+  "examples": [
+   "beehire",
+   "talentis"
+  ]
+ },
+ {
+  "slug": "keka",
+  "name": "Keka",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The JSON that Keka Hire career sites ({tenant}.keka.com/careers) and Keka's embed code load for visitors (/careers/api/jobs/default/active, plus careerportalinfo for the company name); robots.txt allows /careers. Token is the tenant, or tenant/portal for a non-default portal.",
+  "examples": [
+   "pennanttech",
+   "spyneai"
+  ]
+ },
+ {
+  "slug": "connectoor",
+  "name": "Connectoor",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Connectoor.jobs, the public job board of the Connectoor recruiting software (Germany); each links back to its Connectoor job page. Reads the board's own embedded search (api.connectoor.de/find, newest first, a capped number per crawl) and each job's schema.org JobPosting on app.connectoor.de; neither host publishes a robots.txt restriction. Credit: link each job back to Connectoor.",
+  "examples": [
+   "https://www.connectoor.jobs"
+  ]
+ },
+ {
+  "slug": "talos360",
+  "name": "Talos360 ATS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Customer career sites on {tenant}.talosats-careers.com: each serves a sitemap of its job pages and every page carries a schema.org JobPosting; no robots.txt restriction is published. Token is the sitemap address, https://{tenant}.talosats-careers.com/sitemap.xml.",
+  "examples": [
+   "https://ukas.talosats-careers.com/sitemap.xml",
+   "https://siscareltd.talosats-careers.com/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "recruitis",
+  "name": "Recruitis",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career sites on jobs.recruitis.io/{company}: server-rendered lists (paged with jobs_list_form[page]) and one page per job; no feed, API or structured data is public, so the page markup is read. jobs.recruitis.io serves no robots.txt restriction. Token is the company name in the address.",
+  "examples": [
+   "recruitisio",
+   "globus"
+  ]
+ },
+ {
+  "slug": "applicantstack",
+  "name": "ApplicantStack",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career pages on {tenant}.applicantstack.com: the server-rendered /x/openings list and one /x/detail/{id} page per job (summary table plus description); robots.txt allows them. ApplicantStack's own API needs a key and is not used. Token is the tenant.",
+  "examples": [
+   "conetrix",
+   "kckcc"
+  ]
+ },
+ {
+  "slug": "opencats",
+  "name": "OpenCATS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Self-hosted OpenCATS installations publish a careers module ({site}/careers/): a server-rendered list (index.php?m=careers&p=showAll) and a page per job; no feed or structured data is public, so the page markup is read. Each installation sits on its owner's own domain, so the token is the address of its careers folder, for example https://vectaur.com/ats/careers/; the generic 'upload a resume for general consideration' entry is skipped.",
+  "examples": [
+   "https://vectaur.com/ats/careers/",
+   "https://hr.northstar.edu.in/careers/"
+  ]
+ },
+ {
+  "slug": "prevueaps",
+  "name": "Prevue APS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Customer career sites on {tenant}.prevueaps.com: each serves a sitemap of its job pages (/job_site_map.xml; the vendor also lists all tenants in feeds.prevueaps.com/site_map_index.xml) and every job page carries a schema.org JobPosting; robots.txt allows them. Token is the sitemap address, https://{tenant}.prevueaps.com/job_site_map.xml.",
+  "examples": [
+   "https://bdr.prevueaps.com/job_site_map.xml",
+   "https://oiaccounts.prevueaps.com/job_site_map.xml"
+  ]
+ },
+ {
+  "slug": "mcidirecthire",
+  "name": "MCi Direct Hire",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Jobs from Job Central (jobs.mcidirecthire.com), the public job board of MCi Direct Hire's recruitment software (mostly South African employers); each links back to its Job Central vacancy page. Reads the board's own paged job cards (/AvailableVacancies/JobSearch, newest first, five pages per crawl, so a crawl is partial) with the opening of each description; the host serves no robots.txt restriction. Credit: link each job back to Job Central.",
+  "examples": [
+   "https://jobs.mcidirecthire.com"
+  ]
+ },
+ {
+  "slug": "flatchr",
+  "name": "Flatchr",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career sites on careers.flatchr.io/fr/company/{company}: the Next.js page embeds every published vacancy (description, place, contract) in its page data, so one request reads a company; robots.txt turns away only a few named bots. Flatchr's own API needs a token and is not used. Token is the company name in the address.",
+  "examples": [
+   "phidap",
+   "defimat"
+  ]
+ },
+ {
+  "slug": "jobspage",
+  "name": "Jobspage",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Careers pages on {company}.jobspage.co: each serves a sitemap of its job pages and every job page carries a schema.org JobPosting; robots.txt allows them (only the vendor's own /jobs/ and /account/ paths are disallowed). Token is the sitemap address, https://{company}.jobspage.co/sitemap.xml. Only the vendor's demo and test careers pages could be found, so the examples are demo data, not a real employer; real customer pages are on the same pattern.",
+  "examples": [
+   "https://demo.jobspage.co/sitemap.xml",
+   "https://company.jobspage.co/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "talentclue",
+  "name": "Talent Clue",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Customer career sites on {tenant}.talentclue.com: the server-rendered offers table (/es/company/{id}/offers/menu/modal) and one /es/node/{n}/{template} page per job (summary plus description); robots.txt allows them (Crawl-delay 10, honoured by the fetcher, so a large site takes long). No feed, API or structured data is public. Token is tenant/companyId, taken from the career site's own offers-list address; the standing 'send your CV with no open offer' entry is skipped.",
+  "examples": [
+   "empleo-grupoquironsalud/64588841",
+   "tauli/13467606"
+  ]
+ },
+ {
+  "slug": "mindsight",
+  "name": "Mindsight",
+  "kind": "ats",
+  "blocked": "No vendor site, career-site host, feed or API for a recruiting product of this name could be found: mindsight.com is a domain for sale, mindsight.nl and mindsight.ai are parked or redirect to a landing page, and the other organisations called Mindsight are unrelated employers on their own sites.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "nodesk",
+  "name": "NoDesk",
+  "kind": "service",
+  "blocked": "Its Terms of Use (nodesk.co/legal/terms) forbid using any means to mirror, frame, scrape, crawl or spider the site or to reach it other than through its own interfaces, even though robots.txt allows crawling (Content-Signal: search=yes, ai-train=no); a written permission from NoDesk would be needed.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "recrutauto",
+  "name": "Recrut'Auto",
+  "kind": "ats",
+  "blocked": "recrutauto.fr is a LinkedIn recruiting-automation product with only marketing pages (its sitemap lists 19 pages, none a job), recrutauto.com shows a site-under-construction page, and no public career site, feed or API listing jobs was found.",
+  "notes": "",
+  "examples": []
  }
 ]
