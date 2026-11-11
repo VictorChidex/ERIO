@@ -1628,5 +1628,29 @@
    "empleo-grupoquironsalud/64588841",
    "tauli/13467606"
   ]
+ },
+ {
+  "slug": "mindsight",
+  "name": "Mindsight",
+  "kind": "ats",
+  "blocked": "No vendor site, career-site host, feed or API for a recruiting product of this name could be found: mindsight.com is a domain for sale, mindsight.nl and mindsight.ai are parked or redirect to a landing page, and the other organisations called Mindsight are unrelated employers on their own sites.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "nodesk",
+  "name": "NoDesk",
+  "kind": "service",
+  "blocked": "Its Terms of Use (nodesk.co/legal/terms) forbid using any means to mirror, frame, scrape, crawl or spider the site or to reach it other than through its own interfaces, even though robots.txt allows crawling (Content-Signal: search=yes, ai-train=no); a written permission from NoDesk would be needed.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "recrutauto",
+  "name": "Recrut'Auto",
+  "kind": "ats",
+  "blocked": "recrutauto.fr is a LinkedIn recruiting-automation product with only marketing pages (its sitemap lists 19 pages, none a job), recrutauto.com shows a site-under-construction page, and no public career site, feed or API listing jobs was found.",
+  "notes": "",
+  "examples": []
  }
 ]
