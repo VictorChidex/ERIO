@@ -1543,5 +1543,13 @@
    "https://dr.enlizt.me/",
    "https://page.enlizt.me/"
   ]
+ },
+ {
+  "slug": "selfrecruit",
+  "name": "SelfRecruit",
+  "kind": "ats",
+  "blocked": "no public vendor site or career pages found: selfrecruit.com is a parked domain for sale and no other selfrecruit domain resolves, so no tenant can be located",
+  "notes": "Checked selfrecruit.com, www.selfrecruit.com and the .io/.fr/.de/.nl/.eu/.net/.it/.es/.co.uk variants on 2026-11-11; web search finds no career site powered by it.",
+  "examples": []
  }
 ]
