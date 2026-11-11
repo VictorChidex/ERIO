@@ -30,6 +30,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   the list page links each job as ``?...id={id}``, and each job page carries a JobPosting.
 - Recruiterflow: ``https://recruiterflow.com/{tenant}/jobs`` names every job page in the list
   its script embeds (``window.jobsList``); each job page carries a JobPosting.
+- Talentio: ``https://open.talentio.com/r/1/c/{company}/homes/{id}`` names its job pages in the
+  data it hands its page script; each job page carries a JobPosting.
 """
 
 import html as htmllib
@@ -414,6 +416,32 @@ class RecruiterflowConnector(JsonLdConnector):
         return [f"https://recruiterflow.com/{path}" for path in dict.fromkeys(found)]
 
 
+TALENTIO_BOARD = re.compile(r"https://open\.talentio\.com/r/1/c/[A-Za-z0-9_-]+/homes/\d+")
+TALENTIO_JOB = re.compile(
+    r'"publishedUrl":\s*"(https://open\.talentio\.com/r/1/c/[A-Za-z0-9_-]+/pages/\d+)"'
+)
+
+
+class TalentioConnector(JsonLdConnector):
+    """Talentio career pages. The board token is the company's home page address,
+    ``https://open.talentio.com/r/1/c/{company}/homes/{id}``."""
+
+    def __init__(self) -> None:
+        super().__init__("talentio", r"^/r/1/c/", frozenset({"open.talentio.com"}))
+
+    def board_url(self, board_token: str) -> str:
+        if not TALENTIO_BOARD.fullmatch(board_token):
+            raise ValueError(f"not a Talentio career page address: {board_token!r}")
+        return board_token
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        response = fetcher.get(self.board_url(board_token))
+        if response.status != 200:
+            raise FetchError("http_error", f"HTTP {response.status}", response.status)
+        html = htmllib.unescape(response.body.decode("utf-8", "replace"))
+        return list(dict.fromkeys(TALENTIO_JOB.findall(html)))
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -450,6 +478,7 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     HuntflowConnector(),
     OdooConnector(),
     TeclaConnector(),
+    TalentioConnector(),
     RecruiterflowConnector(),
     HrworksConnector(),
     JsonLdConnector("hr4you", r"^/job/view/\d+/", frozenset({"*.hr4you.org"})),

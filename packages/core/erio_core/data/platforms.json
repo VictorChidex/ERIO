@@ -1615,5 +1615,16 @@
    "https://recruiterflow.com/rfcareers/jobs",
    "https://recruiterflow.com/believeresourcing/jobs"
   ]
+ },
+ {
+  "slug": "talentio",
+  "name": "Talentio",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Talentio (Japan) career pages: open.talentio.com/r/1/c/{company}/homes/{id} lists its job pages in the data it hands its page script, and each job page carries a schema.org JobPosting. Token is the company home page address. Pages that publish no JobPosting (and companies that only redirect elsewhere) list nothing.",
+  "examples": [
+   "https://open.talentio.com/r/1/c/doublebz/homes/4401",
+   "https://open.talentio.com/r/1/c/binc/homes/4380"
+  ]
  }
 ]

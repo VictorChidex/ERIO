@@ -273,10 +273,26 @@ def test_recruiterflow_reads_the_job_pages_a_career_page_lists() -> None:
     assert jobs[0].description_html
 
 
+def test_talentio_reads_the_job_pages_a_career_page_lists() -> None:
+    board = "https://open.talentio.com/r/1/c/doublebz/homes/4401"
+    page = "https://open.talentio.com/r/1/c/doublebz/pages/94073"
+    fetched, jobs = read(
+        "talentio",
+        board,
+        {board: body("talentio_home.html"), page: body("talentio_job.html")},
+    )
+    # The part-time page is not served by the fake and is skipped; the apply links are not read.
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title == "【正社員】ジビエ処理加工施設スタッフ"
+    assert jobs[0].company_name and jobs[0].description_html
+    assert str(jobs[0].apply_url) == page
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
+        ("talentio", "https://example.com/x"),
         ("recruiterflow", "https://example.com/x/jobs"),
         ("tecla", "https://example.com"),
         ("huntflow", "bad/token"),
