@@ -1477,5 +1477,16 @@
   "examples": [
    "https://www.airswift.com/jobs"
   ]
+ },
+ {
+  "slug": "homerun",
+  "name": "Homerun",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the Atom feed every Homerun career site advertises in its page head (feed.homerun.co/{tenant}); descriptions inline. Token is the career-site subdomain; the standing open-application entry is skipped.",
+  "examples": [
+   "home",
+   "jobs"
+  ]
  }
 ]
