@@ -1,0 +1,90 @@
+[
+ {
+  "source_slug": "huntflow",
+  "board_token": "example",
+  "external_id": "3115",
+  "payload": {
+   "url": "https://cryptopay.global.huntflow.io/vacancy/account-manager-b2b",
+   "id": 3115,
+   "title": "Account Manager (B2B)",
+   "company": "Cryptopay",
+   "city": "Remote (Europe)",
+   "division": "B2B",
+   "money": null,
+   "sections": [
+    "<p>We are looking for a proactive and results-driven&nbsp;<strong>Account Manager</strong>&nbsp;to act as a key point of contact between our company and clients. In this role, you will be responsible for building long-term client relationships, delivering tailored solutions, and supporting partners in achieving their business goals.</p>",
+    "<ul><li>Own and manage a portfolio of client accounts, acting as the primary point of contact and ensuring accurate records in CRM</li><li>Develop a deep understanding of client business models to identify upsell and cross-sell opportunities</li><li>Build and maintain Account Plans for key clients, outlining strategies, success metrics, and risk management</li><li>Lead client reviews, performance reporting, and strategic planning sessions</li><li>Monitor account performance, proactively resolve issues, and drive client satisfaction, retention, and revenue growth</li><li>Enhance account management processes and client communication standards to ensure scalability and consistency</li><li>Provide structured client feedback to Product, Compliance, and Operations teams to support continuous improvement</li></ul>",
+    "<ul><li>Work in a remote mode in EU working hours</li><li>Strong team of professionals and growth opportunities within the company</li><li>Effective management that listens actively and uses data-driven approach to guide decisions</li><li>Comfortable working conditions.</li></ul><p>Important information for the applicants: We’ll reach out within 2 weeks should your profile be a match.</p>",
+    "<ul><li>2+ years of experience as a Relationship Manager, Account Manager, or in a similar client-facing role within <strong>the payments industry, preferably with a payment service provider (PSP) or crypto payment provider</strong></li><li>Experience in managing and developing long-term relationships with B2B clients, ideally including <strong>high-risk merchants in iGaming, betting, or Forex/CFD</strong></li><li>Strong analytical and problem-solving skills with great attention to detail</li><li>Excellent presentation and communication skills</li><li>Adaptability, a client-centric mindset, and strong relationship-building abilities</li><li>Commercial mindset with a focus on revenue growth, client retention, and upsell/cross-sell opportunities</li><li>Knowledge of crypto payment processing is an advantage</li><li>Experience working with CRM software (e.g., Salesforce) to manage client relationships and track commercial activities</li><li>Fluent English</li></ul>"
+   ]
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "d1af8f749525b9161a731946c2227a316274420f81c0bc81b3bdfc7aeb34f1f2"
+ },
+ {
+  "source_slug": "huntflow",
+  "board_token": "example",
+  "external_id": "3102",
+  "payload": {
+   "url": "https://cryptopay.global.huntflow.io/vacancy/customer-support-operations-officer",
+   "id": 3102,
+   "title": "Customer Support & Operations Specialist",
+   "company": "Cryptopay",
+   "city": "Luxembourg",
+   "division": "EMI",
+   "money": null,
+   "sections": [
+    "<p>We hold EMI and CASP licenses from the CSSF and build international payments infrastructure for businesses operating across markets, currencies, and financial systems.</p><p>We are creating a unified platform that brings together international payments, foreign exchange, and digital financial infrastructure — helping companies simplify treasury operations, expand into new markets, and connect traditional payment rails with the emerging digital economy.</p><p><strong>About the Role</strong></p><p>As our platform continues to evolve, we're looking for an adaptable, hands-on professional who enjoys working across customer operations, product improvements, and cross-functional collaboration in a fast-moving fintech environment.</p><p>You'll support clients, validate new product releases through User Acceptance Testing (UAT), identify opportunities to improve operational processes, and turn customer feedback into meaningful product improvements.</p>",
+    "<p><strong>Operations and Customer Support</strong></p><ul><li>Log and manage incoming inquiries and complaints across all communication channels throughout the whole lifecycle with speed and professionalism.</li><li>Monitor platform status alerts (e.g., service outages, latency, payment rail delays) and keep relevant stakeholders informed.</li><li>Coordinate cross-functionally across Business Development, Finance &amp; Payment Operations, Compliance, Product, and IT to resolve complex customer support queries related to the platform functionality and payment execution issues.</li></ul><p><strong>UAT &amp; Quality Assurance&nbsp;</strong></p><ul><li>Execute the UAT for new platform builds, financial instruments, payment rails, and feature releases.</li><li>Define and check test cases and scenarios from a user and operational perspective to identify bugs, performance bottlenecks, and UX friction before deployment.</li><li>Collaborate directly with Product and Engineering teams to report issues, re-test fixes, and validate platform stability.</li></ul><p><strong>Change Management &amp; Process Improvement</strong></p><ul><li>Capture, log, and analyse feedback from clients and internal teams to identify feature gaps and process bottlenecks.</li><li>Assist in drafting and managing Change Requests, ensuring functional requirements are clearly documented for technical teams.</li><li>Participate in refining internal workflows, operational procedures, and support documentation as the product evolves.</li></ul>",
+    "<ul><li>High Impact: Direct influence on the development and refinement of a next-generation global payments platform.</li><li>Growth Potential: Opportunity to expand your skill set across new product development, payment operations, and client management.</li><li>Modern &amp; Collaborative Culture: Work within a forward-thinking team pushing the boundaries of global digital finance infrastructure.</li><li><strong>Location &amp; Work Model: This is a hybrid role based in Luxembourg. We are considering candidates who are based locally or able to commute to the Luxembourg office as part of a hybrid setup.</strong></li></ul>",
+    "<ul><li>Understanding of the B2B Customer Support process within fintech, payment institutions, banking, FX, or digital assets.</li><li>Comfortable managing customer inquiries from investigation to resolution, coordinating with multiple cross-functional stakeholders to deliver an excellent customer experience.</li><li>Interest in technology and product development, with experience or willingness to participate in User Acceptance Testing (UAT), validate new features, and report bugs or usability issues.</li><li>Confident using support and collaboration tools such as Jira, Confluence, Zendesk, Intercom, or similar platforms.</li><li>Strong analytical and problem-solving skills, with excellent attention to detail.</li><li>Excellent written and verbal communication skills, with the ability to explain complex issues clearly and professionally.</li><li>Self-organized, proactive, and comfortable working in a fast-paced, evolving fintech environment.</li><li>Fluent English</li></ul>"
+   ]
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "86d83d827f5c59f63dab54b2a9c6b3f45cfd7322781cce0f144fea97613beac5"
+ },
+ {
+  "source_slug": "huntflow",
+  "board_token": "example",
+  "external_id": "27995",
+  "payload": {
+   "url": "https://prisma.huntflow.io/vacancy/strategicheskii-konsultant-middle",
+   "id": 27995,
+   "title": "Стратегический консультант (middle+)",
+   "company": null,
+   "city": null,
+   "division": "Консальтнг",
+   "money": null,
+   "sections": [
+    "<p><strong>Призма</strong> — компания на стыке разработки цифровых продуктов и стратегического консалтинга. Наши команды помогают клиентам определить уникальную траекторию развития в соответствии с последними трендами и вызовами, поддерживая ее нашей внутренней разработкой цифровых технологий (геймификация, лояльность, digital-сервисы и пр.)</p>",
+    "<p>Стратегический консультант будет участвовать в аналитической и содержательной проработке проекта, включая:</p><ul><li>Сбор, структурирование и анализ данных по рынку, клиентам, продажам, маркетингу, продуктам и бизнес-процессам</li><li>Проведение количественного и качественного анализа для выявления ключевых проблем, возможностей роста и зон повышения эффективности</li><li>Подготовка гипотез, аналитических выводов и рекомендаций для управленческих решений</li><li>Участие в диагностике текущей модели CVM, продаж, маркетинга, клиентского пути или коммерческой функции</li><li>Анализ клиентской базы, сегментации, каналов взаимодействия, CRM/CVM-процессов, воронки продаж и маркетинговой эффективности</li><li>Бенчмаркинг лучших практик на релевантных рынках и в сопоставимых компаниях</li><li>Подготовка презентационных материалов для проектной команды и клиента в формате, близком к top-tier consulting</li><li>Построение финансово-экономических моделей, расчет бизнес-кейсов, оценка эффекта от инициатив</li><li>Участие в интервью, рабочих сессиях и встречах с представителями клиента</li><li>Формирование инициатив по трансформации: описание целевого состояния, дорожной карты, KPI, quick wins и ожидаемого эффекта</li><li>Координация (управление) отдельных рабочих стримов проекта</li><li>Подготовка итоговых материалов: диагностика, выводы, рекомендации, роадмап внедрения.</li></ul>",
+    "<ul><li>Официальное оформление</li><li>Рыночное вознаграждение + бонусы по итогам оценки</li><li>Возможность удалённой работы (из любой точки мира по мск времени)</li><li>Потенциал карьерного роста по итогам ревью</li><li>Работа с кросс-командой экс-консультантов Big-3 и IT-специалистов передовых студий разработки</li></ul>",
+    "<p><strong>Обязательные требования:</strong></p><ul><li>Опыт работы от <strong>1–4 лет</strong> в стратегическом консалтинге, бизнес-аналитике, корпоративной стратегии, коммерческой аналитике, маркетинговой аналитике или смежных направлениях</li><li>Сильные аналитические навыки: умение структурировать неопределенные задачи, работать с большим объемом информации и выделять главное</li><li>Уверенное владение <strong>Excel</strong>: модели, расчеты, сводные таблицы, анализ данных</li><li>Уверенное владение <strong>PowerPoint</strong>: подготовка структурированных, логичных и визуально качественных презентаций.</li><li>Опыт подготовки управленческих материалов, аналитических записок или презентаций для руководства</li><li>Понимание базовых принципов стратегии, коммерческой эффективности, продаж, маркетинга, клиентской аналитики или операционной трансформации</li><li>Умение формулировать гипотезы, проверять их на данных и превращать выводы в практические рекомендации</li><li>Навыки проведения интервью, сбора требований и взаимодействия с бизнес-заказчиками.</li><li>Грамотный русский язык, способность четко и структурно излагать мысли письменно и устно.</li></ul><p><strong>Будет преимуществом:</strong></p><ul><li>Опыт работы в Big 3 / Big 4 / Tier-2 консалтинге, внутреннем консалтинге или стратегии крупной компании</li><li>Знание подходов и инструментария управления ценностью клиента и клиентским опытом</li><li>Опыт анализа продаж, трейд-маркетинг, управление маркетинговым каналами</li><li>Опыт работы с клиентскими данными, транзакционными данными, CRM/CDP-системами.</li></ul>"
+   ]
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "9a7c885d8952c40fda9913e88bbc00164c0475630b4e356ce661c143036257a4"
+ },
+ {
+  "source_slug": "huntflow",
+  "board_token": "example",
+  "external_id": "28279",
+  "payload": {
+   "url": "https://prisma.huntflow.io/vacancy/ux-ui-dizainer-proekt",
+   "id": 28279,
+   "title": "UX\\UI Дизайнер (проект)",
+   "company": null,
+   "city": null,
+   "division": null,
+   "money": null,
+   "sections": [
+    "<p>Геймификация - один из основных профилей работы нашей компании. Тебе предстоит запускать проекты с игровыми механиками для мобильных приложения (и реже для web-сайтов) крупнейших B2C компаний в России.</p>",
+    "<ul><li>Создавать прототипы интерфейсов для визуализации концепций</li><li>Отрисовывать дизайны в Figma</li><li>Взаимодействовать с технической командой и контролировать соответствие дизайна макетам</li><li>Работать над большими и сложными продуктами</li><li>Презентовать решения внутренней команде</li></ul>",
+    "<ul><li>Проектная занятость (с периодическим повторением)</li><li>Рыночное вознаграждение</li><li>Официальное оформление</li><li>Удаленный формат работы</li></ul>",
+    "<p><br></p><ul><li>Знание основных принципов веб разработки и понимание технических ограничений</li><li>Уверенное владение инструментами Figma; использование автолейаутов, компонентов, стилей</li><li>Высокий уровень UI, насмотренность, портфолио с современными дизайн-решениями. В портфолио должны быть примеры креативных проектов/задач, где продемонстрирован навык использования большого количества различных визуальных элементов (интеграция иллюстраций в макеты, активные цветовые палитры, большое количество иконок и тд)</li><li>Понимание принципов качественного UX</li><li>Уверенное владение ИИ для создания визуального контента</li></ul><p>Будет плюсом:</p><ul><li>Опыт работы с играми/геймификацией</li><li>Опыт работы с юнити (если нет - обучим в рамках онбординга)</li></ul>"
+   ]
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "1ee0ebbb8f41ccf460ba9543fdc3a82260bda9086a6d5c3ac546186b70a8399c"
+ }
+]

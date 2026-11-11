@@ -1,0 +1,128 @@
+[
+ {
+  "source_slug": "hroffice",
+  "board_token": "https://www.werkenbijomring.nl/sitemap.xml",
+  "external_id": "d4f2e5c14fce5ede873072c4",
+  "payload": {
+   "page_url": "https://www.werkenbijomring.nl/vacatures/392515-adviseur-leren-en-ontwikkelen",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-10",
+    "description": "<div><p><span><span></span></span>De zorg verandert en daarmee verandert ook wat collega's moeten kennen en kunnen. Als Adviseur Leren &amp; Ontwikkelen bij Omring denk je daarom niet alleen na over opleidingen en trainingen, maar vooral over hoe we leren en werken slimmer met elkaar kunnen verbinden.</p></div><div><p><span><strong>Waar je komt te werken</strong></span><span><strong>&nbsp;</strong></span></p></div><div><p><span></span>Je maakt deel uit van de afdeling Leren &amp; Ontwikkelen, samen met L&amp;O-adviseurs, praktijkopleiders en collega's van het opleidingscentrum. De afdeling valt binnen P&amp;O en je rapporteert aan de Manager Leren &amp; Ontwikkelen.&nbsp;</p></div><p>Omring biedt zorg en ondersteuning in West-Friesland, de Kop van Noord-Holland en op Texel. Thuis, op onze woonzorglocaties en binnen onder andere behandeling en revalidatie. Dat betekent dat leer- en ontwikkelvraagstukken verschillende functies, teams en onderdelen van de organisatie raken.</p><div><div><p><span><span><strong>Wat&nbsp;</strong></span><span><strong>je gaat doen</strong></span></span><span>&nbsp;</span></p></div></div><p>Bij Omring is leren geen doel op zich. Het moet bijdragen aan goed werk en goede zorg. Daarom begint een leervraag voor jou niet automatisch met het ontwikkelen van een training. Je onderzoekt eerst wat er in de praktijk anders moet en wat daarvoor nodig is.&nbsp;</p><p>Veel leren gebeurt bovendien tijdens het werk: door te doen, te onderzoeken, ervaringen te delen en samen oplossingen te vinden. We willen leren en werken daarom steeds dichter bij elkaar brengen.&nbsp;</p><p>Als Adviseur Leren &amp; Ontwikkelen:&nbsp;</p><ul><li>adviseer je management over tactische en strategische leer- en ontwikkelvraagstukken;&nbsp;</li><li>onderzoek je wat achter een leervraag zit en vertaal je dit naar een passende aanpak;&nbsp;</li><li>werk je samen met praktijkopleiders en mbo- en hbo-onderwijsinstellingen aan nieuwe manieren van opleiden;&nbsp;</li><li>draag je bij aan regionale samenwerkingen met zorgorganisaties, onderwijs- en overheidspartners;&nbsp;</li><li>ontwikkel en implementeer je leer- en ontwikkelprogramma's;&nbsp;</li><li>volg je ontwikkelingen binnen de zorg en het onderwijs en vertaalt deze naar Omring;&nbsp;</li><li>onderzoek je wat werkt en stuur je bij wanneer een aanpak onvoldoende resultaat oplevert.&nbsp;</li></ul><p>Niet voor ieder vraagstuk ligt de oplossing al klaar. Juist dan onderzoek je samen met collega's en partners wat wél kan werken. Daarbij durf je ook bestaande manieren van leren en opleiden ter discussie te stellen.</p><div><div><p><span><strong>Wat wij zoeken</strong></span><span>&nbsp;</span></p><ul><li><span></span>hbo- of wo-werk- en denkniveau en een opleiding in bijvoorbeeld Onderwijskunde, Opleidingskunde, HR of een vergelijkbare richting; </li><li>ervaring als adviseur op het gebied van leren en ontwikkelen, bij voorkeur binnen de (ouderen)zorg; </li><li>ervaring met het analyseren van organisatie- en ontwikkelvraagstukken; </li><li>ervaring met het ontwikkelen en implementeren van leerinterventies of -programma's; </li><li>ervaring met verschillende stakeholders binnen én buiten een organisatie.</li></ul></div></div><div><div><p><span><strong>Wat wij bieden</strong></span><span>&nbsp;</span></p></div></div><ul><li>een salaris conform CAO VVT FWG 60;&nbsp;</li><li>een jaarcontract op basis van 28-32 uur per week met uitzicht op een contract voor onbepaalde tijd;&nbsp;</li><li>een aantrekkelijke eindejaarsuitkering van 8,33% van het bruto jaarinkomen;&nbsp;</li><li>een inspirerende werk- en leeromgeving met ruimte voor professionele groei.&nbsp;</li></ul><p>De cliënt centraal en de medewerker op één: dat betekent dat we ook graag voor jou zorgen met prettige arbeidsvoorwaarden die jouw werk als Adviseur Leren en Ontwikkelen nog leuker maken en dat werk- en privé in balans is. Wil je weten wat wij nog meer te bieden hebben? Klik hier om meer te lezen over jouw arbeidsvoorwaarden.</p><div><div><p><span><strong>Meer weten of solliciteren</strong></span><span><strong>&nbsp;</strong></span></p></div></div><p>Herken jij jezelf in het bovenstaande profiel en ben je enthousiast geworden na het lezen van deze vacature? Fantastisch! Klik dan vóór 6 december op de knop direct solliciteren. De eerste gesprekken zullen in de week van 14 december worden gehouden. Voor vragen naar aanleiding van deze vacature kan je contact opnemen met Corine van Doornum (Manager Leren en Ontwikkelen): <span>06-30857865</span>&nbsp;.&nbsp;</p><p>Bij Omring hanteren we een screeningsbeleid. Dit houdt in dat we van iedereen die bij ons komt werken een Verklaring Omtrent het Gedrag (VOG) opvragen.&nbsp;</p><p>Acquisitie naar aanleiding van deze vacature wordt niet op prijs gesteld.</p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Baken-P&O",
+     "sameAs": "",
+     "logo": ""
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": "Hoorn"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Baken-P&O",
+     "value": "392515"
+    },
+    "title": "Adviseur Leren en Ontwikkelen",
+    "employmentType": "PART_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": ""
+    },
+    "experienceRequirements": "",
+    "educationRequirements": "HBO/WO",
+    "workHours": "28 - 32 uur per week",
+    "validThrough": "9999-12-31"
+   }
+  },
+  "fetched_at": "2026-11-11T14:26:40.334739Z",
+  "content_hash": "94cea6612d73331eba41ff9e6f4afd7f419f65040f3eed8f2a34a2317f62a284"
+ },
+ {
+  "source_slug": "hroffice",
+  "board_token": "https://www.werkenbijomring.nl/sitemap.xml",
+  "external_id": "cb9351efea1c8a31b0049151",
+  "payload": {
+   "page_url": "https://www.werkenbijomring.nl/vacatures/392980-medewerker-huishouding-middagavonddienst-den-helder---julianadorp",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-10",
+    "description": "<p><span>Ben jij een aanpakker die het tempo erin weet te houden? Vind je het fijn om schoonmaakwerkzaamheden te verzorgen in de leef- en woonomgeving van ouderen en doe jij dat het liefst in de middag/avond? Dan hebben wij een mooie kans voor jou!</span></p><p><span>Bij Omring leveren we samen de beste zorg dichtbij, <span>&nbsp;</span>met liefde, aandacht en plezier. We bieden je ruimte om te groeien als professional én als persoon, binnen een betrokken en innovatieve organisatie die enthousiasme omarmt en eigen initiatief waardeert. Zo leuk kan zorg zijn!</span></p><p><strong><span>Wat ga je doen?</span></strong></p><p><span>Samen met je collega’s verzorg je een hygiënisch schone leef- en woonomgeving. Je maakt volgens een planning de appartementen van bewoners, de algemene ruimtes, gangen en sanitaire ruimtes schoon. Dit doe je volgens het schoonmaakprotocol van Omring en in afstemming met je team, bewoners en medewerkers.</span><br></p><p><span>Je start tussen 15:00 en 17:00 uur met je werkzaamheden (dit mag je zelf bepalen). Een dienst bestaat uit 3 uur en je eindtijd is afhankelijk van de tijd wanneer je start.&nbsp;</span></p><p>Het naleven van hygiënevoorschriften is een belangrijk onderdeel van deze functie. Het dragen van nagellak, kunstnagels en sieraden tijdens werktijd is daarom niet toegestaan.</p><p><strong><span>Jij hebt</span></strong></p><ul type=\"disc\"><li><span>Ervaring en plezier in schoonmaakwerkzaamheden;</span></li><li><span>Verantwoordelijkheidsgevoel voor kwaliteit;</span></li><li><span>Affiniteit met de doelgroep;</span></li><li><span>Een positieve instelling en collegiale werkhouding.</span></li></ul><p><strong><span>Jij bent</span></strong></p><ul type=\"disc\"><li><span>Een aanpakker die zelfstandig kan werken;</span></li><li><span>Sociaal vaardig in de omgang met ouderen;</span><span></span></li><li><span>Enthousiast en denkt graag mee;&nbsp;</span></li><li><span>Beschikbaar in de weekenden (voor nu is dit 1x per maand, maar in de toekomst kan dit om het weekend worden).</span></li></ul><p><strong><span>Wij bieden</span></strong></p><ul type=\"disc\"><li><span>Een contract voor 7 maanden met de intentie deze te verlengen;</span><span></span></li><li><span>Een contract op basis van een vast aantal uur, minimaal 9 maar maximaal 15 uur (uren      in overleg);</span></li><li><span>Een toeslag op je loon als je werkt in het weekend;</span></li><li><span>Een aantrekkelijke eindejaarsuitkering van 8,33% van het bruto      jaarinkomen.</span></li></ul><p><span>En natuurlijk nog veel meer! Lees <a href=\"https://www.werkenbijomring.nl/ontdek-omring/arbeidsvoorwaarden\">hier</a> over alle arbeidsvoorwaarden.</span></p><p><strong><span>Waar ga je werken?</span></strong></p><p><span>Je gaat werken op onze woonzorglocatie Den Koogh.&nbsp;</span></p><p><span>Onze woonzorglocatie Den Koogh is een dynamische en veelzijdige locatie voor cliënten die zijn aangewezen op somatische zorg. Er zijn 2 woonzorgafdelingen en daarnaast is er een revalidatieafdeling en biedt het de mogelijkheid om te komen logeren, om zo bijvoorbeeld de mantelzorger te ontlasten. Binnen Den Koogh werken medewerkers en een groep vrijwilligers met veel verantwoordelijkheidsgevoel waarbij men zorgt voor een vriendelijke en gezellig thuis. Deze locatie is met zijn uitnodigende hal en het restaurant ook een locatie waar veel activiteiten en kleine evenementen worden georganiseerd.</span></p><p>Benieuwd naar de locatie waar je komt te werken? Klik dan <a href=\"https://www.omring.nl/locatie/wonen-den-koogh-den-helder\" target=\"_blank\">hier</a>.</p><p><span>Je bent flexibel inzetbaar, zowel doordeweeks als in het weekend. </span><br></p><p><strong><span>Direct solliciteren of meer weten?</span></strong><span><br>Krijg jij al zin in je nieuwe baan? Klik dan op de knop “Direct solliciteren”. Liever eerst nog wat vragen? Neem dan contact op met Nicole Nieuwenhuizen via 06-58943827.</span></p><p><span>Bij Omring hanteren we een screeningsbeleid. Dit betekent dat we van iedereen die bij ons komt werken een Verklaring Omtrent het Gedrag (VOG) opvragen.</span></p>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "TM - Noord A6",
+     "sameAs": "",
+     "logo": ""
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": "Den Helder - Julianadorp"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "TM - Noord A6",
+     "value": "392980"
+    },
+    "title": "Medewerker huishouding middag/avonddienst (Den Helder - Julianadorp)",
+    "employmentType": "PART_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": ""
+    },
+    "experienceRequirements": "",
+    "educationRequirements": "",
+    "workHours": "9 - 15 uur per week",
+    "validThrough": "9999-12-31"
+   }
+  },
+  "fetched_at": "2026-11-11T14:26:41.679687Z",
+  "content_hash": "71994cdc26abc2299ac911948c6ce771708b0b6b429897a2fc1a9a79a0c0f72a"
+ },
+ {
+  "source_slug": "hroffice",
+  "board_token": "https://www.werkenbijomring.nl/sitemap.xml",
+  "external_id": "9fb14f02af586da1427d7c3a",
+  "payload": {
+   "page_url": "https://www.werkenbijomring.nl/vacatures/392970-medewerker-huishouding-hulpthuis-den-helder-enof-julianadorp",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-10",
+    "description": "<div><p><a name=\"_Hlk97191905\">Houd jij ervan om je handen uit de mouwen te steken en mensen blij te maken met een schoon en opgeruimd huis? Dan zijn wij op zoek naar jou!</a></p><p><span><span>Wij zoeken versterking voor ons huishoudelijk team voor 16 uur per week (met uitbreiding van uren in de toekomst mogelijk)</span></span></p><p><span><strong><span>Waar je komt te werken</span></strong></span></p><p><span><span>HulpThuis biedt huishoudelijke zorg in de gemeente Den Helder en Julianadorp. Het zijn zelfstandig wonende ouderen in de wijk. Van aanleunwoning tot vrijstaand huis. De cliënt heeft een beschikking van de gemeente Den Helder met een aantal uur per week. Je ondersteunt de cliënt in de huishoudelijke werkzaamheden waar de cliënt het niet meer zelfstandig kan.</span></span></p><p>Je start om 09:00 uur bij je eerste cliënt. Wanneer je werkdag klaar is hangt af van het aantal cliënten op een dag.&nbsp;</p><p><em>Heb jij nog een kind op de basisschool en werk je het liefst alleen onder schooltijden? Dat kan!</em></p><p><span><strong><span>Wat je gaat doen</span></strong></span><span></span></p><p><span><span>Je gaat samen met de cliënt de huishoudelijke werkzaamheden verrichten. Deze werkzaamheden voer je zelfstandig in samenspraak met de cliënt uit. Dit zullen de wekelijkse werkzaamheden zijn en soms is er ruimte voor iets extra’s.</span></span><span><span></span></span></p><p><span><span></span></span><strong>Je hebt</strong></p><ul type=\"disc\"><li><span><span>een dienstverlenende houding;</span></span></li><li><span><span>kan goed samenwerken met de      cliënt;</span></span></li><li><span><span>oog voor hygiëne en      de&nbsp;werkzaamheden die uitgevoerd moeten worden;</span></span></li><li><span><span>affiniteit met de doelgroep en      een positieve&nbsp;instelling;</span></span></li><li><span><span>Een signalerende functie.</span></span></li></ul><p><span><strong><span>Je bent</span></strong></span><span></span></p><ul type=\"disc\"><li><span><span>in staat om zelfstandig te      werken;</span></span></li><li><span><span>een harde werker met een flinke      dosis enthousiasme en gevoel voor kwaliteit;</span></span></li><li><span><span>flexibel inzetbaar.</span></span></li></ul><p><span><strong><span>Wat zorgen voor</span></strong></span><span></span></p><ul type=\"disc\"><li><span><span>ruimte om te groeien als      professional en als mens;</span></span></li><li><span>een contract voor </span><span>een jaar  <span>op basis van 16 uur per week, met uitbreiding van uren in de toekomst wanneer gewenst;</span></span></li><li><span><span>een leuke baan in een      flexibele werkomgeving;</span></span><span><span></span></span></li><li><span><span>een aantrekkelijke      eindejaarsuitkering van 8,33% van het bruto jaarinkomen.&nbsp;</span></span></li></ul><p><span><strong><span>Direct solliciteren of meer weten?</span></strong></span><span></span></p><p><span><span>Wil je direct op deze functie solliciteren? Fantastisch! Klik zo snel mogelijk op de knop <em>direct&nbsp;</em><em><span>solliciteren!&nbsp;</span></em>Heb je inhoudelijke vragen naar aanleiding van deze vacature, dan kun je contact opnemen met Dionne Scheffer, teammanager, op&nbsp;telefoonnummer </span></span><span>06-51294155.</span><span><span></span></span><span></span></p><p><span><span>We werven voor deze functie ook intern. Bij gelijke geschiktheid geven we voorrang aan de interne kandidaat.&nbsp;</span></span></p><p><span><span>Bij Omring</span></span><span><span>&nbsp;hanteren we een screeningsbeleid. Dit houdt in dat we van iedereen die bij ons komt werken een Verklaring Omtrent het Gedrag (VOG) opvragen.</span></span><span><span></span></span></p></div><div></div>",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "HulpThuis",
+     "sameAs": "",
+     "logo": ""
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": "Den Helder - Julianadorp"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "HulpThuis",
+     "value": "392970"
+    },
+    "title": "Medewerker Huishouding HulpThuis (Den Helder en/of Julianadorp)",
+    "employmentType": "PART_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": ""
+    },
+    "experienceRequirements": "",
+    "educationRequirements": "",
+    "workHours": "16 uur per week",
+    "validThrough": "9999-12-31"
+   }
+  },
+  "fetched_at": "2026-11-11T14:26:43.362497Z",
+  "content_hash": "c575e2962cc0a25c64273a8f821a113a225eb75ec63876c02c90d43957c68771"
+ }
+]

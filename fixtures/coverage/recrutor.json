@@ -1,0 +1,113 @@
+[
+ {
+  "source_slug": "recrutor",
+  "board_token": "mecanojob",
+  "external_id": "63a6a2e5df89e1870eea260e",
+  "payload": {
+   "page_url": "https://www.recrutor.pro/mecanojob/emploi-demonteur_12282.html",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-10-15",
+    "validThrough": "2026-12-11",
+    "employmentType": "TEMPORARY",
+    "title": "Démonteur",
+    "description": "<p><strong>Sous la responsabilité du Responsable, vous serez amené(e) à :</strong> <ul><li>contrôler visuellement la qualité des pièces</li></ul></p><p><strong>Et plus largement à :</strong> <ul><li>utiliser et comprendre la documentation technique</li><li>utiliser des fiches de démontage fournies par GPA</li><li>connaitre et appliquer les procédures Qualité en vigueur dans l’entreprise</li></ul></p>",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Paris",
+      "addressRegion": "",
+      "postalCode": "00000",
+      "addressCountry": "FR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Mecanojob",
+     "sameAs": "",
+     "url": "https://www.recrutor.pro/mecanojob/",
+     "logo": "https://www.recrutor.pro/mecanojob/images/logo-mecanojob.png"
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:29:42.291062Z",
+  "content_hash": "f13a79a28f797d999b6c585718e26636ceda5c547a34e047c8a26f5f6b8b3e5a"
+ },
+ {
+  "source_slug": "recrutor",
+  "board_token": "mecanojob",
+  "external_id": "1090f9000a1b43bb8f022329",
+  "payload": {
+   "page_url": "https://www.recrutor.pro/mecanojob/emploi-mecanicien-automobile_12281.html",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-08-25",
+    "validThrough": "2026-12-11",
+    "employmentType": "OTHER",
+    "title": "Mécanicien Automobile",
+    "description": "<p>Envie de mettre votre expertise mécanique au service d'un atelier reconnu pour la qualité de ses interventions ?</p><p>En tant que Mécanicien(ne) Automobile, vous serez amené(e) à intervenir sur l'ensemble des opérations d'entretien, de maintenance et de réparation des véhicules.</p><p>Vous ne faites pas que réparer : vous contribuez directement à la sécurité, à la fiabilité des véhicules et à la satisfaction des clients.</p><p> </p><p><strong>Vos missions principales :</strong></p><p>- Réaliser les opérations d'entretien courant des véhicules : vidanges, filtres, freinage, pneumatiques, batteries, révisions et contrôles.</p><p>- Effectuer les interventions de mécanique générale et technique selon les besoins des véhicules.</p><p>- Diagnostiquer les pannes mécaniques, électriques et électroniques et identifier les interventions nécessaires.</p><p>- Réaliser les opérations de maintenance et de réparation dans le respect des procédures et des préconisations des constructeurs.</p><p>- Intervenir sur les systèmes de freinage, de suspension, de transmission, de distribution, d'embrayage et autres organes mécaniques.</p><p>- Effectuer les contrôles nécessaires après chaque intervention afin de garantir la conformité et la sécurité du véhicule.</p><p>- Assurer un travail propre et rigoureux et veiller au respect des délais d'intervention.</p><p>- Renseigner les documents et informations nécessaires au suivi des réparations.</p><p>- Maintenir votre poste de travail, vos outils et l'atelier propres et organisés.</p><p>- Participer à la qualité de service et contribuer à la satisfaction et à la fidélisation des clients.</p>",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Saint-Hilaire-de-Riez",
+      "addressRegion": "",
+      "postalCode": "85270",
+      "addressCountry": "FR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Mecanojob",
+     "sameAs": "",
+     "url": "https://www.recrutor.pro/mecanojob/",
+     "logo": "https://www.recrutor.pro/mecanojob/images/logo-mecanojob.png"
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:29:42.854821Z",
+  "content_hash": "2ff96effcac54c50ef56726a0c2e22d44e5bd80228363f582c0d3006b1af01fa"
+ },
+ {
+  "source_slug": "recrutor",
+  "board_token": "mecanojob",
+  "external_id": "ae4bdf9abb3b42ca4ffd0949",
+  "payload": {
+   "page_url": "https://www.recrutor.pro/mecanojob/emploi-mecanicien-automobile_12280.html",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-07-16",
+    "validThrough": "2026-12-11",
+    "employmentType": "OTHER",
+    "title": "Mécanicien automobile",
+    "description": "<p>Envie de mettre votre expertise technique au service d'un atelier dynamique et en pleine croissance ? Sous la responsabilité de Yann, Chef d'atelier, vous interviendrez sur l'ensemble des opérations de maintenance et de réparation mécanique.</p><p>Vous ne faites pas que réparer : vous contribuez directement à la sécurité des véhicules et à la satisfaction des clients.</p><p>Vos missions principales :</p><p>- Réaliser les interventions de maintenance de premier et second niveau.</p><p>- Effectuer le remplacement de kits de distribution, d'embrayages et autres opérations de mécanique générale.</p><p>- Intervenir sur les organes de liaison au sol : pneumatiques, suspensions, freinage et effectuer les réglages nécessaires, notamment sur les trains roulants.</p><p>- Analyser les dysfonctionnements et proposer des solutions techniques adaptées en collaboration avec l'équipe atelier.</p><p>- Réaliser les essais post-intervention afin de valider la conformité et le bon fonctionnement des véhicules.</p><p>- Assurer l'entretien de votre poste de travail, de vos outils et de l'atelier.</p><p>- Veiller au respect des procédures, des consignes de sécurité et des bonnes pratiques d'intervention.</p><p>- Garantir la qualité des prestations réalisées dans un souci constant de satisfaction client.</p><p>Bon à savoir : des formations vous seront proposées tout au long de votre parcours afin de vous accompagner sur les nouvelles technologies et les nouveaux équipements automobiles.</p>",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Saint Ouen des Toits",
+      "addressRegion": "",
+      "postalCode": "53410",
+      "addressCountry": "FR"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Mecanojob",
+     "sameAs": "",
+     "url": "https://www.recrutor.pro/mecanojob/",
+     "logo": "https://www.recrutor.pro/mecanojob/images/logo-mecanojob.png"
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:29:43.306394Z",
+  "content_hash": "2de0749f195b97e2432de4183b1f5075b4a218f00ba5c6378ca8d36cb129cd31"
+ }
+]

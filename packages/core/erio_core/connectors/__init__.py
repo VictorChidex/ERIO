@@ -51,6 +51,7 @@ from erio_core.connectors.trakstar import TrakstarConnector
 from erio_core.connectors.wave2_1 import WAVE2_1_CONNECTORS
 from erio_core.connectors.wave2_2 import WAVE2_2_CONNECTORS
 from erio_core.connectors.wave2_3 import WAVE2_3_CONNECTORS
+from erio_core.connectors.wave2_4 import WAVE2_4_CONNECTORS
 from erio_core.connectors.workable import WorkableConnector
 from erio_core.connectors.workday import WorkdayConnector
 from erio_core.connectors.xml_boards import (
@@ -109,6 +110,7 @@ ALL_CONNECTORS: list[Connector] = [
     *WAVE2_1_CONNECTORS,
     *WAVE2_2_CONNECTORS,
     *WAVE2_3_CONNECTORS,
+    *WAVE2_4_CONNECTORS,
 ]
 
 CONNECTORS: dict[str, Connector] = {connector.slug: connector for connector in ALL_CONNECTORS}

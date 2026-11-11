@@ -1,0 +1,162 @@
+[
+ {
+  "source_slug": "recruiterflow",
+  "board_token": "https://recruiterflow.com/rfcareers/jobs",
+  "external_id": "df93a43fbbc717707333ca8c",
+  "payload": {
+   "page_url": "https://recruiterflow.com/rfcareers/jobs/208",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Customer Success Manager 1",
+    "description": "<div style=\"font-family: 'times new roman', times; font-size: 16px;\">\n<div style=\"color: rgb(51, 57, 61); font-size: 16px;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 14px;\"><strong>Recruiterflow</strong> is the AI-native platform powering executive search and recruiting businesses- from sourcing talent to closing deals. Trusted by&nbsp;2,100+ agencies and 10,000+ recruiters across 100+ countries, we&rsquo;re led by second-time founders with 13 years of experience in AI. Profitable and self-funded, we were recently named <strong>Bootstrapped Business of the Year</strong>. Our customers fund our roadmap because what we build works.</span></div>\n</div>\n<div style=\"font-family: 'times new roman', times; font-size: 16px;\">&nbsp;</div>\n<div style=\"font-family: 'times new roman', times; font-size: 16px;\">\n<div><span style=\"font-size: 14px; font-family: arial, helvetica, sans-serif;\">As a Customer Success Manager at Recruiterflow, you will be the primary point of contact for our valued users. Your main goal will be to ensure our customers derive maximum value from our platform and services, fostering long-term relationships and advocating for their success. You&rsquo;ll collaborate closely with cross-functional teams to address client needs and contribute to the continuous improvement of our product.</span></div>\n<div><span style=\"font-size: 14px; font-family: arial, helvetica, sans-serif;\">This role will involve users across North America and Europe.</span><",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Recruiterflow",
+     "value": "db_example__208"
+    },
+    "datePosted": "2026-11-04",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Recruiterflow",
+     "sameAs": "",
+     "logo": "https://s3-eu-central-1.amazonaws.com/com-recruiterflow-static-content-eu/careers-page/prod/db_example/recruiterflow-new-logo.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560068",
+      "addressCountry": "India"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "9ef4e00f35849607832095ddb4d1c2b78fe082cfdba6dc9d655674b157ac3848"
+ },
+ {
+  "source_slug": "recruiterflow",
+  "board_token": "https://recruiterflow.com/rfcareers/jobs",
+  "external_id": "d582aa4176bb2ac74c66a3fc",
+  "payload": {
+   "page_url": "https://recruiterflow.com/rfcareers/jobs/161",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Product Consultant",
+    "description": "<div style=\"font-family: 'times new roman', times; font-size: 16px;\">\n<p dir=\"ltr\"><span style=\"font-size: 14px; font-family: arial, helvetica, sans-serif;\"><strong style=\"font-weight: bold;\">Recruiterflow</strong> is the AI-native platform powering executive search and recruiting businesses&mdash;from sourcing talent to closing deals. Trusted by <strong style=\"font-weight: bold;\">2,100+ agencies and 10,000+ recruiters across 100+ countries</strong>, we&rsquo;re led by second-time founders with 13 years of experience in AI. Profitable and self-funded, we were recently named <strong style=\"font-weight: bold;\">Bootstrapped Business of the Year. </strong>Our customers fund our roadmap because what we build works.</span></p>\n<div><span style=\"font-size: 14px; font-family: arial, helvetica, sans-serif; color: rgb(0, 0, 0);\">We are hiring multiple Product Consultants to assist customers in resolving technical issues related to our products and services. In this role, you will handle customer inquiries, provide effective solutions, and guide users through various product features and functionalities. Strong communication skills and the ability to build client trust are essential. Experience with help desk software is a plus. &nbsp;<br></span></div>\n<div>&nbsp;</div>\n<div><span style=\"font-size: 14px; font-family: arial, helvetica, sans-serif; color: rgb(0, 0, 0);\">Your contributions will be instrumental in strengthening our reputation by delivering outstanding customer consultation ",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Recruiterflow",
+     "value": "db_example__161"
+    },
+    "datePosted": "2026-10-22",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Recruiterflow",
+     "sameAs": "",
+     "logo": "https://s3-eu-central-1.amazonaws.com/com-recruiterflow-static-content-eu/careers-page/prod/db_example/recruiterflow-new-logo.png"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gurgaon, Bengaluru, New Delhi",
+      "addressRegion": "Karnataka, Delhi, Haryana",
+      "postalCode": ", 560068",
+      "addressCountry": "India"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "6c6b1a6c53761b42c90a9735a3ccd87666d956a74715da43ef0bbd36f6cba705"
+ },
+ {
+  "source_slug": "recruiterflow",
+  "board_token": "https://recruiterflow.com/believeresourcing/jobs",
+  "external_id": "d39b0645224ce3e73383f78d",
+  "payload": {
+   "page_url": "https://recruiterflow.com/believeresourcing/jobs/2311",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Business Development Representative (BDR) Manager",
+    "description": "<div style=\"font-family: helvetica; font-size: 16px;\"><span style=\"font-size: 14px;\"> </span><span style=\"font-size: 14px;\">Business Development Representative (BDR) Manager</span>\n<p><span style=\"font-size: 14px;\"><strong>Location:</strong> Durban, South Africa</span><br><span style=\"font-size: 14px;\"><strong>Work Model:</strong> Hybrid</span><br><span style=\"font-size: 14px;\"><strong>Hours:</strong> UK and US-aligned working hours</span><br><span style=\"font-size: 14px;\"><strong>Industry:</strong> BPO / Outsourcing / Global Business Services</span></p>\n<h2><span style=\"font-size: 14px;\">About Our Client</span></h2>\n<p><span style=\"font-size: 14px;\">Our client is a <strong>global business process outsourcing (BPO) and business services organisation</strong> providing technology-enabled solutions to international businesses across Finance &amp; Accounting, Customer Experience, Healthcare, HR and PEO, Logistics, Legal Services and Digital Technology Solutions.</span></p>\n<p><span style=\"font-size: 14px;\">As part of an exciting global sales transformation, they are establishing a strategic sales development hub in Durban and are seeking an experienced <strong>BDR Manager</strong> to build and lead their global business development function.</span></p>\n<h2><span style=\"font-size: 14px;\">The Opportunity</span></h2>\n<p><span style=\"font-size: 14px;\">This is an exciting leadership opportunity for a commercially driven sales professional who knows how to build high-performing outbou",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Believe Resourcing",
+     "value": "db_example__2311"
+    },
+    "datePosted": "2026-10-20",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Believe Resourcing",
+     "sameAs": "https://www.believeresourcing.com",
+     "logo": "https://s3-eu-central-1.amazonaws.com/com-recruiterflow-static-content-eu/careers-page/prod/db_example/BR.jpg"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Durban",
+      "addressRegion": "Kwazulu Natal, south africa",
+      "postalCode": "4001",
+      "addressCountry": "South Africa"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "55c7e3220c3f586403d382d3c96e59c10b4691396f1f58eb3c17543d3047aacc"
+ },
+ {
+  "source_slug": "recruiterflow",
+  "board_token": "https://recruiterflow.com/believeresourcing/jobs",
+  "external_id": "a06f16e8a9fbf616f0f36627",
+  "payload": {
+   "page_url": "https://recruiterflow.com/believeresourcing/jobs/2320",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Customer Support Agent",
+    "description": "<div style=\"font-family: helvetica; font-size: 16px;\"><span style=\"font-size: 14px;\"> </span><span style=\"font-size: 14px;\">Customer Support Agent</span>\n<p data-start=\"125\" data-end=\"273\"><span style=\"font-size: 14px;\"><strong data-start=\"125\" data-end=\"138\">Location:</strong> Johannesburg</span><br data-start=\"194\" data-end=\"197\"><span style=\"font-size: 14px;\"><strong data-start=\"197\" data-end=\"215\">Working Hours:</strong> Rotational shifts, 7 days a week, between 08:00 and 20:00</span></p>\n<h4 data-start=\"275\" data-end=\"294\"><span style=\"font-size: 14px;\">About the Role</span></h4>\n<p data-start=\"296\" data-end=\"417\"><span style=\"font-size: 14px;\">We are looking for <strong data-start=\"315\" data-end=\"342\">Customer Support Agents</strong> to join a dynamic contact centre team based in&nbsp;<strong data-start=\"390\" data-end=\"416\"> Johannesburg</strong>.</span></p>\n<p data-start=\"419\" data-end=\"763\"><span style=\"font-size: 14px;\">The successful candidates will be responsible for providing professional and efficient customer support across multiple channels, including <strong data-start=\"559\" data-end=\"620\">voice, social media, ticketing and mobile-related support</strong>. You will take ownership of customer queries from first contact through to resolution, ensuring a positive customer experience at every stage.</span></p>\n<h4 data-start=\"765\" data-end=\"790\"><span style=\"font-size: 14px;\">Key Responsibilities</span></h4>\n<ul data-start=\"792\" data-end=\"1864\">\n<li style=\"font-si",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Believe Resourcing",
+     "value": "db_example__2320"
+    },
+    "datePosted": "2026-10-29",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Believe Resourcing",
+     "sameAs": "https://www.believeresourcing.com",
+     "logo": "https://s3-eu-central-1.amazonaws.com/com-recruiterflow-static-content-eu/careers-page/prod/db_example/BR.jpg"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Johannesburg",
+      "addressRegion": "Gauteng",
+      "postalCode": "1462",
+      "addressCountry": "South Africa"
+     }
+    },
+    "directApply": true
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "92ed7889337a6ea6e568a6a07303e92c9c472202e307d104d7731b8fca03a2b8"
+ }
+]

@@ -1987,5 +1987,181 @@
   "blocked": "recrutauto.fr is a LinkedIn recruiting-automation product with only marketing pages (its sitemap lists 19 pages, none a job), recrutauto.com shows a site-under-construction page, and no public career site, feed or API listing jobs was found.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "homerun",
+  "name": "Homerun",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the Atom feed every Homerun career site advertises in its page head (feed.homerun.co/{tenant}); descriptions inline. Token is the career-site subdomain; the standing open-application entry is skipped.",
+  "examples": [
+   "home",
+   "jobs"
+  ]
+ },
+ {
+  "slug": "hroffice",
+  "name": "HR Office",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the career sites HR Office builds on employers' own domains: /sitemap.xml lists /vacatures/{id}-{slug} pages, each with a schema.org JobPosting. Only sites that publish that structured data are read (a bespoke site such as werkenbij.adver-online.nl has none). Token is the sitemap address.",
+  "examples": [
+   "https://www.werkenbijsantepartners.nl/sitemap.xml",
+   "https://www.werkenbijomring.nl/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "recrutor",
+  "name": "RecrutOr",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads a RecrutOr career space (www.recrutor.pro/{tenant}/): the space's RSS feed lists the job pages, each with a schema.org JobPosting (place, employer, type). Token is the tenant name from the address.",
+  "examples": [
+   "advance-emploi",
+   "mecanojob"
+  ]
+ },
+ {
+  "slug": "talentadore",
+  "name": "TalentAdore",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the position list a TalentAdore customer's career site embeds (ats.talentadore.com/positions/{code}/json, also /rss): title, unit, place, type and description inline. Token is the list code taken from that address; the career site's page names it.",
+  "examples": [
+   "JNx",
+   "RQntQS9"
+  ]
+ },
+ {
+  "slug": "huntflow",
+  "name": "Huntflow",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Huntflow career sites ({tenant}.huntflow.io, {tenant}.global.huntflow.io): the sitemap lists /vacancy/{slug} pages, read from the server-rendered Nuxt payload (title, place, sections). Token is the site name, e.g. prisma or cryptopay.global. Archived vacancies are skipped.",
+  "examples": [
+   "cryptopay.global",
+   "prisma"
+  ]
+ },
+ {
+  "slug": "enlizt",
+  "name": "Enlizt / Plooral",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Plooral (Enlizt) career sites at {tenant}.enlizt.me: the server-rendered job list links /vagas/{slug} pages, each with a schema.org JobPosting. Token is the career-site address, e.g. https://dr.enlizt.me/. Sites with no open jobs list none.",
+  "examples": [
+   "https://dr.enlizt.me/",
+   "https://page.enlizt.me/"
+  ]
+ },
+ {
+  "slug": "selfrecruit",
+  "name": "SelfRecruit",
+  "kind": "ats",
+  "blocked": "no public vendor site or career pages found: selfrecruit.com is a parked domain for sale and no other selfrecruit domain resolves, so no tenant can be located",
+  "notes": "Checked selfrecruit.com, www.selfrecruit.com and the .io/.fr/.de/.nl/.eu/.net/.it/.es/.co.uk variants on 2026-11-11; web search finds no career site powered by it.",
+  "examples": []
+ },
+ {
+  "slug": "odoo",
+  "name": "Odoo Recruitment",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the /jobs pages of Odoo websites: current versions mark each job up as a schema.org JobPosting (JSON-LD, or microdata on www.odoo.com); token is the https address of the site's /jobs list (paged as /jobs/page/n) or its sitemap. Themes and older versions with no structured data (for example jobsodoo.com) are not read.",
+  "examples": [
+   "https://www.odoo.com/jobs",
+   "https://www.odooexperts.nl/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "bite",
+  "name": "BITE Bewerbermanager",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads the public job portal jobs.b-ite.com that BITE customers publish to: its sitemap lists /jobposting/{id} pages, each with a schema.org JobPosting naming the employer. robots.txt allows crawlers except the apply form. BITE customers' own career pages are not read. Credit: link each job back to its BITE page.",
+  "examples": [
+   "https://jobs.b-ite.com/sitemap.xml.gz"
+  ]
+ },
+ {
+  "slug": "tecla",
+  "name": "Tecla",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Reads the public job list the jobs page of app.tecla.io loads without sign-in (api.tecla.io/api/jobs/getPublicJobs/, paged): client company, remote role, USD pay range, short description and benefits. The list carries only a description excerpt. Token is https://api.tecla.io. Credit: link each job back to its Tecla page.",
+  "examples": [
+   "https://api.tecla.io"
+  ]
+ },
+ {
+  "slug": "hr4you",
+  "name": "HR4YOU",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads HR4YOU career sites ({tenant}.hr4you.org): /sitemap.xml lists /job/view/{id}/... pages, each with a schema.org JobPosting. Token is the sitemap address. Some tenants (for example krh.hr4you.org) answer every request with a bot-check page and are not read; robots.txt allows only the list, view and sitemap paths.",
+  "examples": [
+   "https://jobs.hr4you.org/sitemap.xml",
+   "https://wupersonal.hr4you.org/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "hrworks",
+  "name": "HRworks",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads HRworks job portals (jobapplication.hrworks.de/de?companyId={id}, jobs.hrworks.de): the list page links each job as ?id={id} and each job page carries a schema.org JobPosting. Token is the portal's list address, taken from the career page.",
+  "examples": [
+   "https://jobapplication.hrworks.de/de?companyId=jf9bb77",
+   "https://jobapplication.hrworks.de/de?companyId=ga8ffff"
+  ]
+ },
+ {
+  "slug": "recruiterflow",
+  "name": "RecruiterFlow",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Recruiterflow career pages (recruiterflow.com/{tenant}/jobs): the page embeds the list of its jobs (window.jobsList) and each job page carries a schema.org JobPosting. Token is the career page address.",
+  "examples": [
+   "https://recruiterflow.com/rfcareers/jobs",
+   "https://recruiterflow.com/believeresourcing/jobs"
+  ]
+ },
+ {
+  "slug": "talentio",
+  "name": "Talentio",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Talentio (Japan) career pages: open.talentio.com/r/1/c/{company}/homes/{id} lists its job pages in the data it hands its page script, and each job page carries a schema.org JobPosting. Token is the company home page address. Pages that publish no JobPosting (and companies that only redirect elsewhere) list nothing.",
+  "examples": [
+   "https://open.talentio.com/r/1/c/doublebz/homes/4401",
+   "https://open.talentio.com/r/1/c/binc/homes/4380"
+  ]
+ },
+ {
+  "slug": "jobsoid",
+  "name": "Jobsoid",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the JSON job list every Jobsoid career portal loads ({tenant}.jobsoid.com/api/v1/jobs): title, place, type, date and description inline; apply links use the portal's own or custom domain. Token is the portal subdomain. An unknown subdomain answers an empty list.",
+  "examples": [
+   "co-impact",
+   "vibvzw"
+  ]
+ },
+ {
+  "slug": "occupop",
+  "name": "Occupop / Cezanne Recruitment",
+  "kind": "ats",
+  "blocked": "career sites (*.occupop-careers.com) are client-rendered apps that load jobs through a GraphQL gateway keyed by tenant, with no server-rendered jobs, feed or sitemap; the only static surface (api.occupop.com/api/jobs-frame/{embed id}) needs a per-employer embed id that only the employer's own site reveals, and only one such id was found, so no board can be discovered or two verified",
+  "notes": "Checked royalsociety, brandalley, raisethebar, ourmedia, marlboroughgroup and europeanclimatefoundation .occupop-careers.com on 2026-11-11: each answers an empty app shell. The jobs-frame embed works for one employer's id (job pages at api.occupop.com/shared/job/{slug}); an owner decision is needed on registering boards by embed id.",
+  "examples": []
+ },
+ {
+  "slug": "jobtoolz",
+  "name": "Jobtoolz",
+  "kind": "ats",
+  "blocked": "robots.txt on every {tenant}.jobtoolz.com site says Disallow: /*? for all crawlers, which ERIO's fetcher reads as disallow-all (even the sitemap), so the career sites cannot be fetched",
+  "notes": "Sites otherwise serve /sitemap.xml with /{language}/{job} pages carrying a schema.org JobPosting (checked stroom-maatwerk, stephex, eduard on 2026-11-11); the rule only bars URLs with a query string, so a robots parser fix (keep the trailing ? of a rule) would make them readable: owner decision.",
+  "examples": []
  }
 ]
