@@ -1618,5 +1618,13 @@
   "blocked": "the hosted career page app.skeeled.com/careers/{id} is a script app whose data runs over a websocket service (wss://app.skeeled.com/ws); no HTTP job list, feed, sitemap or structured data was found, and customers embed it by iframe on their own sites.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "talenthr",
+  "name": "TalentHR",
+  "kind": "ats",
+  "blocked": "every {company}.talenthr.io path (careers, jobs, job-openings) returns the same login app shell (canonical /login, a 1 KB script page), jobs.talenthr.io is an empty static page, and no public job list, feed, sitemap or structured data was found.",
+  "notes": "",
+  "examples": []
  }
 ]
