@@ -1635,5 +1635,13 @@
   "examples": [
    "7C0F8BC3-ECEB-4A4B-82A1-98C96A407068"
   ]
+ },
+ {
+  "slug": "appone",
+  "name": "AppOne / Paychex",
+  "kind": "ats",
+  "blocked": "no public job list: AppOne career sites (joinsyf.appone.com) list jobs only through an ASP.NET form postback with view state (Search.aspx answers 404 to a plain request), and there is no sitemap or feed (www.appone.com/sitemap.xml and /robots.txt answer 404); single job pages (MainInfoReq.asp?R_ID=) cannot be enumerated",
+  "notes": "",
+  "examples": []
  }
 ]
