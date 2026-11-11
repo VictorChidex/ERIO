@@ -1593,5 +1593,16 @@
    "https://jobs.hr4you.org/sitemap.xml",
    "https://wupersonal.hr4you.org/sitemap.xml"
   ]
+ },
+ {
+  "slug": "hrworks",
+  "name": "HRworks",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads HRworks job portals (jobapplication.hrworks.de/de?companyId={id}, jobs.hrworks.de): the list page links each job as ?id={id} and each job page carries a schema.org JobPosting. Token is the portal's list address, taken from the career page.",
+  "examples": [
+   "https://jobapplication.hrworks.de/de?companyId=jf9bb77",
+   "https://jobapplication.hrworks.de/de?companyId=ga8ffff"
+  ]
  }
 ]

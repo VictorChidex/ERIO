@@ -238,6 +238,23 @@ def test_hr4you_reads_job_pages_listed_in_a_career_site_sitemap() -> None:
     assert jobs[0].description_html
 
 
+def test_hrworks_reads_job_pages_linked_from_a_portal() -> None:
+    portal = "https://jobapplication.hrworks.de/de?companyId=jf9bb77"
+    fetched, jobs = read(
+        "hrworks",
+        portal,
+        {
+            portal: body("hrworks_list.html"),
+            f"{portal}&id=1413cb": body("hrworks_job.html"),
+        },
+    )
+    # The second job page is a 404 (closed); the language and XING links are not jobs.
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title.startswith("Initiativbewerbung")
+    assert jobs[0].company_name == "Kerberos Compliance Managementsysteme"
+    assert jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [

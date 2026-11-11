@@ -26,6 +26,8 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
 - HR4YOU: career sites ``{tenant}.hr4you.org``; ``/sitemap.xml`` lists ``/job/view/{id}/...``
   pages, each with a schema.org JobPosting. A tenant whose site answers with a bot check is
   not read.
+- HRworks: job portals ``jobapplication.hrworks.de/de?companyId={id}`` (and ``jobs.hrworks.de``);
+  the list page links each job as ``?...id={id}``, and each job page carries a JobPosting.
 """
 
 import html as htmllib
@@ -359,6 +361,33 @@ class TeclaConnector(PagedJsonConnector):
         )
 
 
+HRWORKS_JOB = re.compile(
+    r'href="(/(?:de|en)?\?(?:[^"]*?&(?:amp;)?)?id=[0-9a-f]+(?:&(?:amp;)?[^"]*)?)"'
+)
+
+
+class HrworksConnector(JsonLdConnector):
+    """HRworks job portals. The board token is the portal's list page, for example
+    ``https://jobapplication.hrworks.de/de?companyId=jf9bb77``."""
+
+    def __init__(self) -> None:
+        super().__init__(
+            "hrworks", r"^/", frozenset({"jobapplication.hrworks.de", "jobs.hrworks.de"})
+        )
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        response = fetcher.get(self.board_url(board_token))
+        if response.status != 200:
+            raise FetchError("http_error", f"HTTP {response.status}", response.status)
+        html = response.body.decode("utf-8", "replace")
+        base = urlsplit(board_token)
+        pages = [
+            f"{base.scheme}://{base.netloc}{htmllib.unescape(path)}"
+            for path in HRWORKS_JOB.findall(html)
+        ]
+        return list(dict.fromkeys(pages))
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -395,6 +424,7 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     HuntflowConnector(),
     OdooConnector(),
     TeclaConnector(),
+    HrworksConnector(),
     JsonLdConnector("hr4you", r"^/job/view/\d+/", frozenset({"*.hr4you.org"})),
     JsonLdConnector(
         "bite",
