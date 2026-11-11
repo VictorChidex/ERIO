@@ -1513,5 +1513,13 @@
   "blocked": "the job list is loaded by script from gateway.wearevennture.co.uk, which answers 401 to a plain request (it needs the site browser session); the sitemap lists no job pages and job URLs redirect to the search app.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "hireful",
+  "name": "Hireful",
+  "kind": "ats",
+  "blocked": "not verifiable: the career app on {tenant}.livevacancies.co.uk reads api.core-easywebats.com/v1/job/all with a per-tenant company id, but the only tenant found (hireful.livevacancies.co.uk) lists 0 jobs and no second public tenant could be found.",
+  "notes": "",
+  "examples": []
  }
 ]
