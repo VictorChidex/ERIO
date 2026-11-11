@@ -23,6 +23,7 @@ x-erio-addresses: &erio-addresses
 
 services:
   postgres:
+    restart: unless-stopped
     image: postgres:16.6-alpine
     environment:
       POSTGRES_USER: erio
@@ -37,6 +38,7 @@ services:
       retries: 20
 
   redis:
+    restart: unless-stopped
     image: redis:7.4-alpine
     ports: ["127.0.0.1:6379:6379"]
     healthcheck:
@@ -46,6 +48,7 @@ services:
       retries: 20
 
   opensearch:
+    restart: unless-stopped
     image: opensearchproject/opensearch:2.18.0
     environment:
       discovery.type: single-node
@@ -91,6 +94,7 @@ services:
       postgres: { condition: service_healthy }
 
   api:
+    restart: unless-stopped
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
     environment:
@@ -115,6 +119,7 @@ services:
       retries: 10
 
   worker:
+    restart: unless-stopped
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
     # Four processes, not one per core: more only starves Postgres, OpenSearch and S3 of memory.
@@ -133,6 +138,7 @@ services:
   # Turns crawled postings into searchable jobs (normalize, index) without waiting behind
   # the board crawls on the other queue.
   worker-pipeline:
+    restart: unless-stopped
     image: erio-python:local
     command:
       ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "pipeline", "-c", "2", "-n", "pipeline@%h"]
@@ -150,6 +156,7 @@ services:
   # The fast lane: reads the boards behind a user's search right away (erio_core/live.py),
   # so a refresh never waits behind the steady crawl.
   worker-live:
+    restart: unless-stopped
     image: erio-python:local
     command:
       ["celery", "-A", "erio_ingest.worker", "worker", "--loglevel=INFO", "-Q", "live", "-c", "4", "-n", "live@%h"]
@@ -166,6 +173,7 @@ services:
 
   # Queues every due board once a minute; workers do the crawling.
   beat:
+    restart: unless-stopped
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
     command: ["celery", "-A", "erio_ingest.worker", "beat", "--loglevel=INFO", "--schedule", "/tmp/celerybeat-schedule"]
@@ -177,6 +185,7 @@ services:
   # Crawl, index and queue metrics for Prometheus, read from Postgres and
   # Redis at each scrape (erio_ingest.metrics). Not published to the host.
   metrics:
+    restart: unless-stopped
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
     command: ["python", "-m", "erio_ingest.metrics"]
@@ -194,6 +203,7 @@ services:
   # to http://127.0.0.1:8100/mcp. It calls the API like any client; on the
   # compose network that counts as internal (D-15), so no token is needed.
   mcp:
+    restart: unless-stopped
     build: { context: ., dockerfile: docker/python.Dockerfile }
     image: erio-python:local
     command: ["python", "-m", "erio_mcp"]
@@ -217,6 +227,7 @@ services:
   # (about 8 GB) and the models (about 2.3 GB). No host port: only the worker
   # talks to it, over the compose network.
   ollama:
+    restart: unless-stopped
     image: ollama/ollama:0.40.8
     profiles: [ai]
     volumes: [ollama-models:/root/.ollama]
@@ -238,6 +249,7 @@ services:
       ollama: { condition: service_healthy }
 
   web:
+    restart: unless-stopped
     build: { context: web }
     environment:
       ERIO_API_URL: http://api:8000
@@ -256,6 +268,7 @@ services:
   # Dashboards at http://127.0.0.1:3001 (no sign-in locally), alerts at
   # http://127.0.0.1:9093, traces at http://127.0.0.1:16686.
   prometheus:
+    restart: unless-stopped
     image: prom/prometheus:v3.15.1
     profiles: [obs]
     volumes:
@@ -264,12 +277,14 @@ services:
     ports: ["127.0.0.1:9095:9090"]
 
   alertmanager:
+    restart: unless-stopped
     image: prom/alertmanager:v0.34.1
     profiles: [obs]
     volumes: [./infra/observability/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro]
     ports: ["127.0.0.1:9093:9093"]
 
   grafana:
+    restart: unless-stopped
     image: grafana/grafana:13.0.11
     profiles: [obs]
     environment:
@@ -284,6 +299,7 @@ services:
     ports: ["127.0.0.1:3001:3000"]
 
   jaeger:
+    restart: unless-stopped
     image: jaegertracing/jaeger:2.22.0
     profiles: [obs]
     ports: ["127.0.0.1:16686:16686"]
