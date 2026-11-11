@@ -163,4 +163,22 @@ def test_djinni_reads_the_job_postings_on_its_list_pages() -> None:
     assert job.posted_at is not None
 
 
+def test_taleez_reads_job_pages_from_the_job_sitemap_newest_first() -> None:
+    site = "https://taleez.com"
+    fetched, jobs, fetcher = read(
+        "taleez",
+        f"{site}/sitemap-job.xml",
+        {
+            f"{site}/sitemap-job.xml": body("taleez_sitemap.xml"),
+            f"{site}/apply/technico-commercial": body("taleez_job.html"),
+        },
+    )
+    # The sitemap lists its newest job last: it is read first.
+    assert fetcher.requested[1].endswith("chausson-materiaux-cdi-1")
+    assert [j.title for j in jobs] == ["Technico-commercial Itinérant - H/F"]
+    assert jobs[0].city == "Angoulême" and jobs[0].country_hint == "FR"
+    assert jobs[0].company_name
+    assert fetched.complete
+
+
 # --- end of tests ---

@@ -1554,5 +1554,15 @@
   "blocked": "no public job list found: {company}.hurma.work answers with the tenant login page, the help center does not name the career site address, and no customer career page could be found by search",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "taleez",
+  "name": "Taleez",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public job pages of taleez.com (French recruiting platform) read from sitemap-job.xml (/apply/{id}, schema.org JobPosting); robots.txt allows /apply/ for crawlers. A crawl reads the newest 100 of the sitemap. Credit: link each job back to its Taleez page.",
+  "examples": [
+   "https://taleez.com/sitemap-job.xml"
+  ]
  }
 ]

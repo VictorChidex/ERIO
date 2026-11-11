@@ -12,6 +12,9 @@ limits, is in docs/connectors.md.
   job page on ``{agency}.app.loxo.co`` (description as JSON in the page). robots.txt allows all.
 - Gestmax / Kioskemploi: the career site's server-rendered ``/search`` list (paged) and
   each job page's labelled fields and text (no structured data); no robots.txt is served.
+- Taleez: ``sitemap-job.xml`` lists every public job page ``/apply/{id}`` (newest last), each
+  with a JobPosting; robots.txt closes only /api/, /feeds/ and similar, so a crawl reads the
+  newest 100 pages.
 - Djinni: the job list ``/jobs/?page=n`` (JobPosting data with the description inline for
   every job); robots.txt only closes /jobs2, /q, /developers and /free-jobs.
 """
@@ -353,6 +356,14 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         frozenset({"hrmos.co"}),
         page_param="page",
         listing_pages=5,
+    ),
+    JsonLdConnector(
+        "taleez",
+        r"^/apply/[a-z0-9-]+$",
+        frozenset({"taleez.com"}),
+        max_pages=100,
+        multi_employer=True,
+        newest_first=True,
     ),
     LoxoConnector(),
     GestmaxConnector(),
