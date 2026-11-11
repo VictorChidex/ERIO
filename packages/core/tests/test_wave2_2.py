@@ -217,4 +217,22 @@ def test_simplifyhr_follows_list_links_to_employer_vacancy_pages() -> None:
     assert fetched.complete
 
 
+def test_quickin_reads_the_public_career_page_api() -> None:
+    account = "000000000000000000000001"
+    fetched, jobs, fetcher = read(
+        "quickin",
+        account,
+        {f"https://api.quickin.io/public/{account}/jobs": body("quickin_jobs.json")},
+    )
+    assert fetcher.requested == [f"https://api.quickin.io/public/{account}/jobs?sort=-created_at"]
+    assert len(jobs) == 3 and fetched.complete
+    assert jobs[0].title == "Desenhista Projetista Mecânico - Presencial RJ"
+    assert jobs[0].country_hint == "BR"
+    assert str(jobs[0].apply_url).startswith("https://jobs.quickin.io/talentsclub/jobs/")
+    assert jobs[0].description_html and "<ul>" in jobs[0].description_html
+    paid = [j for j in jobs if j.salary]
+    assert paid and paid[0].salary and paid[0].salary.currency == "BRL"
+    assert paid[0].salary.period == "month"
+
+
 # --- end of tests ---

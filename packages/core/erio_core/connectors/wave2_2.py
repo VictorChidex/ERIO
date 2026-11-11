@@ -20,6 +20,8 @@ limits, is in docs/connectors.md.
 - Simplify.hr: the aggregate list ``jobs.simplify.hr/?page=n`` (links to each employer's
   ``{name}.simplify.hr/vacancy/{id}`` page, which carries a JobPosting); robots.txt allows all
   but AI-training crawlers.
+- Quickin: the documented public career page API ``api.quickin.io/public/{account}/jobs``
+  (no authentication, JSON, paged); robots.txt of the career pages allows all.
 - Djinni: the job list ``/jobs/?page=n`` (JobPosting data with the description inline for
   every job); robots.txt only closes /jobs2, /q, /developers and /free-jobs.
 """
@@ -31,7 +33,7 @@ from typing import Any
 from urllib.parse import urljoin, urlsplit
 
 from erio_core.connectors._service import plain
-from erio_core.connectors._util import as_url, host_country
+from erio_core.connectors._util import as_url, host_country, iso_datetime, join_html, salary
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import stable_id
 from erio_core.connectors.jsonld import JsonLdConnector, job_postings
@@ -411,6 +413,92 @@ class SimplifyHrConnector(JsonLdConnector):
         return links
 
 
+# ----------------------------------------------------------------- Quickin
+
+ACCOUNT_ID = re.compile(r"[0-9a-f]{24}")
+
+
+class QuickinConnector(Connector):
+    """Quickin's documented public career page API: ``GET api.quickin.io/public/{account}/jobs``
+    lists the account's published jobs (no authentication; pages of 30). The board token is
+    the account's id, which the career page ``jobs.quickin.io/{name}`` embeds."""
+
+    slug = "quickin"
+    hosts = frozenset({"api.quickin.io"})
+    max_pages = 10
+
+    def board_url(self, board_token: str) -> str:
+        if not ACCOUNT_ID.fullmatch(board_token):
+            raise ValueError(f"not a Quickin account id: {board_token!r}")
+        return f"https://api.quickin.io/public/{board_token}/jobs?sort=-created_at"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        data = json.loads(body)
+        return [
+            RawPosting(
+                source_slug=self.slug,
+                board_token=board_token,
+                external_id=str(job["_id"]),
+                payload=job,
+            )
+            for job in data["docs"]
+            if job.get("title") and job.get("publicate", "published") == "published"
+        ]
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        first = super().list_postings(fetcher, board_token, etag)
+        if first.unchanged:
+            return first
+        pages = int(json.loads(first.body).get("pages") or 1)
+        postings = list(first.postings)
+        for number in range(2, min(pages, self.max_pages) + 1):
+            response = fetcher.get(f"{self.board_url(board_token)}&page={number}")
+            if response.status != 200:
+                raise FetchError("http_error", f"HTTP {response.status}", response.status)
+            postings += self.extract(response.body, board_token)
+        return BoardFetch(
+            postings=postings,
+            http_status=200,
+            body=first.body,
+            etag=first.etag,
+            complete=pages <= self.max_pages,
+        )
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        company = job.get("company_id")
+        contract = job.get("contract_id")
+        workplace = {"remote": "remote", "hybrid": "hybrid", "on-site": "onsite"}.get(
+            str(job.get("workplace_type") or "")
+        )
+        city, region = plain(job.get("city")), plain(job.get("region"))
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]).strip(),
+            company_name=plain(company.get("name")) if isinstance(company, dict) else None,
+            apply_url=as_url(str(job["career_url"])),
+            posted_at=iso_datetime(job.get("created_at")),
+            location_text=", ".join(p for p in (city, region) if p) or None,
+            city=city,
+            region=region,
+            country_hint=plain(job.get("country")),
+            workplace_type=workplace,  # type: ignore[arg-type]
+            employment_type=plain(contract.get("name")) if isinstance(contract, dict) else None,
+            salary=salary(
+                job.get("remuneration"),
+                None,
+                job.get("currency"),
+                job.get("remuneration_period"),
+            ),
+            description_html=join_html(
+                job.get("description"), job.get("requirements"), job.get("benefits")
+            ),
+        )
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -435,6 +523,7 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         multi_employer=True,
         newest_first=True,
     ),
+    QuickinConnector(),
     SpeedrunConnector(),
     SimplifyHrConnector(),
     LoxoConnector(),
