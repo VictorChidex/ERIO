@@ -1521,5 +1521,16 @@
    "JNx",
    "RQntQS9"
   ]
+ },
+ {
+  "slug": "huntflow",
+  "name": "Huntflow",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads Huntflow career sites ({tenant}.huntflow.io, {tenant}.global.huntflow.io): the sitemap lists /vacancy/{slug} pages, read from the server-rendered Nuxt payload (title, place, sections). Token is the site name, e.g. prisma or cryptopay.global. Archived vacancies are skipped.",
+  "examples": [
+   "cryptopay.global",
+   "prisma"
+  ]
  }
 ]

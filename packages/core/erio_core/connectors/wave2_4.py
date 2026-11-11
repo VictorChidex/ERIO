@@ -11,6 +11,9 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   (the feed itself has no place or employer), each of which carries a JobPosting.
 - TalentAdore: ``https://ats.talentadore.com/positions/{code}/json``, the position list a
   customer's career site embeds, descriptions inline.
+- Huntflow: career sites ``{tenant}.huntflow.io`` (or ``{tenant}.global.huntflow.io``): the
+  sitemap lists ``/vacancy/{slug}`` pages, which are server-rendered with their data in the
+  Nuxt payload.
 """
 
 import json
@@ -21,10 +24,11 @@ from urllib.parse import urlsplit, urlunsplit
 from defusedxml import ElementTree
 
 from erio_core.connectors._service import plain
-from erio_core.connectors._util import as_url, iso_datetime
+from erio_core.connectors._util import as_url, iso_datetime, join_html
+from erio_core.connectors._htmlpages import PageCrawler, listing, meta, text_of
 from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.feed import parse_feed, stable_id
-from erio_core.connectors.jsonld import JsonLdConnector
+from erio_core.connectors.jsonld import JsonLdConnector, sitemap_locations
 from erio_core.schemas import PartialJob, RawPosting
 
 TOKEN = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
@@ -148,6 +152,89 @@ class TalentAdoreConnector(Connector):
         )
 
 
+HUNTFLOW_TOKEN = re.compile(r"[a-z0-9][a-z0-9-]{0,62}(?:\.global)?")
+NUXT_DATA = re.compile(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL)
+NUXT_WRAPPERS = frozenset({"ShallowReactive", "Reactive", "Ref", "ShallowRef"})
+
+
+def nuxt_value(data: list[Any], index: int, depth: int = 0) -> Any:
+    """One value of a Nuxt payload: an array whose items refer to each other by position."""
+    if depth > 12:
+        return None
+    item = data[index]
+    if isinstance(item, list):
+        if len(item) == 2 and item[0] in NUXT_WRAPPERS:
+            return nuxt_value(data, item[1], depth + 1)
+        return [nuxt_value(data, i, depth + 1) for i in item if isinstance(i, int)]
+    if isinstance(item, dict):
+        return {k: nuxt_value(data, v, depth + 1) for k, v in item.items() if isinstance(v, int)}
+    return item
+
+
+class HuntflowConnector(PageCrawler):
+    """Huntflow career sites. The board token is the site's name, "{tenant}" for
+    ``{tenant}.huntflow.io`` or "{tenant}.global" for ``{tenant}.global.huntflow.io``."""
+
+    slug = "huntflow"
+    hosts = frozenset({"*.huntflow.io", "*.global.huntflow.io"})
+
+    def _host(self, board_token: str) -> str:
+        if not HUNTFLOW_TOKEN.fullmatch(board_token):
+            raise ValueError(f"not a Huntflow career site name: {board_token!r}")
+        return f"{board_token}.huntflow.io"
+
+    def board_url(self, board_token: str) -> str:
+        return f"https://{self._host(board_token)}/sitemap.xml"
+
+    def job_urls(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        host = self._host(board_token)
+        try:
+            pages, _ = sitemap_locations(listing(fetcher, self.board_url(board_token)))
+        except ElementTree.ParseError as error:
+            raise FetchError("parse_error", f"malformed sitemap: {error}", 200) from error
+        wanted = re.compile(rf"https://{re.escape(host)}/vacancy/[a-z0-9._~-]+")
+        return [u for u in dict.fromkeys(pages) if wanted.fullmatch(u)]
+
+    def item_id(self, url: str, page: dict[str, Any]) -> str:
+        return str(page["id"])
+
+    def read_page(self, url: str, body: bytes) -> dict[str, Any] | None:
+        html = body.decode("utf-8", "replace")
+        found = NUXT_DATA.search(html)
+        if not found:
+            return None
+        root = nuxt_value(json.loads(found.group(1)), 0)
+        fetched = root["data"] if isinstance(root, dict) else {}
+        job = next((v for v in fetched.values() if isinstance(v, dict) and v.get("position")), None)
+        if not job or job.get("is_archived") or job.get("archived_at"):
+            return None
+        site = meta(html, "og:site_name") or ""
+        company = site.removesuffix(" Job Openings") if site.endswith(" Job Openings") else None
+        return {
+            "id": job["id"],
+            "title": job["position"],
+            "company": company,
+            "city": job.get("city"),
+            "division": job.get("division"),
+            "money": job.get("money"),
+            "sections": [job.get(k) for k in ("intro", "body", "conditions", "requirements")],
+        }
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        money = plain(job.get("money"))
+        parts = [f"<p>{money}</p>" if money else None, *job.get("sections", [])]
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=text_of(str(job["title"])),
+            company_name=plain(job.get("company")),
+            apply_url=as_url(str(job["url"])),
+            location_text=plain(job.get("city")),
+            description_html=join_html(*parts),
+        )
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -181,4 +268,5 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     JsonLdConnector("hroffice", r"^/vacatures/\d+-[^/]+$"),
     RecrutorConnector(),
     TalentAdoreConnector(),
+    HuntflowConnector(),
 ]

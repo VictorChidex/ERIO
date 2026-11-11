@@ -117,10 +117,29 @@ def test_talentadore_reads_the_position_list_a_career_site_embeds() -> None:
     assert str(job.apply_url).endswith("/JOB001") and job.description_html
 
 
+def test_huntflow_reads_vacancy_pages_listed_in_a_career_site_sitemap() -> None:
+    site = "https://cryptopay.global.huntflow.io"
+    fetched, jobs = read(
+        "huntflow",
+        "cryptopay.global",
+        {
+            f"{site}/sitemap.xml": body("huntflow_sitemap.xml"),
+            f"{site}/vacancy/account-manager-b2b": body("huntflow_job.html"),
+        },
+    )
+    # The sitemap also lists the home and list pages; the second vacancy page is a 404 (closed).
+    assert len(jobs) == 1 and fetched.complete
+    assert jobs[0].title == "Account Manager (B2B)"
+    assert jobs[0].company_name == "Cryptopay"
+    assert jobs[0].location_text == "Remote (Europe)" and jobs[0].description_html
+    assert str(jobs[0].apply_url) == f"{site}/vacancy/account-manager-b2b"
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
+        ("huntflow", "bad/token"),
         ("recrutor", "bad token"),
         ("talentadore", "bad/token"),
     ],
