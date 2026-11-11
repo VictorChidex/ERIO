@@ -1552,5 +1552,16 @@
    "recruitisio",
    "globus"
   ]
+ },
+ {
+  "slug": "applicantstack",
+  "name": "ApplicantStack",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career pages on {tenant}.applicantstack.com: the server-rendered /x/openings list and one /x/detail/{id} page per job (summary table plus description); robots.txt allows them. ApplicantStack's own API needs a key and is not used. Token is the tenant.",
+  "examples": [
+   "conetrix",
+   "kckcc"
+  ]
  }
 ]

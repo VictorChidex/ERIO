@@ -181,9 +181,29 @@ def test_recruitis_reads_the_list_and_job_pages() -> None:
     assert job.description_html and "Hledáme" in job.description_html
 
 
+def test_applicantstack_reads_the_openings_list_and_detail_pages() -> None:
+    fetched, jobs = read(
+        "applicantstack",
+        "conetrix",
+        {
+            "https://conetrix.applicantstack.com/x/detail/": body("applicantstack_job.html"),
+            "https://conetrix.applicantstack.com/x/openings": body("applicantstack_list.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 5
+    job = jobs[0]
+    assert job.title == "Information Security (IT) Auditor"
+    assert job.company_name == "CoNetrix" and job.location_text is None  # "N/A"
+    assert job.departments == ["Security Audit"]
+    assert str(job.apply_url).startswith("https://conetrix.applicantstack.com/x/detail/")
+    assert job.description_html and "IT Auditor" in job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("applicantstack", "a.b"),
+        ("applicantstack", "evil/x"),
         ("recruitis", "a/b"),
         ("recruitis", "x.evil.org"),
         ("connectoor", "https://evil.example.org"),

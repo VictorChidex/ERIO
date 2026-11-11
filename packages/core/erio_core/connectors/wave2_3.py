@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- ApplicantStack: server-rendered ``/x/openings`` lists and ``/x/detail/{id}`` pages.
 - Recruitis: server-rendered career sites on jobs.recruitis.io (list pages, one page per job).
 - Keka: the JSON behind every Keka Hire career site (``/careers/api/jobs/default/active``).
 """
@@ -17,7 +18,7 @@ import json
 import re
 from typing import Any
 
-from erio_core.connectors._htmlpages import PageCrawler, element_with, listing, text_of
+from erio_core.connectors._htmlpages import PageCrawler, element_with, listing, read_date, text_of
 from erio_core.connectors._util import as_url, iso_datetime
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import feed_date, stable_id, xml_items
@@ -451,8 +452,73 @@ class RecruitisConnector(PageCrawler):
         )
 
 
+# ---------------------------------------------------------------- ApplicantStack
+
+SUMMARY_ROW = re.compile(r"<th[^>]*>(.*?)</th>\s*<td[^>]*>(.*?)</td>", re.DOTALL)
+
+
+class ApplicantStackConnector(PageCrawler):
+    """ApplicantStack career pages (``{tenant}.applicantstack.com/x/openings``): a server-rendered
+    list of the open jobs and one ``/x/detail/{id}`` page per job with a summary table (title,
+    place, department) and the description. robots.txt allows both; there is no public API
+    (the vendor's needs a key) and no structured data. The token is the tenant."""
+
+    slug = "applicantstack"
+    hosts = frozenset({"*.applicantstack.com"})
+
+    def board_url(self, board_token: str) -> str:
+        if not TOKEN.fullmatch(board_token):
+            raise ValueError(f"not an ApplicantStack tenant: {board_token!r}")
+        return f"https://{board_token}.applicantstack.com/x/openings"
+
+    def job_urls(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        html_text = listing(fetcher, self.board_url(board_token)).decode("utf-8", "replace")
+        found = re.findall(
+            rf'href="(https://{re.escape(board_token)}\.applicantstack\.com/x/detail/[a-z0-9]+)"',
+            html_text,
+        )
+        return list(dict.fromkeys(found))
+
+    def item_id(self, url: str, page: dict[str, Any]) -> str:
+        return url.rsplit("/", 1)[-1]
+
+    def read_page(self, url: str, body: bytes) -> dict[str, Any] | None:
+        html_text = body.decode("utf-8", "replace")
+        title = re.search(r'<div id="contenttitle"[^>]*>(.*?)</div>', html_text, re.DOTALL)
+        if not title or not text_of(title.group(1)):
+            return None
+        summary = {
+            text_of(k).rstrip(":").lower(): text_of(v) for k, v in SUMMARY_ROW.findall(html_text)
+        }
+        logo = re.search(r'<img id="logo"[^>]*\balt="([^"]*)"', html_text)
+        return {
+            "title": text_of(title.group(1)),
+            "summary": summary,
+            "company": html.unescape(logo[1]).strip() if logo else None,
+            "description": element_with(html_text, r'class="listing_description"'),
+        }
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        summary: dict[str, str] = job.get("summary") or {}
+        place = summary.get("location")
+        department = summary.get("department")
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]),
+            company_name=job.get("company") or None,
+            apply_url=as_url(str(job["url"])),
+            posted_at=read_date(summary.get("date posted") or summary.get("posted")),
+            location_text=place if place and place.upper() != "N/A" else None,
+            departments=[department] if department and department.upper() != "N/A" else [],
+            description_html=job.get("description"),
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    ApplicantStackConnector(),
     RecruitisConnector(),
     # Talos360 ATS: each customer's career site ({tenant}.talosats-careers.com) serves a
     # sitemap of its job pages (token), and every job page carries a JobPosting.
