@@ -1595,5 +1595,16 @@
   "examples": [
    "https://jobs.mcidirecthire.com"
   ]
+ },
+ {
+  "slug": "flatchr",
+  "name": "Flatchr",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career sites on careers.flatchr.io/fr/company/{company}: the Next.js page embeds every published vacancy (description, place, contract) in its page data, so one request reads a company; robots.txt turns away only a few named bots. Flatchr's own API needs a token and is not used. Token is the company name in the address.",
+  "examples": [
+   "phidap",
+   "defimat"
+  ]
  }
 ]

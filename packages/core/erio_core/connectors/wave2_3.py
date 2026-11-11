@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- Flatchr: the page data of each career site (careers.flatchr.io/fr/company/{company}).
 - MCi Direct Hire: the job cards of the Job Central board (jobs.mcidirecthire.com).
 - Prevue APS: each career site's job sitemap, then the JobPosting on every job page.
 - OpenCATS: the server-rendered careers module of self-hosted OpenCATS installations.
@@ -30,7 +31,7 @@ from erio_core.connectors._htmlpages import (
     text_of,
 )
 from erio_core.connectors._service import service_host
-from erio_core.connectors._util import as_url, iso_datetime
+from erio_core.connectors._util import as_url, iso_datetime, join_html, salary
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import feed_date, stable_id, xml_items
 from erio_core.connectors.jsonld import JsonLdConnector, page_links
@@ -717,8 +718,99 @@ class MciDirectHireConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- Flatchr
+
+NEXT_DATA = re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL)
+FLATCHR_REMOTE: dict[str, RemoteStatus] = {"full": "remote", "partial": "hybrid", "none": "onsite"}
+FLATCHR_PERIODS = {"y": "year", "m": "month", "h": "hour"}
+
+
+class FlatchrConnector(Connector):
+    """Flatchr career sites (``careers.flatchr.io/fr/company/{company}``): a Next.js page whose
+    embedded page data (``__NEXT_DATA__``) holds every published vacancy with its full
+    description, place and contract, so one request reads a whole company. robots.txt turns
+    away only a few named bots. The token is the company's name in the address."""
+
+    slug = "flatchr"
+    hosts = frozenset({"careers.flatchr.io"})
+
+    def board_url(self, board_token: str) -> str:
+        if not TOKEN.fullmatch(board_token):
+            raise ValueError(f"not a Flatchr company name: {board_token!r}")
+        return f"https://careers.flatchr.io/fr/company/{board_token}"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        found = NEXT_DATA.search(body.decode("utf-8", "replace"))
+        if not found:
+            raise ValueError("the page carries no embedded job data")
+        items = json.loads(found.group(1))["props"]["data"]["items"]
+        if not isinstance(items, list):
+            raise ValueError("Flatchr's job list is not a list")
+        postings = []
+        for item in items:
+            vacancy = item.get("vacancy") if isinstance(item, dict) else None
+            if not (vacancy and vacancy.get("slug") and vacancy.get("title")):
+                continue
+            if item.get("status") not in (None, "published"):
+                continue
+            address = vacancy.get("address") or {}
+            postings.append(
+                RawPosting(
+                    source_slug=self.slug,
+                    board_token=board_token,
+                    external_id=str(vacancy["slug"]),
+                    payload={
+                        "title": vacancy["title"],
+                        "url": (
+                            f"https://careers.flatchr.io/fr/company/{board_token}"
+                            f"/vacancy/{vacancy['slug']}/"
+                        ),
+                        "company": (vacancy.get("company") or {}).get("name"),
+                        "description": join_html(
+                            vacancy.get("description"),
+                            vacancy.get("mission"),
+                            vacancy.get("profile"),
+                        ),
+                        "contract": vacancy.get("contract_type"),
+                        "created": vacancy.get("created_at"),
+                        "remote": vacancy.get("remote"),
+                        "salary": [vacancy.get("salary"), vacancy.get("salary_max")],
+                        "currency": vacancy.get("currency"),
+                        "period": vacancy.get("mensuality"),
+                        "city": address.get("locality"),
+                        "region": address.get("administrative_area_level_1"),
+                        "country": address.get("country"),
+                    },
+                )
+            )
+        return postings
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        low, high = job.get("salary") or [None, None]
+        place = ", ".join(str(job[k]) for k in ("city", "region", "country") if job.get(k))
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]).strip(),
+            company_name=job.get("company"),
+            apply_url=as_url(str(job["url"])),
+            posted_at=iso_datetime(job.get("created")),
+            location_text=place or None,
+            city=job.get("city"),
+            region=job.get("region"),
+            workplace_type=FLATCHR_REMOTE.get(str(job.get("remote"))),
+            employment_type=job.get("contract"),
+            salary=salary(
+                low, high, job.get("currency"), FLATCHR_PERIODS.get(str(job.get("period")))
+            ),
+            description_html=job.get("description"),
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    FlatchrConnector(),
     MciDirectHireConnector(),
     # Prevue APS: each customer's career site ({tenant}.prevueaps.com) serves a sitemap
     # (token) of its job pages, and every job page carries a JobPosting.

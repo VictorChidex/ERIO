@@ -254,9 +254,27 @@ def test_mcidirecthire_reads_job_cards_and_reports_a_partial_crawl() -> None:
     assert job.description_html and "Plant Coordinator" in job.description_html
 
 
+def test_flatchr_reads_the_vacancies_embedded_in_the_company_page() -> None:
+    fetched, jobs = read(
+        "flatchr",
+        "defimat",
+        {"https://careers.flatchr.io/fr/company/defimat": body("flatchr_company.html")},
+    )
+    assert fetched.complete and len(jobs) == 2
+    job = jobs[0]
+    assert job.title == "Technicien Matériel agricole - Itinérant (F/H)"
+    assert job.company_name == "DEFI-MAT" and job.city == "Domérat"
+    assert job.location_text == "Domérat, Auvergne-Rhône-Alpes, France"
+    assert job.posted_at is not None and job.employment_type
+    assert str(job.apply_url).startswith("https://careers.flatchr.io/fr/company/defimat/vacancy/")
+    assert job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("flatchr", "a/b"),
+        ("flatchr", "x.evil.org"),
         ("mcidirecthire", "https://evil.example.org"),
         ("opencats", "http://vectaur.com/ats/careers/"),
         ("opencats", "https://user@evil.example.org/careers/"),
