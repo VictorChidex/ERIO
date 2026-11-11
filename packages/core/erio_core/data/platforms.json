@@ -1637,5 +1637,13 @@
    "co-impact",
    "vibvzw"
   ]
+ },
+ {
+  "slug": "occupop",
+  "name": "Occupop / Cezanne Recruitment",
+  "kind": "ats",
+  "blocked": "career sites (*.occupop-careers.com) are client-rendered apps that load jobs through a GraphQL gateway keyed by tenant, with no server-rendered jobs, feed or sitemap; the only static surface (api.occupop.com/api/jobs-frame/{embed id}) needs a per-employer embed id that only the employer's own site reveals, and only one such id was found, so no board can be discovered or two verified",
+  "notes": "Checked royalsociety, brandalley, raisethebar, ourmedia, marlboroughgroup and europeanclimatefoundation .occupop-careers.com on 2026-11-11: each answers an empty app shell. The jobs-frame embed works for one employer's id (job pages at api.occupop.com/shared/job/{slug}); an owner decision is needed on registering boards by embed id.",
+  "examples": []
  }
 ]
