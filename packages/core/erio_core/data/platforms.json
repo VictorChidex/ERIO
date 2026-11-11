@@ -1626,5 +1626,17 @@
   "blocked": "every {company}.talenthr.io path (careers, jobs, job-openings) returns the same login app shell (canonical /login, a 1 KB script page), jobs.talenthr.io is an empty static page, and no public job list, feed, sitemap or structured data was found.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "applicantpool",
+  "name": "ApplicantPool",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "A brand of the ApplicantPro platform: reads the public JSON job list {sub}.applicantpool.com/core/jobs/{domainId} and each job page schema.org JobPosting. Tenants are listed in feeds.applicantpool.com/site_map_index.xml. Token is subdomain/domainId.",
+  "examples": [
+   "usaconservation/268",
+   "paytonco/229",
+   "scientificdrilling/313"
+  ]
  }
 ]

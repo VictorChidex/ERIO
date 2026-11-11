@@ -87,6 +87,27 @@ def test_greythr_without_a_jobs_list_is_a_parse_error() -> None:
     assert error.value.outcome == "parse_error"
 
 
+# ------------------------------------------------------------- ApplicantPool
+
+
+def test_applicantpool_reads_the_applicantpro_list_and_job_page_posting() -> None:
+    site = "https://scientificdrilling.applicantpool.com"
+    fetched, jobs = read(
+        "applicantpool",
+        "scientificdrilling/313",
+        {
+            f"{site}/core/jobs/313": body("applicantpool_list.json"),
+            f"{site}/jobs/1320876": body("applicantpool_job.html"),
+        },
+    )
+    assert len(jobs) == 3
+    first = jobs[0]
+    assert first.title == "Logisitics Coordinator"
+    assert first.company_name == "Scientific Drilling Inc."
+    assert str(first.apply_url) == f"{site}/jobs/1320876"
+    assert first.description_html
+
+
 # ------------------------------------------------------------------ LiveHire
 
 
