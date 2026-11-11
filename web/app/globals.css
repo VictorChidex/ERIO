@@ -428,3 +428,11 @@ a.ti{text-decoration:none} a.ti:hover b{color:var(--acc)}
 .live-dot{width:8px;height:8px;border-radius:50%;background:var(--amb);animation:lp 1.4s infinite}
 .live-dot.live-done{background:var(--grn);animation:none}
 .cov-shares{white-space:nowrap;color:var(--fg2);font-size:13px;font-variant-numeric:tabular-nums}
+
+.sb-fold{display:block}
+.sb-sum{display:none;list-style:none;align-items:center;gap:8px;cursor:pointer;font-weight:600;font-size:15px;color:var(--fg)}
+.sb-sum::-webkit-details-marker{display:none}
+.sb-badge{background:var(--acc);color:#fff;border-radius:20px;font-size:12px;padding:1px 8px;font-weight:700}
+.sb-chev{margin-left:auto;color:var(--fg2);transition:transform .15s}
+.sb-fold[open] .sb-chev{transform:rotate(180deg)}
+@media(max-width:900px){.sb-sum{display:flex}.sb-fold[open] .sb-sum{margin-bottom:14px}.sidebar{padding:14px 16px}}

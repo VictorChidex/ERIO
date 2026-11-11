@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { CountryPicker } from "@/components/CountryPicker";
+import { FilterFold } from "@/components/FilterFold";
 import { FilterForm } from "@/components/FilterForm";
 import { SearchGlobe } from "@/components/GlobeLazy";
 import { HeaderCountrySelect } from "@/components/HeaderCountrySelect";
@@ -59,6 +60,8 @@ export async function SearchView({
   const countryNames = Object.fromEntries(countries.data.map((c) => [c.code, c.name]));
   const countryFiltered = filters.countries.length > 0;
   const allTypesShown = filters.types.length === 0;
+  const activeFilters =
+    filters.countries.length + filters.roles.length + (allTypesShown ? 0 : filters.types.length) + (filters.salary ? 1 : 0);
   const one = filters.countries.length === 1 ? filters.countries[0] : null;
   const where = one ? `in ${countryNames[one] ?? one}` : countryFiltered ? `in ${filters.countries.length} countries` : "worldwide";
   const local = one ? (facets.country[one] ?? 0) : 0;
@@ -109,6 +112,7 @@ export async function SearchView({
         <div className="wrap">
           <div className="r-layout">
             <aside className="sidebar" aria-label="Search filters">
+              <FilterFold active={activeFilters}>
               <div className="sb-head">
                 <p className="sb-title">Filters</p>
                 <Link className="sb-reset" href="/search">
@@ -143,7 +147,9 @@ export async function SearchView({
               <fieldset className="fg">
                 <legend className="fg-label">Role</legend>
                 <div className="fo">
-                  {Object.entries(ROLE_LABELS).map(([value, label]) => (
+                  {Object.entries(ROLE_LABELS)
+                    .filter(([value]) => (facets.role[value] ?? 0) > 0 || filters.roles.includes(value))
+                    .map(([value, label]) => (
                     <label key={value}>
                       <input type="checkbox" name="role" value={value} defaultChecked={filters.roles.includes(value)} />{" "}
                       {label} <span className="fc">{facets.role[value] ?? 0}</span>
@@ -174,6 +180,7 @@ export async function SearchView({
                   Apply filters
                 </button>
               </noscript>
+              </FilterFold>
             </aside>
 
             <div className="results-main">
