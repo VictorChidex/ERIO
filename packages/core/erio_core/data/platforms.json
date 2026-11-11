@@ -1603,5 +1603,16 @@
    "6244892264f86f001528b4e0",
    "652d3c23009f320012ca188c"
   ]
+ },
+ {
+  "slug": "jobtrain",
+  "name": "Jobtrain",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public Jobtrain career sites at www.jobtrain.co.uk/{client}: the site's own job card list (/{client}/Home/_JobCard) names each vacancy and each job page carries a schema.org JobPosting; jobtrain.co.uk serves no robots.txt. The token is the client name.",
+  "examples": [
+   "enwl",
+   "citizensadvice"
+  ]
  }
 ]

@@ -20,6 +20,8 @@ limits, is in docs/connectors.md.
 - Simplify.hr: the aggregate list ``jobs.simplify.hr/?page=n`` (links to each employer's
   ``{name}.simplify.hr/vacancy/{id}`` page, which carries a JobPosting); robots.txt allows all
   but AI-training crawlers.
+- Jobtrain: the client site's own job card list (``/{client}/Home/_JobCard``) and each job
+  page's JobPosting; jobtrain.co.uk serves no robots.txt.
 - Quickin: the documented public career page API ``api.quickin.io/public/{account}/jobs``
   (no authentication, JSON, paged); robots.txt of the career pages allows all.
 - Djinni: the job list ``/jobs/?page=n`` (JobPosting data with the description inline for
@@ -499,6 +501,50 @@ class QuickinConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- Jobtrain
+
+
+class JobtrainConnector(JsonLdConnector):
+    """Jobtrain career sites ``www.jobtrain.co.uk/{client}``: the site's own list call
+    (``/{client}/Home/_JobCard?Skip=n``, an HTML fragment of job cards) names every vacancy,
+    and each ``/{client}/Job/JobDetail?JobId=n`` page carries a JobPosting (its script type
+    is written ``ld&#x2B;json``). The token is the client name."""
+
+    LINK = re.compile(r"/JobDetail\?JobId=(\d+)")
+    NAME = re.compile(r"[A-Za-z0-9_-]{1,64}")
+    max_list_pages = 10
+
+    def __init__(self) -> None:
+        super().__init__("jobtrain", r"JobDetail", frozenset({"www.jobtrain.co.uk"}), max_pages=60)
+
+    def board_url(self, board_token: str) -> str:
+        if not self.NAME.fullmatch(board_token):
+            raise ValueError(f"not a Jobtrain client name: {board_token!r}")
+        return f"https://www.jobtrain.co.uk/{board_token}/Home/_JobCard?Skip=0"
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        base = self.board_url(board_token)
+        ids: list[str] = []
+        for number in range(self.max_list_pages):
+            response = fetcher.get(base.replace("Skip=0", f"Skip={len(ids)}") if number else base)
+            if response.status != 200:
+                if number == 0:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            found = self.LINK.findall(response.body.decode("utf-8", "replace"))
+            fresh = [i for i in dict.fromkeys(found) if i not in ids]
+            if not fresh:
+                break
+            ids += fresh
+        return [f"https://www.jobtrain.co.uk/{board_token}/Job/JobDetail?JobId={i}" for i in ids]
+
+    def _postings(self, html: str, page_url: str) -> list[RawPosting]:
+        found = super()._postings(html.replace("ld&#x2B;json", "ld+json"), page_url)
+        for raw in found:  # the advert's own address, without the tracking parameter
+            raw.payload["posting"]["url"] = page_url
+        return found
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -523,6 +569,7 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         multi_employer=True,
         newest_first=True,
     ),
+    JobtrainConnector(),
     QuickinConnector(),
     SpeedrunConnector(),
     SimplifyHrConnector(),

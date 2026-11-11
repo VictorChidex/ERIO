@@ -235,4 +235,25 @@ def test_quickin_reads_the_public_career_page_api() -> None:
     assert paid[0].salary.period == "month"
 
 
+def test_jobtrain_reads_the_job_card_list_and_job_pages() -> None:
+    site = "https://www.jobtrain.co.uk/enwl"
+    fetched, jobs, fetcher = read(
+        "jobtrain",
+        "enwl",
+        {
+            f"{site}/Home/_JobCard?Skip=0": body("jobtrain_cards.html"),
+            f"{site}/Job/JobDetail?JobId=13981": body("jobtrain_job.html"),
+        },
+    )
+    # The list's second page (Skip=2) is not recorded: it ends the listing. The second job
+    # page is not recorded either (closed).
+    assert any(u.endswith("Skip=2") for u in fetcher.requested)
+    assert len(jobs) == 1 and fetched.complete
+    job = jobs[0]
+    assert job.title == "Electrical Engineering Graduate"
+    assert job.company_name == "ENWL" and job.country_hint == "GB"
+    assert str(job.apply_url) == f"{site}/Job/JobDetail?JobId=13981"
+    assert job.description_html
+
+
 # --- end of tests ---
