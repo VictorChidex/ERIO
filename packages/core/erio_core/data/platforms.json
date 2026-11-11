@@ -1514,5 +1514,16 @@
   "blocked": "no identifiable public job source: techtree.dk, techtree.com, techtree.io, techtree.ai and techtree.in are unrelated sites (a biotech firm, an education site, an event page, a web agency) with no job feed, sitemap or job pages, and web search finds no TechTree job board or career platform",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "loxo",
+  "name": "Loxo",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public careers pages of Loxo agencies: app.loxo.co/{agency} lists the published jobs (server-rendered) and each job page on {agency}.app.loxo.co carries the description as JSON; robots.txt allows all. The token is the agency name.",
+  "examples": [
+   "syndesus",
+   "loxo"
+  ]
  }
 ]

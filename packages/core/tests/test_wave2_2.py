@@ -98,4 +98,30 @@ def test_hrmos_reads_the_company_job_list_and_its_job_pages() -> None:
     assert job.description_html
 
 
+def test_loxo_reads_the_agency_list_and_job_pages() -> None:
+    fetched, jobs, fetcher = read(
+        "loxo",
+        "syndesus",
+        {
+            "https://app.loxo.co/syndesus": body("loxo_list.html"),
+            "https://syndesus.app.loxo.co/job/NDUwNjktNXk3dDdscW1xZWZiMGp5eg==": body(
+                "loxo_job.html"
+            ),
+        },
+    )
+    assert [j.title for j in jobs] == [
+        "Accountant, Payroll & Billing Operations",
+        "Founding Solution Engineer / Technical AI Lead (Europe)",
+    ]
+    first = jobs[0]
+    assert first.company_name == "Syndesus"
+    assert first.location_text == "Toronto, Ontario, Canada"
+    assert first.employment_type == "Full Time"
+    assert first.description_html and "<p" in first.description_html
+    assert str(first.apply_url).startswith("https://syndesus.app.loxo.co/job/")
+    assert jobs[1].description_html is None  # its job page is not recorded (404)
+    assert fetched.complete
+    assert len(fetcher.requested) == 3
+
+
 # --- end of tests ---
