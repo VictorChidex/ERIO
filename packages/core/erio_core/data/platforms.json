@@ -1477,5 +1477,16 @@
   "examples": [
    "https://www.airswift.com/jobs"
   ]
+ },
+ {
+  "slug": "crelate",
+  "name": "Crelate",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "The RSS feed every Crelate candidate portal publishes (jobs.crelate.com/portal/{org}/rss); robots.txt allows it. Token is the portal name. Portals that are switched off answer with a disabled page.",
+  "examples": [
+   "10thstreettalent",
+   "thetalentmine"
+  ]
  }
 ]

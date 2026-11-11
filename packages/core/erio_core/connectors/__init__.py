@@ -49,6 +49,7 @@ from erio_core.connectors.smartrecruiters import SmartRecruitersConnector
 from erio_core.connectors.teamtailor import TeamtailorConnector
 from erio_core.connectors.trakstar import TrakstarConnector
 from erio_core.connectors.workable import WorkableConnector
+from erio_core.connectors.wave2_3 import WAVE2_3_CONNECTORS
 from erio_core.connectors.workday import WorkdayConnector
 from erio_core.connectors.xml_boards import (
     HiringThingConnector,
@@ -103,6 +104,7 @@ ALL_CONNECTORS: list[Connector] = [
     *REFERENCE_CONNECTORS,
     *REGIONAL_CONNECTORS,
     *ATS_EXTRA_CONNECTORS,
+    *WAVE2_3_CONNECTORS,
 ]
 
 CONNECTORS: dict[str, Connector] = {connector.slug: connector for connector in ALL_CONNECTORS}
