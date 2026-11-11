@@ -1477,5 +1477,166 @@
   "examples": [
    "https://www.airswift.com/jobs"
   ]
+ },
+ {
+  "slug": "cvwarehouse",
+  "name": "CVWarehouse",
+  "kind": "ats",
+  "blocked": "no public job list: candidate.cvwarehouse.com has no job index or sitemap (jobs open only by numeric id), the job search sits behind its login page, and the customer job feed is given to each customer rather than published.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "nicoka",
+  "name": "Nicoka CABS",
+  "kind": "ats",
+  "blocked": "no shared public job surface: tenant hosts ({name}.nicoka.com) serve the login app (robots.txt answers 403), and customers publish jobs on their own bespoke sites (for example externatic.fr), so there is nothing platform-wide to read.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "greythr",
+  "name": "greytHR Hire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the JSON calls the career page {tenant}.greythr.com/hire/jobs makes (published_jobs, company details, place lookup); no login. Token is the tenant subdomain.",
+  "examples": [
+   "greytip",
+   "basiscloud",
+   "waydot"
+  ]
+ },
+ {
+  "slug": "orion-jobs",
+  "name": "Orion Group Jobs",
+  "kind": "service",
+  "blocked": "the job list is loaded by script from gateway.wearevennture.co.uk, which answers 401 to a plain request (it needs the site browser session); the sitemap lists no job pages and job URLs redirect to the search app.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "hireful",
+  "name": "Hireful",
+  "kind": "ats",
+  "blocked": "not verifiable: the career app on {tenant}.livevacancies.co.uk reads api.core-easywebats.com/v1/job/all with a per-tenant company id, but the only tenant found (hireful.livevacancies.co.uk) lists 0 jobs and no second public tenant could be found.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "eploy",
+  "name": "Eploy",
+  "kind": "ats",
+  "blocked": "not verifiable: careers sites run on each customer own domain (careers.{name}/vacancies/vacancy-search-results.aspx) with no shared host, and the only tenant found (careers.eploy.co.uk) publishes an empty live-jobs.xml sitemap and no job links.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "jobcan",
+  "name": "Jobcan Recruitment",
+  "kind": "ats",
+  "blocked": "not verifiable: ats.jobcan.jp is the sign-in app (redirects to id.jobcan.jp login) and the vendor documents no public career-page host; no public tenant job page could be found to read.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "dvinci",
+  "name": "d.vinci",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads each career site sitemap and the schema.org JobPosting on every /{lang}/jobs/{id}/ page. Sites differ in robots.txt: some (impulse.dvinci-hr.com) disallow everything but widget paths and must not be registered. Token is the sitemap URL.",
+  "examples": [
+   "https://dein-weg-zu.dvinci.de/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "bizneo",
+  "name": "Bizneo",
+  "kind": "ats",
+  "blocked": "not verifiable: no public tenant career site could be found; the only Bizneo-hosted one located (hello.bizneo.com/out-career-site/) answers \"Career site - out of service\", and customers embed the portal on their own domains.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "friendwork",
+  "name": "Friend.work",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the JSON the career portal jobs.friend.work/{portal} loads from api.friend.work (company and all published vacancies in one call). Token is the portal name; salaries are per month. Portals found hold old or demo vacancies.",
+  "examples": [
+   "test",
+   "company",
+   "friendwork"
+  ]
+ },
+ {
+  "slug": "hrmanager",
+  "name": "HR-Manager (Talentech)",
+  "kind": "ats",
+  "blocked": "candidate.hr-manager.net/robots.txt disallows everything except single ApplicationInit.aspx application forms, so its vacancy lists cannot be read; no public feed or sitemap was found.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "easycruit",
+  "name": "Visma EasyCruit",
+  "kind": "ats",
+  "blocked": "every {tenant}.easycruit.com request (ntnu, visma, easycruit tested) is answered by an AWS WAF bot challenge (HTTP 202, empty body, x-amzn-waf-action: challenge), which must not be bypassed.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "gethired",
+  "name": "GetHired / EasyApply",
+  "kind": "ats",
+  "blocked": "not verifiable: {tenant}.easyapply.co career pages serve an /rss feed that robots.txt allows, but every tenant found (gethired, jobs, acme, hiring, restaurant, dental and others) returned an empty feed, so no job item could be read; no customer tenant with openings could be found.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "livehire",
+  "name": "LiveHire / Humanforce Talent",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads each tenant career sitemap (listed in www.livehire.com/SitemapCareers.xml) and the schema.org JobPosting on every /careers/{tenant}/job/ page; the talent-search API needs a session bearer and is not used. Token is the tenant sitemap URL.",
+  "examples": [
+   "https://www.livehire.com/careers/alfredhealth/sitemap.xml",
+   "https://www.livehire.com/careers/ymcansw/sitemap.xml"
+  ]
+ },
+ {
+  "slug": "teamdash",
+  "name": "Teamdash",
+  "kind": "ats",
+  "blocked": "no shared public job surface: {tenant}.teamdash.com (tallink, lhv tested) and jobs.teamdash.com serve the recruiter sign-in app with no job list, and customers publish career sites on their own domains with no common feed or sitemap.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "skeeled",
+  "name": "skeeled",
+  "kind": "ats",
+  "blocked": "the hosted career page app.skeeled.com/careers/{id} is a script app whose data runs over a websocket service (wss://app.skeeled.com/ws); no HTTP job list, feed, sitemap or structured data was found, and customers embed it by iframe on their own sites.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "talenthr",
+  "name": "TalentHR",
+  "kind": "ats",
+  "blocked": "every {company}.talenthr.io path (careers, jobs, job-openings) returns the same login app shell (canonical /login, a 1 KB script page), jobs.talenthr.io is an empty static page, and no public job list, feed, sitemap or structured data was found.",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "applicantpool",
+  "name": "ApplicantPool",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "A brand of the ApplicantPro platform: reads the public JSON job list {sub}.applicantpool.com/core/jobs/{domainId} and each job page schema.org JobPosting. Tenants are listed in feeds.applicantpool.com/site_map_index.xml. Token is subdomain/domainId.",
+  "examples": [
+   "usaconservation/268",
+   "paytonco/229",
+   "scientificdrilling/313"
+  ]
  }
 ]

@@ -1,0 +1,46 @@
+{
+ "data": [
+  {
+   "id": "11cdc44f-e621-4e39-817d-e1855665488b",
+   "title": "Trainee - BTP",
+   "req_id": "1123",
+   "slug": "trainee-btp",
+   "created_at": "2026-11-05T14:41:13.990152Z",
+   "locations": [
+    "3"
+   ],
+   "description": "<p>Job Description:</p><p><br></p><p>ROLES &amp; RESPONSIBILITIES:&nbsp;&nbsp;</p><p><br></p><p>Support the development of front-end features using React.js.&nbsp;</p><p><br></p><p>Assist in building backend services and APIs using Node.js and Express.&nbsp;</p><p><br></p><p>Work with MongoDB for data handling and storage.&nbsp;</p><p><br></p><p>Perform debugging, testing, and documentation of code.&nbsp;</p><p><br></p><p>Collaborate with team members to understand requirements and deliver tasks within deadlines.&nbsp;</p><p><br></p><p>Follow coding standards and participate in code reviews.&nbsp;</p><p><br></p><p>Continuously learn tools, technologies, and best practices related to the MERN",
+   "job_type": "Full-time",
+   "min_exp": 0,
+   "max_exp": 12,
+   "is_remote": false,
+   "has_diversity": false,
+   "experience_units": "years",
+   "experience_hours": null,
+   "designation": null,
+   "apply_url": "https://basiscloud.greythr.com/hire/jobs/trainee-btp",
+   "published_on_career_page": "2026-11-06T10:35:21.731944Z"
+  },
+  {
+   "id": "456a88b4-433d-46f4-9aed-b6427f98778e",
+   "title": "IT Engineer",
+   "req_id": "1121",
+   "slug": "it-engineer",
+   "created_at": "2026-11-05T09:46:41.061010Z",
+   "locations": [
+    "3"
+   ],
+   "description": "<p>We are seeking a highly skilled and proactive <strong>Senior IT Engineer</strong> to manage and support the organization's IT infrastructure, ensuring the availability, security, and performance of systems, networks, and end-user services. The ideal candidate will have strong technical expertise, excellent troubleshooting skills, and experience leading IT projects and mentoring junior team members.</p><p>&nbsp;</p><p>&nbsp;</p><p>Key Responsibilities</p><p>• Manage and maintain the organization's IT infrastructure, including Windows/Linux servers, network infrastructure, storage systems, Microsoft 365 services, endpoint security solutions, and enterprise applications.</p><p>&nbsp;</p><p>&",
+   "job_type": "Full-time",
+   "min_exp": 60,
+   "max_exp": 120,
+   "is_remote": false,
+   "has_diversity": false,
+   "experience_units": "years",
+   "experience_hours": null,
+   "designation": null,
+   "apply_url": "https://basiscloud.greythr.com/hire/jobs/it-engineer",
+   "published_on_career_page": "2026-11-05T09:56:59.208067Z"
+  }
+ ]
+}

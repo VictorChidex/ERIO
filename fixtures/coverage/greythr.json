@@ -1,0 +1,137 @@
+[
+ {
+  "source_slug": "greythr",
+  "board_token": "greytip",
+  "external_id": "7d208252-08e6-485f-aeb8-8dc149cce3be",
+  "payload": {
+   "id": "7d208252-08e6-485f-aeb8-8dc149cce3be",
+   "title": "Associate Product Manager",
+   "req_id": "1393",
+   "slug": "associate-product-manager-817",
+   "created_at": "2026-10-06T07:36:48.332873Z",
+   "locations": [
+    "4"
+   ],
+   "description": "<h3><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">About the Role</span></h3><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We're looking for an Associate Product Manager to drive Recruit's product strategy and roadmap. You'll own core ATS features, define how AI enhances recruiter workflows, and work with engineering, design, and applied AI teams to ship capabilities that improve hiring outcomes.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">This is a hands-on role where you'll define product priorities, gather recruiter feedback, write clear requirements, and own delivery from discovery through launch. You'll balance foundational ATS improvements with emerging AI capabilities—shipping both with equal rigor.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">This role demands strong product instincts, hands-on experience shipping features, and comfort working with AI/LLM capabilities as part of the product toolkit.</span></p><hr><h3><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Key Responsibilities</span></h3><h4><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Product Strategy &amp; Ownership</strong></h4><ul><li><span style=\"background-color: transparent;\">Own the Recruit product roadmap—prioritizing features based on recruiter needs and business impact</span></li><li><span style=\"background-color: transparent;\">Write clear PRDs, user stories, and acceptance criteria grounded in user research and feedback</span></li><li><span style=\"background-color: transparent;\">Partner with engineering and design to translate requirements into shipped features</span></li><li><span style=\"background-color: transparent;\">Identify where AI can enhance recruiter workflows; evaluate opportunities based on impact, feasibility, and business value</span></li><li><span style=\"background-color: transparent;\">Gather and synthesize customer feedback; measure outcomes post-launch and iterate</span></li></ul><h4><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">AI Strategy &amp; Opportunities</strong></h4><ul><li><span style=\"background-color: transparent;\">Lead discovery of high-impact AI use cases by understanding recruiter pain points and workflow gaps</span></li><li><span style=\"background-color: transparent;\">Define the product vision for how AI and automation reshape recruiter workflows over time</span></li><li><span style=\"background-color: transparent;\">Establish a prioritization framework for AI opportunities—balancing recruiter impact, technical feasibility, and ROI</span></li><li><span style=\"background-color: transparent;\">Partner with applied AI/ML teams on feature design, evaluation, and validation</span></li></ul><h4><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Cross-Functional Leadership</strong></h4><ul><li><span style=\"background-color: transparent;\">Partner with Sales, Customer Success, and Marketing to understand recruiter problems and communicate roadmap</span></li><li><span style=\"background-color: transparent;\">Collaborate with applied AI/ML teams to scope capabilities, define success metrics, and validate AI features</span></li><li><span style=\"background-color: transparent;\">Conduct user research and workflow analysis to identify high-impact opportunities</span></li><li><span style=\"background-color: transparent;\">Present roadmap priorities and trade-offs to stakeholders; defend decisions with data</span></li></ul><h4><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Execution &amp; Accountability</strong></h4><ul><li><span style=\"background-color: transparent;\">Define KPIs and success metrics for every initiative—adoption, feature usage, recruiter satisfaction, business impact</span></li><li><span style=\"background-color: transparent;\">Drive sprint planning and backlog grooming with engineering</span></li><li><span style=\"background-color: transparent;\">Ensure on-time, quality delivery of roadmap commitments</span></li><li><span style=\"background-color: transparent;\">Own end-to-end delivery and learning from launches</span></li></ul><hr><h3><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Must Have</span></h3><ul><li><strong style=\"background-color: transparent;\">2–4 years of Product Management</strong><span style=\"background-color: transparent;\"> experience, with hands-on involvement in shipping features</span></li><li><strong style=\"background-color: transparent;\">Experience using LLMs (Claude, ChatGPT, etc.) to augment PM workflows—drafting, research, analysis, synthesis</strong></li><li><strong style=\"background-color: transparent;\">Proven ability to ship features</strong><span style=\"background-color: transparent;\"> through cross-functional collaboration with engineering and design</span></li><li><strong style=\"background-color: transparent;\">Strong communication and collaboration skills</strong><span style=\"background-color: transparent;\">—comfortable gathering customer feedback, writing clear requirements, and presenting to stakeholders</span></li><li><strong style=\"background-color: transparent;\">Comfortable with product tools</strong><span style=\"background-color: transparent;\">—Jira, Confluence, Figma, or similar</span></li><li><strong style=\"background-color: transparent;\">Solid Agile/Scrum experience</strong><span style=\"background-color: transparent;\"> working in cross-functional teams</span></li><li><strong style=\"background-color: transparent;\">Understanding of AI product realities</strong><span style=\"background-color: transparent;\">—accuracy concerns, user trust, evaluation, grounding sources</span></li><li><strong style=\"background-color: transparent;\">Ability to learn quickly</strong><span style=\"background-color: transparent;\"> and dive deep into new domains</span></li></ul><hr><h3><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Good to Have</span></h3><ul><li><span style=\"background-color: transparent;\">Experience in recruiting, HR tech, or similar SaaS domains</span></li><li><span style=\"background-color: transparent;\">Familiarity with competitive positioning or emerging tech categories</span></li><li><span style=\"background-color: transparent;\">Exposure to responsible AI practices or bias detection</span></li><li><span style=\"background-color: transparent;\">Hands-on exposure to AI recruitment tools or competitive AI capabilities</span></li></ul><hr><h3><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">What Success Looks Like (12 Months)</span></h3><ul><li><strong style=\"background-color: transparent;\">Ship 3–4 high-quality features or initiatives</strong><span style=\"background-color: transparent;\"> with clear business value—mix of core ATS and AI capabilities</span></li><li><strong style=\"background-color: transparent;\">Develop a prioritized roadmap</strong><span style=\"background-color: transparent;\"> with stakeholder alignment and leadership buy-in</span></li><li><strong style=\"background-color: transparent;\">Own end-to-end delivery</strong><span style=\"background-color: transparent;\">—from discovery through launch, measurement, and learning</span></li><li><strong style=\"background-color: transparent;\">Build strong relationships</strong><span style=\"background-color: transparent;\"> with engineering, design, applied AI teams, sales, and customer-facing teams</span></li><li><strong style=\"background-color: transparent;\">Establish a repeatable process</strong><span style=\"background-color: transparent;\"> for product discovery, requirements, and validation</span></li><li><strong style=\"background-color: transparent;\">Define and track metrics</strong><span style=\"background-color: transparent;\"> that demonstrate product impact on recruiters and business</span></li><li><strong style=\"background-color: transparent;\">Demonstrate product judgment</strong><span style=\"background-color: transparent;\">—make trade-offs confidently and defend decisions with data</span></li></ul><p><br></p>",
+   "job_type": "Full-time",
+   "min_exp": 36,
+   "max_exp": 60,
+   "is_remote": false,
+   "has_diversity": false,
+   "experience_units": "years",
+   "experience_hours": null,
+   "designation": null,
+   "apply_url": "https://greytip.greythr.com/hire/jobs/associate-product-manager-817",
+   "published_on_career_page": "2026-10-07T09:28:03.179412Z",
+   "_company": "GREYTIP SOFTWARE PRIVATE LIMITED",
+   "_places": {
+    "18": "Hyderabad",
+    "3": "Chennai",
+    "1": "Mumbai",
+    "2": "Delhi",
+    "100": "Jaipur",
+    "639": "Chandigarh",
+    "4": "Bangalore",
+    "713": "Noida",
+    "121": "Coimbatore",
+    "132": "Kolkata",
+    "128": "Ahmedabad",
+    "101": "Pune",
+    "1029": "Dubai",
+    "1030": "Indonesia"
+   }
+  },
+  "fetched_at": "2026-11-11T14:24:18.147700Z",
+  "content_hash": "99245ee8150ff71ce471d37dd561db7b1f4218f2b591add26c73d8b6319c8dd8"
+ },
+ {
+  "source_slug": "greythr",
+  "board_token": "greytip",
+  "external_id": "288cff71-a50c-4b07-9e56-4188514a3347",
+  "payload": {
+   "id": "288cff71-a50c-4b07-9e56-4188514a3347",
+   "title": "Program Manager - GTM",
+   "req_id": "1388",
+   "slug": "program-manager-gtm",
+   "created_at": "2026-09-22T06:37:12.662139Z",
+   "locations": [
+    "4"
+   ],
+   "description": "<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">About greytHR</strong></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">greytHR is a full-suite HRMS with agentic AI capabilities — payroll, leave &amp; attendance, performance management, recruitment, and employee self-service, used by 33,000+ organisations and 3.3 million+ users across 25+ countries. We're one of the largest HR tech platforms serving India, the Middle East, and Anglophone Africa, and we're scaling further.</span></p><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">About the team</strong></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Our GTM function drives new sales and upsell pipeline through digital channels. It's structured as a matrix: four engine teams (Digital, Product Marketing, Brand &amp; Social, Product-Led Growth) build the playbooks, content, and channels; four go-to-market pods (SMB + Mid-Market India, Enterprise/LBU, Middle East &amp; Global, Partners &amp; PSPs) pull from those engine teams to execute against segment-specific pipeline goals. Roughly 30 people run this system today, coordinated through a shared GTM Desk.</span></p><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">About the role</strong></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We're hiring a GTM Program Manager to own the operating system that connects the four engine teams and four pods — turning plans into shipped work, on schedule, with clean handoffs and a paper trail leadership can trust. You'll work across every track (not embedded in just one), which means your day spans coordinating a Digital campaign launch for the Enterprise pod, tracking a Product Marketing deliverable for the ME pod, and running the weekly cadence that keeps all four pods and four engines in sync.</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">This is a hands-on execution role for someone who has done this before. You'll be productive from week one, not ramping into it — there's no structured mentoring built into this seat.</span></p><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">What you'll do</strong></p><ul><li><span style=\"background-color: transparent;\">Partner with Product Marketing and Digital leads at the intake stage of new initiatives — gather requirements, confirm feasibility, define timelines, and turn a brief into a structured, ownable plan</span></li><li><span style=\"background-color: transparent;\">Own the GTM operating cadence: weekly, monthly, and quarterly business reviews, plus regular stand-ups with execution teams — agendas, pre-reads, decisions, and action tracking, end to end</span></li><li><span style=\"background-color: transparent;\">Manage resource allocation across the four pods and four engine teams; resolve routine scheduling and capacity conflicts within a same-day SLA, and flag genuine trade-offs with options, not just problems</span></li><li><span style=\"background-color: transparent;\">Own the roadmap tracker as the single source of truth across planning sheets and Jira; publish a weekly view of what's on track, at risk, or slipped, across every pod</span></li><li><span style=\"background-color: transparent;\">Run launch readiness and QA reviews — confirm every deliverable meets the Definition of Done before it ships, and collect sign-offs</span></li><li><span style=\"background-color: transparent;\">Lead resolution when something breaks: drive root-cause analysis, run blameless postmortems, and fix the process so it doesn't happen twice</span></li><li><span style=\"background-color: transparent;\">Continuously improve how the team works — tighten templates, kill redundant meetings, and use AI tools (Claude, Gemini) to speed up reporting and production workflows</span></li></ul><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">What you'll bring</strong></p><ul><li><span style=\"background-color: transparent;\">5–8 years managing complex, cross-functional programs in a B2B SaaS or technology company — not single-team project management</span></li><li><span style=\"background-color: transparent;\">PMP certification or equivalent formal program management training</span></li><li><span style=\"background-color: transparent;\">Proven, specific experience owning a recurring business cadence end to end — not just attending one</span></li><li><span style=\"background-color: transparent;\">Admin-level Jira fluency and advanced Google Sheets/Excel skills; working knowledge of Salesforce reporting</span></li><li><span style=\"background-color: transparent;\">Demonstrated ability to drive outcomes through people who don't report to you, in a matrix structure</span></li><li><span style=\"background-color: transparent;\">Sharp written communication — you can produce a status update a leader will read and a checklist a team will actually follow</span></li><li><span style=\"background-color: transparent;\">A track record of structured QA and issue-escalation ownership, including postmortem discipline</span></li></ul><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Nice to have</strong></p><ul><li><span style=\"background-color: transparent;\">Prior experience in a Product Marketing or GTM-specific program role</span></li><li><span style=\"background-color: transparent;\">Familiarity with SaaS growth concepts: lead routing, attribution, campaign lifecycle management</span></li><li><span style=\"background-color: transparent;\">Exposure to multi-geography GTM operations, especially India and the Middle East</span></li></ul><p><br></p>",
+   "job_type": "Full-time",
+   "min_exp": 60,
+   "max_exp": 96,
+   "is_remote": false,
+   "has_diversity": false,
+   "experience_units": "years",
+   "experience_hours": null,
+   "designation": null,
+   "apply_url": "https://greytip.greythr.com/hire/jobs/program-manager-gtm",
+   "published_on_career_page": "2026-09-28T08:32:35.985806Z",
+   "_company": "GREYTIP SOFTWARE PRIVATE LIMITED",
+   "_places": {
+    "18": "Hyderabad",
+    "3": "Chennai",
+    "1": "Mumbai",
+    "2": "Delhi",
+    "100": "Jaipur",
+    "639": "Chandigarh",
+    "4": "Bangalore",
+    "713": "Noida",
+    "121": "Coimbatore",
+    "132": "Kolkata",
+    "128": "Ahmedabad",
+    "101": "Pune",
+    "1029": "Dubai",
+    "1030": "Indonesia"
+   }
+  },
+  "fetched_at": "2026-11-11T14:24:18.147700Z",
+  "content_hash": "1bccc70145a5a305c8f9ea9416151f1da8a033930c3e3c322be9ee6f12e391c6"
+ },
+ {
+  "source_slug": "greythr",
+  "board_token": "greytip",
+  "external_id": "3d6af6eb-4922-47f8-85df-2ebc3611cc27",
+  "payload": {
+   "id": "3d6af6eb-4922-47f8-85df-2ebc3611cc27",
+   "title": "Associate Manager-Channel Sales",
+   "req_id": "1390",
+   "slug": "managerassociate-manager-channel-sales",
+   "created_at": "2026-09-28T03:53:51.229977Z",
+   "locations": [
+    "1"
+   ],
+   "description": "<p><strong>About Greytip Software:</strong></p><p>Greytip is India's leading cloud HR and Payroll Software with more than 30,000+ customers. We serve our enterprise customers through SaaS solutions that leverage cutting edge technologies. Our mission is to improve people-centric practices and performance in Small, Mid and Large enterprises through our software solutions.</p><p><br></p><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Job Summary</strong></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">We are seeking a driven and results-oriented </span><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Manager/Associate Manager – Channel Sales</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> to strengthen and expand our partner ecosystem. This role involves building, managing, and scaling channel relationships, driving revenue through indirect sales, and enabling partners for long-term growth. The ideal candidate will bring expertise in channel management, partner enablement, sales planning, and revenue acceleration, with a proven track record of delivering results in high-growth environments.</span></p><hr><h2><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Key Responsibilities</span></h2><ul><li><strong style=\"background-color: transparent;\">Channel Strategy &amp; Planning</strong><span style=\"background-color: transparent;\"> – Develop and execute channel sales strategy aligned with business goals.</span></li><li><strong style=\"background-color: transparent;\">Partner Acquisition &amp; Development</strong><span style=\"background-color: transparent;\"> – Identify, onboard, and nurture high-potential partners, resellers, and distributors.</span></li><li><strong style=\"background-color: transparent;\">Revenue Growth</strong><span style=\"background-color: transparent;\"> – Drive indirect sales through partners, achieve quarterly/annual revenue targets.</span></li><li><strong style=\"background-color: transparent;\">Enablement &amp; Training</strong><span style=\"background-color: transparent;\"> – Provide product, sales, and solution enablement to partners to ensure effective go-to-market execution.</span></li><li><strong style=\"background-color: transparent;\">Relationship Management</strong><span style=\"background-color: transparent;\"> – Build strong executive-level relationships with key partners and stakeholders.</span></li><li><strong style=\"background-color: transparent;\">Cross-Functional Collaboration</strong><span style=\"background-color: transparent;\"> – Work closely with Sales, Marketing, Product, and Customer Success teams to deliver partner success.</span></li><li><strong style=\"background-color: transparent;\">Performance Monitoring</strong><span style=\"background-color: transparent;\"> – Track partner sales performance, pipeline health, and market share contribution.</span></li><li><strong style=\"background-color: transparent;\">Market Insights</strong><span style=\"background-color: transparent;\"> – Gather and share competitive intelligence, partner feedback, and emerging trends to refine strategy.</span></li><li><strong style=\"background-color: transparent;\">Operational Excellence</strong><span style=\"background-color: transparent;\"> – Manage partner agreements, incentives, compliance, and reporting mechanisms.</span></li></ul><hr><h2><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Required Qualifications</span></h2><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Educational</strong></p><ul><li><span style=\"background-color: transparent;\">Bachelor’s degree in Business, Marketing, or related field (mandatory).</span></li><li><span style=\"background-color: transparent;\">MBA in Sales/Marketing or relevant certification in Channel/Partner Management (preferred).</span></li></ul><p><br></p><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Professional</strong></p><ul><li><span style=\"background-color: transparent;\">8–10 years of experience in channel sales, alliances, or partner management.</span></li><li><span style=\"background-color: transparent;\">At least 3–4 years of team/partner management experience.</span></li><li><span style=\"background-color: transparent;\">Proven success in building and scaling channel ecosystems.</span></li><li><span style=\"background-color: transparent;\">Strong understanding of indirect sales models and partner lifecycle management.</span></li><li><span style=\"background-color: transparent;\">Exposure to SaaS/Enterprise/B2B technology industries preferred.</span></li></ul><p><br></p>",
+   "job_type": "Full-time",
+   "min_exp": 72,
+   "max_exp": 144,
+   "is_remote": false,
+   "has_diversity": false,
+   "experience_units": "years",
+   "experience_hours": null,
+   "designation": null,
+   "apply_url": "https://greytip.greythr.com/hire/jobs/managerassociate-manager-channel-sales",
+   "published_on_career_page": "2026-09-28T03:54:47.019493Z",
+   "_company": "GREYTIP SOFTWARE PRIVATE LIMITED",
+   "_places": {
+    "18": "Hyderabad",
+    "3": "Chennai",
+    "1": "Mumbai",
+    "2": "Delhi",
+    "100": "Jaipur",
+    "639": "Chandigarh",
+    "4": "Bangalore",
+    "713": "Noida",
+    "121": "Coimbatore",
+    "132": "Kolkata",
+    "128": "Ahmedabad",
+    "101": "Pune",
+    "1029": "Dubai",
+    "1030": "Indonesia"
+   }
+  },
+  "fetched_at": "2026-11-11T14:24:18.147700Z",
+  "content_hash": "a036dd3bdbf0be082f4529352f71e64c95f5722674ddf8b2182a2477a3844a7c"
+ }
+]

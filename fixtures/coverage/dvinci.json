@@ -1,0 +1,136 @@
+[
+ {
+  "source_slug": "dvinci",
+  "board_token": "https://dein-weg-zu.dvinci.de/sitemap.xml",
+  "external_id": "61b9520b45a5cdef5c96c344",
+  "payload": {
+   "page_url": "https://dein-weg-zu.dvinci.de/de/jobs/10194/system-owner-operations-data-hamburg-mwd-dvinci",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-07-27T08:45:05.546Z",
+    "description": "<br><br><h3>Ahoi!</h3><div><p><span data-teams=\"true\">Du bist bereit, die Zukunft der HR-Tech-Welt mitzugestalten? Du hast ein Talent für strategisches Denken, operatives Umsetzen und eine Leidenschaft für innovative Technologien? Dann könnte diese Stelle perfekt zu dir passen!&nbsp;Als führender Anbieter im Bereich Talent Acquisition definieren wir Recruiting im Mittelstand neu. In unserem Heimathafen Hamburg entwickeln wir Software und Services, die Unternehmen helfen, die passenden Talente zu finden, zu begeistern und zu binden.&nbsp;Bist du bereit, uns bei dieser Mission zu unterstützen?&nbsp;Komm an Bord und werde Teil unserer multifunktionalen Crew!</span></p></div><br><br><h3>Was dich bei uns erwartet</h3><div><div data-testid=\"markdown-response\"><div><p id=\"message\"><span>Als </span><strong><span>System Owner Operations &amp; Data (m/w/d)</span></strong><span> gestaltest du unsere digitale Systemlandschaft entlang der gesamten Wertschöpfungskette – von Marketing über Vertrieb bis zur Abrechnung – und sorgst dafür, dass Prozesse, Daten und Systeme sauber zusammenspielen.&nbsp;<span data-teams=\"true\">Dein Entwicklungs-Background ist dabei kein Nice-to-have, sondern dein wichtigstes Werkzeug.</span></span></p><p><span data-teams=\"true\"></span></p><ul><li>Du verstehst unsere Geschäftsprozesse von der Lead-Generierung bis zur Abrechnung, leitest daraus technische Anforderungen ab und setzt Lösungen auch selbst um, statt sie nur zu beschreiben.</li><li>Du bist Sparringspartner:in für die Fachbereiche und übersetzt fachliche Anforderungen in echte technische Lösungen.</li><li>Du übernimmst die Ownership für Administration, Konfiguration und Weiterentwicklung unserer Kernsysteme, inklusive Schnittstellen und Automatisierungen, die du bei Bedarf selbst entwickelst.</li><li>Du verantwortest stabile Datenflüsse und Workflows und gehst dafür direkt in den Code.</li></ul></div></div></div><br><br><h3>It&#39;s a match!</h3><div><p><span data-teams=\"true\"><ul><li>Du kommst aus der Softwareentwicklung – ob Studium, Ausbildung oder mehrjährige Praxis – und Programmieren ist für dich Handwerk, nicht Theorie.</li><li>Welche Sprache du dabei am besten kannst, ist zweitrangig, entscheidend ist, dass du dich in ein Modell, eine Codebasis oder ein System einarbeiten und darin produktiv werden kannst.</li><li>Du musst nicht jedes Business-System schon kennen, aber du bringst die Auffassungsgabe mit, diese zu verstehen. Wenn dir HubSpot, Salesforce und/oder Zendesk nicht fremd sind, ist das zeitgleich hilfreich.</li><li>Du hast ein Gefühl für Schnittstellen, Datenflüsse und Automatisierungen und traust dir zu, sie selbst zu bauen.</li><li>Du nutzt KI-Tools gerne, um deine Arbeit effizienter zu machen.</li><li>Du arbeitest strukturiert, behältst bei mehreren Systemen den Überblick und kommunizierst klar, auch mit Leuten ohne IT-Hintergrund.</li></ul></span></p></div><br><br><h3>Wir wollen dich unterstützen!</h3><!-- <div><div class=\"benefits row\">\n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-bicycle\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... auf deinem Weg ins Büro</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p>JobRad®-Bezuschussung, anteilige Kostenübernahme des HVV-Tickets, Parkplätze, überdachter Fahrradständer (inkl. „Fahrradwerkstatt“)</p>\n                </div>\n            \n        </div>\n        \n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-heartbeat\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... bei deiner Gesundheit &amp; Weiterentwicklung</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p>Weiterbildungsplattform,  Agile Coach, Bäderland-Rabatt, Essenzuschuss, höhenverstellbare Tische, Vorsorgeuntersuchungen,  Dusche</p>\n                </div>\n            \n        </div>\n        \n            <div class=\"clearfix\"></div>\n        \n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-umbrella-beach\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... in deiner Freizeit</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p><strong>30</strong> Tage bezahlter Urlaub<br />\r\n<strong>+2</strong><strong>&nbsp;</strong>f&uuml;r Weihnachten und Silvester<br />\r\n<strong>+2</strong>&nbsp;Impact Days, die du nutzen kannst, um etwas f&uuml;r die Umwelt und die Gesellschaft zu bewirken. #SozialeVerantwortung</p>\n                </div>\n            \n        </div>\n        \n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-rocket\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... und bei vielem mehr</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p>Mobile Office, flexible Arbeitszeiten, erhöhte Arbeitgeberbeteiligung bei der bAV, Höchstbetrag vermögenswirksamer Leistungen, moderne Büroräume im schönen Hammerbrook</p>\n                </div>\n            \n        </div>\n        \n            <div class=\"clearfix\"></div>\n        \n    \n</div>\n</div> -->\n<div><ul class=\"benefits\">\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... auf deinem Weg ins Büro</span><span class=\"benefit-text\">: <p>JobRad®-Bezuschussung, anteilige Kostenübernahme des HVV-Tickets, Parkplätze, überdachter Fahrradständer (inkl. „Fahrradwerkstatt“)</p></span>\n        </li>\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... bei deiner Gesundheit &amp; Weiterentwicklung</span><span class=\"benefit-text\">: <p>Weiterbildungsplattform,  Agile Coach, Bäderland-Rabatt, Essenzuschuss, höhenverstellbare Tische, Vorsorgeuntersuchungen,  Dusche</p></span>\n        </li>\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... in deiner Freizeit</span><span class=\"benefit-text\">: <p><strong>30</strong> Tage bezahlter Urlaub<br />\r\n<strong>+2</strong><strong>&nbsp;</strong>f&uuml;r Weihnachten und Silvester<br />\r\n<strong>+2</strong>&nbsp;Impact Days, die du nutzen kannst, um etwas f&uuml;r die Umwelt und die Gesellschaft zu bewirken. #SozialeVerantwortung</p></span>\n        </li>\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... und bei vielem mehr</span><span class=\"benefit-text\">: <p>Mobile Office, flexible Arbeitszeiten, erhöhte Arbeitgeberbeteiligung bei der bAV, Höchstbetrag vermögenswirksamer Leistungen, moderne Büroräume im schönen Hammerbrook</p></span>\n        </li>\n    \n</ul>\n</div>\n\n<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"425\" src=\"https://www.youtube-nocookie.com/embed/slGTw2t_mBQ?si=SlYZyvZLNGzH3140&amp;\" title=\"YouTube video player\" width=\"100%\"></iframe></p><br><br><h3>Klingt gut?</h3><div></div>\n\n<p>Dann hei&szlig;t es jetzt Segel setzen und Bewerbung abschicken!</p>\n\n<address>\n<div><img alt=\"\" class=\"img-responsive img-person\" src=\"https://dein-weg-zu.dvinci.de/appo/public/media/39372302-08ec-4503-92bf-9a5fb7cc14be/7Nw6xwoQ21pdEbPspZmJqKIZfwsDftEScGPXlzyxUxo\" /></div>\n\n<div>\n<h3>HR Kontakt</h3>\n\n<p><strong>Rafael &amp; Franziska</strong><br />\nTeam People &amp; Culture<br />\n+49 40 37 47 99 15</p>\n</div>\n</address>\n\n<div id=\"qrcode\"><!-- QR-Coder erscheint hier --></div>",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "d.vinci Recruitinglösungen",
+     "sameAs": "https://www.dvinci.de/ueber-uns/jobs-im-dvinci-team",
+     "logo": "https://dein-weg-zu.dvinci.de/appo/public/images/layout/bb3f5f53-1079-408c-bac4-978259aaa23e/LOGO/HjnPgzKiBLmlItXKQZ9TRC8YAtTGKgX4Tm25oWGpUkb.svg"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "d.vinci",
+     "sameAs": "DVINCI__RECRUITING_IN_ALLEN_FACETTEN"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": "null",
+       "longitude": "null"
+      },
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Nagelsweg 37-39",
+       "addressLocality": "Hamburg",
+       "addressRegion": null,
+       "postalCode": "20097",
+       "addressCountry": "DE"
+      }
+     },
+     {
+      "@type": "Place",
+      "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": "null",
+       "longitude": "null"
+      },
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": null,
+       "addressLocality": null,
+       "addressRegion": null,
+       "postalCode": null,
+       "addressCountry": "DE"
+      }
+     }
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 54000.0,
+      "maxValue": 65000.0,
+      "unitText": "YEAR"
+     }
+    },
+    "title": "System Owner Operations & Data (m/w/d)"
+   }
+  },
+  "fetched_at": "2026-11-11T14:36:23.697983Z",
+  "content_hash": "db77918c8c85bfe14c02c903235d20384ce57c0a67fb9252382ee297f2f7d0be"
+ },
+ {
+  "source_slug": "dvinci",
+  "board_token": "https://dein-weg-zu.dvinci.de/sitemap.xml",
+  "external_id": "10315f41c70fdfc0ee31b183",
+  "payload": {
+   "page_url": "https://dein-weg-zu.dvinci.de/de/jobs/10197/werkstudentin-wirtschaftsinformatik-systemintegration-automatisierung-in-hamburg-dvinci",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-10-14T14:58:57.008Z",
+    "description": "<br><br><h3>Ahoi!</h3><div><p><span data-teams=\"true\"><span style=\"font-size:inherit;\">Du bist bereit, die Zukunft der HR-Tech-Welt mitzugestalten? Du hast ein Talent für strategisches Denken, operatives Umsetzen und eine Leidenschaft für innovative Technologien? Dann könnte diese Stelle perfekt zu dir passen!&nbsp;Als führender Anbieter im Bereich Talent Acquisition definieren wir Recruiting im Mittelstand neu. In unserem Heimathafen Hamburg entwickeln wir Software und Services, die Unternehmen dabei helfen, die passenden Talente zu finden, zu begeistern und zu binden.&nbsp;Bist du bereit, uns bei dieser Mission zu unterstützen? Dann komm an Bord und werde Teil unserer multifunktionalen Crew!</span></span></p></div><br><br><h3>Was dich bei uns erwartet</h3><div><p><span data-teams=\"true\"><span data-teams=\"true\">Als Werkstudent:in&nbsp;Wirtschaftsinformatik&nbsp;– Data &amp; Schnittstellen unterstützt du uns im Team Operations &amp; Data dabei, <span data-teams=\"true\"><span data-teams=\"true\">unsere Datenflüsse technisch sowie fachlich zu optimieren, damit&nbsp;</span></span><span data-teams=\"true\"><span data-teams=\"true\">unsere internen Systeme (z. B. Salesforce, HubSpot und weitere Tools) sauber miteinander sprechen. Dabei übernimmst du folgende Aufgaben:&nbsp;</span></span><span data-teams=\"true\"><span data-teams=\"true\"></span></span></span></span></p><ul><li>Du konzipierst und implementierst Datenflüsse und Schnittstellen zwischen unseren internen Systemen (z. B. Salesforce, HubSpot und weiteren Tools) sowie externen Anwendungen, nimmst Anpassungen direkt in den Systemen vor und arbeitest dabei vor allem mit Java und/oder Python.</li><li>Du bereitest Daten aus verschiedenen Quellen auf und machst damit sichtbar, wo sich unsere Prozesse und Produkte verbessern lassen.&nbsp;</li><li>Du arbeitest eng mit unseren Teams zusammen, um fachliche Anforderungen in technische Spezifikationen und Implementierungen zu übersetzen.</li><li>Du unterstützt das Operations &amp; Data Team bei der Qualitätssicherung, z. B. durch das Schreiben und Ausführen von Tests, das Dokumentieren von Änderungen und das Nachverfolgen von Bugs.</li><li>Du bringst deine Perspektive als Student:in aktiv ein, übernimmst eigene (Teil-)Projekte und treibst sie von der Idee bis zur Umsetzung mit voran.</li></ul></div><br><br><h3>It&#39;s a match!</h3><div><p><span data-teams=\"true\"></span></p><ul><li>Du bist in Wirtschaftsinformatik oder einem vergleichbaren Studiengang mit IT- und BWL-Bezug immatrikuliert.</li><li>Du bringst erste Programmierkenntnisse mit, idealerweise in Java und/oder Python, und hast Lust, direkt in unseren Systemen und Schnittstellen zu coden.</li><li>Du verfügst über Grundkenntnisse im Umgang mit Datenbanken (z. B. MySQL) und kannst Daten sauber aufbereiten.</li><li>Begriffe wie API, Schnittstelle und Datenmodell schrecken dich nicht ab. Du denkst dich gern in Prozesse und Systeme ein und findest pragmatische Lösungen.</li><li>Du arbeitest strukturiert und zuverlässig und kommunizierst klar in cross-funktionalen Teams - auch mit weniger technisch versierten Kolleg:innen.&nbsp;</li><li>Du weißt, wie du KI-basierte Tools (z. B. für Datenanalyse, Automatisierung oder Prognosen) sinnvoll einsetzt, um deine Arbeit effizienter zu gestalten.</li><li>Du hast Lust, die HR-Welt ein Stück digitaler und besser zu machen.</li></ul><p></p></div><br><br><h3>Wir wollen dich unterstützen!</h3><!-- <div><div class=\"benefits row\">\n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-bicycle\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... auf deinem Weg ins Büro</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p>JobRad®-Bezuschussung, anteilige Kostenübernahme des HVV-Tickets, Parkplätze, überdachter Fahrradständer (inkl. „Fahrradwerkstatt“)</p>\n                </div>\n            \n        </div>\n        \n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-heartbeat\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... bei deiner Gesundheit &amp; Weiterentwicklung</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p>Weiterbildungsplattform,  Agile Coach, Bäderland-Rabatt, Essenzuschuss, höhenverstellbare Tische, Vorsorgeuntersuchungen,  Dusche</p>\n                </div>\n            \n        </div>\n        \n            <div class=\"clearfix\"></div>\n        \n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-umbrella-beach\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... in deiner Freizeit</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p><strong>30</strong> Tage bezahlter Urlaub<br />\r\n<strong>+2</strong><strong>&nbsp;</strong>f&uuml;r Weihnachten und Silvester<br />\r\n<strong>+2</strong>&nbsp;Impact Days, die du nutzen kannst, um etwas f&uuml;r die Umwelt und die Gesellschaft zu bewirken. #SozialeVerantwortung</p>\n                </div>\n            \n        </div>\n        \n    \n        <div class=\"benefit col-xs-12 col-sm-6\">\n            <h4 class=\"benefit-headline\">\n                <i class=\"benefit-icon fa-fw fas fa-rocket\" aria-hidden=\"true\"></i>&nbsp;\n                <span class=\"benefit-name\">... und bei vielem mehr</span>\n            </h4>\n            \n                <div class=\"benefit-text\">\n                    <p>Mobile Office, flexible Arbeitszeiten, erhöhte Arbeitgeberbeteiligung bei der bAV, Höchstbetrag vermögenswirksamer Leistungen, moderne Büroräume im schönen Hammerbrook</p>\n                </div>\n            \n        </div>\n        \n            <div class=\"clearfix\"></div>\n        \n    \n</div>\n</div> -->\n<div><ul class=\"benefits\">\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... auf deinem Weg ins Büro</span><span class=\"benefit-text\">: <p>JobRad®-Bezuschussung, anteilige Kostenübernahme des HVV-Tickets, Parkplätze, überdachter Fahrradständer (inkl. „Fahrradwerkstatt“)</p></span>\n        </li>\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... bei deiner Gesundheit &amp; Weiterentwicklung</span><span class=\"benefit-text\">: <p>Weiterbildungsplattform,  Agile Coach, Bäderland-Rabatt, Essenzuschuss, höhenverstellbare Tische, Vorsorgeuntersuchungen,  Dusche</p></span>\n        </li>\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... in deiner Freizeit</span><span class=\"benefit-text\">: <p><strong>30</strong> Tage bezahlter Urlaub<br />\r\n<strong>+2</strong><strong>&nbsp;</strong>f&uuml;r Weihnachten und Silvester<br />\r\n<strong>+2</strong>&nbsp;Impact Days, die du nutzen kannst, um etwas f&uuml;r die Umwelt und die Gesellschaft zu bewirken. #SozialeVerantwortung</p></span>\n        </li>\n    \n        <li class=\"benefit\">\n            <span class=\"benefit-headline\">... und bei vielem mehr</span><span class=\"benefit-text\">: <p>Mobile Office, flexible Arbeitszeiten, erhöhte Arbeitgeberbeteiligung bei der bAV, Höchstbetrag vermögenswirksamer Leistungen, moderne Büroräume im schönen Hammerbrook</p></span>\n        </li>\n    \n</ul>\n</div>\n\n<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"425\" src=\"https://www.youtube-nocookie.com/embed/slGTw2t_mBQ?si=SlYZyvZLNGzH3140&amp;\" title=\"YouTube video player\" width=\"100%\"></iframe></p><br><br><h3>Klingt gut?</h3><div></div>\n\n<p>Dann hei&szlig;t es jetzt Segel setzen und Bewerbung abschicken!</p>\n\n<address>\n<div><img alt=\"\" class=\"img-responsive img-person\" src=\"https://dein-weg-zu.dvinci.de/appo/public/media/39372302-08ec-4503-92bf-9a5fb7cc14be/7Nw6xwoQ21pdEbPspZmJqKIZfwsDftEScGPXlzyxUxo\" /></div>\n\n<div>\n<h3>HR Kontakt</h3>\n\n<p><strong>Rafael &amp; Franziska</strong><br />\nTeam People &amp; Culture<br />\n+49 40 37 47 99 15</p>\n</div>\n</address>\n\n<div id=\"qrcode\"><!-- QR-Coder erscheint hier --></div>",
+    "employmentType": [
+     "PART_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "d.vinci Recruitinglösungen",
+     "sameAs": "https://www.dvinci.de/ueber-uns/jobs-im-dvinci-team",
+     "logo": "https://dein-weg-zu.dvinci.de/appo/public/images/layout/bb3f5f53-1079-408c-bac4-978259aaa23e/LOGO/HjnPgzKiBLmlItXKQZ9TRC8YAtTGKgX4Tm25oWGpUkb.svg"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "d.vinci",
+     "sameAs": "DVINCI__RECRUITING_IN_ALLEN_FACETTEN"
+    },
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": "null",
+       "longitude": "null"
+      },
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Nagelsweg 37-39",
+       "addressLocality": "Hamburg",
+       "addressRegion": null,
+       "postalCode": "20097",
+       "addressCountry": "DE"
+      }
+     }
+    ],
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 17.0,
+      "maxValue": null,
+      "unitText": "HOUR"
+     }
+    },
+    "title": "Werkstudent:in Wirtschaftsinformatik – Data & Schnittstellen (Java/Python)"
+   }
+  },
+  "fetched_at": "2026-11-11T14:36:24.215789Z",
+  "content_hash": "d6aa5883343d77a6b55daf407a65fb9f9336830d98a0a819a31fc40940a07296"
+ }
+]
