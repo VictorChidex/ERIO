@@ -1,0 +1,226 @@
+[
+ {
+  "source_slug": "prevueaps",
+  "board_token": "https://bdr.prevueaps.com/job_site_map.xml",
+  "external_id": "88c0a20756b7e77f81da440d",
+  "payload": {
+   "page_url": "https://bdr.prevueaps.com/jobs/340663.html",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Field Service Software Integration Specialist",
+    "url": "https://bdr.prevueaps.com/jobs/340663.html",
+    "description": "<p><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Business Development Resources (BDR)</strong> is the premier provider of business training and coaching services to HVAC, plumbing, and electrical contractors. Our mission is simple: empower our clients with the tools, systems, and strategies they need to build profitable, sustainable businesses.</span></p>\n<p><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\">We're currently looking for a <strong>Field Service Software Integration Specialist</strong> to join our team! If you're passionate about technology, enjoy problem-solving, and thrive on helping service-based businesses streamline their operations, this could be the perfect opportunity for you.</span></p>\n<p><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Job Title:</strong> Field Service Software Integration Specialist</span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Department:</strong> Profit Coach</span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Location:</strong> Remote (with required travel for client visits and training events)</span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Work Hours:</strong> 7:00 am to 4:00 pm, Monday through Friday (with some evenings, weekends, and overnight travel as needed)</span><br /><span style=\"font-family: verdana, g",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Business Development Resources",
+     "sameAs": "340663"
+    },
+    "datePosted": "2026-10-26 00:00:00",
+    "validThrough": "2026-12-25 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "",
+      "minValue": "75000",
+      "maxValue": "90000"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Business Development Resources",
+     "sameAs": "https://bdr.prevueaps.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Philadelphia",
+      "addressRegion": "PA",
+      "postalCode": "",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.95258390000000",
+      "longitude": "-75.16522150000000"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:46:50.743109Z",
+  "content_hash": "7b523feb0b6aec11cec6cfed7ee1bb841894d319b9e7cdc0eff87ba56013f37f"
+ },
+ {
+  "source_slug": "prevueaps",
+  "board_token": "https://bdr.prevueaps.com/job_site_map.xml",
+  "external_id": "489edf574833639f9987c261",
+  "payload": {
+   "page_url": "https://bdr.prevueaps.com/jobs/341040.html",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "ServiceTitan Software Specialist",
+    "url": "https://bdr.prevueaps.com/jobs/341040.html",
+    "description": "<p><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Business Development Resources (BDR)</strong> is the premier provider of business training and coaching services to HVAC, plumbing, and electrical contractors. Our mission is simple: empower our clients with the tools, systems, and strategies they need to build profitable, sustainable businesses.</span></p>\n<p><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\">We're currently looking for a <strong>ServiceTitan Specialist</strong> to join our team! If you're passionate about technology, enjoy problem-solving, and thrive on helping service-based businesses streamline their operations, this could be the perfect opportunity for you.</span></p>\n<p><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Job Title:</strong> <strong>ServiceTitan Specialist</strong></span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Department:</strong> Profit Coach</span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Location:</strong> Remote (with required travel for client visits and training events)</span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-size: 10pt;\"><strong>Work Hours:</strong> 7:00 am to 4:00 pm, Monday through Friday (with some evenings, weekends, and overnight travel as needed)</span><br /><span style=\"font-family: verdana, geneva, sans-serif; font-siz",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Business Development Resources",
+     "sameAs": "341040"
+    },
+    "datePosted": "2026-11-03 00:00:00",
+    "validThrough": "2027-01-02 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "YEAR",
+      "minValue": "75,000",
+      "maxValue": "90,000"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Business Development Resources",
+     "sameAs": "https://bdr.prevueaps.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "San Antonio",
+      "addressRegion": "TX",
+      "postalCode": "78205",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "29.42265800000000",
+      "longitude": "-98.48699049999999"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:46:51.297463Z",
+  "content_hash": "9b3f3de9975b8939cc95f462455539f3f7329135283ae9f9a8176c3363d65761"
+ },
+ {
+  "source_slug": "prevueaps",
+  "board_token": "https://oiaccounts.prevueaps.com/job_site_map.xml",
+  "external_id": "36332a23082e3efc220d6423",
+  "payload": {
+   "page_url": "https://oiaccounts.prevueaps.com/jobs/338525.html",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Residential HVAC Installation Operations Manager",
+    "url": "https://oiaccounts.prevueaps.com/jobs/338525.html",
+    "description": "<p><span style=\"font-size: 10pt;\"><strong>Residential HVAC Installation Operations Manager</strong> <strong>Arnold, MD</strong> <strong>$104,000-$114,000 per year + Benefits</strong> <strong>Full-Time | Monday-Friday</strong></span></p>\n<p><span style=\"font-size: 10pt;\">You know how an HVAC installation <strong>should</strong> go.</span></p>\n<p><span style=\"font-size: 10pt;\">The equipment is correct. The materials are ready. The crew understands the scope. Potential issues were caught before anyone pulled into the driveway. The workmanship meets company standards, and the customer receives what they were promised.</span></p>\n<p><span style=\"font-size: 10pt;\">A growing HVAC contractor near Annapolis is conducting a confidential search for a <strong>Residential HVAC Installation Operations Manager</strong> who can make that level of preparation and consistency the standard across the installation department.</span></p>\n<p><span style=\"font-size: 10pt;\">This is a hands-on leadership role for someone who has spent enough time in residential HVAC to recognize problems, coach installers, organize work, and make sound technical decisions. You'll be responsible for creating structure behind the scenes while also serving as a resource for the team in the field.</span></p>\n<p><span style=\"font-size: 10pt;\"><strong>Your Mission</strong></span></p>\n<p><span style=\"font-size: 10pt;\">Your primary goal will be to build an installation operation that is <strong>organized, prepared, accountab",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Opportunity Interactive ",
+     "sameAs": "338525"
+    },
+    "datePosted": "2026-10-15 00:00:00",
+    "validThrough": "2026-11-14 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "YEAR",
+      "minValue": "104,000.00",
+      "maxValue": "114,000.00"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Opportunity Interactive ",
+     "sameAs": "https://oiaccounts.prevueaps.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Arnold",
+      "addressRegion": "MD",
+      "postalCode": "21012",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.03205540000000",
+      "longitude": "-76.50273949999999"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:46:59.272549Z",
+  "content_hash": "8882fcc889961bb2e3862d156539fe2534ed27d7bfe1698c81391307ad2ee96f"
+ },
+ {
+  "source_slug": "prevueaps",
+  "board_token": "https://oiaccounts.prevueaps.com/job_site_map.xml",
+  "external_id": "3127b66064773b3585265bfb",
+  "payload": {
+   "page_url": "https://oiaccounts.prevueaps.com/jobs/339072.html",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Automotive Technician - Race Mechanic",
+    "url": "https://oiaccounts.prevueaps.com/jobs/339072.html",
+    "description": "<p><span style=\"font-size: 10pt;\"><strong>Automotive Technician - Race Support Mechanic </strong></span></p>\n<p><span style=\"font-size: 10pt;\"><strong>Part-Time or Full-Time</strong></span><br /><span style=\"font-size: 10pt;\"><strong>Compensation:</strong> $30-$45 per hour, depending on experience </span><br /><span style=\"font-size: 10pt;\"><strong>Location:</strong> Mid-Willamette Valley</span></p>\n<p><span style=\"font-size: 10pt;\">Join a privately owned, fully equipped shop serving both a commercial fleet and an active off-road/drag racing program. We're looking for a dependable, detail-oriented technician who enjoys a wide variety of mechanical work in a professional, low-pressure environment. Unlike traditional repair shops, there are no flat-rate hours or customer billing responsibilities.</span></p>\n<h3><span style=\"font-size: 10pt;\">Primary Responsibilities</span></h3>\n<ul>\n<li><span style=\"font-size: 10pt;\">Service and maintain Ford E250/E350 vans and 2004-2016 Ford F-150 pickups</span></li>\n<li><span style=\"font-size: 10pt;\">Prepare Broncos, Jeeps, UTVs, and competition UTVs for off-road racing</span></li>\n<li><span style=\"font-size: 10pt;\">Assist with drag boat maintenance, race preparation, and trackside support for ADBA and CDBA events</span></li>\n<li><span style=\"font-size: 10pt;\">Remove and install engines, transmissions, and drivetrain components</span></li>\n<li><span style=\"font-size: 10pt;\">Perform routine diagnostics, repairs, and preventive maintenance</spa",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Opportunity Interactive ",
+     "sameAs": "339072"
+    },
+    "datePosted": "2026-10-24 00:00:00",
+    "validThrough": "2026-11-23 00:00:00T23:59",
+    "employmentType": "FULL_TIME",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "USD",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "HOUR",
+      "minValue": "30.00",
+      "maxValue": "45.00"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Opportunity Interactive ",
+     "sameAs": "https://oiaccounts.prevueaps.com"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Albany",
+      "addressRegion": "OR",
+      "postalCode": "97321",
+      "addressCountry": "US"
+     },
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "44.63930410000000",
+      "longitude": "-123.13230060000000"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:46:59.828684Z",
+  "content_hash": "6826e249dc9bbc05753dcf9fa5ee03db01ebd2a91b5024bac8831e7cafe4f25e"
+ }
+]

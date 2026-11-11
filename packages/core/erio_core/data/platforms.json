@@ -1574,5 +1574,16 @@
    "https://vectaur.com/ats/careers/",
    "https://hr.northstar.edu.in/careers/"
   ]
+ },
+ {
+  "slug": "prevueaps",
+  "name": "Prevue APS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Customer career sites on {tenant}.prevueaps.com: each serves a sitemap of its job pages (/job_site_map.xml; the vendor also lists all tenants in feeds.prevueaps.com/site_map_index.xml) and every job page carries a schema.org JobPosting; robots.txt allows them. Token is the sitemap address, https://{tenant}.prevueaps.com/job_site_map.xml.",
+  "examples": [
+   "https://bdr.prevueaps.com/job_site_map.xml",
+   "https://oiaccounts.prevueaps.com/job_site_map.xml"
+  ]
  }
 ]

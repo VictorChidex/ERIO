@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- Prevue APS: each career site's job sitemap, then the JobPosting on every job page.
 - OpenCATS: the server-rendered careers module of self-hosted OpenCATS installations.
 - ApplicantStack: server-rendered ``/x/openings`` lists and ``/x/detail/{id}`` pages.
 - Recruitis: server-rendered career sites on jobs.recruitis.io (list pages, one page per job).
@@ -601,6 +602,9 @@ class OpenCATSConnector(PageCrawler):
 
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    # Prevue APS: each customer's career site ({tenant}.prevueaps.com) serves a sitemap
+    # (token) of its job pages, and every job page carries a JobPosting.
+    JsonLdConnector("prevueaps", r"^/jobs/\d+\.html$", frozenset({"*.prevueaps.com"})),
     OpenCATSConnector(),
     ApplicantStackConnector(),
     RecruitisConnector(),

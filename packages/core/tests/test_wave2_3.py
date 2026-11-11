@@ -221,6 +221,24 @@ def test_opencats_reads_the_careers_module_and_skips_the_general_application() -
     assert job.description_html and "Chief Financial Officer" in job.description_html
 
 
+def test_prevueaps_reads_the_job_sitemap_and_job_pages() -> None:
+    fetched, jobs = read(
+        "prevueaps",
+        "https://bdr.prevueaps.com/job_site_map.xml",
+        {
+            "https://bdr.prevueaps.com/job_site_map.xml": body("prevueaps_sitemap.xml"),
+            "https://bdr.prevueaps.com/jobs/": body("prevueaps_job.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2  # the sitemap's bare host entry is no job page
+    job = jobs[0]
+    assert job.title == "Field Service Software Integration Specialist"
+    assert job.company_name == "Business Development Resources"
+    assert job.city == "Philadelphia" and job.country_hint == "US"
+    assert str(job.apply_url) == "https://bdr.prevueaps.com/jobs/340663.html"
+    assert job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
