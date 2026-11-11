@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- Talent Clue: the server-rendered job list and job pages of each customer career site.
 - Jobspage: each careers page's sitemap, then the JobPosting on every job page.
 - Flatchr: the page data of each career site (careers.flatchr.io/fr/company/{company}).
 - MCi Direct Hire: the job cards of the Job Central board (jobs.mcidirecthire.com).
@@ -809,8 +810,97 @@ class FlatchrConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- Talent Clue
+
+TALENTCLUE_TOKEN = re.compile(r"([a-z0-9][a-z0-9-]{0,62})/(\d{4,12})")
+SUMMARY_ITEM = re.compile(
+    r'<strong class="job-summary__text--bold">(.*?)</strong>\s*([^<]*)', re.DOTALL
+)
+STANDING_FORM = re.compile(
+    r"sense que hi hagi cap oferta|sin oferta|sin que haya|candidatura espont|general application",
+    re.IGNORECASE,
+)
+
+
+class TalentClueConnector(PageCrawler):
+    """Talent Clue career sites (``{tenant}.talentclue.com``): the company's job list at
+    ``/es/company/{id}/offers/menu/modal`` is a server-rendered table, and each job has a
+    page (``/es/node/{n}/{template}``) with a summary (place, contract, hours, sector) and its
+    description. robots.txt allows both (Crawl-delay 10, which the fetcher honours). The board
+    token is "tenant/companyId", read from the career site's own list address."""
+
+    slug = "talentclue"
+    hosts = frozenset({"*.talentclue.com"})
+    max_pages = 60
+
+    def _parts(self, board_token: str) -> tuple[str, str]:
+        match = TALENTCLUE_TOKEN.fullmatch(board_token)
+        if not match:
+            raise ValueError(f"not a Talent Clue token (tenant/companyId): {board_token!r}")
+        return match[1], match[2]
+
+    def board_url(self, board_token: str) -> str:
+        tenant, company = self._parts(board_token)
+        return f"https://{tenant}.talentclue.com/es/company/{company}/offers/menu/modal"
+
+    def job_urls(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        tenant, _ = self._parts(board_token)
+        html_text = listing(fetcher, self.board_url(board_token)).decode("utf-8", "replace")
+        rows = re.findall(
+            rf'<a href="https://{re.escape(tenant)}\.talentclue\.com/[a-z]{{2}}/node/(\d+)/(\d+)'
+            r'/modal(?:browser)?[^"]*"[^>]*>(.*?)</a>',
+            html_text,
+            re.DOTALL,
+        )
+        wanted = [(n, t) for n, t, title in rows if not STANDING_FORM.search(text_of(title))]
+        return [
+            f"https://{tenant}.talentclue.com/es/node/{n}/{t}" for n, t in dict.fromkeys(wanted)
+        ]
+
+    def item_id(self, url: str, page: dict[str, Any]) -> str:
+        match = re.search(r"/node/(\d+)/", url)
+        return match[1] if match else super().item_id(url, page)
+
+    def read_page(self, url: str, body: bytes) -> dict[str, Any] | None:
+        html_text = body.decode("utf-8", "replace")
+        title = re.search(r'<h1 class="job-page__header-title[^"]*"[^>]*>(.*?)</h1>', html_text, re.DOTALL)
+        if not title or not text_of(title.group(1)):
+            return None
+        summary = [(text_of(k).rstrip(":"), text_of(v)) for k, v in SUMMARY_ITEM.findall(html_text)]
+        company = re.search(r'<h2 class="job-description__title">(.*?)</h2>', html_text, re.DOTALL)
+        return {
+            "title": text_of(title.group(1)),
+            "summary": summary,
+            "company": text_of(company.group(1)) if company else None,
+            "description": element_with(html_text, r'class="job-description"'),
+        }
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        # The labels are in the career site's language; the order (place, contract, hours, ...)
+        # and the "City (Country)" shape of the place are the same in all of them.
+        values = [v for _, v in job.get("summary") or []]
+        place = next((v for k, v in job.get("summary") or [] if re.match(r"Ubica", k)), None)
+        city = re.sub(r"\s*\(.*\)$", "", place) if place else None
+        country = re.search(r"\((.*)\)$", place) if place else None
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]),
+            company_name=job.get("company") or None,
+            apply_url=as_url(str(job["url"])),
+            location_text=place or None,
+            city=city or None,
+            country_hint=country[1] if country else None,
+            employment_type=next((v for k, v in job.get("summary") or [] if re.match(r"Tipo de Contrato|Tipus de Contracte|Contract", k)), None),
+            departments=[],
+            description_html=job.get("description") if values or job.get("description") else None,
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    TalentClueConnector(),
     # Jobspage: each customer's careers page ({company}.jobspage.co) serves a sitemap
     # (token) of its job pages (an 8-character code and a slug, or a UUID), and every job
     # page carries a JobPosting.

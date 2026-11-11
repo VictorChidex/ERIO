@@ -287,9 +287,31 @@ def test_jobspage_reads_the_careers_site_sitemap_and_job_pages() -> None:
     assert str(job.apply_url).startswith("https://demo.jobspage.co/")
 
 
+def test_talentclue_reads_the_offers_table_and_job_pages() -> None:
+    fetched, jobs = read(
+        "talentclue",
+        "empleo-grupoquironsalud/64588841",
+        {
+            "https://empleo-grupoquironsalud.talentclue.com/es/node/": body("talentclue_job.html"),
+            "https://empleo-grupoquironsalud.talentclue.com/es/company/64588841": body(
+                "talentclue_list.html"
+            ),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2
+    job = jobs[0]
+    assert job.title.startswith("Auxiliar Administrativo/a")
+    assert job.company_name == "Quirónsalud" and job.city == "Palma"
+    assert job.country_hint == "España" and job.employment_type == "Sustitución"
+    assert str(job.apply_url).startswith("https://empleo-grupoquironsalud.talentclue.com/es/node/")
+    assert job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("talentclue", "a/b/c"),
+        ("talentclue", "evil.org/123456"),
         ("flatchr", "a/b"),
         ("flatchr", "x.evil.org"),
         ("mcidirecthire", "https://evil.example.org"),

@@ -1617,5 +1617,16 @@
    "https://demo.jobspage.co/sitemap.xml",
    "https://company.jobspage.co/sitemap.xml"
   ]
+ },
+ {
+  "slug": "talentclue",
+  "name": "Talent Clue",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Customer career sites on {tenant}.talentclue.com: the server-rendered offers table (/es/company/{id}/offers/menu/modal) and one /es/node/{n}/{template} page per job (summary plus description); robots.txt allows them (Crawl-delay 10, honoured by the fetcher, so a large site takes long). No feed, API or structured data is public. Token is tenant/companyId, taken from the career site's own offers-list address; the standing 'send your CV with no open offer' entry is skipped.",
+  "examples": [
+   "empleo-grupoquironsalud/64588841",
+   "tauli/13467606"
+  ]
  }
 ]
