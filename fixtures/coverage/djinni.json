@@ -1,0 +1,209 @@
+[
+ {
+  "source_slug": "djinni",
+  "board_token": "https://djinni.co/jobs/",
+  "external_id": "8f0dd10fa6ba3ca6fcfad013",
+  "payload": {
+   "page_url": "https://djinni.co/jobs/857757-data-quality-engineer/",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "applicantLocationRequirements": {
+     "@type": "AdministrativeArea",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "UA"
+     }
+    },
+    "category": "Data Analyst",
+    "datePosted": "2026-11-11T16:32:05.620018",
+    "description": "Position Name: Data Quality Engineer\nReports to: Data Team Lead\nLocation/Type: Ukraine Remotely\nWorking hours: 10 AM — 7 PM UA\n \nAtlas Technica’s mission is to shoulder IT management, user support, and cybersecurity for our clients, who are hedge funds and other investment firms. Founded in 2016, we have grown 100% year over year through our uncompromising focus on service.\nWe value ownership, execution, growth, intelligence, and camaraderie. We are looking for people who share our Core Values, thrive, and contribute to this environment while putting the customer first. At Atlas Technica, we offer a competitive salary, comprehensive benefits, and great perks to our global Team. We strive to maintain a professional yet friendly environment while promoting professional and career development for our Team Members. Join Atlas Technica now!\nAs the first dedicated Data QA Engineer on the team, you will establish and drive QA processes, testing standards, and quality controls across our ETL, Data Warehouse, Power BI, and Embedded Reporting solutions.\n \nResponsibilities:\n· Define and implement QA processes, testing standards, and quality gates for Data & BI projects.\n· Design and execute test plans for ETL pipelines, Data Warehouse solutions, Power BI reports, and Power BI Embedded reporting solutions.\n· Validate data accuracy, completeness, consistency, and business logic across source systems, ETL processes, semantic models, and reporting layers.\n· Perform source-to-target validation, data reconciliation, integration, regression, and end-to-end testing.\n· Test Power BI reports, semantic models, DAX calculations, and Power Query transformations.\n· Validate complex KPIs, business metrics, calculations, aggregations, and reporting logic to ensure consistency with business requirements and expected outcomes.\n· Validate embedded reporting functionality, Row-Level Security (RLS), customer data isolation, and access controls.\n· Investigate data quality issues, perform root cause analysis, and work with developers to resolve defects.\n· Collaborate closely with Data Engineers, Power BI Developers, and business stakeholders to improve overall data quality and release readiness.\n· Participate in requirements reviews, solution design discussions, and data model validation activities to identify quality risks early in the development lifecycle.\n· Create and maintain test documentation, test cases, defect reports, QA metrics, and testing procedures.\n· Drive continuous improvement initiatives and promote quality-first practices across the team.\n \nRequirements:\n· English level — B2 or higher.\n· 3+ years of experience in Data QA, ETL Testing, Data Warehouse Testing, or BI Testing.\n· 5+ years of total QA experience, including Software QA, Automation QA, Data QA, or related quality-focused roles.\n· Experience establishing QA processes, test strategies, and testing practices.\n· Strong SQL skills with the ability to create complex validation and reconciliation queries.\n· Experience testing ETL/ELT pipelines and data integration processes.\n· Strong understanding of data warehousing concepts and dimensional modeling (star/snowflake schema).\n· Experience testing Power BI reports, semantic models, DAX calculations, and dashboards.\n· Experience testing Power BI Embedded or other customer-facing analytics solutions.\n· Strong analytical, troubleshooting, documentation, and communication skills.\n \nDesirable Qualities:\n· Experience validating historical data models and Slowly Changing Dimensions (SCD).\n· Experience with CI/CD pipelines and Azure DevOps.\n· Understanding of data monitoring and freshness validation.\n· Knowledge of Power BI REST APIs, report lineage, and metadata validation.\n· Experience with performance, scalability, and security testing of analytics solutions.\n· Experience working in Agile environments (Scrum/Kanban).\n· Microsoft Azure, Power BI, Data Engineering, or QA certifications.\n \nAtlas Technica is proud to be an Equal Employment Opportunit",
+    "directApply": true,
+    "employmentType": "FULL_TIME",
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 36.0
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Atlas Technica",
+     "sameAs": "https://atlastechnica.com"
+    },
+    "identifier": 857757,
+    "industry": "fintech",
+    "jobLocationType": "TELECOMMUTE",
+    "title": "Data Quality Engineer",
+    "url": "https://djinni.co/jobs/857757-data-quality-engineer/",
+    "validThrough": "2026-12-11T16:32:05.620018"
+   }
+  },
+  "fetched_at": "2026-11-11T14:33:07.969001Z",
+  "content_hash": "f261faf1eb5130cb1a646f5ce3e011e0563da59987461c3dcc625e40c7bd078b"
+ },
+ {
+  "source_slug": "djinni",
+  "board_token": "https://djinni.co/jobs/",
+  "external_id": "70e1e722cf619716fb7e46b1",
+  "payload": {
+   "page_url": "https://djinni.co/jobs/828945-middle-recruiter/",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "applicantLocationRequirements": [
+     {
+      "@type": "AdministrativeArea",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "GEO"
+      }
+     },
+     {
+      "@type": "AdministrativeArea",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "ARM"
+      }
+     },
+     {
+      "@type": "AdministrativeArea",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "CYP"
+      }
+     },
+     {
+      "@type": "AdministrativeArea",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "BGR"
+      }
+     },
+     {
+      "@type": "AdministrativeArea",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "MNE"
+      }
+     }
+    ],
+    "category": "Recruiter",
+    "datePosted": "2026-11-11T16:26:00.734585",
+    "description": "Role Overview:\nWe are seeking an experienced and highly motivated Recruiter to join our friendly and collaborative international team. If you are equipped with outstanding communication skills and a desire to work with top-notch professionals worldwide, this is the right place for you.\n\nKey Responsibilities:\nMaintain full recruiting life cycle/end-to-end recruiting process;\nSearching for candidates using different sourcing techniques and tools;\nHeadhunting candidates across different countries;\nBuilding and maintaining strong relationships with candidates throughout the hiring process;\nMaintaining hiring pipelines within the BambooHR Hiring ATS system;\nManaging CV screening, scheduling, organising, and conducting interviews;\nEnsuring a structured and consistent interview process, including timely feedback delivery;\nActive collaboration with hiring managers throughout the recruitment process;\nConducting recruitment training sessions for the interviewers.\n\nRequired Skills & Experience:\nCore recruitment skills:\n2+ years of experience in recruitment (IT recruitment preferred);\nProven experience in end-to-end recruitment lifecycle (sourcing, screening, interviewing, offer management);\nKnowledge of direct search/headhunting techniques and recruiting/sourcing tools;\nGood understanding of the IT job market and familiarity with the technical terminology;\nExperience in recruiting a wide variety of roles in IT and a desire to work on non-IT roles (finance, marketing, legal, etc.);\nExperience in collaboration with hiring managers to define role requirements and expectations;\nUpper-intermediate English level or higher is a must!\nSoft Skills:\nExcellent communication and interpersonal skills;\nHigh level of organisation and ability to manage multiple roles simultaneously;\nProactive, self-driven, and results-oriented mindset;\nAbility to work in a fast-paced and dynamic environment;\nStrong attention to detail and ability to see tasks through to completion;\nStrong problem-solving skills and adaptability.\n\nWill be a plus:\nExperience in closing non-IT roles;\nExperience in closing roles for iGaming businesses;\nExperience in headhunting candidates at exhibitions and live events.\n\nThe company guarantees you the following benefits:\nGlobal Collaboration: Join an international team where everyone treats each other with respect and moves towards the same goal;\nAutonomy and Responsibility: Enjoy the freedom and responsibility to make decisions without the need for constant supervision;\nCompetitive Compensation: Receive competitive salaries reflective of your expertise and knowledge as our partner seeks top performers;\nRemote Work Opportunities: Embrace the flexibility of fully remote work, with the option to visit company offices that align with your current location;\nFlexible Work Schedule: Focus on performance, not hours, with a flexible work schedule that promotes a results-oriented approach;\nUnlimited Paid Time Off: Prioritise work-life balance with unlimited paid vacation and sick leave days to prevent burnout;\nCareer Development: Access continuous learning and career development opportunities to enhance your professional growth;\nCorporate Culture: Experience a vibrant corporate atmosphere with exciting parties and team-building events throughout the year;\nReferral Bonuses: Refer talented friends and receive a bonus after they successfully complete their probation period;\nMedical Insurance Support: Choose the right private medical insurance and receive compensation (full or partial) based on the cost;\nFlexible Benefits: Customise your compensation by selecting activities or expenses you'd like the company to cover, such as a gym subscription, language courses, Netflix subscription, spa days, and more;\nEducation Foundation: Participate in a biannual raffle for a chance to learn something new unrelated to your job as part of your commitment to ongoing education.\n\nInterview process:\nAn interview with the Recruitment Supervisor to get to know you and you",
+    "directApply": true,
+    "employmentType": "FULL_TIME",
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 24.0
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "NextChallenge",
+     "sameAs": "https://nextchallenge.com/"
+    },
+    "identifier": 828945,
+    "industry": "gambling",
+    "jobLocation": [
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Georgia",
+       "addressLocality": [],
+       "addressRegion": null,
+       "postalCode": null
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Armenia",
+       "addressLocality": [],
+       "addressRegion": null,
+       "postalCode": null
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Cyprus",
+       "addressLocality": [],
+       "addressRegion": null,
+       "postalCode": null
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Bulgaria",
+       "addressLocality": [],
+       "addressRegion": null,
+       "postalCode": null
+      }
+     },
+     {
+      "@type": "Place",
+      "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "Montenegro",
+       "addressLocality": [],
+       "addressRegion": null,
+       "postalCode": null
+      }
+     }
+    ],
+    "title": "Middle Recruiter",
+    "url": "https://djinni.co/jobs/828945-middle-recruiter/",
+    "validThrough": "2026-12-11T16:26:00.734585"
+   }
+  },
+  "fetched_at": "2026-11-11T14:33:07.969001Z",
+  "content_hash": "75cc25bb573b1c7c3d3bbb51211bf8066b24488435d1c735fb3463c51109c87f"
+ },
+ {
+  "source_slug": "djinni",
+  "board_token": "https://djinni.co/jobs/",
+  "external_id": "a7e8ebadd4fff13a2fd7a675",
+  "payload": {
+   "page_url": "https://djinni.co/jobs/857756-aso-asa-specialist-consulting/",
+   "posting": {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "applicantLocationRequirements": {
+     "@type": "AdministrativeArea",
+     "address": {
+      "@type": "PostalAddress",
+      "addressCountry": null,
+      "addressLocality": null,
+      "addressRegion": "Europe",
+      "postalCode": null
+     }
+    },
+    "category": "Marketing",
+    "datePosted": "2026-11-11T16:24:05.342430",
+    "description": "Platforms: App Store and Google Play\nEngagement type: consulting, part-time or project-based\nWe’re looking for an ASO/ASA Specialist to drive organic growth and visibility for our mobile app on both the App Store and Google Play, working with us as a consultant. You’ll work on a single product across two platforms. You’ll own the full cycle: market analysis → hypothesis → testing → insights → implementation.\nYou’ll find growth opportunities on your own and test hypotheses with data. You’ll also give the team clear recommendations that move key product metrics.\n\nWhat you’ll be doing:\nAudit the app’s current state on the App Store and Google Play, then build an ASO strategy for both platforms.\nWrite and optimize text metadata (Title, Subtitle, Keywords, Promotional Text, Short/Long Description) based on keyword research and performance analysis.\nSet up, run and optimize Apple Search Ads (Apple Ads) campaigns. This covers keyword discovery, bidding, performance analysis and connecting paid results to organic growth.\nUse incentivized traffic to test and boost ASO hypotheses.\nWrite briefs for designers to create and improve ASO creatives: icons, screenshots, videos and promo assets.\nRun A/B tests on metadata and graphics using Google Play Experiments and App Store Product Page Optimization.\nWork with Custom Store Listings (Google Play) and Custom Product Pages (App Store).\nImprove store listing conversion on both platforms.\nManage ratings and reputation. This means running an in-app review prompt strategy, working with user reviews and tracking sentiment.\nAnalyze competitors, the market and App Store and Google Play trends to find new opportunities and approaches.\nMake sure all assets pass review and comply with Apple and Google guidelines.\nTrack key ASO/ASA metrics, prepare reports and present results with recommendations for next steps.\nWork with project managers and the team to implement ASO initiatives.\n\nRequirements:\n2+ years of ASO experience, with hands-on work on both the App Store and Google Play.\nHands-on experience with Apple Search Ads (Apple Ads).\nFull-cycle ASO experience: market analysis, strategy, implementation and measuring impact on metrics.\nStrong understanding of ranking factors and what drives organic growth on both platforms.\nIndependent, proactive and accountable for results.\n\nNice to have:\nASO experience with mental health/lifestyle/health&fitness apps or other highly competitive verticals.\nExperience with In-App Events (App Store) and Promotional Content (Google Play).\nOrganic growth case studies you can share.\n",
+    "directApply": true,
+    "employmentType": "PART_TIME",
+    "experienceRequirements": {
+     "@type": "OccupationalExperienceRequirements",
+     "monthsOfExperience": 24.0
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "4couple.",
+     "sameAs": "https://4couple.ai"
+    },
+    "identifier": 857756,
+    "industry": "mobile",
+    "jobLocationType": "TELECOMMUTE",
+    "title": "ASO / ASA Specialist (Consulting)",
+    "url": "https://djinni.co/jobs/857756-aso-asa-specialist-consulting/",
+    "validThrough": "2026-12-11T16:24:05.342430"
+   }
+  },
+  "fetched_at": "2026-11-11T14:33:07.969001Z",
+  "content_hash": "89d43e5e91271690a7f781aabe02429e5faf67e50e6c7594a1ad5f1d72faee4c"
+ }
+]

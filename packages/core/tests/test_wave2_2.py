@@ -147,4 +147,20 @@ def test_gestmax_reads_the_search_list_and_job_pages() -> None:
     assert fetched.complete
 
 
+def test_djinni_reads_the_job_postings_on_its_list_pages() -> None:
+    fetched, jobs, fetcher = read(
+        "djinni",
+        "https://djinni.co/jobs/",
+        {"https://djinni.co/jobs/": body("djinni_list.html")},
+    )
+    # Page 2 answers 404 (not recorded): the list has ended, so the read is complete.
+    assert fetched.complete
+    assert len(jobs) == 2 and len(fetcher.requested) == 2
+    job = jobs[0]
+    assert job.company_name and job.title
+    assert str(job.apply_url).startswith("https://djinni.co/jobs/")
+    assert job.description_html and job.description_html.startswith("<p>")
+    assert job.posted_at is not None
+
+
 # --- end of tests ---

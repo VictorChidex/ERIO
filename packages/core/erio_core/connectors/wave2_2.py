@@ -12,8 +12,11 @@ limits, is in docs/connectors.md.
   job page on ``{agency}.app.loxo.co`` (description as JSON in the page). robots.txt allows all.
 - Gestmax / Kioskemploi: the career site's server-rendered ``/search`` list (paged) and
   each job page's labelled fields and text (no structured data); no robots.txt is served.
+- Djinni: the job list ``/jobs/?page=n`` (JobPosting data with the description inline for
+  every job); robots.txt only closes /jobs2, /q, /developers and /free-jobs.
 """
 
+import html
 import json
 import re
 from typing import Any
@@ -22,7 +25,8 @@ from urllib.parse import urljoin, urlsplit
 from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url, host_country
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
-from erio_core.connectors.jsonld import JsonLdConnector
+from erio_core.connectors.feed import stable_id
+from erio_core.connectors.jsonld import JsonLdConnector, job_postings
 from erio_core.schemas import PartialJob, RawPosting
 
 SLUG = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
@@ -265,6 +269,75 @@ class GestmaxConnector(Connector):
         )
 
 
+# ------------------------------------------------------------------ Djinni
+
+
+class DjinniConnector(JsonLdConnector):
+    """Djinni's job list ``/jobs/?page=n`` carries a full JobPosting (description included)
+    for each of its 15 jobs per page, so a crawl reads list pages, not job pages."""
+
+    def __init__(self) -> None:
+        super().__init__(
+            "djinni",
+            r"^/jobs/\d+-",
+            frozenset({"djinni.co"}),
+            multi_employer=True,
+            listing_pages=20,
+        )
+
+    def board_url(self, board_token: str) -> str:
+        if urlsplit(board_token).hostname != "djinni.co" or not board_token.startswith("https://"):
+            raise ValueError(f"not a Djinni job list address: {board_token!r}")
+        return board_token
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        postings: list[RawPosting] = []
+        seen: set[str] = set()
+        exhausted = False
+        base = self.board_url(board_token)
+        for number in range(1, self.listing_pages + 1):
+            response = fetcher.get(base if number == 1 else f"{base}?page={number}")
+            if response.status == 429:
+                raise FetchError("rate_limited", "source rate limit", 429)
+            if response.status != 200:
+                if number == 1:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                exhausted = True
+                break
+            found = [
+                p
+                for p in job_postings(response.body.decode("utf-8", "replace"))
+                if p.get("title") and p.get("url")
+            ]
+            fresh = [p for p in found if str(p["url"]) not in seen]
+            if not fresh:
+                exhausted = True
+                break
+            for posting in fresh:
+                url = str(posting["url"])
+                seen.add(url)
+                postings.append(
+                    RawPosting(
+                        source_slug=self.slug,
+                        board_token=board_token,
+                        external_id=stable_id(url),
+                        payload={"page_url": url, "posting": posting},
+                    )
+                )
+        return BoardFetch(postings=postings, http_status=200, body=b"", complete=exhausted)
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = super().parse(raw)
+        text = job.description_html
+        if text and "<" not in text:  # plain text with line breaks
+            paragraphs = [html.escape(p.strip()) for p in text.split("\n\n") if p.strip()]
+            text = "".join(f"<p>{p.replace(chr(10), '<br>')}</p>" for p in paragraphs)
+            job = job.model_copy(update={"description_html": text})
+        return job
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -283,4 +356,5 @@ WAVE2_2_CONNECTORS: list[Connector] = [
     ),
     LoxoConnector(),
     GestmaxConnector(),
+    DjinniConnector(),
 ]

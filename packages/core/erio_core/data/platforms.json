@@ -1536,5 +1536,15 @@
    "cned-recrutement",
    "pae"
   ]
+ },
+ {
+  "slug": "djinni",
+  "name": "Djinni",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Djinni's public job list (djinni.co/jobs/?page=n, 15 jobs per page): every job carries schema.org JobPosting data with the description inline; robots.txt allows /jobs/ and the sitemap. A crawl reads the newest 20 pages. Credit: link each job back to its Djinni page.",
+  "examples": [
+   "https://djinni.co/jobs/"
+  ]
  }
 ]
