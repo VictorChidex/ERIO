@@ -2,18 +2,33 @@ import Link from "next/link";
 
 import { popularSearches, type PopularLink } from "@/lib/seo-data";
 
+const SHOWN = 8;
+
+function Pills({ links }: { links: PopularLink[] }) {
+  return (
+    <div className="qf-row">
+      {links.map((link) => (
+        <Link key={link.href} href={link.href} className="qf">
+          {link.label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+// A short list first; the rest is one tap away (and still in the page for search engines).
 function Group({ title, links }: { title: string; links: PopularLink[] }) {
   if (!links.length) return null;
   return (
     <div>
       <h3 className="sect-eye">{title}</h3>
-      <div className="qf-row">
-        {links.map((link) => (
-          <Link key={link.href} href={link.href} className="qf">
-            {link.label}
-          </Link>
-        ))}
-      </div>
+      <Pills links={links.slice(0, SHOWN)} />
+      {links.length > SHOWN && (
+        <details className="qf-more">
+          <summary>Show {links.length - SHOWN} more</summary>
+          <Pills links={links.slice(SHOWN)} />
+        </details>
+      )}
     </div>
   );
 }

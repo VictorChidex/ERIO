@@ -96,8 +96,8 @@ export default async function HomePage() {
                 <Link href="/search" className="btn-acc">
                   Search Jobs
                 </Link>
-                <Link href="/api" className="btn-ghost">
-                  View API Docs
+                <Link href="/paths" className="btn-ghost">
+                  Browse roles
                 </Link>
               </div>
             </div>
@@ -189,10 +189,10 @@ export default async function HomePage() {
       <section id="features">
         <div className="wrap">
           <div className="sect-eye">◉ Why ERIO</div>
-          <h2 className="sect-h">The index built for builders.</h2>
+          <h2 className="sect-h">Every job comes straight from the employer.</h2>
           <p className="sect-p">
-            Most job APIs are glorified job boards. ERIO is a true index — structured, normalized,
-            and built from primary sources.
+            ERIO reads employers&apos; own hiring systems, checks every job again and again, and
+            drops it when it closes, so what you see is open. Developers get the same data as an API.
           </p>
           <div className="feat-grid">
             <div className="feat-card">
