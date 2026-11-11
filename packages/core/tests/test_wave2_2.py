@@ -199,4 +199,22 @@ def test_speedrun_reads_the_feed_and_role_pages_but_not_decoys() -> None:
     assert fetched.complete
 
 
+def test_simplifyhr_follows_list_links_to_employer_vacancy_pages() -> None:
+    fetched, jobs, fetcher = read(
+        "simplifyhr",
+        "https://jobs.simplify.hr/",
+        {
+            "https://jobs.simplify.hr/": body("simplifyhr_list.html"),
+            "https://atlasfinance.simplify.hr/vacancy/5bomty": body("simplifyhr_job.html"),
+        },
+    )
+    # The second vacancy page is not recorded (closed); the footer link is not a vacancy.
+    assert "https://www.simplify.hr/" not in fetcher.requested
+    assert [j.title for j in jobs] == ["Consultant"]
+    assert jobs[0].company_name == "Atlas Finance"
+    assert jobs[0].description_html
+    assert str(jobs[0].apply_url) == "https://atlasfinance.simplify.hr/vacancy/5bomty"
+    assert fetched.complete
+
+
 # --- end of tests ---

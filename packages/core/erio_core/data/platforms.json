@@ -1574,5 +1574,15 @@
   "examples": [
    "https://speedrun-talent-network.com/jobs.rss"
   ]
+ },
+ {
+  "slug": "simplifyhr",
+  "name": "Simplify.hr",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public job list of jobs.simplify.hr (the Simplify.hr employers' open vacancies, ten a page) and each vacancy page's schema.org JobPosting; robots.txt allows crawlers other than AI-training bots. A crawl reads the first 100. Credit: link each job back to its Simplify.hr page.",
+  "examples": [
+   "https://jobs.simplify.hr/"
+  ]
  }
 ]

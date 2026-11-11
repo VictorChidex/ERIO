@@ -17,6 +17,9 @@ limits, is in docs/connectors.md.
   newest 100 pages.
 - speedrun talent network: the ``/jobs.rss`` feed of its 100 newest roles, and each role's
   page for the JobPosting (the sitemap holds decoy pages that robots.txt closes).
+- Simplify.hr: the aggregate list ``jobs.simplify.hr/?page=n`` (links to each employer's
+  ``{name}.simplify.hr/vacancy/{id}`` page, which carries a JobPosting); robots.txt allows all
+  but AI-training crawlers.
 - Djinni: the job list ``/jobs/?page=n`` (JobPosting data with the description inline for
   every job); robots.txt only closes /jobs2, /q, /developers and /free-jobs.
 """
@@ -370,6 +373,44 @@ class SpeedrunConnector(JsonLdConnector):
         return list(dict.fromkeys(u for u in found if "-ad00000" not in u))
 
 
+# ------------------------------------------------------------- Simplify.hr
+
+
+class SimplifyHrConnector(JsonLdConnector):
+    """jobs.simplify.hr lists the open vacancies of every Simplify.hr employer, ten a page
+    (``?page=n``), each linking to the employer's own ``{name}.simplify.hr/vacancy/{id}``
+    page, which carries a JobPosting. The links leave the listing's host, so the generic
+    same-host link reader is not used."""
+
+    LINK = re.compile(r'href="(https://[a-z0-9-]+\.simplify\.hr/vacancy/[a-z0-9]+)"')
+
+    def __init__(self) -> None:
+        super().__init__(
+            "simplifyhr",
+            r"^/vacancy/[a-z0-9]+$",
+            frozenset({"jobs.simplify.hr", "*.simplify.hr"}),
+            max_pages=100,
+            listing_pages=10,
+            multi_employer=True,
+        )
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        base = self.board_url(board_token)
+        links: list[str] = []
+        for number in range(1, self.listing_pages + 1):
+            response = fetcher.get(base if number == 1 else f"{base}?page={number}")
+            if response.status != 200:
+                if number == 1:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            found = self.LINK.findall(response.body.decode("utf-8", "replace"))
+            fresh = [u for u in dict.fromkeys(found) if u not in links]
+            if not fresh:
+                break
+            links += fresh
+        return links
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -395,6 +436,7 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         newest_first=True,
     ),
     SpeedrunConnector(),
+    SimplifyHrConnector(),
     LoxoConnector(),
     GestmaxConnector(),
     DjinniConnector(),

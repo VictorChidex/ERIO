@@ -1,0 +1,119 @@
+[
+ {
+  "source_slug": "simplifyhr",
+  "board_token": "https://jobs.simplify.hr/",
+  "external_id": "05444ab09c810442717e8cae",
+  "payload": {
+   "page_url": "https://atlasfinance.simplify.hr/vacancy/5bomty",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Consultant",
+    "description": "<div style=\"text-align: center\"><strong>Preference will be given to equity candidates: </strong><br><strong>Gender &amp; Group</strong></div><div style=\"text-align: center\"><strong>African Male/White Male/White Female </strong></div><div style=\"text-align: justify\"><br><strong>Job purpose:</strong></div><div style=\"text-align: justify\">To promote, assist and enable clients to apply for credit loans, ensuring that these loan applications meet with all credit granting Regulatory and Policy compliance.</div><div style=\"text-align: justify\"><br><strong>Key Accountable Responsibilities:</strong></div><ul><li style=\"text-align: justify\">Meets monthly set Loan application Sales targets by promoting Credit Loans and assisting customers.</li><li style=\"text-align: justify\">Meets monthly set Collections targets, by actioning company procedures and instructions for collections, and following up on collections of customers loan instalments.</li><li style=\"text-align: justify\">Accurately updates and maintains records, and branch housekeeping standards in a tidy and timely manner.</li><li style=\"text-align: justify\">Provide a professional and friendly service to all internal and external customers at all times</li></ul><div style=\"text-align: justify\"><br><strong>Competency and qualification requirements:</strong></div><ul><li style=\"text-align: justify\">Minimum: Grade 12</li><li style=\"text-align: justify\">Certificate/Diploma in Micro Lending Frontline Service (NQF L3)</li><li style=\"text-align: justify\">2 years’ experience Micro finance industry</li><li style=\"text-align: justify\">Mathematical Literacy</li></ul>",
+    "industry": "Financial Services",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Atlas Finance",
+     "value": "211627"
+    },
+    "datePosted": "2026-11-11",
+    "validThrough": "2026-11-18",
+    "employmentType": "Entry Level",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Atlas Finance",
+     "sameAs": "https://atlasfinance.simplify.hr/"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "South Africa",
+      "addressRegion": "Mpumalanga",
+      "addressCountry": "South Africa"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:39:44.524306Z",
+  "content_hash": "267605708d041f35f1242f6c8419ff28e501335f68c7bded46602b641d2c359a"
+ },
+ {
+  "source_slug": "simplifyhr",
+  "board_token": "https://jobs.simplify.hr/",
+  "external_id": "69806549450f5a90faef4252",
+  "payload": {
+   "page_url": "https://dischem.simplify.hr/vacancy/ax8tyj",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Pharmacist - Okavango",
+    "description": "<p>Dis-Chem Pharmacies require the services of a reputable Pharmacist for their Okavango store. Your portfolio will cover the provision of pharmaceutical care by taking responsibility for patients’ medicine-related needs, and being accountable for meeting these needs.<br> <br> <strong><u>Minimum Requirements:</u></strong></p><p><strong><u>Essential:</u></strong></p><ul><li>Grade 12 / Matric</li><li>BPharm / equivalent qualification</li><li>Registered with the South African Pharmacy Council (SAPC)</li><li>Min 2- 3 years experience in Pharmaceutical</li><li>2-3 years retail pharmacy experience ( Student/Intern)&nbsp;</li><li>Computer literate – MS Office&nbsp;</li></ul><p><strong><u>Advantageous:</u></strong></p><ul><li>Relevant retail/ FMCG experience</li><li>Third additional language</li><li>SAP experience</li><li>E-scripting experience</li><li>Registered tutor</li><li>Unisolv experience</li></ul><p><strong><u>Duties and Responsibilities:</u></strong></p><ul><li>Provision of pharmaceutical care by taking responsibility for patients’ medicine-related needs, and being accountable for meeting those needs, which shall include, but not be limited to the following functions:</li><li>Evaluation of a patient’s medicine-related needs by determining the indication, safety and effectiveness of the therapy</li><li>Dispensing of any medicine or scheduled substance on the prescription of a person authorised to prescribe medicine</li><li>Signing off and checking of all prescriptions prepared by an assistant or an intern and accepting accountability for the correctness thereof as per GPP 2.7.1.2.1.f</li><li>Furnishing of information and advice to any person with regard to the use medicine</li><li>Determining patient compliance with the therapy, and follow-up to ensure that the patient’s medicine-related needs are being met</li><li>The provision of pharmacist-initiated therapy</li><li>The compounding, manipulation, preparation or packaging of any medicine or scheduled substance, or the supervision thereof</li><li>The manufacturing of any medicine or scheduled substance, or supervision thereof</li><li>The purchasing, acquiring, importing, keeping, possessing, using, releasing, storage, packaging, re-packaging, supplying or selling of any medicine or scheduled substance, or supervision thereof</li><li>The application for the registration of a medicine in accordance with the Medicines Act and Pharmacy Act</li><li>The acts specially pertaining to the profession of a pharmacist as prescribed above;</li><li>The formulation of any medicine for the purposes of registration as a medicine;</li><li>The distribution of any medicine or scheduled substance;</li><li>The re-packaging of medicines;</li><li>The initiation and conducting of pharmaceutical research and development; and</li><li>The promotion of public health.</li><li>Accurately interpret scripts and act in a professional and responsible manner and within the legal requirements in accordance with the South African Pharmaceutical Council.</li><li>Capture script details accurately and verify patient’s details on the system.</li><li>Ensure accurate picking / packing / labelling and checking of medication and be aware of common dosages as well as important drug interactions.</li><li>Provide accurate instructions to the patients regarding the correct use of medicine supplied.</li><li>Keep abreast of changes in medical aid procedures and requirements for claims and dispensing.</li><li>Advise and assist patients at the dispensary, self-medication counter and front-shop.</li><li>Follow up with patients regarding script tracking report as requested by the dispensary manager and follow up appointments.</li><li>Explain all medical aid costs to patients.</li><li>Follow through on promises made to customers.</li><li>Evaluation of disease conditions and referral to in-store health facilities when necessary.</li><li>Process all paperwork necessary for the accurate submission of claims to medical aids.</li><li>Cor",
+    "industry": "Retail",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Dis-Chem Pharmacies Limited",
+     "value": "211626"
+    },
+    "datePosted": "2026-11-11",
+    "validThrough": "2026-11-25",
+    "employmentType": "Associate",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Dis-Chem Pharmacies Limited",
+     "sameAs": "https://dischem.simplify.hr/"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "South Africa",
+      "addressRegion": "Western Cape",
+      "addressCountry": "South Africa"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:39:45.319291Z",
+  "content_hash": "aab6dfc40346cec733384cc269c88a826fe10dd349a8fa2ea67e194d979650eb"
+ },
+ {
+  "source_slug": "simplifyhr",
+  "board_token": "https://jobs.simplify.hr/",
+  "external_id": "52b2482b631070aed2fddc33",
+  "payload": {
+   "page_url": "https://atlasfinance.simplify.hr/vacancy/3yrb2s",
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Consultant",
+    "description": "<div style=\"text-align: center\"><strong>Preference will be given to equity candidates: </strong><br><strong>Gender &amp; Group</strong></div><div style=\"text-align: center\"><strong>African Male/White Male/White Female </strong></div><div style=\"text-align: justify\"><br><strong>Job purpose:</strong></div><div style=\"text-align: justify\">To promote, assist and enable clients to apply for credit loans, ensuring that these loan applications meet with all credit granting Regulatory and Policy compliance.</div><div style=\"text-align: justify\"><br><strong>Key Accountable Responsibilities:</strong></div><ul><li style=\"text-align: justify\">Meets monthly set Loan application Sales targets by promoting Credit Loans and assisting customers.</li><li style=\"text-align: justify\">Meets monthly set Collections targets, by actioning company procedures and instructions for collections, and following up on collections of customers loan instalments.</li><li style=\"text-align: justify\">Accurately updates and maintains records, and branch housekeeping standards in a tidy and timely manner.</li><li style=\"text-align: justify\">Provide a professional and friendly service to all internal and external customers at all times</li></ul><div style=\"text-align: justify\"><br><strong>Competency and qualification requirements:</strong></div><ul><li style=\"text-align: justify\">Minimum: Grade 12</li><li style=\"text-align: justify\">Certificate/Diploma in Micro Lending Frontline Service (NQF L3)</li><li style=\"text-align: justify\">2 years’ experience Micro finance industry</li><li style=\"text-align: justify\">Mathematical Literacy</li></ul>",
+    "industry": "Financial Services",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "Atlas Finance",
+     "value": "211625"
+    },
+    "datePosted": "2026-11-11",
+    "validThrough": "2026-11-18",
+    "employmentType": "Entry Level",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Atlas Finance",
+     "sameAs": "https://atlasfinance.simplify.hr/"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "South Africa",
+      "addressRegion": "KwaZulu-Natal",
+      "addressCountry": "South Africa"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:39:45.716491Z",
+  "content_hash": "fb246706fb0a8dc2dc4574e2746e3493c10a4902f3c45648b161044c163b6a2c"
+ }
+]
