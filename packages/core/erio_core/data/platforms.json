@@ -1498,5 +1498,13 @@
    "https://hrmos.co/pages/uzabase/jobs",
    "https://hrmos.co/pages/hrmos/jobs"
   ]
+ },
+ {
+  "slug": "onlyfy",
+  "name": "onlyfy",
+  "kind": "ats",
+  "blocked": "no public job list: {company}.onlyfy.jobs serves a client-rendered, noindex candidate portal (no job links, sitemap or feed in the page; /jobs, /sitemap.xml and feeds answer 404), and job data loads through the app's private GraphQL endpoint",
+  "notes": "",
+  "examples": []
  }
 ]
