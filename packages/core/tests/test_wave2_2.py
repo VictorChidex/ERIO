@@ -124,4 +124,27 @@ def test_loxo_reads_the_agency_list_and_job_pages() -> None:
     assert len(fetcher.requested) == 3
 
 
+def test_gestmax_reads_the_search_list_and_job_pages() -> None:
+    site = "https://cned-recrutement.gestmax.fr"
+    fetched, jobs, fetcher = read(
+        "gestmax",
+        "cned-recrutement",
+        {
+            f"{site}/search": body("gestmax_list.html"),
+            f"{site}/1367/1/": body("gestmax_job.html"),
+        },
+    )
+    # Page 2 of the list answers 404 (not recorded) and ends the paging; the second job page
+    # is not recorded either (closed), and the spontaneous-application link is not a job.
+    assert [u for u in fetcher.requested if "multipleunsolicited" in u] == []
+    assert len(jobs) == 1
+    job = jobs[0]
+    assert job.title == "Technicien(ne) de support informatique H/F"
+    assert job.location_text == "Lyon (69)"
+    assert job.country_hint == "FR"
+    assert job.description_html and "Cned" in job.description_html
+    assert str(job.apply_url) == f"{site}/1367/1/technicien-ne-de-support-informatique-h-f"
+    assert fetched.complete
+
+
 # --- end of tests ---

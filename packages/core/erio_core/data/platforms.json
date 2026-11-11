@@ -1525,5 +1525,16 @@
    "syndesus",
    "loxo"
   ]
+ },
+ {
+  "slug": "gestmax",
+  "name": "Gestmax / Kioskemploi",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public career sites of Gestmax (Kioskemploi) customers at {name}.gestmax.fr: the server-rendered /search list (10 per page) and each job page's fields and text; no robots.txt is served. The token is the site name or its https address.",
+  "examples": [
+   "cned-recrutement",
+   "pae"
+  ]
  }
 ]

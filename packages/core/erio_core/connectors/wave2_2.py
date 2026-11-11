@@ -10,14 +10,17 @@ limits, is in docs/connectors.md.
   with ``?page=n``) links each job page, and every job page carries a JobPosting.
 - Loxo: the hosted careers page ``app.loxo.co/{agency}`` (server-rendered job list) and each
   job page on ``{agency}.app.loxo.co`` (description as JSON in the page). robots.txt allows all.
+- Gestmax / Kioskemploi: the career site's server-rendered ``/search`` list (paged) and
+  each job page's labelled fields and text (no structured data); no robots.txt is served.
 """
 
 import json
 import re
 from typing import Any
+from urllib.parse import urljoin, urlsplit
 
 from erio_core.connectors._service import plain
-from erio_core.connectors._util import as_url
+from erio_core.connectors._util import as_url, host_country
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.jsonld import JsonLdConnector
 from erio_core.schemas import PartialJob, RawPosting
@@ -37,7 +40,7 @@ TAGS = re.compile(r"<[^>]+>")
 class LoxoConnector(Connector):
     """Loxo's hosted careers page ``app.loxo.co/{agency}`` lists the live jobs the agency
     publishes (server-rendered); each job page on ``{agency}.app.loxo.co`` carries the
-    description as JSON and the agency's name in its title. """
+    description as JSON and the agency's name in its title."""
 
     slug = "loxo"
     hosts = frozenset({"app.loxo.co", "*.app.loxo.co"})
@@ -132,6 +135,136 @@ class LoxoConnector(Connector):
             description_html=job.get("description") or None,
         )
 
+
+# ------------------------------------------------- Gestmax / Kioskemploi
+
+GESTMAX_LINK = re.compile(r'href="((?:https://[a-z0-9.-]+)?/\d+/\d+/[a-z0-9-]+)"')
+GESTMAX_ITEM = re.compile(
+    r'class="item-value item-value-([a-z0-9_]+)">\s*(.*?)\s*</span>', re.DOTALL | re.IGNORECASE
+)
+GESTMAX_TITLE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.DOTALL)
+GESTMAX_TEXT = re.compile(r'class="vacancy-text">(.*?)<div class="apply">', re.DOTALL)
+GESTMAX_LOCATION = ("loc", "lieu", "ville", "site", "region", "dept", "departement")
+GESTMAX_KIND = ("contrat", "nature", "type")
+
+
+def _gestmax_origin(board_token: str) -> str:
+    if board_token.startswith("https://"):
+        parts = urlsplit(board_token)
+        if not parts.hostname or parts.path not in ("", "/") or parts.query:
+            raise ValueError(f"not a Gestmax career site address: {board_token!r}")
+        return f"https://{parts.hostname}"
+    if not SLUG.fullmatch(board_token):
+        raise ValueError(f"not a Gestmax career site name: {board_token!r}")
+    return f"https://{board_token}.gestmax.fr"
+
+
+class GestmaxConnector(Connector):
+    """Gestmax (Kioskemploi) career sites: the server-rendered ``/search`` list (paged at
+    ``/search/index/page/n``) links every job page ``/{id}/{n}/{slug}``, and each job page
+    prints its fields as labelled items (whose set differs by customer) and its text.
+    The token is the site's name (``{name}.gestmax.fr``) or its https address."""
+
+    slug = "gestmax"
+    hosts = frozenset({"*.gestmax.fr"})
+    max_list_pages = 10
+    max_details = 100
+
+    def board_url(self, board_token: str) -> str:
+        return f"{_gestmax_origin(board_token)}/search"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        """The posting on one job page (the board token is that page's address)."""
+        text = body.decode("utf-8", "replace")
+        canonical = re.search(r'rel="canonical" href="([^"]+)"', text)
+        raw = self._job_page(text, canonical.group(1) if canonical else board_token, board_token)
+        return [raw] if raw else []
+
+    def _job_page(self, text: str, url: str, board_token: str) -> RawPosting | None:
+        title = GESTMAX_TITLE.search(text)
+        if not title or not plain(TAGS.sub(" ", title.group(1))):
+            return None
+        items = {k: plain(TAGS.sub(" ", v)) for k, v in GESTMAX_ITEM.findall(text)}
+        body = GESTMAX_TEXT.search(text)
+        parts = urlsplit(url).path.strip("/").split("/")
+        return RawPosting(
+            source_slug=self.slug,
+            board_token=board_token,
+            external_id=f"{parts[0]}-{parts[1]}",
+            payload={
+                "url": url,
+                "title": plain(TAGS.sub(" ", title.group(1))),
+                "items": items,
+                "description": body.group(1).strip() if body else None,
+            },
+        )
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        origin = _gestmax_origin(board_token)
+        links: list[str] = []
+        for number in range(1, self.max_list_pages + 1):
+            url = f"{origin}/search" if number == 1 else f"{origin}/search/index/page/{number}"
+            response = fetcher.get(url)
+            if response.status == 429:
+                raise FetchError("rate_limited", "source rate limit", 429)
+            if response.status != 200:
+                if number == 1:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            found = [
+                urljoin(origin, href)
+                for href in GESTMAX_LINK.findall(response.body.decode("utf-8", "replace"))
+            ]
+            fresh = [u for u in dict.fromkeys(found) if u not in links]
+            if not fresh:
+                break
+            links += fresh
+        postings: list[RawPosting] = []
+        unread = 0
+        for url in links[: self.max_details]:
+            try:
+                page = fetcher.get(url)
+            except FetchError:
+                unread += 1
+                continue
+            if page.status == 200:
+                raw = self._job_page(page.body.decode("utf-8", "replace"), url, board_token)
+                if raw:
+                    postings.append(raw)
+            elif page.status not in (404, 410):
+                unread += 1
+        if links and not postings:
+            raise FetchError("parse_error", "job pages carry no title", 200)
+        return BoardFetch(
+            postings=postings,
+            http_status=200,
+            body=b"",
+            complete=len(links) <= self.max_details and unread == 0,
+        )
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        items: dict[str, str | None] = job.get("items") or {}
+
+        def pick(words: tuple[str, ...]) -> str | None:
+            # Words in order of preference: "localisation" before "site d'affectation".
+            return next((v for w in words for k, v in items.items() if v and w in k), None)
+
+        place = pick(GESTMAX_LOCATION)
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]),
+            apply_url=as_url(str(job["url"])),
+            location_text=place,
+            country_hint=host_country(str(job["url"])) if place else None,
+            employment_type=pick(GESTMAX_KIND),
+            description_html=job.get("description") or None,
+        )
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -149,4 +282,5 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         listing_pages=5,
     ),
     LoxoConnector(),
+    GestmaxConnector(),
 ]
