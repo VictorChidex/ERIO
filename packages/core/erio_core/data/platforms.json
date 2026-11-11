@@ -94,7 +94,7 @@
   "name": "Comeet",
   "kind": "ats",
   "blocked": "",
-  "notes": "",
+  "notes": "Also reads Spark Hire Recruit career sites: Spark Hire acquired Comeet in 2023 and its own careers page (sparkhire.com/careers) links to comeet.com/jobs/spark-hire/30.005.",
   "examples": [
    "coralogix/06.004",
    "vastdata/43.001"
