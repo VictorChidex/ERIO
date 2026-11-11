@@ -1547,5 +1547,13 @@
   "examples": [
    "https://dein-weg-zu.dvinci.de/sitemap.xml"
   ]
+ },
+ {
+  "slug": "bizneo",
+  "name": "Bizneo",
+  "kind": "ats",
+  "blocked": "not verifiable: no public tenant career site could be found; the only Bizneo-hosted one located (hello.bizneo.com/out-career-site/) answers \"Career site - out of service\", and customers embed the portal on their own domains.",
+  "notes": "",
+  "examples": []
  }
 ]
