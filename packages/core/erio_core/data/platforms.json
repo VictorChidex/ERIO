@@ -1530,5 +1530,16 @@
   "examples": [
    "https://www.connectoor.jobs"
   ]
+ },
+ {
+  "slug": "talos360",
+  "name": "Talos360 ATS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Customer career sites on {tenant}.talosats-careers.com: each serves a sitemap of its job pages and every page carries a schema.org JobPosting; no robots.txt restriction is published. Token is the sitemap address, https://{tenant}.talosats-careers.com/sitemap.xml.",
+  "examples": [
+   "https://ukas.talosats-careers.com/sitemap.xml",
+   "https://siscareltd.talosats-careers.com/sitemap.xml"
+  ]
  }
 ]

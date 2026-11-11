@@ -144,6 +144,24 @@ def test_connectoor_reads_the_board_search_then_each_job_page() -> None:
     normalize(job, {})
 
 
+def test_talos360_reads_the_career_site_sitemap_and_job_pages() -> None:
+    fetched, jobs = read(
+        "talos360",
+        "https://ukas.talosats-careers.com/sitemap.xml",
+        {
+            "https://ukas.talosats-careers.com/sitemap.xml": body("talos360_sitemap.xml"),
+            "https://ukas.talosats-careers.com/job/": body("talos360_job.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2
+    job = jobs[0]
+    assert job.title == "Product Owner" and job.company_name == "Talos360 Internal"
+    assert job.location_text and "United Kingdom" in job.location_text
+    assert job.salary is not None and job.salary.currency == "GBP"
+    assert str(job.apply_url).startswith("https://ukas.talosats-careers.com/job/")
+    assert job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [

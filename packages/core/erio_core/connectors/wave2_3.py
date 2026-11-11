@@ -7,6 +7,7 @@ docs/connectors.md.
 - GeekJob: server-rendered ``/vacancies/{n}`` lists; every vacancy page carries JobPosting data.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
+- Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
 - Keka: the JSON behind every Keka Hire career site (``/careers/api/jobs/default/active``).
 """
 
@@ -365,6 +366,9 @@ class ConnectoorConnector(JsonLdConnector):
 
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    # Talos360 ATS: each customer's career site ({tenant}.talosats-careers.com) serves a
+    # sitemap of its job pages (token), and every job page carries a JobPosting.
+    JsonLdConnector("talos360", r"^/job/\d+$", frozenset({"*.talosats-careers.com"})),
     ConnectoorConnector(
         "connectoor",
         r"^/jobview$",
