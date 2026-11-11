@@ -1602,5 +1602,13 @@
    "https://www.livehire.com/careers/alfredhealth/sitemap.xml",
    "https://www.livehire.com/careers/ymcansw/sitemap.xml"
   ]
+ },
+ {
+  "slug": "teamdash",
+  "name": "Teamdash",
+  "kind": "ats",
+  "blocked": "no shared public job surface: {tenant}.teamdash.com (tallink, lhv tested) and jobs.teamdash.com serve the recruiter sign-in app with no job list, and customers publish career sites on their own domains with no common feed or sitemap.",
+  "notes": "",
+  "examples": []
  }
 ]
