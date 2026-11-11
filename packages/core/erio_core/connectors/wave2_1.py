@@ -6,6 +6,7 @@ every visitor; how each was found, and its limits, is in docs/connectors.md.
 - greytHR Hire: the career page's own JSON calls on ``{tenant}.greythr.com/hire``.
 - d.vinci: the career site sitemap plus the JobPosting each job page carries.
 - Friend.work: the JSON the portal page reads from api.friend.work (one call, all vacancies).
+- LiveHire (Humanforce Talent): the per-tenant career sitemap plus each job page JobPosting.
 """
 
 import json
@@ -209,6 +210,8 @@ class FriendWorkConnector(Connector):
 WAVE2_1_CONNECTORS: list[Connector] = [
     GreytHRHireConnector(),
     FriendWorkConnector(),
+    # LiveHire (Humanforce Talent): per-tenant sitemap of /careers/{tenant}/job/... pages.
+    JsonLdConnector("livehire", r"^/careers/[^/]+/job/", hosts("www.livehire.com")),
     # d.vinci career sites: a sitemap of /{lang}/jobs/{id}/{slug} pages, each with a JobPosting.
     JsonLdConnector("dvinci", r"^/[a-z]{2}/jobs/\d+/", hosts("*.dvinci-hr.com", "*.dvinci.de")),
 ]

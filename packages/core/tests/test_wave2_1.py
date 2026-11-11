@@ -87,6 +87,26 @@ def test_greythr_without_a_jobs_list_is_a_parse_error() -> None:
     assert error.value.outcome == "parse_error"
 
 
+# ------------------------------------------------------------------ LiveHire
+
+
+def test_livehire_reads_the_tenant_sitemap_and_job_page_postings() -> None:
+    site = "https://www.livehire.com/careers/alfredhealth"
+    fetched, jobs = read(
+        "livehire",
+        f"{site}/sitemap.xml",
+        {
+            f"{site}/sitemap.xml": body("livehire_sitemap.xml"),
+            f"{site}/job/": body("livehire_job.html"),
+        },
+    )
+    # The sitemap's /jobs list page is not a job page.
+    assert fetched.complete and len(jobs) == 2
+    assert jobs[0].title == "Psychiatric Enrolled Nurse (Pool)"
+    assert jobs[0].company_name == "Alfred Health"
+    assert str(jobs[0].apply_url).startswith(f"{site}/job/")
+
+
 # ------------------------------------------------------------- Friend.work
 
 

@@ -1591,5 +1591,16 @@
   "blocked": "not verifiable: {tenant}.easyapply.co career pages serve an /rss feed that robots.txt allows, but every tenant found (gethired, jobs, acme, hiring, restaurant, dental and others) returned an empty feed, so no job item could be read; no customer tenant with openings could be found.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "livehire",
+  "name": "LiveHire / Humanforce Talent",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads each tenant career sitemap (listed in www.livehire.com/SitemapCareers.xml) and the schema.org JobPosting on every /careers/{tenant}/job/ page; the talent-search API needs a session bearer and is not used. Token is the tenant sitemap URL.",
+  "examples": [
+   "https://www.livehire.com/careers/alfredhealth/sitemap.xml",
+   "https://www.livehire.com/careers/ymcansw/sitemap.xml"
+  ]
  }
 ]
