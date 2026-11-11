@@ -23,9 +23,9 @@ from urllib.parse import urlsplit, urlunsplit
 
 from defusedxml import ElementTree
 
+from erio_core.connectors._htmlpages import PageCrawler, listing, meta, text_of
 from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url, iso_datetime, join_html
-from erio_core.connectors._htmlpages import PageCrawler, listing, meta, text_of
 from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.feed import parse_feed, stable_id
 from erio_core.connectors.jsonld import JsonLdConnector, sitemap_locations
