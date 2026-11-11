@@ -1521,5 +1521,13 @@
   "blocked": "not verifiable: the career app on {tenant}.livevacancies.co.uk reads api.core-easywebats.com/v1/job/all with a per-tenant company id, but the only tenant found (hireful.livevacancies.co.uk) lists 0 jobs and no second public tenant could be found.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "eploy",
+  "name": "Eploy",
+  "kind": "ats",
+  "blocked": "not verifiable: careers sites run on each customer own domain (careers.{name}/vacancies/vacancy-search-results.aspx) with no shared host, and the only tenant found (careers.eploy.co.uk) publishes an empty live-jobs.xml sitemap and no job links.",
+  "notes": "",
+  "examples": []
  }
 ]
