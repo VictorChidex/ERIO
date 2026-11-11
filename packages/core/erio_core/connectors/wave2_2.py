@@ -15,6 +15,8 @@ limits, is in docs/connectors.md.
 - Taleez: ``sitemap-job.xml`` lists every public job page ``/apply/{id}`` (newest last), each
   with a JobPosting; robots.txt closes only /api/, /feeds/ and similar, so a crawl reads the
   newest 100 pages.
+- speedrun talent network: the ``/jobs.rss`` feed of its 100 newest roles, and each role's
+  page for the JobPosting (the sitemap holds decoy pages that robots.txt closes).
 - Djinni: the job list ``/jobs/?page=n`` (JobPosting data with the description inline for
   every job); robots.txt only closes /jobs2, /q, /developers and /free-jobs.
 """
@@ -341,6 +343,33 @@ class DjinniConnector(JsonLdConnector):
         return job
 
 
+# ----------------------------------------------------- speedrun talent network
+
+
+class SpeedrunConnector(JsonLdConnector):
+    """The speedrun talent network publishes ``/jobs.rss``, its 100 newest open roles, and
+    each role's page carries a JobPosting. (Its sitemap also lists decoy pages that robots.txt
+    marks off limits; the feed has none.)"""
+
+    LINK = re.compile(r"<link>(https://speedrun-talent-network\.com/jobs/[^<]+)</link>")
+
+    def __init__(self) -> None:
+        super().__init__(
+            "speedrun",
+            r"^/jobs/[a-z0-9-]+$",
+            frozenset({"speedrun-talent-network.com"}),
+            max_pages=100,
+            multi_employer=True,
+        )
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        response = fetcher.get(self.board_url(board_token))
+        if response.status != 200:
+            raise FetchError("http_error", f"HTTP {response.status}", response.status)
+        found = self.LINK.findall(response.body.decode("utf-8", "replace"))
+        return list(dict.fromkeys(u for u in found if "-ad00000" not in u))
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -365,6 +394,7 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         multi_employer=True,
         newest_first=True,
     ),
+    SpeedrunConnector(),
     LoxoConnector(),
     GestmaxConnector(),
     DjinniConnector(),

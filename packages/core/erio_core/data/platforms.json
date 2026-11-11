@@ -1564,5 +1564,15 @@
   "examples": [
    "https://taleez.com/sitemap-job.xml"
   ]
+ },
+ {
+  "slug": "speedrun",
+  "name": "speedrun talent network",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The a16z speedrun portfolio job board: its jobs.rss feed lists the 100 newest roles and each role page carries a schema.org JobPosting; robots.txt allows crawlers except decoy pages. Credit: link each job back to its speedrun talent network page.",
+  "examples": [
+   "https://speedrun-talent-network.com/jobs.rss"
+  ]
  }
 ]

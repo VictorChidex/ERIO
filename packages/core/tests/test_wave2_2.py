@@ -181,4 +181,22 @@ def test_taleez_reads_job_pages_from_the_job_sitemap_newest_first() -> None:
     assert fetched.complete
 
 
+def test_speedrun_reads_the_feed_and_role_pages_but_not_decoys() -> None:
+    site = "https://speedrun-talent-network.com"
+    fetched, jobs, fetcher = read(
+        "speedrun",
+        f"{site}/jobs.rss",
+        {
+            f"{site}/jobs.rss": body("speedrun_feed.xml"),
+            f"{site}/jobs/head-of-legal": body("speedrun_job.html"),
+        },
+    )
+    assert not any("ad00000" in u for u in fetcher.requested)
+    assert len(jobs) == 1
+    assert jobs[0].title == "Head of Legal Engineering, APAC"
+    assert jobs[0].company_name == "Harvey"
+    assert jobs[0].description_html
+    assert fetched.complete
+
+
 # --- end of tests ---
