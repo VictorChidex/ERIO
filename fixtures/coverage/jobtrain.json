@@ -1,0 +1,119 @@
+[
+ {
+  "source_slug": "jobtrain",
+  "board_token": "enwl",
+  "external_id": "55570ea59d2cb9119ace62dc",
+  "payload": {
+   "page_url": "https://www.jobtrain.co.uk/enwl/Job/JobDetail?JobId=13981",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "baseSalary": "&#xA3;36,000 plus &#xA3;3,000 starting bonus",
+    "datePosted": "2026-11-09",
+    "directApply": "True",
+    "description": "<div class=\"JT-inner\"><div class=\"JT-row JT-col-12 JT-section JT-text JT-text-100 JT-site JT-twelve JT-column\"><div class=\"JT-container\"><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"border: 1pt rgba(0, 0, 0, 1); padding: 0\">SP Electricity North West manages and invests in the power network that supplies electricity to the 2.4m homes and businesses across the North West. Our 2,400 colleagues manage the 13,000km of overhead lines, 44,000km of underground cables and thousands of electricity substations to keep power flowing and supporting green growth. We’re one of six distribution network operators in the UK and are regulated by Ofgem.</span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"border: 1pt rgba(0, 0, 0, 1); padding: 0\">We’re proud that in December 2024 we were named Utility of the Year by Utility Week magazine who said we punched above our weight and used innovation to solve some of the industry’s most difficult challenges. Come and be part of our team and make a difference.</span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"border: 1pt rgba(0, 0, 0, 1); padding: 0\">Now part of the Iberdrola and ScottishPower group, we’re collectively building smarter, greener electricity networks that will get Britain growing by investing in a better future, quicker. </span></span></span></p></div></div><div class=\"JT-col-9 JT-section JT-text JT-text-75-right JT-nine JT-column JT-last JT-pt\"><div class=\"JT-container\"><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">⚡<strong>L</strong><b><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">aunch Your Engineering Career with Us</span></span></b></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">Looking for a graduate programme where you can apply what you've learned, develop new skills and make a real difference?</span></span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">Join us as an Electrical Engineering Graduate and help shape the future of energy. You'll work on projects that keep communities connected, support the transition to net zero and deliver sustainable energy solutions for generations to come.</span></span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">From your first day, you'll be given meaningful work, real responsibilities and the support of experienced engineers who are committed to helping you succeed. Whether you're designing innovative network solutions, operating critical infrastructure or commissioning new equipment, you'll play an important role in powering the future.</span></span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">This is your opportunity to turn your degree into a rewarding engineering career while developing the knowledge, skills and confidence needed to become a future leader within the industry.</span></span></span></span></p><p class=\"MsoNoSpacing\"><br></p><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">🔧 <b><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1",
+    "educationRequirements": "Not Specified",
+    "employmentType": "Permanent",
+    "validThrough": "2027-02-12T00:00",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "North West",
+      "addressRegion": "",
+      "postalCode": "",
+      "addressCountry": "GB"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "ENWL",
+     "sameAs": "https://www.enwl.co.uk/",
+     "logo": "https://www.jobtrain.co.uk/enwl/clientimages/metaimage.jpg"
+    },
+    "title": "Electrical Engineering Graduate",
+    "url": "https://www.jobtrain.co.uk/enwl/Job/JobDetail?JobId=13981"
+   }
+  },
+  "fetched_at": "2026-11-11T14:47:00.411145Z",
+  "content_hash": "a83c7d9cd3060aeabbafc1322c91153947063ad26770ee86c3abb2bfc2fafbbe"
+ },
+ {
+  "source_slug": "jobtrain",
+  "board_token": "enwl",
+  "external_id": "6d8da1bbcf22527cc2c67888",
+  "payload": {
+   "page_url": "https://www.jobtrain.co.uk/enwl/Job/JobDetail?JobId=13969",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "baseSalary": "&#xA3;56,000- &#xA3;63,000 depending on experience ",
+    "datePosted": "2026-11-09",
+    "directApply": "True",
+    "description": "<div class=\"JT-inner\"><div class=\"JT-row JT-col-12 JT-section JT-text JT-text-100 JT-site JT-twelve JT-column\"><div class=\"JT-container cke_focus\"><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">Electricity North West Construction &amp; Maintenance Limited (ENWCML) is the specialist engineering arm of the Electricity North West Group. We deliver high and low voltage infrastructure services across the UK, operating independently from the regulated network business. Our expertise spans the design, construction, operation, and maintenance of private electrical networks for commercial and industrial clients.</span></span></span></span></p><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">With a growing national footprint and a reputation for technical excellence, ENWCML plays a vital role in supporting the UK’s energy transition and infrastructure resilience.</span></span></span></span></p><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">Now part of the Iberdrola and ScottishPower group, we’re building smarter, greener electricity networks to help Britain grow—investing in a better future, faster.</span></span></span></span></p></div></div><div class=\"JT-col-9 JT-section JT-text JT-text-75-right JT-nine JT-column JT-last JT-pt\"><div class=\"JT-container\"><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><b><span style=\"background: rgba(255, 255, 255, 1)\"><span style=\"color: rgba(0, 0, 0, 1)\">A Fantastic Opportunity: Project Manager </span></span></b></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"line-height: 107%\"><span style=\"color: rgba(0, 0, 0, 1)\">As a Project Manager, you will own a portfolio of construction projects from the point of sale all through delivery up to final customer handover and financial completion. Leading the project team, you will be required to make sure everyone works to the project scope, to produce a high quality product in a safe way whilst also outperforming budget and achieving the customers delivery timelines. You will own your customer’s relationship and will aim to complete our work providing customer satisfaction that will maintain excellent relations leading to future project opportunities. </span></span></span></span></p><p style=\"text-align: justify; margin-bottom: 11px\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"line-height: 107%\"><span style=\"color: rgba(0, 0, 0, 1)\">You will have a sound working knowledge and understanding of electrical construction, commercial contracts, customer relationships and site safety. Focused on delivery, you will be accountable for developing the Construction Phase Plan, and producing RAMS to ensure safe delivery of projects. Provide clear communication of the required scope, specifications and timelines, along with information of all hazards, risks and controls for work, that are needed for the project to be completed on time, to a high standard and within budget. </span></span></span></span></p><p style=\"text-align: justify; margin-bottom: 11px\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"line-height: 107%\"><span style=\"color: rgba(0, 0, 0, 1)\">You will be responsible for the successful delivery of a portfolio of construction projects valued between £250,000 and £2 million, ensuring projects are completed safely, efficiently, and to a high standard. The role involves leading all aspects of health and safety compliance, including",
+    "educationRequirements": "Not Specified",
+    "employmentType": "Permanent",
+    "validThrough": "2026-11-30T00:00",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Blackburn",
+      "addressRegion": "UK",
+      "postalCode": "BB1 3HT",
+      "addressCountry": "GB"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "ENWL",
+     "sameAs": "https://www.enwl.co.uk/",
+     "logo": "https://www.jobtrain.co.uk/enwl/clientimages/metaimage.jpg"
+    },
+    "title": "Project Manager",
+    "url": "https://www.jobtrain.co.uk/enwl/Job/JobDetail?JobId=13969"
+   }
+  },
+  "fetched_at": "2026-11-11T14:47:02.243415Z",
+  "content_hash": "a5c9b9e2fadf222efd109c12b4425e9feb89b4bad0ea337caa4358ad00f0638e"
+ },
+ {
+  "source_slug": "jobtrain",
+  "board_token": "enwl",
+  "external_id": "ec598023e7999ef56efc76ad",
+  "payload": {
+   "page_url": "https://www.jobtrain.co.uk/enwl/Job/JobDetail?JobId=13878",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "baseSalary": "&#xA3;40,299.94 - &#xA3;42,413.14",
+    "datePosted": "2026-11-09",
+    "directApply": "True",
+    "description": "<div class=\"JT-inner\"><div class=\"JT-row JT-col-12 JT-section JT-text JT-text-100 JT-site JT-twelve JT-column\"><div class=\"JT-container\"><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"border: 1pt rgba(0, 0, 0, 1); padding: 0\">SP Electricity North West manages and invests in the power network that supplies electricity to the 2.4m homes and businesses across the North West. Our 2,400 colleagues manage the 13,000km of overhead lines, 44,000km of underground cables and thousands of electricity substations to keep power flowing and supporting green growth. We’re one of six distribution network operators in the UK and are regulated by Ofgem.</span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"border: 1pt rgba(0, 0, 0, 1); padding: 0\">We’re proud that in December 2024 we were named Utility of the Year by Utility Week magazine who said we punched above our weight and used innovation to solve some of the industry’s most difficult challenges. Come and be part of our team and make a difference.</span></span></span></p><p class=\"MsoNoSpacing\"><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><span style=\"border: 1pt rgba(0, 0, 0, 1); padding: 0\">Now part of the Iberdrola and ScottishPower group, we’re collectively building smarter, greener electricity networks that will get Britain growing by investing in a better future, quicker. </span></span></span></p></div></div><div class=\"JT-col-9 JT-section JT-text JT-text-75-right JT-nine JT-column JT-last JT-pt\"><div class=\"JT-container cke_focus\"><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Are you an experienced HGV driver looking for a varied role where no two days are the same? We're looking for a safety-focused and reliable individual to join our Fitting and Engineering teams based at our Oldham Depot. </span></span></p><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">In this role, you'll be responsible for driving our specialist Test Van and a range of HGV and plant vehicles, supporting engineers on-site, setting up traffic management, and ensuring equipment, materials, and plant are transported safely and efficiently across our network. </span></span></p><p><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\"><strong>What you'll be doing </strong></span></span></p><ul><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Driving the ‘O’ Licence Test Van and other HGV vehicles. </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Supporting Engineers with the set-up and operation of the Test Van. </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Setting up and maintaining traffic management arrangements on site. </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Loading, unloading and transporting plant, materials and equipment. </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Operating vehicle-mounted cranes, forklifts and lifting equipment (where trained and authorised). </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Carrying out daily vehicle checks, reporting defects and maintaining vehicle cleanliness. </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Ensuring all loads are secured and transported in accordance with legislation and company standards. </span></span></li><li><span style=\"font-size: 14px\"><span style=\"font-family: Arial, Helvetica, sans-serif\">Working safely at all times",
+    "educationRequirements": "Not Specified",
+    "employmentType": "Permanent",
+    "validThrough": "2026-11-23T00:00",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Oldham",
+      "addressRegion": "UK",
+      "postalCode": "OL9 9XB",
+      "addressCountry": "GB"
+     }
+    },
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "ENWL",
+     "sameAs": "https://www.enwl.co.uk/",
+     "logo": "https://www.jobtrain.co.uk/enwl/clientimages/metaimage.jpg"
+    },
+    "title": "Test Van / HGV Driver",
+    "url": "https://www.jobtrain.co.uk/enwl/Job/JobDetail?JobId=13878"
+   }
+  },
+  "fetched_at": "2026-11-11T14:47:04.357145Z",
+  "content_hash": "049d1d6bd239b2c142812bd517e01ccf6670e19c510437a76fb676d0044cf7af"
+ }
+]

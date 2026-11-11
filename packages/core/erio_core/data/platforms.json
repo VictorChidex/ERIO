@@ -1638,5 +1638,179 @@
    "paytonco/229",
    "scientificdrilling/313"
   ]
+ },
+ {
+  "slug": "academictransfer",
+  "name": "AcademicTransfer",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public vacancy pages of academictransfer.com (Dutch and international academic jobs) read from its vacancies sitemap (schema.org JobPosting); robots.txt allows crawlers with a 10 second delay, so a crawl reads the newest 100. Credit: link each job back to its AcademicTransfer page.",
+  "examples": [
+   "https://www.academictransfer.com/sitemap-vacancies.xml"
+  ]
+ },
+ {
+  "slug": "hrmos",
+  "name": "HRMOS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public career pages of hrmos.co/pages/{company}/jobs (server-rendered list, 100 per page) and each job page's schema.org JobPosting; hrmos.co has no robots.txt. Token is the company's jobs page address.",
+  "examples": [
+   "https://hrmos.co/pages/uzabase/jobs",
+   "https://hrmos.co/pages/hrmos/jobs"
+  ]
+ },
+ {
+  "slug": "onlyfy",
+  "name": "onlyfy",
+  "kind": "ats",
+  "blocked": "no public job list: {company}.onlyfy.jobs serves a client-rendered, noindex candidate portal (no job links, sitemap or feed in the page; /jobs, /sitemap.xml and feeds answer 404), and job data loads through the app's private GraphQL endpoint",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "techtree",
+  "name": "TechTree",
+  "kind": "service",
+  "blocked": "no identifiable public job source: techtree.dk, techtree.com, techtree.io, techtree.ai and techtree.in are unrelated sites (a biotech firm, an education site, an event page, a web agency) with no job feed, sitemap or job pages, and web search finds no TechTree job board or career platform",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "loxo",
+  "name": "Loxo",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public careers pages of Loxo agencies: app.loxo.co/{agency} lists the published jobs (server-rendered) and each job page on {agency}.app.loxo.co carries the description as JSON; robots.txt allows all. The token is the agency name.",
+  "examples": [
+   "syndesus",
+   "loxo"
+  ]
+ },
+ {
+  "slug": "gestmax",
+  "name": "Gestmax / Kioskemploi",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public career sites of Gestmax (Kioskemploi) customers at {name}.gestmax.fr: the server-rendered /search list (10 per page) and each job page's fields and text; no robots.txt is served. The token is the site name or its https address.",
+  "examples": [
+   "cned-recrutement",
+   "pae"
+  ]
+ },
+ {
+  "slug": "djinni",
+  "name": "Djinni",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Djinni's public job list (djinni.co/jobs/?page=n, 15 jobs per page): every job carries schema.org JobPosting data with the description inline; robots.txt allows /jobs/ and the sitemap. A crawl reads the newest 20 pages. Credit: link each job back to its Djinni page.",
+  "examples": [
+   "https://djinni.co/jobs/"
+  ]
+ },
+ {
+  "slug": "hurma",
+  "name": "Hurma",
+  "kind": "ats",
+  "blocked": "no public job list found: {company}.hurma.work answers with the tenant login page, the help center does not name the career site address, and no customer career page could be found by search",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "taleez",
+  "name": "Taleez",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public job pages of taleez.com (French recruiting platform) read from sitemap-job.xml (/apply/{id}, schema.org JobPosting); robots.txt allows /apply/ for crawlers. A crawl reads the newest 100 of the sitemap. Credit: link each job back to its Taleez page.",
+  "examples": [
+   "https://taleez.com/sitemap-job.xml"
+  ]
+ },
+ {
+  "slug": "speedrun",
+  "name": "speedrun talent network",
+  "kind": "service",
+  "blocked": "",
+  "notes": "The a16z speedrun portfolio job board: its jobs.rss feed lists the 100 newest roles and each role page carries a schema.org JobPosting; robots.txt allows crawlers except decoy pages. Credit: link each job back to its speedrun talent network page.",
+  "examples": [
+   "https://speedrun-talent-network.com/jobs.rss"
+  ]
+ },
+ {
+  "slug": "simplifyhr",
+  "name": "Simplify.hr",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public job list of jobs.simplify.hr (the Simplify.hr employers' open vacancies, ten a page) and each vacancy page's schema.org JobPosting; robots.txt allows crawlers other than AI-training bots. A crawl reads the first 100. Credit: link each job back to its Simplify.hr page.",
+  "examples": [
+   "https://jobs.simplify.hr/"
+  ]
+ },
+ {
+  "slug": "seamlesshiring",
+  "name": "SeamlessHiring",
+  "kind": "ats",
+  "blocked": "no public job list: {company}.seamlesshiring.com serves a client-rendered single page app (no job links or structured data in the HTML; /sitemap.xml, /jobs and feeds answer 404), and jobs load through an undocumented private API",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "quickin",
+  "name": "Quickin",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Quickin's documented public career page API (api.quickin.io/public/{account}/jobs, JSON, no authentication); the token is the account id that the career page jobs.quickin.io/{name} embeds in its page data.",
+  "examples": [
+   "6244892264f86f001528b4e0",
+   "652d3c23009f320012ca188c"
+  ]
+ },
+ {
+  "slug": "jobtrain",
+  "name": "Jobtrain",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public Jobtrain career sites at www.jobtrain.co.uk/{client}: the site's own job card list (/{client}/Home/_JobCard) names each vacancy and each job page carries a schema.org JobPosting; jobtrain.co.uk serves no robots.txt. The token is the client name.",
+  "examples": [
+   "enwl",
+   "citizensadvice"
+  ]
+ },
+ {
+  "slug": "gupy",
+  "name": "Gupy",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public Gupy career pages at {company}.gupy.io: the page's own data lists the open jobs and each /jobs/{id} page's data adds the description; robots.txt allows all. Talent-pool entries are skipped. The token is the subdomain.",
+  "examples": [
+   "ambev",
+   "carreiras"
+  ]
+ },
+ {
+  "slug": "hireclick",
+  "name": "HireClick",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "HireClick's own job board (careers.hireclick.com/jobboard): its list call /api/Controllers/JobBoard/GetSettingsAndJobs names the open jobs and each job page carries a schema.org JobPosting; robots.txt allows crawlers with a 10 second delay. The token is the employer id the board page prints (only HireClick's own board could be found; customer boards were not found by search).",
+  "examples": [
+   "7C0F8BC3-ECEB-4A4B-82A1-98C96A407068"
+  ]
+ },
+ {
+  "slug": "appone",
+  "name": "AppOne / Paychex",
+  "kind": "ats",
+  "blocked": "no public job list: AppOne career sites (joinsyf.appone.com) list jobs only through an ASP.NET form postback with view state (Search.aspx answers 404 to a plain request), and there is no sitemap or feed (www.appone.com/sitemap.xml and /robots.txt answer 404); single job pages (MainInfoReq.asp?R_ID=) cannot be enumerated",
+  "notes": "",
+  "examples": []
+ },
+ {
+  "slug": "talentstorm",
+  "name": "talentstorm",
+  "kind": "ats",
+  "blocked": "no public job list: career sites ({name}.talentstorm.de) are a client-rendered Angular app with no job links or structured data in the HTML, and its job offers endpoint (api.talentstorm.de/api/v1/joboffers/basic) answers 401 Authentication Required",
+  "notes": "",
+  "examples": []
  }
 ]

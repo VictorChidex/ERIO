@@ -1,0 +1,464 @@
+[
+ {
+  "source_slug": "gupy",
+  "board_token": "ambev",
+  "external_id": "12202203",
+  "payload": {
+   "company": "Ambev",
+   "listed": {
+    "id": 12202203,
+    "title": "Ambev | Aprendiz - Cervejaria Juatuba/MG",
+    "type": "vacancy_type_apprentice",
+    "department": "F. MINAS PACKAGING",
+    "workplace": {
+     "address": {
+      "country": "Brasil",
+      "stateShortName": "MG",
+      "state": "Minas Gerais",
+      "city": "Juatuba",
+      "district": "Centro"
+     },
+     "workplaceType": "on-site"
+    },
+    "quickApply": false
+   },
+   "detail": {
+    "id": 12202203,
+    "name": "Ambev | Aprendiz - Cervejaria Juatuba/MG",
+    "description": "<p>Atualmente a nossa Cultura passa por um processo de transformação e evolução. A nossa história e o nosso jeito de ser são marcados por sonhos grandes que nos trouxeram até aqui e que nos enchem de orgulho! Mas acreditamos que o momento de evoluir é sempre o agora e poder fazer isso junto com a nossa gente é o que torna nossa jornada ainda mais incrível.&nbsp;</p><p><br></p><p>Nossa cultura honra o passado e hoje também é norteada por 3 principais valores que nos guiam para sermos uma cia cada vez mais inclusiva, diversa, colaborativa, tecnológica e conectada ao futuro do mundo e da nossa plataforma de negócios, são eles: Escuta Ativa, Colaboração e Visão de Longo Prazo, cada um abarcando outras competências que fazem parte do nosso jeito de ser. Nos orgulhamos da nossa capacidade de realização e paixão que nos trouxeram até aqui e para continuarmos a evoluir juntos te convidamos a fazer parte também dessa jornada.&nbsp;</p><p><br></p><p>Prazer, somos a Ambev e adoraríamos te ter com a gente.&nbsp;</p><p>Vamos juntos?!</p>",
+    "prerequisites": "<h3>Requisitos da vaga</h3><ul><li>Ensino Médio completo;</li><li>Disponibilidade para participar do programa de aprendizagem em instituição parceira localizada em <strong>Contagem/MG</strong>, com atividades presenciais <strong>uma vez por semana</strong>;</li><li>Disponibilidade para atuar presencialmente na <strong>Cervejaria Ambev - Unidade Juatuba/MG</strong>, no horário de <strong>08h00 às 14h00</strong>;</li><li>Facilidade de deslocamento para as localidades de <strong>Juatuba/MG</strong> e <strong>Contagem/MG</strong>, conforme cronograma do programa de aprendizagem.</li></ul><p><br></p>",
+    "handicapped": false,
+    "urlPicture": null,
+    "addressLine": "Rod. MG 050, Km 46/47, S/N, Juatuba, Minas Gerais, Brasil, 35675-000",
+    "addressCity": "Juatuba",
+    "addressState": "Minas Gerais",
+    "addressStateShortName": "MG",
+    "addressCountry": "Brasil",
+    "jobLanguage": null,
+    "jobType": "vacancy_type_apprentice",
+    "jobSteps": [
+     {
+      "id": 77646639,
+      "name": "Cadastro",
+      "order": 0,
+      "type": "register",
+      "category": "registration"
+     },
+     {
+      "id": 77646636,
+      "name": "Mapeamento Ambev",
+      "order": 1,
+      "type": "online",
+      "category": "evaluation"
+     },
+     {
+      "id": 77646635,
+      "name": "Entrevista - Recrutamento",
+      "order": 2,
+      "type": "offline",
+      "category": "screening"
+     },
+     {
+      "id": 77646638,
+      "name": "Conflito de interesse",
+      "order": 3,
+      "type": "online",
+      "category": "evaluation"
+     },
+     {
+      "id": 77646641,
+      "name": "Entrevista - Unidade",
+      "order": 4,
+      "type": "offline",
+      "category": "interview"
+     },
+     {
+      "id": 77646640,
+      "name": "Oferta e ASO",
+      "order": 5,
+      "type": "offline",
+      "category": "offer"
+     },
+     {
+      "id": 77646637,
+      "name": "Contratação",
+      "order": 100,
+      "type": "final",
+      "category": "hiring"
+     }
+    ],
+    "responsibilities": "<p>Você está pronto(a) para dar o primeiro passo na sua carreira? Estamos em busca de um(a) Jovem Aprendiz que esteja ansioso para aprender e crescer em um ambiente dinâmico e acolhedor!</p><p><br></p><p>O que oferecemos:</p><p><br></p><ul><li>Uma oportunidade incrível de aprendizado prático, onde você poderá desenvolver habilidades essenciais para sua trajetória profissional.</li><li>A chance de trabalhar ao lado de uma equipe experiente, recebendo orientação direta dos analistas e outros profissionais do time.</li><li>Um ambiente colaborativo que valoriza a criatividade, a inovação e o crescimento pessoal.</li></ul><p><br></p><p>Responsabilidades:</p><p><br></p><ul><li>Mergulhar nos processos administrativos da empresa, aprendendo sobre cada etapa com dedicação.</li><li>Apoiar os analistas nas demandas diárias, contribuindo ativamente para o sucesso das operações administrativas.</li><li>Participar de projetos desafiadores que vão enriquecer seu conhecimento e experiência no mundo corporativo.</li></ul><p><br></p><p>Se você é curioso(a), motivado(a) e deseja construir uma base sólida para sua carreira enquanto faz parte de um time incrível, essa vaga é perfeita para você! Venha crescer conosco!</p>",
+    "relevantExperiences": "<p><span style=\"color: black;\">Hoje na AMBEV nós trabalhamos com os melhores benefícios para você e também para os seus dependentes legais! Aqui na companhia nós conseguimos te proporcionar:</span></p><p><br></p><ul><li><strong>Mais cuidado com a sua saúde</strong>&nbsp;através de&nbsp;Plano Médico, Odontológico, Telemedicina, Seguro de Vida e Gympass</li><li><strong>Saúde mental</strong>&nbsp;com a Telemedicina Dasa</li><li>Reuniões de final de ano com a família ainda mais prazerosas, pois oferecemos&nbsp;<strong>Cesta de Natal</strong>&nbsp;e ainda brinquedo para quem tem filhos</li><li><strong style=\"color: rgb(36, 36, 36);\">Refeição</strong><span style=\"color: rgb(36, 36, 36);\"> no refeitório da Cervejaria;</span></li><li>O&nbsp;<strong>vale transporte</strong>&nbsp;é opcional e você pode conferir no modelo da vaga</li><li>Abono assiduidade</li><li><strong>Auxílio Creche&nbsp;</strong>ou&nbsp;<strong>Auxílio babá﻿</strong></li></ul><p><span style=\"color: black;\">&nbsp;</span></p><p><span style=\"color: black;\">Além de sonhar, se desenvolver, construir e crescer dentro de um ambiente meritocrático e inclusivo e ser capaz de fazer a diferença unindo as pessoas por um mundo melhor!</span></p><p>ℹ️ Tratamento de Dados Pessoais:</p><p><br></p><p>Para saber mais sobre como tratamos os seus dados pessoais no contexto de nossos processos seletivos, acesse nossa Política de Privacidade para Candidatos aqui: <a target=\"_blank\" rel=\"noreferrer noopener\" key=\"link1\" href=https://www.ambev.com.br/sites/g/files/wnfebl12286/files/Projetos/Ambev-Institucional/politicas-de-privacidade-candidatos-2026.pdf&nbsp>https://www.ambev.com.br/sites/g/files/wnfebl12286/files/Projetos/Ambev-Institucional/politicas-de-privacidade-candidatos-2026.pdf&nbsp</a>;</p>",
+    "urlSmartphonePicture": null,
+    "urlSocialPicture": null,
+    "status": "published",
+    "code": "0119-12202203",
+    "reason": "staff_replacement",
+    "publishedAt": "2026-08-20T18:49:00.319Z",
+    "questionForm": null,
+    "quickApply": false,
+    "expiresAt": "2027-01-25",
+    "workplaceType": "on-site",
+    "publicationType": "external",
+    "videoSectionTitle": null,
+    "videoUrl": null,
+    "skills": null,
+    "addressCountryShortName": "BR",
+    "registerEndDate": "2027-02-28",
+    "isJobPostedOnGoogle": false,
+    "isInternalMobility": false,
+    "company": {
+     "id": 119,
+     "timezone": "America/Sao_Paulo",
+     "subdomain": "ambev",
+     "language": "pt"
+    },
+    "requiredFields": null,
+    "careerPage": {
+     "name": "Ambev",
+     "urlLogo": "https://attachments.gupy.io/production/companies/119/career/20/images/2020-05-05_14-17_logo.png",
+     "urlSite": "",
+     "companyDescriptionTitle": "Seja bem-vindo à Ambev ",
+     "about": "<p>ENTRE PARA UM TIME QUE SONHA TÃO GRANDE COMO VOCÊ!</p><p><br></p><p>Somos milhares de apaixonados e apaixonadas pelo que fazemos. Temos um orgulho imenso do nosso poder de impacto positivo e reconhecemos que, agindo como donos e donas, cada um de nós desempenha um papel fundamental no sucesso do nosso ecossistema. Somado a isso, todas nossas grandes conquistas tem o sabor da colaboração! Nosso sucesso é compartilhado e acreditamos que por meio da colaboração podemos encantar ainda mais o nossos clientes com as marcas que eles amam hoje, ao mesmo tempo em que podemos atender aos gostos de amanhã.&nbsp;</p><p>🍻</p><p><br></p><p>A Nossa Cultura é focada em construir um ambiente inclusivo e colaborativo, onde as pessoas possam ser o melhor delas mesmas - e nos ajudar a ser a nossa melhor versão! Procuramos gente com paixão, curiosidade e coragem para fazer a diferença aqui.&nbsp;</p><p><br></p><p>Acolhemos talentos diversos, porque acreditamos que grandes ideias vêm de pessoas com diferentes trajetórias. Oferecemos oportunidades para talentos que estão ingressando no mercado de trabalho e somos apaixonados por impulsionar a nossa gente.</p><p><br></p><p><strong>É trabalhando e crescendo juntos que atingimos o nosso propósito: Sonhamos Grande por um Futuro com Mais Razões para Brindar!</strong></p>",
+     "subdomain": "ambev",
+     "urlMainImage": "https://attachments.gupy.io/production/companies/119/career/20/images/2023-11-13_18-50_bannerUrl.png",
+     "socialPictureUrl": "https://attachments.gupy.io/production/socialmedias/119/3fd54620ff4a807488349dea9e84f770_Header%20P%C3%A1gina%20Ambev.jpg",
+     "socialLinks": {
+      "type": "social_links_section",
+      "sectionTitle": "Saiba mais sobre a Ambev",
+      "urlSite": "https://www.ambev.com.br/",
+      "urlLinkedin": "https://www.linkedin.com/company/162402/",
+      "urlFacebook": "https://www.facebook.com/cervejariaambev/",
+      "urlInstagram": "https://www.instagram.com/ambev",
+      "urlGlassdoor": "https://www.glassdoor.com.br/Vis%C3%A3o-geral/Trabalhar-na-Ambev-EI_IE5797.13,18.htm"
+     },
+     "visibility": "public",
+     "appearances": {
+      "id": 4714,
+      "careerPageId": 20,
+      "companyLogoUrl": "https://attachments.gupy.io/production/companies/119/career/20/images/2020-05-05_14-17_logo.png",
+      "bannerUrl": "https://attachments.gupy.io/production/companies/119/career/20/images/2023-11-13_18-50_bannerUrl.png",
+      "colorsConfig": {
+       "linkColor": "#003d97",
+       "buttonFontColor": "#ffffff",
+       "buttonBackgroundColor": "#003d97"
+      }
+     }
+    },
+    "companyIntegrations": {
+     "gaTrackingCode": ""
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:49:41.044385Z",
+  "content_hash": "67c89c30279cd6ab0180ba2dfba995fae1802b38d9a62e405c8a95ccc8685eda"
+ },
+ {
+  "source_slug": "gupy",
+  "board_token": "ambev",
+  "external_id": "12422448",
+  "payload": {
+   "company": "Ambev",
+   "listed": {
+    "id": 12422448,
+    "title": "AMBEV | Aprendiz de Nível de Serviço (CDD Diadema/SP)",
+    "type": "vacancy_type_apprentice",
+    "department": "SALES R. SP - DCC DIADEMA",
+    "workplace": {
+     "address": {
+      "country": "Brasil",
+      "stateShortName": "SP",
+      "state": "São Paulo",
+      "city": "Diadema",
+      "district": "Piraporinha"
+     },
+     "workplaceType": "on-site"
+    },
+    "quickApply": false
+   },
+   "detail": {
+    "id": 12422448,
+    "name": "AMBEV | Aprendiz de Nível de Serviço (CDD Diadema/SP)",
+    "description": "<p>Atualmente a nossa Cultura passa por um processo de transformação e evolução. A nossa história e o nosso jeito de ser são marcados por sonhos grandes que nos trouxeram até aqui e que nos enchem de orgulho! Mas acreditamos que o momento de evoluir é sempre o agora e poder fazer isso junto com a nossa gente é o que torna nossa jornada ainda mais incrível.&nbsp;</p><p><br></p><p>Nossa cultura honra o passado e hoje também é norteada por 3 principais valores que nos guiam para sermos uma cia cada vez mais inclusiva, diversa, colaborativa, tecnológica e conectada ao futuro do mundo e da nossa plataforma de negócios, são eles: Escuta Ativa, Colaboração e Visão de Longo Prazo, cada um abarcando outras competências que fazem parte do nosso jeito de ser. Nos orgulhamos da nossa capacidade de realização e paixão que nos trouxeram até aqui e para continuarmos a evoluir juntos te convidamos a fazer parte também dessa jornada.&nbsp;</p><p><br></p><p>Prazer, somos a Ambev e adoraríamos te ter com a gente.&nbsp;</p><p>Vamos juntos?!</p>",
+    "prerequisites": "<p><br></p>",
+    "handicapped": true,
+    "urlPicture": null,
+    "addressLine": "Avenida Fagundes de Oliveira, Diadema, São Paulo, Brasil, 09950-300",
+    "addressCity": "Diadema",
+    "addressState": "São Paulo",
+    "addressStateShortName": "SP",
+    "addressCountry": "Brasil",
+    "jobLanguage": null,
+    "jobType": "vacancy_type_apprentice",
+    "jobSteps": [
+     {
+      "id": 80934656,
+      "name": "Cadastro",
+      "order": 0,
+      "type": "register",
+      "category": "registration"
+     },
+     {
+      "id": 80934653,
+      "name": "Mapeamento Ambev",
+      "order": 1,
+      "type": "online",
+      "category": "evaluation"
+     },
+     {
+      "id": 80934652,
+      "name": "Entrevista - Recrutamento",
+      "order": 2,
+      "type": "offline",
+      "category": "screening"
+     },
+     {
+      "id": 80934655,
+      "name": "Conflito de interesse",
+      "order": 3,
+      "type": "online",
+      "category": "evaluation"
+     },
+     {
+      "id": 80934658,
+      "name": "Entrevista - Unidade",
+      "order": 4,
+      "type": "offline",
+      "category": "interview"
+     },
+     {
+      "id": 80934657,
+      "name": "Oferta e ASO",
+      "order": 5,
+      "type": "offline",
+      "category": "offer"
+     },
+     {
+      "id": 80934654,
+      "name": "Contratação",
+      "order": 100,
+      "type": "final",
+      "category": "hiring"
+     }
+    ],
+    "responsibilities": "<p>Você está pronto(a) para dar o primeiro passo na sua carreira? Estamos em busca de um(a) Jovem Aprendiz que esteja ansioso para aprender e crescer em um ambiente dinâmico e acolhedor!</p><p><br></p><p>O que oferecemos:</p><p><br></p><ul><li>Uma oportunidade incrível de aprendizado prático, onde você poderá desenvolver habilidades essenciais para sua trajetória profissional.</li><li>A chance de trabalhar ao lado de uma equipe experiente, recebendo orientação direta dos analistas e outros profissionais do time.</li><li>Um ambiente colaborativo que valoriza a criatividade, a inovação e o crescimento pessoal.</li></ul><p><br></p><p>Responsabilidades:</p><p><br></p><ul><li>Mergulhar nos processos administrativos da empresa, aprendendo sobre cada etapa com dedicação.</li><li>Apoiar os analistas nas demandas diárias, contribuindo ativamente para o sucesso das operações administrativas.</li><li>Participar de projetos desafiadores que vão enriquecer seu conhecimento e experiência no mundo corporativo.</li></ul><p><br></p><p>Se você é curioso(a), motivado(a) e deseja construir uma base sólida para sua carreira enquanto faz parte de um time incrível, essa vaga é perfeita para você! Venha crescer conosco!</p>",
+    "relevantExperiences": "<p><span style=\"color: black;\">Hoje na AMBEV nós trabalhamos com os melhores benefícios para você e também para os seus dependentes legais! Aqui na companhia nós conseguimos te proporcionar:</span></p><p><br></p><ul><li><strong>Mais cuidado com a sua saúde</strong>&nbsp;através de&nbsp;Plano Médico, Odontológico, Telemedicina, Seguro de Vida e Gympass</li><li><strong>Saúde mental</strong>&nbsp;com a Telemedicina Dasa</li><li>Reuniões de final de ano com a família ainda mais prazerosas, pois oferecemos&nbsp;<strong>Cesta de Natal</strong>&nbsp;e ainda brinquedo para quem tem filhos</li><li><span style=\"color: rgb(36, 36, 36);\">A possibilidade de você fazer um bom mercado ou comer no restaurante que você gosta com</span><strong>&nbsp;Vale Alimentação ou Refeição</strong>, pois você poderá optar por um destes benefícios</li><li>O&nbsp;<strong>vale transporte</strong>&nbsp;é opcional e você pode conferir no modelo da vaga</li><li>Abono assiduidade</li><li><strong>Auxílio Creche&nbsp;</strong>ou&nbsp;<strong>Auxílio babá﻿</strong></li></ul><p><span style=\"color: black;\">&nbsp;</span></p><p><span style=\"color: black;\">Além de sonhar, se desenvolver, construir e crescer dentro de um ambiente meritocrático e inclusivo e ser capaz de fazer a diferença unindo as pessoas por um mundo melhor!</span></p><p>﻿ℹ️ Tratamento de Dados Pessoais:</p><p><br></p><p>Para saber mais sobre como tratamos os seus dados pessoais no contexto de nossos processos seletivos, acesse nossa Política de Privacidade para Candidatos aqui: <a target=\"_blank\" rel=\"noreferrer noopener\" key=\"link1\" href=https://www.ambev.com.br/sites/g/files/wnfebl12286/files/Projetos/Ambev-Institucional/politicas-de-privacidade-candidatos-2026.pdf&nbsp>https://www.ambev.com.br/sites/g/files/wnfebl12286/files/Projetos/Ambev-Institucional/politicas-de-privacidade-candidatos-2026.pdf&nbsp</a>;</p>",
+    "urlSmartphonePicture": null,
+    "urlSocialPicture": null,
+    "status": "published",
+    "code": "0119-12422448",
+    "reason": "staff_replacement",
+    "publishedAt": "2026-09-08T19:07:27.652Z",
+    "questionForm": null,
+    "quickApply": false,
+    "expiresAt": "2026-12-31",
+    "workplaceType": "on-site",
+    "publicationType": "external",
+    "videoSectionTitle": null,
+    "videoUrl": null,
+    "skills": null,
+    "addressCountryShortName": "BR",
+    "registerEndDate": "2026-12-31",
+    "isJobPostedOnGoogle": true,
+    "isInternalMobility": false,
+    "company": {
+     "id": 119,
+     "timezone": "America/Sao_Paulo",
+     "subdomain": "ambev",
+     "language": "pt"
+    },
+    "requiredFields": null,
+    "careerPage": {
+     "name": "Ambev",
+     "urlLogo": "https://attachments.gupy.io/production/companies/119/career/20/images/2020-05-05_14-17_logo.png",
+     "urlSite": "",
+     "companyDescriptionTitle": "Seja bem-vindo à Ambev ",
+     "about": "<p>ENTRE PARA UM TIME QUE SONHA TÃO GRANDE COMO VOCÊ!</p><p><br></p><p>Somos milhares de apaixonados e apaixonadas pelo que fazemos. Temos um orgulho imenso do nosso poder de impacto positivo e reconhecemos que, agindo como donos e donas, cada um de nós desempenha um papel fundamental no sucesso do nosso ecossistema. Somado a isso, todas nossas grandes conquistas tem o sabor da colaboração! Nosso sucesso é compartilhado e acreditamos que por meio da colaboração podemos encantar ainda mais o nossos clientes com as marcas que eles amam hoje, ao mesmo tempo em que podemos atender aos gostos de amanhã.&nbsp;</p><p>🍻</p><p><br></p><p>A Nossa Cultura é focada em construir um ambiente inclusivo e colaborativo, onde as pessoas possam ser o melhor delas mesmas - e nos ajudar a ser a nossa melhor versão! Procuramos gente com paixão, curiosidade e coragem para fazer a diferença aqui.&nbsp;</p><p><br></p><p>Acolhemos talentos diversos, porque acreditamos que grandes ideias vêm de pessoas com diferentes trajetórias. Oferecemos oportunidades para talentos que estão ingressando no mercado de trabalho e somos apaixonados por impulsionar a nossa gente.</p><p><br></p><p><strong>É trabalhando e crescendo juntos que atingimos o nosso propósito: Sonhamos Grande por um Futuro com Mais Razões para Brindar!</strong></p>",
+     "subdomain": "ambev",
+     "urlMainImage": "https://attachments.gupy.io/production/companies/119/career/20/images/2023-11-13_18-50_bannerUrl.png",
+     "socialPictureUrl": "https://attachments.gupy.io/production/socialmedias/119/3fd54620ff4a807488349dea9e84f770_Header%20P%C3%A1gina%20Ambev.jpg",
+     "socialLinks": {
+      "type": "social_links_section",
+      "sectionTitle": "Saiba mais sobre a Ambev",
+      "urlSite": "https://www.ambev.com.br/",
+      "urlLinkedin": "https://www.linkedin.com/company/162402/",
+      "urlFacebook": "https://www.facebook.com/cervejariaambev/",
+      "urlInstagram": "https://www.instagram.com/ambev",
+      "urlGlassdoor": "https://www.glassdoor.com.br/Vis%C3%A3o-geral/Trabalhar-na-Ambev-EI_IE5797.13,18.htm"
+     },
+     "visibility": "public",
+     "appearances": {
+      "id": 4714,
+      "careerPageId": 20,
+      "companyLogoUrl": "https://attachments.gupy.io/production/companies/119/career/20/images/2020-05-05_14-17_logo.png",
+      "bannerUrl": "https://attachments.gupy.io/production/companies/119/career/20/images/2023-11-13_18-50_bannerUrl.png",
+      "colorsConfig": {
+       "linkColor": "#003d97",
+       "buttonFontColor": "#ffffff",
+       "buttonBackgroundColor": "#003d97"
+      }
+     }
+    },
+    "companyIntegrations": {
+     "gaTrackingCode": ""
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:49:41.044385Z",
+  "content_hash": "d8f77e08e6a8d4b8add5de02a865defa2db814a5711f904e2f9ffeca24fa14bf"
+ },
+ {
+  "source_slug": "gupy",
+  "board_token": "ambev",
+  "external_id": "12262140",
+  "payload": {
+   "company": "Ambev",
+   "listed": {
+    "id": 12262140,
+    "title": "AMBEV | Aprendiz (Transportadora Sete Lagoas/MG)",
+    "type": "vacancy_type_apprentice",
+    "department": "Administração Geral",
+    "workplace": {
+     "address": {
+      "country": "Brasil",
+      "stateShortName": "MG",
+      "state": "Minas Gerais",
+      "city": "Sete Lagoas",
+      "district": "Santa Felicidade "
+     },
+     "workplaceType": "on-site"
+    },
+    "quickApply": false
+   },
+   "detail": {
+    "id": 12262140,
+    "name": "AMBEV | Aprendiz (Transportadora Sete Lagoas/MG)",
+    "description": "<p>Atualmente a nossa Cultura passa por um processo de transformação e evolução. A nossa história e o nosso jeito de ser são marcados por sonhos grandes que nos trouxeram até aqui e que nos enchem de orgulho! Mas acreditamos que o momento de evoluir é sempre o agora e poder fazer isso junto com a nossa gente é o que torna nossa jornada ainda mais incrível.&nbsp;</p><p><br></p><p>Nossa cultura honra o passado e hoje também é norteada por 3 principais valores que nos guiam para sermos uma cia cada vez mais inclusiva, diversa, colaborativa, tecnológica e conectada ao futuro do mundo e da nossa plataforma de negócios, são eles: Escuta Ativa, Colaboração e Visão de Longo Prazo, cada um abarcando outras competências que fazem parte do nosso jeito de ser. Nos orgulhamos da nossa capacidade de realização e paixão que nos trouxeram até aqui e para continuarmos a evoluir juntos te convidamos a fazer parte também dessa jornada.&nbsp;</p><p><br></p><p>Prazer, somos a Ambev e adoraríamos te ter com a gente.&nbsp;</p><p>Vamos juntos?!</p>",
+    "prerequisites": "<p><br></p>",
+    "handicapped": true,
+    "urlPicture": null,
+    "addressLine": "AVENIDA S1, 301, Sete Lagoas, Minas Gerais, Brasil, 35703237",
+    "addressCity": "Sete Lagoas",
+    "addressState": "Minas Gerais",
+    "addressStateShortName": "MG",
+    "addressCountry": "Brasil",
+    "jobLanguage": null,
+    "jobType": "vacancy_type_apprentice",
+    "jobSteps": [
+     {
+      "id": 78663739,
+      "name": "Cadastro",
+      "order": 0,
+      "type": "register",
+      "category": "registration"
+     },
+     {
+      "id": 78663736,
+      "name": "Mapeamento Ambev",
+      "order": 1,
+      "type": "online",
+      "category": "evaluation"
+     },
+     {
+      "id": 78663735,
+      "name": "Entrevista - Recrutamento",
+      "order": 2,
+      "type": "offline",
+      "category": "screening"
+     },
+     {
+      "id": 78663738,
+      "name": "Conflito de interesse",
+      "order": 3,
+      "type": "online",
+      "category": "evaluation"
+     },
+     {
+      "id": 78663741,
+      "name": "Entrevista - Unidade",
+      "order": 4,
+      "type": "offline",
+      "category": "interview"
+     },
+     {
+      "id": 78663740,
+      "name": "Oferta e ASO",
+      "order": 5,
+      "type": "offline",
+      "category": "offer"
+     },
+     {
+      "id": 78663737,
+      "name": "Contratação",
+      "order": 100,
+      "type": "final",
+      "category": "hiring"
+     }
+    ],
+    "responsibilities": "<p>Você está pronto(a) para dar o primeiro passo na sua carreira? Estamos em busca de um(a) Jovem Aprendiz que esteja ansioso para aprender e crescer em um ambiente dinâmico e acolhedor!</p><p><br></p><p>O que oferecemos:</p><p><br></p><ul><li>Uma oportunidade incrível de aprendizado prático, onde você poderá desenvolver habilidades essenciais para sua trajetória profissional.</li><li>A chance de trabalhar ao lado de uma equipe experiente, recebendo orientação direta dos analistas e outros profissionais do time.</li><li>Um ambiente colaborativo que valoriza a criatividade, a inovação e o crescimento pessoal.</li></ul><p><br></p><p>Responsabilidades:</p><p><br></p><ul><li>Mergulhar nos processos administrativos da empresa, aprendendo sobre cada etapa com dedicação.</li><li>Apoiar os analistas nas demandas diárias, contribuindo ativamente para o sucesso das operações administrativas.</li><li>Participar de projetos desafiadores que vão enriquecer seu conhecimento e experiência no mundo corporativo.</li></ul><p><br></p><p>Se você é curioso(a), motivado(a) e deseja construir uma base sólida para sua carreira enquanto faz parte de um time incrível, essa vaga é perfeita para você! Venha crescer conosco!</p>",
+    "relevantExperiences": "<p><span style=\"color: black;\">Hoje na AMBEV nós trabalhamos com os melhores benefícios para você e também para os seus dependentes legais! Aqui na companhia nós conseguimos te proporcionar:</span></p><p><br></p><ul><li><strong>Mais cuidado com a sua saúde</strong>&nbsp;através de&nbsp;Plano Médico, Odontológico, Telemedicina, Seguro de Vida e Gympass</li><li><strong>Saúde mental</strong>&nbsp;com a Telemedicina Dasa</li><li>Reuniões de final de ano com a família ainda mais prazerosas, pois oferecemos&nbsp;<strong>Cesta de Natal</strong>&nbsp;e ainda brinquedo para quem tem filhos</li><li><span style=\"color: rgb(36, 36, 36);\">A possibilidade de você fazer um bom mercado ou comer no restaurante que você gosta com</span><strong>&nbsp;Vale Alimentação ou Refeição</strong>, pois você poderá optar por um destes benefícios</li><li>O&nbsp;<strong>vale transporte</strong>&nbsp;é opcional e você pode conferir no modelo da vaga</li><li>Abono assiduidade</li><li><strong>Auxílio Creche&nbsp;</strong>ou&nbsp;<strong>Auxílio babá﻿</strong></li></ul><p><span style=\"color: black;\">&nbsp;</span></p><p><span style=\"color: black;\">Além de sonhar, se desenvolver, construir e crescer dentro de um ambiente meritocrático e inclusivo e ser capaz de fazer a diferença unindo as pessoas por um mundo melhor!</span></p><p>﻿ℹ️ Tratamento de Dados Pessoais:</p><p><br></p><p>Para saber mais sobre como tratamos os seus dados pessoais no contexto de nossos processos seletivos, acesse nossa Política de Privacidade para Candidatos aqui: <a target=\"_blank\" rel=\"noreferrer noopener\" key=\"link1\" href=https://www.ambev.com.br/sites/g/files/wnfebl12286/files/Projetos/Ambev-Institucional/politicas-de-privacidade-candidatos-2026.pdf&nbsp>https://www.ambev.com.br/sites/g/files/wnfebl12286/files/Projetos/Ambev-Institucional/politicas-de-privacidade-candidatos-2026.pdf&nbsp</a>;</p>",
+    "urlSmartphonePicture": null,
+    "urlSocialPicture": null,
+    "status": "published",
+    "code": "0119-12262140",
+    "reason": "staff_increase",
+    "publishedAt": "2026-09-08T18:38:02.796Z",
+    "questionForm": null,
+    "quickApply": false,
+    "expiresAt": "2027-01-31",
+    "workplaceType": "on-site",
+    "publicationType": "external",
+    "videoSectionTitle": null,
+    "videoUrl": null,
+    "skills": null,
+    "addressCountryShortName": "BR",
+    "registerEndDate": "2026-12-31",
+    "isJobPostedOnGoogle": true,
+    "isInternalMobility": false,
+    "company": {
+     "id": 119,
+     "timezone": "America/Sao_Paulo",
+     "subdomain": "ambev",
+     "language": "pt"
+    },
+    "requiredFields": null,
+    "careerPage": {
+     "name": "Ambev",
+     "urlLogo": "https://attachments.gupy.io/production/companies/119/career/20/images/2020-05-05_14-17_logo.png",
+     "urlSite": "",
+     "companyDescriptionTitle": "Seja bem-vindo à Ambev ",
+     "about": "<p>ENTRE PARA UM TIME QUE SONHA TÃO GRANDE COMO VOCÊ!</p><p><br></p><p>Somos milhares de apaixonados e apaixonadas pelo que fazemos. Temos um orgulho imenso do nosso poder de impacto positivo e reconhecemos que, agindo como donos e donas, cada um de nós desempenha um papel fundamental no sucesso do nosso ecossistema. Somado a isso, todas nossas grandes conquistas tem o sabor da colaboração! Nosso sucesso é compartilhado e acreditamos que por meio da colaboração podemos encantar ainda mais o nossos clientes com as marcas que eles amam hoje, ao mesmo tempo em que podemos atender aos gostos de amanhã.&nbsp;</p><p>🍻</p><p><br></p><p>A Nossa Cultura é focada em construir um ambiente inclusivo e colaborativo, onde as pessoas possam ser o melhor delas mesmas - e nos ajudar a ser a nossa melhor versão! Procuramos gente com paixão, curiosidade e coragem para fazer a diferença aqui.&nbsp;</p><p><br></p><p>Acolhemos talentos diversos, porque acreditamos que grandes ideias vêm de pessoas com diferentes trajetórias. Oferecemos oportunidades para talentos que estão ingressando no mercado de trabalho e somos apaixonados por impulsionar a nossa gente.</p><p><br></p><p><strong>É trabalhando e crescendo juntos que atingimos o nosso propósito: Sonhamos Grande por um Futuro com Mais Razões para Brindar!</strong></p>",
+     "subdomain": "ambev",
+     "urlMainImage": "https://attachments.gupy.io/production/companies/119/career/20/images/2023-11-13_18-50_bannerUrl.png",
+     "socialPictureUrl": "https://attachments.gupy.io/production/socialmedias/119/3fd54620ff4a807488349dea9e84f770_Header%20P%C3%A1gina%20Ambev.jpg",
+     "socialLinks": {
+      "type": "social_links_section",
+      "sectionTitle": "Saiba mais sobre a Ambev",
+      "urlSite": "https://www.ambev.com.br/",
+      "urlLinkedin": "https://www.linkedin.com/company/162402/",
+      "urlFacebook": "https://www.facebook.com/cervejariaambev/",
+      "urlInstagram": "https://www.instagram.com/ambev",
+      "urlGlassdoor": "https://www.glassdoor.com.br/Vis%C3%A3o-geral/Trabalhar-na-Ambev-EI_IE5797.13,18.htm"
+     },
+     "visibility": "public",
+     "appearances": {
+      "id": 4714,
+      "careerPageId": 20,
+      "companyLogoUrl": "https://attachments.gupy.io/production/companies/119/career/20/images/2020-05-05_14-17_logo.png",
+      "bannerUrl": "https://attachments.gupy.io/production/companies/119/career/20/images/2023-11-13_18-50_bannerUrl.png",
+      "colorsConfig": {
+       "linkColor": "#003d97",
+       "buttonFontColor": "#ffffff",
+       "buttonBackgroundColor": "#003d97"
+      }
+     }
+    },
+    "companyIntegrations": {
+     "gaTrackingCode": ""
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:49:41.044385Z",
+  "content_hash": "1fdb50f28da54b0dbf408db91a3f8875e506c8fc0d1189c63b620dedfd0b9e35"
+ }
+]

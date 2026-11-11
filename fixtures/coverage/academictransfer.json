@@ -1,0 +1,161 @@
+[
+ {
+  "source_slug": "academictransfer",
+  "board_token": "https://www.academictransfer.com/sitemap-vacancies.xml",
+  "external_id": "3c2784e2b3d01b2822e84847",
+  "payload": {
+   "page_url": "https://www.academictransfer.com/en/jobs/365499/postdoc-mechanical-behavior-of-biobased-adhesives-for-fibre-reinforced-polymers/",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-11T13:52:24.604248+01:00",
+    "validThrough": "2026-11-30T23:59:59+01:00",
+    "title": "Postdoc Mechanical Behavior of Biobased Adhesives for Fibre-reinforced Polymers",
+    "description": "<em><strong>Join TU Delft to unlock the potential of biobased adhesives for a circular composites economy!</strong></em><br><br><strong>Job description </strong><br>Develop biobased adhesives that combine reliable bonding with on-demand debonding. As a postdoctoral researcher at TU Delft, you will investigate the interfacial behaviour, mechanical performance and durability of composite joints to advance sustainable repair and recycling strategies.<br><br>Carbon fibre-reinforced polymer (CRFP) composites are essential in many high-performance applications, but repairing, disassembling and recycling these materials remains challenging. Conventional epoxy-based adhesives can make these processes difficult, contributing to material waste and limiting circularity. At TU Delft, you will contribute to a research project developing renewable, biobased thermoplastic adhesives that can be debonded on demand using heat. The goal is to enable more sustainable joining and repair strategies while maintaining the mechanical performance and durability required during service.<br><br>Your research will focus on understanding how the adhesive–composite interface influences adhesion, joint strength and long-term performance. Through advanced experimental investigations, you will study how interfacial structure and bonding behaviour respond to thermal and mechanical loading. You will also investigate the durability of composite joints under weathering and creep conditions, estimate their service lifetime and identify the mechanisms responsible for degradation.<br><br>Your experimental findings will contribute to the development and optimisation of durable, thermally debondable adhesives. You will work closely with another researcher in the project who uses computational methods to investigate the underlying molecular-level mechanisms. By connecting experimental observations with computational insights, you will help establish the scientific understanding needed to design adhesives that combine reliable performance with controlled debonding.<br><br>As a postdoctoral researcher, you will:<br><ol> <li>Perform experiments to investigate adhesive–composite interfacial interactions, calculate adhesion energies, and characterise interfacial structure and wetting behaviour for different biobased adhesives.</li> <li>Investigate the mechanical performance to evaluate the bond strength and identify failure modes of the adhesive–CFRP composite interface.</li> <li>Assess the joints behavior and strength under thermal and mechanical loads to establish and guiding the optimization of the adhesive formulations.</li> <li>Establish the degradation mechanisms caused by the combined influence of temperature, moisture and UV-radiation.</li> <li>Collaborate closely with computational researchers and project partners to connect experimental observations with atomistic insights and support the development of durable and thermally debondable adhesives.</li> <li>Contribute to scientific publications, conference presentations and future research proposals in sustainable composite joining, repair and recycling.</li>\n</ol>\n<br>You will be part of Team Amarante Böttger at TU Delft, whose research includes the experimental characterisation of materials, interfaces and their properties. Strong collaboration with her team at Avans University of Applied Science is envisioned. Your project on biobased, thermally debondable adhesives for carbon fibre-reinforced polymer composites will build on the expertise in thermoplastics and interfaces to uncover the mechanisms governing adhesion, interfacial stability and mechanical performance. By combining experimental research with atomistic simulations, you will contribute to the rational design of sustainable adhesive systems that enable easier repair, joining and recycling of composite materials.<br><br>You will collaborate closely with Team Dey within the Computational Materials Science section at TU Delft providing advanced atomistic s",
+    "baseSalary": null,
+    "workHours": "36—40 hours per week",
+    "employmentType": "TEMPORARY",
+    "jobDuration": "",
+    "educationRequirements": {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "Doctorate"
+    },
+    "occupationalCategory": "Engineering",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delft",
+      "addressCountry": "NL",
+      "postalCode": "2628CD",
+      "streetAddress": "Mekelweg 5"
+     }
+    },
+    "totalJobOpenings": 1,
+    "directApply": false,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Delft University of Technology (TU Delft)",
+     "sameAs": "https://academictransfer.com/en/employer/tudelft/",
+     "logo": "https://www.academictransfer.com/images/%2Flogos%2Ftud-en-wide.gif/organisation-logo-social/"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "AcademicTransfer",
+     "value": "365499"
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:15:36.884447Z",
+  "content_hash": "495164c119caa3c9275c24e649fb07a5d495204bab04eea7dade6efdb1ad1cd0"
+ },
+ {
+  "source_slug": "academictransfer",
+  "board_token": "https://www.academictransfer.com/sitemap-vacancies.xml",
+  "external_id": "9f3ccb759f1bd595d8fb191b",
+  "payload": {
+   "page_url": "https://www.academictransfer.com/en/jobs/365498/postdoc-atomistic-modelling-of-adhesive-composite-interfaces/",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-11T13:52:24.416199+01:00",
+    "validThrough": "2026-11-30T23:59:59+01:00",
+    "title": "Postdoc Atomistic Modelling of Adhesive-composite Interfaces",
+    "description": "<em><strong>Join TU Delft to unlock the potential of biobased adhesives for a circular composites economy!</strong></em><br><br><strong>Job description </strong><br>At TU Delft, you will contribute to a transformative research initiative focused on the sustainable and circular use of fibre-reinforced polymer composites. This project addresses a critical challenge in composite repair and joining i.e. the development of adhesives that provide reliable bonding during service while enabling debonding when needed. Conventional synthetic adhesives can make repair, disassembly and recycling difficult thereby contributing to material waste. By developing renewable, biobased thermoplastic adhesives that can be thermally debonded on demand, the project aims to enable more sustainable joining and repair strategies.<br><br>Through an integrated computational approach combining density functional theory (DFT) and molecular dynamics (MD) simulations, you will investigate adhesive–composite interfacial interactions and mechanical stability, uncovering how molecular structure governs adhesion and thermally triggered debonding.<br><br>In this project, you will use atomistic simulations to investigate the molecular-level mechanisms underlying the performance of thermally debondable adhesives for fibre-reinforced polymer composites. While the experimental work focuses on adhesive development and performance validation, your research will provide complementary molecular-level insights. Depending on the system under investigation and the limitations of existing interatomic potentials, you may also develop and validate machine-learning interatomic potentials (MLIPs) to enable accurate and efficient simulations.<br><br>As a postdoctoral researcher, you will:<br><ol> <li>Perform Density Functional Theory (DFT) and Molecular Dynamics (MD) simulations to investigate adhesive–composite interfacial interactions, calculate adhesion energies, and characterise interfacial structure and wetting behaviour for different adhesive molecules.</li> <li>Investigate the molecular mechanisms governing adhesion and interfacial stability, examining how adhesive chemistry and molecular structure influence binding strength and the thermodynamic stability of the adhesive–composite interface.</li> <li>Perform tensile and shear deformation simulations to evaluate the mechanical performance of adhesive–composite interfaces, identify failure mechanisms and investigate how molecular interactions influence resistance to interfacial separation.</li> <li>Assess the suitability of existing interatomic potentials for modelling adhesive–composite interfaces by benchmarking their predictions against DFT calculations and, where necessary, develop machine-learning interatomic potentials (MLIPs) to enable accurate and efficient atomistic simulations.</li> <li>Collaborate closely with experimental researchers and project partners to connect atomistic insights with experimental observations and support the development of durable and thermally debondable adhesives.</li> <li>Contribute to scientific publications, conference presentations and future research proposals in sustainable composite joining, repair and recycling.  </li>\n</ol>\n<br>You will be part of Team Dey within the Computational Materials Science section at TU Delft. The team uses advanced atomistic simulations to investigate materials for sustainable energy and circular materials technologies, with expertise in density functional theory (DFT), molecular dynamics (MD) and machine-learning interatomic potentials (MLIPs).You will collaborate closely with Team Amarante Böttger at TU Delft, whose research includes the experimental characterisation of materials, interfaces and their properties and with the other project partners in the consortium.<br><br>The Computational Materials Science section offers a collaborative and intellectually stimulating environment with ample opportunities for scientific development and impact.<br><br>",
+    "baseSalary": null,
+    "workHours": "36—40 hours per week",
+    "employmentType": "TEMPORARY",
+    "jobDuration": "",
+    "educationRequirements": {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "Doctorate"
+    },
+    "occupationalCategory": "Engineering",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delft",
+      "addressCountry": "NL",
+      "postalCode": "2628CD",
+      "streetAddress": "Mekelweg 5"
+     }
+    },
+    "totalJobOpenings": 1,
+    "directApply": false,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Delft University of Technology (TU Delft)",
+     "sameAs": "https://academictransfer.com/en/employer/tudelft/",
+     "logo": "https://www.academictransfer.com/images/%2Flogos%2Ftud-en-wide.gif/organisation-logo-social/"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "AcademicTransfer",
+     "value": "365498"
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:15:47.808335Z",
+  "content_hash": "922d3902c318b94c53e6ef0d61e48a5e08a4212d0e3cc90e9f7b34b61a219113"
+ },
+ {
+  "source_slug": "academictransfer",
+  "board_token": "https://www.academictransfer.com/sitemap-vacancies.xml",
+  "external_id": "f503598af4dfeeba78255b54",
+  "payload": {
+   "page_url": "https://www.academictransfer.com/nl/jobs/365497/coordinator-huisvesting-internationale-studenten-en-staf/",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "datePosted": "2026-11-11T13:18:10.816556+01:00",
+    "validThrough": "2026-11-26T23:59:59+01:00",
+    "title": "Coördinator huisvesting internationale studenten en staf",
+    "description": "Het Services Team verzorgt de huisvesting voor internationale studenten en staf. De coördinator van dit subteam heeft inhoudelijke expertise op het gebied van huisvesting voor studenten en staf en en is daarnaast verantwoordelijk voor de planning en is het eerste aanspreekpunt voor de collega's binnen het subteam.<br><br>We zijn op zoek naar een enthousiaste en proactieve coördinator die sterk is in plannen en organiseren, overzicht weet te houden en energie krijgt van het verbeteren van processen. Iemand die structuur aanbrengt, kansen voor verbetering signaleert en graag meedenkt over hoe we onze dienstverlening rondom de huisvesting van internationale studenten en staf nóg efficiënter en effectiever kunnen inrichten.<br><br><strong>Jouw taken</strong><br><ul> <li>als coördinator zorgdragen voor een doelmatige, efficiënte en accurate uitvoering van werkzaamheden binnen het eigen subteam en het geven van aanwijzingen en instructies over de te volgen werkwijzen en procedures</li> <li>het bijhouden van data en het signaleren van trends en ontwikkelingen</li> <li>het onderhouden van contacten met huisvesters, bewaken van afspraken en afstemmen van de planning</li> <li>het zelfstandig uitvoeren van dagelijkse huisvestingsprocessen in overeenstemming met het interne VU-beleid</li> <li>het beheren en actualiseren van huisvestingssystemen, workflows en mailboxen</li> <li>verantwoordelijk voor het actief volgen van institutionele en landelijke ontwikkelingen die relevant zijn voor de werkzaamheden van het subteam</li> <li>optreden als vertegenwoordiger van het huisvestingsteam in institutionele en landelijke werkoverleggen</li>\n</ul>",
+    "baseSalary": {
+     "@type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "MONTH",
+      "minValue": 3873,
+      "maxValue": 5264
+     }
+    },
+    "workHours": "30.4 uur per week",
+    "employmentType": "PART_TIME",
+    "jobDuration": "",
+    "educationRequirements": {
+     "@type": "EducationalOccupationalCredential",
+     "credentialCategory": "HBO"
+    },
+    "occupationalCategory": "",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amsterdam",
+      "addressCountry": "NL",
+      "postalCode": "1081HV",
+      "streetAddress": "De Boelelaan 1105"
+     }
+    },
+    "totalJobOpenings": 1,
+    "directApply": false,
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Vrije Universiteit Amsterdam (VU)",
+     "sameAs": "https://academictransfer.com/en/employer/vrije-universiteit-amsterdam/",
+     "logo": "https://www.academictransfer.com/images/%2Flogos%2Fvu-nl-wide.png/organisation-logo-social/"
+    },
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "AcademicTransfer",
+     "value": "365497"
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:15:58.582993Z",
+  "content_hash": "03279cd730225e0d21a0d55758d5ee4cfe96a2ab3e7c3c0ba439eb7ac8ec3622"
+ }
+]
