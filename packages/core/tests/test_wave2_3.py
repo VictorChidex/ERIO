@@ -162,9 +162,30 @@ def test_talos360_reads_the_career_site_sitemap_and_job_pages() -> None:
     assert job.description_html
 
 
+def test_recruitis_reads_the_list_and_job_pages() -> None:
+    fetched, jobs = read(
+        "recruitis",
+        "recruitisio",
+        {
+            "https://jobs.recruitis.io/recruitisio/": body("recruitis_job.html"),
+            "https://jobs.recruitis.io/recruitisio": body("recruitis_list.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 2
+    job = jobs[0]
+    assert job.title == "Obchodní zástupce pro SaaS řešení - junior"
+    assert job.company_name == "Recruitis.io s.r.o."
+    assert job.location_text == "Hradec Králové, CZ" and job.country_hint == "CZ"
+    assert job.employment_type and "plný úvazek" in job.employment_type
+    assert str(job.apply_url).startswith("https://jobs.recruitis.io/recruitisio/479319-")
+    assert job.description_html and "Hledáme" in job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("recruitis", "a/b"),
+        ("recruitis", "x.evil.org"),
         ("connectoor", "https://evil.example.org"),
         ("keka", "a/b/c"),
         ("keka", "evil.example.org"),

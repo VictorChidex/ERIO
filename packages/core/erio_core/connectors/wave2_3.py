@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- Recruitis: server-rendered career sites on jobs.recruitis.io (list pages, one page per job).
 - Keka: the JSON behind every Keka Hire career site (``/careers/api/jobs/default/active``).
 """
 
@@ -16,6 +17,7 @@ import json
 import re
 from typing import Any
 
+from erio_core.connectors._htmlpages import PageCrawler, element_with, listing, text_of
 from erio_core.connectors._util import as_url, iso_datetime
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import feed_date, stable_id, xml_items
@@ -364,8 +366,94 @@ class ConnectoorConnector(JsonLdConnector):
         )
 
 
+# ---------------------------------------------------------------- Recruitis
+
+SPAN_ITEM = re.compile(r'<span class="job-item[^"]*"[^>]*>(.*?)</span>', re.DOTALL)
+LIST_PAGES = 6
+LIST_PAGE_SIZE = 20
+
+
+class RecruitisConnector(PageCrawler):
+    """Recruitis career sites (``jobs.recruitis.io/{company}``): server-rendered lists, paged
+    with ``?jobs_list_form[page]=n``, and one page per job with its title, place, contract
+    and description (no structured data). The token is the company's name in the address."""
+
+    slug = "recruitis"
+    hosts = frozenset({"jobs.recruitis.io"})
+    listing_pages = LIST_PAGES
+    max_pages = 100
+
+    def board_url(self, board_token: str) -> str:
+        if not TOKEN.fullmatch(board_token):
+            raise ValueError(f"not a Recruitis career site name: {board_token!r}")
+        return f"https://jobs.recruitis.io/{board_token}"
+
+    def job_urls(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        base = self.board_url(board_token)
+        found: list[str] = []
+        pages = 1
+        for number in range(1, self.listing_pages + 1):
+            url = base if number == 1 else f"{base}?jobs_list_form%5Bpage%5D={number}"
+            html_text = listing(fetcher, url).decode("utf-8", "replace")
+            fresh = [
+                f"https://jobs.recruitis.io{path}"
+                for path in dict.fromkeys(
+                    re.findall(rf'href="(/{re.escape(board_token)}/\d+-[^"#?]*)"', html_text)
+                )
+            ]
+            fresh = [u for u in fresh if u not in found]
+            if not fresh:
+                break
+            found += fresh
+            if number == 1:
+                total = re.search(r"z\s+(\d+)</div>", html_text)
+                pages = -(-int(total[1]) // LIST_PAGE_SIZE) if total else 1
+            if number >= pages:
+                break
+        return found
+
+    def item_id(self, url: str, page: dict[str, Any]) -> str:
+        match = re.search(r"/(\d+)-", url)
+        return match[1] if match else super().item_id(url, page)
+
+    def read_page(self, url: str, body: bytes) -> dict[str, Any] | None:
+        html_text = body.decode("utf-8", "replace")
+        title = re.search(r"<h1[^>]*>(.*?)</h1>", html_text, re.DOTALL)
+        if not title or not text_of(title.group(1)):
+            return None
+        logo = re.search(r'<img class="u-header__logo-img[^>]*\balt="([^"]*)"', html_text)
+        return {
+            "title": text_of(title.group(1)),
+            "tags": [text_of(t) for t in SPAN_ITEM.findall(html_text)],
+            "company": html.unescape(logo[1]).strip() if logo else None,
+            "description": element_with(html_text, r'id="job-description"'),
+        }
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        tags = [t for t in job["tags"] if t]
+        # Tags in page order: place, field of work, contract, education (some may be absent).
+        place = tags[0] if tags else None
+        contract = next((t for t in tags if re.search(r"úvazek|brigád|HPP|DPP|smlouv", t, re.I)), None)
+        city = place.split(",")[0].strip() if place else None
+        country = place.rsplit(",", 1)[-1].strip() if place and "," in place else None
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]),
+            company_name=job.get("company") or None,
+            apply_url=as_url(str(job["url"])),
+            location_text=place,
+            city=city,
+            country_hint=country if country and len(country) == 2 else None,
+            employment_type=contract,
+            description_html=job.get("description"),
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    RecruitisConnector(),
     # Talos360 ATS: each customer's career site ({tenant}.talosats-careers.com) serves a
     # sitemap of its job pages (token), and every job page carries a JobPosting.
     JsonLdConnector("talos360", r"^/job/\d+$", frozenset({"*.talosats-careers.com"})),

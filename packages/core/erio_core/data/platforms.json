@@ -1541,5 +1541,16 @@
    "https://ukas.talosats-careers.com/sitemap.xml",
    "https://siscareltd.talosats-careers.com/sitemap.xml"
   ]
+ },
+ {
+  "slug": "recruitis",
+  "name": "Recruitis",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Career sites on jobs.recruitis.io/{company}: server-rendered lists (paged with jobs_list_form[page]) and one page per job; no feed, API or structured data is public, so the page markup is read. jobs.recruitis.io serves no robots.txt restriction. Token is the company name in the address.",
+  "examples": [
+   "recruitisio",
+   "globus"
+  ]
  }
 ]
