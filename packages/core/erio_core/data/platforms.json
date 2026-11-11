@@ -1529,5 +1529,13 @@
   "blocked": "not verifiable: careers sites run on each customer own domain (careers.{name}/vacancies/vacancy-search-results.aspx) with no shared host, and the only tenant found (careers.eploy.co.uk) publishes an empty live-jobs.xml sitemap and no job links.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "jobcan",
+  "name": "Jobcan Recruitment",
+  "kind": "ats",
+  "blocked": "not verifiable: ats.jobcan.jp is the sign-in app (redirects to id.jobcan.jp login) and the vendor documents no public career-page host; no public tenant job page could be found to read.",
+  "notes": "",
+  "examples": []
  }
 ]
