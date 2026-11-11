@@ -5,6 +5,7 @@ every visitor; how each was found, and its limits, is in docs/connectors.md.
 
 - greytHR Hire: the career page's own JSON calls on ``{tenant}.greythr.com/hire``.
 - d.vinci: the career site sitemap plus the JobPosting each job page carries.
+- Friend.work: the JSON the portal page reads from api.friend.work (one call, all vacancies).
 """
 
 import json
@@ -22,7 +23,7 @@ from erio_core.connectors.base import (
     FetchError,
     poster,
 )
-from erio_core.schemas import PartialJob, RawPosting, RemoteStatus
+from erio_core.schemas import PartialJob, RawPosting, RemoteStatus, SalaryHint
 
 TOKEN = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
 
@@ -133,8 +134,81 @@ class GreytHRHireConnector(Connector):
         )
 
 
+# ---------------------------------------------------------------- Friend.work
+
+FRIENDWORK_CURRENCIES = {0: "RUB", 1: "USD", 2: "EUR", 3: "UAH", 4: "KZT", 5: "BYN", 6: "AED", 7: "UZS"}
+FRIENDWORK_PLACES: dict[str, RemoteStatus] = {
+    "office": "onsite", "remote": "remote", "hybrid": "hybrid"
+}  # fmt: skip
+FRIENDWORK_PORTAL = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]{0,63}")
+
+
+class FriendWorkConnector(Connector):
+    """Friend.work career portals: ``https://jobs.friend.work/{portal}``.
+
+    The portal page is a script that reads ``api.friend.work/Publication/CareerPortal``
+    for the portal's name; one call returns the company and every published vacancy with
+    its description. The board token is the portal name (the first path segment).
+    """
+
+    slug = "friendwork"
+    hosts = frozenset({"api.friend.work"})
+
+    def board_url(self, board_token: str) -> str:
+        if not FRIENDWORK_PORTAL.fullmatch(board_token):
+            raise ValueError(f"not a Friend.work portal name: {board_token!r}")
+        return f"https://api.friend.work/Publication/CareerPortal?token={board_token}"
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        data = json.loads(body)
+        jobs = data["publications"]
+        if not isinstance(jobs, list):
+            raise ValueError("Friend.work answers with a publications list")
+        company = plain((data.get("company") or {}).get("name"))
+        return [
+            RawPosting(
+                source_slug=self.slug,
+                board_token=board_token,
+                external_id=str(job["publishedJobId"]),
+                payload={
+                    **{k: v for k, v in job.items() if k not in ("applicationBaseFields",)},
+                    "_company": company,
+                },
+            )
+            for job in jobs
+            if isinstance(job, dict) and job.get("publishedJobId") and job.get("title")
+        ]
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        city = plain(job.get("city"))
+        address = plain(job.get("address"))
+        low, high = job.get("salaryFrom") or None, job.get("salaryTo") or None
+        currency = FRIENDWORK_CURRENCIES.get(job.get("currency") or 0)
+        pay = (
+            SalaryHint(min=low, max=high, currency=currency, period="month")
+            if (low or high) and currency
+            else None
+        )
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]).strip(),
+            company_name=job.get("_company"),
+            apply_url=as_url(f"https://jobs.friend.work/{raw.board_token}/{raw.external_id}"),
+            posted_at=iso_datetime(job.get("publishDateTime") or job.get("dateCreated")),
+            location_text=", ".join(p for p in (city, address) if p) or None,
+            city=city,
+            workplace_type=FRIENDWORK_PLACES.get(str(job.get("workplaceType") or "").lower()),
+            employment_type=plain(job.get("employmentType")),
+            salary=pay,
+            description_html=job.get("description") or None,
+        )
+
+
 WAVE2_1_CONNECTORS: list[Connector] = [
     GreytHRHireConnector(),
+    FriendWorkConnector(),
     # d.vinci career sites: a sitemap of /{lang}/jobs/{id}/{slug} pages, each with a JobPosting.
     JsonLdConnector("dvinci", r"^/[a-z]{2}/jobs/\d+/", hosts("*.dvinci-hr.com", "*.dvinci.de")),
 ]

@@ -1555,5 +1555,17 @@
   "blocked": "not verifiable: no public tenant career site could be found; the only Bizneo-hosted one located (hello.bizneo.com/out-career-site/) answers \"Career site - out of service\", and customers embed the portal on their own domains.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "friendwork",
+  "name": "Friend.work",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the JSON the career portal jobs.friend.work/{portal} loads from api.friend.work (company and all published vacancies in one call). Token is the portal name; salaries are per month. Portals found hold old or demo vacancies.",
+  "examples": [
+   "test",
+   "company",
+   "friendwork"
+  ]
  }
 ]

@@ -87,6 +87,26 @@ def test_greythr_without_a_jobs_list_is_a_parse_error() -> None:
     assert error.value.outcome == "parse_error"
 
 
+# ------------------------------------------------------------- Friend.work
+
+
+def test_friendwork_reads_the_portal_call_and_links_to_the_portal_page() -> None:
+    fetched, jobs = read(
+        "friendwork",
+        "test",
+        {"https://api.friend.work/Publication/CareerPortal?token=test": body("friendwork_portal.json")},
+    )
+    assert fetched.complete and len(jobs) == 2
+    first = jobs[0]
+    assert first.title == "Менеджер по персоналу"
+    assert first.company_name == "Агентство деловой информации"
+    assert first.location_text == "Пенза, ул. Калинина, 91"
+    assert first.workplace_type == "onsite"
+    assert str(first.apply_url) == "https://jobs.friend.work/test/32229"
+    assert first.salary and first.salary.currency == "RUB" and first.salary.period == "month"
+    assert first.description_html
+
+
 # ----------------------------------------------------------------- d.vinci
 
 
