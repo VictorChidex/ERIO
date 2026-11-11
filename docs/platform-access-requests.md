@@ -47,8 +47,10 @@ Replace `<contact>` with the crawler mailbox once D-06 is decided.
 
 | Platform | Sent | Answer |
 | --- | --- | --- |
-| SmartRecruiters | | |
-| Paycor | | |
-| Dover | | |
-| Talenetic | | |
-| Artha | | |
+| SmartRecruiters | 2026-11-11 (form on its partnerships page) | No reply yet |
+| Paycor | 2026-11-11 (form on its technology partners page) | No reply yet |
+| Dover | 2026-11-11 (support@dover.com) | No reply yet |
+| Talenetic | 2026-11-11 (sales@talenetic.com) | No reply yet |
+| Artha | 2026-11-11 (hello@arthajobboard.com) | No reply yet |
+
+Sent from the crawler mailbox. Follow up once after two weeks of silence; record any reply above, and only a written yes changes a platform from Blocked.
