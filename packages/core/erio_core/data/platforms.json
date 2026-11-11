@@ -1506,5 +1506,13 @@
   "blocked": "no public job list: {company}.onlyfy.jobs serves a client-rendered, noindex candidate portal (no job links, sitemap or feed in the page; /jobs, /sitemap.xml and feeds answer 404), and job data loads through the app's private GraphQL endpoint",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "techtree",
+  "name": "TechTree",
+  "kind": "service",
+  "blocked": "no identifiable public job source: techtree.dk, techtree.com, techtree.io, techtree.ai and techtree.in are unrelated sites (a biotech firm, an education site, an event page, a web agency) with no job feed, sitemap or job pages, and web search finds no TechTree job board or career platform",
+  "notes": "",
+  "examples": []
  }
 ]
