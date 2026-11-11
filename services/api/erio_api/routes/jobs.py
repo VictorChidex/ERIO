@@ -207,6 +207,10 @@ def get_job(
         columns = {
             name: getattr(job, name) for name in JobRecord.model_fields if hasattr(job, name)
         }
+        if job.salary_unreliable:  # failed the pay sanity check: never shown
+            for field in ("salary_min", "salary_max", "salary_currency", "salary_period"):
+                columns[field] = None
+            columns["salary_usd_annual_min"] = None
         # Cleaned when stored, and again on the way out (spec section 9), so a
         # row written by any other path can never carry script to a client.
         if job.description_html:

@@ -66,6 +66,7 @@ MAPPINGS: dict[str, Any] = {
         "salary_currency": {"type": "keyword"},
         "salary_period": {"type": "keyword"},
         "salary_usd_annual_min": {"type": "long"},
+        "salary_unreliable": {"type": "boolean"},
         "status": {"type": "keyword"},
         "posted_at": {"type": "date"},
         "indexed_at": {"type": "date"},
@@ -145,6 +146,13 @@ def document(job: dict[str, Any]) -> dict[str, Any]:
     eligible = list(job.get("eligible_country_codes") or [])
     countries = sorted({*eligible, *([job["country_code"]] if job.get("country_code") else [])})
     lat, lon = job.get("lat"), job.get("lon")
+    # Pay that failed the sanity check (an hourly figure labeled yearly) is not shown anywhere:
+    # the posted numbers stay in the database, the index and the site leave them out.
+    unreliable = bool(job.get("salary_unreliable"))
+
+    def pay(field: str) -> Any:
+        return None if unreliable else job.get(field)
+
     return {
         "canonical_id": job["canonical_id"],
         "title": job["title"],
@@ -165,11 +173,12 @@ def document(job: dict[str, Any]) -> dict[str, Any]:
         "remote_status": job["remote_status"],
         "employment_type": job.get("employment_type"),
         "remote_scope": job.get("remote_scope"),
-        "salary_min": job.get("salary_min"),
-        "salary_max": job.get("salary_max"),
-        "salary_currency": job.get("salary_currency"),
-        "salary_period": job.get("salary_period"),
-        "salary_usd_annual_min": job.get("salary_usd_annual_min"),
+        "salary_min": pay("salary_min"),
+        "salary_max": pay("salary_max"),
+        "salary_currency": pay("salary_currency"),
+        "salary_period": pay("salary_period"),
+        "salary_usd_annual_min": None if unreliable else job.get("salary_usd_annual_min"),
+        "salary_unreliable": unreliable,
         "status": job["status"],
         "posted_at": job.get("posted_at"),
         "indexed_at": job.get("indexed_at"),
