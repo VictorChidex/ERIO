@@ -1477,5 +1477,13 @@
   "examples": [
    "https://www.airswift.com/jobs"
   ]
+ },
+ {
+  "slug": "cvwarehouse",
+  "name": "CVWarehouse",
+  "kind": "ats",
+  "blocked": "no public job list: candidate.cvwarehouse.com has no job index or sitemap (jobs open only by numeric id), the job search sits behind its login page, and the customer job feed is given to each customer rather than published.",
+  "notes": "",
+  "examples": []
  }
 ]
