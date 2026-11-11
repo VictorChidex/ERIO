@@ -8,6 +8,7 @@ docs/connectors.md.
 - Beehire: the JSON behind every career page (``/users/getPublicCampaigns/{name}``).
 - Connectoor: the connectoor.jobs board search, then each job's page (JobPosting data).
 - Talos360 ATS: each career site's sitemap, then the JobPosting on every job page.
+- OpenCATS: the server-rendered careers module of self-hosted OpenCATS installations.
 - ApplicantStack: server-rendered ``/x/openings`` lists and ``/x/detail/{id}`` pages.
 - Recruitis: server-rendered career sites on jobs.recruitis.io (list pages, one page per job).
 - Keka: the JSON behind every Keka Hire career site (``/careers/api/jobs/default/active``).
@@ -516,8 +517,91 @@ class ApplicantStackConnector(PageCrawler):
         )
 
 
+# ---------------------------------------------------------------- OpenCATS
+
+OPENCATS_TOKEN = re.compile(
+    r"https://(?P<host>[a-z0-9]([a-z0-9.-]{0,251}[a-z0-9])?)(?P<path>(?:/[A-Za-z0-9._~-]+)*)/careers/?"
+    r"(?:index\.php)?(?:\?.*)?",
+    re.IGNORECASE,
+)
+GENERAL_APPLICATION = re.compile(r"general consideration|general application", re.IGNORECASE)
+
+
+class OpenCATSConnector(PageCrawler):
+    """OpenCATS (the open-source applicant tracking system) installations publish a careers
+    module at ``{site}/careers/``: a server-rendered list (``index.php?m=careers&p=showAll``) and
+    a page per job (``p=showJob&ID=n``). Every installation runs on its owner's own domain, so
+    the board token is the address of its ``careers`` folder, for example
+    ``https://vectaur.com/ats/careers/``; the board is admitted because it is registered."""
+
+    slug = "opencats"
+    hosts: frozenset[str] = frozenset()
+    max_pages = 100
+
+    def _base(self, board_token: str) -> str:
+        match = OPENCATS_TOKEN.fullmatch(board_token.strip())
+        if not match:
+            raise ValueError(f"not an OpenCATS careers address (https://host/.../careers/): {board_token!r}")
+        return f"https://{match['host'].lower()}{match['path']}/careers/"
+
+    def board_url(self, board_token: str) -> str:
+        return f"{self._base(board_token)}index.php?m=careers&p=showAll"
+
+    def job_urls(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        base = self._base(board_token)
+        html_text = listing(fetcher, self.board_url(board_token)).decode("utf-8", "replace")
+        rows = re.findall(
+            r'<a href="index\.php\?m=careers&amp;p=showJob&amp;ID=(\d+)"[^>]*>(.*?)</a>',
+            html_text,
+            re.DOTALL,
+        )
+        ids = [i for i, title in rows if not GENERAL_APPLICATION.search(text_of(title))]
+        return [f"{base}index.php?m=careers&p=showJob&ID={i}" for i in dict.fromkeys(ids)]
+
+    def item_id(self, url: str, page: dict[str, Any]) -> str:
+        match = re.search(r"[?&]ID=(\d+)", url)
+        return match[1] if match else super().item_id(url, page)
+
+    def read_page(self, url: str, body: bytes) -> dict[str, Any] | None:
+        html_text = body.decode("utf-8", "replace")
+        # The standard template titles the page "Position Details: {title}"; some sites
+        # restyle it and keep just the title in the one <h1>.
+        title = re.search(r"<h1[^>]*>(.*?)</h1>", html_text, re.DOTALL)
+        if not title or not text_of(title.group(1)) or "descriptive" not in html_text:
+            return None
+        heading = re.sub(r"^Position Details:\s*", "", text_of(title.group(1)))
+        details: dict[str, str] = {}
+        for key, value in re.findall(
+            r'<td class="detailsHeader">(.*?)</td>\s*<td[^>]*>(.*?)</td>', html_text, re.DOTALL
+        ):
+            details[text_of(key).rstrip(":").lower()] = text_of(value)
+        name = re.search(r"<title>\s*(.*?)\s*-\s*Careers\s*</title>", html_text, re.DOTALL)
+        return {
+            "title": heading,
+            "details": details,
+            "company": text_of(name.group(1)) if name else None,
+            "description": element_with(html_text, r'id="descriptive"'),
+        }
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        job = raw.payload
+        details: dict[str, str] = job.get("details") or {}
+        place = details.get("location")
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(job["title"]),
+            company_name=job.get("company") or None,
+            apply_url=as_url(str(job["url"])),
+            location_text=place or None,
+            city=place.split(",")[0].strip() if place else None,
+            description_html=job.get("description"),
+        )
+
+
 WAVE2_3_CONNECTORS: list[Connector] = [
     CrelateConnector(),
+    OpenCATSConnector(),
     ApplicantStackConnector(),
     RecruitisConnector(),
     # Talos360 ATS: each customer's career site ({tenant}.talosats-careers.com) serves a

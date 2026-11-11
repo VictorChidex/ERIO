@@ -1563,5 +1563,16 @@
    "conetrix",
    "kckcc"
   ]
+ },
+ {
+  "slug": "opencats",
+  "name": "OpenCATS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Self-hosted OpenCATS installations publish a careers module ({site}/careers/): a server-rendered list (index.php?m=careers&p=showAll) and a page per job; no feed or structured data is public, so the page markup is read. Each installation sits on its owner's own domain, so the token is the address of its careers folder, for example https://vectaur.com/ats/careers/; the generic 'upload a resume for general consideration' entry is skipped.",
+  "examples": [
+   "https://vectaur.com/ats/careers/",
+   "https://hr.northstar.edu.in/careers/"
+  ]
  }
 ]

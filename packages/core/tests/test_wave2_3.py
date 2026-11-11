@@ -199,9 +199,34 @@ def test_applicantstack_reads_the_openings_list_and_detail_pages() -> None:
     assert job.description_html and "IT Auditor" in job.description_html
 
 
+def test_opencats_reads_the_careers_module_and_skips_the_general_application() -> None:
+    fetched, jobs = read(
+        "opencats",
+        "https://vectaur.com/ats/careers/",
+        {
+            "https://vectaur.com/ats/careers/index.php?m=careers&p=showJob": body(
+                "opencats_job.html"
+            ),
+            "https://vectaur.com/ats/careers/index.php?m=careers&p=showAll": body(
+                "opencats_list.html"
+            ),
+        },
+    )
+    # Four rows on the list; "Upload Resume for General Consideration" is not a job.
+    assert fetched.complete and len(jobs) == 3
+    job = jobs[0]
+    assert job.title == "CFO/VP Finance" and job.company_name == "Vectaur"
+    assert job.location_text == "Greater Toronto Area, ON"
+    assert str(job.apply_url) == "https://vectaur.com/ats/careers/index.php?m=careers&p=showJob&ID=20"
+    assert job.description_html and "Chief Financial Officer" in job.description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
+        ("opencats", "http://vectaur.com/ats/careers/"),
+        ("opencats", "https://user@evil.example.org/careers/"),
+        ("opencats", "https://vectaur.com/not-careers"),
         ("applicantstack", "a.b"),
         ("applicantstack", "evil/x"),
         ("recruitis", "a/b"),
