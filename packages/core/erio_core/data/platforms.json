@@ -1567,5 +1567,13 @@
    "company",
    "friendwork"
   ]
+ },
+ {
+  "slug": "hrmanager",
+  "name": "HR-Manager (Talentech)",
+  "kind": "ats",
+  "blocked": "candidate.hr-manager.net/robots.txt disallows everything except single ApplicationInit.aspx application forms, so its vacancy lists cannot be read; no public feed or sitemap was found.",
+  "notes": "",
+  "examples": []
  }
 ]
