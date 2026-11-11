@@ -87,10 +87,26 @@ def test_hroffice_reads_job_pages_listed_in_a_career_site_sitemap() -> None:
     assert jobs[0].location_text == "De Bilt" and jobs[0].description_html
 
 
+def test_recrutor_reads_the_job_pages_a_career_space_feed_lists() -> None:
+    space = "https://www.recrutor.pro/advance-emploi"
+    page = f"{space}/emploi-preparateur-de-commandes-agroalimentaire_29572.html"
+    fetched, jobs = read(
+        "recrutor",
+        "advance-emploi",
+        {f"{space}/rss/flux-rss.xml": body("recrutor_feed.xml"), page: body("recrutor_job.html")},
+    )
+    # The feed lists two jobs; only the first page is served, the other is a 404 (closed).
+    assert len(jobs) == 1 and fetched.complete
+    assert jobs[0].title == "Préparateur de commandes agroalimentaire"
+    assert jobs[0].company_name == "Advance Emploi"
+    assert jobs[0].location_text and jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [
         ("homerun", "bad token"),
+        ("recrutor", "bad token"),
     ],
 )
 def test_wave2_4_refuse_a_token_that_is_not_theirs(slug: str, token: str) -> None:

@@ -7,17 +7,20 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   (``https://feed.homerun.co/{tenant}``), descriptions inline.
 - HR Office: career sites on the employer's own domain; ``/sitemap.xml`` lists the
   ``/vacatures/{id}-{slug}`` job pages, which carry a schema.org JobPosting.
+- RecrutOr: ``https://www.recrutor.pro/{tenant}/rss/flux-rss.xml`` lists a tenant's job pages
+  (the feed itself has no place or employer), each of which carries a JobPosting.
 """
 
 import re
 from typing import Any
+from urllib.parse import urlsplit, urlunsplit
 
 from defusedxml import ElementTree
 
 from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url
-from erio_core.connectors.base import Connector
-from erio_core.connectors.feed import stable_id
+from erio_core.connectors.base import Connector, Fetcher, FetchError
+from erio_core.connectors.feed import parse_feed, stable_id
 from erio_core.connectors.jsonld import JsonLdConnector
 from erio_core.schemas import PartialJob, RawPosting
 
@@ -88,8 +91,36 @@ class HomerunConnector(Connector):
         )
 
 
+class RecrutorConnector(JsonLdConnector):
+    """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
+
+    def __init__(self) -> None:
+        super().__init__("recrutor", r"^/[a-z0-9-]+/emploi-", frozenset({"www.recrutor.pro"}))
+
+    def board_url(self, board_token: str) -> str:
+        if not TOKEN.fullmatch(board_token):
+            raise ValueError(f"not a RecrutOr career space name: {board_token!r}")
+        return f"https://www.recrutor.pro/{board_token}/rss/flux-rss.xml"
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        response = fetcher.get(self.board_url(board_token))
+        if response.status != 200:
+            raise FetchError("http_error", f"HTTP {response.status}", response.status)
+        try:
+            jobs = parse_feed(response.body)
+        except ValueError as error:
+            raise FetchError("parse_error", f"malformed feed: {error}", 200) from error
+        pages = []
+        for job in jobs:
+            parts = urlsplit(str(job["url"]))
+            if parts.hostname == "www.recrutor.pro" and self.job_path.search(parts.path):
+                pages.append(urlunsplit((parts.scheme, parts.netloc, parts.path, "", "")))
+        return list(dict.fromkeys(pages))
+
+
 WAVE2_4_CONNECTORS: list[Connector] = [
     HomerunConnector(),
     # "/vacatures/{id}-{slug}/solliciteren" is the application form, not the job.
     JsonLdConnector("hroffice", r"^/vacatures/\d+-[^/]+$"),
+    RecrutorConnector(),
 ]
