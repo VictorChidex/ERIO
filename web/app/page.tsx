@@ -116,7 +116,7 @@ export default async function HomePage() {
                 type="text"
                 id="si"
                 name="q"
-                placeholder={stats ? `Search ${formatCount(stats.total_jobs)} jobs...` : "Search jobs..."}
+                placeholder="Title, company or city…"
                 autoComplete="off"
                 aria-label="Search jobs"
               />
@@ -148,7 +148,7 @@ export default async function HomePage() {
               <div className="snum">{stats ? formatCount(stats.countries_with_jobs) : "—"}</div>
               <div className="slbl">Countries With Jobs</div>
             </div>
-            <div className="stat">
+            <div className="stat" title="Sources with a company board read successfully in the last hour">
               <div className="snum">{stats ? formatCount(stats.sources_live) : "—"}</div>
               <div className="slbl">Sources Live</div>
             </div>

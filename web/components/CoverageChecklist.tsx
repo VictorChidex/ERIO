@@ -47,8 +47,10 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
         <p className="cov-p">
           A platform counts as <strong>verified</strong> only when live runs on two or more of its real boards
           fetched, parsed and normalized every job (a public job service, meaning a government job service or an
-          open job feed, counts as verified on one live run of its feed), and as <strong>live</strong> while at
-          least {LIVE_BOARDS} of its boards were read successfully in the last two days. Platforms that turn
+          open job feed, counts as verified on one live run of its feed), and as <strong>steady</strong> while at
+          least {LIVE_BOARDS} of its boards were read successfully in the last two days. (A platform is also
+          counted as reading when a single board was read in the last hour: that is the “live” figure on the home
+          page.) Platforms that turn
           crawlers away are shown as blocked and are never worked around.
         </p>
         <div className="cov-stats-row">
@@ -72,7 +74,7 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
             <div className="cov-stat-num">
               {rows.filter((r) => r.live).length}/{rows.length}
             </div>
-            <div className="cov-stat-lbl">Platforms live now</div>
+            <div className="cov-stat-lbl">Platforms running steadily</div>
           </div>
         </div>
 
@@ -109,7 +111,7 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
                 <th scope="col">Platform</th>
                 <th scope="col">Type</th>
                 <th scope="col">Status</th>
-                <th scope="col">Live now</th>
+                <th scope="col">Steady</th>
                 <th scope="col">Boards ok / total</th>
                 <th scope="col">Open jobs</th>
                 <th scope="col">Runs 7d ok / failed</th>
@@ -130,7 +132,7 @@ export function CoverageChecklist({ rows, filter }: { rows: CoverageRow[]; filte
                   </td>
                   <td>
                     <span className={`cov-pill ${r.live ? "ok" : r.boards_ok_2d > 0 ? "part" : "other"}`}>
-                      {r.live ? "Live" : `${r.boards_ok_2d} of ${LIVE_BOARDS}`}
+                      {r.live ? "Steady" : `${r.boards_ok_2d} of ${LIVE_BOARDS}`}
                     </span>
                   </td>
                   <td>{r.boards_total ? `${r.boards_ok_2d} / ${r.boards_total}` : "—"}</td>
