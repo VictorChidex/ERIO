@@ -84,6 +84,15 @@ test.describe("search", () => {
   test("ticking a filter updates the URL and the results", async ({ page }) => {
     const country = await busiestCountry(page);
     await page.goto(`/search?country=${country.code}`);
+    // On a phone the filters start folded (results first): wait for that, then open them.
+    const fold = page.locator("details.sb-fold");
+    await page.waitForFunction(() => {
+      const details = document.querySelector<HTMLDetailsElement>("details.sb-fold");
+      return !details || !window.matchMedia("(max-width: 900px)").matches || !details.open;
+    });
+    if (!(await fold.evaluate((details) => (details as HTMLDetailsElement).open))) {
+      await fold.locator("summary").click();
+    }
     await page.locator('input[name="type"][value="remote"]').uncheck();
 
     await expect(page).toHaveURL(new RegExp(`country=${country.code}&type=hybrid,onsite`));
