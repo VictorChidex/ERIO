@@ -1610,5 +1610,13 @@
   "blocked": "no shared public job surface: {tenant}.teamdash.com (tallink, lhv tested) and jobs.teamdash.com serve the recruiter sign-in app with no job list, and customers publish career sites on their own domains with no common feed or sitemap.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "skeeled",
+  "name": "skeeled",
+  "kind": "ats",
+  "blocked": "the hosted career page app.skeeled.com/careers/{id} is a script app whose data runs over a websocket service (wss://app.skeeled.com/ws); no HTTP job list, feed, sitemap or structured data was found, and customers embed it by iframe on their own sites.",
+  "notes": "",
+  "examples": []
  }
 ]
