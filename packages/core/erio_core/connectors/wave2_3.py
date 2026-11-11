@@ -189,7 +189,9 @@ class BeehireConnector(Connector):
                         "location": campaign.get("location") or {},
                         "contract": (campaign.get("details") or {}).get("contract") or {},
                         "categories": [
-                            c["label"] for c in campaign.get("jobCategories") or [] if c.get("label")
+                            c["label"]
+                            for c in campaign.get("jobCategories") or []
+                            if c.get("label")
                         ],
                     },
                 )
@@ -449,7 +451,9 @@ class RecruitisConnector(PageCrawler):
         tags = [t for t in job["tags"] if t]
         # Tags in page order: place, field of work, contract, education (some may be absent).
         place = tags[0] if tags else None
-        contract = next((t for t in tags if re.search(r"úvazek|brigád|HPP|DPP|smlouv", t, re.I)), None)
+        contract = next(
+            (t for t in tags if re.search(r"úvazek|brigád|HPP|DPP|smlouv", t, re.I)), None
+        )
         city = place.split(",")[0].strip() if place else None
         country = place.rsplit(",", 1)[-1].strip() if place and "," in place else None
         return PartialJob(
@@ -554,7 +558,9 @@ class OpenCATSConnector(PageCrawler):
     def _base(self, board_token: str) -> str:
         match = OPENCATS_TOKEN.fullmatch(board_token.strip())
         if not match:
-            raise ValueError(f"not an OpenCATS careers address (https://host/.../careers/): {board_token!r}")
+            raise ValueError(
+                f"not an OpenCATS careers address (https://host/.../careers/): {board_token!r}"
+            )
         return f"https://{match['host'].lower()}{match['path']}/careers/"
 
     def board_url(self, board_token: str) -> str:
@@ -643,7 +649,9 @@ class MciDirectHireConnector(Connector):
             title = re.search(r'<strong class="job-title">(.*?)</strong>', card, re.DOTALL)
             if not (link and title and text_of(title.group(1))):
                 continue
-            employer = re.search(r'<small class="font-small job-location">(.*?)</small>', card, re.DOTALL)
+            employer = re.search(
+                r'<small class="font-small job-location">(.*?)</small>', card, re.DOTALL
+            )
             meta = re.search(
                 r'<small class="text-muted">\s*<i class="fa fa-calendar"></i>\s*([\d/]+)'
                 r'(?:.*?<i class="fa fa-map-marker"></i>(.*?))?</small>',
@@ -701,7 +709,9 @@ class MciDirectHireConnector(Connector):
                 break
         if not postings:
             raise FetchError("parse_error", "the board lists no jobs", 200)
-        return BoardFetch(postings=postings, http_status=200, body=b"", complete=pages <= self.max_pages)
+        return BoardFetch(
+            postings=postings, http_status=200, body=b"", complete=pages <= self.max_pages
+        )
 
     def parse(self, raw: RawPosting) -> PartialJob:
         job = raw.payload
@@ -863,7 +873,9 @@ class TalentClueConnector(PageCrawler):
 
     def read_page(self, url: str, body: bytes) -> dict[str, Any] | None:
         html_text = body.decode("utf-8", "replace")
-        title = re.search(r'<h1 class="job-page__header-title[^"]*"[^>]*>(.*?)</h1>', html_text, re.DOTALL)
+        title = re.search(
+            r'<h1 class="job-page__header-title[^"]*"[^>]*>(.*?)</h1>', html_text, re.DOTALL
+        )
         if not title or not text_of(title.group(1)):
             return None
         summary = [(text_of(k).rstrip(":"), text_of(v)) for k, v in SUMMARY_ITEM.findall(html_text)]
@@ -892,7 +904,14 @@ class TalentClueConnector(PageCrawler):
             location_text=place or None,
             city=city or None,
             country_hint=country[1] if country else None,
-            employment_type=next((v for k, v in job.get("summary") or [] if re.match(r"Tipo de Contrato|Tipus de Contracte|Contract", k)), None),
+            employment_type=next(
+                (
+                    v
+                    for k, v in job.get("summary") or []
+                    if re.match(r"Tipo de Contrato|Tipus de Contracte|Contract", k)
+                ),
+                None,
+            ),
             departments=[],
             description_html=job.get("description") if values or job.get("description") else None,
         )

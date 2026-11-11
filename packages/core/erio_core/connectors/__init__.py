@@ -48,8 +48,8 @@ from erio_core.connectors.rippling import RipplingConnector
 from erio_core.connectors.smartrecruiters import SmartRecruitersConnector
 from erio_core.connectors.teamtailor import TeamtailorConnector
 from erio_core.connectors.trakstar import TrakstarConnector
-from erio_core.connectors.workable import WorkableConnector
 from erio_core.connectors.wave2_3 import WAVE2_3_CONNECTORS
+from erio_core.connectors.workable import WorkableConnector
 from erio_core.connectors.workday import WorkdayConnector
 from erio_core.connectors.xml_boards import (
     HiringThingConnector,

@@ -217,7 +217,9 @@ def test_opencats_reads_the_careers_module_and_skips_the_general_application() -
     job = jobs[0]
     assert job.title == "CFO/VP Finance" and job.company_name == "Vectaur"
     assert job.location_text == "Greater Toronto Area, ON"
-    assert str(job.apply_url) == "https://vectaur.com/ats/careers/index.php?m=careers&p=showJob&ID=20"
+    assert (
+        str(job.apply_url) == "https://vectaur.com/ats/careers/index.php?m=careers&p=showJob&ID=20"
+    )
     assert job.description_html and "Chief Financial Officer" in job.description_html
 
 
@@ -243,7 +245,11 @@ def test_mcidirecthire_reads_job_cards_and_reports_a_partial_crawl() -> None:
     fetched, jobs = read(
         "mcidirecthire",
         "https://jobs.mcidirecthire.com",
-        {"https://jobs.mcidirecthire.com/AvailableVacancies/JobSearch": body("mcidirecthire_list.html")},
+        {
+            "https://jobs.mcidirecthire.com/AvailableVacancies/JobSearch": body(
+                "mcidirecthire_list.html"
+            )
+        },
     )
     assert len(jobs) == 2 and not fetched.complete  # the board has 262 pages; a crawl reads 5
     job = jobs[0]
