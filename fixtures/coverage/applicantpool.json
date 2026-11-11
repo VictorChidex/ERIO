@@ -1,7 +1,7 @@
 [
  {
   "source_slug": "applicantpool",
-  "board_token": "example",
+  "board_token": "example/1",
   "external_id": "1311079",
   "payload": {
    "id": 1311079,
@@ -84,7 +84,7 @@
  },
  {
   "source_slug": "applicantpool",
-  "board_token": "example",
+  "board_token": "example/1",
   "external_id": "1340392",
   "payload": {
    "id": 1340392,
@@ -122,7 +122,7 @@
  },
  {
   "source_slug": "applicantpool",
-  "board_token": "example",
+  "board_token": "example/1",
   "external_id": "1340393",
   "payload": {
    "id": 1340393,
