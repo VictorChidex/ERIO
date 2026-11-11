@@ -76,3 +76,26 @@ def test_academictransfer_reads_vacancy_pages_from_the_sitemap() -> None:
     assert job.salary is not None and job.salary.currency == "EUR"
     assert job.description_html and "greenhouse" in job.description_html.lower()
     assert fetched.complete
+
+
+def test_hrmos_reads_the_company_job_list_and_its_job_pages() -> None:
+    site = "https://hrmos.co/pages/uzabase"
+    _, jobs, fetcher = read(
+        "hrmos",
+        f"{site}/jobs",
+        {
+            f"{site}/jobs": body("hrmos_list.html"),
+            f"{site}/jobs/MIMIR_005": body("hrmos_job.html"),
+        },
+    )
+    # The entry link is not a job page; the second job page is not recorded (404, closed).
+    assert not any(u.endswith("/entry") for u in fetcher.requested)
+    assert len(jobs) == 1
+    job = jobs[0]
+    assert job.company_name == "株式会社ユーザベース"
+    assert job.salary is not None and job.salary.currency == "JPY"
+    assert str(job.apply_url) == f"{site}/jobs/MIMIR_005"
+    assert job.description_html
+
+
+# --- end of tests ---

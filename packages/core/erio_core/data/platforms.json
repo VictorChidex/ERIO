@@ -1487,5 +1487,16 @@
   "examples": [
    "https://www.academictransfer.com/sitemap-vacancies.xml"
   ]
+ },
+ {
+  "slug": "hrmos",
+  "name": "HRMOS",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Public career pages of hrmos.co/pages/{company}/jobs (server-rendered list, 100 per page) and each job page's schema.org JobPosting; hrmos.co has no robots.txt. Token is the company's jobs page address.",
+  "examples": [
+   "https://hrmos.co/pages/uzabase/jobs",
+   "https://hrmos.co/pages/hrmos/jobs"
+  ]
  }
 ]
