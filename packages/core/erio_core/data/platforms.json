@@ -1493,5 +1493,17 @@
   "blocked": "no shared public job surface: tenant hosts ({name}.nicoka.com) serve the login app (robots.txt answers 403), and customers publish jobs on their own bespoke sites (for example externatic.fr), so there is nothing platform-wide to read.",
   "notes": "",
   "examples": []
+ },
+ {
+  "slug": "greythr",
+  "name": "greytHR Hire",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the JSON calls the career page {tenant}.greythr.com/hire/jobs makes (published_jobs, company details, place lookup); no login. Token is the tenant subdomain.",
+  "examples": [
+   "greytip",
+   "basiscloud",
+   "waydot"
+  ]
  }
 ]
