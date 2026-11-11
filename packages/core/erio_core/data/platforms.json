@@ -1477,5 +1477,15 @@
   "examples": [
    "https://www.airswift.com/jobs"
   ]
+ },
+ {
+  "slug": "academictransfer",
+  "name": "AcademicTransfer",
+  "kind": "service",
+  "blocked": "",
+  "notes": "Public vacancy pages of academictransfer.com (Dutch and international academic jobs) read from its vacancies sitemap (schema.org JobPosting); robots.txt allows crawlers with a 10 second delay, so a crawl reads the newest 100. Credit: link each job back to its AcademicTransfer page.",
+  "examples": [
+   "https://www.academictransfer.com/sitemap-vacancies.xml"
+  ]
  }
 ]
