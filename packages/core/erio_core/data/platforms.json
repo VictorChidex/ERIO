@@ -1584,5 +1584,13 @@
   "examples": [
    "https://jobs.simplify.hr/"
   ]
+ },
+ {
+  "slug": "seamlesshiring",
+  "name": "SeamlessHiring",
+  "kind": "ats",
+  "blocked": "no public job list: {company}.seamlesshiring.com serves a client-rendered single page app (no job links or structured data in the HTML; /sitemap.xml, /jobs and feeds answer 404), and jobs load through an undocumented private API",
+  "notes": "",
+  "examples": []
  }
 ]
