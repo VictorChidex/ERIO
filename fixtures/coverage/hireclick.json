@@ -1,0 +1,100 @@
+[
+ {
+  "source_slug": "hireclick",
+  "board_token": "00000000-0000-0000-0000-000000000001",
+  "external_id": "163100",
+  "payload": {
+   "listed": {
+    "JobTitle": "Sales Account Executive -  Software",
+    "JobURL": "https://careers.hireclick.com/jb/sales-account-executive-software/view/163100",
+    "JobDescriptionShort": "HIRECLICK, an Asure company in Sioux Falls, SD, is changing the way companies find and hire great people. We understand recruiting and its role in building great workplaces. HIRECLICK’s cloud-based platform allows our clients to manage",
+    "JobCity": "Sioux Falls",
+    "JobType": "Sales",
+    "LocationID": 1812,
+    "CategoryID": 2211
+   },
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Sales Account Executive -  Software",
+    "description": "<p><strong>Who we are</strong></p><p>Over 600 employees strong, Asure sees Human Capital Management (HCM) through the lens of entrepreneurs and executives with an owner’s mentality. We help businesses develop their “Human Capital” to get to the next level, stay compliant, and allocate their time, money and technology toward growth. Our HCM platform empowers more than 80,000 clients to build great teams and better manage their people while staying compliant in an ever-changing HR legislative landscape. Asure’s HCM offering includes Payroll &amp; Tax, HR, and Time &amp; Attendance software and HR Services ranging from online compliance tools to a fully outsourced HR department.</p><p>HIRECLICK, an Asure company in Sioux Falls, SD, is changing the way companies find and hire great people. We understand recruiting and its role in building great workplaces. HIRECLICK’s cloud-based platform allows our clients to manage the entire recruitment process, from posting jobs to managing incoming applications. Our platform is tied in with local media companies and integrated in with national partners such as Indeed, Zip Recruiter, Google, Monster and social media sites Facebook and LinkedIn. Our HIRECLICK platform has us rapidly adding new clients and we need to add GREAT people to our team.</p><p>This is an opportunity to join a fast-growing company and a great team that passionately believes in what it does. Our office is filled with talented people who don’t take themselves too seriously and where everyone’s voice counts. We don't work 60-hour weeks, but we do work effectively. We don't think it's archaic to have a sensible business model. But we do think it’s good to take risks, challenge how we do things, and why.</p><p><strong>This position will be in-office at our Sioux Falls, SD location or possibly remote.</strong></p><p><strong>How I will contribute</strong></p><p>The ideal Account Executive will have a minimum of 1-2 years (with 3+ years preferred) of sales experience in advertising, an HR recruiting role or software sales/SaaS experience and excels in working in a fast-paced environment.<span> </span>If you have a great attitude and want to sell-let's talk!</p><ul style='list-style-type:disc;'><li>Contribute to HIRECLICK’s growth directly by hitting (and exceeding!) new business targets on a monthly and quarterly basis</li><li>Learn more about prospects and present product demonstrations of our software over the phone</li><li>Negotiate pricing and terms</li><li>Maintain an accurate pipeline for company-wide forecasting</li><li>Use your natural curiosity, communication skills, and ambition to improve the performance of yourself and the team</li></ul><p><strong>Qualifications</strong></p><ul style='list-style-type:disc;'><li>A minimum of 1-2 years’ experience in advertising, HR recruiting or SaaS-software as a service sales. 3+ years of experience is preferred</li><li>Salesforce or Salesloft CRM experience is required</li><li>Excellent communication and interpersonal skills</li><li>Strong problem-solving abilities</li><li>Ability to thrive in a fast-paced, results-oriented environment</li><li>Possess an understanding of meeting or exceeding a quota</li><li>Bachelor’s Degree preferred</li><li>Must have a valid U.S. Driver’s License to be eligible for hire</li></ul><p><strong>Compensation</strong></p><p>The base salary range for this role is 50K-60K (depending upon level of experience) with OTE of $105,000 plus with commissions and benefits. This is an uncapped commission plan.</p><p><strong>Benefits</strong></p><ul style='list-style-type:disc;'><li style='tab-stops:list .5in;'>Medical, Dental, Vision, HSA, FSA- All effective on day 1!</li><li style='tab-stops:list .5in;'>Company paid Basic Life Insurance, A+D, Long-Term Disability, and Short-Term Disability</li><li style='tab-stops:list .5in;'>401K Program with 3% safe harbor contribution</li><li style='tab-stops:list .5in;'>Employee Stock Purchase Program</li><li style='tab-stops:",
+    "directApply": "True",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "HIRECLICK",
+     "value": "163100"
+    },
+    "datePosted": "3/5/2026 2:57:53 PM",
+    "employmentType": [
+     "Full_Time"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "logo": "",
+     "name": "HIRECLICK"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sioux Falls",
+      "addressRegion": "SD",
+      "postalCode": "57105",
+      "addressCountry": "US"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:52:43.411667Z",
+  "content_hash": "da66a80504ccba412df23b30fc7a484fe8dce2b4744e30e244af31089d338e34"
+ },
+ {
+  "source_slug": "hireclick",
+  "board_token": "00000000-0000-0000-0000-000000000001",
+  "external_id": "227236",
+  "payload": {
+   "listed": {
+    "JobTitle": "Sales Account Executive - Software",
+    "JobURL": "https://careers.hireclick.com/jb/sales-account-executive-software/view/227236",
+    "JobDescriptionShort": "Who we areOver 600 employees strong, Asure sees Human Capital Management (HCM) through the lens of entrepreneurs and executives with an owner’s mentality. We help businesses develop their “Human Capital” to get to the next level, stay compliant, and al...",
+    "JobCity": "Minneapolis",
+    "JobType": "Sales",
+    "LocationID": 30666,
+    "CategoryID": 2211
+   },
+   "posting": {
+    "@context": "http://schema.org/",
+    "@type": "JobPosting",
+    "title": "Sales Account Executive - Software",
+    "description": "<p><strong>Who we are</strong></p><p>Over 600 employees strong, Asure sees Human Capital Management (HCM) through the lens of entrepreneurs and executives with an owner’s mentality. We help businesses develop their “Human Capital” to get to the next level, stay compliant, and allocate their time, money and technology toward growth. Our HCM platform empowers more than 80,000 clients to build great teams and better manage their people while staying compliant in an ever-changing HR legislative landscape. Asure’s HCM offering includes Payroll &amp; Tax, HR, and Time &amp; Attendance software and HR Services ranging from online compliance tools to a fully outsourced HR department.</p><p>HIRECLICK, an Asure company in Sioux Falls, SD, is changing the way companies find and hire great people. We understand recruiting and its role in building great workplaces. HIRECLICK’s cloud-based platform allows our clients to manage the entire recruitment process, from posting jobs to managing incoming applications. Our platform is tied in with local media companies and integrated in with national partners such as Indeed, Zip Recruiter, Google, Monster and social media sites Facebook and LinkedIn. Our HIRECLICK platform has us rapidly adding new clients and we need to add GREAT people to our team.</p><p>This is an opportunity to join a fast-growing company and a great team that passionately believes in what it does. Our office is filled with talented people who don’t take themselves too seriously and where everyone’s voice counts. We don't work 60-hour weeks, but we do work effectively. We don't think it's archaic to have a sensible business model. But we do think it’s good to take risks, challenge how we do things, and why.</p><p><strong>This position will be in-office at our Sioux Falls, SD location or possibly remote.</strong></p><p><strong>How I will contribute</strong></p><p>The ideal Account Executive will have a minimum of 1-2 years (with 3+ years preferred) of sales experience in advertising, an HR recruiting role or software sales/SaaS experience and excels in working in a fast-paced environment. If you have a great attitude and want to sell-let's talk!</p><ul style='list-style-type:disc;'><li>Contribute to HIRECLICK’s growth directly by hitting (and exceeding!) new business targets on a monthly and quarterly basis</li><li>Learn more about prospects and present product demonstrations of our software over the phone</li><li>Negotiate pricing and terms</li><li>Maintain an accurate pipeline for company-wide forecasting</li><li>Use your natural curiosity, communication skills, and ambition to improve the performance of yourself and the team</li></ul><p><strong>Qualifications</strong></p><ul style='list-style-type:disc;'><li>A minimum of 1-2 years’ experience in advertising, HR recruiting or SaaS-software as a service sales. 3+ years of experience is preferred</li><li>Salesforce or Salesloft CRM experience is required</li><li>Excellent communication and interpersonal skills</li><li>Strong problem-solving abilities</li><li>Ability to thrive in a fast-paced, results-oriented environment</li><li>Possess an understanding of meeting or exceeding a quota</li><li>Bachelor’s Degree preferred</li><li>Must have a valid U.S. Driver’s License to be eligible for hire</li></ul><p><strong>Compensation</strong></p><p>The base salary range for this role is 50K-60K (depending upon level of experience) with OTE of $105,000 plus with commissions and benefits. This is an uncapped commission plan.</p><p><strong>Benefits</strong></p><ul style='list-style-type:disc;'><li style='tab-stops:list .5in;'>Medical, Dental, Vision, HSA, FSA- All effective on day 1!</li><li style='tab-stops:list .5in;'>Company paid Basic Life Insurance, A+D, Long-Term Disability, and Short-Term Disability</li><li style='tab-stops:list .5in;'>401K Program with 3% safe harbor contribution</li><li style='tab-stops:list .5in;'>Employee Stock Purchase Program</li><li style='tab-stops:list .5in;'>F",
+    "directApply": "True",
+    "identifier": {
+     "@type": "PropertyValue",
+     "name": "HIRECLICK",
+     "value": "227236"
+    },
+    "datePosted": "3/10/2026 4:06:49 PM",
+    "employmentType": [
+     "Full_Time"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "logo": "",
+     "name": "HIRECLICK"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Minneapolis",
+      "addressRegion": "MN",
+      "postalCode": "",
+      "addressCountry": "US"
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T14:52:43.411667Z",
+  "content_hash": "6330c44ae35e47465e3851f5764b5d44907bda376d14b77e962878653bccbc2b"
+ }
+]

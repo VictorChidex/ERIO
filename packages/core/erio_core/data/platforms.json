@@ -1625,5 +1625,15 @@
    "ambev",
    "carreiras"
   ]
+ },
+ {
+  "slug": "hireclick",
+  "name": "HireClick",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "HireClick's own job board (careers.hireclick.com/jobboard): its list call /api/Controllers/JobBoard/GetSettingsAndJobs names the open jobs and each job page carries a schema.org JobPosting; robots.txt allows crawlers with a 10 second delay. The token is the employer id the board page prints (only HireClick's own board could be found; customer boards were not found by search).",
+  "examples": [
+   "7C0F8BC3-ECEB-4A4B-82A1-98C96A407068"
+  ]
  }
 ]

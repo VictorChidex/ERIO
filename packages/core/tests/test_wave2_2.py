@@ -279,4 +279,27 @@ def test_gupy_reads_the_career_page_data_and_skips_talent_pools() -> None:
     assert str(job.apply_url) == f"{site}/jobs/12202203"
 
 
+def test_hireclick_reads_the_job_board_call_and_job_pages() -> None:
+    employer = "00000000-0000-0000-0000-000000000001"
+    site = "https://careers.hireclick.com"
+    fetched, jobs, fetcher = read(
+        "hireclick",
+        employer,
+        {
+            f"{site}/api/Controllers/JobBoard/GetSettingsAndJobs?orgGUID={employer}": body(
+                "hireclick_jobs.json"
+            ),
+            f"{site}/jb/sales-account-executive-software/view/163100": body("hireclick_job.html"),
+        },
+    )
+    assert len(jobs) == 2 and fetched.complete and len(fetcher.requested) == 3
+    first, second = jobs
+    assert first.title.startswith("Sales Account Executive")
+    assert first.company_name == "HIRECLICK" and first.city == "Sioux Falls"
+    assert first.description_html and len(first.description_html) > 200
+    # The second job page is not recorded: only the list's own fields are known.
+    assert second.city == "Minneapolis" and second.company_name is None
+    assert str(first.apply_url) == f"{site}/jb/sales-account-executive-software/view/163100"
+
+
 # --- end of tests ---

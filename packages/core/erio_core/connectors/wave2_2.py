@@ -22,6 +22,8 @@ limits, is in docs/connectors.md.
   but AI-training crawlers.
 - Gupy: the career page ``{company}.gupy.io`` (job list in the page's own data) and each
   ``/jobs/{id}`` page's data for the description; robots.txt allows all.
+- HireClick: the job board's own list call (``/api/Controllers/JobBoard/GetSettingsAndJobs``)
+  and each job page's JobPosting; robots.txt allows crawlers with a 10 second delay.
 - Jobtrain: the client site's own job card list (``/{client}/Home/_JobCard``) and each job
   page's JobPosting; jobtrain.co.uk serves no robots.txt.
 - Quickin: the documented public career page API ``api.quickin.io/public/{account}/jobs``
@@ -40,7 +42,7 @@ from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url, host_country, iso_datetime, join_html, salary
 from erio_core.connectors.base import BoardFetch, Connector, Fetcher, FetchError
 from erio_core.connectors.feed import stable_id
-from erio_core.connectors.jsonld import JsonLdConnector, job_postings
+from erio_core.connectors.jsonld import JsonLdConnector, job_postings, parse_job_posting
 from erio_core.schemas import PartialJob, RawPosting
 
 SLUG = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
@@ -655,6 +657,99 @@ class GupyConnector(Connector):
         )
 
 
+# --------------------------------------------------------------- HireClick
+
+GUID = re.compile(r"[0-9A-Fa-f]{8}-(?:[0-9A-Fa-f]{4}-){3}[0-9A-Fa-f]{12}")
+
+
+class HireClickConnector(Connector):
+    """A HireClick job board (``careers.hireclick.com/jobboard``): the board's own list call
+    (``/api/Controllers/JobBoard/GetSettingsAndJobs?orgGUID=...``, JSON inside a JSON string)
+    names the open jobs, and each job page ``/jb/{slug}/view/{id}`` carries a JobPosting.
+    The token is the employer's id as the board page prints it. robots.txt asks for a
+    10 second delay, which the polite fetcher keeps."""
+
+    slug = "hireclick"
+    hosts = frozenset({"careers.hireclick.com"})
+    max_details = 40
+
+    def board_url(self, board_token: str) -> str:
+        if not GUID.fullmatch(board_token):
+            raise ValueError(f"not a HireClick employer id: {board_token!r}")
+        return (
+            "https://careers.hireclick.com/api/Controllers/JobBoard/"
+            f"GetSettingsAndJobs?orgGUID={board_token}"
+        )
+
+    def extract(self, body: bytes, board_token: str) -> list[RawPosting]:
+        data = json.loads(body)
+        if isinstance(data, str):  # the endpoint answers with JSON inside a JSON string
+            data = json.loads(data)
+        postings = []
+        for job in data["JobList"]:
+            found = re.search(r"/view/(\d+)", str(job.get("JobURL") or ""))
+            if found and job.get("JobTitle"):
+                postings.append(
+                    RawPosting(
+                        source_slug=self.slug,
+                        board_token=board_token,
+                        external_id=found.group(1),
+                        payload={"listed": job},
+                    )
+                )
+        return postings
+
+    def list_postings(
+        self, fetcher: Fetcher, board_token: str, etag: str | None = None
+    ) -> BoardFetch:
+        listed = super().list_postings(fetcher, board_token, etag)
+        if listed.unchanged:
+            return listed
+        postings, unread = [], 0
+        for raw in listed.postings[: self.max_details]:
+            payload = dict(raw.payload)
+            try:
+                page = fetcher.get(str(raw.payload["listed"]["JobURL"]))
+            except FetchError:
+                page = None
+            if page is not None and page.status == 200:
+                found = job_postings(page.body.decode("utf-8", "replace"))
+                if found:
+                    payload["posting"] = found[0]
+            elif page is None or page.status not in (404, 410):
+                unread += 1
+            postings.append(raw.model_copy(update={"payload": payload}))
+        return BoardFetch(
+            postings=postings,
+            http_status=200,
+            body=listed.body,
+            etag=listed.etag,
+            complete=len(listed.postings) <= self.max_details and unread == 0,
+        )
+
+    def parse(self, raw: RawPosting) -> PartialJob:
+        listed = raw.payload["listed"]
+        url = as_url(str(listed["JobURL"]).split("#")[0])
+        posting = raw.payload.get("posting")
+        if posting:
+            posting = dict(posting) | {"url": str(url)}
+            job = parse_job_posting(self.slug, raw.external_id, str(url), posting)
+            identifier = posting.get("identifier")
+            if not job.company_name and isinstance(identifier, dict):
+                job = job.model_copy(update={"company_name": plain(identifier.get("name"))})
+            return job
+        city = plain(listed.get("JobCity"))
+        return PartialJob(
+            source_slug=self.slug,
+            external_id=raw.external_id,
+            title=str(listed["JobTitle"]).strip(),
+            apply_url=url,
+            location_text=city,
+            city=city,
+            description_html=plain(listed.get("JobDescriptionShort")),
+        )
+
+
 WAVE2_2_CONNECTORS: list[Connector] = [
     JsonLdConnector(
         "academictransfer",
@@ -680,6 +775,7 @@ WAVE2_2_CONNECTORS: list[Connector] = [
         newest_first=True,
     ),
     GupyConnector(),
+    HireClickConnector(),
     JobtrainConnector(),
     QuickinConnector(),
     SpeedrunConnector(),
