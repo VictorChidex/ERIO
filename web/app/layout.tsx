@@ -11,19 +11,13 @@ import "./globals.css";
 
 // Fonts come from the versioned @fontsource packages, so builds never depend
 // on reaching Google Fonts.
-const display = localFont({
-  src: [
-    { path: "../node_modules/@fontsource/syne/files/syne-latin-700-normal.woff2", weight: "700" },
-    { path: "../node_modules/@fontsource/syne/files/syne-latin-800-normal.woff2", weight: "800" },
-  ],
-  variable: "--font-display",
-});
+// One typeface for everything, as large sites do: Noto Sans (open licence), 16px body text.
 const text = localFont({
   src: [
-    { path: "../node_modules/@fontsource/dm-sans/files/dm-sans-latin-300-normal.woff2", weight: "300" },
-    { path: "../node_modules/@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2", weight: "400" },
-    { path: "../node_modules/@fontsource/dm-sans/files/dm-sans-latin-500-normal.woff2", weight: "500" },
-    { path: "../node_modules/@fontsource/dm-sans/files/dm-sans-latin-600-normal.woff2", weight: "600" },
+    { path: "../node_modules/@fontsource/noto-sans/files/noto-sans-latin-400-normal.woff2", weight: "400" },
+    { path: "../node_modules/@fontsource/noto-sans/files/noto-sans-latin-500-normal.woff2", weight: "500" },
+    { path: "../node_modules/@fontsource/noto-sans/files/noto-sans-latin-700-normal.woff2", weight: "700" },
+    { path: "../node_modules/@fontsource/noto-sans/files/noto-sans-latin-800-normal.woff2", weight: "800" },
   ],
   variable: "--font-text",
 });
@@ -50,7 +44,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${display.variable} ${text.variable} ${mono.variable}`}
+      className={`${text.variable} ${mono.variable}`}
       suppressHydrationWarning
     >
       <head>

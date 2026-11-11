@@ -3,12 +3,12 @@
    next/font (see app/layout.tsx). Additions for the live site are at the end. */
 :root{--bg:#060a12;--sf:#0d1726;--sf2:#122039;--sf3:#182d4f;--brd:rgba(79,127,255,.1);--brdhi:rgba(79,127,255,.3);--acc:#4f7fff;--acc2:#22d3ee;--grn:#10b981;--amb:#f59e0b;--red:#ef4444;--fg:#dde6f4;--fg2:#7a9ec5;--fg3:#3a5476;--nav-bg:rgba(6,10,18,.88);--hero-gr:radial-gradient(ellipse 90% 55% at 50% -5%,rgba(79,127,255,.22) 0%,transparent 68%);--radius:14px;--radius-sm:9px;color-scheme:dark}
 :root[data-theme="light"]{--bg:#eef2f8;--sf:#fff;--sf2:#f3f7fc;--sf3:#e5ecf5;--brd:rgba(59,110,255,.12);--brdhi:rgba(59,110,255,.3);--acc:#3b6eff;--acc2:#0891b2;--grn:#059669;--amb:#b45309;--red:#dc2626;--fg:#0f172a;--fg2:#475569;--fg3:#94a3b8;--nav-bg:rgba(238,242,248,.92);--hero-gr:radial-gradient(ellipse 90% 55% at 50% -5%,rgba(59,110,255,.12) 0%,transparent 68%);color-scheme:light}
-:root{--logo-ring:var(--acc);--logo-dot:var(--acc2);--logo-bars:#eaf1ff}
+:root{--font-display:var(--font-text);--logo-ring:var(--acc);--logo-dot:var(--acc2);--logo-bars:#eaf1ff}
 :root[data-theme="light"]{--logo-bars:#0f172a}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--fg);font-family:var(--font-text),system-ui,sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%} a{color:var(--acc);text-decoration:none} button{cursor:pointer;font-family:inherit;border:none;background:none} input,select{font-family:inherit}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-text),"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%} a{color:var(--acc);text-decoration:none} button{cursor:pointer;font-family:inherit;border:none;background:none} input,select,textarea{font-family:inherit;font-size:16px}
 code{font-family:var(--font-mono),monospace;font-size:.88em;background:var(--sf2);padding:2px 6px;border-radius:4px}
 .wrap{max-width:1240px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
 /* NAV */
