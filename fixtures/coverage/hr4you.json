@@ -1,0 +1,198 @@
+[
+ {
+  "source_slug": "hr4you",
+  "board_token": "https://wupersonal.hr4you.org/sitemap.xml",
+  "external_id": "0d941ca1ada1e9b32debe876",
+  "payload": {
+   "page_url": "https://wupersonal.hr4you.org/job/view/2633/it-techniker-m-w-d-2nd-level-support?page_lang=de",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "description": "Als Experten für IT-Personal und kaufmännische Fachkräfte im Rahmen der Arbeitnehmerüberlassung sowie im Dienstvertrag, unterstützen wir namhafte nationale und internationale IT-Unternehmen.<br />\n<br />\nFür unseren renommierten Kunden aus dem <strong>Raum Hannover</strong> suchen wir mehrere<br /><br />FAIR • ERFAHREN • TRANSPARENT<br /><br /><strong>JOBPROFIL&nbsp; - ID 2633<br />\n<br />\nAUFGABEN</strong>\n<ul>\n<li>Auf- / Abbau im Rahmen von Installationen und Umzügen</li>\n<li>Hard- und Software Installation nach Vorgaben</li>\n<li>Durchführung von Funktionstests</li>\n<li>Durchführung von Hardware Reparaturen und Aufrüstungen</li>\n<li>Fehlerverfolgung und -analyse</li>\n</ul><br /><br /><b>KENNTNISSE</b>\n<ul>\n<li>Technische Berufsausbildung (z.B. als IT Servicetechniker (m/w/d), IT Techniker (m/w/d) im 2nd Level Support, Fachinformatiker (m/w/d) Systemintegration, etc.), Umschulung oder drei Jahre Berufserfahrung im IT-Umfeld</li>\n<li>Kenntnisse im Microsoft Office Bereich (Installation und Grundeinrichtung)</li>\n<li>Erfahrung in der selbstständigen Installation, Wartung, Reparatur und Aufrüstung von Hard- und Software</li>\n<li>Anwendererfahrung in einem Ticketsystem</li>\n<li>Gute Deutschkenntnisse und idealerweise Englischkenntnisse</li>\n<li>Führerschein (Klasse B)</li>\n</ul><br /><br /><b>LEISTUNGEN</b>\n<ul>\n<li>Tarifgebundener Vertrag (GVP)</li>\n<li>Festes Monatsgehalt inklusive übertarifliche Bezahlung</li>\n<li>Projektzulage ab dem ersten Einsatztag</li>\n<li>Urlaubs- und Weihnachtsgeld nach GVP</li>\n<li>Vergütung nach Equal-Pay-Modell</li>\n<li>Mitarbeiterempfehlungsprogramm</li>\n<li>Persönliche Betreuung</li>\n</ul><br /><br />",
+    "datePosted": "2026-10-26",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "wu personal GmbH",
+     "sameAs": "www.wu.de",
+     "description": "Als Experten für IT-Personal und kaufmännische Fachkräfte im Rahmen der Arbeitnehmerüberlassung sowie im Dienstvertrag, unterstützen wir namhafte nationale und internationale IT-Unternehmen.<br />\n<br />\nFür unseren renommierten Kunden aus dem <strong>Raum Hannover</strong> suchen wir mehrere"
+    },
+    "title": "IT Techniker (m/w/d) 2nd Level Support",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hannover",
+      "addressRegion": "Niedersachsen",
+      "addressCountry": "DE",
+      "postalCode": "30159",
+      "streetAddress": ""
+     }
+    },
+    "baseSalary": {
+     "type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "YEAR",
+      "value": 0
+     }
+    },
+    "educationRequirements": "Volks-/Hauptsch., mittl. Reife mit Berufsausbil.",
+    "employmentType": "FULL_TIME",
+    "experienceRequirements": "1-2 Jahre",
+    "industry": "IT, Software, Internet",
+    "qualifications": "<b>KENNTNISSE</b>\n<ul>\n<li>Technische Berufsausbildung (z.B. als IT Servicetechniker (m/w/d), IT Techniker (m/w/d) im 2nd Level Support, Fachinformatiker (m/w/d) Systemintegration, etc.), Umschulung oder drei Jahre Berufserfahrung im IT-Umfeld</li>\n<li>Kenntnisse im Microsoft Office Bereich (Installation und Grundeinrichtung)</li>\n<li>Erfahrung in der selbstständigen Installation, Wartung, Reparatur und Aufrüstung von Hard- und Software</li>\n<li>Anwendererfahrung in einem Ticketsystem</li>\n<li>Gute Deutschkenntnisse und idealerweise Englischkenntnisse</li>\n<li>Führerschein (Klasse B)</li>\n</ul>",
+    "responsibilities": "<strong>JOBPROFIL&nbsp; - ID 2633<br />\n<br />\nAUFGABEN</strong>\n<ul>\n<li>Auf- / Abbau im Rahmen von Installationen und Umzügen</li>\n<li>Hard- und Software Installation nach Vorgaben</li>\n<li>Durchführung von Funktionstests</li>\n<li>Durchführung von Hardware Reparaturen und Aufrüstungen</li>\n<li>Fehlerverfolgung und -analyse</li>\n</ul>",
+    "skills": "",
+    "validThrough": "2026-12-26",
+    "workHours": 40,
+    "jobBenefits": "<b>LEISTUNGEN</b>\n<ul>\n<li>Tarifgebundener Vertrag (GVP)</li>\n<li>Festes Monatsgehalt inklusive übertarifliche Bezahlung</li>\n<li>Projektzulage ab dem ersten Einsatztag</li>\n<li>Urlaubs- und Weihnachtsgeld nach GVP</li>\n<li>Vergütung nach Equal-Pay-Modell</li>\n<li>Mitarbeiterempfehlungsprogramm</li>\n<li>Persönliche Betreuung</li>\n</ul>",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "descriptionIntroduction",
+      "value": "FAIR • ERFAHREN • TRANSPARENT"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "descriptionEnding",
+      "value": ""
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "c5f01933e372e7a2f4553c5e57452bc9ac4268cf852f512ab670d7a10675b298"
+ },
+ {
+  "source_slug": "hr4you",
+  "board_token": "https://wupersonal.hr4you.org/sitemap.xml",
+  "external_id": "753ba7633ad1e0f2d9f6b89b",
+  "payload": {
+   "page_url": "https://wupersonal.hr4you.org/job/view/2635/fachinformatiker-m-w-d-systemintegration?page_lang=de",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "description": "Als Experten für IT-Personal und kaufmännische Fachkräfte im Rahmen der Arbeitnehmerüberlassung sowie im Dienstvertrag, unterstützen wir namhafte nationale und internationale IT-Unternehmen.<br />\n<br />\nFür unseren renommierten Kunden aus dem <strong>Raum Hannover</strong> suchen wir mehrere<br /><br />FAIR • ERFAHREN • TRANSPARENT<br /><br /><strong>JOBPROFIL&nbsp; - ID 2635<br />\n<br />\nAUFGABEN</strong>\n<ul>\n<li>Installation und Konfiguration von Endgeräten, sowie der Personalisierung</li>\n<li>Durchführen von IT Supportarbeiten inkl. Wartung und Reparatur) anhand der übermittelten Service Request-Tickets</li>\n<li>Transport-, und Bereitstellung der Endgeräte vom Lager bis zum Endkunden-Arbeitsplatz</li>\n<li>Status-Pflege und Dokumentation in den führenden Ticket- und Assetsystemen</li>\n<li>Einweisung von Endusern</li>\n</ul><br /><br /><b>KENNTNISSE</b>\n<ul>\n<li>Ausbildung zum Fachinformatiker Systemintegration (m/w/d), IT Servicetechniker (m/w/d), IT Systemtechniker (m/w/d), etc. oder eine vergleichbare Qualifikation</li>\n<li>Erfahrungen im Support und der Installation von Notebooks sowie Desktop- und Mobile Devices und der Betriebssysteme MS Windows (Win7 und Win10)</li>\n<li>Kenntnisse im Office Bereich (Installation und Grundeinrichtung)</li>\n<li>Erfahrung in der selbstständigen Installation, Reparatur und Aufrüstung von Hard- und Software</li>\n<li>Gute Deutschkenntnisse und idealerweise Englischkenntnisse</li>\n<li>Führerschein (Klasse B)</li>\n</ul><br /><br /><b>LEISTUNGEN</b>\n<ul>\n<li>Tarifgebundener Vertrag (GVP)</li>\n<li>Festes Monatsgehalt inklusive übertarifliche Bezahlung</li>\n<li>Projektzulage ab dem ersten Einsatztag</li>\n<li>Urlaubs- und Weihnachtsgeld nach GVP</li>\n<li>Vergütung nach Equal-Pay-Modell</li>\n<li>Mitarbeiterempfehlungsprogramm</li>\n<li>Persönliche Betreuung</li>\n</ul><br /><br />",
+    "datePosted": "2026-10-26",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "wu personal GmbH",
+     "sameAs": "www.wu.de",
+     "description": "Als Experten für IT-Personal und kaufmännische Fachkräfte im Rahmen der Arbeitnehmerüberlassung sowie im Dienstvertrag, unterstützen wir namhafte nationale und internationale IT-Unternehmen.<br />\n<br />\nFür unseren renommierten Kunden aus dem <strong>Raum Hannover</strong> suchen wir mehrere"
+    },
+    "title": "Fachinformatiker (m/w/d) Systemintegration",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hannover",
+      "addressRegion": "Niedersachsen",
+      "addressCountry": "DE",
+      "postalCode": "30159",
+      "streetAddress": ""
+     }
+    },
+    "baseSalary": {
+     "type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "YEAR",
+      "value": 0
+     }
+    },
+    "educationRequirements": "Volks-/Hauptsch., mittl. Reife mit Berufsausbil.",
+    "employmentType": "FULL_TIME",
+    "experienceRequirements": "1-2 Jahre",
+    "industry": "IT, Software, Internet",
+    "qualifications": "<b>KENNTNISSE</b>\n<ul>\n<li>Ausbildung zum Fachinformatiker Systemintegration (m/w/d), IT Servicetechniker (m/w/d), IT Systemtechniker (m/w/d), etc. oder eine vergleichbare Qualifikation</li>\n<li>Erfahrungen im Support und der Installation von Notebooks sowie Desktop- und Mobile Devices und der Betriebssysteme MS Windows (Win7 und Win10)</li>\n<li>Kenntnisse im Office Bereich (Installation und Grundeinrichtung)</li>\n<li>Erfahrung in der selbstständigen Installation, Reparatur und Aufrüstung von Hard- und Software</li>\n<li>Gute Deutschkenntnisse und idealerweise Englischkenntnisse</li>\n<li>Führerschein (Klasse B)</li>\n</ul>",
+    "responsibilities": "<strong>JOBPROFIL&nbsp; - ID 2635<br />\n<br />\nAUFGABEN</strong>\n<ul>\n<li>Installation und Konfiguration von Endgeräten, sowie der Personalisierung</li>\n<li>Durchführen von IT Supportarbeiten inkl. Wartung und Reparatur) anhand der übermittelten Service Request-Tickets</li>\n<li>Transport-, und Bereitstellung der Endgeräte vom Lager bis zum Endkunden-Arbeitsplatz</li>\n<li>Status-Pflege und Dokumentation in den führenden Ticket- und Assetsystemen</li>\n<li>Einweisung von Endusern</li>\n</ul>",
+    "skills": "",
+    "validThrough": "2026-12-26",
+    "workHours": 40,
+    "jobBenefits": "<b>LEISTUNGEN</b>\n<ul>\n<li>Tarifgebundener Vertrag (GVP)</li>\n<li>Festes Monatsgehalt inklusive übertarifliche Bezahlung</li>\n<li>Projektzulage ab dem ersten Einsatztag</li>\n<li>Urlaubs- und Weihnachtsgeld nach GVP</li>\n<li>Vergütung nach Equal-Pay-Modell</li>\n<li>Mitarbeiterempfehlungsprogramm</li>\n<li>Persönliche Betreuung</li>\n</ul>",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "descriptionIntroduction",
+      "value": "FAIR • ERFAHREN • TRANSPARENT"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "descriptionEnding",
+      "value": ""
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "3d999f172c03110847de74fd18bd4ed5bec2954936383b2ed21f81ed0da4850b"
+ },
+ {
+  "source_slug": "hr4you",
+  "board_token": "https://jobs.hr4you.org/sitemap.xml",
+  "external_id": "e98e9ede21d32b8383ec74d2",
+  "payload": {
+   "page_url": "https://jobs.hr4you.org/job/view/797/ausbildung-zum-fachinformatiker-fuer-systemintegration-m-w-d-2027?page_lang=de",
+   "posting": {
+    "@context": "http://schema.org",
+    "@type": "JobPosting",
+    "description": "<p>Seit 2006 machen wir aus Technik-Begeisterten echte Experten für Systemintegration. Bei <span style=\"color:#d10101;\"><strong>HR4YOU</strong></span> bist du der Architekt im Hintergrund: Du sorgst dafür, dass unsere HighTech-Infrastruktur und die Internetlösungen stabil laufen und perfekt ineinandergreifen.</p>\n<p>Du wirst Teil eines Teams, das die technische Basis für über 600 Unternehmen in Deutschland, Österreich und der Schweiz schafft. Wenn du Lust auf eine dreijährige Ausbildung hast, bei der du Hardware und Software auf Profi-Level verbindest, bist du bei uns genau richtig.</p>\n<br /><br /><p><strong>Starte deine Karriere in der IT!&nbsp;</strong></p>\n<p>Wir bieten dir zum <strong>01.08.2027</strong> an unserem Standort in Großefehn / Timmel (Landkreis Aurich / Ostfriesland) einen Ausbildungsplatz zum <strong>Fachinformatiker für Systemintegration (m/w/d)</strong> an.</p>\n<br /><br /><p><span style=\"color:#c0392b;\"><strong>Das erwartet dich bei uns:</strong></span></p>\n<ul>\n<li data-list-item-id=\"e839ae281716817bcd1a52cd77c921468\">Du steigst in einem lockeren Team ein und checkst alles aus, was es in der modernen IT-Infrastruktur zu wissen gibt.</li>\n<li data-list-item-id=\"e8fb4ad48227bbfcb3bbd27a20d0f7ff8\">Du bist die erste Anlaufstelle für die Hardware deiner Kollegen: Du richtest Geräte für neue Teammitglieder ein, hältst alles auf dem neuesten Stand und sorgst dafür, dass die Technik im Haus reibungslos läuft.</li>\n<li data-list-item-id=\"efc8d3aa1fc515532e133e32cb34daaed\">Dein Weg führt dich vom Helpdesk über den IT-Inhouse-Support bis hin zum Profi-Betrieb von Cluster-Systemen in riesigen Data-Centern.</li>\n<li data-list-item-id=\"extra-security\">Ein echtes Highlight: Du unterstützt Software-Entwickler mit deinem System-Know-how bei der Performance-Optimierung in der Cloud und sorgst dafür, dass unsere IT-Security und der Datenschutz weltweit auf dem neuesten Stand sind.</li>\n</ul>\n<br /><br /><p><span style=\"color:#c0392b;\"><strong>Bist du dabei?</strong></span></p>\n<ul>\n<li data-list-item-id=\"edade48381ab56c5159ee65da7c1b24af\">IT fasziniert dich und du willst wissen, was es an neuen Technologien gibt</li>\n<li data-list-item-id=\"ec02d4e8d30a57c207eb9f657a86c0a0b\">Du hast Spaß daran, technische Dinge zu verstehen und anderen verständlich zu erklären</li>\n<li data-list-item-id=\"e36cdc996eb123009568db70f2a100ef1\">Du hast ein gutes Händchen für Technik – das wird dir in der Ausbildung echt helfen</li>\n<li data-list-item-id=\"eb951a5f27e94ff5e16f1ee4c22f6752b\">Du bist ein Teamplayer, kommunikativ und hast Lust auf die Zusammenarbeit mit anderen</li>\n<li data-list-item-id=\"e20a1451e256c157068fccbd7d61d863d\">Wenn du in Mathe oder Informatik gut bist, ist das ein super Startvorteil!</li>\n</ul>\n<p><br />\n&nbsp;</p>\n<br /><br /><p><span style=\"color:#c0392b;\"><strong>Dein finanzieller Start:</strong></span></p>\n<ul>\n<li data-list-item-id=\"e408386289b2c514ec73a62049ad78938\"><strong>1. Lehrjahr:</strong> 1.100 €</li>\n<li data-list-item-id=\"e3996cc313a79cf2e168e6dc896066ec1\"><strong>2. Lehrjahr:</strong> 1.200 €</li>\n<li data-list-item-id=\"e543c701f502c7e4738548f3370937735\"><strong>3. Lehrjahr:</strong> 1.300 €</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong style=\"color:rgb(192, 57, 43);\">Deine Benefits – mehr als nur ein Job:</strong></p>\n<ul>\n<li data-list-item-id=\"ef53ca217eb6a35e149a612f544a51764\"><strong>Work-Life-Balance:</strong> Flexible Arbeitszeiten dank Gleitzeit und später auch Homeoffice</li>\n<li data-list-item-id=\"e7b0cf1425e79162717083a58b313caa7\"><strong>Zukunftssicherung:</strong> Chancen auf eine Übernahme nach deinem Abschluss</li>\n<li data-list-item-id=\"e0edaa501dc62429deb398dbdb0dbb55b\"><strong>Community:</strong> Regelmäßige Azubi-Meetings, um dich mit anderen zu vernetzen</li>\n<li data-list-item-id=\"e5fabd84bbb3dad85922321609e128411\"><strong>Action &amp; Fun:</strong> Sommerfest, Weihnachtsfeier, LAN-Partys und legendäre Spieleabende</li>\n<li data-list-item-id=\"e1bc581dd89532b092109382b7180e5cf\"><strong>Health &amp; Fitness:</strong> Vergünstigter Hansefit und eine betriebliche Krankenversicherung</li>\n<li data-list-item-id=\"ea77a93c90d02350ec191a0ea10fa8bd2\"><strong>International Experience:</strong> Mit Erasmus+ Auslandsluft schnuppern (bei guten Noten)</li>\n<li data-list-item-id=\"ea038f0895e50615b30b45ea227e4125d\"><strong>Next Level Tech:</strong> Arbeite mit unserer eigenen internen KI und bleib am Puls der Zeit</li>\n<li data-list-item-id=\"e7fbd2db89e34299174b0fdfabb8f62ac\"><strong>Kreativ-Modus:</strong> HR4YOU-Fed-Ex-Days – entwickle deine eigenen Ideen in einem Projekt deiner Wahl</li>\n</ul>\n<p>&nbsp;</p>\n<p>Willst Du wissen, was nach der Ausbildung geht? Check unsere Karriereseite aus: <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://www.hr4you.de/karriere/\">https://www.hr4you.de/karriere/</a></p>\n<br /><br /><p><strong>Haben wir dein Interesse geweckt? Dann bewirb dich jetzt!</strong></p>\n<p>Falls du noch Fragen hast, melde dich einfach jederzeit telefonisch bei uns.</p>\n<p><strong>Wir freuen uns auf dich!&nbsp;</strong></p>\n<p>PS: Du willst erst mal reinschnuppern? Wir bieten dir auch <strong>Praktika und Schnuppertage</strong> an! ⚡️</p>\n",
+    "datePosted": "2026-11-03",
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "HR4YOU AG",
+     "sameAs": "http://www.hr4you.de",
+     "description": "<p>Seit 2006 machen wir aus Technik-Begeisterten echte Experten für Systemintegration. Bei <span style=\"color:#d10101;\"><strong>HR4YOU</strong></span> bist du der Architekt im Hintergrund: Du sorgst dafür, dass unsere HighTech-Infrastruktur und die Internetlösungen stabil laufen und perfekt ineinandergreifen.</p>\n<p>Du wirst Teil eines Teams, das die technische Basis für über 600 Unternehmen in Deutschland, Österreich und der Schweiz schafft. Wenn du Lust auf eine dreijährige Ausbildung hast, bei der du Hardware und Software auf Profi-Level verbindest, bist du bei uns genau richtig.</p>\n"
+    },
+    "title": "Ausbildung zum Fachinformatiker für Systemintegration (m/w/d) 2027",
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Großefehn",
+      "addressRegion": "Niedersachsen",
+      "addressCountry": "DE",
+      "postalCode": "26629",
+      "streetAddress": "Ulbarger Str. 52"
+     }
+    },
+    "baseSalary": {
+     "type": "MonetaryAmount",
+     "currency": "EUR",
+     "value": {
+      "@type": "QuantitativeValue",
+      "unitText": "MONTH",
+      "minValue": 1,
+      "maxValue": 1
+     }
+    },
+    "educationRequirements": "Volks-/Hauptsch., mittl. Reife ohne Berufsausbil.",
+    "employmentType": "OTHER",
+    "experienceRequirements": "Keine Berufserfahrung",
+    "industry": "IT, Software, Internet",
+    "qualifications": "<p><span style=\"color:#c0392b;\"><strong>Bist du dabei?</strong></span></p>\n<ul>\n<li data-list-item-id=\"edade48381ab56c5159ee65da7c1b24af\">IT fasziniert dich und du willst wissen, was es an neuen Technologien gibt</li>\n<li data-list-item-id=\"ec02d4e8d30a57c207eb9f657a86c0a0b\">Du hast Spaß daran, technische Dinge zu verstehen und anderen verständlich zu erklären</li>\n<li data-list-item-id=\"e36cdc996eb123009568db70f2a100ef1\">Du hast ein gutes Händchen für Technik – das wird dir in der Ausbildung echt helfen</li>\n<li data-list-item-id=\"eb951a5f27e94ff5e16f1ee4c22f6752b\">Du bist ein Teamplayer, kommunikativ und hast Lust auf die Zusammenarbeit mit anderen</li>\n<li data-list-item-id=\"e20a1451e256c157068fccbd7d61d863d\">Wenn du in Mathe oder Informatik gut bist, ist das ein super Startvorteil!</li>\n</ul>\n<p><br />\n&nbsp;</p>\n",
+    "responsibilities": "<p><span style=\"color:#c0392b;\"><strong>Das erwartet dich bei uns:</strong></span></p>\n<ul>\n<li data-list-item-id=\"e839ae281716817bcd1a52cd77c921468\">Du steigst in einem lockeren Team ein und checkst alles aus, was es in der modernen IT-Infrastruktur zu wissen gibt.</li>\n<li data-list-item-id=\"e8fb4ad48227bbfcb3bbd27a20d0f7ff8\">Du bist die erste Anlaufstelle für die Hardware deiner Kollegen: Du richtest Geräte für neue Teammitglieder ein, hältst alles auf dem neuesten Stand und sorgst dafür, dass die Technik im Haus reibungslos läuft.</li>\n<li data-list-item-id=\"efc8d3aa1fc515532e133e32cb34daaed\">Dein Weg führt dich vom Helpdesk über den IT-Inhouse-Support bis hin zum Profi-Betrieb von Cluster-Systemen in riesigen Data-Centern.</li>\n<li data-list-item-id=\"extra-security\">Ein echtes Highlight: Du unterstützt Software-Entwickler mit deinem System-Know-how bei der Performance-Optimierung in der Cloud und sorgst dafür, dass unsere IT-Security und der Datenschutz weltweit auf dem neuesten Stand sind.</li>\n</ul>\n",
+    "skills": "",
+    "validThrough": "2026-12-11",
+    "workHours": 40,
+    "jobBenefits": "<p><span style=\"color:#c0392b;\"><strong>Dein finanzieller Start:</strong></span></p>\n<ul>\n<li data-list-item-id=\"e408386289b2c514ec73a62049ad78938\"><strong>1. Lehrjahr:</strong> 1.100 €</li>\n<li data-list-item-id=\"e3996cc313a79cf2e168e6dc896066ec1\"><strong>2. Lehrjahr:</strong> 1.200 €</li>\n<li data-list-item-id=\"e543c701f502c7e4738548f3370937735\"><strong>3. Lehrjahr:</strong> 1.300 €</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong style=\"color:rgb(192, 57, 43);\">Deine Benefits – mehr als nur ein Job:</strong></p>\n<ul>\n<li data-list-item-id=\"ef53ca217eb6a35e149a612f544a51764\"><strong>Work-Life-Balance:</strong> Flexible Arbeitszeiten dank Gleitzeit und später auch Homeoffice</li>\n<li data-list-item-id=\"e7b0cf1425e79162717083a58b313caa7\"><strong>Zukunftssicherung:</strong> Chancen auf eine Übernahme nach deinem Abschluss</li>\n<li data-list-item-id=\"e0edaa501dc62429deb398dbdb0dbb55b\"><strong>Community:</strong> Regelmäßige Azubi-Meetings, um dich mit anderen zu vernetzen</li>\n<li data-list-item-id=\"e5fabd84bbb3dad85922321609e128411\"><strong>Action &amp; Fun:</strong> Sommerfest, Weihnachtsfeier, LAN-Partys und legendäre Spieleabende</li>\n<li data-list-item-id=\"e1bc581dd89532b092109382b7180e5cf\"><strong>Health &amp; Fitness:</strong> Vergünstigter Hansefit und eine betriebliche Krankenversicherung</li>\n<li data-list-item-id=\"ea77a93c90d02350ec191a0ea10fa8bd2\"><strong>International Experience:</strong> Mit Erasmus+ Auslandsluft schnuppern (bei guten Noten)</li>\n<li data-list-item-id=\"ea038f0895e50615b30b45ea227e4125d\"><strong>Next Level Tech:</strong> Arbeite mit unserer eigenen internen KI und bleib am Puls der Zeit</li>\n<li data-list-item-id=\"e7fbd2db89e34299174b0fdfabb8f62ac\"><strong>Kreativ-Modus:</strong> HR4YOU-Fed-Ex-Days – entwickle deine eigenen Ideen in einem Projekt deiner Wahl</li>\n</ul>\n<p>&nbsp;</p>\n<p>Willst Du wissen, was nach der Ausbildung geht? Check unsere Karriereseite aus: <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://www.hr4you.de/karriere/\">https://www.hr4you.de/karriere/</a></p>\n",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "descriptionIntroduction",
+      "value": "<p><strong>Starte deine Karriere in der IT!&nbsp;</strong></p>\n<p>Wir bieten dir zum <strong>01.08.2027</strong> an unserem Standort in Großefehn / Timmel (Landkreis Aurich / Ostfriesland) einen Ausbildungsplatz zum <strong>Fachinformatiker für Systemintegration (m/w/d)</strong> an.</p>\n"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "descriptionEnding",
+      "value": "<p><strong>Haben wir dein Interesse geweckt? Dann bewirb dich jetzt!</strong></p>\n<p>Falls du noch Fragen hast, melde dich einfach jederzeit telefonisch bei uns.</p>\n<p><strong>Wir freuen uns auf dich!&nbsp;</strong></p>\n<p>PS: Du willst erst mal reinschnuppern? Wir bieten dir auch <strong>Praktika und Schnuppertage</strong> an! ⚡️</p>\n"
+     }
+    ]
+   }
+  },
+  "fetched_at": "2026-11-11T12:00:00Z",
+  "content_hash": "2b6e9f9ddb0a02957ab4d1994266111551ff1444e8be06bcf9c28efaf9a0dcc4"
+ }
+]

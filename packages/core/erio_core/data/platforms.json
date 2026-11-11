@@ -1582,5 +1582,16 @@
   "examples": [
    "https://api.tecla.io"
   ]
+ },
+ {
+  "slug": "hr4you",
+  "name": "HR4YOU",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads HR4YOU career sites ({tenant}.hr4you.org): /sitemap.xml lists /job/view/{id}/... pages, each with a schema.org JobPosting. Token is the sitemap address. Some tenants (for example krh.hr4you.org) answer every request with a bot-check page and are not read; robots.txt allows only the list, view and sitemap paths.",
+  "examples": [
+   "https://jobs.hr4you.org/sitemap.xml",
+   "https://wupersonal.hr4you.org/sitemap.xml"
+  ]
  }
 ]

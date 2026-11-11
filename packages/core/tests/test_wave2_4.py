@@ -223,6 +223,21 @@ def test_tecla_reads_the_public_job_list() -> None:
     assert first.description_html
 
 
+def test_hr4you_reads_job_pages_listed_in_a_career_site_sitemap() -> None:
+    site = "https://wupersonal.hr4you.org"
+    job = f"{site}/job/view/2633/it-techniker-m-w-d-2nd-level-support?page_lang=de"
+    fetched, jobs = read(
+        "hr4you",
+        f"{site}/sitemap.xml",
+        {f"{site}/sitemap.xml": body("hr4you_sitemap.xml"), job: body("hr4you_job.html")},
+    )
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title == "IT Techniker (m/w/d) 2nd Level Support"
+    assert jobs[0].company_name == "wu personal GmbH"
+    assert jobs[0].location_text == "Hannover, Niedersachsen, DE"
+    assert jobs[0].description_html
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [

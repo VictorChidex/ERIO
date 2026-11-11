@@ -23,6 +23,9 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   sitemap lists ``/jobposting/{id}`` pages, each with a schema.org JobPosting.
 - Tecla: the public jobs page of ``app.tecla.io`` reads ``api.tecla.io/api/jobs/getPublicJobs/``
   without any sign-in; descriptions in that list are the platform's own short excerpts.
+- HR4YOU: career sites ``{tenant}.hr4you.org``; ``/sitemap.xml`` lists ``/job/view/{id}/...``
+  pages, each with a schema.org JobPosting. A tenant whose site answers with a bot check is
+  not read.
 """
 
 import html as htmllib
@@ -392,6 +395,7 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     HuntflowConnector(),
     OdooConnector(),
     TeclaConnector(),
+    JsonLdConnector("hr4you", r"^/job/view/\d+/", frozenset({"*.hr4you.org"})),
     JsonLdConnector(
         "bite",
         r"^/jobposting/[0-9a-f]{40}$",
