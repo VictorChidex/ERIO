@@ -151,6 +151,45 @@ def test_enlizt_reads_job_pages_linked_from_a_career_site() -> None:
     assert jobs[0].description_html
 
 
+def test_odoo_reads_microdata_pages_listed_on_a_jobs_page() -> None:
+    site = "https://www.odoo.com"
+    fetched, jobs = read(
+        "odoo",
+        f"{site}/jobs",
+        {
+            f"{site}/jobs": body("odoo_list.html"),
+            f"{site}/jobs/page/2": b"<html></html>",
+            f"{site}/jobs/fullstack-developer-698": body("odoo_job_microdata.html"),
+        },
+    )
+    # The apply and paging links are not job pages.
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title == "Fullstack Developer"
+    assert jobs[0].company_name == "Odoo IN Pvt Ltd"
+    assert jobs[0].location_text and "Gandhinagar" in jobs[0].location_text
+    assert jobs[0].description_html and "open source Odoo" in jobs[0].description_html
+
+
+def test_odoo_reads_json_ld_pages_listed_in_a_sitemap() -> None:
+    site = "https://www.odooexperts.nl"
+    sitemap = (
+        b'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        b"<url><loc>https://www.odooexperts.nl/en/jobs</loc></url>"
+        b"<url><loc>https://www.odooexperts.nl/en/jobs/accountmanager-21</loc></url></urlset>"
+    )
+    fetched, jobs = read(
+        "odoo",
+        f"{site}/sitemap.xml",
+        {
+            f"{site}/sitemap.xml": sitemap,
+            f"{site}/en/jobs/accountmanager-21": body("odoo_job_jsonld.html"),
+        },
+    )
+    assert fetched.complete and len(jobs) == 1
+    assert jobs[0].title == "Accountmanager"
+    assert jobs[0].company_name == "Odoo Experts B.V."
+
+
 @pytest.mark.parametrize(
     ("slug", "token"),
     [

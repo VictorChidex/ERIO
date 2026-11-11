@@ -1551,5 +1551,16 @@
   "blocked": "no public vendor site or career pages found: selfrecruit.com is a parked domain for sale and no other selfrecruit domain resolves, so no tenant can be located",
   "notes": "Checked selfrecruit.com, www.selfrecruit.com and the .io/.fr/.de/.nl/.eu/.net/.it/.es/.co.uk variants on 2026-11-11; web search finds no career site powered by it.",
   "examples": []
+ },
+ {
+  "slug": "odoo",
+  "name": "Odoo Recruitment",
+  "kind": "ats",
+  "blocked": "",
+  "notes": "Reads the /jobs pages of Odoo websites: current versions mark each job up as a schema.org JobPosting (JSON-LD, or microdata on www.odoo.com); token is the https address of the site's /jobs list (paged as /jobs/page/n) or its sitemap. Themes and older versions with no structured data (for example jobsodoo.com) are not read.",
+  "examples": [
+   "https://www.odoo.com/jobs",
+   "https://www.odooexperts.nl/sitemap.xml"
+  ]
  }
 ]

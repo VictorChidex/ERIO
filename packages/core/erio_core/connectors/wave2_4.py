@@ -16,8 +16,12 @@ visitor; how each was found, and its limits, is in docs/connectors.md.
   Nuxt payload.
 - Enlizt (Plooral): career sites ``https://{tenant}.enlizt.me/`` list ``/vagas/{slug}`` job
   pages, each with a schema.org JobPosting.
+- Odoo Recruitment: the ``/jobs`` pages of any Odoo website. Current versions describe each
+  job as a JobPosting (JSON-LD, or microdata on ``www.odoo.com``); themes and older versions
+  that do not are not read.
 """
 
+import html as htmllib
 import json
 import re
 from typing import Any
@@ -25,12 +29,12 @@ from urllib.parse import urlsplit, urlunsplit
 
 from defusedxml import ElementTree
 
-from erio_core.connectors._htmlpages import PageCrawler, listing, meta, text_of
+from erio_core.connectors._htmlpages import PageCrawler, element_with, listing, meta, text_of
 from erio_core.connectors._service import plain
 from erio_core.connectors._util import as_url, iso_datetime, join_html
 from erio_core.connectors.base import Connector, Fetcher, FetchError
 from erio_core.connectors.feed import parse_feed, stable_id
-from erio_core.connectors.jsonld import JsonLdConnector, sitemap_locations
+from erio_core.connectors.jsonld import JsonLdConnector, page_links, sitemap_locations
 from erio_core.schemas import PartialJob, RawPosting
 
 TOKEN = re.compile(r"[a-z0-9][a-z0-9-]{0,62}")
@@ -237,6 +241,64 @@ class HuntflowConnector(PageCrawler):
         )
 
 
+ODOO_JOB = r"^(?:/[a-z]{2,3}(?:_[A-Z]{2})?)?/jobs/[a-z0-9-]*\d+$"
+MICRODATA_META = re.compile(r'<meta itemprop="([A-Za-z]+)" content="([^"]*)"')
+LISTING_PAGES = 6
+
+
+class OdooConnector(JsonLdConnector):
+    """Odoo websites. The board token is the site's job list (``https://{host}/jobs``, paged
+    as ``/jobs/page/{n}``) or its sitemap."""
+
+    def __init__(self) -> None:
+        super().__init__("odoo", ODOO_JOB, frozenset({"*.odoo.com"}))
+
+    def job_pages(self, fetcher: Fetcher, board_token: str) -> list[str]:
+        if not board_token.rstrip("/").endswith("/jobs"):
+            return super().job_pages(fetcher, board_token)
+        base = board_token.rstrip("/")
+        pattern = re.compile(ODOO_JOB)
+        links: list[str] = []
+        for number in range(1, LISTING_PAGES + 1):
+            response = fetcher.get(base if number == 1 else f"{base}/page/{number}")
+            if response.status != 200:
+                if number == 1:
+                    raise FetchError("http_error", f"HTTP {response.status}", response.status)
+                break
+            found = page_links(response.body.decode("utf-8", "replace"), base, pattern)
+            fresh = [link for link in found if link not in links]
+            if not fresh:
+                break
+            links += fresh
+        return links
+
+    def _postings(self, html: str, page_url: str) -> list[RawPosting]:
+        found = super()._postings(html, page_url)
+        if found or 'itemtype="https://schema.org/JobPosting"' not in html:
+            return found
+        # Odoo's own site describes the job as microdata instead of JSON-LD.
+        fields: dict[str, str] = {}
+        for name, value in MICRODATA_META.findall(html):
+            fields.setdefault(name, htmllib.unescape(value))
+        if not fields.get("title"):
+            return []
+        posting: dict[str, Any] = {
+            "title": fields["title"],
+            "datePosted": fields.get("datePosted"),
+            "hiringOrganization": {"name": fields.get("name")},
+            "jobLocation": {"address": " ".join(fields.get("address", "").split()) or None},
+            "description": element_with(html, r'itemprop="description"'),
+        }
+        return [
+            RawPosting(
+                source_slug=self.slug,
+                board_token=page_url,
+                external_id=stable_id(page_url),
+                payload={"page_url": page_url, "posting": posting},
+            )
+        ]
+
+
 class RecrutorConnector(JsonLdConnector):
     """RecrutOr career spaces (``www.recrutor.pro/{tenant}/``). The board token is the tenant."""
 
@@ -271,5 +333,6 @@ WAVE2_4_CONNECTORS: list[Connector] = [
     RecrutorConnector(),
     TalentAdoreConnector(),
     HuntflowConnector(),
+    OdooConnector(),
     JsonLdConnector("enlizt", r"^/vagas/[^/]+$", frozenset({"*.enlizt.me"})),
 ]
