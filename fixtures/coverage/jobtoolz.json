@@ -1,0 +1,118 @@
+[
+ {
+  "source_slug": "jobtoolz",
+  "board_token": "https://stephex.jobtoolz.com/sitemap.xml",
+  "external_id": "91e24b1d683e5c11e2180942",
+  "payload": {
+   "page_url": "https://stephex.jobtoolz.com/en/chauffeur-c-ce-flexi-job-nationaal-internationaal-transport-stephex-service",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "directApply": true,
+    "datePosted": "2026-11-04",
+    "title": "Chauffeur C / CE (Flexi-job) – Nationaal & Internationaal Transport | Stephex Service",
+    "description": "De Stephex Group is een internationaal familiebedrijf gevestigd in Meise, België. Naast onze paardenhandel zijn we actief in de vastgoed- en automotive sector. We zijn Europees marktleider in de bouw van exclusieve horsetrucks en motorhomes. Dankzij ons uitgebreide dealernetwerk bedienen we klanten in heel Europa en ver daarbuiten. Om onze transportactiviteiten te ondersteunen, zijn we op zoek naar een ervaren Chauffeur C (Flexi-job). Je staat in voor het verplaatsen en transporteren van onze vrachtwagens en horsetrucks, zowel binnen België als naar verschillende bestemmingen in Europa. Ben je graag onderweg, hou je van lange ritten en zoek je een flexibele bijverdienste? Dan is dit misschien wel de ideale uitdaging! Wat ga je doen? Als chauffeur ben je verantwoordelijk voor het veilig en correct verplaatsen en transporteren van onze vrachtwagens en horsetrucks. Je rijdt zowel nationale als internationale trajecten en bent regelmatig meerdere uren of een volledige dag onderweg. Je takenpakket bestaat onder andere uit: Je verzorgt nationale en internationale transporten van onze vrachtwagens en horsetrucks. Je rijdt voornamelijk met lege vrachtwagens, maar vervoert occasioneel ook paarden. Je staat in voor langere ritten binnen België en naar verschillende Europese bestemmingen. Je zorgt voor een veilige, stipte en correcte levering van de voertuigen. Je controleert het voertuig voor vertrek en meldt eventuele technische problemen of schade. Je gaat zorgvuldig en verantwoordelijk om met het materieel en de voertuigen. Bij paardentransport zorg je voor een rustige en veilige rijstijl, met bijzondere aandacht voor het welzijn van de dieren. Je houdt rekening met de afgesproken planning en communiceert vlot over de voortgang van je ritten. Je respecteert de geldende verkeersvoorschriften en rij- en rusttijden.",
+    "employmentType": [
+     "PART_TIME",
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Stephex",
+     "sameAs": "https://stephex.com/nl/",
+     "logo": "https://jobtoolz-assets.imgix.net/assets/companies/1276036579/logo-LOlqZYiTGC1HNez.png?w=112&h=112&dpr=2"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Koeweidestraat 54",
+      "addressLocality": "Merchtem",
+      "postalCode": "1785",
+      "addressCountry": "BE",
+      "group": ""
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T20:28:30.896547Z",
+  "content_hash": "d84ca41273e121c01485ec6796a8f5c593f3d2e5198257ffa5ef50dbc4f5f6d7"
+ },
+ {
+  "source_slug": "jobtoolz",
+  "board_token": "https://stephex.jobtoolz.com/sitemap.xml",
+  "external_id": "a8b937a4eddfb14480e496b7",
+  "payload": {
+   "page_url": "https://stephex.jobtoolz.com/nl/chauffeur-c-ce-flexi-job-nationaal-internationaal-transport-stephex-service",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "directApply": true,
+    "datePosted": "2026-11-04",
+    "title": "Chauffeur C / CE (Flexi-job) – Nationaal & Internationaal Transport | Stephex Service",
+    "description": "De Stephex Group is een internationaal familiebedrijf gevestigd in Meise, België. Naast onze paardenhandel zijn we actief in de vastgoed- en automotive sector. We zijn Europees marktleider in de bouw van exclusieve horsetrucks en motorhomes. Dankzij ons uitgebreide dealernetwerk bedienen we klanten in heel Europa en ver daarbuiten. Om onze transportactiviteiten te ondersteunen, zijn we op zoek naar een ervaren Chauffeur C (Flexi-job). Je staat in voor het verplaatsen en transporteren van onze vrachtwagens en horsetrucks, zowel binnen België als naar verschillende bestemmingen in Europa. Ben je graag onderweg, hou je van lange ritten en zoek je een flexibele bijverdienste? Dan is dit misschien wel de ideale uitdaging! Wat ga je doen? Als chauffeur ben je verantwoordelijk voor het veilig en correct verplaatsen en transporteren van onze vrachtwagens en horsetrucks. Je rijdt zowel nationale als internationale trajecten en bent regelmatig meerdere uren of een volledige dag onderweg. Je takenpakket bestaat onder andere uit: Je verzorgt nationale en internationale transporten van onze vrachtwagens en horsetrucks. Je rijdt voornamelijk met lege vrachtwagens, maar vervoert occasioneel ook paarden. Je staat in voor langere ritten binnen België en naar verschillende Europese bestemmingen. Je zorgt voor een veilige, stipte en correcte levering van de voertuigen. Je controleert het voertuig voor vertrek en meldt eventuele technische problemen of schade. Je gaat zorgvuldig en verantwoordelijk om met het materieel en de voertuigen. Bij paardentransport zorg je voor een rustige en veilige rijstijl, met bijzondere aandacht voor het welzijn van de dieren. Je houdt rekening met de afgesproken planning en communiceert vlot over de voortgang van je ritten. Je respecteert de geldende verkeersvoorschriften en rij- en rusttijden.",
+    "employmentType": [
+     "PART_TIME",
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Stephex",
+     "sameAs": "https://stephex.com/nl/",
+     "logo": "https://jobtoolz-assets.imgix.net/assets/companies/1276036579/logo-LOlqZYiTGC1HNez.png?w=112&h=112&dpr=2"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Koeweidestraat 54",
+      "addressLocality": "Merchtem",
+      "postalCode": "1785",
+      "addressCountry": "BE",
+      "group": ""
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T20:28:31.397187Z",
+  "content_hash": "8bbb62fde1ec481b9b6b81b14ca0f92c6c0105982c426ee8b6ca3c9f5da12d8a"
+ },
+ {
+  "source_slug": "jobtoolz",
+  "board_token": "https://stephex.jobtoolz.com/sitemap.xml",
+  "external_id": "2f1b6e9fad9922b375fe0ca3",
+  "payload": {
+   "page_url": "https://stephex.jobtoolz.com/en/mechanic-technical-technician-horsetrucks-motorhomes-stephex-service",
+   "posting": {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "directApply": true,
+    "datePosted": "2026-10-05",
+    "title": "Mechanic - Technical Technician Horsetrucks & Motorhomes | Stephex Service",
+    "description": "The Stephex Group is an international family-owned company based in Meise, Belgium. In addition to our equestrian activities, we are also active in the real estate and automotive sectors. We are a European market leader in the construction of exclusive horsetrucks and motorhomes. Thanks to our extensive dealer network, we serve customers throughout Europe and beyond. An important part of the Stephex Group is Stephex Service, based in Merchtem. Quality, technical expertise and customer satisfaction are at the heart of everything we do. Following the initial construction of our vehicles at the factory, our service team is responsible for their technical finishing, installations, modifications and repairs. Our goal is to ensure that every vehicle functions perfectly and is finished to the highest standards, right down to the smallest detail. To strengthen our technical team, we are looking for a Mechanic / Technical Technician with a broad practical skill set and an interest in electrical work, mechanics and carpentry. What will you do? As a Technical Technician at Stephex Service, you will contribute to the technical finishing, interior fitting and maintenance of our exclusive horsetrucks and motorhomes. You will work across different technical disciplines and have the opportunity to contribute to unique vehicles where bespoke solutions and quality craftsmanship go hand in hand. Your responsibilities will include: Installing and assembling various interior components, such as built-in cabinets, furniture, flooring and wall panels. Carrying out electrical connections and installation work, including lighting, wiring, sockets and other electrical components. Performing mechanical assembly work, minor repairs and technical modifications. Installing and connecting sanitary facilities, such as taps, showers, water pipes and drainage systems. Identifying and resolving minor technical and electrical faults. Carrying out minor welding work when required. Checking the technical functionality and overall finish of vehicles, ensuring they meet our quality standards. Actively contributing ideas and practical solutions for technical challenges and custom-made installations. In summary, you will ensure that our horsetrucks and motorhomes are technically sound, perfectly finished and ready for use.",
+    "employmentType": [
+     "FULL_TIME"
+    ],
+    "hiringOrganization": {
+     "@type": "Organization",
+     "name": "Stephex",
+     "sameAs": "https://stephex.com/nl/",
+     "logo": "https://jobtoolz-assets.imgix.net/assets/companies/1276036579/logo-LOlqZYiTGC1HNez.png?w=112&h=112&dpr=2"
+    },
+    "jobLocation": {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Koeweidestraat 54",
+      "addressLocality": "Merchtem",
+      "postalCode": "1785",
+      "addressCountry": "BE",
+      "group": ""
+     }
+    }
+   }
+  },
+  "fetched_at": "2026-11-11T20:28:31.914075Z",
+  "content_hash": "849afe9fbc1299baaa7a11d79aeaf939b2506ad291e1ba2ebb2050aa0eb3fd37"
+ }
+]

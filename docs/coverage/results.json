@@ -41,6 +41,24 @@
   ],
   "checked_at": "2026-11-06T02:46:25+00:00"
  },
+ "airswift": {
+  "boards": [
+   {
+    "board": "https://www.airswift.com/jobs",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Maintenance Planner / Scheduler I",
+     "Inventory Analyst I",
+     "Staff Electrical Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:57:54+00:00"
+ },
  "applicantpro": {
   "boards": [
    {
@@ -71,6 +89,68 @@
    }
   ],
   "checked_at": "2026-11-06T02:46:42+00:00"
+ },
+ "applitrack": {
+  "boards": [
+   {
+    "board": "keyport",
+    "complete": true,
+    "error": "",
+    "jobs": 7,
+    "ok": true,
+    "parsed": 7,
+    "sample_titles": [
+     "Substitute Custodian",
+     "Student Interns - Custodial/Technology",
+     "Student Teachers/Clinical Placements"
+    ]
+   },
+   {
+    "board": "aldineisd",
+    "complete": true,
+    "error": "",
+    "jobs": 193,
+    "ok": true,
+    "parsed": 193,
+    "sample_titles": [
+     "General Maintenance-Nights",
+     "High School Maintenance",
+     "HVAC Technician"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:08:15+00:00"
+ },
+ "apploi": {
+  "boards": [
+   {
+    "board": "https://apply-jobs.apploi.com/jobs/elcor",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Social Worker",
+     "Human Resources Clerk",
+     "Physical Therapist Assistant (PTA)"
+    ]
+   },
+   {
+    "board": "https://apply-jobs.apploi.com/jobs/the-riverside",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Dietary Supervisor",
+     "Area Respiratory Operations Technician",
+     "Registered Dietitian (RD)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:07:21+00:00"
  },
  "arbeitnow": {
   "boards": [
@@ -336,6 +416,143 @@
   ],
   "checked_at": "2026-11-06T00:41:45+00:00"
  },
+ "cats": {
+  "boards": [
+   {
+    "board": "warnerpacific/1611",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Graduate Assistantship Opportunities - Spring 2027",
+     "Social Work Director of Field Education Faculty Position",
+     "Executive Assistant to the President"
+    ]
+   },
+   {
+    "board": "gmcc/45645",
+    "complete": true,
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Project Manager - Civil Construction",
+     "Certified Welder",
+     "Project Coordinator - Civil Construction"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:55:17+00:00"
+ },
+ "cegid": {
+  "boards": [
+   {
+    "board": "https://recrutement.adapei-aria.com/sitemap.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Ergothérapeute H/F",
+     "Aide-Soignant H/F",
+     "Aide-Soignant H/F"
+    ]
+   },
+   {
+    "board": "https://recrutement.transavia.com/sitemap.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Ingénieur Méthodes & Etudes Production PN H/F",
+     "Responsable Production Planning Control H/F",
+     "Stage - Ingénieur Conformité Sécurité Maintenance H/F"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:11:13+00:00"
+ },
+ "checkin": {
+  "boards": [
+   {
+    "board": "provinzial-karriereportal",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Angestellter Kundenberater (w/m/d)",
+     "Angestellter Kundenberater (w/m/d)",
+     "Angestellter Kundenberater (w/m/d)"
+    ]
+   },
+   {
+    "board": "sparkassenversicherung-karriereportal",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Vertragsmanager:in Sach-Industrie Betrieb (m/w/d)",
+     "Ausbildung Kauffrau/Kaufmann für Versicherungen und Finanzanlagen (m/w/d) | Baden-Württemberg",
+     "Ausbildung Kauffrau/Kaufmann für Versicherungen und Finanzanlagen (m/w/d) | Baden-Württemberg"
+    ]
+   },
+   {
+    "board": "lgl-bayern-karriereportal",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "2692 Verwaltungsmitarbeiter/-in (m/w/d)",
+     "26100 MTLA / MTL / VMTA / MTV (m/w/d) bzw. technische Assistentin / technischer Assistent (m/w/d) mit vergleichbarer Ausbildung",
+     "2699 Tierärztin / Tierarzt (m/w/d) - Promotionsmöglichkeit Lebensmittelmikrobiologie in Teilzeit (50 %)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:08:49+00:00"
+ },
+ "clearcompany": {
+  "boards": [
+   {
+    "board": "pmic",
+    "complete": true,
+    "error": "",
+    "jobs": 6,
+    "ok": true,
+    "parsed": 6,
+    "sample_titles": [
+     "Data & Statistical Reporting Analyst",
+     "2027 Summer Internship - Hybrid, New Berlin, NY",
+     "Cloud Infrastructure Architect - Remote"
+    ]
+   },
+   {
+    "board": "coopereic",
+    "complete": true,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "BIM Modeler",
+     "Electrician",
+     "Sr. Estimator"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:55:27+00:00"
+ },
  "comeet": {
   "boards": [
    {
@@ -366,6 +583,24 @@
    }
   ],
   "checked_at": "2026-11-06T02:47:09+00:00"
+ },
+ "concludis": {
+  "boards": [
+   {
+    "board": "https://saarstahl.concludis.de/prj/lst/a181a603769c1f98ad927e7367c7aa51/Alle.htm",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "[DH] Mitarbeiter Werksicherheit (m/w/d)",
+     "Elektroniker für Betriebstechnik (m/w/d)",
+     "Initiativbewerbung im gewerblichen Bereich (m/w/d)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:58:28+00:00"
  },
  "coveto": {
   "boards": [
@@ -675,6 +910,37 @@
   ],
   "checked_at": "2026-11-10T19:48:39+00:00"
  },
+ "feishu": {
+  "boards": [
+   {
+    "board": "tigertech/index",
+    "complete": true,
+    "error": "",
+    "jobs": 52,
+    "ok": true,
+    "parsed": 52,
+    "sample_titles": [
+     "CRM资深开发工程师",
+     "Compliance Officer",
+     "基础设施平台开发工程师（Infra Platform）"
+    ]
+   },
+   {
+    "board": "li/index",
+    "complete": false,
+    "error": "",
+    "jobs": 400,
+    "ok": true,
+    "parsed": 400,
+    "sample_titles": [
+     "海外HRBP",
+     "衍生品销售运营（新车交付端）",
+     "高级工商管理专员"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:55:36+00:00"
+ },
  "firststage": {
   "boards": [
    {
@@ -873,6 +1139,37 @@
    }
   ],
   "checked_at": "2026-11-05T21:30:11+00:00"
+ },
+ "herp": {
+  "boards": [
+   {
+    "board": "https://herp.careers/v1/csentrydemo",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "（AIR）【未経験可】カスタマーサクセス",
+     "【AIR英語】カスタマーサクセス",
+     "11.01_新卒ビジネス総合職種"
+    ]
+   },
+   {
+    "board": "https://herp.careers/v1/herpinc",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "AA00_カジュアル面談",
+     "AA01_カジュアル面談（note記事経由）",
+     "AA10_オープンポジション_Business"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:58:05+00:00"
  },
  "hibob": {
   "boards": [
@@ -1081,6 +1378,49 @@
   ],
   "checked_at": "2026-11-06T00:35:19+00:00"
  },
+ "inhire": {
+  "boards": [
+   {
+    "board": "riachuelo",
+    "complete": true,
+    "error": "",
+    "jobs": 569,
+    "ok": true,
+    "parsed": 569,
+    "sample_titles": [
+     "Analista de Planejamento Comercial Pleno",
+     "Assistente de Vendas - CAPTADOR DE CARTÃO TEMPORÁRIO | LOJA 247",
+     "Assistente de Vendas e Merchandising"
+    ]
+   },
+   {
+    "board": "via",
+    "complete": true,
+    "error": "",
+    "jobs": 2,
+    "ok": true,
+    "parsed": 2,
+    "sample_titles": [
+     "PESSOA DESENVOLVEDORA JAVA (BACK END)",
+     "PESSOA DESENVOLVEDORA SENIOR .NET CORE"
+    ]
+   },
+   {
+    "board": "sales",
+    "complete": true,
+    "error": "",
+    "jobs": 9,
+    "ok": true,
+    "parsed": 9,
+    "sample_titles": [
+     "Analista de Inbound Marketing",
+     "Analista de Marketing",
+     "Analista de Projetos"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:07:31+00:00"
+ },
  "instaffo": {
   "boards": [
    {
@@ -1098,6 +1438,50 @@
    }
   ],
   "checked_at": "2026-11-10T19:48:53+00:00"
+ },
+ "intervieweb": {
+  "boards": [
+   {
+    "board": "https://inrecruiting.intervieweb.it/orbyta/it/career",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Sistemista IT - Torino",
+     "Senior Cybersecurity Consultant Freelance",
+     "Networking Engineer - Lodi"
+    ]
+   },
+   {
+    "board": "https://inrecruiting.intervieweb.it/futurenergy/it/career",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Area manager | Ancona",
+     "Responsabile commerciale | Avellino",
+     "Agente di commercio | Avellino"
+    ]
+   },
+   {
+    "board": "https://inrecruiting.intervieweb.it/romeogestioni/it/career",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "ADDETTI ALLA RECEPTION MILANO PART TIME",
+     "ADDETTO ALLA MANUTENZIONE EDILE / SERRAMENTISTA",
+     "ASSISTENTE TECNICO DI COMMESSA JUNIOR - ABBIATEGRASSO"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:08:06+00:00"
  },
  "isolvedhire": {
   "boards": [
@@ -1452,6 +1836,37 @@
   ],
   "checked_at": "2026-11-06T00:41:38+00:00"
  },
+ "jobtoolz": {
+  "boards": [
+   {
+    "board": "https://stroom-maatwerk.jobtoolz.com/sitemap.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 3,
+    "ok": true,
+    "parsed": 3,
+    "sample_titles": [
+     "Stroom maatwerk zoekt een maatwerkcoach voor groen en industrie",
+     "Administratief medewerker productie",
+     "Teamcoach Productie - op locatie"
+    ]
+   },
+   {
+    "board": "https://stephex.jobtoolz.com/sitemap.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 3,
+    "ok": true,
+    "parsed": 3,
+    "sample_titles": [
+     "Chauffeur C / CE (Flexi-job) – Nationaal & Internationaal Transport | Stephex Service",
+     "Chauffeur C / CE (Flexi-job) – Nationaal & Internationaal Transport | Stephex Service",
+     "Mechanic - Technical Technician Horsetrucks & Motorhomes | Stephex Service"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-11T20:29:16+00:00"
+ },
  "jobvite": {
   "boards": [
    {
@@ -1482,6 +1897,24 @@
    }
   ],
   "checked_at": "2026-11-06T02:49:39+00:00"
+ },
+ "jobylon": {
+  "boards": [
+   {
+    "board": "https://emp.jobylon.com/sitemap-jobs.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "VP of Sales, Base Business Development",
+     "Cloud Engineer, Healthcare IT PACS",
+     "Vikarie  i ekonomi och juridikämnen på  Grillska Gymnasiet Västerås"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:57:18+00:00"
  },
  "join": {
   "boards": [
@@ -2017,6 +2450,49 @@
   ],
   "checked_at": "2026-11-05T21:30:34+00:00"
  },
+ "pyjamahr": {
+  "boards": [
+   {
+    "board": "ff-inc/8AB8242C34",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Marketing Assistant",
+     "Client Services Associate",
+     "Marketing Communications Associate"
+    ]
+   },
+   {
+    "board": "office-performance/3D8DA6D669",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Inventory Associate",
+     "Services Associate",
+     "Management Trainee"
+    ]
+   },
+   {
+    "board": "pyjamahr/C9047F0152",
+    "complete": true,
+    "error": "",
+    "jobs": 2,
+    "ok": true,
+    "parsed": 2,
+    "sample_titles": [
+     "Marketing Manager",
+     "Business Development Executive"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:13+00:00"
+ },
  "pythonjobs": {
   "boards": [
    {
@@ -2095,6 +2571,40 @@
   ],
   "checked_at": "2026-11-05T21:30:35+00:00"
  },
+ "recruitify": {
+  "boards": [
+   {
+    "board": "jobs.recruitify.ai",
+    "complete": true,
+    "error": "",
+    "jobs": 1,
+    "ok": true,
+    "parsed": 1,
+    "sample_titles": [
+     "Sample"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:40+00:00"
+ },
+ "recrutei": {
+  "boards": [
+   {
+    "board": "https://empregos.recrutei.com.br/sitemap-vagas-1.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "CD Full Stack | Low-Code/No-Code | Inglês Fluente",
+     "Cozinheira (Vaga também disponível para pessoa com deficiência)",
+     "Estagiário(a) Administrativo | Afirmativa para pessoas pretas/pardas"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:07:37+00:00"
+ },
  "remoteok": {
   "boards": [
    {
@@ -2112,6 +2622,37 @@
    }
   ],
   "checked_at": "2026-11-09T20:02:12+00:00"
+ },
+ "rexx": {
+  "boards": [
+   {
+    "board": "https://probat-portal.rexx-systems.com/",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Zerspanungsmechaniker (m/w/d) / Rundschleifer (m/w/d)",
+     "Facility Manager / Building Administrator (32-40 hours per week)",
+     "Key Account Manager"
+    ]
+   },
+   {
+    "board": "https://nobix-portal.rexx-systems.com/stellenangebote.html",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Account Manager (m/w/d) Region Nord",
+     "Group Controller / Senior Controller (m/w/d) bei der NOBIX Group GmbH",
+     "Regional Sales Manager (m/w/d) bei der KKS-Kemmler-Kopiersysteme GmbH"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:57:29+00:00"
  },
  "rippling": {
   "boards": [
@@ -2173,6 +2714,55 @@
   ],
   "checked_at": "2026-11-06T00:42:14+00:00"
  },
+ "schoolspring": {
+  "boards": [
+   {
+    "board": "Butts County Schools",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Transportation Support Coordinator",
+     "Social Studies Teaching Position for School Year 2026-2027 - Jackson High School",
+     "Volunteer"
+    ]
+   },
+   {
+    "board": "Indian River",
+    "complete": false,
+    "error": "",
+    "jobs": 8,
+    "ok": true,
+    "parsed": 8,
+    "sample_titles": [
+     "Custodian (2026-2027)",
+     "Self-Care Aide, ESE (2026-2027)",
+     "Custodian (2026-2027)"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:57+00:00"
+ },
+ "senior_talentos": {
+  "boards": [
+   {
+    "board": "https://platform.senior.com.br",
+    "complete": false,
+    "error": "",
+    "jobs": 484,
+    "ok": true,
+    "parsed": 484,
+    "sample_titles": [
+     "Assistente de Estoque Noturno",
+     "Operador Empilhadeira PP - 2°turno",
+     "MOTORISTA III"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:07:44+00:00"
+ },
  "smartjobboard": {
   "boards": [
    {
@@ -2214,6 +2804,24 @@
    }
   ],
   "checked_at": "2026-11-05T21:31:01+00:00"
+ },
+ "solides": {
+  "boards": [
+   {
+    "board": "https://vagas.solides.com.br",
+    "complete": false,
+    "error": "",
+    "jobs": 97,
+    "ok": true,
+    "parsed": 97,
+    "sample_titles": [
+     "Auxiliar de Monitoramento - (Cópia)",
+     "Analista de Projetos | MakeITSimple",
+     "LEITURISTA MOTOCICLISTA - GOIANDIRA"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:07:27+00:00"
  },
  "successfactors": {
   "boards": [
@@ -2374,6 +2982,24 @@
   ],
   "checked_at": "2026-11-05T21:31:03+00:00"
  },
+ "thehub": {
+  "boards": [
+   {
+    "board": "https://thehub.io/sitemap-jobs.xml",
+    "complete": false,
+    "error": "",
+    "jobs": 5,
+    "ok": true,
+    "parsed": 5,
+    "sample_titles": [
+     "Brand Designer",
+     "Drifts- og projektleder – Få ansvaret for Festlastbiler og udvikling af vores andre virksomheder",
+     "Computer Vision Engineer"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T20:08:12+00:00"
+ },
  "torre": {
   "boards": [
    {
@@ -2525,6 +3151,37 @@
    }
   ],
   "checked_at": "2026-11-06T02:54:25+00:00"
+ },
+ "velora": {
+  "boards": [
+   {
+    "board": "axactor/109",
+    "complete": true,
+    "error": "",
+    "jobs": 4,
+    "ok": true,
+    "parsed": 4,
+    "sample_titles": [
+     "Asset Manager GGCC",
+     "Portfolio Analyst - Unsecured",
+     "Letrado/a Ejecuciones"
+    ]
+   },
+   {
+    "board": "grupo-batta/233",
+    "complete": true,
+    "error": "",
+    "jobs": 211,
+    "ok": true,
+    "parsed": 211,
+    "sample_titles": [
+     "Subgerente Saltillo",
+     "Cobrador en Motocicleta - COATZACOALCOS",
+     "PROMOTOR DE CREDITO"
+    ]
+   }
+  ],
+  "checked_at": "2026-11-10T19:56:42+00:00"
  },
  "werecruit": {
   "boards": [
@@ -2767,631 +3424,5 @@
    }
   ],
   "checked_at": "2026-11-06T02:51:15+00:00"
- },
- "applitrack": {
-  "boards": [
-   {
-    "board": "keyport",
-    "complete": true,
-    "error": "",
-    "jobs": 7,
-    "ok": true,
-    "parsed": 7,
-    "sample_titles": [
-     "Substitute Custodian",
-     "Student Interns - Custodial/Technology",
-     "Student Teachers/Clinical Placements"
-    ]
-   },
-   {
-    "board": "aldineisd",
-    "complete": true,
-    "error": "",
-    "jobs": 193,
-    "ok": true,
-    "parsed": 193,
-    "sample_titles": [
-     "General Maintenance-Nights",
-     "High School Maintenance",
-     "HVAC Technician"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:08:15+00:00"
- },
- "apploi": {
-  "boards": [
-   {
-    "board": "https://apply-jobs.apploi.com/jobs/elcor",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Social Worker",
-     "Human Resources Clerk",
-     "Physical Therapist Assistant (PTA)"
-    ]
-   },
-   {
-    "board": "https://apply-jobs.apploi.com/jobs/the-riverside",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Dietary Supervisor",
-     "Area Respiratory Operations Technician",
-     "Registered Dietitian (RD)"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:07:21+00:00"
- },
- "cegid": {
-  "boards": [
-   {
-    "board": "https://recrutement.adapei-aria.com/sitemap.xml",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Ergothérapeute H/F",
-     "Aide-Soignant H/F",
-     "Aide-Soignant H/F"
-    ]
-   },
-   {
-    "board": "https://recrutement.transavia.com/sitemap.xml",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Ingénieur Méthodes & Etudes Production PN H/F",
-     "Responsable Production Planning Control H/F",
-     "Stage - Ingénieur Conformité Sécurité Maintenance H/F"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:11:13+00:00"
- },
- "checkin": {
-  "boards": [
-   {
-    "board": "provinzial-karriereportal",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Angestellter Kundenberater (w/m/d)",
-     "Angestellter Kundenberater (w/m/d)",
-     "Angestellter Kundenberater (w/m/d)"
-    ]
-   },
-   {
-    "board": "sparkassenversicherung-karriereportal",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Vertragsmanager:in Sach-Industrie Betrieb (m/w/d)",
-     "Ausbildung Kauffrau/Kaufmann für Versicherungen und Finanzanlagen (m/w/d) | Baden-Württemberg",
-     "Ausbildung Kauffrau/Kaufmann für Versicherungen und Finanzanlagen (m/w/d) | Baden-Württemberg"
-    ]
-   },
-   {
-    "board": "lgl-bayern-karriereportal",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "2692 Verwaltungsmitarbeiter/-in (m/w/d)",
-     "26100 MTLA / MTL / VMTA / MTV (m/w/d) bzw. technische Assistentin / technischer Assistent (m/w/d) mit vergleichbarer Ausbildung",
-     "2699 Tierärztin / Tierarzt (m/w/d) - Promotionsmöglichkeit Lebensmittelmikrobiologie in Teilzeit (50 %)"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:08:49+00:00"
- },
- "inhire": {
-  "boards": [
-   {
-    "board": "riachuelo",
-    "complete": true,
-    "error": "",
-    "jobs": 569,
-    "ok": true,
-    "parsed": 569,
-    "sample_titles": [
-     "Analista de Planejamento Comercial Pleno",
-     "Assistente de Vendas - CAPTADOR DE CARTÃO TEMPORÁRIO | LOJA 247",
-     "Assistente de Vendas e Merchandising"
-    ]
-   },
-   {
-    "board": "via",
-    "complete": true,
-    "error": "",
-    "jobs": 2,
-    "ok": true,
-    "parsed": 2,
-    "sample_titles": [
-     "PESSOA DESENVOLVEDORA JAVA (BACK END)",
-     "PESSOA DESENVOLVEDORA SENIOR .NET CORE"
-    ]
-   },
-   {
-    "board": "sales",
-    "complete": true,
-    "error": "",
-    "jobs": 9,
-    "ok": true,
-    "parsed": 9,
-    "sample_titles": [
-     "Analista de Inbound Marketing",
-     "Analista de Marketing",
-     "Analista de Projetos"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:07:31+00:00"
- },
- "intervieweb": {
-  "boards": [
-   {
-    "board": "https://inrecruiting.intervieweb.it/orbyta/it/career",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Sistemista IT - Torino",
-     "Senior Cybersecurity Consultant Freelance",
-     "Networking Engineer - Lodi"
-    ]
-   },
-   {
-    "board": "https://inrecruiting.intervieweb.it/futurenergy/it/career",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Area manager | Ancona",
-     "Responsabile commerciale | Avellino",
-     "Agente di commercio | Avellino"
-    ]
-   },
-   {
-    "board": "https://inrecruiting.intervieweb.it/romeogestioni/it/career",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "ADDETTI ALLA RECEPTION MILANO PART TIME",
-     "ADDETTO ALLA MANUTENZIONE EDILE / SERRAMENTISTA",
-     "ASSISTENTE TECNICO DI COMMESSA JUNIOR - ABBIATEGRASSO"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:08:06+00:00"
- },
- "recrutei": {
-  "boards": [
-   {
-    "board": "https://empregos.recrutei.com.br/sitemap-vagas-1.xml",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "CD Full Stack | Low-Code/No-Code | Inglês Fluente",
-     "Cozinheira (Vaga também disponível para pessoa com deficiência)",
-     "Estagiário(a) Administrativo | Afirmativa para pessoas pretas/pardas"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:07:37+00:00"
- },
- "senior_talentos": {
-  "boards": [
-   {
-    "board": "https://platform.senior.com.br",
-    "complete": false,
-    "error": "",
-    "jobs": 484,
-    "ok": true,
-    "parsed": 484,
-    "sample_titles": [
-     "Assistente de Estoque Noturno",
-     "Operador Empilhadeira PP - 2°turno",
-     "MOTORISTA III"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:07:44+00:00"
- },
- "solides": {
-  "boards": [
-   {
-    "board": "https://vagas.solides.com.br",
-    "complete": false,
-    "error": "",
-    "jobs": 97,
-    "ok": true,
-    "parsed": 97,
-    "sample_titles": [
-     "Auxiliar de Monitoramento - (Cópia)",
-     "Analista de Projetos | MakeITSimple",
-     "LEITURISTA MOTOCICLISTA - GOIANDIRA"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:07:27+00:00"
- },
- "thehub": {
-  "boards": [
-   {
-    "board": "https://thehub.io/sitemap-jobs.xml",
-    "complete": false,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "Brand Designer",
-     "Drifts- og projektleder – Få ansvaret for Festlastbiler og udvikling af vores andre virksomheder",
-     "Computer Vision Engineer"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T20:08:12+00:00"
- },
- "airswift": {
-  "boards": [
-   {
-    "board": "https://www.airswift.com/jobs",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Maintenance Planner / Scheduler I",
-     "Inventory Analyst I",
-     "Staff Electrical Engineer"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:57:54+00:00"
- },
- "cats": {
-  "boards": [
-   {
-    "board": "warnerpacific/1611",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Graduate Assistantship Opportunities - Spring 2027",
-     "Social Work Director of Field Education Faculty Position",
-     "Executive Assistant to the President"
-    ]
-   },
-   {
-    "board": "gmcc/45645",
-    "complete": true,
-    "error": "",
-    "jobs": 4,
-    "ok": true,
-    "parsed": 4,
-    "sample_titles": [
-     "Project Manager - Civil Construction",
-     "Certified Welder",
-     "Project Coordinator - Civil Construction"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:55:17+00:00"
- },
- "clearcompany": {
-  "boards": [
-   {
-    "board": "pmic",
-    "complete": true,
-    "error": "",
-    "jobs": 6,
-    "ok": true,
-    "parsed": 6,
-    "sample_titles": [
-     "Data & Statistical Reporting Analyst",
-     "2027 Summer Internship - Hybrid, New Berlin, NY",
-     "Cloud Infrastructure Architect - Remote"
-    ]
-   },
-   {
-    "board": "coopereic",
-    "complete": true,
-    "error": "",
-    "jobs": 5,
-    "ok": true,
-    "parsed": 5,
-    "sample_titles": [
-     "BIM Modeler",
-     "Electrician",
-     "Sr. Estimator"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:55:27+00:00"
- },
- "concludis": {
-  "boards": [
-   {
-    "board": "https://saarstahl.concludis.de/prj/lst/a181a603769c1f98ad927e7367c7aa51/Alle.htm",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "[DH] Mitarbeiter Werksicherheit (m/w/d)",
-     "Elektroniker für Betriebstechnik (m/w/d)",
-     "Initiativbewerbung im gewerblichen Bereich (m/w/d)"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:58:28+00:00"
- },
- "feishu": {
-  "boards": [
-   {
-    "board": "tigertech/index",
-    "complete": true,
-    "error": "",
-    "jobs": 52,
-    "ok": true,
-    "parsed": 52,
-    "sample_titles": [
-     "CRM资深开发工程师",
-     "Compliance Officer",
-     "基础设施平台开发工程师（Infra Platform）"
-    ]
-   },
-   {
-    "board": "li/index",
-    "complete": false,
-    "error": "",
-    "jobs": 400,
-    "ok": true,
-    "parsed": 400,
-    "sample_titles": [
-     "海外HRBP",
-     "衍生品销售运营（新车交付端）",
-     "高级工商管理专员"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:55:36+00:00"
- },
- "herp": {
-  "boards": [
-   {
-    "board": "https://herp.careers/v1/csentrydemo",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "（AIR）【未経験可】カスタマーサクセス",
-     "【AIR英語】カスタマーサクセス",
-     "11.01_新卒ビジネス総合職種"
-    ]
-   },
-   {
-    "board": "https://herp.careers/v1/herpinc",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "AA00_カジュアル面談",
-     "AA01_カジュアル面談（note記事経由）",
-     "AA10_オープンポジション_Business"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:58:05+00:00"
- },
- "jobylon": {
-  "boards": [
-   {
-    "board": "https://emp.jobylon.com/sitemap-jobs.xml",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "VP of Sales, Base Business Development",
-     "Cloud Engineer, Healthcare IT PACS",
-     "Vikarie  i ekonomi och juridikämnen på  Grillska Gymnasiet Västerås"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:57:18+00:00"
- },
- "pyjamahr": {
-  "boards": [
-   {
-    "board": "ff-inc/8AB8242C34",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Marketing Assistant",
-     "Client Services Associate",
-     "Marketing Communications Associate"
-    ]
-   },
-   {
-    "board": "office-performance/3D8DA6D669",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Inventory Associate",
-     "Services Associate",
-     "Management Trainee"
-    ]
-   },
-   {
-    "board": "pyjamahr/C9047F0152",
-    "complete": true,
-    "error": "",
-    "jobs": 2,
-    "ok": true,
-    "parsed": 2,
-    "sample_titles": [
-     "Marketing Manager",
-     "Business Development Executive"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:56:13+00:00"
- },
- "recruitify": {
-  "boards": [
-   {
-    "board": "jobs.recruitify.ai",
-    "complete": true,
-    "error": "",
-    "jobs": 1,
-    "ok": true,
-    "parsed": 1,
-    "sample_titles": [
-     "Sample"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:56:40+00:00"
- },
- "rexx": {
-  "boards": [
-   {
-    "board": "https://probat-portal.rexx-systems.com/",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Zerspanungsmechaniker (m/w/d) / Rundschleifer (m/w/d)",
-     "Facility Manager / Building Administrator (32-40 hours per week)",
-     "Key Account Manager"
-    ]
-   },
-   {
-    "board": "https://nobix-portal.rexx-systems.com/stellenangebote.html",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Account Manager (m/w/d) Region Nord",
-     "Group Controller / Senior Controller (m/w/d) bei der NOBIX Group GmbH",
-     "Regional Sales Manager (m/w/d) bei der KKS-Kemmler-Kopiersysteme GmbH"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:57:29+00:00"
- },
- "schoolspring": {
-  "boards": [
-   {
-    "board": "Butts County Schools",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Transportation Support Coordinator",
-     "Social Studies Teaching Position for School Year 2026-2027 - Jackson High School",
-     "Volunteer"
-    ]
-   },
-   {
-    "board": "Indian River",
-    "complete": false,
-    "error": "",
-    "jobs": 8,
-    "ok": true,
-    "parsed": 8,
-    "sample_titles": [
-     "Custodian (2026-2027)",
-     "Self-Care Aide, ESE (2026-2027)",
-     "Custodian (2026-2027)"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:56:57+00:00"
- },
- "velora": {
-  "boards": [
-   {
-    "board": "axactor/109",
-    "complete": true,
-    "error": "",
-    "jobs": 4,
-    "ok": true,
-    "parsed": 4,
-    "sample_titles": [
-     "Asset Manager GGCC",
-     "Portfolio Analyst - Unsecured",
-     "Letrado/a Ejecuciones"
-    ]
-   },
-   {
-    "board": "grupo-batta/233",
-    "complete": true,
-    "error": "",
-    "jobs": 211,
-    "ok": true,
-    "parsed": 211,
-    "sample_titles": [
-     "Subgerente Saltillo",
-     "Cobrador en Motocicleta - COATZACOALCOS",
-     "PROMOTOR DE CREDITO"
-    ]
-   }
-  ],
-  "checked_at": "2026-11-10T19:56:42+00:00"
  }
 }

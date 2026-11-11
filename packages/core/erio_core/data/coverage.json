@@ -2313,11 +2313,11 @@
   "slug": "jobtoolz",
   "name": "Jobtoolz",
   "kind": "ats",
-  "status": "Blocked",
-  "boards_verified": 0,
-  "jobs_read": 0,
-  "partial_read": false,
-  "checked_at": null,
-  "note": "robots.txt on every {tenant}.jobtoolz.com site says Disallow: /*? for all crawlers, which ERIO's fetcher reads as disallow-all (even the sitemap), so the career sites cannot be fetched"
+  "status": "Verified",
+  "boards_verified": 2,
+  "jobs_read": 6,
+  "partial_read": true,
+  "checked_at": "2026-11-11T20:29:16+00:00",
+  "note": "Each {tenant}.jobtoolz.com serves /sitemap.xml with /{language}/{job} pages carrying a schema.org JobPosting. robots.txt bars only URLs with a query string (Disallow: /*?), which the fetcher now reads correctly. A job offered in several languages is listed once per language."
  }
 ]

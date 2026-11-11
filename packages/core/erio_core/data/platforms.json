@@ -2160,8 +2160,11 @@
   "slug": "jobtoolz",
   "name": "Jobtoolz",
   "kind": "ats",
-  "blocked": "robots.txt on every {tenant}.jobtoolz.com site says Disallow: /*? for all crawlers, which ERIO's fetcher reads as disallow-all (even the sitemap), so the career sites cannot be fetched",
-  "notes": "Sites otherwise serve /sitemap.xml with /{language}/{job} pages carrying a schema.org JobPosting (checked stroom-maatwerk, stephex, eduard on 2026-11-11); the rule only bars URLs with a query string, so a robots parser fix (keep the trailing ? of a rule) would make them readable: owner decision.",
-  "examples": []
+  "blocked": "",
+  "notes": "Each {tenant}.jobtoolz.com serves /sitemap.xml with /{language}/{job} pages carrying a schema.org JobPosting. robots.txt bars only URLs with a query string (Disallow: /*?), which the fetcher now reads correctly. A job offered in several languages is listed once per language.",
+  "examples": [
+   "https://stroom-maatwerk.jobtoolz.com/sitemap.xml",
+   "https://stephex.jobtoolz.com/sitemap.xml"
+  ]
  }
 ]

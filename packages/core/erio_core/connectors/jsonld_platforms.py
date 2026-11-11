@@ -115,6 +115,13 @@ JSONLD_CONNECTORS: list[Connector] = [
     ),
     JsonLdConnector("factorial", r"^/job_posting/", hosts("*.factorialhr.com", "*.factorial.com")),
     JsonLdConnector("coveto", r"^/job-.+\.html$", hosts("*.coveto.de")),
+    # Every language of a site lists the same job, and each site has a spontaneous-application
+    # page per language that is not an opening.
+    JsonLdConnector(
+        "jobtoolz",
+        r"^/[a-z]{2}/(?!spontaan|apply-spontaneously|candidature-spontanee|initiativ)[^/]+$",
+        hosts("*.jobtoolz.com"),
+    ),
     JsonLdConnector(
         "instaffo",
         r"^/en/job/",
