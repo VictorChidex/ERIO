@@ -244,7 +244,7 @@ export async function SearchView({
               </div>
 
               {page.data.length ? (
-                <div className="jg" role="list" aria-label="Jobs">
+                <div className="jg" aria-label="Jobs">
                   {page.data.map((job) => (
                     <JobCard
                       key={job.canonical_id}

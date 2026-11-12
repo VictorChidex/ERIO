@@ -46,7 +46,7 @@ export function LoadMore({
   return (
     <>
       {jobs.length > 0 && (
-        <div className="jg jg-more" role="list" aria-label="More jobs">
+        <div className="jg jg-more" aria-label="More jobs">
           {jobs.map((job) => (
             <JobCard
               key={job.canonical_id}

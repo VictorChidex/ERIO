@@ -143,7 +143,7 @@ export async function LandingPage({ resolved }: { resolved: ResolvedLanding }) {
           {page.data.length > 0 && (
             <>
               <h2 className={styles.h2}>Latest openings</h2>
-              <div className="jg" role="list" aria-label="Latest openings">
+              <div className="jg" aria-label="Latest openings">
                 {page.data.map((job) => (
                   <JobCard key={job.canonical_id} job={job} countryNames={countryNames} />
                 ))}

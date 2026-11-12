@@ -123,7 +123,7 @@ export default async function NewPage({ searchParams }: { searchParams: Promise<
             </section>
             <section className={styles.section} style={{ paddingBottom: 64 }}>
               <h2 className={styles.h2}>Latest</h2>
-              <div className="jg" role="list" aria-label="Jobs posted in the last 24 hours">
+              <div className="jg" aria-label="Jobs posted in the last 24 hours">
                 {page.data.map((job) => (
                   <JobCard key={job.canonical_id} job={job} countryNames={names} />
                 ))}

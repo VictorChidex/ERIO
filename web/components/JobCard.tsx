@@ -20,7 +20,7 @@ export function JobCard({
   const verified = job.status === "open";
   const fresh = freshness(job);
   return (
-    <article className={`jcard ${job.remote_status}`} role="listitem">
+    <article className={`jcard ${job.remote_status}`}>
       <div className="jch">
         <div>
           <div className="jco">
@@ -28,11 +28,11 @@ export function JobCard({
               {job.company.name}
             </Link>
           </div>
-          <h3 className="jct">
+          <h2 className="jct">
             <Link href={`/jobs/${job.canonical_id}`} className="jct-link">
               {job.title}
             </Link>
-          </h3>
+          </h2>
         </div>
         <div className="jbadges">
           {fresh.isNew && <span className="b b-grn">New today</span>}

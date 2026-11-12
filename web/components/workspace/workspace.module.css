@@ -1,7 +1,7 @@
 .tabs { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 18px; }
 .tab { font-size: 14px; font-weight: 500; color: var(--fg2); padding: 7px 14px; border-radius: 8px; border: 1px solid var(--brd); }
 .tab:hover { color: var(--fg); border-color: var(--brdhi); }
-.tabOn { color: #fff; background: var(--acc); border-color: var(--acc); }
+.tabOn { color: #fff; background: var(--acc-fill); border-color: var(--acc); }
 .tabOn:hover { color: #fff; }
 
 .page { padding: 36px 0 72px; }
@@ -23,7 +23,7 @@
 }
 .input:focus, .select:focus, .textarea:focus { outline: 2px solid var(--acc); outline-offset: 1px; border-color: transparent; }
 .textarea { min-height: 120px; resize: vertical; line-height: 1.5; }
-.btn { font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 8px; background: var(--acc); color: #fff; }
+.btn { font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 8px; background: var(--acc-fill); color: #fff; }
 .btn:hover { opacity: 0.85; }
 .btn:disabled { opacity: 0.5; cursor: default; }
 .ghost { font-size: 13px; font-weight: 500; padding: 7px 14px; border-radius: 8px; color: var(--fg2); border: 1px solid var(--brd); }
@@ -66,3 +66,5 @@
 :global([data-density="compact"]) .card { padding: 12px 14px; }
 :global([data-density="compact"]) .stack { gap: 8px; }
 :global([data-density="compact"]) .page { padding: 20px 0 48px; }
+
+.muted a, .small a { text-decoration: underline; text-underline-offset: 2px; }
