@@ -2166,5 +2166,13 @@
    "https://stroom-maatwerk.jobtoolz.com/sitemap.xml",
    "https://stephex.jobtoolz.com/sitemap.xml"
   ]
+ },
+ {
+  "slug": "workopolis",
+  "name": "Workopolis",
+  "kind": "board",
+  "blocked": "Cloudflare bot challenge: even /robots.txt answers 403 'Just a moment...' (Cf-Mitigated: challenge), so ERIO cannot read the site's crawl rules, and ERIO never solves a challenge (D-19)",
+  "notes": "A Canadian job search engine now run on Indeed's SimplyHired software (its static files load from prod.statics.indeed.com/simplyhired); its listings are aggregated from other sources, which ERIO reads at the source. Checked 2026-11-11. Only an agreement with the operator would open it.",
+  "examples": []
  }
 ]
