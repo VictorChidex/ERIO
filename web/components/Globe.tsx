@@ -129,8 +129,8 @@ export default function Globe(props: GlobeProps) {
       const equator: GeoPermissibleObjects = { type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]] };
 
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const spin = reduced ? 0 : (live.current.spin ?? 7);
-      const showArcs = !reduced && (live.current.arcs ?? true);
+      let spin = reduced ? 0 : (live.current.spin ?? 7);
+      let showArcs = !reduced && (live.current.arcs ?? true);
       const proj = geoOrthographic().clipAngle(90).precision(0);
       const path = geoPath(proj, ctx);
       // No horizon clipping: only used for countries known to be fully visible.
@@ -145,6 +145,8 @@ export default function Globe(props: GlobeProps) {
       let drag: { x: number; y: number; r: [number, number, number]; moved: boolean; lx: number; ly: number; lt: number; vx: number; vy: number } | null = null;
       let arcs: Arc[] = [];
       let W = 0, R = 0, cx = 0, cy = 0, dpr = 1, t = 0, last = 0, vel = 0, spawnClock = 0;
+      // A slow device gets a lighter globe in steps (see frame): 0 full, 1 lower resolution, 2 no arcs, 3 no auto-spin.
+      let dprCap = 1.5, slow = 0;
       let momentum: [number, number] = [0, 0];
       let onScreen = true, needSize = true, frameId = 0;
       const drawTimes: number[] = [];
@@ -159,7 +161,7 @@ export default function Globe(props: GlobeProps) {
       function size(): boolean {
         const w = node.clientWidth;
         if (!w) return false;
-        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        dpr = Math.min(window.devicePixelRatio || 1, dprCap);
         if (W !== w || node.width !== Math.round(w * dpr)) {
           W = w;
           node.width = Math.round(w * dpr);
@@ -348,6 +350,10 @@ export default function Globe(props: GlobeProps) {
       }
       function frame(now: number) {
         frameId = requestAnimationFrame(frame);
+        // A slow turn needs 30 frames a second, not 60 or 144: half the drawing, same look.
+        // While someone drags it, every frame is drawn.
+        const resting = slow >= 3 && !drag && !target && !pendingPick && Math.abs(momentum[0]) + Math.abs(momentum[1]) <= 0.01;
+        if (!drag && last && now - last < (resting ? 250 : 30)) return;
         const dt = Math.min(0.05, last ? (now - last) / 1000 : 0.016);
         last = now;
         if (!onScreen || !node.offsetParent || document.hidden) return;
@@ -365,8 +371,22 @@ export default function Globe(props: GlobeProps) {
         try { draw(); } catch (error) { console.error(error); }
         // Median draw time over the last 60 frames, for the frame-budget test.
         drawTimes.push(performance.now() - began);
+        // Every 20 frames: is drawing too slow for this device (software canvas, a busy laptop)?
+        // Then do less, in steps, instead of keeping the whole page busy.
+        if (drawTimes.length % 20 === 0 && slow < 3) {
+          const recent = drawTimes.slice(-20).sort((x, y) => x - y)[10]!;
+          if (recent > 24) {
+            slow += 1;
+            if (slow === 1) { dprCap = 1; needSize = true; }
+            else if (slow === 2) { showArcs = false; arcs = []; }
+            else spin = 0;
+            node.dataset.quality = String(3 - slow);
+            drawTimes.length = 0;
+          }
+        }
+        // Median draw time over the last 60 frames, for the frame-budget test.
         if (drawTimes.length === 60) {
-          node.dataset.drawMs = [...drawTimes].sort((a, b) => a - b)[30]!.toFixed(2);
+          node.dataset.drawMs = [...drawTimes].sort((x, y) => x - y)[30]!.toFixed(2);
           drawTimes.length = 0;
         }
       }
