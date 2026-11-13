@@ -2,7 +2,7 @@
 # Holds code and dependencies only; configuration arrives as ERIO_* addresses
 # at runtime and no credential is ever baked in (decision D-08).
 
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 # Security fixes published since the base image was built (the image scan in CI fails on any
 # fixable high or critical finding).
